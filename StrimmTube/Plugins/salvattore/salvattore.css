@@ -1,0 +1,57 @@
+/*
+   Spezific styling for salvattore
+   Feel free to edit it as you like
+   More info at http://salvattore.com
+ */
+
+/* Base styles */
+.column {
+    float: left;
+}
+.size-1of4 {
+    width: 32%;
+}
+.size-1of3 {
+    width: 49%;
+}
+.size-1of2 {
+    width: 98%;
+}
+
+/* Be sure to hide the element containing the configuration */
+[data-columns]::before {
+    visibility: hidden;
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/* Configurate salvattore with media queries */
+@media screen and (max-width: 450px) {
+    #timeline[data-columns]::before {
+        content: '1 .column';
+    }
+}
+
+@media screen and (min-width: 451px) and (max-width: 700px) {
+    #timeline[data-columns]::before {
+        content: '1 .column.size-1of2';
+    }
+}
+
+@media screen and (min-width: 701px) and (max-width: 1050px) {
+    #timeline[data-columns]::before {
+        content: '2 .column.size-1of3';
+    }
+}
+
+@media screen and (min-width: 1051px) {
+    #timeline[data-columns]::before {
+        content: '3 .column.size-1of4';
+    }
+}

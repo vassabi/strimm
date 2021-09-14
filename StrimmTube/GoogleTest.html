@@ -1,0 +1,178 @@
+﻿<!DOCTYPE html>
+<html>
+<body>
+    <input type="button" value="Login" onclick="login()" />
+    <input type="button" value="Logout" onclick="logout()" />
+
+    <div id="profile"></div>
+    <div id="playlistid"></div>
+    <div id="videos"></div>
+    <script src="jquery/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript">
+
+function logout()
+{
+    var token = gapi.auth.getToken();
+
+    if (token) {
+        var accessToken = token.access_token;
+
+        if (accessToken) {
+            var revokeUrl = 'https://accounts.google.com/o/oauth2/revoke?token=' + accessToken;
+
+            $.ajax({
+                type: 'GET',
+                url: revokeUrl,
+                async: false,
+                contentType: "application/json",
+                dataType: 'jsonp',
+                success: function (nullResponse) {
+                    // Do something now that user is disconnected
+                    // The response is always undefined.
+                },
+                error: function (e) {
+                    // Handle the error
+                    // console.log(e);
+                    // You could point users to manually disconnect if unsuccessful
+                    // https://plus.google.com/apps
+                }
+            });
+        }
+    }
+
+    gapi.auth.signOut();
+    location.reload();
+}
+function login()
+{
+  var myParams = {
+    'clientid': '735823891249-b637hlpr7enpd7ha46vifimuf2lekik1.apps.googleusercontent.com',
+    'cookiepolicy' : 'single_host_origin',
+    'callback' : 'loginCallback',
+    'approvalprompt':'force',
+    'scope': 'https://www.googleapis.com/auth/plus.login https://www.googleapis.com/auth/plus.profile.emails.read https://www.googleapis.com/auth/youtube https://www.googleapis.com/auth/youtube.upload '
+  };
+  gapi.auth.signIn(myParams);
+}
+
+var userId = '';
+
+function loginCallback(result)
+{
+    if(result['status']['signed_in'])
+    {
+        var request = gapi.client.plus.people.get(
+        {
+            'userId': 'me'
+        });
+
+        request.execute(function (resp)
+        {
+            var email = '';
+            if(resp['emails'])
+            {
+                for(i = 0; i < resp['emails'].length; i++)
+                {
+                    if(resp['emails'][i]['type'] == 'account')
+                    {
+                        email = resp['emails'][i]['value'];
+                    }
+                }
+            }
+
+            userId = resp['id'];
+
+            var str = "User Id:" + resp['id'] + "<br>";
+            str += "Name:" + resp['displayName'] + "<br>";
+            str += "Image:" + resp['image']['url'] + "<br>";
+            str += "<img src='" + resp['image']['url'] + "' /><br>";
+
+            str += "URL:" + resp['url'] + "<br>";
+            str += "Email:" + email + "<br>";
+            document.getElementById("profile").innerHTML = str;
+
+            handleAPILoaded();
+        });
+
+    }
+
+}
+function onLoadCallback()
+{
+    gapi.client.setApiKey('AIzaSyABda8VC2N55L0ogcXun4XXD_eXU3DtZUE');
+    gapi.client.load('plus', 'v1', function () {
+        gapi.client.load('youtube', 'v3', function () { });
+    });
+}
+
+function handleAPILoaded() {
+    requestUserUploadsPlaylistId();
+}
+
+function requestUserUploadsPlaylistId() {
+    // See https://developers.google.com/youtube/v3/docs/channels/list
+    var request = gapi.client.youtube.channels.list({
+        mine: true,
+        userId: userId,
+        part: 'contentDetails'
+    });
+    request.execute(function (response) {
+        //console.log(response)
+        if (response.result && response.result.items[0].contentDetails && response.result.items[0].contentDetails.relatedPlaylists) {
+            playlistId = response.result.items[0].contentDetails.relatedPlaylists.uploads;
+            document.getElementById("playlistid").innerHTML = "Playlist ID: " + playlistId;
+            requestVideoPlaylist(playlistId);
+        }
+    });
+}
+
+function requestVideoPlaylist(playlistId) {
+    var requestOptions = {
+        playlistId: playlistId,
+        part: 'snippet',
+        maxResults: 50,
+        userId: userId,
+        key: 'AIzaSyABda8VC2N55L0ogcXun4XXD_eXU3DtZUE'
+    };
+
+    var request = gapi.client.youtube.playlistItems.list(requestOptions);
+
+    request.execute(function (response) {
+        // Only show pagination buttons if there is a pagination token for the
+        if (response && response.result) {
+            var playlistItems = response.result.items;
+
+            if (playlistItems && playlistItems.length > 0) {
+                BuildControls(playlistItems);
+            }
+        }
+    });
+};
+
+function BuildControls(playlistItems) {
+    var videoIds = '';
+    $.each(playlistItems, function (index, item) {
+        // displayResult(item.snippet);
+
+        var videoId = item.snippet.resourceId.videoId;
+        if (videoIds == '') {
+            videoIds = item.snippet.resourceId.videoId + ',';
+        }
+        else {
+            videoIds += item.snippet.resourceId.videoId + ',';
+        }
+    });
+    document.getElementById("videos").innerHTML = "My Videos: " + videoIds
+}
+    </script>
+
+    <script type="text/javascript">
+      (function() {
+       var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+       po.src = 'https://apis.google.com/js/client.js?onload=onLoadCallback';
+       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+     })();
+    </script>
+
+</body>
+</html>

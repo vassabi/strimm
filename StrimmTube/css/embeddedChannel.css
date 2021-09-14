@@ -1,0 +1,2552 @@
+﻿body {
+    background-color: transparent;
+}
+
+.embeddedViewHolder {
+    display: block;
+    width: 100%;
+    height: auto;
+    background-color: #000;
+    margin: auto;
+}
+
+#form1 {
+    max-width: 100%;
+    min-width: 100%;
+    overflow: hidden;
+}
+
+.wedHolderChannel {
+    display: block;
+    margin: auto;
+    width: 100%;
+    height: auto;
+}
+
+
+.fp-share.fp-icon
+{
+    display:none !important;
+}
+
+#divTopWrapper {
+    border-bottom: none;
+    box-shadow: none;
+    position: relative;
+    width: 100%;
+    z-index: 9999;
+    height: 70px;
+}
+
+#topMenu {
+    background-image: none;
+    background-repeat: repeat;
+    height: 70px;
+    width: 100%;
+    display: block;
+    float: left;
+    position: fixed;
+    top: 0;
+    background-image: url("/images/topMenuChannelBG.png");
+    background-repeat: repeat-x;
+}
+
+#divTopMenu,
+#divBrowseChannels a {
+    border-right: 1px solid #555;
+}
+
+    #divBrowseChannels a,
+    #divTopMenu,
+    #spnHello,
+    .spnAdvSearch,
+    #divBrowseChannels a #divImg, .divImg,
+    #divTopNav a,
+    .whatIsStrimmTop a {
+        color: #fff;
+    }
+
+
+
+
+.AdvSearchImg {
+    background-image: url("/images/lupa-search-white.png");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    display: block;
+    float: left;
+    height: 16px;
+    margin-left: -3px;
+    margin-top: 25px;
+    opacity: 0.5;
+    width: 16px;
+    opacity: 1;
+}
+
+.AdvSearchImgHN {
+    background-image: url("/images/lupa-search-white.png");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    display: block;
+    float: left;
+    height: 16px;
+    margin-left: -3px;
+    margin-top: 25px;
+    opacity: 0.5;
+    width: 16px;
+    opacity: 1;
+}
+
+
+.tweetUpdates ._491z {
+    border-bottom: 1px solid #777;
+}
+
+
+.playTime {
+    bottom: 0;
+    color: #777;
+    float: left;
+    font-size: 12px;
+    height: 20px;
+    left: 0;
+    line-height: 20px;
+    position: absolute;
+    text-align: left;
+    width: 100%;
+    color: #eee;
+}
+
+
+
+
+
+/*-----------------------------------------------------------------------CHANNEL PAGE ONLY*/
+/*------------------------------------------ FOOTER-DOUBLE-CSS------------------------------------------------------*/
+
+#divFooterNH.default {
+    background-color: #222;
+    background-image: url("/images/footerImgHomeDecember.jpg");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    bottom: 0;
+    clear: both;
+    float: left;
+    height: 700px;
+    margin: auto;
+    max-width: 100%;
+    min-width: 960px;
+    position: relative;
+    width: 100%;
+}
+
+.footerSocialHolder {
+    display: block;
+    float: right;
+    width: 110px;
+    margin-left: 0;
+    padding-right: 20px;
+    margin-top: 5px;
+}
+
+.footerSocial {
+    display: block;
+    float: left;
+    width: 38px;
+    height: 38px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+
+.footerSocialFacebook {
+    display: block;
+    float: left;
+    background-image: url("/images/social/facebookBW.jpg ");
+    background-repeat: no-repeat;
+    opacity: 0.7;
+}
+
+.footerSocialTwitter {
+    display: block;
+    float: left;
+    background-image: url("/images/social/twitterBW.jpg ");
+    background-repeat: no-repeat;
+    opacity: 0.7;
+}
+
+.footerSocialGoogle {
+    display: block;
+    float: left;
+    background-image: url("/images/social/googleplusBW.jpg ");
+    background-repeat: no-repeat;
+    opacity: 0.7;
+}
+
+.footerSocialPinterest {
+    display: block;
+    float: left;
+    background-image: url("/images/social/pinterestBW.jpg ");
+    background-repeat: no-repeat;
+    opacity: 0.7;
+}
+
+    .footerSocialFacebook:hover,
+    .footerSocialTwitter:hover,
+    .footerSocialGoogle:hover,
+    .footerSocialPinterest:hover {
+        opacity: 1;
+    }
+
+.columnFooterSocial li a {
+    display: block;
+    margin-left: 0;
+    width: 38px;
+    height: 38px;
+}
+
+.columnFooterSocial {
+    margin: auto;
+}
+
+.columnHN {
+    display: inline-block;
+    margin: 120px 1% 1%;
+    text-align: center;
+    vertical-align: top;
+    /* width: 15%; */
+    width: 20%;
+}
+
+.holderNH {
+    clear: both;
+    margin: auto;
+    min-width: 1024px;
+    width: 100%;
+    height: 400px;
+    width: 100%;
+    max-width: 1520px;
+    margin: auto;
+    text-align: center;
+}
+
+.mute {
+    background-image: url("/images/mute.png");
+    background-repeat: no-repeat;
+    display: block;
+    position: absolute;
+    bottom: 10px;
+    left: 4px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    z-index: 9999;
+}
+
+.muteOFF {
+    background-image: url("/images/muteOFF.png");
+    background-repeat: no-repeat;
+    display: block;
+    position: absolute;
+    bottom: 10px;
+    left: 4px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    z-index: 9999;
+}
+
+.paragraphSloganBlackFoooterBasic {
+    color: transparent;
+    display: block;
+    font-size: 40px;
+    font-weight: normal;
+    line-height: 50px;
+    margin: 40px auto auto;
+    padding: 1%;
+    text-align: center;
+}
+
+.bottomButtonsHolderFoooterBasic {
+    display: block;
+    height: 90px;
+    margin: auto;
+    width: 350px;
+    position: relative;
+    height: 200px;
+}
+
+
+
+/*------------------------------------------////////FOOTER-DOUBLE-CSS------------------------------------------------------*/
+
+
+#PlayerHolder {
+    height: auto;
+    max-width: 100%;
+    width: 100%;
+    margin: auto;
+    background-image: url('/images/loading.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background: #000;
+}
+
+.embeddErrorMessage,
+#contentWrapper {
+    width: 100%;
+    height: 610px;
+    line-height: 610px;
+}
+
+#PlayerHolder #dMotionPlayer {
+    height: 500px;
+}
+
+.playerbox,
+#player {
+    width: 100%;
+}
+
+#sideBarChannel {
+    background-color: transparent;
+    box-shadow: none;
+    display: block;
+    position: absolute;
+    height: 600px;
+    overflow: hidden;
+    right: 0;
+    top: -45px;
+    width: 320px;
+    z-index: 0;
+}
+
+
+#ChannelPageInfoHolder {
+    background: transparent;
+    box-shadow: none;
+    position: relative;
+    padding: 1%;
+    width: 98%;
+    float: left;
+}
+
+#channelPageInfoWrapper {
+    display: block;
+    float: left;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.block {
+}
+
+.sideBarFake {
+    display: block;
+    float: left;
+    max-width: 100%;
+}
+
+.sideContentHolder .videoTitle
+/*.sideChannel .videoTitle*/ {
+    color: #bbb;
+    display: block;
+    float: left;
+    font-size: 13px;
+    height: 50px;
+    line-height: 25px;
+    overflow: hidden;
+    position: static;
+    text-overflow: ellipsis;
+    white-space: normal;
+    width: 155px;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    font-size-adjust: 0.5;
+}
+
+
+
+
+.sideChannel .videoTitle {
+    font-size: 12px;
+    height: 25px;
+    line-height: 25px;
+    overflow: hidden;
+    text-align: left;
+    white-space: nowrap;
+    width: 99%;
+}
+
+.infoDevider {
+    display: block;
+    float: left;
+    width: 90%;
+    height: auto;
+    border-bottom: 1px solid #555;
+    padding: 5%;
+}
+
+
+
+.channelWatchigDescription {
+    width: 100%;
+    float: left;
+    height: auto;
+    margin-top: 15px;
+}
+
+    .channelWatchigDescription p, .channelCreatorBIO p,
+    .describtionP,
+    .creatorBioP {
+        display: block;
+        height: 80px;
+        margin: 0 auto;
+        font-size: 13px;
+        line-height: 25px;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        color: #ccc;
+        text-align: left;
+        padding-top: 20px;
+        width: 230px;
+        float: left;
+    }
+
+@-moz-document url-prefix() {
+    .channelWatchigDescription p, .channelCreatorBIO p,
+    .describtionP,
+    .creatorBioP {
+        display: block;
+        height: 70px;
+        margin: 0 auto;
+        font-size: 12px;
+        line-height: 22px;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        color: #ccc;
+        text-align: left;
+        padding-top: 5px;
+    }
+}
+
+
+
+.descriptionPFull {
+    display: block;
+    float: left;
+    height: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #ccc;
+    text-align: left;
+    font-size: 14px;
+    line-height: 25px;
+}
+
+.defaultDesc {
+    display: block;
+    height: 70px;
+    margin: 0 auto;
+    font-size: 12px;
+    line-height: 60px;
+    color: #ccc;
+    text-align: left;
+}
+
+
+
+.moreInfo {
+    display: block;
+    float: left;
+    width: 95%;
+    text-align: right;
+    color: #2a99bd;
+    font-size: 14px;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+
+    .moreInfo:hover {
+        color: #3bcd4e;
+    }
+
+
+.videoTitleMain {
+    display: block;
+    float: left;
+    margin-left: 20px;
+    width: 70%;
+}
+
+
+.videoTitle h1 {
+    font-family: opensans-light;
+    font-size: 16px;
+    line-height: 1.3em;
+    width: 100%;
+    color: #eee;
+    display: none;
+}
+
+.videoTitle span {
+    position: absolute;
+    right: 0;
+    color: #777;
+    top: 0;
+    font-size: 13px;
+}
+
+#innerLeftWrapperChannel {
+    border: 1px solid #777;
+    box-shadow: none;
+    display: block;
+    float: left;
+    height: 50px;
+    width: 50px;
+    margin-right: 7px;
+    margin-bottom: 7px;
+    margin-top: 7px;
+}
+
+.btnPlayLiveVideo.material-icons {
+    float: left;
+    line-height: 40px;
+    border-bottom: 1px solid #555;
+    color: #32bae6;
+}
+
+ .btnPlayLiveVideo.material-icons.active {
+        color: red;
+    }
+
+#ChannelPageInfoHolder #innerRightWrapper {
+    float: left;
+    height: auto;
+    float: left;
+    margin-top: 20px;
+    margin-left: 0;
+    width: 100%;
+}
+
+.moreChannelsHolder {
+    display: block;
+    float: none;
+    width: 1000px;
+    height: auto;
+    background-color: black;
+    margin: auto;
+    padding-bottom: 1px;
+}
+
+.noChannelsMessage {
+    color: #eee;
+    display: block;
+    float: left;
+    width: 100%;
+    height: auto;
+    margin-left: 8px;
+    height: 20px;
+    padding: 10px;
+    padding-left: 0;
+}
+
+.spnMoreChannels {
+    color: #eee;
+    display: block;
+    float: left;
+    font-size: 25px;
+    font-weight: normal;
+    height: 30px;
+    margin-left: 8px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+}
+
+.chanBoxcategAdjust {
+    color: transparent;
+}
+
+#ratingHolder {
+    display: block;
+    float: left;
+    position: static;
+    width: 280px;
+    margin-bottom: 10px;
+}
+
+#ChannelPageInfoHolder #titleHolder {
+    display: block;
+    float: left;
+    margin-top: 0;
+    width: 100%;
+}
+
+.channelCreatorBIO {
+    display: block;
+    float: left;
+}
+
+#ChannelPageInfoHolder #ancName {
+    color: #2a99bd;
+    font-size: 17px;
+    width: 100%;
+    text-align: left;
+}
+
+#ancUserName {
+    color: #ddd;
+    float: left;
+    font-size: 15px;
+    height: 50px;
+    line-height: 50px;
+    text-decoration: underline;
+    width: 70%;
+    text-align: left;
+}
+
+#ChannelPageInfoHolder #categoryHolder {
+    margin-bottom: 0;
+    display: block;
+    float: left;
+}
+
+.channelInfoCategory {
+    display: block;
+    float: left;
+    color: #ccc;
+    font-size: 14px;
+    text-transform: capitalize;
+    margin-right: 7px;
+}
+
+#ChannelPageInfoHolder #lblCategory {
+    color: #ddd;
+    font-size: 14px;
+    height: 15px;
+    line-height: 15px;
+    text-transform: capitalize;
+}
+
+#ChannelPageInfoHolder #channelInfo {
+    font-size: 14px;
+    height: 15px;
+    line-height: 15px;
+    color: #ddd;
+    width: 100%;
+    margin: auto;
+    display: block;
+    float: none;
+    margin-top: 7px;
+    text-transform: capitalize;
+}
+
+.infoShowIconInfo {
+    background-image: url('/images/infoIconSlider.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: block;
+    height: 37px;
+    width: 37px;
+    opacity: 0.7;
+    margin-top: 20px;
+    background-position: center;
+}
+
+
+
+
+    .infoShowIconInfo:hover {
+        opacity: 1;
+    }
+
+#ChannelPageSocialHolder {
+    background: transparent;
+    width: 98%;
+    padding: 1%;
+    box-shadow: none;
+    float: left;
+    border-top: none;
+}
+
+
+.channelCreator {
+    display: block;
+    width: 100%;
+    float: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.channelCreatorImg {
+    border: 1px solid #555;
+    display: block;
+    float: left;
+    height: 40px;
+    margin-right: 7px;
+    width: 40px;
+    margin-top: 7px;
+}
+
+
+
+.channelChannelImg {
+    display: none;
+}
+
+.spnChannelCreator {
+    display: block;
+    float: left;
+    margin-right: 5px;
+    color: #2a99bd;
+    height: 50px;
+    line-height: 50px;
+    text-transform: capitalize;
+    font-size: 17px;
+    width: 60px;
+    text-align: left;
+}
+
+
+
+
+
+.options .schedule,
+.options .watchlater,
+.options .abusereport,
+.options .addtofavorite,
+.options .toprated {
+    background-image: url('/images/social/socialRound/watchLater-round.png');
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+    display: block;
+    float: left;
+    font-size: 11px;
+    height: 40px;
+    line-height: 40px;
+    margin-right: 15px;
+    opacity: 0.7;
+    padding-left: 40px;
+    text-transform: lowercase;
+}
+
+
+
+.fb_iframe_widget iframe {
+    background: #ccc none repeat scroll 0 0;
+    position: absolute;
+    min-height: 650px;
+    overflow: hidden;
+    margin-left: 3px;
+    width: 280px !important;
+}
+
+@-moz-document url-prefix() {
+
+    .fb_iframe_widget iframe {
+        background: #ccc none repeat scroll 0 0;
+        margin-left: 30px;
+        min-height: 650px;
+        overflow: hidden;
+        padding-left: 10px;
+        position: absolute;
+        width: 280px !important;
+    }
+}
+
+.fb_iframe_widget {
+    display: inline-block;
+    position: relative;
+    right: 0;
+}
+
+@-moz-document url-prefix() {
+    .options .schedule,
+    .options .watchlater,
+    .options .abusereport,
+    .options .addtofavorite,
+    .options .toprated {
+        background-size: 75%;
+    }
+}
+
+.hideInfoBlock {
+    background-image: url("/images/00065.png");
+    background-repeat: repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: green;
+    font-size: 14px;
+    cursor: pointer;
+    display: block;
+    z-index: 1;
+    text-align: right;
+    height: 560px;
+    width: 18%;
+    min-width: 300px;
+}
+
+/*.hideSchedule {
+    background-repeat: repeat;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 14px;
+    font-style: italic;
+    cursor: pointer;
+    display: block;
+    z-index: 999;
+    text-align: left;
+    height: 20px;
+    color: #07c720;
+    width: 25px;
+}*/
+
+.hideSchedule {
+    background-image: url('/images/slideArrows/slideArrowShow.png');
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 10px;
+    left: -3px;
+    cursor: pointer;
+    display: block;
+    z-index: 1;
+    height: 30px;
+    color: transparent;
+    width: 30px;
+    opacity: 0.7;
+    z-index: 999;
+    cursor: pointer;
+}
+
+    .hideSchedule:hover {
+        opacity: 1;
+    }
+
+.webHolderRight {
+    display: block;
+    float: left;
+    margin-top: 20px;
+}
+
+.hideInfoScheduleBlock {
+    width: 100%;
+    background-image: url("/images/00065.png");
+    background-repeat: repeat;
+    min-width: 320px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.webHolderRightWrapper {
+    height: 560px;
+    width: 19%;
+    overflow: hidden;
+    right: 0;
+    top: 0;
+    padding-left: 1%;
+    position: absolute;
+    min-width: 280px;
+}
+
+.showScheduleWrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 25px;
+    height: 560px;
+    /*background-image: url("/images/00065.png");*/
+    background-image: none;
+    background-repeat: repeat;
+    z-index: 999;
+    color: #fff;
+    font-size: 14px;
+    font-style: italic;
+    cursor: pointer;
+    padding-right: 10px;
+    padding-top: 10px;
+    display: none;
+}
+
+.expandPanel {
+    background-image: url('/images/slideArrows/slideArrowHide.png');
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    color: #fff;
+    display: block;
+    height: 30px;
+    width: 30px;
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+    .expandPanel:hover {
+        opacity: 1;
+    }
+
+.showSchedule {
+    background-image: url('/images/social/socialRound/scheduleActive-round.png');
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    color: #fff;
+    display: none;
+    height: 40px;
+    width: 40px;
+    margin-top: 10px;
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.showFavorite {
+    background-image: url('/images/social/socialRound/favoriteNotActive-round.png');
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    color: #fff;
+    display: block;
+    height: 40px;
+    width: 40px;
+    margin-top: 10px;
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.showTopChannels {
+    background-image: url('/images/social/socialRound/topNotActive-round.png');
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    color: #fff;
+    display: block;
+    height: 40px;
+    width: 40px;
+    margin-top: 10px;
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.showMyChannels {
+    background-image: url('/images/social/socialRound/my-channels-not-active-round.png');
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    color: #fff;
+    display: block;
+    height: 40px;
+    width: 40px;
+    margin-top: 10px;
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.showChat {
+    background-image: url('/images/social/socialRound/chat.png');
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    color: #fff;
+    display: block;
+    height: 40px;
+    width: 40px;
+    margin-top: 10px;
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.showSchedul:hover {
+    color: #07c720;
+}
+
+.showChat:hover,
+.showMyChannels:hover,
+.showFavorite:hover,
+.showTopChannels:hover,
+.showSchedule:hover {
+    opacity: 1;
+}
+
+
+
+.showInfoBar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 560px;
+    background-image: url("/images/00065.png");
+    background-repeat: repeat;
+    z-index: 999;
+    color: #fff;
+    font-size: 14px;
+    font-style: italic;
+    display: none;
+    cursor: pointer;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.infoShowIcon {
+    background-image: url('/images/slideArrows/slideArrowShow.png');
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    color: #fff;
+    display: block;
+    height: 30px;
+    width: 30px;
+    opacity: 0.7;
+    cursor: pointer;
+    margin-left: 4px;
+}
+
+    .infoShowIcon:hover {
+        opacity: 1;
+    }
+
+
+#btnHide {
+    background-image: url("/images/slideArrows/slideArrowHide.png");
+    background-repeat: no-repeat;
+    color: transparent;
+    float: right;
+    height: 20px;
+    padding-right: 10px;
+    padding-top: 10px;
+    position: absolute;
+    right: 0;
+    top: 10px;
+    width: 20px;
+    opacity: 0.7;
+    z-index: 2;
+    cursor: pointer;
+}
+
+    #btnHide:hover {
+        opacity: 1;
+    }
+
+.shareInfo {
+    background-image: url('/images/social/socialRound/share.png');
+    background-position: center;
+    display: block;
+    width: 40px;
+    height: 40px;
+    float: left;
+    opacity: 1;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-right: 15px;
+}
+
+@-moz-document url-prefix() {
+    .shareInfo {
+        background-size: 75%;
+    }
+}
+
+
+
+.options .watchlater:hover {
+    background-image: url('/images/social/socialRound/watchLater-round-hover.png');
+    opacity: 1;
+}
+
+.options .watchlaterActive {
+    background-image: url('/images/social/socialRound/watchLater-round-active.png');
+    opacity: 1;
+}
+
+.options .addtofavorite {
+    background-image: url('/images/social/socialRound/add-to-fav-round.png');
+}
+
+    .options .addtofavorite:hover {
+        background-image: url('/images/social/socialRound/add-to-favorite-round-active.png');
+        opacity: 1;
+    }
+
+.options .addtofavoriteActive {
+    background-image: url('/images/social/socialRound/add-to-favorite-round-active.png');
+    opacity: 1;
+}
+
+
+
+.options .abusereport {
+    background-image: url('/images/social/socialRound/abuse-round.png');
+}
+
+    .options .abusereport:hover {
+        background-image: url('/images/social/abuse-round-hover.png');
+    }
+
+
+
+.sideBarOptions {
+    display: block;
+    height: 35px;
+    overflow: hidden;
+    padding: 15px 10px 10px;
+    position: relative;
+    z-index: 1;
+    position: relative;
+}
+
+.iconDescription {
+    color: #eee;
+    display: block;
+    font-size: 17px;
+    font-weight: normal;
+    height: 40px;
+    line-height: 20px;
+    text-transform: capitalize;
+    position: absolute;
+    left: 90px;
+    top: 12px;
+}
+
+
+
+.sideBarOptions .schedule,
+.sideBarOptions .watchlater,
+.sideBarOptions .abusereport,
+.sideBarOptions .favoriteChannels,
+.sideBarOptions .toprated,
+.sideBarOptions .ringsactive,
+.sideBarOptions .rings,
+.sideBarOptions .mychannels,
+.sideBarOptions .myChat {
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    color: #000;
+    display: block;
+    float: right;
+    font-size: 11px;
+    height: 40px;
+    line-height: 90px;
+    margin-left: 4px;
+    margin-right: 4px;
+    opacity: 1;
+    padding-top: 5px;
+    text-align: center;
+    text-transform: lowercase;
+    width: 40px;
+}
+
+@-moz-document url-prefix() {
+    .sideBarOptions .schedule,
+    .sideBarOptions .watchlater,
+    .sideBarOptions .abusereport,
+    .sideBarOptions .favoriteChannels,
+    .sideBarOptions .toprated,
+    .sideBarOptions .ringsactive,
+    .sideBarOptions .rings,
+    .sideBarOptions .mychannels {
+        background-size: 75% auto;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+@-moz-document url-prefix() {
+    .sideBarOptions .myChat {
+        background-size: 87% auto;
+    }
+}
+
+
+.sideBarOptions .schedule {
+    /*background-image: url("/images/social/schedule.jpg");*/
+    background-image: url('/images/social/socialRound/scheduleNotActive-round.png');
+}
+
+    .sideBarOptions .schedule:hover {
+        /*background-image: url("/images/social/scheduleactive.jpg");*/
+        background-image: url('/images/social/socialRound/scheduleActive-round.png');
+    }
+
+
+
+
+.sideBarOptions .myChat {
+    background-image: url('/images/social/socialRound/chat.png');
+}
+
+    .sideBarOptions .myChat.myChatActive {
+        background-image: url('/images/social/socialRound/chatActive.png');
+    }
+
+
+.sideBarOptions .favoriteChannels {
+    background-image: url('/images/social/socialRound/favoriteNotActive-round.png');
+}
+
+
+
+.sideBarOptions .favoriteChannelsActive {
+    background-image: url('/images/social/socialRound/favoriteActive-round.png');
+}
+
+.sideBarOptions .favoriteChannels:hover {
+    background-image: url('/images/social/socialRound/add-to-favorite-round-active.png');
+}
+
+
+
+
+
+
+
+
+
+
+.sideBarOptions .mychannels {
+    /*background-image: url("/images/social/mychannels.jpg");*/
+    background-image: url('/images/social/socialRound/my-channels-not-active-round.png');
+}
+
+    .sideBarOptions .mychannels:hover {
+        /*background-image: url("/images/social/mychannels.jpg");*/
+        background-image: url('/images/social/socialRound/my-channels-active-round.png');
+    }
+
+
+.sideBarOptions .mychannelsactive {
+    /*background-image: url("/images/social/mychannels.jpg");*/
+    background-image: url('/images/social/socialRound/my-channels-active-round.png');
+}
+
+
+
+
+
+
+
+.sideBarOptions .scheduleactive {
+    background-image: url('/images/social/socialRound/scheduleActive-round.png');
+    display: none;
+}
+
+.sideBarOptions .toprated {
+    /*background-image: url("/images/social/topNotActive-round.png");*/
+    background-image: url('/images/social/socialRound/topNotActive-round.png');
+}
+
+#ancLike.like.likeActive {
+    background-image: url('/images/social/socialRound/likeActive-round.png');
+    opacity: 1;
+}
+
+#ancLike.like {
+    background-image: url('/images/social/socialRound/likeNotActive-round.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: block;
+    width: 40px;
+    height: 40px;
+    float: left;
+    opacity: 0.7;
+    margin-right: 15px;
+}
+
+
+.seeMoreChannels {
+    color: #1abaed;
+    display: block;
+    float: right;
+    font-size: 17px;
+    font-weight: normal;
+    height: 30px;
+    margin-left: 10px;
+    margin-top: 28px;
+    text-transform: capitalize;
+    text-decoration: underline;
+    padding-right: 100px;
+    cursor: pointer;
+}
+
+    .seeMoreChannels:hover {
+        color: #eee;
+    }
+
+.seeMoreCategoryHolder {
+    float: left;
+    width: 99%;
+}
+
+
+/*.home-video-box-add {
+    background-image: url("/images/seeMoreNew.png");
+    background-size: 100% auto;
+    border: 1px solid #ddd;
+    width: 100%;
+    height: 100%;
+}*/
+.home-video-box-add {
+    background-color: transparent;
+    background-image: url("/images/seeMoreNew.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border-radius: 0;
+    display: block;
+    float: left;
+    height: 100%;
+    min-height: 160px;
+    min-width: 200px;
+    width: 15%;
+}
+
+@-moz-document url-prefix() {
+    #ancLike.like {
+        background-size: 75%;
+        background-position: center;
+    }
+}
+
+
+
+
+
+.sideBarOptions .toprated:hover {
+    background-image: url('/images/social/socialRound/topActive-round.png');
+}
+
+.sideBarOptions .topRatedActive {
+    background-image: url('/images/social/socialRound/topActive-round.png');
+}
+
+.sideBarOptions .myChannelsActive {
+    background-image: url('/images/social/socialRound/my-channels-active-round.png');
+}
+
+
+
+.options .schedule:hover,
+.options .watchlater:hover,
+.options .abusereport:hover {
+    opacity: 1;
+    text-decoration: underline;
+}
+
+
+
+.social {
+    display: block;
+    float: left;
+    width: 35%;
+}
+
+.options {
+    display: block;
+    float: left;
+    width: 100%;
+}
+
+.favorite {
+    display: block;
+    float: right;
+    width: 40px;
+}
+
+
+.socialIcons {
+    display: block;
+    float: right;
+    margin: 5px;
+    width: 30px;
+}
+
+    .socialIcons img {
+        width: 100%;
+        height: auto;
+        border: none;
+        opacity: 0.5;
+    }
+
+    .socialIcons:hover img {
+        opacity: 1;
+    }
+
+.favorite .socialIcons {
+    width: 40px;
+}
+
+.tweetUpdates {
+    min-height: 200px;
+    font-size: 12px;
+    color: #fff;
+    background-color: #999;
+    opacity: 0.7;
+}
+
+.sideContentHolder {
+    display: block;
+    padding-top: 10px;
+    position: fixed;
+    text-align: center;
+    width: 100%;
+    color: #ddd;
+    font-size: 13px;
+    height: auto;
+    bottom: 0;
+    background: #000;
+    opacity: 0.8;
+    z-index: 9;
+}
+
+.webHolderRightWrapperOverlay {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-image: url("/images/infoBarBG.png");
+    background-repeat: repeat-x;
+    background-position: bottom;
+    z-index: 999;
+    width: 19%;
+    height: 200px;
+    min-width: 320px;
+    display: none;
+}
+
+.sideSchedule {
+    display: block;
+    float: left;
+    width: 95%;
+    height: 50px;
+    border-bottom: 1px solid #0a6215;
+    min-width: 300px;
+}
+
+    .sideSchedule.playingNow {
+        color: #ddd;
+    }
+
+        .sideSchedule.playingNow .videoTitle {
+            /*color: #000;*/
+        }
+
+    /*.sideSchedule.playingNow .videoTiming {
+        color: #fff;
+        background-color: #2a99bd;
+    }*/
+
+
+    .sideSchedule strong {
+        display: block;
+        float: left;
+        font-weight: normal;
+        height: 50px;
+        width: 92%;
+        position: relative;
+    }
+
+    .sideSchedule .videoAvatar {
+        display: block;
+        float: left;
+        margin-right: 10px;
+        width: 125px;
+        height: 75px;
+        overflow: hidden;
+        display: none;
+    }
+
+        .sideSchedule .videoAvatar img {
+            max-width: 100%;
+            height: auto;
+            min-height: 100%;
+        }
+
+    .sideSchedule .videoTiming {
+        display: block;
+        float: left;
+        height: 50px;
+        width: 120px;
+        line-height: 50px;
+        color: #ddd;
+        text-align: center;
+        font-size: 12px;
+        position: relative;
+    }
+
+
+.scheduleScrollHomePage {
+    height: 100%;
+    width: 100%;
+    min-height: 550px;
+}
+
+
+
+
+.sideChannel {
+    display: block;
+    width: 96%;
+    padding: 2%;
+    border-bottom: 1px solid #777;
+    float: left;
+}
+
+    .sideChannel strong {
+        display: block;
+        float: left;
+        font-weight: normal;
+        height: 60px;
+        position: relative;
+        width: 200px;
+    }
+
+    .sideChannel .channelAvatar {
+        border: 1px solid #777;
+        display: block;
+        float: left;
+        height: 60px;
+        margin-right: 5px;
+        overflow: hidden;
+        width: 60px;
+    }
+
+        .sideChannel .channelAvatar img {
+            width: 100%;
+            height: 60px;
+        }
+
+    .sideChannel .channelTiming {
+        background-color: #f00;
+        border-top-left-radius: 10px;
+        bottom: -1px;
+        color: #ccc;
+        display: block;
+        float: left;
+        font-size: 13px;
+        font-weight: bold;
+        height: 15px;
+        left: -60px;
+        opacity: 0.7;
+        position: absolute;
+        text-align: center;
+        width: 40px;
+        line-height: 15px;
+    }
+
+    /*.playTime {
+background: none repeat scroll 0 0 #eee;
+bottom: 16px;
+color: #000;
+font-size: 13px;
+height: 20px;
+left: 0;
+line-height: 20px;
+padding-left: 2px;
+position: absolute;
+width: 100%;
+}*/
+
+    .sideChannel .spnSubscribers,
+    .sideChannel .spnViews {
+        bottom: 0;
+        color: #000;
+        display: block;
+        float: left;
+        font-size: 12px;
+        font-weight: bold;
+        position: absolute;
+    }
+
+    .sideChannel .spnSubscribers {
+        padding-right: 10px;
+    }
+
+
+    .sideChannel:hover .videoTitle {
+        color: #fff;
+    }
+
+    .sideChannel .channelTitle {
+        color: #2a99bd;
+        display: block;
+        float: left;
+        font-size: 15px;
+        height: 20px;
+        line-height: 20px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        width: 100%;
+        text-align: left;
+    }
+
+    .sideChannel:hover .channelTitle {
+        color: #2a99bd;
+    }
+
+/*------------------------------------------------------------------------------------------------------------------------------- BROWSE CHANNELS*/
+/*#divChannelsCategory {
+    display: none;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    top: 70px;
+    width: 100%;
+    background: #111;
+    opacity: 0.9;
+    height: 650px;
+    border-top: 1px solid #333;
+    box-shadow: none;
+}
+
+
+#menuTopList ul {
+    background-color: #111;
+    border-radius: 0;
+    display: block;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    width: 200px;
+    box-shadow: 0px 2px 3px #333;
+    border-top: 1px solid #333;
+    opacity: 0.9;
+}
+
+#helloMenuList ul {
+    background-color: #111;
+    border-radius: 0;
+    display: none;
+    width: 155px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+        box-shadow: 0px 2px 3px #333;
+    border-top: 1px solid #333;
+}
+
+.trBrowseChannels {
+background-color: #000;
+left: 370px;
+top: -7px;
+}
+
+.ddHolder {
+    display: block;
+margin-top: 0;
+}
+
+#menuTopList:before, #Header .user-menu:before, .tr, .trHello, .trBrowseChannels {
+    background-color: #000;
+    border-color: #333;
+    border-style: solid;
+    border-width: 1px 0 0 1px;
+    content: "";
+    display: block;
+    height: 15px;
+    left: 30%;
+    margin-left: -13px;
+    position: absolute;
+    top: -9px;
+    transform: rotate(45deg);
+    width: 15px;
+    z-index: 901;
+}
+
+#divChannelsCategory ul li a {
+    color: #eee;
+    display: block;
+    font-size: 17px;
+    height: 20px;
+    line-height: 24px;
+    margin: auto;
+    padding: 14px 0 7px;
+    position: relative;
+    text-align: left;
+    text-decoration: none;
+    text-transform: capitalize;
+    width: 150px;
+}
+
+.channelCount {
+    background-color: #ddd;
+    border: 1px solid #ddd;
+    border-radius: 32px;
+    color: #000;
+    display: block;
+    float: right;
+    font-size: 12px;
+    height: 20px;
+    line-height: 20px;
+    margin-left: 5px;
+    min-width: 20px;
+    padding: 2px;
+    text-align: center;
+    font-weight: bold;
+}*/
+
+/*/////////////// BROWSE CHANNELS*/
+
+
+#divBrowseChannels a, .whatIsStrimmTop a {
+    border-right: 1px solid #555;
+}
+
+.closeAbuseReport {
+    background-image: url("/images/removebutton.png");
+    background-repeat: no-repeat;
+    background-size: 95% auto;
+    display: block;
+    height: 30px;
+    line-height: 1000px;
+    opacity: 0.7;
+    overflow: hidden;
+    position: absolute;
+    right: 20px;
+    top: 12px;
+    width: 30px;
+}
+
+    .closeAbuseReport:hover {
+        opacity: 1;
+    }
+
+    .closeAbuseReport span {
+        color: #000;
+        float: right;
+        font-size: 25px;
+        padding-right: 5px;
+    }
+
+        .closeAbuseReport span:hover {
+            color: #2a99bd;
+            background-image: none;
+        }
+
+#abuseModal {
+    background-color: #f9f9f9;
+    display: none;
+    float: left;
+    height: auto;
+    margin-bottom: 20px;
+    overflow: hidden;
+    padding: 50px 50px 20px;
+    position: relative;
+    width: 725px;
+}
+
+#closeModal {
+    color: #2a99bd;
+    cursor: pointer;
+    font-size: 20px;
+    position: absolute;
+    right: 15px;
+    text-decoration: none;
+    top: 7px;
+}
+
+    #closeModal:hover {
+        color: #777777;
+    }
+
+#btnSendAbuseReport {
+    z-index: 1003;
+    float: left;
+    cursor: pointer;
+}
+
+.abuse {
+    display: block;
+    float: left;
+    width: 230px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+
+.H3abuseReport {
+    font-size: 17px;
+    margin-bottom: 10px;
+    color: #555;
+    font-weight: normal;
+}
+
+.fontFamily {
+    line-height: 20px;
+    font-size: 14px;
+    color: #555;
+}
+
+.submitAbuse {
+    clear: both;
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+    .submitAbuse a {
+        background-color: #2a99bd;
+        color: #fff;
+        display: block;
+        height: 32px;
+        line-height: 32px;
+        margin: auto;
+        text-align: center;
+        width: 120px;
+        clear: both;
+        text-transform: capitalize;
+    }
+
+.ddlCategoryAbuse {
+    height: 30px;
+}
+
+.submitAbuse a:hover {
+    background-color: #0f7ea2;
+}
+
+.submitAbuse span {
+    display: block;
+    float: left;
+    width: 200px;
+    margin-top: 12px;
+    margin-left: 20px;
+    color: #ff7373;
+    font-size: 14px;
+    height: 20px;
+    line-height: 20px;
+}
+
+.msg {
+    display: block;
+    float: left;
+    font-size: 15px;
+    width: 100%;
+    text-align: center;
+}
+
+.fb-comments iframe {
+    max-width: inherit;
+}
+
+#spnAVGRating {
+    background-image: url("/images/social/rating-star.png");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    color: #000;
+    display: block;
+    float: left;
+    font-weight: bold;
+    line-height: 45px;
+    text-align: center;
+    width: 45px;
+    margin-top: 30px;
+}
+
+.rateit {
+    display: -moz-inline-box;
+    display: inline-block;
+    position: relative;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+    width: 100%;
+    text-align: center;
+    margin-top: -15px;
+}
+
+#socialHolder {
+    display: none;
+    margin-left: 0;
+    position: relative;
+    width: 75%;
+    margin-top: 10px;
+}
+
+.yourRating {
+    color: #eee;
+    display: block;
+    float: left;
+    font-size: 14px;
+    height: 20px;
+    line-height: 85px;
+    text-align: center;
+    padding-left: 10px;
+    width: 160px;
+}
+
+.chanBoxtitleAdjust {
+    padding-top: 70%;
+}
+
+
+.browseChannels .divChannel {
+    background-color: #ECECEC;
+    border: 1px solid #2A99BD;
+    border-radius: 5px;
+    float: left;
+    margin: 6px;
+    min-width: 130px;
+    padding: 0.5%;
+    width: 171px;
+}
+
+    .browseChannels .divChannel a {
+        color: #2A99BD;
+        font-size: 15px;
+        font-weight: normal;
+        overflow: hidden;
+        text-decoration: none;
+        text-overflow: ellipsis;
+        text-transform: capitalize;
+        white-space: nowrap;
+        width: 150px;
+    }
+
+        .browseChannels .divChannel a.comingSoon {
+            color: #95ccdd;
+        }
+
+    .browseChannels .divChannel span {
+        clear: both;
+        color: #777;
+        display: block;
+        float: left;
+        font-size: 12px;
+        line-height: 15px;
+    }
+
+        .browseChannels .divChannel span.comingSoon {
+            color: #bbb;
+        }
+
+.divChannel span em {
+    color: #2A99BD;
+}
+
+.browseChannels .divChannel img {
+    border: 1px solid #f9f9f9;
+    display: block;
+    float: left;
+    height: 122px;
+    margin-bottom: 10px;
+    margin-top: 1px;
+    width: 100%;
+    border-radius: 3px;
+}
+
+/*BROWSE CHANNEL*/
+.browseChannels #lblmessage {
+    color: #000;
+    display: block;
+    font-size: 20px;
+    height: 20px;
+    line-height: 300px;
+    margin: auto;
+    text-align: center;
+    width: 100%;
+}
+
+.browseChannels .spnMsg {
+    float: left;
+    display: block;
+    width: 150px;
+    font-size: 12px;
+    text-transform: capitalize;
+    margin-top: 10px;
+}
+
+.browseChannels .red.spnMsg {
+    color: #ff6a00;
+}
+
+.browseChannels .green.spnMsg {
+    color: green;
+}
+
+.browseChannels .channelTiming {
+    background-color: #F00;
+    border-top-left-radius: 10px;
+    bottom: 0px;
+    color: #CCC;
+    display: block;
+    float: left;
+    font-size: 13px;
+    font-weight: bold;
+    height: 15px;
+    left: 150px;
+    opacity: 0.7;
+    position: absolute;
+    text-align: center;
+    width: 55px;
+    top: 55px;
+}
+
+.sideSchedule .playingNowShow {
+    background: #ff4b00 none repeat scroll 0 0;
+    bottom: 0;
+    color: #fff;
+    display: none;
+    font-size: 12px;
+    font-weight: bold;
+    height: 15px;
+    left: 0;
+    line-height: 15px;
+    opacity: 0.7;
+    position: absolute;
+    text-align: center;
+    width: 120px;
+}
+
+.sideSchedule .playingNextShow {
+    background: #22cb71;
+    bottom: 0;
+    color: #fff;
+    display: none;
+    font-size: 12px;
+    font-weight: bold;
+    height: 15px;
+    left: 0;
+    line-height: 15px;
+    opacity: 0.7;
+    position: absolute;
+    text-align: center;
+    width: 120px;
+}
+
+#tvGuideControl {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background-image: url(/images/00075.png);
+    background-repeat: repeat;
+    min-height: 200px;
+    z-index: 99;
+    max-height: 500px;
+}
+    #tvGuideControl.keepGuideOpen {
+        width: 100%;
+        position: inherit;
+        bottom: 0;
+        background-image: url(/images/00075.png);
+        background-repeat: repeat;
+        min-height: 235px;
+        height: 235px;
+        z-index: 99;
+        max-height: 500px;
+        height: auto;
+        display: block;
+        float: left;
+        overflow-y:auto;
+    }
+
+.embeddedViewHolder .TLchannelInfoHolder {
+    position: absolute;
+    width: 280px;
+    height: 230px;
+    background-color: #0d3340;
+    border: 3px solid #111;
+    z-index: 300;
+    top: 40px;
+    right: 0;
+    box-shadow: 1px 2px 20px #111;
+    margin-left: 0;
+    left: inherit;
+}
+
+.tvguideshort {
+    width: 78%;
+}
+
+#tvguide {
+    display: block;
+    float: left;
+    width: 100%;
+}
+
+.vis-timeline {
+    border: 1px solid #333 !important;
+    font-family: Roboto-Regular,'Helvetica Neue',Helvetica,Arial,sans-serif;
+    background-color: #333;
+}
+
+.vis-foreground .vis-group {
+    border-bottom: none;
+    border: none !important;
+    height: 40px !important;
+    line-height: 40px;
+}
+
+.vis-item {
+    border: 1px solid #333 !important;
+    background-color: #555 !important;
+    height: 37px!important;
+    line-height: 37px;
+}
+
+    .vis-item .vis-item-content {
+        color: #fff!important;
+    }
+
+.vis-panel.vis-bottom, .vis-panel.vis-center, .vis-panel.vis-left, .vis-panel.vis-right, .vis-panel.vis-top {
+    border: 1px #555 !important;
+}
+
+.vis-time-axis .vis-text {
+     color: #1dbdf8 !important;
+    font-weight: bold;
+    font-size: 11px;
+    text-transform: uppercase;
+}
+
+.vis-labelset .vis-label {
+    border-bottom: 1px solid #000 !important;
+    background: #0f4a5d;
+    height: 40px !important;
+    line-height: 40px;
+}
+
+.vis-item.vis-range {
+    top: 0 !important;
+    border: 1px solid #555;
+    box-sizing: content-box !important;
+    border-radius: 0;
+}
+
+
+
+#contentWrapper {
+    background-color: #111;
+    position: relative;
+    margin: auto;
+}
+
+#channelPasswordBox {
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    width: 400px;
+    border: 2px solid #2a99bd;
+    background-color: #f3f3f3;
+    padding: 20px;
+    background: #eee;
+    height: 100px;
+}
+
+.popupHeaderEmbedded {
+    font-size: 17px;
+    line-height: 30px;
+}
+
+.btnPasswordValidOK {
+    display: block;
+    float: left;
+    width: 37px;
+    height: 37px;
+    line-height: 37px;
+    text-transform: capitalize;
+    background: #2a99bd;
+    text-align: center;
+    color: #fff;
+    margin-left: 10px;
+}
+
+    .btnPasswordValidOK:hover {
+        background: #1f677e;
+    }
+
+#channelPasswordInput {
+    width: 280px;
+    height: 37px;
+    border: 1px solid #ddd;
+    line-height: 37px;
+    padding-left: 10px;
+    float: left;
+}
+
+#passMessage {
+    color: #f25d06;
+    display: block;
+    font-size: 16px;
+    height: 15px;
+    line-height: 15px;
+    margin-top: 5px;
+    float: left;
+}
+
+
+.placeholderImage {
+    height: auto;
+    width: 100%;
+    margin-bottom: 5px;
+    display: none;
+}
+/*BROWSE CHANNEL*/
+
+.muteOnOff {
+    display: block;
+    float: left;
+    width: 100%;
+    height: 50px;
+    position: relative;
+    background-color: #000;
+}
+
+.webHolderLeftChanel {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 18%;
+    min-width: 290px;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+#logoHolder {
+    width: 100%;
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.controlsHolder {
+    width: 100% !important;
+    position: fixed;
+    margin: 0 !important;
+    height: 50px;
+    background-image: url(/images/00075.png);
+    background-repeat: repeat;
+    display: block;
+    bottom: 0;
+    line-height: 50px;
+}
+
+.TLNavUL {
+    display: block;
+
+}
+.TLNavli {
+    display: none;
+    float: left;
+    width: 45px;
+    background: #555;
+    margin-top: 3px;
+    cursor: pointer;
+    border-top-right-radius: 8px;
+    background-image: url(/images/TV-Guide.png);
+    background-position: 5px;
+    background-repeat: no-repeat;
+    background-size: 35px;
+    height: 37px;
+}
+    .TLNavli:hover {
+        background-color: #222;
+    }
+.info {
+    display: none;
+}
+
+
+
+#controls {
+    max-width: 900px;
+    margin: auto;
+}
+
+#logoHolder a {
+    display: block;
+    color: #ccc;
+    width: 100%;
+    line-height: 30px;
+    text-align: left;
+    font-size: 13px;
+    box-sizing: border-box;
+}
+
+    #logoHolder a:hover {
+        color: #fff;
+    }
+
+    #logoHolder a strong {
+        font-style: normal;
+        font-size: 13px;
+        color: #ddd;
+    }
+
+.PLAY-ICON {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    z-index: 2;
+}
+
+    .PLAY-ICON:hover {
+        opacity: 1;
+    }
+
+.embeddErrorMessage {
+    color: #fff;
+    display: block;
+    height: 750px;
+    line-height: 750px;
+    margin: auto;
+    text-align: center;
+    width: 1024px;
+}
+
+#controls {
+    width: 600px;
+    margin: auto;
+    height: 50px;
+}
+
+    #controls div {
+        float: left;
+        margin-left: 15px;
+    }
+
+#currTime span {
+    display: block;
+    float: left;
+    color: #fff;
+    margin-left: 10px;
+}
+
+#currTime input#progress-bar {
+    float: left;
+    width: 450px;
+}
+
+
+.material-icons {
+    color: #fff;
+    direction: ltr;
+    display: inline-block;
+    font-family: "Material Icons";
+    font-feature-settings: "liga";
+    font-size: 17px!important;
+    font-style: normal;
+    font-weight: normal;
+    letter-spacing: normal;
+    line-height: 1;
+    overflow-wrap: normal;
+    text-transform: none;
+    white-space: nowrap;
+}
+
+.hp_slide {
+    background: #fff none repeat scroll 0 0;
+    height: 3px;
+    margin-top: 20px;
+    width: 450px;
+}
+
+#controls div.hp_range {
+    width: 0;
+    background: #2db9e7;
+    height: 3px;
+    margin-left: 0px;
+}
+
+#ancLive {
+    display: none;
+}
+
+.TLVideoInfoHolderEmbedded {
+    display: block;
+    position: absolute;
+    background-color: #0d3340;
+    box-shadow: 1px 2px 20px #111;
+    right: 0;
+    top: 41px;
+    height: 230px;
+    z-index: 9;
+    width: 230px!important;
+    height: 100%;
+}
+
+    .TLVideoInfoHolderEmbedded .TLleft {
+    display: none;
+    }
+    .TLVideoInfoHolderEmbedded .TLRight {
+    display: block;
+    float: left;
+    width: 100%;
+    padding-left: 1%;
+}
+
+    .TLVideoInfoHolderEmbedded .TLDescription {
+    max-height: 120px;
+    font-size: 13px;
+    color: #eee;
+    line-height: 19px;
+    }
+
+    .TLVideoInfoHolderEmbedded .TLimage {
+    width: 100%;
+    height: 100%;
+    background-size: 100%;
+    margin-top: 0;
+    float: left;
+    }
+
+.closeGuide {
+    width: 40px;
+    height: 40px;
+    float: right;
+    background-image: url(/images/close_pop-white.png);
+    background-size: 32px;
+    background-repeat: no-repeat;
+}
+
+.OpenPopupVideoInfo {
+    width: 0%;
+    height: 230px;
+    background: #0d3340;
+    position: absolute;
+    right: 0;
+    z-index: 999;
+    top: 41px;
+    color: transparent;
+    font-size: 11px;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 20px;
+    cursor: pointer;
+    height: 100%;
+    background-image: url(/images/arrows/double-Left.png);
+    background-size: 20px;
+    background-position: center 10px;
+    background-repeat: no-repeat;
+    box-shadow: 0px 2px 35px #000;
+}
+
+.TLVideoInfoHolderEmbedded .TLvideoClose {
+    display: block;
+    width: 100%;
+    float: left;
+    color: #fff;
+    position: relative;
+    padding-left: 35px;
+    margin-top: -12px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 13px;
+    font-weight: normal;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    background-image: none;
+    cursor: pointer;
+    background-color: #09212a;
+    margin-bottom: 5px;
+    background-image: url(/images/arrows/double-Right.png);
+    background-size: 20px;
+    background-position: 7px 4px;
+}
+
+#ancShowTvGuide {
+    display: block;
+    float: left;
+    color: transparent;
+    background: red;
+    height: 30px;
+    line-height: 30px;
+    padding: 2px;
+    border-radius: 4px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+
+
+
+#mainWrapper {
+    padding: 0;
+    padding-top: 37px;
+}
+
+
+
+@media (max-width: 768px) {
+    #tvGuideControl {
+    bottom: 0;
+}
+
+    #ancShowTvGuide {
+    float: left;
+    color: #fff;
+    background: red;
+    height: 27px;
+    line-height: 27px;
+    padding: 2px;
+    border-radius: 4px;
+    padding-left: 5px;
+    padding-right: 5px;
+    position: absolute;
+    top: 2px;
+    right: 4px;
+    font-size: 14px;
+}
+
+    .embeddedViewHolder {
+        position: relative;
+    }
+
+    .controlsHolder {
+    position: static;
+    margin: 0 !important;
+    display: block;
+    bottom: auto;
+    background: #333;
+    height: initial;
+    float: left;
+    }
+
+
+    .hp_slide {
+    width: 300px;
+}
+}
+
+@media (max-width: 520px) {
+    
+    .btnPlayLiveVideo.material-icons {
+    width: 20px;
+    font-size: 20px!important;
+}
+
+}
+
+
+
+@media (max-width: 460px) {
+        .hp_slide {
+    width: 200px;
+}
+        #tvGuideControl {
+    max-height: 280px;
+}
+}
+
+@media (max-width: 320px) {
+        .hp_slide {
+    width: 180px;
+}
+
+        #tvGuideControl {
+    max-height: 255px;
+}
+}

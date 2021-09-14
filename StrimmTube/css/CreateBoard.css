@@ -1,0 +1,264 @@
+﻿body {
+}
+        /*Valentina*/
+        .file {
+            display: block;
+            float: left;
+        }
+        .userName {
+            border-color: #ECECEC #CECECE #CECECE #ECECEC;
+            border-radius: 5px 5px 5px 5px;
+            border-style: solid;
+            border-width: 3px;
+            height: 25px;
+            margin-left: 0;
+            margin-top: 10px;
+            clear: both;
+            float: left;
+        }
+        #divBoardDetails .spnTitle {
+            margin-top: 10px;
+        }
+        #divImgPost .myButtons,
+        #divBoardImg .myButtons {
+            float: left;
+            margin-top: 10px;
+        }
+
+        #divBoardContent_Update{
+            width: 940px;
+            margin: auto;
+            height: auto;
+            min-height: 600px;
+        }
+
+        #divBoardContent {
+            width: 940px;
+            margin: auto;
+            height: auto;
+            min-height: 600px;
+        }
+        /* ------------------------------- TitleUrlHolder ------------------------------- */
+        #divTitleUrlHolder {
+            background-color: #999;
+            display: block;
+            height: 27px;
+            margin-top: 10px;
+            padding: 8px;
+            border-radius: 6px;
+            -webkit-box-shadow: inset 0px 0px 11px #333;
+            -moz-box-shadow: inset 0px 0px 11px #333;
+            -ms-box-shadow: inset 0px 0px 11px #333;
+            -o-box-shadow: inset 0px 0px 11px #333;
+            box-shadow: inset 0px 0px 11px #333;
+        }
+        .pageTitle {
+            color: #F9F9F9;
+            display: block;
+            float: left;
+            font-size: 22px;
+            font-weight: bold;
+            line-height: 30px;
+            margin-left: 5px;
+            text-shadow: 1px 0 2px #000;
+        }
+        #divUrl {
+            display: block;
+            float: right;
+            line-height: 30px;
+            padding-left: 10px;
+            width: 480px;
+        }
+        #spnCurrUrl {
+            color: #ECECEC;
+            
+            font-size: 15px;
+        }
+        #lblUrl {
+            color: #F9F9F9;
+            
+            font-size: 16px;
+            font-style: italic;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        /* ------------------------------- topBackTo-BoardLiveView------------------------------- */
+        #divBoardTop {
+            height: 40px;
+            width: 100%;
+            margin-top: 5px;
+        }
+        #divBackTo {
+            float: left;
+        }
+        #divBoardLiveView {
+            float: right;
+        }
+        #divBoardTop a {
+            display: block;
+            text-decoration: none;
+            color: #000000;
+            text-align: center;
+        }
+        #divBackTo,
+        #divBoardLiveView {
+            background-color: #eee;
+            display: block;
+            height: 20px;
+            padding: 5px;
+            border-radius: 6px;
+            -webkit-box-shadow: inset 0px 0px 11px #ccc;
+            -moz-box-shadow: inset 0px 0px 11px #ccc;
+            -ms-box-shadow: inset 0px 0px 11px #ccc;
+            -o-box-shadow: inset 0px 0px 11px #ccc;
+            box-shadow: inset 0px 0px 11px #ccc;
+            width: 150px;
+            line-height: 20px;
+            font-size: 13px;
+        }
+        /* ------------------------------- BoardDetails------------------------------- */
+        #divBoardDetails {
+            clear: both;
+            margin-top: 25px;
+        }
+            #divBoardDetails .left {
+                float: left;
+                margin-bottom: 15px;
+                margin-top: 15px;
+            }
+            #divBoardDetails .right {
+                float: right;
+            }
+        /* ------------------------------- title------------------------------- */
+        #divTitle {
+            margin-top: 10px;
+            padding: 10px;
+            width: 650px;
+        }
+        .spnTitle {
+            display: block;
+            float: left;
+            clear: both;
+            text-transform: uppercase;
+            font-size: 15px;
+            margin-bottom: 5px;
+        }
+        #txtTitle {
+            border-color: #ECECEC #CECECE #CECECE #ECECEC;
+            border-style: solid;
+            border-width: 3px;
+            height: 25px;
+            margin-left: 0;
+            margin-top: 10px;
+            width: 650px;
+            border-radius: 5px;
+        }
+            #txtTitle:focus {
+                border-color: #ECECEC #CECECE #CECECE #000;
+                border-style: solid;
+            }
+        .spnExplantaion {
+            display: block;
+            float: left;
+            font-size: 12px;
+            clear: both;
+            color: #999;
+            line-height: 17px;
+        }
+            .spnExplantaion em {
+                font-size: 12px;
+            }
+        .spnCount {
+            font-size: 10px;
+            display: block;
+            padding: 2px;
+            color: #999;
+            /*Valentina*/
+            height: 2px;
+        }
+        /* -------------------------------story------------------------------- */
+        #divStory {
+            height: auto;
+            margin-top: 10px;
+            min-height: 180px;
+            padding: 10px;
+            width: 650px;
+        }
+        #txtStory {
+            border-color: #ECECEC #CECECE #CECECE #ECECEC;
+            border-style: solid;
+            border-width: 3px;
+            height: 25px;
+            margin-left: 0;
+            margin-top: 10px;
+            width: 650px;
+            min-height: 120px;
+            border-radius: 5px;
+        }
+        /* ------------------------------- post------------------------------- */
+        #divTodayPost {
+            clear: both;
+            float: right;
+            height: auto;
+            margin-bottom: 20px;
+            margin-top: 10px;
+            padding: 10px;
+            width: 650px;
+        }
+        #divPost {
+        }
+        #divImgPost {
+            float: left;
+        }
+        #imgPost {
+            display: block;
+            width: 100px;
+            height: 100px;
+            background-color: #ff6a00;
+        }
+        #txtPost {
+            border-color: #ECECEC #CECECE #CECECE #ECECEC;
+            border-style: solid;
+            border-width: 3px;
+            height: 25px;
+            margin-left: 0;
+            margin-top: 10px;
+            width: 650px;
+            min-height: 120px;
+            border-radius: 5px;
+        }
+        .txtMarginLeft {
+            margin-left: 5px;
+        }
+        #divSave {
+            width: 100%;
+            text-align: right;
+            margin-top: 30px;
+            clear: both;
+        }
+        #divFooter {
+            position: relative;
+        }
+        .myButtons {
+            font-size: 15px;
+            line-height: 25px;
+            padding-left: 8px;
+            padding-right: 8px;
+            background-color: #fc0;
+            border: 1px solid #fc0;
+            border-radius: 5px;
+            color: #000;
+            -webkit-box-shadow: 2px 2px 6px #333;
+            -moz-box-shadow: 2px 2px 6px #333;
+            -ms-box-shadow: 2px 2px 6px #333;
+            -o-box-shadow: 2px 2px 6px #333;
+            box-shadow: 2px 2px 6px #333;
+            height: 25px;
+            float: right;
+            width: 150px;
+        }
+            .myButtons:hover {
+                background-color: #000;
+                border: 1px solid #000;
+                color: #fc0;
+            }

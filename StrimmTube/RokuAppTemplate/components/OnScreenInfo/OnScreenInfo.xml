@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="OnScreenInfo" extends="Group">
+  <interface>
+    <field id="channel" type="node" onChange="onContentChange" />
+    <field id="program" type="node" onChange="onProgramChange" />
+    <field id="width" type="float" onChange="onSizeChange" />
+    <field id="height" type="float" onChange="onSizeChange" />
+    <field id="hideDelay" type="int" alwaysnotify="true" onChange="restartHideTimer" />
+    <field id="programInfoGroup" alias="programInfoGroup.visible" />
+  </interface>
+
+  <script type="text/brightscript" uri="./OnScreenInfo.brs" />
+  <script type="text/brightscript" uri="pkg:/components/nodeUtils.brs" />
+  <script type="text/brightscript" uri="pkg:/source/generalUtils.brs" />
+
+  <children>
+    <Poster id="playerOverlayGradient" uri="pkg:/images/playerOverlayGradient.png" />
+    <LayoutGroup id="channelGroup" layoutDirection="horiz" vertAlignment="center" itemSpacings="[20, 40]">
+<!--       <Poster id="favStar" loadDisplayMode="scaleToFit" blendColor="0xfac90d" uri="pkg:/images/star.png" opacity="1" /> -->
+      <Group>
+        <Label id="channelName" vertAlign="center" horizAlign="center" font="font:SmallestBoldSystemFont" wrap="true" lineSpacing="0" />
+        <Poster id="channelIcon" loadDisplayMode="scaleToFit" />
+      </Group>
+      <LayoutGroup id="programInfoGroup" layoutDirection="vert" horizAlignment="left" vertAlignment="top" itemSpacings="[4, 12]" >
+        <Label id="programTitle" font="font:SmallBoldSystemFont" />
+        <LayoutGroup layoutDirection="horiz" horizAlignment="left" vertAlignment="top" itemSpacings="[0]" >
+          <Label id="programSubtitle" font="font:SmallestBoldSystemFont" />
+        </LayoutGroup>
+      </LayoutGroup>
+    </LayoutGroup>
+  </children>
+</component>

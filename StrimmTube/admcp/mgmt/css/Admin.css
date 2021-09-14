@@ -1,0 +1,111 @@
+﻿
+body {
+    font-family: 'Source Sans Pro','Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+
+
+#spnAdmin {
+    color: #2A99BD;
+    margin: auto;
+    height: 60px;
+    line-height: 60px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#menuTopList ul {
+    background-color: #2a99bd;
+    border-radius: 0;
+    display: block;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-top: 1px solid #2a99bd;
+    width: 300px;
+}
+
+
+#divTopMenuHolder #ancMenu {
+    display: block;
+    height: 45px;
+    width: 135px;
+}
+
+#divTopNavAfterLogin {
+    width: 100%;
+}
+#divTopNavAfterLoginAdmin {
+  width: 100%;
+}
+
+#divDmainNameHolder {
+    display: block;
+    float: right;
+}
+
+#spnHello {
+    margin-top: 20px;
+    width: auto;
+}
+
+#divTopMenuHolder #ancMenu:hover {
+    color: #2a99bd;
+}
+
+#divTopMenuAdmin {
+    color: #555;
+    display: block;
+    font-weight: normal;
+    margin-right: 5px;
+    margin-top: 35px;
+    text-transform: capitalize;
+    background-image: url(/../../images/menu/menu-black.png);
+    background-repeat: no-repeat;
+    width: 27px;
+    height: 27px;
+    background-size: 100%;
+}
+
+#divTopWrapperAdmin {
+    background: #fff none repeat scroll 0 0;
+    border-bottom: 2px solid #2a99bd;
+    box-shadow: 0 0 5px #999;
+    height: 70px;
+    position: relative;
+    width: 100%;
+    z-index: 9999;
+}
+
+.adminHomeHolder {
+    background-image: url("/images/adminHomeHolder.jpg");
+    background-size: cover;
+    height: 600px;
+    position: relative;
+    width: 100%;
+}
+
+
+.adminHomeTitle {
+    color: #fff;
+    font-size: 65px;
+    font-weight: normal;
+    height: 200px;
+    letter-spacing: 1px;
+    line-height: 250px;
+    margin: auto;
+    text-align: center;
+    width: 600px;
+}
+
+
+#btnSignOut {
+    display: block;
+    float: right;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 10px;
+    background: #2a99bd;
+    color: #fff;
+    width: 120px;
+    height: 40px;
+    border: none;
+}

@@ -1,0 +1,661 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <Name>Strimm.SqlDb</Name>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>4.1</ProjectVersion>
+    <ProjectGuid>{53c8a033-195f-460c-a351-f07a7d747c84}</ProjectGuid>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql110DatabaseSchemaProvider</DSP>
+    <OutputType>Database</OutputType>
+    <RootPath>
+    </RootPath>
+    <RootNamespace>Strimm.SqlDb</RootNamespace>
+    <AssemblyName>Strimm.SqlDb</AssemblyName>
+    <ModelCollation>1033,CI</ModelCollation>
+    <DefaultFileStructure>BySchemaAndSchemaType</DefaultFileStructure>
+    <DeployToDatabase>True</DeployToDatabase>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetLanguage>CS</TargetLanguage>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <SqlServerVerification>False</SqlServerVerification>
+    <IncludeCompositeObjects>True</IncludeCompositeObjects>
+    <TargetDatabaseSet>True</TargetDatabaseSet>
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+    <DefaultCollation>SQL_Latin1_General_CP1_CI_AS</DefaultCollation>
+    <DefaultFilegroup>PRIMARY</DefaultFilegroup>
+    <TargetDatabase>Strimm.SqlDb</TargetDatabase>
+    <DefaultSchema>strimm</DefaultSchema>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <SqlTargetName>Strimm</SqlTargetName>
+  </PropertyGroup>
+  <!-- VS10 without SP1 will not have VisualStudioVersion set, so do that here -->
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <!-- Default to the v10.0 targets path if the targets file for the current VS version is not found -->
+    <SSDTExists Condition="Exists('$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets')">True</SSDTExists>
+    <VisualStudioVersion Condition="'$(SSDTExists)' == ''">10.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <ItemGroup>
+    <Folder Include="Properties" />
+    <Folder Include="dbo\" />
+    <Folder Include="dbo\Tables\" />
+    <Folder Include="strimm\" />
+    <Folder Include="strimm\Tables\" />
+    <Folder Include="strimm\Views\" />
+    <Folder Include="dbo\Views\" />
+    <Folder Include="Security\" />
+    <Folder Include="strimm\Functions\" />
+    <Folder Include="strimm\Stored Procedures\" />
+    <Folder Include="dbo\Stored Procedures\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="dbo\Tables\AdPage.sql" />
+    <Build Include="dbo\Tables\PrivacyLevelDefinition.sql" />
+    <Build Include="dbo\Tables\aspnet_Applications.sql" />
+    <Build Include="dbo\Tables\aspnet_Membership.sql" />
+    <Build Include="dbo\Tables\SnAlbum.sql" />
+    <Build Include="dbo\Tables\SnBlockUsers.sql" />
+    <Build Include="dbo\Tables\aspnet_Paths.sql" />
+    <Build Include="dbo\Tables\SnComment.sql" />
+    <Build Include="strimm\Tables\AuthenticationLog.sql" />
+    <Build Include="dbo\Tables\aspnet_PersonalizationAllUsers.sql" />
+    <Build Include="strimm\Tables\Category.sql" />
+    <Build Include="dbo\Tables\aspnet_PersonalizationPerUser.sql" />
+    <Build Include="dbo\Tables\SnDiscussionBoard.sql" />
+    <Build Include="strimm\Tables\ChannelSchedule.sql" />
+    <Build Include="dbo\Tables\aspnet_Profile.sql" />
+    <Build Include="dbo\Tables\aspnet_Roles.sql" />
+    <Build Include="dbo\Tables\SnDiscussionBoardInRole.sql" />
+    <Build Include="strimm\Tables\ChannelScheduleVideoTube.sql" />
+    <Build Include="dbo\Tables\SnDiscussionBoardModerator.sql" />
+    <Build Include="dbo\Tables\aspnet_SchemaVersions.sql" />
+    <Build Include="dbo\Tables\SnDiscussionMessage.sql" />
+    <Build Include="dbo\Tables\aspnet_Users.sql" />
+    <Build Include="strimm\Tables\ChannelSubscription.sql" />
+    <Build Include="dbo\Tables\SnDiscussionTopic.sql" />
+    <Build Include="strimm\Tables\ChannelTube.sql" />
+    <Build Include="dbo\Tables\aspnet_UsersInRoles.sql" />
+    <Build Include="strimm\Tables\ChannelTubeVideoTube.sql" />
+    <Build Include="dbo\Tables\aspnet_WebEvent_Events.sql" />
+    <Build Include="dbo\Tables\SnEvent.sql" />
+    <Build Include="dbo\Tables\Blog.sql" />
+    <Build Include="dbo\Tables\SnEventType.sql" />
+    <Build Include="dbo\Tables\BlogCategory.sql" />
+    <Build Include="dbo\Tables\SnFile.sql" />
+    <Build Include="dbo\Tables\BlogEditor.sql" />
+    <Build Include="dbo\Tables\BlogPost.sql" />
+    <Build Include="dbo\Tables\SnFriend.sql" />
+    <Build Include="strimm\Tables\Visitor.sql" />
+    <Build Include="dbo\Tables\SnFriendList.sql" />
+    <Build Include="strimm\Tables\ReservedName.sql" />
+    <Build Include="dbo\Tables\SnFriendListMember.sql" />
+    <Build Include="dbo\Tables\SnFriendRequest.sql" />
+    <Build Include="dbo\Tables\SnGroup.sql" />
+    <Build Include="dbo\Tables\BlogPostCategory.sql" />
+    <Build Include="dbo\Tables\SnGroupCategory.sql" />
+    <Build Include="strimm\Tables\User.sql" />
+    <Build Include="dbo\Tables\BlogPostRole.sql" />
+    <Build Include="dbo\Tables\SnGroupMember.sql" />
+    <Build Include="dbo\Tables\Calendar.sql" />
+    <Build Include="dbo\Tables\SnGroupRequest.sql" />
+    <Build Include="strimm\Tables\UserFollower.sql" />
+    <Build Include="dbo\Tables\CalendarEditRole.sql" />
+    <Build Include="dbo\Tables\CalendarEvent.sql" />
+    <Build Include="dbo\Tables\SnMessage.sql" />
+    <Build Include="strimm\Tables\UserMembership.sql" />
+    <Build Include="dbo\Tables\SnMessageRecipient.sql" />
+    <Build Include="dbo\Tables\CalendarEventEntry.sql" />
+    <Build Include="dbo\Tables\SnNote.sql" />
+    <Build Include="strimm\Tables\UserProfile.sql" />
+    <Build Include="dbo\Tables\CalendarEventRecurringDefinition.sql" />
+    <Build Include="dbo\Tables\SnRating.sql" />
+    <Build Include="strimm\Tables\VideoProvider.sql" />
+    <Build Include="dbo\Tables\SnRelationship.sql" />
+    <Build Include="dbo\Tables\SnSubscriber.sql" />
+    <Build Include="strimm\Tables\VideoRoomTube.sql" />
+    <Build Include="dbo\Tables\SnTag.sql" />
+    <Build Include="strimm\Tables\VideoRoomTubeVideoTube.sql" />
+    <Build Include="dbo\Tables\TermsAndConditions.sql" />
+    <Build Include="strimm\Tables\VideoTube.sql" />
+    <Build Include="dbo\Tables\UserAvatar.sql" />
+    <Build Include="dbo\Tables\UserProfile.sql" />
+    <Build Include="dbo\Tables\CalendarEventRecurringDefinitionType.sql" />
+    <Build Include="dbo\Tables\CalendarModerator.sql" />
+    <Build Include="dbo\Tables\UserSocialIdentity.sql" />
+    <Build Include="dbo\Tables\CalendarViewRole.sql" />
+    <Build Include="dbo\Tables\Version.sql" />
+    <Build Include="dbo\Tables\Campaign.sql" />
+    <Build Include="strimm\Tables\ApplicationLog.sql" />
+    <Build Include="dbo\Tables\Document.sql" />
+    <Build Include="dbo\Tables\Language.sql" />
+    <Build Include="dbo\Tables\List.sql" />
+    <Build Include="dbo\Tables\ListItem.sql" />
+    <Build Include="dbo\Tables\ListItemLocalization.sql" />
+    <Build Include="dbo\Tables\LocalizationBinary.sql" />
+    <Build Include="dbo\Tables\LocalizationSource.sql" />
+    <Build Include="dbo\Tables\LocalizationString.sql" />
+    <Build Include="dbo\Tables\Navigation.sql" />
+    <Build Include="dbo\Tables\NavigationLocalization.sql" />
+    <Build Include="dbo\Tables\NavigationRole.sql" />
+    <Build Include="dbo\Tables\NewsCategory.sql" />
+    <Build Include="dbo\Tables\NewsCategoryInRole.sql" />
+    <Build Include="dbo\Tables\NewsCategoryLocalization.sql" />
+    <Build Include="strimm\Tables\Country.sql" />
+    <Build Include="dbo\Tables\NewsCategoryTemplate.sql" />
+    <Build Include="strimm\Tables\State.sql" />
+    <Build Include="dbo\Tables\NewsFile.sql" />
+    <Build Include="dbo\Tables\NewsItem.sql" />
+    <Build Include="dbo\Tables\NewsItemLocalization.sql" />
+    <Build Include="dbo\Tables\Newsletter.sql" />
+    <Build Include="dbo\Tables\NewsletterLog.sql" />
+    <Build Include="dbo\Tables\NewsletterRole.sql" />
+    <Build Include="dbo\Tables\NewsMetaIgnoredWord.sql" />
+    <Build Include="dbo\Tables\NewsPublishQueue.sql" />
+    <Build Include="dbo\Tables\oaConsumer.sql" />
+    <Build Include="strimm\Tables\OverrideCode.sql" />
+    <Build Include="dbo\Tables\oaToken.sql" />
+    <Build Include="dbo\Tables\Page.sql" />
+    <Build Include="dbo\Tables\PageEditRole.sql" />
+    <Build Include="dbo\Tables\PageLocalization.sql" />
+    <Build Include="strimm\Tables\UserVideoArchive.sql" />
+    <Build Include="dbo\Tables\PageRole.sql" />
+    <Build Include="dbo\Tables\Poll.sql" />
+    <Build Include="dbo\Tables\PollAnswer.sql" />
+    <Build Include="dbo\Tables\PollAnswerLocalization.sql" />
+    <Build Include="dbo\Tables\PollLocalization.sql" />
+    <Build Include="dbo\Tables\Ad.sql" />
+    <Build Include="dbo\Tables\PrivacyLevel.sql" />
+    <Build Include="strimm\Views\vw_VideosInVideoRoom.sql" />
+    <Build Include="strimm\Views\vw_VideoSchedules.sql" />
+    <Build Include="strimm\Views\vw_Users.sql" />
+    <Build Include="strimm\Views\vw_Chennels.sql" />
+    <Build Include="strimm\Views\vw_ChannelSchedules.sql" />
+    <Build Include="strimm\Views\vw_VideoTubes.sql" />
+    <Build Include="dbo\Views\vw_aspnet_Applications.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\vw_aspnet_Users.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\vw_aspnet_MembershipUsers.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\vw_aspnet_Profiles.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\vw_aspnet_Roles.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\vw_aspnet_UsersInRoles.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\FriendSuggestionTypedViewEntry.sql" />
+    <Build Include="dbo\Views\vw_aspnet_WebPartState_Paths.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\vw_aspnet_WebPartState_Shared.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\vw_aspnet_WebPartState_User.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="Security\aspnet_Membership_FullAccess.sql" />
+    <Build Include="Security\aspnet_Membership_BasicAccess.sql" />
+    <Build Include="Security\aspnet_Membership_ReportingAccess.sql" />
+    <Build Include="Security\aspnet_Profile_FullAccess.sql" />
+    <Build Include="Security\aspnet_Profile_BasicAccess.sql" />
+    <Build Include="Security\aspnet_Profile_ReportingAccess.sql" />
+    <Build Include="Security\aspnet_Roles_FullAccess.sql" />
+    <Build Include="Security\aspnet_Roles_BasicAccess.sql" />
+    <Build Include="Security\aspnet_Roles_ReportingAccess.sql" />
+    <Build Include="Security\aspnet_Personalization_FullAccess.sql" />
+    <Build Include="Security\aspnet_Personalization_BasicAccess.sql" />
+    <Build Include="Security\aspnet_Personalization_ReportingAccess.sql" />
+    <Build Include="Security\aspnet_WebEvent_FullAccess.sql" />
+    <Build Include="Security\strimm_dbo.sql" />
+    <Build Include="Security\strimm_dbo_1.sql" />
+    <Build Include="Security\RoleMemberships.sql" />
+    <Build Include="strimm\Functions\SplitString.sql" />
+    <Build Include="strimm\Functions\CalculateVideoTubeSchedules.sql" />
+    <Build Include="strimm\Stored Procedures\UpdateVideoTube.sql" />
+    <Build Include="strimm\Stored Procedures\GetAllPublicVideoTubes.sql" />
+    <Build Include="strimm\Stored Procedures\GetVideoTubeByProviderVideoId.sql" />
+    <Build Include="strimm\Stored Procedures\GetPublicVideoTubesByCategoryId.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="strimm\Stored Procedures\GetPublicVideoTubesByVideoProviderId.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="strimm\Stored Procedures\GetVideoTubesByVideoRoomTubeId.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="strimm\Stored Procedures\GetVideoTubesByVideoRoomTubeIdAndCategoryId.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="strimm\Stored Procedures\AddVideoTubeToUserArchive.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="strimm\Stored Procedures\GetVideoTubeFromArchiveByUserIdAndVideoTubeId.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="strimm\Stored Procedures\GetAllArchivedUserVideoTubesByUserId.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="strimm\Stored Procedures\GetAllVideoTubeByChannelTubeId.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="strimm\Stored Procedures\AddVideoTubeToChannelTube.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="strimm\Stored Procedures\DeleteVideoTubeFromChannelTubeById.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="strimm\Stored Procedures\DeleteAllVideoTubesFromChannelTubeByChannelTubeId.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="strimm\Stored Procedures\GetVideoTubesByTitleKeywords.sql" />
+    <Build Include="strimm\Stored Procedures\InsertVideoTube.sql" />
+    <Build Include="strimm\Stored Procedures\GetUserBoardNameByUserId.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="strimm\Stored Procedures\GetNumberOfBoardVisitorsByUserId.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="strimm\Stored Procedures\InsertVisitor.sql" />
+    <Build Include="strimm\Stored Procedures\UpdateVisitor.sql" />
+    <Build Include="strimm\Stored Procedures\DeleteVisitorById.sql" />
+    <Build Include="strimm\Stored Procedures\GetAllChannelVisitorsByChannelTubeId.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="strimm\Stored Procedures\GetAllVisitors.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="strimm\Stored Procedures\GetAllBoardVisitorsByUserId.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="strimm\Stored Procedures\GetChannelScheduleById.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="strimm\Stored Procedures\GetChannelSchedulesByChannelTubeId.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="strimm\Stored Procedures\DeleteChannelScheduleById.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="strimm\Stored Procedures\InsertChannelSchedule.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="strimm\Stored Procedures\GetAllChannelSubscriptionsByChannelTubeId.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="strimm\Stored Procedures\GetChannelSubscriptionByChannelTubeIdAndUserId.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="strimm\Stored Procedures\InsertChannelSubscription.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="strimm\Stored Procedures\DeleteChannelSubscriptionByChannelTubeIdAndUserId.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="strimm\Stored Procedures\DeleteChannelSubscriptionById.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\aspnet_RegisterSchemaVersion.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\aspnet_CheckSchemaVersion.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\aspnet_Applications_CreateApplication.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\aspnet_UnRegisterSchemaVersion.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\aspnet_Users_CreateUser.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\aspnet_Users_DeleteUser.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\aspnet_AnyDataInTables.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="strimm\Stored Procedures\GetAllFeaturedChannelTubes.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="strimm\Stored Procedures\GetChannelTubesByUserId.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\aspnet_Membership_CreateUser.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\aspnet_Membership_GetUserByName.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\aspnet_Membership_GetUserByUserId.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\aspnet_Membership_GetUserByEmail.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="strimm\Stored Procedures\GetChannelTubesByTitleKeywords.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\aspnet_Membership_GetPasswordWithFormat.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="strimm\Stored Procedures\GetChannelTubeById.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\aspnet_Membership_UpdateUserInfo.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="strimm\Stored Procedures\GetChannelTubeByName.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\aspnet_Membership_GetPassword.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="strimm\Stored Procedures\GetChannelTubeByUrl.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\aspnet_Membership_SetPassword.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="strimm\Stored Procedures\GetChannelTubeByChannelScheduleId.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\aspnet_Membership_ResetPassword.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="strimm\Stored Procedures\GetChannelTubesSubscribedByUserByUserId.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\aspnet_Membership_UnlockUser.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="strimm\Stored Procedures\GetChannelTubesByCategoryId.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\aspnet_Membership_UpdateUser.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="strimm\Stored Procedures\InsertChannelTube.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\aspnet_Membership_ChangePasswordQuestionAndAnswer.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="strimm\Stored Procedures\UpdateChannelTube.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\aspnet_Membership_GetAllUsers.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\aspnet_Membership_GetNumberOfUsersOnline.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\aspnet_Membership_FindUsersByName.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\aspnet_Membership_FindUsersByEmail.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="strimm\Stored Procedures\GetCountryById.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="strimm\Stored Procedures\GetStateById.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\aspnet_Profile_GetProperties.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="strimm\Stored Procedures\GetStatesByCountry.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\aspnet_Profile_SetProperties.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="strimm\Stored Procedures\IsReservedName.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\aspnet_Profile_DeleteProfiles.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="strimm\Stored Procedures\GetCategoryById.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\aspnet_Profile_DeleteInactiveProfiles.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\aspnet_Profile_GetNumberOfInactiveProfiles.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\aspnet_Profile_GetProfiles.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\aspnet_UsersInRoles_IsUserInRole.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\aspnet_UsersInRoles_GetRolesForUser.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="strimm\Stored Procedures\GetAllCategories.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\aspnet_Roles_CreateRole.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="strimm\Stored Procedures\GetAllChannelSchedules.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\aspnet_Roles_DeleteRole.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="strimm\Stored Procedures\GetAllChannelSubscriptions.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\aspnet_Roles_RoleExists.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="strimm\Stored Procedures\GetAllChannelTubes.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\aspnet_UsersInRoles_AddUsersToRoles.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\aspnet_UsersInRoles_RemoveUsersFromRoles.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="strimm\Stored Procedures\GetAllCountries.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\aspnet_UsersInRoles_GetUsersInRoles.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="strimm\Stored Procedures\GetAllOverrideCodes.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\aspnet_UsersInRoles_FindUsersInRole.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="strimm\Stored Procedures\GetAllReservedNames.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\aspnet_Roles_GetAllRoles.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="strimm\Stored Procedures\GetAllStates.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="strimm\Stored Procedures\GetUserByAccountNumber.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="strimm\Stored Procedures\GetAllUsers.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="strimm\Stored Procedures\GetAllVideoProviders.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\FriendSuggestion.sql" />
+    <Build Include="strimm\Stored Procedures\GetAllVideoRoomTubes.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="strimm\Stored Procedures\GetUserPoById.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="strimm\Stored Procedures\GetAllVideoTubes.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="strimm\Stored Procedures\DeleteUserById.sql" />
+    <Build Include="dbo\Stored Procedures\aspnet_Personalization_GetApplicationId.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="strimm\Stored Procedures\InsertUserFollower.sql" />
+    <Build Include="dbo\Stored Procedures\aspnet_Paths_CreatePath.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="strimm\Stored Procedures\GetUserByEmail.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="strimm\Stored Procedures\GetUserFollowerByUserIdAndFollowerUserId.sql" />
+    <Build Include="dbo\Stored Procedures\aspnet_PersonalizationAllUsers_GetPageSettings.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="strimm\Stored Procedures\GetUserById.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="strimm\Stored Procedures\DeleteUserFollowerByFollowerUserIdAndUserId.sql" />
+    <Build Include="dbo\Stored Procedures\aspnet_PersonalizationAllUsers_ResetPageSettings.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="strimm\Stored Procedures\GetUsersByUserNameKeywords.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\aspnet_PersonalizationAllUsers_SetPageSettings.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="strimm\Stored Procedures\GetUsersByBoardTitleKeywords.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\aspnet_PersonalizationPerUser_GetPageSettings.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="strimm\Stored Procedures\InsertUser.sql" />
+    <Build Include="dbo\Stored Procedures\aspnet_PersonalizationPerUser_ResetPageSettings.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="strimm\Stored Procedures\UpdateUser.sql" />
+    <Build Include="dbo\Stored Procedures\aspnet_PersonalizationPerUser_SetPageSettings.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="strimm\Stored Procedures\GetVideoRoomTubeById.sql" />
+    <Build Include="dbo\Stored Procedures\aspnet_PersonalizationAdministration_DeleteAllState.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="strimm\Stored Procedures\GetVideoRoomTubeByUserId.sql" />
+    <Build Include="dbo\Stored Procedures\aspnet_PersonalizationAdministration_ResetSharedState.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="strimm\Stored Procedures\GetAllFollowersByUserId.sql" />
+    <Build Include="strimm\Stored Procedures\InsertVideoRoomTube.sql" />
+    <Build Include="dbo\Stored Procedures\aspnet_PersonalizationAdministration_ResetUserState.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="strimm\Stored Procedures\GetVideoSchedulesByUserId.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\aspnet_PersonalizationAdministration_FindState.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="strimm\Stored Procedures\GetVideoSchedulesByChannelScheduleId.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\aspnet_PersonalizationAdministration_GetCountOfState.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="strimm\Stored Procedures\GetVideoSchedulesByChannelTubeIdAndDate.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="strimm\Stored Procedures\GetVideoScheduleByVideoTubeId.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="strimm\Stored Procedures\GetVideoScheduleByChannelScheduleIdAndVideoTubeId.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\aspnet_WebEvent_LogEvent.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="strimm\Stored Procedures\AddVideoTubeToChannelSchedule.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\aspnet_Setup_RestorePermissions.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="strimm\Stored Procedures\GetUserByChannelName.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="strimm\Stored Procedures\DeleteVidoTubeFromChannelScheduleByChannelScheduleIdAndVideoTubeId.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\aspnet_Setup_RemoveAllRoleMembers.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="strimm\Stored Procedures\GetUserByEmailAndIp.sql" />
+    <Build Include="strimm\Stored Procedures\GetUserByUserName.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="strimm\Stored Procedures\GetUserCountByCountry.sql" />
+    <Build Include="strimm\Stored Procedures\GetUserCountByState.sql" />
+    <Build Include="strimm\Stored Procedures\GetUserProfileByUserId.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="strimm\Stored Procedures\GetVideoTubeById.sql" />
+    <Build Include="Security\aspnet_Membership_BasicAccess_1.sql" />
+    <Build Include="Security\aspnet_Membership_FullAccess_1.sql" />
+    <Build Include="Security\aspnet_Membership_ReportingAccess_1.sql" />
+    <Build Include="Security\aspnet_Personalization_BasicAccess_1.sql" />
+    <Build Include="Security\aspnet_Personalization_FullAccess_1.sql" />
+    <Build Include="Security\aspnet_Personalization_ReportingAccess_1.sql" />
+    <Build Include="Security\aspnet_Profile_BasicAccess_1.sql" />
+    <Build Include="Security\aspnet_Profile_FullAccess_1.sql" />
+    <Build Include="Security\aspnet_Profile_ReportingAccess_1.sql" />
+    <Build Include="Security\aspnet_Roles_BasicAccess_1.sql" />
+    <Build Include="Security\aspnet_Roles_FullAccess_1.sql" />
+    <Build Include="Security\aspnet_Roles_ReportingAccess_1.sql" />
+    <Build Include="Security\aspnet_WebEvent_FullAccess_1.sql" />
+    <Build Include="Security\strimm.sql" />
+    <Build Include="strimm\Tables\UserChannelTubeView.sql" />
+    <Build Include="strimm\Tables\UserVideoTubeView.sql" />
+  </ItemGroup>
+</Project>

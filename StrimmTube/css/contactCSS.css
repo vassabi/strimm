@@ -1,0 +1,614 @@
+﻿@import url('reset.css');
+
+
+    body {
+        background-color: #f9f9f9;
+        background-image: none;
+    }
+
+    .learnMoreButtonHolder {
+    background-image: url("/images/contactHolder.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+    position: relative;
+}
+
+
+
+
+
+
+.spnPleaseComplete {
+color: #fff;
+display: block;
+font-size: 11px;
+line-height: 20px;
+margin: auto;
+text-align: left;
+width: 370px;
+}
+ /* ------------------------------- SignUp ------------------------------- */
+
+ .mainContentWrapper {
+  background-color: #fff;
+  display: block;
+  height: auto;
+  margin: auto;
+  min-width: 1024px;
+  width: 100%;
+  max-width: 100%;
+}
+
+#contentSignUp {
+background-color: transparent;
+float: left;
+margin: auto;
+min-height: 600px;
+width: 100%;
+}
+
+#divSignUpContent {
+/*background-color: transparent;
+background-image: url("/images/00025.png");*/
+display: block;
+float: left;
+width: 100%;
+}
+
+
+.pageTitle {
+    
+font-weight: normal;
+color: #fff;
+display: block;
+font-size: 41px;
+margin: auto;
+padding-bottom: 40px;
+padding-top: 40px;
+text-align: left;
+text-transform: capitalize;
+width: 500px;
+}
+
+.SignUpTitle {
+color: #fff;
+display: block;
+float: left;
+
+font-weight: normal;
+font-size: 27px;
+margin-bottom: 10px;
+text-align: center;
+text-transform: capitalize;
+margin-top: 40px;
+}
+
+.contactTitle {
+    
+    font-size: 65px;
+    height: 200px;
+    letter-spacing: 1px;
+    line-height: 250px;
+    text-align: center;
+    width: 600px;
+    font-weight: normal;
+    color: #fff;
+    margin: auto;
+}
+
+
+.connectWF {
+    display: none;
+    background: red;
+}
+
+.contactFormLeft {
+    display: block;
+    float: left;
+}
+
+.contactFormRight {
+        display: block;
+    float: left;
+    width: 50%;
+}
+
+.mailAdress {
+    display: block;
+    float: right;
+    width: 300px;
+    clear: both;
+    margin-top: 40px;
+    /* margin-bottom: 20px; */
+    margin-right: 20px;
+    padding: 20px;
+}
+
+
+.emailAdress {
+    display: block;
+    float: right;
+    width: 320px;
+    clear: both;
+    margin-top: 0;
+    /* margin-bottom: 20px; */
+    margin-right: 20px;
+    padding: 20px;
+    padding-top: 0;
+}
+
+
+
+.mailAdress p,
+.emailAdress p {
+    
+    font-size: 17px;
+    color: #555;
+    text-align: center;
+}
+
+.mailAdress p strong,
+.emailAdress p strong {
+    color: #4D737E;
+    font-weight: normal;
+    font-size: 20px;
+    /* font-weight: bold; */
+    height: 45px;
+    border-bottom: 1px solid #4d737e;
+    /* margin-bottom: 10px; */
+    display: block;
+    line-height: 45px;
+}
+
+
+#divContact {
+    display: block;
+    width: 365px;
+    margin-top: 40px;
+    background-color: #eee;
+    padding: 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    float: right;
+}
+
+
+#divContact ul{
+width: 400px;
+}
+#divContact li .divError span {
+    background-color: #ff7373;
+    color: #fff;
+    display: none;
+    float: left;
+    font-size: 12px;
+    letter-spacing: 1px;
+    line-height: 15px;
+    margin: 5px;
+    padding: 3px;
+}
+#divContact .cap {
+    text-transform: capitalize;
+}
+
+
+.birthday {
+color: #fff;
+display: block;
+font-size: 18px;
+padding-left: 3px;
+}
+
+.ageConfirmation {
+font-size: 14px;
+}
+
+#divContact li span.red
+{
+    color:#FF6A00;
+}
+
+    #divContact ul li {
+        display: block;
+        float: left;
+        margin-bottom: 15px;
+        width:100%;
+        position: relative;
+    }
+
+
+
+
+        #divContactForm {
+            width: 30%;
+            margin: 50px auto;
+        }
+
+ #divBoardContent {
+  float: left;
+  margin: auto;
+  width: 100%;
+}
+
+#ddlSubject {
+    font-size: 17px;
+    height: 40px;
+    padding-left: 10px;
+    text-transform: capitalize;
+    width: 335px;
+    
+    color: #999;
+}
+
+        #spnContact {
+            color: #555555;
+            display: block;
+            line-height: 22px;
+            margin: 20px auto;
+            width: 80%;
+            text-align: center;
+        }
+
+#captcha {
+
+    width: 400px;
+    display: block;
+    margin: auto;
+}
+
+
+        .recaptchatable {
+            border: 1px solid #2a99bd !important;
+            line-height: 1em;
+        }
+
+
+
+        #btnHolder.buttonHolder input {
+background-color: #0a799d;
+border: medium none;
+color: #f3f3f3;
+cursor: pointer;
+font-size: 20px;
+height: 40px;
+line-height: 30px;
+margin-bottom: 20px;
+padding-left: 5px;
+padding-right: 5px;
+text-transform: capitalize;
+width: 150px;
+color: #fff;
+        }
+
+            #btnHolder.buttonHolder input:hover {
+background-color:#065d79;
+color: #fff;
+            }
+
+
+
+ 
+
+
+
+.divError {
+left: 350px;
+position: absolute;
+width: 345px;
+}
+    #divContact li span.spnBirthday{
+color: #fff;
+float: left;
+font-size: 14px;
+text-transform: none;
+width: 95px;
+margin-right: 33px;
+margin-top: -5px;
+}
+    #divContact ul li .ddlBirthday,
+    #divContact ul li .ddlCountry
+    {
+font-size: 18px;
+height: 39px;
+margin-right: 17px;
+border: 1px solid #ccc;
+
+    }
+
+    #divContact ul li .ddlBirthday {
+text-align: center;
+width: 98px;
+    }
+
+    #divContact ul li .ddlCountry {
+        width: 335px;
+    }
+
+
+
+#txtFirstName,
+#txtLastName,
+#txtName,
+#txtEmail,
+#txtReenterEmail,
+#txtUserNameSignUp,
+#txtPasswordSignUp,
+#txtDescription {
+    
+    font-size: 15         px;
+    padding: 2px 2px 2px 10px;
+    height: 37px;
+    width: 320px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+}
+
+#txtDescription {
+    height: 120px;
+}
+
+  #txtDescription:focus, #divContact li input:focus { border-color: #2a99bd;}
+
+#divContact li input.errorActive
+{
+    border-color: #ff7373;
+}
+
+.ListItemMale,
+.ListItemFemale {
+height:25px;
+line-height:25px;
+display:block;
+width: 40px;
+}
+#divContact .ListItemMale input,
+#divContact .ListItemFemale input {
+display:block;
+width:15px;
+float:right;
+}
+.ListItemMale label {
+display:block;
+height:20px;
+line-height:20px;
+margin:auto;
+}
+
+#divContact li span.radioList {
+width: 320px;
+color: #fff;
+font-size: 13px;
+}
+    #divContact li span.radioList input {
+display: block;
+float: left;
+height:25px;
+margin-right: 5px;
+width: 10px;
+    }
+
+    #divContact li span.radioList label {
+display: block;
+float: left;
+font-size: 18px;
+height: 30px;
+line-height: 30px;
+margin-right:43px;
+color: #fff;
+    }
+
+
+/* ------------------------------- / SignUp ------------------------------- */
+/* ------------------------------- Terms@Policy ------------------------------- */
+#divChkTerms {
+display: block;
+float: left;
+text-align: center;
+width: 100%;
+}
+#divChkPolicy {
+display:block;
+margin:0 auto;
+width:365px;
+}
+#spnTerms {
+color: #fff;
+display: block;
+font-size: 11px;
+line-height: 20px;
+margin: auto auto 20px;
+text-align: left;
+width: 370px;
+}
+#spnTerms a {
+color: #eee;
+font-weight: bold;
+padding-left: 5px;
+padding-right: 5px;
+text-decoration: underline;
+
+}
+#spnTerms a:hover {
+text-decoration: underline;
+}
+/* ------------------------------- / Terms@Policy ------------------------------- */
+/* ------------------------------- btnJoin@btnCancel ------------------------------- */
+#btnJoin{
+background-color: transparent;
+    border: 1px solid #fff;
+    clear: both;
+    color: #f3f3f3;
+    cursor: pointer;
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    height: 40px;
+    line-height: 30px;
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    text-transform: capitalize;
+    width: 150px;
+}
+
+
+#btnJoin:hover{
+background-color:#fff;
+color: #2a99bd;
+}
+
+
+#btnCancel {
+
+color: #bbb;
+font-size: 15px;
+height: 30px;
+line-height: 30px;
+padding-left: 5px;
+padding-right: 5px;
+margin-right: 10px;
+cursor: pointer;
+text-decoration: underline;
+}
+#btnCancel:hover {
+background-image: url("/images/ButtonBGGreyhover.jpg");
+color: #fff;
+}
+
+.buttonHolder {
+display: block;
+margin: auto;
+width: 300px;
+margin-top: 20px;
+text-align: center;
+}
+/* ------------------------------- /  btnJoin@btnCancel ------------------------------- */
+/* ------------------------------- divFooter ------------------------------- */
+
+#lblMessage {
+color: red;
+display: block;
+float: left;
+font-size: 13px;
+line-height: 20px;
+margin-bottom: 20px;
+margin-top: 17px;
+padding: 5px;
+width: 100%;
+}
+#lblMessage  a
+{
+    color: #FF6A00;
+}
+
+.textHigh{
+font-size: 15px;
+}
+
+
+.sign-up-divider {
+    height: 1px;
+    width: 333px;
+    margin: 25px 0;
+    text-align: center;
+    background-color: #616161;
+    border-top: 1px solid #272727;
+}
+  
+.sign-up-divider span {
+background-color: #ccc;
+border: 1px solid #eee;
+border-radius: 50px;
+color: #000;
+display: block;
+height: 22px;
+line-height: 22px;
+margin: auto;
+opacity: 1;
+padding: 5px;
+position: relative;
+text-align: center;
+top: -17px;
+width: 22px;
+}
+
+.fb_iframe_widget iframe {
+opacity:0;
+}
+
+#divContact ul li.ConnectWithFacebook {
+    width: 333px;
+    display: block;
+}
+
+
+
+#divContact ul li.facebookLog {
+    background-attachment: scroll;
+    background-clip: border-box;
+    /*background-color: #3b5b93;*/
+    background-color: #5272aa;
+ 
+    background-origin: padding-box;
+    background-position: 0 center;
+    background-repeat: no-repeat;
+    color: #fff;
+    display: block;
+    float: left;
+    height: 40px;
+    line-height: 40px;
+    margin-bottom: 15px;
+    position: relative;
+    text-align: center;
+    width: 333px;
+    border: 1px solid #5272aa;
+    cursor: pointer;
+    background-image: url('/images/facebookSignUp.jpg');
+}
+
+    #divContact ul li.facebookLog:hover {
+background-color: #3b5b93;
+    }
+
+@media (max-width:760px) {
+
+    .contactFormRight {
+    float: none;
+    width: 100%;
+}
+#divContact {
+       width: 100%;
+    background-color: transparent;
+    float: none;
+}
+
+.emailAdress {
+    width: 100%;
+    margin-right: 0;
+}
+
+    .learnMoreButtonHolder {
+        height: 200px;
+    }
+    .contactTitle {
+                color: #fff;
+        font-size: 30px;
+    ;
+        position: absolute;
+        bottom: 20px;
+        left: 10px;
+        height: auto;
+        line-height: 1.3em;
+        text-align: left;
+        width: 96%;
+    }
+
+    #divBoardContent {
+    float: none;
+    margin: auto;
+    width: 400px;
+}
+}
+
+

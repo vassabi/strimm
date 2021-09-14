@@ -1,0 +1,786 @@
+﻿
+body {
+    background-color: #fff;
+    background-image: none;
+}
+
+.learnMoreButtonHolder {
+    background-image: url("/images/profileHolder.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+    position: relative;
+}
+
+
+.mainContentWrapper {
+    display: block;
+    height: auto;
+    margin: auto;
+    max-width: 1320px;
+    width: 100%;
+    background-color: none;
+}
+
+.pageTitle {
+    color: #fff;
+    font-size: 65px;
+    font-weight: normal;
+    height: 200px;
+    letter-spacing: 1px;
+    line-height: 250px;
+    margin: auto;
+    text-align: center;
+    width: 600px;
+}
+
+.allowPrivateVideoMode,
+.allowMatureVideo {
+    clear: both;
+    display: block;
+    float: left;
+    margin-bottom: 5px;
+    margin-left: 20px;
+    margin-top: 5px;
+    vertical-align: middle;
+}
+
+#AgeConfirmationPopup {
+    display: none;
+    background-color: #fff;
+    width: 96%;
+    height: auto;
+    padding: 2%;
+    max-width: 400px;
+}
+
+
+
+    #AgeConfirmationPopup #spnConfirm {
+    display: block;
+    margin: auto;
+    padding: 15px;
+    width: 100%;
+    font-size: 14px;
+    line-height: 20px;
+    box-sizing: border-box;
+    }
+
+   #btnAgeConfirm {
+    display: block;
+    text-align: center;
+    width: 70px;
+    float: right;
+    font-weight: normal;
+    line-height: 37px;
+    background: #2a99bd;
+    color: #fff;
+    }
+
+    #AgeConfirmationPopup a.close_x {
+    float: right;
+    height: 30px;
+    width: 30px;
+    background-color: transparent;
+    }
+    
+    #AgeConfirmationPopup a.close_x:hover {
+    background-color: transparent;
+    }
+
+      #btnAgeConfirm:hover {
+        background-color: #154f62;
+        color: #fff;
+    }
+    #btnCancelMessage{
+    display: block;
+    float: right;
+    line-height: 37px;
+    margin-right: 26px;
+    text-transform: capitalize;
+    color: #2a99bd;
+}
+        #btnCancelMessage:hover {
+            color: #555;
+            text-decoration: underline;
+            background-color: transparent;
+        }
+
+
+#divBoardTop {
+    height: 40px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+#divBackTo {
+    float: left;
+}
+
+#divBoardLiveView {
+    float: right;
+}
+
+#divBoardTop a {
+    display: block;
+    text-decoration: none;
+    color: #555;
+    text-align: center;
+    font-weight: bold;
+}
+
+#divBackTo,
+#divBoardLiveView {
+    display: block;
+    height: 20px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-right: 2px;
+    padding-left: 2px;
+    width: 150px;
+    line-height: 20px;
+    font-size: 13px;
+}
+
+    #divBackTo:hover,
+    #divBoardLiveView:hover {
+    }
+
+.spnPleaseComplete {
+    color: red;
+    display: block;
+    font-size: 15px;
+    font-style: italic;
+    height: 35px;
+    line-height: 20px;
+    margin: 20px auto;
+    text-align: center;
+}
+/* ------------------------------- Profile ------------------------------- */
+#divProfile {
+    display: block;
+    line-height: 16px;
+    text-transform: capitalize;
+    position: relative;
+    margin-top: 20px;
+}
+
+
+
+.personalPref {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-left: 1px solid #ccc;
+    padding-left: 20px;
+    height: 145px;
+    padding-top: 50px;
+}
+
+#divProfile #btnChangePass,
+.emailPref,
+.subscribtion {
+    display: block;
+    float: left;
+    width: 100%;
+    background: none;
+    border: none;
+    text-align: left;
+    text-transform: none;
+    margin-bottom: 20px;
+    color: #555;
+    font-size: 17px;
+    padding-left: 0;
+    cursor: pointer;
+    text-decoration: underline;
+    font-family: Roboto-Light,'Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+
+.emailPref,
+.subscribtion {
+    margin-bottom: 25px;
+}
+
+    #divProfile #btnChangePass:hover,
+    .emailPref:hover,
+    .subscribtion:hover {
+        color: #2a99bd;
+        text-decoration: underline;
+    }
+
+#divProfile li {
+    float: left;
+    margin-bottom: 10px;
+    width: 581px;
+}
+
+    #divProfile li select {
+    margin-right: 15px;
+    width: 326px;
+    height: 40px;
+    text-transform: capitalize;
+    }
+
+#divProfile ul {
+    width: 400px;
+    margin: auto;
+}
+
+#divProfile li span {
+    color: #2a99bd;
+    display: block;
+    font-size: 15px;
+    text-transform: capitalize;
+    width: 100%;
+    float: left;
+}
+
+body.chrome #divProfile li span {
+    width: 128px;
+}
+
+#divProfile li span.dd-pointer-down {
+    width: 0;
+    margin: 0;
+}
+
+body.chrome #divProfile li span.dd-pointer-down {
+    width: 0;
+}
+
+.dd-options {
+    border-bottom-left-radius: 7px !important;
+    border-bottom-right-radius: 7px !important;
+}
+
+.dd-option {
+    color: #555 !important;
+    font-size: 13px !important;
+}
+
+#divBoardContent ul li.liInput {
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+#divBoardContent ul li.liTxtAdress {
+    margin-top: -5px;
+}
+
+#divProfile li span.dd-pointer-up {
+}
+
+#divBoardContent_Update ul li input,
+#divBoardContent ul li input {
+    background-color: #fff;
+    border-style: solid;
+    float: left;
+    height: 37px;
+    line-height: 37px;
+    margin-left: 0;
+    margin-top: 3px;
+    width: 320px;
+    padding-left: 5px;
+    margin-bottom: 5px;
+}
+
+.privateInfo {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    height: auto;
+    max-width: 400px;
+    margin: auto;
+}
+
+
+    .privateInfo label {
+        display: block;
+        float: left;
+        line-height: 30px;
+        margin-left: 10px;
+        font-size: 14px;
+    }
+
+    .privateInfo span {
+        display: block;
+        width: 100%;
+        float: left;
+    }
+
+
+[type="checkbox"]:checked {
+    -webkit-appearance: none;
+    outline: none;
+    background-image: url(/images/checkIcons/check-mark-green.png);
+    background-size: 100%;
+    width: 20px;
+    height: 20px;
+}
+
+[type="checkbox"] {
+    -webkit-appearance: none;
+    outline: none;
+    background-size: 100%;
+    width: 20px;
+    height: 20px;
+    float: left;
+}
+
+
+
+
+.dd-select {
+    border-color: #2a99bd !important;
+    border-style: solid !important;
+    border-radius: 5px !important;
+    margin-left: 0 !important;
+    margin-top: 3px !important;
+    background-color: #f9f9f9 !important;
+}
+
+.dd-container, .myDropdownUS, .myDropdownCan {
+    float: left !important;
+}
+
+ul.dd-options li {
+    width: 230px !important;
+}
+
+#divProfile li input:focus {
+    border-color: #2a99bd;
+    border-style: solid;
+}
+
+.ListItemMale {
+    height: 25px;
+    line-height: 25px;
+    display: block;
+    width: 40px;
+}
+
+.ListItemFemale {
+    height: 25px;
+    line-height: 25px;
+    display: block;
+    width: 40px;
+    margin-left: 10px;
+}
+
+#divProfile .ListItemMale input,
+#divProfile .ListItemFemale input {
+    display: block;
+    float: left;
+    height: 20px;
+    margin-right: 10px;
+    width: 20px;
+    margin-top: 0;
+}
+
+#divBoardContent_Update ul li span, #divBoardContent ul li span {
+    display: block;
+    margin-bottom: 3px;
+    text-transform: capitalize;
+    margin-top: 0;
+}
+
+
+    #divBoardContent ul li span.birthdayProfile {
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+
+
+
+.ListItemMale label,
+.ListItemFemale label {
+    color: #111;
+    display: block;
+    float: left;
+    font-size: 15px;
+    height: 20px;
+    line-height: 20px;
+    margin: auto;
+}
+
+.dd-selected {
+    color: #777777;
+    display: block;
+    font-size: 13px;
+    font-weight: normal !important;
+    letter-spacing: 1px;
+    overflow: hidden;
+    padding: 10px;
+    letter-spacing: 1px;
+}
+/* ------------------------------- ChangePassword------------------------------- */
+/*#divProfile #btnChangePass,*/
+#btnPassSubmit {
+    background-color: #ccc;
+    border: medium none;
+    color: #111;
+    cursor: pointer;
+    float: left;
+    height: 40px;
+    text-transform: capitalize;
+    width: 150px;
+}
+
+#btnPassSubmit {
+    background-color: #2a99bd;
+    color: #fff;
+    display: block;
+    margin-right: 10px;
+    margin-top: 30px;
+    width: 185px;
+    text-decoration: none;
+}
+
+    #btnPassSubmit:hover {
+        background-color: #1f6177;
+    }
+
+.closeChangePass {
+    background-image: url("/images/removebutton.png");
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: 8% auto;
+    display: block;
+    height: 40px;
+    margin-top: -5px;
+}
+/*#divProfile #btnChangePass:hover,*/
+#btnPassSubmit:hover {
+    background-color: #eee;
+    color: #111;
+}
+
+#divChangePassword {
+    background-color: #fff;
+    clear: both;
+    display: none;
+    float: none;
+    position: static;
+    width: 96%;
+    height: auto;
+    padding: 2%;
+    margin: auto;
+    max-width: 450px;
+}
+
+.divChangePasswordContainer {
+    margin: 50px;
+}
+
+#divProfile #ddlYear,
+#divProfile #ddlMonth,
+#divProfile #ddlDay {
+    height: 40px;
+    margin-right: 11px;
+    width: 75px;
+}
+
+
+
+
+
+
+.spnChangePassword {
+    color: #2a99bd;
+    display: block;
+    font-size: 15px;
+    margin: 5px;
+    text-transform: capitalize;
+}
+
+#txtCurPass,
+#txtNewPass,
+#txtReEnterPass {
+    background-color: #fff;
+    border-style: solid;
+    text-transform: none;
+    width: 100%;
+    height: 30px;
+}
+
+    #txtCurPass:focus,
+    #txtNewPass:focus,
+    #txtReEnterPass:focus {
+        border-color: #999 #999 #999 #999;
+        border-style: solid;
+    }
+
+#divSave {
+    width: 100%;
+    margin-bottom: 30px;
+    display: block;
+    max-width: 150px;
+    margin: auto;
+}
+
+#btnSave {
+    background-color: #276e90;
+    border: medium none;
+    color: #f3f3f3;
+    cursor: pointer;
+    float: none;
+    font-size: 20px;
+    font-weight: bold;
+    height: 40px;
+    line-height: 30px;
+    margin-bottom: 26px;
+    width: 150px;
+    margin-top: 30px;
+}
+
+    #btnSave:hover {
+        background-color: #2a99bd;
+        color: #fff;
+    }
+
+#lblMessage {
+    color: #FF7700;
+    display: block;
+    float: right;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 12px;
+    text-align: right;
+    width: 366px;
+}
+
+
+#divProfile li span.spnExplantaion {
+    color: #999999;
+    display: block;
+    font-size: 10px;
+    width: 250px;
+    float: right;
+    letter-spacing: 0;
+}
+
+.otheCountry {
+    color: #777;
+    display: block;
+    font-size: 15px;
+    font-style: italic;
+    height: 35px;
+    line-height: 20px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+    .otheCountry a {
+        color: #555;
+        text-decoration: underline;
+    }
+
+#divUserName {
+    display: block;
+    float: left;
+}
+
+#spnUserNameCount {
+    color: red;
+}
+
+#divProfile li span#lblUserName {
+    background-color: #276e90;
+    border: 1px solid #276e90;
+    color: #fff;
+    display: block;
+    float: left;
+    font-size: 17px;
+    height: 40px;
+    line-height: 40px;
+    margin-left: 0;
+    padding-left: 5px;
+    width: 320px;
+}
+
+.dd-selected {
+    padding: 5px !important;
+}
+
+.radioList {
+    display: block;
+    float: left;
+    width: 255px;
+}
+
+#divProfile #ddlYear li select {
+    width: 60px;
+}
+
+#divChangePassword .divError span {
+    background-color: #ff7373;
+    color: #fff;
+    display: none;
+    float: left;
+    font-size: 12px;
+    letter-spacing: 1px;
+    line-height: 20px;
+    margin: 5px;
+    padding: 7px;
+}
+
+#divChangePassword .divError {
+    left: 350px;
+    position: absolute;
+    top: 20px;
+    width: 345px;
+    z-index: 20;
+}
+
+input.errorActive {
+    border-color: #ff7373;
+}
+
+.divChangePassFields {
+    position: relative;
+    display: block;
+    width: 100%;
+    float: left;
+}
+
+#divBoardContent #divProfile ul li .divError {
+    left: 790px;
+    position: absolute;
+    width: 345px;
+}
+
+#divBoardContent #divProfile .divError span {
+    background-color: #ff7373;
+    color: #fff;
+    display: none;
+    float: left;
+    font-size: 12px;
+    letter-spacing: 1px;
+    line-height: 20px;
+    margin: 5px;
+    padding: 7px;
+}
+
+
+#subscriptionPopup {
+    display: none;
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+    padding: 10px;
+    max-width: 850px;
+}
+
+    #subscriptionPopup table {
+        text-align: center;
+        font-size: 14px;
+    }
+
+#subscribtionTable {
+    display: block;
+    margin: auto;
+    width: 100%;
+}
+
+    #subscribtionTable tbody {
+        width: 100%;
+    }
+
+        #subscribtionTable tbody tr {
+            width: 100%;
+            display: block;
+            float: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+            #subscribtionTable tbody tr td,
+            #subscribtionTable tbody tr th {
+                width: 15%;
+                display: block;
+                float: left;
+            }
+
+            #subscribtionTable tbody tr td {
+                background: #f9f9f9;
+                height: 70px;
+                line-height: 70px;
+            }
+
+                #subscribtionTable tbody tr td.orderNumber,
+                #subscribtionTable tbody tr th.orderNumber {
+                    width: 25%;
+                }
+
+                #subscribtionTable tbody tr td.colorUp {
+                    background-color: #eee;
+                    width: 15%;
+                }
+
+            #subscribtionTable tbody tr th.colorUp2 {
+                background-color: #257792;
+                width: 15%;
+                color: #fff;
+            }
+
+            #subscribtionTable tbody tr th {
+                background: #2a99bd;
+                height: 50px;
+                line-height: 50px;
+                color: #fff;
+                font-size: 15px;
+                font-weight: normal;
+            }
+
+#spnQuestion {
+    display: block;
+    float: left;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.spnQuestion {
+    color: #2a99bd;
+}
+
+    .spnQuestion:hover {
+        text-decoration: underline;
+    }
+
+@media (max-width: 768px) {
+
+    #divProfile {
+        max-width: 320px;
+        margin: auto;
+    }
+
+    .learnMoreButtonHolder {
+        height: 200px;
+    }
+
+    .pageTitle {
+        color: #fff;
+        font-size: 30px;
+        position: absolute;
+        bottom: 20px;
+        left: 10px;
+        height: auto;
+        line-height: normal;
+        text-align: left;
+        padding-bottom: 0;
+        width: auto;
+    }
+
+    .personalPref {
+        position: static;
+        height: auto;
+        padding: 0;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    #divProfile #btnChangePass, .emailPref, .subscribtion {
+        text-align: center;
+    }
+}

@@ -1,0 +1,21 @@
+<?rokuml version="1.0" encoding="utf-8" ?>
+<component name="PlayerTask" extends="Task">
+  <script type="text/brightscript" uri="pkg:/components/tasks/PlayerTask.brs" />
+  <script type="text/brightscript" uri="pkg:/source/api.brs" />
+  <script type="text/brightscript" uri="pkg:/source/urlUtils.brs" />
+  <script type="text/brightscript" uri="pkg:/source/generalUtils.brs" />
+  <script type="text/brightscript" uri="pkg:/components/nodeUtils.brs" />
+  <interface>
+    <field id="video" type="node" />
+    <field id="content" type="node" />
+    <field id="programIndex" type="int" />
+    <field id="bookmark" type="float" />
+    <field id="setBookmark" type="assocarray" />
+    <field id="finished" type="boolean" />
+    <field id="keepPlaying" type="boolean" alwaysNotify="true" />
+    <field id="adPlaying" type="boolean" alwaysNotify="true" />
+    <field id="adPods" type="array" />
+    <field id="adBreaks" type="array" />
+    <field id="adType" type="string" value="preroll" />
+  </interface>
+</component>

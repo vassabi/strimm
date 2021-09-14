@@ -1,0 +1,349 @@
+﻿.welcomeWrapper {
+display: block;
+width:600px;
+margin: auto;
+}
+
+.welcomeEmailTopLogo {
+    background-image: url('/images/LogoPureMain.png');
+    background-position: 0px bottom;
+    background-size: 25%;
+    background-repeat: no-repeat;
+    display: block;
+    width: 100%;
+    height: 40px;
+    margin-top: 20px;
+}
+
+.welcomeTop {
+    display: block;
+    width: 100%;
+    height: 30px;
+    background-color: #fff;
+    margin-bottom: 5px;
+    float: left;
+    text-align: center;
+        color: #999;
+    font-family: Tahoma;
+}
+
+    .welcomeTop img {
+    display: block;
+    float: left;
+    width: 50px;
+
+    }
+
+helloName {
+    display: block;
+    /* float: left; */
+    /* margin-left: 20px; */
+    color: #999;
+    font-family: Tahoma;
+    font-size: 17px;
+    /* line-height: 65px; */
+    width: 100%;
+    text-align: center;
+}
+
+.welcomeBody {
+        display: block;
+    width: 100%;
+    background-color: #fff;
+}
+
+.welcomeBodyIMG {
+ background-image: url('/images/welcomeEmailColage.jpg');
+ background-repeat:no-repeat;
+ background-size: 100%;
+ width: 600px;
+ height: 300px;
+}
+
+
+.welcomeLogoHolder {
+    display: block;
+    float: left;
+    width: 50%;
+    background-image: url('/images/LogoPureMain.png');
+    background-repeat: no-repeat;
+    background-size: 50%;
+    height: 50px;
+    background-position: 7px;
+}
+
+
+.welcomeH1ImgWrapper {
+    width: 100%;
+    height: 70px;
+    margin-top: 20px;
+}
+
+.welcomeH1Holder {
+    display: block;
+    float: left;
+    width: 50%;}
+
+
+
+.welcomeToStrimm {
+    display: block;
+    float: left;
+    /* padding: 1%; */
+    color: #2a99bd;
+    font-family: Tahoma;
+    font-size: 27px;
+    text-align: right;
+    width: 100%;
+    font-weight: normal;
+    line-height: 25px;
+}
+
+.welcomeBody p {
+    font-family: Tahoma;
+    font-size: 17px;
+    color: #999;
+    line-height: 24px;
+    text-align: center;
+    width: 400px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.welcomeSteps {
+    display: block;
+    float: left;
+    width: 100%;
+}
+
+.stepTop {
+    display: block;
+    background-image: url('/images/welcomeEmailSteps/step-1.jpg');
+  background-repeat:no-repeat;
+ background-size: 100%;
+ width: 600px;
+ height: 200px;
+}
+.stTwo {
+    background-image: url('/images/welcomeEmailSteps/step-2.jpg');
+}
+
+.stThree {
+    background-image: url('/images/welcomeEmailSteps/step-3.jpg');
+}
+
+.stepHeader {
+    display: block;
+    width: 98%;
+    padding: 1%;
+    height: 50px;
+    font-family:Tahoma;
+    font-size: 25px;
+    color: #222;
+    text-align: center;
+    line-height:80px;
+}
+
+.welcomeStepsText {
+    font-family: Tahoma;
+    font-size: 17px;
+    color: #999;
+    line-height: 24px;
+    text-align: center;
+    width: 400px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+
+
+.welcomeFooter {
+        display: block;
+clear: both;
+}
+
+.welcomeFooterText {
+    color: #777;
+    font-family: Tahoma;
+    font-size:17px;
+    text-align: center;
+    width: 400px;
+    margin: auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    line-height: 25px;
+}
+
+.bigger {
+        font-size:20px;
+        color: #555;
+}
+
+.welcomeEmailLinks {
+    color: #2a99bd;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.welcomeEmailLinks:hover {
+    color: #20667d;
+}
+
+.bestWishesStrimm {
+    color: #2a99bd;
+    font-family: Tahoma;
+    font-size: 17px;
+    line-height: 25px;
+    text-align: center;
+    width: 300px;
+    margin: auto;
+    display: block;
+}
+
+.greyColor {
+    color: #777;
+}
+
+.divider {
+    display: block;
+    width: 500px;
+    margin:auto;
+    height: 20px;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 50px;
+  }
+
+.divederTop {
+ height: 2px;
+ width: 100%;
+ margin-bottom: 10px;
+ border-bottom: 1px solid #2a99bd;
+}
+
+.BrChannelsBold {
+    color: #2a99bd;
+
+}
+
+.goToSite {
+
+    width: 100%;
+    text-align: center;
+    height: 40px;
+}
+.linkGoToSite {
+    width: 160px;
+    background-color: #2a99bd;
+    height: 40px;
+    display: block;
+    margin: auto;
+    color: #fff;
+    font-family: tahoma;
+    line-height: 40px;
+    font-size: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+.linkGoToSite:hover {
+    background-color: #20667d;
+}
+
+.strimmURL {
+    color: #999;
+    font-size: 15px;
+    cursor: pointer;
+    text-decoration: none;
+
+}
+    .strimmURL:hover {
+        color: #777;
+    }
+
+
+/*--------------------------------------------------------------------------------------------------------MEDIA CSS*/
+/*--------------------------------------------------------------------------------------------------------MEDIA CSS*/
+/*--------------------------------------------------------------------------------------------------------MEDIA CSS*/
+
+
+@media only screen and (max-width: 370px) {
+.welcomeWrapper {
+display: block;
+width:300px;
+}
+
+.welcomeToStrimm {font-size: 25px;}
+
+.welcomeLogoHolder {
+    background-size: 90%;
+    height: 50px;
+    background-position: 7px;
+}
+
+.welcomeH1ImgWrapper {
+    width: 100%;
+    height: 50px;
+    margin-top: 0;
+}
+
+    .welcomeTop img {
+    display: block;
+    float: left;
+    width: 30px;
+}
+
+
+
+.welcomeBodyIMG {
+ background-image: url('/images/welcomeEmailColage.jpg');
+ background-repeat:no-repeat;
+ background-size: 100%;
+ width: 300px;
+ height: 165px;
+}
+.welcomeBody p,
+.welcomeStepsText,
+.welcomeFooterText  {
+    font-family: Tahoma;
+    font-size: 15px;
+    color: #999;
+    line-height: 21px;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 20px;
+    clear: both;
+}
+
+    .bigger {font-size: 16px;color: #555;}
+
+    .stepTop {
+ width: 300px;
+ height:100px;
+}
+
+.stepHeader {
+    font-size: 22px;
+    line-height: 50px;
+}
+
+.divider {
+    height: 10px;
+    margin-bottom: 30px;
+}
+
+.welcomeEmailTopLogo {
+    background-size: 33%;
+}
+
+
+    .divederTop {
+        height: 1px;
+        margin-bottom: 10px;
+    }
+}
+
+
+
+

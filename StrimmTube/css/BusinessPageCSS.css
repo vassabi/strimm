@@ -1,0 +1,3658 @@
+﻿body {
+    background: #fff;
+}
+
+#topLeftHolder,
+.spnCreateChannel,
+.businessSolAfterLog,
+#MenuImg {
+    display: none;
+}
+
+#spnHello {
+    margin-right: 1%;
+}
+
+#helloMenuList {
+    position: absolute;
+    top: 76px;
+    right: 0;
+}
+
+
+.bsLi {
+    color: #2a99bd;
+}
+
+    .bsLi:hover {
+        text-decoration: underline;
+    }
+
+.businessTopImgHoder {
+    background-image: url('/images/companyHolder.jpg');
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 650px;
+    width: 100%;
+}
+
+.leftTopHolderBeforeLogin,
+.btnCreateChannel {
+    display: none;
+}
+
+.secondaryMenu {
+    display: none;
+    float: left;
+    width: 100%;
+    clear: both;
+    background: #f9f9f9;
+    opacity: 0.95;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+    .secondaryMenu.secondaryMenuFixed {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        clear: both;
+        background: #fff;
+        opacity: 0.95;
+        box-shadow: 0 0 25px #ddd;
+    }
+
+        .secondaryMenu.secondaryMenuFixed .businessNavigation,
+        .secondaryMenu .businessNavigation {
+            color: #555;
+        }
+
+#topMenu.topMenuAbsolute {
+    width: 100%;
+    /*position: absolute;*/
+    top: 0;
+    z-index: 1000;
+    background-color: #fff;
+    height: 70px;
+}
+
+.testInfoHolder {
+    display: block;
+    float: left;
+    width: 100%;
+    background-image: url(/images/businessImages/Transparent-ForLife-TV-Logo-res.png);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: 50px;
+    margin-top: 10px;
+}
+
+    .testInfoHolder.DreamCatcher {
+        background-image: url('/images/businessImages/Tony---Dream-catcher.jpg');
+    }
+
+    .testInfoHolder.BeJelly {
+        background-image: url('/images/businessImages/Brian---Be-Jelly-logo.jpg');
+    }
+
+.businessMenu {
+    display: block;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+
+
+.liLinkRO {
+    cursor: pointer;
+    color: #2a99bd;
+}
+
+    .liLinkRO:hover {
+        color: #2a99bd;
+        text-decoration: underline;
+    }
+
+.businessNavigation {
+    display: inline-block;
+    /* float: left; */
+    line-height: 27px;
+    /* margin-right: 40px; */
+    color: #fff;
+    text-transform: capitalize;
+    font-family: Roboto-Regular,'Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-size: 17px;
+    padding-right: 3%;
+    padding-left: 3%;
+}
+
+    .businessNavigationActive,
+    .businessNavigation:hover {
+        text-decoration: underline;
+    }
+
+
+.homeIcon {
+    background-image: url(/images/homeIcon/homeIcon.png);
+    background-repeat: no-repeat;
+    width: 35px;
+    background-size: 100%;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+    .homeIcon:hover {
+        background-image: url('/images/homeIcon/homeIcon-hover.png');
+    }
+
+//getStarted {
+    display: none;
+    float: left;
+    color: #fff;
+    height: 35px;
+    background-color: #4bc824;
+    text-align: center;
+    line-height: 35px;
+    text-transform: capitalize;
+    margin-top: 25px;
+    border-radius: 5px;
+    width: 100px;
+}
+
+.getStarted:hover {
+    background-color: #54e527;
+}
+
+.h1businessPage {
+    color: #2a99bd;
+    font-weight: normal;
+    height: 600px;
+    letter-spacing: 1px;
+    line-height: 600px;
+    margin: auto;
+    text-align: center;
+    width: 100%;
+}
+
+.businessBlock {
+    display: block;
+    float: left;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.fixedH {
+    height: 500px;
+}
+
+.Imgturnkey {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.businessBlockWhite {
+    background: #fff;
+}
+
+.ancBoxesHolder {
+    display: block;
+    width: 785px;
+    height: 520px;
+    margin: auto;
+    padding-top: 70px;
+}
+
+.businessImageBlock {
+    display: none;
+    float: left;
+    width: 50%;
+    height: 500px;
+}
+
+.strimmBenefP {
+    display: block;
+    text-align: right;
+    margin-bottom: 20px;
+    color: #44bd1f;
+}
+
+h2 {
+    display: block;
+    float: left;
+    color: #65b1d4;
+    width: 100%;
+    /* font-weight: normal; */
+    height: auto;
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 20px;
+    line-height: 45px;
+    font-family: Roboto-Light,'Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-size: 35px;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
+
+.qestanswHolder {
+    display: block;
+    float: left;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.businessImageBlock01 {
+    background-image: url('/images/businessImages/business-interactiveTV.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.businessImageBlock11 {
+    background-image: url(../images/businessImages/11.jpg);
+    background-repeat: no-repeat;
+    background-size: 87%;
+    background-position: center left;
+}
+
+.businessImageBlockTarget {
+    background-image: url(../images/businessImages/behefits1000.jpg);
+    background-repeat: no-repeat;
+    background-size: 70%;
+    height: 700px;
+    background-position: center;
+}
+
+/*.businessImageBlockAppotun {
+    background-image: url('../images/businessImages/02.png');
+        background-position: center center;
+    background-repeat: no-repeat;
+}*/
+
+.businessImageBlockRight {
+    display: block;
+    float: right;
+    width: 50%;
+    height: auto;
+}
+
+    .businessImageBlockRight img {
+        display: block;
+        margin: auto;
+    }
+
+/*.businessImageBlock img {
+        width: 100%;
+        height: 100%;
+    }*/
+
+
+.businessImageBlockRight {
+    float: right;
+}
+
+.getStartedHolder {
+    display: block;
+    float: left;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.getStartedHome {
+    display: block;
+    width: 180px;
+    background-color: #4bc824;
+    color: #fff;
+    border-radius: 4px;
+    margin: auto;
+    text-transform: capitalize;
+    text-align: center;
+    height: 37px;
+    line-height: 37px;
+    margin-top: 20px;
+}
+
+    .getStartedHome:hover {
+        background-color: #389f18;
+    }
+
+.businessTXTBlock {
+    display: block;
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    box-sizing: border-box;
+    margin: auto;
+    float: left;
+}
+
+.businessTXTBlock50 {
+    width: 50%;
+    float: left;
+}
+
+.olWrapper {
+    display: block;
+    float: left;
+    width: 96%;
+    height: auto;
+    margin-top: 30px;
+    padding: 2%;
+}
+
+.olWrapperf9 {
+    background-color: #f6f6f6;
+}
+
+.olWrapper img {
+    display: block;
+    float: right;
+    width: 380px;
+}
+
+    .olWrapper img.olWrapperINGright {
+        float: left;
+    }
+
+#divContentWrapper ol.ol1,
+#divContentWrapper ol.ol3 {
+    display: block;
+    float: right;
+    width: 50%;
+    margin-left: 0;
+}
+
+.collapser {
+    display: none;
+}
+
+#divContentWrapper ol.ol2 {
+    display: block;
+    float: left;
+    width: 50%;
+    margin-left: 0;
+}
+
+.featiresImgHolder {
+    display: block;
+    float: right;
+    width: 50%;
+    background-image: url(/images/businessImages/08.png);
+    background-position: center center;
+    height: 400px;
+    background-repeat: no-repeat;
+}
+
+.featiresImgHolderOL2 {
+    background-image: url('/images/businessImages/01.png ');
+    float: left;
+}
+
+.featiresImgHolderOL3 {
+    background-image: url(/images/businessImages/05.png);
+    background-size: 50%;
+}
+
+.backgroundf9 {
+    background-color: #f9f9f9;
+}
+
+.licontactUs {
+    color: #555;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.spnBlue {
+    color: #2a99bd;
+}
+
+.signatureText span.qtMark {
+    font-size: 60px;
+    font-family: 'Times New Roman';
+    display: inline;
+    float: none;
+    width: auto;
+}
+
+.benefitsImgR {
+    float: right;
+}
+
+.benefitsImgRInnovative {
+    background-image: url(/images/businessImages/06.png);
+    margin-top: 100px;
+}
+
+.benefitsImgL {
+    float: left;
+    background-image: url('/images/businessImages/07.png');
+    background-size: 50%;
+    background-repeat: no-repeat;
+}
+
+.licontactUs:hover {
+    color: #FF9800;
+}
+
+.businessFAQBlock {
+    display: block;
+    float: left;
+    width: 45%;
+    margin-right: 2%;
+}
+
+.businessFAQTitle {
+    display: block;
+    float: left;
+    width: 100%;
+    color: #2a99bd;
+    text-align: center;
+    height: 40px;
+    font-size: 35px;
+    margin-bottom: 20px;
+    font-family: Roboto-Light,'Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+
+.businessFAQQuestion {
+    display: block;
+    float: left;
+    color: #555;
+    height: 30px;
+    line-height: 40px;
+    width: 100%;
+}
+
+.businessFAQAnswer {
+    display: block;
+    float: left;
+    color: #555;
+    line-height: 24px;
+    margin-bottom: 20px;
+}
+
+.ancBox {
+    display: block;
+    float: left;
+    width: 350px;
+    margin: 20px;
+    height: 200px;
+    border-radius: 4px;
+    background-image: url('/images/fff50.png');
+    background-repeat: repeat;
+    cursor: pointer;
+    position: relative;
+    color: #f5f5f5;
+    border: 1px solid #bbb;
+}
+
+    .ancBox:hover {
+        background-image: url('/images/fff25.png');
+        color: #fff;
+        border: 1px solid #ccc;
+    }
+
+
+
+.ancBoxBenefits {
+}
+
+.ancBoxPackages {
+}
+
+.ancBox img {
+    display: block;
+    margin: auto;
+    width: 120px;
+    height: 120px;
+    margin-top: 30px;
+    opacity: 0.9;
+}
+
+.benefitsImg {
+    display: block;
+    float: left;
+    width: 100%;
+    background-image: url('/images/benefins.png');
+    height: 1217px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 80%;
+}
+
+.ancBoxText {
+    position: absolute;
+    bottom: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+.ancBoxTextLong {
+    bottom: 40px;
+    line-height: 35px;
+}
+
+.pageSumHolder {
+    display: block;
+    width: 100%;
+    margin-top: 45px;
+}
+
+.pageSum {
+    display: block;
+    float: left;
+    width: 29%;
+    height: auto;
+    position: relative;
+    padding: 2%;
+}
+
+    .pageSum img {
+        display: block;
+        width: 22%;
+        float: none;
+        clear: both;
+        margin: auto;
+    }
+
+.pageSumTitle {
+    color: #2a99bd;
+    display: block;
+    float: left;
+    line-height: 1.3em;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: Roboto-Light,'Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-size: 22px;
+}
+
+#topRightHolderBL {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.businessTXTBlockLong {
+    height: 100%;
+    max-width: 1032px;
+    margin: auto;
+    float: none;
+}
+
+.pageSumText {
+    display: block;
+    float: none;
+    line-height: 1.7em;
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    max-width: 320px;
+}
+
+#divBoardContent {
+    display: block;
+    width: 100%;
+    max-width: 1220px;
+    margin: auto;
+    float: none;
+}
+
+.maxBlockHolder {
+    display: block;
+    width: 100%;
+    margin: auto;
+    max-width: 1200px;
+    float: none;
+}
+
+#divContentWrapper {
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    float: left;
+    width: 100%;
+}
+
+
+    #divContentWrapper p {
+        font-weight: normal;
+        line-height: 27px;
+        height: 100%;
+        color: #555;
+        clear: both;
+        width: 100%;
+        /* margin: auto; */
+        margin-bottom: 0px;
+        text-align: center;
+        float: right;
+        /* background: red; */
+    }
+
+@-moz-document url-prefix() {
+    #divContentWrapper p {
+    }
+}
+
+.businessIMG {
+    display: block;
+    float: left;
+    margin-right: 20px;
+    width: 250px;
+}
+
+    .businessIMG img {
+        width: 250px;
+        display: none;
+    }
+
+.companyHolder {
+    background-image: url("/images/companyHolder.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+    position: relative;
+    display: none;
+}
+
+.companySubTitle {
+    display: block;
+    float: left;
+    color: #2a99bd;
+    width: 100%;
+    font-weight: normal;
+    height: 50px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.companyHolderReligious {
+    background-image: url(/images/religious.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+    position: relative;
+    display: block;
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-color: #372525;
+}
+
+
+.companyPageTitle {
+    display: block;
+    float: left;
+}
+
+.checkImg {
+    display: block;
+    float: left;
+    width: 20px;
+    height: 20px;
+    background-image: url('/images/checkIcons/check-mark-green.png');
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.relQest {
+    height: 20px;
+    margin-top: 0;
+    color: #f2e497;
+}
+
+h2.relQest {
+    text-align: left;
+}
+
+.checkImgpTop {
+    margin-top: 5px;
+    margin-right: 10px;
+}
+
+.margin30 {
+    margin-top: 30px;
+}
+
+.margin50 {
+    margin-top: 50px;
+}
+
+.marg20 {
+    margin-bottom: 20px;
+}
+
+#divContentWrapper ol {
+    margin-bottom: 20px;
+}
+
+    #divContentWrapper ol li {
+        color: #555;
+        margin-bottom: 30px;
+        height: 97%;
+        text-align: justify;
+        padding-right: 3%;
+        line-height: 27px;
+    }
+
+        #divContentWrapper ol li.coreFeatures {
+            margin-bottom: 15px;
+        }
+
+
+
+
+
+@-moz-document url-prefix() {
+    #divContentWrapper ol li {
+    }
+}
+
+.subtitlestrongBisiness {
+    color: #2a99bd;
+    clear: both;
+    width: 100%;
+    display: block;
+    text-align: left;
+    margin-bottom: 15px;
+    text-transform: capitalize;
+    font-family: Roboto-Light,'Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-size: 22px;
+}
+
+
+
+.multCheckInfo {
+    display: block;
+    float: left;
+    width: 75%;
+}
+
+.packegesInfo {
+    background-image: url(/images/infoIcon.png);
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    position: absolute;
+    right: 20%;
+    z-index: 2;
+    display: block;
+    height: 20px;
+    width: 20px;
+    top: 40px;
+}
+
+#divContentWrapper p.subtitlestrongBisiness {
+    color: #167797;
+    margin-bottom: 20px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.btnWatchVideoBusiness {
+    background-image: url("/images/how-to-video.png");
+    background-repeat: no-repeat;
+    cursor: pointer;
+    display: block;
+    float: none;
+    height: 40px;
+    line-height: 40px;
+    width: 170px;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+
+.businessTutorial {
+    display: block;
+    float: left;
+    width: 100%;
+    position: relative;
+    margin-top: -20px;
+}
+
+#divContentWrapper .businessTutorial p {
+    display: block;
+    float: left;
+    height: 40px;
+    line-height: 40px;
+    font-style: italic;
+    color: #000;
+}
+
+.btnWatchVideoBusiness a {
+    color: #2a99bd;
+    display: block;
+    line-height: 35px;
+    text-align: right;
+    text-decoration: underline;
+}
+
+.embeddedDiv {
+    display: block;
+    float: left;
+    width: 100%;
+    height: auto;
+    /*background-image: url("/images/embeddedViewBUsiness.png");*/
+    background-image: none;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-bottom: 50px;
+    min-width: 100%;
+}
+
+table {
+    margin-bottom: 30px;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding: 25px;
+}
+
+.tableTitle,
+.packs {
+    background-color: #167797;
+    color: #eee;
+    text-align: center;
+}
+
+.tableTitle {
+    color: #fff;
+    text-align: left;
+    line-height: 70px;
+}
+
+.tdTitle {
+    background-color: #70a7b8;
+    color: #fff;
+}
+
+.packs span {
+    color: #fff;
+}
+
+.checkY {
+    background-image: url("/images/checkIcons/check-mark-green.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #eee;
+}
+
+#divBoardContent table ul.tableUL {
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+}
+
+    #divBoardContent table ul.tableUL li {
+        width: 95%;
+        padding-left: 5%;
+    }
+
+.addMaintenace {
+    color: #fff;
+    background-color: #378AA4;
+}
+
+.price {
+    text-align: center;
+    color: #2a99bd;
+}
+
+.mostPop {
+    background-color: #feef9b;
+}
+
+.packs span.mostPopTitle {
+    display: block;
+    text-align: center;
+    color: #FEEF9B;
+    padding-top: 20px;
+    text-transform: capitalize;
+}
+
+#divContentWrapper p.emailUs {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.emailOpportunity {
+    color: #70A7B8;
+    cursor: pointer;
+}
+
+#divContentWrapper p.pStrong {
+    margin-top: -20px;
+}
+
+.pricingRow {
+    display: block;
+    width: 98%;
+    height: auto;
+    border-bottom: 1px solid #eee;
+    float: left;
+    padding: 1%;
+}
+
+
+
+.pricingCell {
+    display: block;
+    float: left;
+    width: 18.666%;
+    text-align: center;
+    line-height: 24px;
+    height: auto;
+    margin-right: 1%;
+}
+
+    .pricingCell strong {
+        font-size: 14px;
+        color: #333;
+    }
+
+    .pricingCell.pricingCellChannelN {
+        font-size: 17px;
+        color: #246e86;
+    }
+
+.pricingCellBottom {
+    background: #4bc824;
+    color: #fff;
+    line-height: 37px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+    .pricingCellBottom:hover {
+        background: #3c9321;
+        text-decoration: none;
+    }
+
+.pricingCell.pricingCellDesc.pricingCellDescBottom {
+    background-color: transparent;
+    color: transparent;
+}
+
+.pricingCell.pricingCellTitle {
+    font-size: 17px;
+    color: #fff;
+    background-color: #FF9800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    height: 50px;
+    line-height: 50px;
+}
+
+.pricingCell.blank {
+    background-image: none;
+    color: transparent;
+    background-color: transparent;
+}
+
+.pricingCell.pricingCellDesc.blank {
+    color: transparent;
+    background-color: transparent;
+}
+
+.thecostofMillion {
+    display: block;
+    float: left;
+    text-align: center;
+    width: 100%;
+    padding: 1%;
+}
+
+.pricingCell.pricingCellDesc {
+    line-height: 24px;
+    text-align: left;
+    overflow: hidden;
+    width: 20%;
+    font-size: 14px;
+    background-color: transparent;
+    color: #777;
+}
+
+.pricingRow.pricingRowpackDesk,
+.pricingRow.pricingRowpackStart {
+    height: auto;
+}
+
+.pricingPrice {
+    color: #2a99bd;
+    font-size: 20px;
+    border-top: 1px solid #ddd;
+    height: 60px;
+    line-height: 50px;
+}
+
+.advancedAnnualMessage,
+.basicAnnualMessage,
+.professionalAnnualMessage,
+.professionalPlusAnnualMessage {
+    font-size: 12px;
+    width: 100%;
+    display: block;
+    line-height: 0;
+    float: left;
+    color: #ff5700;
+}
+
+.pricingRow.pricingRowAuto {
+    padding-top: 0;
+    padding-bottom: 0;
+    border: none;
+}
+
+.pricingStart,
+.radioHolder .pricingStart.advanced {
+    background-color: #4bc824;
+    height: 36px;
+    margin-top: 12px;
+    line-height: 36px;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    display: block;
+    float: none;
+    opacity: 1;
+}
+
+    .pricingStart:hover {
+        background: #3c9321;
+        text-decoration: none;
+    }
+
+
+
+.pricingDesc {
+    background-color: #fff;
+    border-bottom: none;
+    color: #777;
+    font-size: 13px;
+    line-height: 20px;
+    height: 70px;
+    background-color: #f9f9f9;
+    padding-top: 10px;
+}
+
+
+.pricingCell.pricingCellDesc.pricingCellpackDeskAuto {
+    width: 40%;
+    padding: 0;
+    border: none;
+    color: transparent;
+}
+
+.pricingTopHolder,
+.pricingBottomHolder {
+    display: block;
+    float: left;
+    width: 99%;
+    padding: 0.5%;
+}
+
+.pricingDescMain {
+    display: block;
+    float: left;
+    width: 19%;
+    height: auto;
+    margin-left: 0.1%;
+    margin-right: 0.1%;
+    text-align: center;
+    background: #f5f5f5;
+}
+
+    .pricingDescMain.pricingDescMainBlank,
+    .pricingDescMainBlankBottom {
+        width: 20%;
+        background-color: transparent;
+        height: 290px;
+        background-image: url('/images/guideResponsive.png');
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+.pricingDescMainBlankBottom {
+    background-image: none;
+    height: 170px;
+    background: #f5f5f5;
+}
+
+.pricingTitle {
+    color: red;
+    height: 50px;
+    line-height: 50px;
+    background-color: #2a99bd;
+    color: #fff;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.pricingTitleBottom {
+    color: red;
+    height: 30px;
+    line-height: 30px;
+    background-color: #2a99bd;
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.pricingCellCheck {
+    background-image: url(/images/checkIcons/check-mark.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: block;
+    background-size: 20px;
+    height: 24px;
+}
+
+
+.pricing {
+    display: block;
+    float: left;
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.pricingBlock {
+    width: 28%;
+    height: auto;
+    background: #fff;
+    margin-left: 2%;
+    margin-right: 2%;
+    float: left;
+    border-radius: 7px;
+    box-shadow: 0px 0 10px #ccc;
+    max-width: 430px;
+}
+
+.packsDisc {
+    text-align: center;
+}
+
+.pricingSubBlock {
+    display: block;
+    float: left;
+    width: 100%;
+    background: #167797;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    position: relative;
+}
+
+.bestChoseSticker {
+    position: absolute;
+    top: -10px;
+    right: 50px;
+    background-image: url(/images/stickers/bestChoseIL.png);
+    background-position: center;
+    background-size: 100%;
+    width: 70px;
+    height: 70px;
+}
+
+    .bestChoseSticker span {
+        position: absolute;
+        right: 13px;
+        top: 30px;
+        color: #fff;
+        text-transform: uppercase;
+        text-shadow: 1px 1px 3px #555;
+        font-size: 9px;
+    }
+
+.pticingMainTitle {
+    display: block;
+    float: left;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    margin-top: 30px;
+    color: #3C788C;
+}
+
+.perChannel {
+    text-transform: lowercase;
+}
+
+
+
+.pricingFee {
+    text-transform: capitalize;
+    position: relative;
+    line-height: 70px;
+    color: #ffdb00;
+    font-size: 22px;
+}
+
+.pricingFeeDisc {
+    color: #eee;
+    text-decoration: line-through;
+    text-decoration-color: #ffcc00;
+    height: 50px;
+    line-height: 50px;
+    display: none;
+}
+
+
+.pricingPeriod {
+    color: #fff;
+    text-transform: capitalize;
+    height: 50px;
+    line-height: 50px;
+}
+
+.pricingDetatils {
+    display: block;
+    float: left;
+    width: 100%;
+}
+
+
+
+.backtotop {
+    display: block;
+    float: right;
+    height: 30px;
+    line-height: 30px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    text-align: right;
+    width: 98%;
+    padding-right: 2%;
+}
+
+    .backtotop a {
+        color: #2a99bd;
+        text-decoration: underline;
+    }
+
+        .backtotop a:hover {
+            color: #35beea;
+        }
+
+.ancDivider {
+    display: block;
+    float: left;
+    width: 100%;
+    height: 1px;
+    margin-bottom: 50px;
+}
+
+.benefitsBlock {
+    margin-top: 100px;
+}
+
+.detailsRow {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    float: left;
+    width: 100%;
+    height: auto;
+    position: relative;
+    min-height: 90px;
+}
+
+.businessTopSlogan {
+    display: block;
+    float: left;
+    width: 100%;
+    text-align: center;
+    color: #555;
+    height: 70px;
+    line-height: 70px;
+}
+
+.mutlRows {
+    height: 95px;
+}
+
+.mutlRowsTitle strong {
+    font-weight: normal;
+}
+
+.multUL {
+    height: 430px;
+}
+
+.detailsTitle {
+    float: left;
+    text-align: left;
+    color: #ddd;
+    width: 75%;
+    line-height: 90px;
+    padding-left: 2%;
+}
+
+.titleBold {
+    color: #555;
+}
+
+.mutlRowsTitle {
+    line-height: 30px;
+}
+
+
+
+.detailsCheck {
+    background-image: url('/images/checkIcons/check-mark.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    float: right;
+    width: 20%;
+    height: 80px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-size: 30px;
+}
+
+.noCheck {
+    background-image: none;
+}
+
+#divBoardContent ul.footerSocialHolder {
+    display: block;
+    float: right;
+    width: 110px;
+}
+
+#divBoardContent ul li.footerSocial {
+    display: block;
+    float: left;
+    width: 38px;
+    height: 38px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    margin-left: 0;
+}
+
+#divBoardContent_Update ul, #divBoardContent ul {
+    width: 100%;
+}
+
+    #divBoardContent_Update ul li, #divBoardContent ul li {
+        width: 100%;
+        margin: auto;
+        margin-bottom: 10px;
+        line-height: 25px;
+        margin-left: 25px;
+        list-style-type: none;
+    }
+
+.setUpFee {
+    display: block;
+    float: left;
+    width: 100%;
+    background: #2a99bd;
+}
+
+
+
+.setUpPackPrice,
+.setUpChannels,
+.setUpAdditional,
+.setUpAddutuonalPrice {
+    display: block;
+    margin: auto;
+    text-align: center;
+    width: 95%;
+    height: 70px;
+    line-height: 55px;
+    position: relative;
+    color: #eee;
+    border-bottom: 1px solid #116480;
+    clear: both;
+}
+
+.setUpAddutuonalPrice {
+    opacity: 0.7;
+}
+
+.setUpPackPrice {
+    height: 120px;
+    line-height: 120px;
+}
+
+.setUpAdditional {
+    padding-top: 10px;
+    background: #fff;
+    width: 100%;
+    border-bottom: none;
+}
+
+.businessFAQ {
+    padding: 2%;
+    width: 96%;
+    height: 100%;
+    display: block;
+    float: left;
+}
+
+.embeddedINTRO {
+    display: block;
+    float:left;
+    width: 100%;
+    height: 500px;
+}
+
+
+.setUpAdditional a {
+    background-color: #05c705;
+    color: #fff;
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    margin: 5px auto auto;
+    text-align: center;
+    width: 80%;
+    margin-bottom: 20px;
+}
+
+.setUpAddutuonalPrice {
+    text-decoration: line-through;
+    text-decoration-color: #ff0000;
+    -moz-text-decoration-color: red;
+}
+
+.limitedTimeOffer {
+    display: block;
+    float: left;
+    text-align: center;
+    width: 100%;
+    height: 120px;
+    line-height: 55px;
+    position: relative;
+    border-bottom: 1px solid #f7de58;
+    color: #fff;
+}
+
+    .limitedTimeOffer .spnsetupFee {
+        display: block;
+        float: left;
+        width: 100%;
+        height: 20px;
+        position: absolute;
+        top: 30px;
+    }
+
+    .limitedTimeOffer .spnlimitedTime {
+        display: block;
+        float: left;
+        width: 100%;
+        height: 20px;
+        position: absolute;
+        top: 50px;
+    }
+
+.setUpChannels {
+    line-height: 80px;
+}
+
+.setUpPackPrice {
+    width: 100%;
+    font-size: 22px;
+}
+
+.packPriceAdd {
+    background-color: #167797;
+    color: #ffdb00;
+}
+
+.setUpPackPrice.packPriceAdd span {
+    color: #eee;
+    font-size: 14px;
+}
+
+.subInfo {
+    display: block;
+    float: left;
+    width: 100%;
+    text-align: center;
+    height: 70px;
+    line-height: 70px;
+    margin-bottom: 30px;
+    margin-top: 50px;
+    color: #555;
+    font-size: 22px;
+}
+
+
+
+.subInfoForm {
+    display: block;
+    float: left;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+#divBoardContent ul.subInfoFormUL {
+    width: 400px;
+    margin: auto;
+}
+
+    #divBoardContent ul.subInfoFormUL li input {
+        display: block;
+        width: 100%;
+        height: 35px;
+        line-height: 35px;
+        border: 1px solid #ccc;
+        margin-bottom: 20px;
+        padding: 5px;
+        list-style-type: none;
+    }
+
+.embedImgText {
+    width: 37px;
+    height: 37px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background: #555;
+    padding: 3px;
+    margin-top: -10px;
+}
+
+.radioHolder {
+    display: block;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    text-transform: capitalize;
+    color: #555;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+
+#radio100Monthly[type="radio"],
+#radio100Annual[type="radio"],
+#radio50Monthly[type="radio"],
+#radio50Annual[type="radio"],
+#radio10Monthly[type="radio"],
+#radio10Annual[type="radio"],
+#radio10AnnualDown[type="radio"],
+#radio10MonthlyDown[type="radio"],
+#radio50MonthlyDown[type="radio"],
+#radio50AnnualDown[type="radio"],
+#radio100MonthlyDown[type="radio"],
+#radio100AnnualDown[type="radio"],
+#radio10AnnualMobile[type="radio"],
+#radio50AnnualMobile[type="radio"],
+#radio100AnnualMobile[type="radio"],
+#radio10MonthlyMobile[type="radio"],
+#radio50MonthlyMobile[type="radio"],
+#radio100MonthlyMobile[type="radio"],
+#radioProfPlusMonthly[type="radio"],
+#radioProfPlusAnnual[type="radio"],
+#radioProfPlusAnnualMobile[type="radio"],
+#radioProfPlusMonthlyMobile[type="radio"],
+#radioProfPlusMonthlyDown[type="radio"],
+#radioProfPlusAnnualDown[type="radio"] 
+{
+    -webkit-appearance: none;
+    outline: none;
+    width: 15px;
+    height: 15px;
+    background-color: #bbb;
+    border-radius: 30px;
+    margin-top: 12px;
+    cursor: pointer;
+    border: none;
+}
+
+    #radio100Monthly[type="radio"]:hover,
+    #radio100Annual[type="radio"]:hover,
+    #radio50Monthly[type="radio"]:hover,
+    #radio50Annual[type="radio"]:hover,
+    #radio10Monthly[type="radio"]:hover,
+    #radio10Annual[type="radio"]:hover,
+    #radio100MonthlyMobile[type="radio"]:hover,
+    #radio100AnnualMobile[type="radio"]:hover,
+    #radio50MonthlyMobile[type="radio"]:hover,
+    #radio50AnnualMobile[type="radio"]:hover,
+    #radio10MonthlyMobile[type="radio"]:hover,
+    #radio10AnnualMobile[type="radio"]:hover,
+    #radio10AnnualDown[type="radio"]:hover,
+    #radio10MonthlyDown[type="radio"]:hover,
+    #radio50MonthlyDown[type="radio"]:hover,
+    #radioProfPlusAnnual[type="radio"]:hover,
+    #radioProfPlusAnnualMobile[type="radio"]:hover,
+    #radioProfPlusMonthlyMobile[type="radio"]:hover,
+    #radioProfPlusMonthlyDown[type="radio"]:hover,
+    #radioProfPlusAnnualDown[type="radio"]:hover {
+        background-color: #59f428;
+    }
+
+    #radio100Monthly[type="radio"]:checked,
+    #radio100Annual[type="radio"]:checked,
+    #radio50Monthly[type="radio"]:checked,
+    #radio50Annual[type="radio"]:checked,
+    #radio10Monthly[type="radio"]:checked,
+    #radio10Annual[type="radio"]:checked,
+    #radio100MonthlyMobile[type="radio"]:checked,
+    #radio100AnnualMobile[type="radio"]:checked,
+    #radio50MonthlyMobile[type="radio"]:checked,
+    #radio50AnnualMobile[type="radio"]:checked,
+    #radio10MonthlyMobile[type="radio"]:checked,
+    #radio10AnnualMobile[type="radio"]:checked,
+    #radio10AnnualDown[type="radio"]:checked,
+    #radio10MonthlyDown[type="radio"]:checked,
+    #radio50MonthlyDown[type="radio"]:checked,
+    #radio50AnnualDown[type="radio"]:checked,
+    #radio100MonthlyDown[type="radio"]:checked,
+    #radio100AnnualDown[type="radio"]:checked,
+    #radioProfPlusAnnual[type="radio"]:checked,
+    #radioProfPlusMonthly[type="radio"]:checked,
+    #radioProfPlusAnnualMobile[type="radio"]:checked,
+    #radioProfPlusMonthlyMobile[type="radio"]:checked,
+    #radioProfPlusMonthlyDown[type="radio"]:checked,
+    #radioProfPlusAnnualDown[type="radio"]:checked {
+        background-color: #4eda23;
+    }
+
+.packType {
+    display: block;
+    width: 345px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.packCheckLine,
+.packCheckLineSubm {
+    display: block;
+    float: left;
+    width: 100%;
+    margin-bottom: 20px;
+    line-height: 35px;
+}
+
+.packCheckLineSubm {
+    width: 400px;
+}
+
+
+.radioHolderHalf {
+    display: block;
+    float: left;
+    width: 50%;
+    text-align: center;
+}
+
+.prefPack {
+    display: block;
+    float: left;
+    text-align: left;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+#packCheck[type="checkbox"]:checked,
+#packCheckStandard[type="checkbox"]:checked,
+#packCheckEnterprise[type="checkbox"]:checked {
+    -webkit-appearance: none;
+    outline: none;
+    background-image: url('/images/checkIcons/check-mark-green.png');
+    width: 22px;
+    height: 22px;
+    background-size: 100%;
+}
+
+#packCheck[type="checkbox"],
+#packCheckStandard[type="checkbox"],
+#packCheckEnterprise[type="checkbox"] {
+    -webkit-appearance: none;
+    outline: none;
+    width: 22px;
+    height: 22px;
+    background-color: #eee;
+    display: block;
+    float: left;
+}
+
+#chkBasic[type="checkbox"]:checked,
+#chkStandard[type="checkbox"]:checked,
+#chkEnterprise[type="checkbox"]:checked {
+    -webkit-appearance: none;
+    outline: none;
+    background-image: url('/images/checkIcons/check-mark-green.png');
+    width: 22px;
+    height: 22px;
+    background-size: 100%;
+}
+
+#chkBasic[type="checkbox"],
+#chkStandard[type="checkbox"],
+#chkEnterprise[type="checkbox"] {
+    -webkit-appearance: none;
+    outline: none;
+    width: 22px;
+    height: 22px;
+    background-color: #eee;
+    display: block;
+    float: left;
+}
+
+.packCheck label {
+    line-height: 30px;
+    display: block;
+    float: left;
+    margin-left: 20px;
+}
+
+#txtpackCheck {
+    display: block;
+    margin: auto;
+    width: 400px;
+    background: #f9f9f9;
+    color: #555;
+    margin-top: 30px;
+}
+
+textarea#txtComments {
+    display: block;
+    margin: auto;
+    width: 400px;
+    background: #f9f9f9;
+    color: #555;
+    margin-top: 30px;
+}
+
+.featuresPageTitle {
+    display: block;
+    float: right;
+    width: 50%;
+    height: 400px;
+    line-height: 400px;
+    text-align: center;
+    background-color: #ffa200;
+    color: #195b71;
+    font-size: 35px;
+    font-family: Roboto-Light,'Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+
+.featuresPageTitleBenefits {
+    background-color: #ffa200;
+    float: left;
+    font-weight: 400;
+    text-align: center;
+}
+
+
+
+.featuresIntro {
+    display: block;
+    float: left;
+    width: 50%;
+    height: 400px;
+    background-color: #2a99bd;
+    background-image: url(/images/businessImages/business-features.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    cursor: default;
+}
+
+.featuresIntroBenefits {
+    background-image: url('/images/businessImages/business-benefits.png');
+    background-color: #2a99bd;
+    margin-bottom: 50px;
+    float: right;
+    background-position: center;
+    cursor: default;
+}
+
+
+
+.subtitlestrongBenefits {
+    color: #FF5722;
+}
+
+.btnSavePackagePref {
+    display: block;
+    float: right;
+    clear: both;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    width: 150px;
+    height: 45px;
+    color: #fff;
+    background: #3BCD4E;
+    border: none;
+}
+
+.setUpPackPrice span,
+.setUpChannels span,
+.setUpAdditional span,
+.setUpAddutuonalPrice span {
+    display: block;
+    float: left;
+    width: 100%;
+    height: 20px;
+    color: #fff;
+    position: absolute;
+    top: 25px;
+}
+
+.setUpPackPrice span {
+    top: 30px;
+}
+
+#btnSubmit_Update, #btnSubmit {
+    background-color: #2a99bd;
+    color: #fff;
+    cursor: pointer;
+    font-weight: normal;
+    height: 40px;
+    line-height: 30px;
+    margin-bottom: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-transform: capitalize;
+    width: 150px;
+    border-radius: 0;
+    font-family: 'DejaVu Sans',Arial, sans-serif;
+}
+
+.errorBusinessForm {
+    display: block;
+    width: 100%;
+    float: left;
+    text-align: center;
+    margin-bottom: 50px;
+    color: red;
+}
+
+.feildHolder {
+    position: relative;
+}
+
+#divBoardContent ul li .divError {
+    display: none;
+    float: left;
+    position: absolute;
+    left: 420px;
+    top: 0;
+}
+
+#divBoardContent ul li .spnError {
+    line-height: 37px;
+    color: red;
+}
+
+.companyTopHolderText {
+    display: block;
+    float: left;
+    width: 45%;
+    padding: 1%;
+    padding-left: 2%;
+}
+
+.religiousDetails {
+    color: #2a99bd;
+    text-transform: capitalize;
+    padding-left: 10px;
+    text-decoration: underline;
+}
+
+    .religiousDetails:hover {
+        color: #f3521a;
+    }
+
+
+.businessPageTitle {
+    display: block;
+    float: left;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    height: auto;
+    margin-bottom: 30px;
+    line-height: 2.3em;
+    margin-top: 123px;
+    font-size: 80px;
+    text-shadow: 0 0 20px #000;
+}
+
+.whatRUwaitingfor {
+    display: block;
+    float: left;
+    text-align: center;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    color: #2a99bd;
+}
+
+.businessPageTitleTop {
+    text-align: left;
+    color: #fff;
+    margin-bottom: 50px;
+    margin-top: 55px;
+}
+
+.createTVBusinessTop {
+    display: block;
+    float: left;
+    width: 100%;
+    text-align: left;
+    height: 30px;
+    line-height: 30px;
+    color: #eee;
+    clear: both;
+    margin-top: 60px;
+}
+
+.pTop {
+    text-align: left;
+    width: 100%;
+    color: #eee;
+    line-height: 35px;
+    margin-top: 30px;
+    float: left;
+}
+
+.createTVChannelP {
+    display: block;
+    float: left;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+}
+
+.businessBlockf5 {
+    background-color: #f5f5f5;
+}
+
+.businessBlockf5Height {
+    height: auto;
+}
+
+
+.btnTrial:hover {
+    background-color: #2e913b;
+}
+
+
+.businessImageBlock11 {
+    background-image: url(../images/businessImages/11.jpg);
+    background-repeat: no-repeat;
+    background-size: 87%;
+    background-position: center left;
+}
+
+.pricing {
+    margin-top: 25px;
+}
+
+.mainHHolder {
+    display: block;
+    float: left;
+    width: 100%;
+    margin-top: 160px;
+    margin-left: 4%;
+}
+
+.commercialVideoWrapper {
+    background-color: #fff;
+    color: #73add3;
+    width: 221px;
+    height: 46px;
+    display: inline-block;
+    margin-top: 30px;
+    margin-left: 40px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 44px;
+    font-weight: bold;
+    background-image: url(/images/watchVideoBtn.png);
+    background-repeat: no-repeat;
+    background-position-y: 7px;
+    padding-left: 26px;
+    font-family: "Helvetica";
+    float: left;
+}
+
+.ownChannel {
+    color: #fff;
+    font-family: "brubeck-ah.regular";
+    font-size: 50px;
+    letter-spacing: 3px;
+    height: 70px;
+    border-bottom: 4px solid #34cdff;
+    float: left;
+    line-height: 80px;
+}
+
+
+.startStrimmingBTN {
+    display: block;
+    background-color: #27b9e8;
+    width: 240px;
+    height: auto;
+    float: left;
+    margin-left: 4%;
+    margin-top: 30px;
+    border-radius: 4px;
+    clear: both;
+}
+
+    .startStrimmingBTN img {
+        max-width: 100%;
+        height: auto;
+    }
+
+.istrimm {
+    display: block;
+    float: left;
+    margin-right: 20px;
+    background-image: url('/images/iStrimmBlue.svg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 90px;
+}
+
+.myOwnTVChannel {
+    display: block;
+    float: left;
+    margin-right: 20px;
+    background-image: url('/images/myOwnTVChannel.svg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 400px;
+    height: 90px;
+}
+
+.underlineHome {
+    border-bottom: 2px solid #fff;
+}
+
+.createYours {
+    display: block;
+    float: left;
+    width: 100%;
+    color: #fff;
+    font-size: 30px;
+    margin-top: 50px;
+    font-family: "brubeck-ah.regular";
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+
+
+.BPblock {
+    display: block;
+    float: left;
+    width: 100%;
+    height: auto;
+}
+
+    .BPblock.intro {
+        background-image: url(/images/retouched_Makeup.jpg);
+        background-position: top;
+        background-size: cover;
+        height: 1000px;
+        position: relative;
+        background-color: #1b1613;
+        background-repeat: no-repeat;
+        background-position: right;
+    }
+
+.introTextHolder {
+    display: block;
+    float: left;
+    width: 100%;
+    min-width: 320px;
+    position: relative;
+    width: 100%;
+    padding-top: 60px;
+    margin-bottom: 20px;
+}
+
+    .embeddedLOOKlike {
+        display: block;
+        float: left;
+        font-size: 30px;
+        color: #2a99bd;
+        text-align: center;
+        width: 100%;
+        height: auto;
+        line-height: 1.3em;
+        text-transform: capitalize;
+        margin-top: 30px;
+    }
+
+.introMain {
+    width: 100%;
+    font-size: 45px;
+    color: #fff;
+    position: absolute;
+    top: 200px;
+    left: 50px;
+    line-height: 60px;
+}
+
+.introSecondary {
+    width: 100%;
+    font-size: 27px;
+    color: #fff;
+    line-height: 40px;
+}
+
+
+.innerHolder {
+    display: inline-block;
+    width: 40%;
+    padding: 20px 3%;
+    vertical-align: top;
+}
+
+.innerHolder1 {
+    display: inline-block;
+    width: 28%;
+    vertical-align: top;
+    padding-left: 2%;
+    padding-top: 20px;
+}
+
+.innerHolder2 {
+    display: inline-block;
+    width: 59%;
+    padding: 3%;
+    vertical-align: top;
+    background-image: url(/images/channel-screen-embedded-look.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 565px;
+    margin: 2%;
+    cursor: pointer;
+    opacity: 1;
+}
+
+    .innerHolder2:hover {
+ opacity: 0.9;
+    }
+
+.actionButton {
+    min-width: 120px;
+    color: #fff;
+    background-color: #2db9e7;
+    display: block;
+    height: 37px;
+    line-height: 37px;
+    text-align: center;
+    border-radius: 4px;
+    padding: 15px;
+    padding-top: 0;
+    padding-bottom: 0;
+    width: auto;
+    margin-left: 4%;
+    float: left;
+    font-size: 17px;
+}
+
+    .actionButton.intro {
+        background-color: #2db9e7;
+        color: #fff;
+        border-radius: 4px;
+        font-size: 17px;
+        font-weight: bold;
+        width: auto;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        height: 40px;
+        line-height: 40px;
+        margin-top: 20px;
+    }
+
+        .actionButton.intro.introMain {
+            background-color: #2db9e7;
+            color: #fff;
+            border-radius: 4px;
+            font-size: 20px;
+            font-weight: bold;
+            width: auto;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            height: 60px;
+            line-height: 60px;
+            margin-top: 20px;
+            position: static;
+        }
+
+        .actionButton.intro:hover {
+            background-color: #ffa200;
+        }
+
+        .actionButton.intro.introMain:hover {
+            background-color: #ffa200;
+        }
+
+    .actionButton:hover {
+        background-color: #ffa200;
+        text-decoration: none;
+    }
+
+.stepsIntro {
+    position: absolute;
+    bottom: 100px;
+    width: 96%;
+    background-image: url(/images/fff85.png);
+    background-repeat: repeat;
+    padding: 2%;
+    text-align: center;
+}
+
+.stepsIntroBlock {
+    display: inline-block;
+    width: 26%;
+    text-align: center;
+    color: #000;
+    vertical-align: top;
+    min-width: 250px;
+    padding-bottom: 15px;
+    padding: 3%;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.stepsIntroTitle {
+    font-size: 27px;
+    height: 40px;
+    line-height: 40px;
+}
+
+.stepsIntroP {
+    line-height: 30px;
+    font-size: 20px;
+    color: #555;
+}
+
+.BPblock.embeddedIntro {
+    display: inline-block;
+    height: auto;
+    background-color: #555;
+    text-align: center;
+}
+
+.textMain {
+    font-size: 40px;
+    color: #fff;
+    line-height: 1.2em;
+    padding-left: 4%;
+    margin-bottom: 40px;
+    width: 50%;
+}
+
+    .textMain.sky {
+        margin-bottom: 20px;
+    }
+
+    .textMain.textMainFull {
+        width: 100%;
+        text-align: left;
+    }
+
+
+.textSecondary {
+    font-size: 27px;
+    color: #fff;
+    color: #eee;
+    text-align: left;
+    padding-left: 4%;
+    width: 100%;
+    line-height: 36px;
+}
+
+    .textSecondary.textSecondaryIntro {
+        width: 60%;
+        line-height: 1.35em;
+        margin-bottom: 20px;
+        text-shadow: 0 0 12px #000;
+        color: #fff;
+    }
+
+.introTextHolder .textMain.textMainFull {
+    text-align: left;
+    padding-left: 4%;
+    padding-top: 120px;
+    letter-spacing: 4px;
+    font-size: 89px;
+    text-transform: uppercase;
+    text-shadow: 0px 0px 37px #ccc;
+    margin-bottom: 15px;
+}
+
+.textMainBold {
+    display: block;
+    float: left;
+    width: 100%;
+    color: #fc0;
+}
+
+.textBold {
+    color: #fc0;
+}
+
+.introTextHolder .textSecondary.textSecondaryIntro {
+    text-align: left;
+    padding-left: 4%;
+    font-size: 24px;
+    width: 100%;
+}
+
+.BPblock.billG {
+    display: block;
+    float: left;
+    background: #fff;
+    padding: 2%;
+    width: 96%;
+    height: auto;
+}
+
+.signatureText {
+    font-size: 30px;
+    max-width: 1024px;
+    margin: auto;
+    width: 100%;
+    line-height: 50px;
+    color: #2a99bd;
+}
+
+    .signatureText span {
+        display: block;
+        float: left;
+        text-align: right;
+        width: 100%;
+        font-size: 20px;
+        font-style: italic;
+    }
+
+
+.BPblock.whyStrimm,
+.BPblock.whatIsStrimmBP {
+    background-image: url(/images/whatIsStrimmBP.jpg);
+    background-size: cover;
+    height: 850px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-color: #f2f3f5;
+}
+
+.BPblock.whatIsStrimmBP {
+    background-color: #fff;
+}
+
+.BPblock.whyStrimm {
+    background-image: url(/images/whyStrimm_2.jpg);
+}
+
+.textP {
+    color: #fff;
+    font-size: 20px;
+    line-height: 27px;
+    width: 40%;
+    margin-left: 4%;
+    margin-bottom: 20px;
+}
+
+.textPSecondary {
+    color: #000;
+    font-size: 17px;
+    line-height: 27px;
+    width: 100%;
+    margin-left: 0;
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 15px;
+    clear: both;
+}
+
+.textPInner {
+    width: 100%;
+    font-size: 20px;
+    color: #fff;
+    line-height: 27px;
+}
+
+
+.textP.embeddedBlk {
+    text-align: left;
+    margin-top: 30px;
+    width: 96%;
+    color: #eee;
+}
+
+.colorBlack {
+    color: #000;
+}
+
+.BPblock.testimonials {
+    display: block;
+    float: left;
+    width: 96%;
+    padding: 2%;
+    text-align: center;
+}
+
+.testimonialsBlock {
+    display: inline-block;
+    width: 29%;
+    padding: 2%;
+    min-width: 300px;
+    vertical-align: top;
+    padding-bottom: 15px;
+}
+
+.testimonialsP {
+    font-size: 20px;
+    color: #000;
+    line-height: 30px;
+    text-align: left;
+}
+
+.nadoDelete {
+    color: red;
+}
+
+.testimonialsName,
+.testimonialsLink {
+    display: block;
+    float: left;
+    width: 100%;
+    font-size: 17px;
+    text-align: left;
+    margin-left: 55px;
+}
+
+.testimonialsLink {
+    cursor: default;
+    color: #2a99bd;
+}
+
+    .testimonialsLink:hover {
+        color: #2a99bd;
+    }
+
+.BPblock.hubspot {
+    background: #eee;
+    padding: 2%;
+    width: 96%;
+}
+
+.hubspotMain {
+    font-size: 40px;
+    color: #000;
+    display: block;
+    float: left;
+    width: 96%;
+    text-align: center;
+    padding: 2%;
+    color: #ff6a00;
+}
+
+.signatureLOGO {
+    background-image: url(/images/HubSpot_Logo.png);
+    display: block;
+    width: 100%;
+    background-position: center;
+    background-size: 150px;
+    background-repeat: no-repeat;
+    height: 55px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.BPblock.sky {
+    background-image: url(/images/sky.jpg);
+    background-size: cover;
+    position: relative;
+    height: 650px;
+    background-position: center center;
+    padding-top: 60px;
+}
+
+.actionButton.sky {
+    color: #fff;
+    background-color: #0096e2;
+    top: 250px;
+}
+
+.embeddedINTRO {
+    width: 80%;
+    margin: 30px auto;
+    display: block;
+    float: none;
+    height: auto;
+}
+
+
+.clickHereExample {
+    display: block;
+    float: left;
+    width: 97%;
+    text-align: right;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+    height: 50px;
+    line-height: 50px;
+    text-transform: capitalize;
+}
+
+    .clickHereExample:hover {
+        color: #33c9fa;
+        text-decoration: underline;
+    }
+
+.FAQQuestion {
+    display: block;
+    float: left;
+    border-bottom: 1px solid #2a99bd;
+    color: #777;
+    font-size: 20px;
+    width: 90%;
+    padding: 2%;
+    line-height: 24px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-image: url(/images/arrows/single-down.png);
+    background-position: 98%;
+    background-size: 20px;
+    background-repeat: no-repeat;
+    padding-right: 10%;
+    cursor: pointer;
+}
+
+    .FAQQuestion.active {
+        background-image: url(/images/arrows/single-UP.png);
+        background-position: 98%;
+        background-size: 20px;
+        background-repeat: no-repeat;
+        padding-right: 10%;
+        cursor: pointer;
+        border-bottom: none;
+        color: #000;
+        font-weight: bold;
+    }
+
+
+.FAQAnswer {
+    display: none;
+    float: left;
+    line-height: 24px;
+    padding-left: 2%;
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    color: #555;
+    border-bottom: 1px solid #2a99bd;
+}
+
+    .FAQAnswer a.indpLinks {
+        display: block;
+        width: 100%;
+    }
+
+.embeddedAnc {
+    margin-top: 60px;
+    display: block;
+}
+
+.FAQAnswer ol {
+    display: block;
+    float: left;
+    margin-left: 1%;
+    width: 98%;
+}
+
+    .FAQAnswer ol li {
+        display: block;
+        float: left;
+        width: 100%;
+    }
+
+
+.textMain.FAQ {
+    display: block;
+    float: left;
+    position: static;
+    padding: 5px 2%;
+    width: 96%;
+    color: #2a99bd;
+    margin-bottom: 0;
+}
+
+.BPblock.FAQ {
+    /* float: none; */
+    width: 94%;
+    margin: auto;
+    clear: both;
+    padding: 2%;
+    margin-bottom: 27px;
+}
+
+.stillQuastions {
+    display: block;
+    float: left;
+    text-align: center;
+    font-size: 20px;
+    width: 96%;
+    padding: 20px 2%;
+}
+
+.actionButton.FAQ {
+    display: block;
+    position: static;
+    float: none;
+    clear: both;
+    margin: auto;
+    width: 120px;
+}
+
+.maxBlockHolderMobile {
+    display: none;
+}
+
+@media (min-width: 1540px) {
+    .businessImageBlock11 {
+        background-image: url(/images/businessImages/11-full.jpg);
+    }
+
+    .Imgturnkey {
+        right: 200px;
+    }
+    .innerHolder2 {
+        height: 730px;
+    }
+}
+
+
+@media (max-width: 1450px) {
+    .setUpPackPrice, .setUpChannels, .setUpAdditional, .setUpAddutuonalPrice {
+        height: 90px;
+        padding-top: 10px;
+        line-height: 25px;
+    }
+
+    .setUpChannels {
+        line-height: 90px;
+    }
+
+        .setUpPackPrice span, .setUpChannels span, .setUpAdditional span, .setUpAddutuonalPrice span {
+            top: 50px;
+        }
+}
+
+@media (max-width: 1380px) {
+    .detailsTitle {
+        line-height: 25px;
+    }
+
+    .mutlRowsTitle {
+        line-height: 21px;
+    }
+
+    .setUpAdditional {
+        line-height: 21px;
+    }
+
+
+    .multUL {
+        height: 465px;
+    }
+
+    .singleRow {
+        line-height: 90px;
+    }
+
+    .h1businessPage {
+    }
+
+    .businessPageTitle {
+    }
+}
+
+@media (max-width: 1280px) {
+    .mainHHolder {
+        width: 60%;
+        margin-top: 100px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .innerHolder2,
+    .innerHolder1 {
+        width: 95%;
+        margin: 0;
+    }
+    .innerHolder2 {
+        height: 600px;
+    }
+}
+
+
+
+
+@media (max-width:800px) {
+    .innerHolder,
+    .innerHolder1,
+    .innerHolder2 {
+        width: 98%;
+        padding: 1%;
+    }
+
+    .innerHolder1 {
+        width: 93%;
+        padding: 3%;
+    }
+
+    .introTextHolder .textMain.textMainFull {
+        padding-top: 100px;
+        font-size: 30px;
+        letter-spacing: 1px;
+    }
+
+    .textMain.textMainFull {
+        width: 100%;
+        text-align: center;
+        margin-left: 0;
+        margin-bottom: 10px;
+        padding-left: 0;
+    }
+
+    .textSecondary {
+        width: 100%;
+        text-align: center;
+        font-size: 20px;
+        padding-left: 0;
+    }
+}
+
+@media (max-width:768px) {
+       
+    .innerHolder2 {
+        height: 500px;
+    }
+    .istrimm {
+        width: 260px;
+        height: 75px;
+    }
+
+    .myOwnTVChannel {
+        width: 346px;
+        height: 75px;
+    }
+
+    .ownChannel {
+        font-size: 40px;
+    }
+
+    .createYours {
+        font-size: 27px;
+    }
+
+    .selectPrice {
+        font-size: 30px;
+    }
+
+    .textPSecondary {
+        font-size: 15px;
+    }
+
+    .signatureText span.qtMark {
+        font-size: 30px;
+    }
+
+    .stepsIntroP {
+        line-height: 25px;
+        font-size: 16px;
+    }
+
+    .stepsIntro {
+        position: static;
+        bottom: auto;
+        width: 96%;
+        background-image: url(/images/fff85.png);
+        background-repeat: repeat;
+        padding: 2%;
+        text-align: center;
+        display: none;
+        float: left;
+    }
+
+    .BPblock.intro {
+        height: 74vh;
+    }
+
+    .BPblock.whyStrimm {
+        height: 650px;
+    }
+
+    .FAQClose,
+    .stillQuastions {
+        font-size: 14px;
+    }
+
+    .signatureLOGO {
+        background-size: 100px;
+        height: 40px;
+    }
+
+    .hubspotMain {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    .testimonialsP,
+    .testimonialsName,
+    .testimonialsLink {
+        font-size: 15px;
+        line-height: 24px;
+    }
+
+
+    .signatureText {
+        font-size: 24px;
+        line-height: 40px;
+    }
+
+    .businessImageBlock {
+        width: 100%;
+        height: 300px;
+    }
+
+    .businessTopImgHoder {
+        height: 400px;
+    }
+
+    .businessImageBlock01 {
+        background-size: 320px;
+    }
+
+    .businessTXTBlock {
+        width: 100%;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .pageSum {
+        width: 90%;
+        padding: 1%;
+        box-sizing: border-box;
+        border-bottom: 1px solid #eee;
+        margin: auto;
+        float: none;
+        padding-bottom: 30px;
+        padding-top: 30px;
+    }
+
+    .businessPageTitle {
+        width: 98%;
+        text-align: center;
+        color: #ffffff;
+        height: auto;
+        line-height: 1.3em;
+        margin: auto;
+        margin-bottom: 0;
+        text-shadow: 0 0 20px #000;
+        font-size: 40px;
+        margin-top: 100px;
+    }
+
+    h2 {
+        height: auto;
+        margin-top: 25px;
+        line-height: 1.3em;
+        width: 80%;
+        margin: auto;
+        float: none;
+        margin-top: 40px;
+    }
+
+    .marg20 {
+        margin-bottom: 0;
+    }
+
+    #divContentWrapper p {
+        height: auto;
+        width: 100%;
+        margin-bottom: 15px;
+        margin: auto;
+        margin-top: 25px;
+        font-size: 12px;
+    }
+
+    .subtitlestrongBisiness {
+        padding-bottom: 0;
+        line-height: 1.3em;
+        margin-bottom: 0;
+        margin-top: 20px;
+    }
+
+    .religiousDetails {
+        padding-left: 0;
+        width: 100%;
+        text-align: center;
+        display: block;
+    }
+
+    .backtotop a {
+        color: #2a99bd;
+        text-decoration: underline;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .embeddedViewHolder {
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+        padding-bottom: 30px;
+        margin: 0;
+        float: left;
+    }
+
+    #divContentWrapper ol li {
+        margin-bottom: 15px;
+        height: auto;
+        padding-right: 0;
+        line-height: 1.5em;
+        width: 94%;
+        margin: auto;
+    }
+
+
+    .pageSum img {
+        width: 100px;
+    }
+
+    .pageSumTitle {
+        line-height: 1.3em;
+        margin-left: 0px;
+    }
+
+    .featuresIntro {
+        height: 200px;
+    }
+
+    .featuresPageTitle {
+        height: 150px;
+        line-height: 1.3em;
+        padding-top: 50px;
+        margin-bottom: 25px;
+    }
+
+    #divContentWrapper ol.ol1,
+    #divContentWrapper ol.ol2,
+    #divContentWrapper ol.ol3 {
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+    .olWrapper {
+        margin-top: 0;
+        padding-bottom: 0;
+    }
+
+    .featiresImgHolder {
+        width: 100%;
+        height: 300px;
+        background-size: 320px;
+    }
+
+    .benefitsImgRInnovative {
+        margin-top: 0;
+    }
+
+    .featiresImgHolderMobile {
+        display: none;
+    }
+
+    .featuresIntroBenefits {
+        margin-bottom: 0;
+    }
+
+    .pricingBlock {
+        width: 96%;
+        height: auto;
+        margin-left: 0;
+        margin-right: 0;
+        float: none;
+        border-radius: 0;
+        box-shadow: none;
+        margin: auto;
+    }
+
+    .detailsRowMobileInvisible {
+        display: none;
+    }
+
+    .pricingSubBlock {
+        border-radius: 0;
+    }
+
+    .setUpPackPrice,
+    .ackPriceAdd {
+        display: none;
+    }
+
+    .setUpAdditional {
+        margin-top: 0;
+        margin-bottom: 50px;
+        background: #f5f5f5;
+    }
+
+    .setUpFee {
+        background-color: #fff;
+    }
+
+    .detailsCheck {
+        height: 40px;
+        background-size: 24px;
+    }
+
+    .singleRow {
+        line-height: 40px;
+    }
+
+    .detailsRow {
+        min-height: 40px;
+        background-color: #f5f5f5;
+    }
+
+    .mutlRowsTitle {
+        line-height: 1.5em;
+    }
+
+    .detailsTitle {
+    }
+
+    .pricingFee {
+        line-height: 65px;
+        height: 40px;
+    }
+
+    .packegesInfo {
+        top: 15px;
+    }
+
+    .businessFAQBlock {
+        width: 96%;
+        margin-right: 0;
+        padding-right: 2%;
+        padding-left: 2%;
+        max-width: 400px;
+        margin: auto;
+        float: none;
+    }
+
+    .businessFAQQuestion {
+        line-height: 1.5em;
+        color: #2a99bd;
+        height: auto;
+        font-weight: normal;
+        text-align: center;
+    }
+
+    .subInfo {
+        height: auto;
+        line-height: 1.5em;
+        margin-top: 0;
+        ;
+    }
+
+    .businessFAQTitle {
+        text-align: center;
+        height: auto;
+        margin-bottom: 15px;
+    }
+
+    .businessFAQAnswer {
+        color: #000;
+        line-height: 1.3em;
+        margin-bottom: 25px;
+        text-align: center;
+        float: none;
+    }
+
+    .spnBlue {
+    }
+
+    .faqMobileImg {
+        background-image: url(/images/FAQ-business.png);
+        background-position: center;
+        background-size: 300px;
+        height: 300px;
+        background-repeat: no-repeat;
+    }
+
+    .pricingDetatils {
+        display: none;
+    }
+
+    .collapser {
+        display: block;
+        float: left;
+        width: 100%;
+        height: 50px;
+        background: #115a72;
+        margin-bottom: 10px;
+        background-image: url(/images/arrows/remoteDOWN.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 32px;
+        cursor: pointer;
+    }
+
+        .collapser.active {
+            background-image: url('/images/arrows/remoteUP.png');
+        }
+
+    .pricingTitle {
+        height: 50px;
+    }
+
+    .BPblock.sky {
+        height: 400px;
+    }
+
+
+    .maxBlockHolder {
+        display: none;
+    }
+
+    .maxBlockHolder.maxBlockHolderFB {
+        display: block;
+    }
+
+    .maxBlockHolderMobile {
+        display: block;
+        float: none;
+        padding: 1%;
+        margin: auto;
+    }
+
+    .pricingTitleMobile {
+        display: block;
+        float: left;
+        text-align: center;
+        background-color: #2a99bd;
+        color: #fff;
+        line-height: 40px;
+        width: 100%;
+        font-size: 20px;
+        text-transform: uppercase;
+    }
+
+    .moreInfo {
+        display: block;
+        float: left;
+        height: 30px;
+        width: 100%;
+        cursor: pointer;
+        background-image: url(/images/arrows/double-Down.png);
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+        padding-top: 5px;
+        border-top: 1px solid #ddd;
+        padding-bottom: 5px;
+    }
+
+        .moreInfo.active {
+            background-image: url('/images/arrows/double-UP.png');
+        }
+
+
+    .packMobileHolder {
+        background: #f5f5f5;
+        display: block;
+        float: left;
+        margin-bottom: 15px;
+        width: 100%;
+    }
+
+    .featureHolder {
+        display: none;
+    }
+
+    .pricingDescMobile {
+        display: block;
+        float: left;
+        text-align: center;
+        line-height: 24px;
+        width: 100%;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        color: #555;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .pricingPriceMobile {
+        text-align: center;
+        width: 100%;
+        line-height: 50px;
+        font-size: 20px;
+        float: left;
+        display: block;
+        color: #2a99bd;
+        height: 60px;
+    }
+
+    .pricingStartHolderMobile {
+        display: block;
+        float: left;
+        width: 100%;
+        margin-top: 7px;
+        margin-bottom: 7px;
+    }
+
+    .pricingStart {
+        width: 200px;
+        display: block;
+        text-align: center;
+        margin: auto;
+    }
+
+    .packMobileFeature {
+        display: block;
+        float: left;
+        border-bottom: 1px solid #eee;
+        line-height: 24px;
+        padding-top: 7px;
+        padding-bottom: 7px;
+        width: 100%;
+        font-size: 13px;
+        background-color: #f9f9f9;
+    }
+
+    packMobileFeature strong {
+        font-family: Roboto-regular,'Helvetica Neue',Helvetica,Arial,sans-serif;
+    }
+
+    .radioHolder {
+        float: left;
+    }
+
+    #divContentWrapper {
+        margin-bottom: 0;
+    }
+}
+
+@media (max-height:550px) {
+
+    .istrimm {
+        width: 150px;
+        height: 45px;
+    }
+        .myOwnTVChannel {
+        width: 200px;
+        height: 45px;
+    }
+
+
+    .BPblock.intro {
+        height: 100vh;
+    }
+
+    .ownChannel {
+        font-size: 32px;
+        height: 50px;
+        border-bottom: 2px solid #34cdff;
+        line-height: 40px;
+    }
+
+    .startStrimmingBTN {
+        width: 155px;
+        margin-top: 15px;
+    }
+
+    .mainHHolder {
+        margin-top: 50px;
+        width: 70%;
+    }
+
+    .createYours {
+        font-size: 17px;
+        margin-top: 30px;
+    }
+
+    .actionButton.intro {
+        font-size: 17px;
+        height: 40px;
+        letter-spacing: normal;
+        height: 40px;
+        line-height: 40px;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width:320px) {
+    .commercialVideoWrapper {
+        margin-left: 12px !important;
+        max-width: 131px;
+    }
+}
+
+@media (max-width:360px) {
+    .commercialVideoWrapper {
+        margin-left: 10px;
+        width: 145px !important;
+    }
+}
+
+@media (max-width:375px)
+{
+    .commercialVideoWrapper
+    {
+        margin-left:20px;
+    }
+}
+
+@media (max-width:550px) {
+
+    .embeddedLOOKlike {
+        display: block;
+        float: left;
+        font-size: 20px;
+        color: #2a99bd;
+        text-align: center;
+        width: 100%;
+        height: auto;
+        line-height: 1.3em;
+        text-transform: capitalize;
+        margin-top: 0;
+    }
+
+    .embeddedINTRO {
+        width: 100%;
+    }
+    
+    .innerHolder2 {
+        height: 255px;
+    }
+    #topMenu.topMenuAbsolute {
+        height: 40px;
+    }
+
+    .introTextHolder .textMain.textMainFull {
+        padding-top: 75px;
+        font-size: 27px;
+        letter-spacing: normal;
+    }
+
+    .stepsIntroTitle {
+        font-size: 20px;
+    }
+
+    .stepsIntroP,
+    .introTextHolder .textSecondary.textSecondaryIntro,
+    .textP,
+    .FAQQuestion {
+        line-height: 25px;
+        font-size: 15px;
+    }
+
+    .actionButton {
+        font-size: 15px;
+    }
+
+    .businessNavigation {
+        font-size: 14px;
+    }
+
+
+    .signatureText span.qtMark {
+        font-size: 30px;
+    }
+
+    .BPblock.intro {
+        height: 100vh;
+        background-size: auto 100%;
+        background-position: right;
+        background-image: url(/images/homeFaceMobile.jpg);
+    }
+
+    .istrimm {
+        width: 195px;
+        height: 60px;
+        float: none;
+    }
+
+    .myOwnTVChannel {
+        width: 260px;
+        height: 60px;
+    }
+
+    .ownChannel {
+        font-size: 35px;
+        height: 62px;
+        border-bottom: 2px solid #34cdff;
+    }
+
+    .startStrimmingBTN, .commercialVideoWrapper {
+        width: 155px;
+        margin-top: 15px;
+    }
+
+    .commercialVideoWrapper {
+        height: 31px;
+        line-height: 29px;
+        font-size: 14px;
+        background-position-y: 0px;
+        padding-left: 25px;
+        background-position-x: -10px;
+    }
+
+    .mainHHolder {
+        margin-top: 165px;
+        width: 100%;
+    }
+
+    .createYours {
+        font-size: 19px;
+    }
+
+    .actionButton.intro {
+        font-size: 17px;
+        height: 40px;
+        letter-spacing: normal;
+        height: 40px;
+        line-height: 40px;
+        margin-top: 20px;
+    }
+
+    .stepsIntro {
+        background-image: none;
+        background-color: #dde5e4;
+        display: none;
+    }
+
+    .textSecondary {
+        font-size: 16px;
+    }
+
+    .introTextHolder {
+        width: 100%;
+    }
+
+    .textP {
+        width: 92%;
+        margin-bottom: 20px;
+        margin-top: 175px;
+    }
+
+    .BPblock.whyStrimm,
+    .BPblock.whatIsStrimmBP {
+        height: auto;
+        background-size: 100%;
+    }
+
+    .textP,
+    .textPInner {
+        color: #000;
+        font-size: 15px;
+    }
+
+
+    .textPSky {
+        margin-top: 0;
+        color: #fff;
+        width: 60%;
+        text-shadow: 0 0 27px #000;
+    }
+
+    .textMain {
+        font-size: 25px;
+        width: 60%;
+    }
+
+    .BPblock.sky {
+        height: 300px;
+    }
+
+    .signatureText {
+        font-size: 15px;
+        line-height: 25px;
+        padding: 3%;
+        width: 93%;
+    }
+
+        .signatureText span {
+            font-size: 17px;
+        }
+}
+
+@media (min-width:480px) and (max-width:550px) {
+    .textP {
+        margin-top: 250px;
+    }
+
+    .textPSky {
+        margin-top: 0;
+    }
+}
+
+@media (max-width:450px) {
+    .createYours {
+    font-size: 17px;
+}
+    .ownChannel {
+        font-size: 30px;
+        height: 58px;
+        border-bottom: 2px solid #34cdff;
+    }
+
+    .textMain {
+        font-size: 25px;
+        width: 50%;
+    }
+
+    .businessTopImgHoder {
+        height: 200px;
+    }
+
+    .businessPageTitle {
+        width: 98%;
+        text-align: center;
+        color: #ffffff;
+        height: auto;
+        line-height: 1.3em;
+        margin: auto;
+        margin-top: 25px;
+        margin-bottom: 0;
+        text-shadow: 0 0 20px #000;
+        font-size: 40px;
+    }
+}
+
+@media (max-width:350px) {
+
+
+    .innerHolder2 {
+    height: 210px;
+}
+    .businessPageTitle {
+        font-size: 35px;
+    }
+
+    .textSecondary {
+        font-size: 18px;
+    }
+
+    .textP {
+        margin-top: 110px;
+    }
+
+    .textPSky {
+        margin-top: 0;
+    }
+}
+
+.rokuInfoPopup {
+    
+    left: 50%;
+    display: none;
+    margin-left: -215px;
+    z-index: 1002;
+    position: fixed;
+    top: 50%;
+    margin-top: -115px;
+    padding: 50px 30px 30px;
+    background: #fff;
+}
+
+    .rokuInfoPopup h2 {
+        margin-top: 0px;
+        font-size: 24px;
+    }
+
+.rokuInfoPopup h3
+{
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+
+.rokuInfoPopup ul li
+{
+    list-style: disc;
+    font-size: 17px;
+    margin-left: 17px;
+    line-height: 30px;
+}
+
+.rokuInfoPopup img
+{
+    max-width:800px;
+}
+
+.seeDetailsLink
+{
+    text-decoration:underline;
+}

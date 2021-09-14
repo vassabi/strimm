@@ -1,0 +1,2746 @@
+﻿
+body {
+    background-color: #f5f5f5;
+    /**/
+    /*;*/
+}
+
+#topPlaceHolder {
+    display: none;
+}
+
+
+.GRADIENT-DOWN {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    display: block;
+    z-index: 2;
+    opacity: 0.9;
+    background-size: 100%;
+    background: rgba(0,0,0,1);
+    background: -moz-linear-gradient(top, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0,0,0,1)), color-stop(100%, rgba(0,0,0,0)));
+    background: -webkit-linear-gradient(top, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+    background: -o-linear-gradient(top, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+    background: -ms-linear-gradient(top, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+    background: linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000', GradientType=0 );
+}
+
+.blackBarOver {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    display: block;
+    z-index: 2;
+    opacity: 0.5;
+    background-color: #000;
+}
+
+.GRADIENT-UP {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 200px;
+    display: block;
+    z-index: 2;
+    opacity: 0.9;
+    background: rgba(0,0,0,0);
+    background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0,0,0,0)), color-stop(100%, rgba(0,0,0,1)));
+    background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+    background: -o-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+    background: -ms-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000', GradientType=0 );
+}
+
+
+
+.btnCreate {
+    width: 250px;
+    color: #fff;
+    height: 50px;
+    display: block;
+    background-color: #3bcd4e;
+    line-height: 50px;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 17px;
+    float: left;
+    background: #3bcd4e;
+    margin-top: 35px;
+    cursor: pointer;
+}
+
+    .btnCreate:hover {
+        background: #2e913b;
+    }
+
+.channelHolderCategoryLP {
+    display: block;
+    float: left;
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+}
+
+.whatIskWrapper {
+    width: 90%;
+    height: auto;
+    display: block;
+    margin-bottom: 150px;
+    background-color: transparent;
+    border-bottom: none;
+    margin: auto;
+}
+
+.whatIsHolder {
+    display: block;
+    float: none;
+    width: 90%;
+    height: auto;
+    background-color: #eee;
+    margin: auto;
+}
+
+.whatIs {
+    display: block;
+    width: 100%;
+    max-width: 1520px;
+    margin: auto;
+    height: auto;
+}
+
+.whatIsBlock {
+    width: 33%;
+    display: block;
+    float: left;
+    border-right: 1px solid #ccc;
+}
+
+.borderNone {
+    border-right: none;
+}
+
+#MenuImg, #helloImg {
+    margin-top: 0;
+}
+
+#topRightHolderBL {
+    display: block;
+    padding-top: 20px;
+}
+
+
+.businessSolBeforeLog {
+    border-right: 1px solid #aaa;
+    color: #eee;
+    cursor: pointer;
+    display: block;
+    float: none;
+    height: 35px;
+    line-height: 35px;
+    padding-right: 30px;
+    position: absolute;
+    right: 260px;
+    top: 30px;
+    white-space: nowrap;
+}
+
+    .businessSolBeforeLog:hover {
+        color: #43d507;
+    }
+
+#divTopMenuHolder {
+    float: left;
+    position: relative;
+}
+
+
+.homeActionsHolder {
+    width: 200px;
+    margin: auto;
+}
+
+.sliderCaptionsHN {
+    display: none;
+    min-width: 320px;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    margin-top: 80px;
+    padding-bottom: 50px;
+}
+
+    .sliderCaptionsHN h5 {
+        color: #fff;
+        font-size: 72px;
+        font-weight: normal;
+        letter-spacing: 5px;
+        margin-bottom: 5px;
+        text-transform: uppercase;
+        text-shadow: 5px 2px 12px #333;
+    }
+
+    .sliderCaptionsHN h6 {
+        color: #fc0;
+        font-size: 50px;
+        font-weight: normal;
+        line-height: 2em;
+        margin-bottom: 15px;
+    }
+
+
+.webHolder {
+    display: block;
+    margin: auto;
+    width: 1024px;
+    height: 540px;
+    position: relative;
+    max-width: 1024px;
+}
+
+@-moz-document url-prefix() {
+    .webHolder {
+        max-width: 1024px;
+        width: 900px;
+    }
+}
+
+
+
+.webHolderRightWrapperOverlay {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-image: url("/images/infoBarBG.png");
+    background-repeat: repeat-x;
+    background-position: bottom;
+    z-index: 999;
+    width: 19%;
+    height: 50px;
+    min-width: 280px;
+}
+
+.hideInfoScheduleBlock {
+    width: 98%;
+    background-image: url("/images/00065.png");
+    background-repeat: repeat;
+    min-width: 280px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding-left: 2%;
+    min-height: 650px;
+}
+
+.webHolderRightWrapper {
+    height: 560px;
+    width: 20%;
+    overflow: hidden;
+    right: 0;
+    top: 0;
+    position: absolute;
+    min-width: 300px;
+}
+
+
+.webHolderHidden {
+    background-color: transparent;
+    background-image: url("/images/00050.png");
+    background-repeat: repeat;
+    display: block;
+    float: left;
+    position: relative;
+    width: 300px;
+}
+
+
+
+.hideInfoBlock {
+    background-image: url("/images/00065.png");
+    background-repeat: repeat;
+    position: absolute;
+    top: 0;
+    cursor: pointer;
+    display: block;
+    z-index: 1;
+    height: 560px;
+    width: 300px;
+}
+
+.hideSchedule {
+    background-image: url('/images/slideArrows/slideArrowShow.png');
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 10px;
+    left: -3px;
+    cursor: pointer;
+    display: block;
+    z-index: 1;
+    height: 30px;
+    color: transparent;
+    width: 30px;
+    opacity: 0.7;
+}
+
+    .hideSchedule:hover {
+        opacity: 1;
+    }
+
+
+
+
+.webHolderLeft {
+    display: block;
+    float: left;
+    width: 98%;
+    background-color: transparent;
+    padding-left: 2%;
+    padding-top: 13px;
+    padding-bottom: 0;
+    position: relative;
+    height: 560px;
+}
+
+.fullHolder {
+    display: none;
+    float: left;
+    width: 98%;
+    margin: auto;
+}
+
+/*.mute {
+           background-image: url("/images/mute.png");
+       background-repeat: no-repeat;
+       display: block;
+       position: absolute;
+       bottom: 10px;
+       right: 10px;
+       width: 40px;
+       height: 40px;
+       cursor: pointer;
+      }
+            .muteOFF {
+           background-image: url("/images/muteOFF.png");
+       background-repeat: no-repeat;
+       display: block;
+       position: absolute;
+       bottom: 10px;
+       right: 10px;
+       width: 40px;
+       height: 40px;
+      }*/
+.mute {
+    background-image: url("/images/mute.png");
+    background-repeat: no-repeat;
+    display: block;
+    position: absolute;
+    bottom: 10px;
+    left: -70px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    z-index: 9999;
+}
+
+#divTopWrapper {
+    border-bottom: 2px solid #222;
+}
+
+.muteOFF {
+    background-image: url("/images/muteOFF.png");
+    background-repeat: no-repeat;
+    display: block;
+    position: absolute;
+    bottom: 10px;
+    left: -70px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    z-index: 9999;
+}
+
+
+
+.webHolderRight {
+    display: block;
+    float: left;
+    margin-left: 30px;
+}
+
+.scheduleScrollHomePage {
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+}
+
+.channelWatchig {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    font-size: 17px;
+    color: #2a99bd;
+    text-align: left;
+}
+
+
+.channelWatchigDescription {
+    width: 90%;
+    float: left;
+    height: auto;
+}
+
+.hrefToChannel {
+    color: #2a99bd;
+}
+
+    .hrefToChannel:hover {
+        color: #37ceff;
+    }
+
+
+.channelWatchigDescription p,
+.channelCreatorBIO p {
+    display: block;
+    height: 80px;
+    margin: 0 auto;
+    font-size: 13px;
+    line-height: 25px;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #ccc;
+    text-align: left;
+}
+
+.channelCreator {
+    display: block;
+    width: 100%;
+    float: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.channelCreatorImg,
+.channelChannelImg {
+    display: block;
+    float: left;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #555;
+    margin-right: 10px;
+    margin-top: 7px;
+}
+
+.spnChannelCreator {
+    display: block;
+    float: left;
+    margin-right: 5px;
+    color: #2a99bd;
+    height: 50px;
+    line-height: 50px;
+    text-transform: capitalize;
+    font-size: 17px;
+}
+
+.spnChannelCreatorName {
+    display: block;
+    color: #eee;
+    height: 50px;
+    line-height: 50px;
+    font-size: 14px;
+    float: left;
+}
+
+
+.scheduleHome {
+    display: block;
+    float: left;
+    width: 95%;
+    height: 50px;
+    border-bottom: 1px solid #0a6215;
+    min-width: 300px;
+}
+
+
+#topRightHolderBL .spnCreateChannel {
+    background-color: #3BCD4E;
+    border: 1px solid #3BCD4E;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+    float: left;
+    font-size: 12px;
+    font-weight: bold;
+    height: 35px;
+    letter-spacing: 1px;
+    line-height: 36px;
+    margin-left: 5px;
+    margin-top: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 145px;
+}
+
+.scheduleScrollHomePage {
+    height: 560px;
+}
+
+#topRightHolderBL .spnCreateChannel:hover {
+    background-color: #2e913b;
+    border: 1px solid #2e913b;
+}
+
+#helloMenuList {
+    position: absolute;
+    top: 76px;
+    right: 115px;
+}
+
+.spnCreateChannel {
+    background-color: #32a901;
+    border: 1px solid #32a901;
+    color: #fff;
+    display: block;
+    border-radius: 2px;
+    font-size: 15px;
+    width: 130px;
+}
+
+    .spnCreateChannel:hover {
+        background-color: #2e913b;
+        border: 1px solid #2e913b;
+    }
+
+.PlayerHolderHome {
+    height: 100%;
+    width: 1024px;
+    margin: auto;
+    position: relative;
+}
+
+@-moz-document url-prefix() {
+    .PlayerHolderHome {
+        height: 100%;
+        width: 100%;
+        max-width: 900px;
+        margin: auto;
+    }
+}
+
+
+
+.playerbox, #player, #PlayerHolder {
+    width: 100%;
+    height: 100%;
+}
+
+
+.howToHolder {
+    /* bottom: 0; */
+    display: block;
+    max-width: 1520px;
+    min-width: 302px;
+    position: relative;
+    width: 100%;
+    margin: auto;
+    padding-bottom: 50px;
+    /* padding-top: 100px; */
+    text-align: center;
+    /* margin-top: -85px; */
+    margin-top: 100px;
+    /* margin-bottom: 50px; */
+    /* float: left; */
+}
+
+
+
+
+
+
+.leftHowToBoxesHolder {
+    display: inline-block;
+    width: 20%;
+    text-align: center;
+    vertical-align: top;
+    float: left;
+}
+
+.rightHowToBoxesHolder {
+    display: inline-block;
+    width: 70%;
+    text-align: center;
+    vertical-align: top;
+    float: right;
+    min-width: 800px;
+}
+
+
+
+.howToBox {
+    display: block;
+    float: right;
+    width: 230px;
+    height: 230px;
+    position: relative;
+    margin-left: 10px;
+    float: right;
+    background-image: url("/images/howToBoxBG.png");
+    background-repeat: repeat;
+}
+
+
+.howToBoxlink {
+    display: block;
+    float: right;
+    width: 230px;
+    height: 230px;
+    /* background: red; */
+    margin-left: 10px;
+}
+
+
+
+
+.watchNowBoxLeft {
+    background-image: url("/images/watchNowBox.jpg");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 100%;
+    background-size: cover;
+    width: 230px;
+    height: 230px;
+    float: left;
+}
+
+    .watchNowBoxLeft:hover {
+        background-image: url("/images/watchNowBoxBG.jpg");
+    }
+
+.boxAction {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 45px;
+    background-color: #2a99bd;
+}
+
+.webHolderRightWrapperOverlay {
+    display: none;
+}
+
+
+
+
+.noBG {
+    background-color: transparent;
+}
+
+.actionNumber {
+    background-color: #1b576a;
+    color: #fff;
+    display: block;
+    float: left;
+    font-size: 19px;
+    font-weight: bold;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    width: 15%;
+}
+
+.avtionWording {
+    color: #fff;
+    display: block;
+    height: 45px;
+    text-transform: capitalize;
+    line-height: 45px;
+    width: 85%;
+    font-size: 19px;
+    text-align: center;
+}
+
+.actionWatchNow {
+    color: #fff;
+    display: block;
+    text-align: center;
+    height: 45px;
+    width: 100%;
+    text-transform: capitalize;
+    line-height: 45px;
+    font-size: 25px;
+}
+
+
+
+.boxDescription {
+    display: block;
+    float: left;
+    width: 100%;
+    height: 200px;
+    margin-top: 45px;
+}
+
+
+.spnBoxDescription {
+    display: block;
+    float: left;
+    padding: 20px;
+    line-height: 24px;
+    font-size: 15px;
+    text-align: center;
+    color: #fff;
+    /* width: 230px; */
+    height: 160px;
+    /* background-color: red; */
+    /* opacity: 0.7; */
+    padding-top: 40px;
+}
+
+    .spnBoxDescription:hover {
+        background-image: url("/images/howToBoxesHoverLM.png");
+        background-repeat: no-repeat;
+        /*color: rgba(0,0,0,0);*/
+        /*color: #777;*/
+        color: #eee;
+        background-position: top center;
+    }
+
+.plainNH {
+    margin-bottom: 10px;
+    margin-top: 5%;
+    text-shadow: none;
+    width: 100%;
+}
+
+.paragraphSloganBlackNH {
+    color: #eee;
+    display: block;
+    font-size: 30px;
+    line-height: 1.3em;
+    margin: 40px auto auto;
+    padding: 1%;
+    text-align: center;
+    text-transform: capitalize;
+    font-family: Roboto-Light,'Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+
+.bottomButtonsHolderNH {
+    display: block;
+    height: 90px;
+    margin: auto;
+    width: 100%;
+    position: relative;
+}
+
+.bottomSignUpNH {
+    color: #fff;
+    display: block;
+    font-size: 17px;
+    font-weight: normal;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    width: 180px;
+    border: 1px solid #00b014;
+    background-color: #00b014;
+    margin: auto;
+    margin-top: 30px;
+    border-radius: 4px;
+}
+
+.weightNormal {
+    font-weight: normal;
+}
+
+.bottomSignUpNH:hover {
+    background-color: #04ce1b;
+    color: #fff;
+    border: 1px solid #2e913b;
+}
+
+.learnMoreHomeNH {
+    color: #fff;
+    display: block;
+    float: left;
+    font-size: 17px;
+    font-weight: normal;
+    height: 41px;
+    line-height: 43px;
+    margin: 26px auto auto;
+    text-align: center;
+    width: 120px;
+}
+
+
+
+    .learnMoreHomeNH:hover {
+        border-bottom: 1px solid #fff;
+        color: #fff;
+    }
+
+#divFooterNH.default {
+    bottom: 0;
+    clear: both;
+    float: left;
+    margin: auto;
+    max-width: 100%;
+    min-width: 301px;
+    width: 100%;
+    background-image: url("/images/footerImg.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    /* height: 800px; */
+    position: relative;
+    background-position: bottom;
+    background-color: #BEB5B0;
+}
+
+
+@media (max-width:1320px) {
+    #divFooterNH.default {
+        background-size: 140%;
+    }
+}
+
+.emptyHolderForSlider {
+    max-width: 100%;
+    height: auto;
+}
+
+
+.holderNH {
+    clear: both;
+    margin: auto;
+    min-width: 302px;
+    width: 100%;
+    max-width: 1520px;
+    margin: auto;
+}
+
+.columnHN {
+    display: inline-block;
+    margin: 120px 1% 1%;
+    text-align: center;
+    vertical-align: top;
+    /* width: 15%; */
+    width: 20%;
+}
+
+.whatIsTitle,
+.whatIsTitleWhite,
+.whatIsTitleYellow,
+.flagsTitle,
+.WSTitle,
+.guideViewTitle {
+    display: block;
+    float: left;
+    line-height: 1.3em;
+    text-align: center;
+    font-size: 30px;
+    color: #072d3d;
+    width: 100%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-family: Roboto-Light,'Helvetica Neue',Helvetica,Arial,sans-serif;
+    padding: 1%;
+    box-sizing: border-box;
+}
+
+.flagsTitle {
+    margin-bottom: 10px;
+}
+
+.indieTitle {
+    border-top: 1px solid #ddd;
+}
+
+.whatIsTitleWhite {
+    color: #eee;
+}
+
+.whatIsTitleYellow {
+    color: #40d304;
+    text-shadow: 0px 3px 10px #000;
+    opacity: 0.95;
+}
+
+.whatIsSubTitle {
+    display: block;
+    float: left;
+    height: 44px;
+    line-height: 17px;
+    text-align: left;
+    font-size: 21px;
+    color: #555;
+    width: 100%;
+}
+
+.column li a {
+    width: 100%;
+}
+
+.whatIsStep {
+    display: block;
+    float: left;
+    height: 45px;
+    line-height: 1.3em;
+    text-align: center;
+    font-size: 20px;
+    color: #000;
+    width: 100%;
+    clear: both;
+}
+
+.whatIsStrimmHolder {
+    background: #fff;
+    height: auto;
+    padding: 1%;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    float: left;
+}
+
+.holderBlockOuter {
+    display: block;
+    float: left;
+    width: 100%;
+}
+
+.holderBlock {
+    width: 100%;
+    max-width: 50%;
+    float: left;
+    padding: 3%;
+    box-sizing: border-box;
+    border-right: 1px solid #ddd;
+}
+
+.noBorderholderBlock {
+    border-right: none;
+}
+
+
+.whatIsStrimmHolder h3 {
+    line-height: 30px;
+    font-size: 20px;
+    width: 100%;
+    padding-left: 1%;
+    box-sizing: border-box;
+    color: #2a99bd;
+    text-align: center;
+    font-weight: normal;
+    font-family: Roboto,'Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+
+.whatIsStrimmHolder p {
+    width: 100%;
+    max-width: 900px;
+    text-align: center;
+    margin: auto;
+    color: #000;
+    padding-bottom: 20px;
+    line-height: 24px;
+}
+
+.whatIsDescription {
+    display: block;
+    float: left;
+    line-height: 25px;
+    text-align: center;
+    font-size: 16px;
+    color: #555;
+    width: 98%;
+    margin: auto;
+    clear: both;
+    /* font-weight: bold; */
+}
+
+#divTopNav a.signUpFree {
+    width: 120px;
+    background: #32a901;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    padding-right: 0;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+    #divTopNav a.signUpFree:hover {
+        background-color: #43d507;
+        color: #fff;
+    }
+
+
+
+
+.whatIsIcon {
+    display: block;
+    width: 90%;
+    height: auto;
+    margin: auto;
+    cursor: default;
+}
+
+#whatIsIconsCreate,
+#whatIsIconsAdd,
+#whatIsIconsBroadcast {
+    background-image: url(/images/whatIsIcons/whatIsIcons-create.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 200px;
+    display: block;
+    height: 200px;
+    float: none;
+    background-size: 100%;
+    margin: auto;
+}
+
+#whatIsIconsAdd {
+    background-image: url('/images/whatIsIcons/whatIsIcons-add.png');
+}
+
+#whatIsIconsBroadcast {
+    background-image: url('/images/whatIsIcons/whatIsIcons-broadcast.png');
+}
+
+
+
+.video-box-h1 {
+    color: #ddd;
+    display: block;
+    float: left;
+    font-size: 25px;
+    height: 30px;
+    margin-left: 8px;
+    margin-top: 30px;
+    text-align: left;
+    text-transform: capitalize;
+    width: 100%;
+    font-weight: normal;
+}
+
+
+.blackBlock {
+    display: block;
+    height: 50px;
+    background: #000;
+    width: 100%;
+}
+
+
+//::-webkit-input-placeholder { /* Chrome */
+    color: #999;
+    font-size: 16px;
+    padding-top: 2px;
+}
+
+//:-ms-input-placeholder { /* IE 10+ */
+    color: #999;
+    font-size: 16px;
+    padding-top: 2px;
+}
+
+//::-moz-placeholder { /* Firefox 19+ */
+    color: #999;
+    font-size: 16px;
+    padding-top: 2px;
+}
+
+//:-moz-placeholder { /* Firefox 4 - 18 */
+    color: #999;
+    font-size: 16px;
+    padding-top: 2px;
+}
+
+
+/* turn it off completely */
+select option:active, select option:hover {
+    outline: none;
+}
+
+.select option:hover {
+    background: red;
+}
+
+/* make it red instead (with with same width and style) */
+
+
+#createChannelModal #divBoardContent select option {
+    background: #fff;
+}
+
+
+
+
+.topMobileMenu {
+    display: none;
+}
+
+.menuBL {
+    display: none;
+}
+
+
+
+.mainSearch {
+    background-image: url("/images/ddl.png");
+    margin-top: 3px;
+    opacity: 0.9;
+}
+
+.styled-selectSortSearch {
+    width: 150px;
+}
+
+.stepsBlockDetails {
+    display: block;
+    float: left;
+    width: 100%;
+    text-align: center;
+    color: green;
+    text-decoration: underline;
+    font-size: 17px;
+    height: 20px;
+    line-height: 20px;
+    margin-top: 10px;
+}
+
+    .stepsBlockDetails:hover {
+        color: #32e94a;
+    }
+
+.televisionByPeople {
+    display: block;
+    float: none;
+    height: 100%;
+    position: relative;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 0;
+}
+
+.startWatching {
+    display: block;
+    float: left;
+    width: 100%;
+    text-align: center;
+    color: #eee;
+    font-size: 27px;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    font-weight: normal;
+    height: 80px;
+    line-height: 80px;
+    text-shadow: 0px 3px 10px #000;
+}
+
+#ancCreateOrSignUp #ancCreateOrSignUp,
+#ancCreateOrSignUpBottom {
+    display: block;
+    width: 180px;
+    height: 50px;
+    float: left;
+    color: #fff;
+    background-color: #00b014;
+    text-align: center;
+    line-height: 50px;
+    text-transform: capitalize;
+    font-size: 17px;
+    margin-top: 42px;
+    border-radius: 4px;
+}
+
+#ancCreateOrSignUp {
+    display: none;
+}
+
+
+#ancCreateOrSignUpBottom.createChannelFooter {
+    margin: auto;
+    margin-top: 50px;
+    float: none;
+}
+
+@-moz-document url-prefix() {
+    #ancCreateOrSignUp {
+        margin-top: 0;
+    }
+}
+
+
+#ancCreateOrSignUp:hover {
+    background-color: #2e913b;
+}
+
+.pageH1 {
+    color: #fff;
+    display: block;
+    font-size: 70px;
+    line-height: 70px;
+    margin: auto;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    padding-top: 90px;
+    text-shadow: 0px 3px 10px #000;
+    line-height: 1.3em;
+    opacity: 0.95;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.tvGuideHome {
+    position: absolute;
+    bottom: 30px;
+    right: 0;
+    background-image: url(/images/tvGuideHome.png);
+    background-size: 100%;
+    width: 500px;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.pageH2 {
+    color: #fff;
+    display: block;
+    font-size: 37px;
+    line-height: 70px;
+    margin: auto;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    text-shadow: 0px 3px 10px #000;
+    line-height: 1.3em;
+    opacity: 0.95;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    margin-bottom: 200px;
+    font-weight: normal;
+}
+
+
+
+.columnFooterSocial {
+    margin: auto;
+}
+
+.columnHN li a {
+    font-size: 14px;
+    color: #ccc;
+}
+
+
+body .footerHomeBlock {
+    width: 100%;
+}
+
+.homeGuideBusinessesHolder {
+    display: block;
+    width: 100%;
+    margin: auto;
+    height: 50px;
+    float: none;
+    clear: both;
+    max-width: 500px;
+}
+
+.homeGuide,
+.homeGBusinesses {
+    background-color: #2a99bd;
+    float: right;
+    background-image: url('/images/social/socialRound/businesses-mobile.png');
+    background-position: 5px;
+    background-repeat: no-repeat;
+    background-size: 40px;
+    color: #eee;
+    border-radius: 4px;
+    box-shadow: 0 0 50px #000;
+    font-size: 15px;
+    font-family: Roboto-Regular,'Helvetica Neue',Helvetica,Arial,sans-serif;
+    display: block;
+    max-width: 240px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    width: 50%;
+}
+
+.homeGBusinesses {
+    padding-left: 40px;
+    max-width: 200px;
+}
+
+    .homeGBusinesses:hover {
+        background-color: #1f677e;
+        text-decoration: none;
+    }
+
+
+.homeGuide {
+    background-color: #ddd;
+    float: left;
+    background-image: url(/images/TV-Guide.png);
+    background-repeat: no-repeat;
+    background-size: 37px;
+    color: #000;
+}
+
+    .homeGuide:hover {
+        background-color: red;
+        color: #fff;
+        text-decoration: none;
+    }
+
+
+#homesliderHN {
+    display: block;
+    overflow: visible;
+    position: relative;
+    width: 100%;
+    background-color: #000;
+    margin-top: 0;
+    min-width: 302px;
+    height: 650px;
+    background-image: url('/images/home-main-image.jpg');
+    /*background-image: url('/images/home-main-image-with-TV-MR012.jpg');*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: 70px;
+}
+
+@-moz-document url-prefix() {
+    #homesliderHN {
+        height: 600px;
+    }
+
+    .webHolder, .webHolderRightWrapper {
+        height: 500px;
+    }
+
+    .hideInfoScheduleBlock {
+        min-height: 500px;
+    }
+}
+
+.whatsPlayingNowIconHN {
+    background-image: url("/images/arrow-down.png");
+    display: none;
+    height: 55px;
+    left: 50%;
+    position: absolute;
+    top: -33px;
+    width: 55px;
+    background-position: center center;
+    background-size: 130%;
+}
+
+.whatsPlayingNowHN {
+    background-color: transparent;
+    display: block;
+    float: left;
+    height: 70px;
+    position: relative;
+    width: 100%;
+}
+
+    .whatsPlayingNowHN h2 {
+        color: #0E0E10;
+        display: block;
+        font-size: 32px;
+        height: 70px;
+        letter-spacing: 1px;
+        line-height: 70px;
+        margin: 30px auto auto;
+        position: relative;
+        text-align: center;
+        width: 100%;
+        font-weight: normal;
+    }
+
+.menuBL .AdvSearchImgHN {
+    display: none;
+    cursor: default;
+}
+
+    .menuBL .AdvSearchImgHN:hover {
+        display: none;
+    }
+
+
+#topLeftHolder {
+    margin-top: 30px;
+}
+
+#topRightHolder {
+    padding-top: 30px;
+}
+
+
+/*-------------------------------------------------------------------------------------CSS-NOT- CHANGED*/
+.AdvSearchImg {
+    background-image: url(/images/lupa-search-white.png);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    display: block;
+    float: left;
+    height: 16px;
+    margin-left: -3px;
+    margin-top: 25px;
+    opacity: 1;
+    width: 16px;
+}
+/*-------------------------------------------------------------------------------------//////// CSS-NOT- CHANGED*/
+.option2 {
+    display: block;
+    float: left;
+    width: 81%;
+    height: 30px;
+    color: #fc0;
+    font-size: 25px;
+    text-align: right;
+    margin-bottom: 10px;
+}
+
+.option1 {
+    display: block;
+    float: left;
+    width: 100%;
+    height: 30px;
+    color: #fc0;
+    font-size: 25px;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+
+.chanBoxtitle {
+    color: #fff;
+    float: left;
+    font-size: 16px;
+    font-weight: bold;
+    /* padding-left: 3px; */
+    width: 100%;
+    /* padding-top: 170px; */
+    /* padding-bottom: 10px; */
+    position: absolute;
+    bottom: 40px;
+    left: 0;
+    text-align: left;
+}
+
+
+.homeBlocksHolder {
+    background-color: transparent;
+    clear: both;
+    display: block;
+    float: left;
+    text-align: center;
+    width: 100%;
+    position: relative;
+}
+
+.home-video-box-01 {
+    background-image: none;
+    background-size: 100%;
+}
+
+.homeBlocksHolder .chanBoxInfo {
+    background-image: url("/images/chanBoxInfoBG.png");
+    background-repeat: repeat-x;
+    bottom: 0;
+    box-shadow: none;
+    display: block;
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+    position: absolute;
+    cursor: pointer;
+    background-color: transparent;
+    background-size: 110%;
+}
+
+
+    .homeBlocksHolder .chanBoxInfo:hover {
+        background-image: url("/images/chanBoxInfoBGhover.png");
+    }
+
+/*------------------------------------------ FOOTER-DOUBLE-CSS------------------------------------------------------*/
+
+
+.footerSocial {
+    display: block;
+    float: left;
+    width: 38px;
+    height: 38px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+
+.footerSocialFacebook {
+    display: block;
+    float: left;
+    background: url('/images/Sprites/Strimm_TV_Home.png') no-repeat -148px -131px;
+    width: 38px;
+    height: 38px;
+    background-repeat: no-repeat;
+    opacity: 0.7;
+}
+
+.footerSocialTwitter {
+    display: block;
+    float: left;
+    background: url('/images/Sprites/Strimm_TV_Home.png') no-repeat -203px -185px;
+    width: 38px;
+    height: 38px;
+    background-repeat: no-repeat;
+    opacity: 0.7;
+}
+
+.footerSocialGoogle {
+    display: block;
+    float: left;
+    background: url('/images/Sprites/Strimm_TV_Home.png') no-repeat -205px -131px;
+    width: 38px;
+    height: 38px;
+    background-repeat: no-repeat;
+    opacity: 0.7;
+}
+
+.footerSocialPinterest {
+    display: block;
+    float: left;
+    background: url('/images/Sprites/Strimm_TV_Home.png') no-repeat -148px -185px;
+    width: 38px;
+    height: 38px;
+    background-repeat: no-repeat;
+    opacity: 0.7;
+}
+
+    .footerSocialFacebook:hover,
+    .footerSocialTwitter:hover,
+    .footerSocialGoogle:hover,
+    .footerSocialPinterest:hover {
+        opacity: 1;
+    }
+
+.columnFooterSocial li a {
+    display: block;
+    margin-left: 0;
+    width: 38px;
+    height: 38px;
+}
+/*------------------------------------------////////FOOTER-DOUBLE-CSS------------------------------------------------------*/
+
+
+
+
+
+
+
+/*------------------------------------------------------ CSS NOT CHANGED -----------------------------------------------*/
+
+
+
+
+#divTopWrapper {
+    border: medium none;
+    height: 70px;
+    position: relative;
+    width: 100%;
+    z-index: 9999;
+    box-shadow: none;
+    display: none;
+}
+
+.menuBL #divBrowseChannels {
+    display: block;
+    width: 120px;
+    height: 50px;
+    float: left;
+    position: absolute;
+    left: 200px;
+    top: 0;
+    margin-top: 23px;
+}
+
+    .menuBL #divBrowseChannels a,
+    .menuBL #divTopMenu,
+    .menuBL #spnHello,
+    .menuBL .whatIsStrimmTop a {
+        color: transparent;
+        cursor: default;
+    }
+
+
+
+
+
+
+#divTopMenuHolder #ancMenu:hover {
+    color: #40d304;
+}
+
+
+
+.menuBL #divBrowseChannels a #divImg,
+.menuBL .divImg {
+    color: transparent;
+    cursor: default;
+}
+
+
+
+.menuBL .spnAdvSearch:hover,
+.menuBL #divTopMenu:hover,
+.menuBL #spnHello:hover,
+.menuBL .whatIsStrimmTop a:hover {
+    color: transparent;
+}
+
+.menuBL #divTopMenu,
+.menuBL .whatIsStrimmTop a {
+    border-right: none;
+    color: transparent;
+}
+/*#divLogo {
+    margin-top: 0;
+}*/
+
+/*#divTop {
+    margin-top: 20px;
+}*/
+
+.menuBL #divBrowseChannels a {
+    color: red;
+    border-right: none;
+    cursor: pointer;
+    background: transparent;
+    border-radius: 2px;
+    text-align: center;
+    padding: 0;
+    width: 120px;
+    height: 35px;
+    line-height: 50px;
+    margin-top: 0;
+}
+
+    .menuBL #divBrowseChannels a:hover {
+        text-decoration: underline;
+    }
+
+
+
+.menuBL .spnAdvSearch {
+    color: transparent;
+    cursor: default;
+}
+
+    .menuBL .spnAdvSearch:hover {
+        color: transparent;
+    }
+
+
+#divTopNav a {
+    background-image: none;
+    color: #eee;
+    display: block;
+    float: right;
+    font-size: 16px;
+    letter-spacing: 0;
+    margin-top: 10px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: capitalize;
+    width: 55px;
+}
+
+
+    #divTopNav a.businessSolBeforeLog {
+        display: block;
+        float: left;
+        width: 200px;
+        height: 35px;
+        line-height: 35px;
+        color: #fc0;
+        cursor: pointer;
+    }
+
+        #divTopNav a.businessSolBeforeLog:hover {
+            color: #fff;
+        }
+
+.businessSolAfterLog {
+    border-right: 1px solid #555;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    float: right;
+    height: 35px;
+    line-height: 35px;
+    margin-right: 15px;
+    width: 145px;
+}
+    /*@-moz-document url-prefix() {
+    .businessSolAfterLog {
+    width: 120px;
+}
+}*/
+
+    .businessSolAfterLog:hover {
+        color: #40d304;
+    }
+
+
+#divTopNav #LogIn {
+    border-left: none;
+    border-right: none;
+    padding-left: 10px;
+    text-align: left;
+    padding-right: 10px;
+    line-height: 35px;
+    background-image: none;
+    margin-right: 0;
+    background-color: #32a901;
+    /*width: 100px;*/
+    text-align: center;
+    border-radius: 2px;
+    color: #fff;
+}
+
+    #divTopNav #LogIn:hover {
+        /*color: #43d507;*/
+        background-color: #2e913b;
+    }
+
+
+
+.whatIslearnMore {
+    display: block;
+    float: left;
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.btnWhatIslearnMore {
+    display: block;
+    height: 40px;
+    width: 180px;
+    margin: auto;
+    background-color: transparent;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    border: 1px solid #2db9e7;
+    background-color: #2db9e7;
+    border-radius: 4px;
+    font-size: 15px;
+    font-family: Roboto-Regular,'Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+
+    .btnWhatIslearnMore:hover {
+        background-color: #32ccfe;
+        border: 1px solid #32ccfe;
+        color: #fff;
+    }
+
+
+.home-video-box:hover,
+.home-video-box-01:hover,
+.home-video-box-02:hover,
+.home-video-box-03:hover,
+.home-video-box-04:hover,
+.home-video-box-05:hover,
+.home-video-box-06:hover,
+.home-video-box-07:hover,
+.home-video-box-08:hover,
+.home-video-box-09:hover,
+.home-video-box-10:hover,
+.home-video-box-11:hover,
+.home-video-box-add:hover {
+    box-shadow: none;
+    border-color: #2a99bd;
+}
+
+.home-video-box-add {
+    background-image: url("/images/seeMoreNewDec.png");
+    background-size: 100% auto;
+    border: 1px solid #ddd;
+    width: 228px;
+}
+
+.home-video-box, .home-video-box-01, .home-video-box-02, .home-video-box-03, .home-video-box-04, .home-video-box-05, .home-video-box-06, .home-video-box-07, .home-video-box-08, .home-video-box-09, .home-video-box-010, .home-video-box-011, .home-video-box-add {
+    cursor: pointer;
+    display: inline-block;
+    float: left;
+    height: auto;
+    margin: 0.5%;
+    width: 15%;
+    min-width: 180px;
+}
+
+
+
+.home-video-box-add {
+    background-image: url("/images/seeMoreNew.png");
+    background-size: 100% auto;
+    border: 1px solid #ddd;
+    width: 228px;
+}
+
+.channelTiming {
+    background-color: red;
+    border-top-left-radius: 20px;
+    bottom: 0;
+    color: #ccc;
+    display: block;
+    float: left;
+    font-size: 14px;
+    font-weight: bold;
+    height: 22px;
+    right: 0;
+    line-height: 22px;
+    opacity: .9;
+    position: absolute;
+    text-align: center;
+    width: 50px;
+}
+
+
+.scheduleHomeTitle {
+    display: block;
+    float: left;
+    height: 30px;
+    line-height: 15px;
+    padding-top: 15px;
+    color: #bbb;
+    font-size: 12px;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 70%;
+}
+
+.whatsPlayingNow {
+    background-color: transparent;
+    display: block;
+    float: left;
+    height: 120px;
+    position: relative;
+    width: 100%;
+}
+
+.chanBox {
+    border: 1px solid #333;
+    display: block;
+    float: left;
+    height: auto;
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    max-width: 230px;
+}
+
+.channelImg {
+    height: auto;
+    width: 100%;
+}
+
+.scheduleHomeTime {
+    display: block;
+    float: left;
+    height: 50px;
+    width: 24%;
+    line-height: 50px;
+    color: #ddd;
+    text-align: center;
+    margin-right: 1%;
+    font-size: 14px;
+    position: relative;
+}
+
+.playingNowHome,
+.playingNextHome {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 15px;
+    color: #fff;
+    background-color: #ff4b00;
+    opacity: 0.85;
+    line-height: 15px;
+    font-size: 12px;
+}
+
+.playingNextHome {
+    background-color: #3bcd4e;
+    display: none;
+}
+
+.playingNowHome {
+    display: none;
+}
+
+.watchVideoIcon200Holder {
+    display: block;
+    float: left;
+    width: 100%;
+}
+
+.watchVideoIcon200 {
+    cursor: pointer;
+    display: block;
+    float: none;
+    margin: auto;
+    background-image: none;
+    background-color: #2a99bd;
+    height: 40px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    color: #fff;
+    line-height: 40px;
+    text-align: center;
+    width: 180px;
+    font-family: Roboto-Regular,'Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+
+
+
+    .watchVideoIcon200:hover {
+        background-color: #216c84;
+    }
+
+
+
+.channelsBG {
+    display: none;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    background-color: #000;
+    margin-top: 0;
+    height: 500px;
+    background-image: url('/images/homeChannelsView.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-bottom: 3px solid #444;
+}
+
+
+
+
+
+.moreInfo {
+    display: block;
+    float: left;
+    width: 95%;
+    text-align: right;
+    color: #2a99bd;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+    .moreInfo:hover {
+        color: #3bcd4e;
+    }
+
+.descriptionFull, .aboutFull {
+    display: block;
+    left: 5%;
+    width: 90%;
+    height: auto;
+    background-color: transparent;
+    margin: auto;
+    padding-top: 5%;
+}
+
+
+    .descriptionFull p,
+    .aboutFull p {
+        display: block;
+        float: left;
+        color: #999;
+        font-size: 13px;
+        line-height: 25px;
+        height: auto;
+    }
+
+.ancCreatorLink {
+    display: block;
+    float: left;
+    width: 100%;
+}
+
+.ancCreatorLinkFull {
+    display: block;
+    float: left;
+    padding: 5%;
+}
+
+.channelCreatorBIO {
+    display: block;
+    float: left;
+    width: 90%;
+}
+
+#divFooterNH.default {
+    bottom: 0;
+    clear: both;
+    float: left;
+    margin: auto;
+    max-width: 100%;
+    min-width: 301px;
+    width: 100%;
+    background-image: url("/images/footerImgHomeDarkBlue.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-position: center;
+    background-color: #083346;
+    margin-top: 50px;
+    padding-top: 15%;
+}
+
+.showInfoBar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 560px;
+    background-image: url("/images/00065.png");
+    background-repeat: repeat;
+    z-index: 999;
+    color: #fff;
+    font-size: 14px;
+    font-style: italic;
+    display: none;
+    cursor: pointer;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+
+    .showInfoBar:hover {
+        color: #03fb23;
+    }
+
+.showScheduleWrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 560px;
+    background-image: url("/images/00065.png");
+    background-repeat: repeat;
+    z-index: 999;
+    color: #fff;
+    font-size: 14px;
+    font-style: italic;
+    cursor: pointer;
+    padding-right: 10px;
+    padding-top: 10px;
+}
+
+.showSchedule {
+    background-image: url('/images/slideArrows/slideArrowHide.png');
+    background-repeat: no-repeat;
+    color: #fff;
+    display: block;
+    height: 30px;
+    width: 30px;
+    opacity: 0.7;
+}
+
+
+.seeAllChannels {
+    display: block;
+    text-align: center;
+    color: #fff;
+    font-size: 17px;
+    text-transform: capitalize;
+    cursor: pointer;
+    width: 180px;
+    line-height: 100px;
+    margin: auto;
+    background-color: #00b014;
+    height: 50px;
+    line-height: 50px;
+    clear: both;
+    border-radius: 4px;
+}
+
+    .seeAllChannels:hover {
+        color: #fff;
+        background: #2e913b;
+    }
+
+.showScheduleIcon {
+    background-image: url('/images/homeSliderIcons/ShowScheduleIcon.png');
+    background-repeat: no-repeat;
+    color: #fff;
+    display: block;
+    height: 35px;
+    width: 35px;
+    opacity: 0.7;
+    margin-top: 20px;
+    background-size: 100%;
+}
+
+
+
+    .showSchedul:hover,
+    .showScheduleIcon:hover {
+        opacity: 1;
+    }
+
+.infoShowIcon {
+    background-image: url('/images/slideArrows/slideArrowShow.png');
+    background-repeat: no-repeat;
+    color: #fff;
+    display: block;
+    height: 30px;
+    width: 30px;
+    opacity: 0.7;
+}
+
+.infoShowIconInfo {
+    background-image: url('/images/infoIconSlider.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: block;
+    height: 33px;
+    width: 33px;
+    opacity: 0.7;
+    margin-top: 20px;
+    background-position: center;
+}
+
+
+
+    .infoShowIcon:hover,
+    .infoShowIconInfo:hover {
+        opacity: 1;
+    }
+
+
+#btnHide {
+    background-image: url("/images/slideArrows/slideArrowHide.png");
+    background-repeat: no-repeat;
+    color: transparent;
+    float: right;
+    height: 20px;
+    padding-right: 10px;
+    padding-top: 10px;
+    position: absolute;
+    right: 0;
+    top: 10px;
+    width: 20px;
+    opacity: 0.7;
+    z-index: 2;
+}
+
+    #btnHide:hover {
+        color: transparent;
+        opacity: 1;
+    }
+
+.flags {
+    display: none;
+    width: 100%;
+    max-width: 1520px;
+    margin: auto;
+}
+
+.flagsBG {
+    display: block;
+    float: left;
+    width: 100%;
+}
+
+.guideView {
+    display: block;
+    float: left;
+    width: 100%;
+    background-image: url(/images/guideResponsive.png);
+    height: 100%;
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: center 60px;
+    clear: both;
+    margin-bottom: 30px;
+    min-height: 400px;
+    background-color: #fff;
+}
+
+.flagsBG img {
+    max-height: 100%;
+    height: auto;
+    width: 100%;
+}
+
+.flagsSubTitle {
+    display: block;
+    margin: auto;
+    color: #2a99bd;
+    ;
+    font-size: 25px;
+    margin-bottom: 15px;
+    width: 100%;
+    text-align: center;
+    float: left;
+    padding-bottom: 90px;
+    padding-top: 17px;
+}
+
+.createChannelFlags {
+    display: block;
+    float: left;
+    width: 100%;
+    height: 50px;
+    margin-bottom: 50px;
+}
+
+.btnCreateChannelFlags {
+    display: block;
+    height: 50px;
+    width: 180px;
+    margin: auto;
+    background-color: transparent;
+    color: #00b014;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+    border: 1px solid #00b014;
+    font-weight: 600;
+    border-radius: 4px;
+}
+
+.flagsTextBG {
+    display: block;
+    float: left;
+    width: 100%;
+    background-image: none;
+}
+
+
+
+.btnCreateChannelFlags:hover {
+    background-color: #62bb46;
+    border: 1px solid #62bb46;
+    color: #fff;
+}
+
+.embeddedView {
+    display: block;
+    width: 100%;
+    max-width: 1520px;
+    margin: auto;
+    height: auto;
+    padding: 1%;
+}
+
+
+.emneddedImg,
+.indieImg {
+    display: block;
+    float: left;
+    width: 40%;
+}
+
+.indieImg {
+    float: right;
+}
+
+    .emneddedImg img,
+    .indieImg img {
+        width: 100%;
+        box-shadow: 2px 3px 10px #999;
+    }
+
+
+.emneddedText {
+    display: block;
+    float: left;
+    width: 56%;
+    height: auto;
+    padding: 2%;
+    text-align: left;
+    padding-top: 1%;
+}
+
+.emneddedTextH2 {
+    color: #ddd;
+    font-size: 25px;
+    display: block;
+    float: left;
+    margin-bottom: 20px;
+    width: 100%;
+    margin-top: 50px;
+    font-weight: normal;
+}
+
+.emneddedText p {
+    color: #555;
+    font-size: 14px;
+    max-width: 800px;
+    line-height: 23px;
+    text-align: left;
+}
+
+
+.mobileActiveBtnHolder {
+    display: none;
+}
+
+
+/*------------------------------------------------------ ///// CSS NOT CHANGED -----------------------------------------------*/
+
+/*------------------------------------------------------ MEDIA CSS  -----------------------------------------------*/
+
+
+@media (min-width:1600px) {
+    #homesliderHN {
+        height: 850px;
+    }
+}
+
+@media (max-width:1024px) {
+
+
+    .whatIsTitle,
+    .whatIsTitleWhite,
+    .whatIsTitleYellow,
+    .flagsTitle,
+    .WSTitle,
+    .guideViewTitle {
+        font-size: 25px;
+    }
+
+    #homesliderHN {
+        width: 100%;
+        background-size: 107% auto;
+        background-repeat: no-repeat;
+        height: 425px;
+        background-position: right -80px;
+        position: relative;
+        /*background-image: url(/images/home-main-image-with-TV-1024px-square.jpg);*/
+    }
+
+
+    .pageH1 {
+        width: 93%;
+        padding-top: 170px;
+        font-size: 50px;
+        margin-bottom: 0;
+    }
+
+    .pageH2 {
+        font-size: 25px;
+        letter-spacing: 0;
+        margin-bottom: 90px;
+    }
+
+    .watchVideoIcon200 {
+        margin-top: 0;
+    }
+
+    .whatIsTitle {
+        margin-bottom: 10px;
+    }
+
+    #whatIsIconsCreate, #whatIsIconsAdd, #whatIsIconsBroadcast {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+
+
+@media (max-width:768px) {
+    .holderBlock {
+        max-width: 100%;
+        padding: 0;
+        border-right: none;
+    }
+
+    #topMenu {
+        position: fixed;
+    }
+
+    body .COMP {
+        display: none !important;
+    }
+
+    #divTop {
+        background: #fff;
+        border-bottom: 1px solid #eee;
+    }
+
+    .guideView {
+        background-size: 90%;
+    }
+
+
+
+    #homesliderHN {
+        width: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 390px;
+        background-position: top;
+        position: relative;
+        background-image: url(/images/home-main-image-with-TV-1024px.jpg);
+        /* background-image: url(/images/home-main-image-with-TV-1024px-square.jpg); */
+    }
+
+    .mainMenuBLOpen {
+        height: 100vh;
+    }
+
+    #divTopNav {
+        display: none;
+    }
+
+    .flagsTitle {
+        display: none;
+    }
+
+    .columnHN {
+        margin: auto;
+        width: 45%;
+        height: 230px;
+    }
+
+        .columnHN:first-child {
+            margin: auto;
+            width: 45%;
+            height: 230px;
+        }
+
+    .columnFooterSocial {
+        width: 165px;
+        margin: auto;
+        margin-bottom: 30px;
+    }
+
+
+    .emneddedImg, .indieImg {
+        width: 100%;
+    }
+
+    .emneddedText {
+        width: 96%;
+    }
+
+    .whatIsBlock {
+        width: 100%;
+        border-right: none;
+        margin-bottom: 0;
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 20px;
+    }
+
+    .businessSolBeforeLog {
+        display: none;
+    }
+
+
+
+
+    .btnCreateChannelFlags {
+        background-color: #00b014;
+        color: #fff;
+        border: 1px solid #00b014;
+    }
+
+    .flagsBG {
+        background-image: url(/images/002.jpg);
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 200px;
+        display: block;
+        float: left;
+        background-size: auto 200px;
+        clear: both;
+        background-position: center;
+    }
+
+        .flagsBG img {
+            display: none;
+        }
+
+    .logoFooter {
+        width: 130px;
+        margin: auto;
+        background-size: 100%;
+        background-position: top;
+    }
+
+    .footerSocialHolder {
+        display: block;
+        float: none;
+        width: 110px;
+        margin-left: 0;
+        padding-right: 0;
+        margin-top: 0;
+        margin: auto;
+    }
+
+
+
+    .borderNone {
+        border-bottom: none;
+    }
+
+    .whatIsSubTitle {
+        height: auto;
+        font-size: 23px;
+        color: #555;
+        width: 94%;
+        line-height: 1.3em;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        text-align: center;
+        float: none;
+    }
+
+
+
+    .mobileActiveBtnHolder {
+        display: none;
+        float: left;
+        width: 100%;
+    }
+
+    .homeGuideBusinessesHolder {
+        width: 100%;
+        /* position: absolute; */
+        bottom: 0;
+        max-width: 500px;
+        margin: auto;
+        float: none;
+        display: block;
+        /* margin-top: 20px; */
+    }
+
+
+    .whatIsTitleYellow {
+        display: none;
+    }
+
+    .pageH1 {
+        width: 93%;
+        padding-top: 30px;
+        font-size: 30px;
+        letter-spacing: normal;
+    }
+
+    .pageH2 {
+        font-size: 20px;
+        margin-bottom: 230px;
+    }
+
+    .mobileActiveBtn {
+        display: block;
+        float: left;
+        width: 50%;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        color: #fff;
+        font-size: 20px;
+        position: relative;
+    }
+
+    .mobileGuide {
+        background: red;
+    }
+
+    .mobileHT {
+        background: #223544;
+    }
+
+    .flagsSubTitle {
+        display: block;
+        float: left;
+        line-height: 1.3em;
+        text-align: center;
+        font-size: 30px;
+        color: #072d3d;
+        width: 94%;
+        margin-bottom: 30px;
+        margin-top: 30px;
+        padding-bottom: 0;
+    }
+
+
+    .mobileBusinesses {
+        background: #2a99bd;
+    }
+
+    .homeActionsHolder {
+        width: 100%;
+    }
+
+    .menuBL #divBrowseChannels a {
+        display: none;
+    }
+
+    .embeddedView {
+        width: 100%;
+    }
+
+    #divTopNav #LogIn {
+        width: 60px;
+    }
+
+    #divTopNav a.signUpFree {
+        width: 110px;
+    }
+
+
+    #topRightHolder {
+        width: 40%;
+        margin: auto;
+    }
+
+
+
+
+
+    #topLeftHolder,
+    .businessSolAfterLog,
+    #MenuImg, #helloImg {
+        display: none;
+    }
+
+    #helloMenuList {
+        display: none;
+    }
+
+    .emneddedText p {
+        text-align: center;
+    }
+   
+}
+
+
+@media (max-width:520px) {
+    #homesliderHN {
+        top: 40px;
+    }
+
+    #topMenu {
+        height: 40px;
+    }
+
+    .homeGuideBusinessesHolder {
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        max-width: 100%;
+        height: 100px;
+    }
+
+    .homeGuide, .homeGBusinesses {
+        float: none;
+        margin: auto;
+        width: 300px;
+    }
+
+    .homeGuide {
+        width: 100px;
+        color: transparent;
+        background-color: transparent;
+        background-size: 55px;
+        background-position: center;
+        display: none;
+    }
+
+    .pageH1 {
+        width: 93%;
+        padding-top: 386px;
+        font-size: 37px;
+        letter-spacing: normal;
+    }
+}
+
+
+@media (max-width:450px) {
+
+
+
+    #homesliderHN {
+        height: 83vh;
+    }
+
+    .pageH1 {
+        padding-top: 300px;
+        font-size: 25px;
+        line-height: 50px;
+        color: #eee;
+    }
+
+    .pageH2 {
+        font-size: 24px;
+        letter-spacing: 1px;
+    }
+
+    .guideView {
+        background-size: 100%;
+        background-position: center 120px;
+        height: auto;
+    }
+
+    .mainMenuBLOpen {
+        width: 100%;
+    }
+}
+
+@media (max-width:375px) {
+    #homesliderHN {
+        height: 82vh;
+    }
+
+    .pageH1 {
+        font-size: 20px;
+        letter-spacing: normal;
+        padding-top: 215px;
+    }
+
+    .pageH2 {
+        font-size: 17px;
+        letter-spacing: normal;
+        width: 70%;
+    }
+
+    .whatIsTitle, .whatIsTitleWhite, .whatIsTitleYellow, .flagsTitle {
+        font-size: 23px;
+        margin-top: 20px;
+    }
+
+    .whatIslearnMore {
+        display: block;
+        float: left;
+        height: 50px;
+        width: 100%;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}

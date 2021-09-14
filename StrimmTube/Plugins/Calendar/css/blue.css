@@ -1,0 +1,115 @@
+.container{font-family:verdana}
+.smallCalContainer{float:left; width:158px; height:153px; border:1px solid #2a99bd; padding: 5px;}
+.bigCalHeader{font-size:12px; background-color:#2a99bd;}
+.bigCalHeader .showDate{color: #FFFFFF; float:left; text-align:left; padding-left:15px; line-height: 25px;}
+
+.viewChanges{float:right; padding-right:15px;}
+.viewChanges a:link{text-decoration: none;color:#FFFFFF;font-weight: bold; line-height: 25px;}
+.viewChanges a:visited{text-decoration: none;color:#FFFFFF;font-weight: bold; line-height: 25px;}
+.viewChanges a:hover{text-decoration: none;color:#FFFFFF;font-weight: bold; line-height: 25px;}
+.viewChanges a:active{text-decoration: none;color:#FFFFFF;font-weight: bold; line-height: 25px;}
+
+.smallCalContainer .smallCalendar{width:100%; text-align:right; font-size:11px;}
+.smallCalContainer .smallCalendar .header{ background-color:#2a99bd; padding: 3px;}
+
+.forrm{margin-bottom:0px !important;}
+
+.linkk:link{text-decoration: none;color:#DDDDDD;font-weight: bold;}
+.linkk:visited{text-decoration: none;color:#DDDDDD;font-weight: bold;}
+.linkk:hover{text-decoration: none;color:#FFFFFF; font-weight: bold;}
+.linkk:active{text-decoration: none;color:#DDDDDD;font-weight: bold;}
+
+.ilink:link{text-decoration: none; color:#FFFFFF}
+.ilink:visited{text-decoration: none;color:#FFFFFF}
+.ilink:hover{text-decoration: none;color:#FFFFFF}
+.ilink:active{text-decoration: none;color:#FFFFFF}
+
+.monthLink:link{text-decoration:none; color:#FFFFFF}
+.monthLink:visited{text-decoration: none; color:#FFFFFF}
+.monthLink:hover{text-decoration: none; color:#FFFFFF}
+.monthLink:active{text-decoration: none; color:#FFFFFF}
+
+.monthLinkS:link{text-decoration: none; color:#555555;}
+.monthLinkS:visited{text-decoration: none; color:#555555;}
+.monthLinkS:hover{text-decoration: none; color:#555555;}
+.monthLinkS:active{text-decoration: none; color:#555555;}
+
+.smallCalendar tr.weekShow:hover{background-color: #E3E9FF !important;cursor: pointer;}
+
+.bigCalTable{width:100%; border-bottom: 1px solid #2a99bd; border-left: 1px solid #2a99bd;}
+.weekViewTable{width:100%; border-bottom: 1px solid #4D96EA; border-left: 1px solid #4D96EA;}
+.weekViewTable .weekViewClock{width:5%; text-align:center; vertical-align:top; border-top:1px solid #4D96EA; border-right:1px solid #4D96EA; font-size:10px;}
+.weekViewTable .weekViewDayClickClass{border-top:1px solid #4D96EA; border-right:1px solid #4D96EA;}
+.dayViewTable{width:100%; border-bottom: 1px solid #4D96EA; border-left: 1px solid #4D96EA;}
+.dayViewTable .dayViewClock{width:5%; text-align:center; vertical-align:top; border-top:1px solid #4D96EA; border-right:1px solid #4D96EA; font-size:10px;}
+.dayViewTable .dayViewDayClickClass2{width:100%; border-top:1px solid #4D96EA; border-right:1px solid #4D96EA;}
+.bigCalTable td{border-top:1px solid #2a99bd; border-right:1px solid #2a99bd;}
+.bigCalToday{color:red !important;background-color:#FFF7D7;}
+.bigCalDay{background-color:#EFEFEF !important;}
+
+.weekViewDayClick{text-align:center;}
+.monthViewDayClickClass{color:#FFFFFF; height:18px; border-top:1px solid #2a99bd; border-right:1px solid #2a99bd; background-color:#56c5e9; font-size: 13px;}
+.monthViewDayClick{width:100%; background-color: white;}
+.weekDaysLink{color: white; cursor:pointer; height:18px; border-top:1px solid #4D96EA; border-right:1px solid #4D96EA; background-color:#A0C2EF; font-size: 11px; text-align:right; padding-right:5px;}
+.dayViewDayClickClass{color: white; background-color:#A0C2EF; border-top:1px solid #4D96EA; border-right:1px solid #4D96EA; font-size:11px; text-align:center;}
+.dayDaysLink{color: #555555; cursor:pointer; height:18px; background-color:#E0EDF5; font-size:12px; text-align:right; padding-right: 4px;}
+.modal{position:fixed; top:0; left:0; width:100%; height:100%;font-family:verdana;z-index: 2;}
+.modalBack{background-image:url('../img/back6.png');z-index: 1;}
+.modalContainer{margin:50px auto; width:0px; height:0px;}
+.modal .modalTop{background-color:#4D96EA; padding:5px; height:24px;}
+.modal .modalDateToShow{color: #FFFFFF; float:left; font-size:16px; font-weight:bold; padding-top: 4px; width:464px; height: 100%;}
+.modal .closeButton{cursor:pointer; height:24px; width:24px; float:left; background-image:url('../img/close.png');}
+.modal .mainContainer{margin:20px auto; width:370px; font-size:14px;}
+.modal .modalTableClass{margin:20px auto; width:450px; font-size:14px; height:230px; overflow: auto;}
+.modal .modalTable{text-align:left; width:100%}
+.modal .modalTable td{background-color: #E0EDF5; font-size:12px;}
+.modal .modalTable th{background-color: #A0C2EF; color:white;}
+
+.event{border-radius:7px; background-color:#48B7DB; border-bottom:1px inset #AAAAAA; width:100%; font-size:10px; color: #fff;}
+.event .eventAck{float:left; width:100%;margin-left: 5px;margin-top: 2px; cursor:pointer}
+.delEvent{margin-right: 3px; margin-top: 3px; cursor:pointer; float:right; width:12px; height:12px; background-repeat: no-repeat; background-image:url('..Plugins/Calendar/img/delete.png')}
+.editEvent{margin-right: 3px; margin-top: 3px; cursor:pointer; float:right; width:12px; height:12px; background-repeat: no-repeat;}
+
+.monthMore{float:right; cursor:pointer; font-size:9px; background-color: white !important; border:none; text-align: right; color:#0063DC;}
+.weekMore{cursor:pointer; color:#0063DC;}
+.dayMore{float:left; cursor:pointer; font-size:11px; background-color: white !important; border:none; color:#0063DC;}
+
+.glow {background-color:#FEFEFE; height: 100%; border:1px solid #4D96EA;-moz-box-shadow: 5px 5px 10px #110011;-webkit-box-shadow: 5px 5px 10px #110011;box-shadow: 5px 5px 10px #110011;-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=10, Direction=270, Color='#110011')";filter: progid:DXImageTransform.Microsoft.Shadow(Strength=10, Direction=135, Color='#110011');}
+.hider{display:none;}
+.formRow{margin-top:10px;}
+.formRow label{display: block;width:150px;}
+.formRow textarea{height: 120px;width: 364px;}
+.formRow text{width:300px;}
+.formRowSubmit{text-align:right;border-top:1px solid #B8C7F6;margin-top:10px;padding-top:10px;}
+
+.searchDiv{margin-top:10px;}
+.searchDiv input{border: 1px solid #4D96EA; border-radius: 5px 5px 5px 5px;color: #666666;font-family: verdana;font-size: 16px;height: 31px;padding-left:10px;padding-right:10px; padding-bottom:3px;width: 138px;}
+
+
+
+
+/*------------------MEDIA*/
+
+/*------------------------- control panel schedule*/
+@media only screen and (min-width : 1920px) {
+    .bigCal {
+  margin: auto;
+  width: 60%;
+}
+
+    .bigCalHeader {
+  background-color: #2A99BD;
+  font-size: 12px;
+  width: 60%;
+  margin: auto;
+}
+    #spnMsg
+    {
+        font-size:11px;
+        color:red;
+    }
+
+
+/*------------------------- / control panel schedule*/
+
+}

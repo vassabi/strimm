@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="VideoPlayer" extends="Video">
+  <interface>
+    <field id="channel" alias="onScreenInfo.channel" onChange="onChannelChange" />
+    <field id="program" alias="onScreenInfo.program" onChange="onProgramChange" />
+    <field id="isFullscreen" type="float" onChange="onSizeChange" />
+    <field id="backNode" type="node" />
+    <field id="loadingIndicatorOn" type="Boolean" value="true" alias="loadingIndicator.show" />
+    <field id="keepPlaying" alias="playerTask.keepPlaying" />
+    <field id="adPlaying" alias="playerTask.adPlaying" alwaysNotify="true" />
+  </interface>
+
+  <script type="text/brightscript" uri="./VideoPlayer.brs" />
+  <script type="text/brightscript" uri="pkg:/components/nodeUtils.brs" />
+  <script type="text/brightscript" uri="pkg:/source/generalUtils.brs" />
+
+  <children>
+<!--     <Poster uri="https://www.cartoonbrew.com/wp-content/uploads/2014/04/sintel-sony-1280x600.jpg" width="710" height="400" /> -->
+    <OnScreenInfo id="onScreenInfo" visible="false" />
+
+    <LoadingIndicator id="loadingIndicator" />
+    <PlayerTask id="playerTask" />
+  </children>
+</component>

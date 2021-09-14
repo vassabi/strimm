@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="SearchScreen" extends="Group">
+  <interface>
+    <field id="content" type="node" />
+    <field id="backNode" type="node" />
+  </interface>
+
+  <script type="text/brightscript" uri="./SearchScreen.brs" />
+  <script type="text/brightscript" uri="pkg:/components/nodeUtils.brs" />
+  <script type="text/brightscript" uri="pkg:/source/generalUtils.brs" />
+
+  <children>
+    <Rectangle id="background" width="1280" height="720" />
+    <MiniKeyboard id="keyboard" />
+    <MarkupList id="results" itemComponentName="SearchResultsItem" />
+  </children>
+</component>

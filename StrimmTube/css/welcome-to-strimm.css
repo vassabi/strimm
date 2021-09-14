@@ -1,0 +1,207 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+
+
+@font-face {
+    font-family: 'LeagueGothic';
+    src: url('/Fonts/league-gothic.woff')  format('woff');
+}
+
+
+.actionBTN {
+/*font-family:'LeagueGothic', 'Helvetica', arial;
+font-size:22px;
+display: block;
+padding: 5px;
+border-radius: 2px;
+text-align: center;
+letter-spacing: 1px;
+color: #2A99BD;*/
+
+border-radius: 2px;
+color: #034;
+display: block;
+font-size: 19px;
+font-weight: bold;
+padding: 10px;
+text-align: center;
+line-height: 25px;
+
+}
+.actionBTN {
+/*color: #2382A0;
+	text-shadow: 0 0 2px #fff;background: #ffcc00;
+	background: -moz-linear-gradient(top, #ffcc00 0%, #ffcc00 2%, #f2de96 45%, #ffcc00 93%, #ffcc00 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, #ffcc00), color-stop(2%, #ffcc00), color-stop(45%, #f2de96), color-stop(93%, #ffcc00), color-stop(100%, #ffcc00));
+	background: -webkit-linear-gradient(top, #ffcc00 0%, #ffcc00 2%, #f2de96 45%, #ffcc00 93%, #ffcc00 100%);
+	background: -o-linear-gradient(top, #ffcc00 0%, #ffcc00 2%, #f2de96 45%, #ffcc00 93%, #ffcc00 100%);
+	background: -ms-linear-gradient(top, #ffcc00 0%, #ffcc00 2%, #f2de96 45%, #ffcc00 93%, #ffcc00 100%);
+	background: linear-gradient(to bottom, #ffcc00 0%, #ffcc00 2%, #f2de96 45%, #ffcc00 93%, #ffcc00 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffcc00', endColorstr='#ffcc00', GradientType=0 );*/
+
+background-color: #e9b600;
+height: 25px;
+}
+
+
+.actionBTN:hover {
+	-webkit-box-shadow:  0 0 6px #000;
+	-moz-box-shadow: 0 0 6px #000;
+	-ms-box-shadow: 0 0 6px #000;
+	-o-box-shadow: 0 0 6px #000;
+	box-shadow: 0 0 6px #000;
+
+    background-color: #fc0;
+    color: #000;
+
+}
+
+#divContentWelcome .actionBTN{
+bottom: 0;
+left: 17%;
+margin: auto;
+position: absolute;
+width: 62%;
+z-index: 100;
+}
+
+
+
+.pageTitle a {margin-right:30px;color:#ddd; }
+.pageTitle .active  {color:#fff; margin-right:30px;text-shadow:0 0 1px #333;}
+
+.pageTitle a:hover, .pageTitle a:active{color:#fc0;text-shadow:0 0 1px #333;}
+
+
+body #divTitleUrlHolder h1 {width: 100%;}
+
+
+
+
+
+.block {
+	display: block;
+	margin:auto;
+}
+
+.block:before,
+.block:after {
+  content: " ";
+  display: table;
+}
+.block:after {
+  clear: both;
+}
+
+
+.floatright {
+	float:right;
+}
+
+/*.Shadow {
+	-webkit-box-shadow:  0 0 6px #ccc;
+	-moz-box-shadow: 0 0 6px #ccc;
+	-ms-box-shadow: 0 0 6px #ccc;
+	-o-box-shadow: 0 0 6px #ccc;
+	box-shadow: 0 0 6px #ccc;
+	}*/
+	
+	/*.Shadow:hover {
+	-webkit-box-shadow:  0 0 16px #999;
+	-moz-box-shadow: 0 0 16px #999;
+	-ms-box-shadow: 0 0 16px #999;
+	-o-box-shadow: 0 0 16px #999;
+	box-shadow: 0 0 16px #999;
+	}*/
+	
+
+
+.spacer {
+    height: 2px;
+	display:block; 
+	width:100%;
+	clear:both;
+}
+
+/*body .titleH1 {
+	margin-top: 0px;
+	font-family:'LeagueGothic', 'Helvetica', arial;
+	font-size:35px;
+	text-transform: none;
+    margin-bottom: 0;
+}*/
+body .titleH2{
+	text-align:center;
+	font-size:24px;padding-top:5px;
+	color:#2A99BD;
+	letter-spacing:2px;
+	font-family:'LeagueGothic', 'Helvetica', arial;
+	font-size:35px;
+	text-transform: capitalize;
+}
+
+
+
+
+
+.boxCreateChannel, .boxGoSocial, .boxHowItWorks, .boxWatchNow{
+	background-repeat: no-repeat;
+	background-position: top center;
+	background-size:auto auto;
+	height:245px;
+	position:relative;
+border-right: none;
+display: inline-block;
+float: left;
+margin-top: 40px;
+margin-bottom: 10px;
+min-height: 190px;
+width: 32%;
+max-width: 400px;
+
+}
+
+
+
+.boxCreateChannel img, .boxGoSocial img, .boxHowItWorks img, .boxWatchNow img{
+display: block;
+margin:auto;
+height: auto;
+max-width: 350px;
+border: 2px solid #034;
+}
+
+
+/*.boxCreateChannel img:hover, .boxGoSocial img:hover, .boxHowItWorks img:hover, .boxWatchNow img:hover{
+	-webkit-box-shadow:  0 0 11px #ccc;
+	-moz-box-shadow: 0 0 11px #ccc;
+	-ms-box-shadow: 0 0 11px #ccc;
+	-o-box-shadow: 0 0 11px #ccc;
+	box-shadow: 0 0 11px #ccc;
+	border: 1px solid #2A99BD;
+	}*/
+	
+	
+.boxCreateChannelDDDD {
+	background-image: url(images/boxCreateChannel.png);
+}
+
+.boxGoSocialDDDD {
+	background-image: url(images/boxGoSocial.png);
+}
+
+.boxHowItWorksDDDD {
+	background-image: url(images/boxHowItWorks.png);
+}
+
+
+
+
+
+
+
+
+
+
+

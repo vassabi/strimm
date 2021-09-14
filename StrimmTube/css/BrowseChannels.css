@@ -1,0 +1,259 @@
+﻿
+
+.mainContentWrapper {
+    max-width: 1720px;
+}
+
+@-moz-document url-prefix() {
+    .mainContentWrapper {
+        max-width: 1520px;
+    }
+}
+
+.left {
+    display: block;
+    float: left;
+    width: 100%;
+}
+
+.content {
+    display: block;
+    width: 100%;
+    height: auto;
+    min-height: 600px;
+    text-align: center;
+}
+
+
+.chanBoxInfo {
+    background-image: url('/images/channelBoxInfoBG.png');
+    background-repeat: repeat-x;
+    bottom: 0;
+    box-shadow: none;
+    cursor: default;
+    display: block;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+
+#ddlLang {
+    border-radius: 2px;
+    float: right;
+    height: 37px;
+    margin-right: 10px;
+    width: 150px;
+    display: none;
+    font-family: Roboto-light,'Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+
+.channelHolder {
+    clear: both;
+}
+
+.browseChannelsViewBCh {
+    display: block;
+    float: left;
+    height: 300px;
+    width: 100%;
+    background-color: #426A76;
+    position: fixed;
+    z-index: 3;
+    min-width: 1024px;
+}
+
+.browseChannelsDublicate {
+    display: block;
+    float: left;
+    height: 300px;
+    width: 100%;
+}
+
+.ChannelInfoBCh {
+    display: block;
+    float: left;
+    width: 50%;
+    height: 350px;
+}
+
+.channelNameBCh,
+.channelCodeBCh,
+.nowPlayingBCh,
+.channelDescriptionBCh {
+    display: block;
+    float: left;
+    width: 98%;
+    height: 35px;
+    line-height: 35px;
+    color: #ffcc00;
+    font-size: 24px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    padding-left: 2%;
+}
+
+.channelNameBCh {
+    margin-top: 20px;
+}
+
+    .channelNameBCh span,
+    .channelCodeBCh span,
+    .nowPlayingBCh span,
+    .channelDescriptionBCh span {
+        color: #ddd;
+        font-size: 19px;
+        text-transform: capitalize;
+        margin-left: 20px;
+    }
+
+    .channelNameBCh span {
+        font-size: 24px;
+        color: #fff;
+    }
+
+.VideoInfoBCh {
+    display: block;
+    float: right;
+    width: 50%;
+    height: 350px;
+}
+
+.videoBCh {
+    display: block;
+    float: right;
+    width: 40%;
+    height: 240px;
+    background: #777;
+    margin-top: 28px;
+    margin-right: 30px;
+}
+
+.durationBCh,
+.actionsBCh {
+    display: block;
+    float: right;
+    height: 50px;
+    line-height: 50px;
+    width: 40%;
+    margin-bottom: 20px;
+    margin-right: 40px;
+}
+
+.durationBCh {
+    margin-top: 110px;
+}
+
+.durationFullBCh,
+.durationTimelBCh,
+.watchBCh,
+.recordlBCh {
+    display: block;
+    float: right;
+    color: #ddd;
+    width: 50%;
+    text-align: center;
+    font-size: 19px;
+}
+
+.recordlBCh {
+    width: 20%;
+    margin-right: 15%;
+}
+
+
+.ledBCh {
+    display: block;
+    float: left;
+    width: 14px;
+    height: 14px;
+    border-radius: 12px;
+    border: 5px solid #BFBFBF;
+    background-color: red;
+    margin-top: 15px;
+}
+
+.brChannelsLoadMore {
+    display: block;
+    float: left;
+    width: 100%;
+    height: 50px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+    .brChannelsLoadMore .btnLoadMore {
+        margin-top: 0;
+        border: none;
+    }
+
+        .brChannelsLoadMore .btnLoadMore:hover {
+            background-color: #03AC03;
+        }
+
+.watchBCh {
+    background: #03AC03;
+    text-transform: capitalize;
+    text-align: center;
+    width: 50%;
+    color: #fff;
+}
+
+.btnLoadMore {
+    width: 250px;
+    color: #fff;
+    height: 50px;
+    display: block;
+    background-color: #3bcd4e;
+    line-height: 50px;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 17px;
+    background: #3bcd4e;
+    margin-top: 35px;
+    cursor: pointer;
+    margin: auto;
+    margin-top: 20px;
+}
+
+@media (max-width: 1475px) {
+    .channelNameBCh, .channelCodeBCh, .nowPlayingBCh, .channelDescriptionBCh {
+        height: 25px;
+        line-height: 25px;
+        font-size: 19px;
+        padding-left: 1%;
+    }
+
+
+        .channelNameBCh span, .channelCodeBCh span, .nowPlayingBCh span, .channelDescriptionBCh span {
+            font-size: 15px;
+        }
+
+        .channelNameBCh span {
+            font-size: 19px;
+        }
+
+    .durationFullBCh, .durationTimelBCh, .watchBCh, .recordlBCh {
+        font-size: 15px;
+    }
+
+    .videoBCh {
+        height: 122px;
+    }
+
+    .durationBCh {
+        margin-top: 0;
+    }
+
+    .actionsBCh {
+        width: 50%;
+        margin-top: 50px;
+    }
+
+    .durationBCh {
+        margin-top: 50px;
+    }
+
+    .durationFullBCh, .durationTimelBCh {
+        width: 100%;
+    }
+}

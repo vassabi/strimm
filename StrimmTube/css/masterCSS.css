@@ -1,0 +1,201 @@
+﻿
+        #createChannelModal .pageTitle {
+            border-bottom: 2px solid #2a99bd;
+            color: #2a99bd;
+            display: block;
+            font-size: 23px;
+            font-weight: normal;
+            height: 30px;
+            line-height: 30px;
+            margin: auto;
+            padding-bottom: 0;
+            padding-top: 20px;
+            text-align: left;
+            text-transform: capitalize;
+            width: 100%;
+        }
+
+        #createChannelModal .createChannelForm {
+            margin: 0 auto;
+            width: 332px;
+        }
+
+        #createChannelModal #divBoardContent_Update ul, #createChannelModal #divBoardContent ul {
+            margin: 0px auto auto;
+            padding-top: 1px;
+            width: 332px;
+        }
+
+            #createChannelModal #divBoardContent ul li {
+                width: 340px;
+            }
+
+        #createChannelModal #txtChannelNameForm,
+        #createChannelModal #TextURL {
+            border: 1px solid #ddd;
+            height: 32px;
+            line-height: 32px;
+            color: #555;
+            margin-bottom: 20px;
+            margin-top: 10px;
+            padding: 5px;
+            width: 320px;
+            display: block;
+            float: left;
+            font-size: 15px;
+        }
+
+        #createChannelModal #txtChannelCategory {
+            border: 1px solid #ddd;
+            height: 45px;
+            margin-bottom: 20px;
+            margin-top: 10px;
+            padding: 5px;
+            width: 334px;
+        }
+
+        #createChannelModal #liUploadChannelAvatar {
+            border-radius: 3px;
+            cursor: pointer;
+            height: 70px;
+            position: relative;
+            width: 242px;
+            float: right;
+        }
+
+        #createChannelModal #fuChannelAvatar {
+            cursor: pointer;
+            display: block;
+            height: 37px;
+            margin-top: 18px;
+            opacity: 0;
+            width: 234px;
+        }
+
+        #createChannelModal #txtChannelLogo {
+            border: 1px solid #ddd;
+            float: right;
+            height: 32px;
+            line-height: 30px;
+            padding: 5px;
+            position: absolute;
+            width: 225px;
+            color: #777;
+        }
+
+
+        #createChannelModal #TextURL {
+            display: block;
+            width: 320px;
+            float: left;
+            line-height: 30px;
+            color: #999;
+            font-size: 15px;
+            text-transform: lowercase;
+        }
+
+        #createChannelModal .liTitle {
+            border: medium none;
+            color: #2a99bd;
+            display: none;
+        }
+
+        #createChannelModal #btnCreate {
+            background-color: #2a99bd;
+            border: medium none;
+            color: #fff;
+            display: block;
+            float: right;
+            height: 37px;
+            width: 100px;
+            text-align: center;
+            line-height: 37px;
+        }
+
+        #createChannelModal #btnUpdate {
+            background-color: #2a99bd;
+            border: medium none;
+            color: #fff;
+            display: none;
+            float: right;
+            height: 37px;
+            width: 100px;
+            text-align: center;
+            line-height: 37px;
+        }
+
+        #createChannelModal #btnDelete {
+            background-color: #ccc;
+            border: medium none;
+            color: #fff;
+            display: none;
+            float: left;
+            font-size: 14px;
+            height: 37px;
+            line-height: 37px;
+            text-align: center;
+            width: 110px;
+        }
+
+            #createChannelModal #btnDelete:hover {
+                background-color: #bbb;
+            }
+
+        #createChannelModal #btnCreate:hover, #createChannelModal #btnUpdate:hover {
+            background-color: #1f7490;
+        }
+
+        #createChannelModal #divBoardContent {
+            background-color: #fff;
+            margin: auto;
+            min-height: 435px;
+            min-width: 500px;
+        }
+
+        #createChannelModal .close_x {
+            top: 7px;
+            background-image: url("/images/removebutton.png");
+        }
+
+        #createChannelModal #imgChannelAvatar {
+            display: block;
+            height: 70px;
+            width: 70px;
+            float: left;
+            border: 1px solid #ddd;
+            margin-bottom: 15px;
+        }
+
+        #createChannelModal #divBoardContent ul li span#spnChannelNameErr {
+            color: #ff7373;
+            display: none;
+            float: left;
+            margin: 7px 0 0;
+            width: 7px;
+        }
+
+        #createChannelModal #divBoardContent ul li#liUploadChannelAvatar span#spnChannelLogoErr {
+            color: #ff7373;
+            display: none;
+            float: left;
+            margin: 7px 0 0;
+            width: 7px;
+        }
+
+        #createChannelModal #divBoardContent ul li span#spnChannelLogoErr {
+            color: #ff7373;
+            display: none;
+            float: right;
+            margin: 7px 0 0;
+            width: 7px;
+        }
+
+        #createChannelModal #txtChannelNameForm.createChannelError, #createChannelModal #txtChannelLogo.createChannelError {
+            border-color: #ff7373;
+        }
+
+
+        #createChannelModal #txtChannelCategory.categoryErr {
+            border: 1px solid #ff7373;
+        }
+

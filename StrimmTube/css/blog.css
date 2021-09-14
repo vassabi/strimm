@@ -1,0 +1,32 @@
+﻿.learnMoreButtonHolder {
+    background-image: url('/images/blog.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+    position: relative;
+}
+        .PRTitle {
+    color: #fff;
+    
+    font-size: 65px;
+    font-weight: normal;
+    height: 600px;
+    letter-spacing: 1px;
+    line-height: 600px;
+    margin: auto;
+    text-align: center;
+    width: 600px;
+}
+
+        #divContentWrapper {
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 100px;
+    display: block;
+    float: left;
+    width: 100%;
+    position: relative;
+    min-height: 500px;
+}

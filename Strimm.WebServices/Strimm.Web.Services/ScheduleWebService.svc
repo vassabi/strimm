@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="Strimm.Web.Services.ScheduleWebService" CodeBehind="ScheduleWebService.svc.cs" %>

@@ -1,0 +1,339 @@
+﻿
+body {
+    background-image: url(/images/contralpanelback.jpg);
+    background-position:  center 105px;
+    
+}
+
+
+
+#divCPContent {
+height: 100%;
+margin: auto;
+max-width: 1205px;
+min-height: 600px;
+width: 100%;
+min-width: 960px;
+
+    }
+        #divCPContent h1 {
+            padding-top: 10px;
+            font-size: 15px;
+        }
+
+#blueHolder {
+color: #FFFFFF;
+display: block;
+font-size: 16px;
+line-height: 30px;
+margin: 0 auto;
+text-transform: uppercase;
+width: 82%;
+}
+
+    #blueHolder h1 {
+        line-height: 30px;
+        text-transform: uppercase;
+        color: #fff;
+        display:block;
+        width:837px;
+        margin: 0 auto;
+        font-size: 13px;
+    }
+    #divMetroMenu {
+height: 480px;
+margin-left: auto;
+margin-right: auto;
+margin-top: 0;
+width:100%;
+padding: 5px;
+height:100%;
+    }
+        #divMetroMenu span p {
+            display: block;
+            
+            font-size: 16px;
+            text-transform: uppercase;
+            text-decoration: none;
+            color: #fff;
+            text-shadow: 0 0 1px #000;
+            letter-spacing: 1px;
+
+           
+        }
+    #divRow {
+        width:auto;
+        height: auto;
+        display: table;
+        padding: 5px;
+    }
+.divMetroItem{
+    height:150px;  
+    width:225px; 
+    float:left;
+    margin:7px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+    /*.divMetroItem:hover {
+        background-image: none;
+    }*/
+    .divMetroItem.profile:hover,
+    .divMetroItem.favorite:hover,
+    .divMetroItem.board:hover,
+    .divMetroItem.network:hover,
+    .divMetroItem.archive:hover,
+    .divMetroItem.follow:hover,
+    .divMetroItem.monetize:hover,
+    .divMetroItem.howTo:hover,
+    .divMetroItem.watchNow:hover {
+   background-image:url("/images/metroHover.png");
+    }
+
+/*.divMetroItem p {
+    height:30px;  
+    width:205px; 
+display: block;
+float: left;
+}*/
+
+.itemTextHolder {
+    display:block;
+    width: 100%;
+}
+.divMetroItem a{
+    height:30px;  
+    width:205px; 
+display: block;
+padding-left: 20px;
+padding-top: 120px;
+
+}
+.metroItemLink {
+    height:30px;  
+    width:253px; 
+display: block;
+padding-left: 20px;
+padding-top: 2px;
+            
+            font-size: 16px;
+            text-transform: uppercase;
+            text-decoration: none;
+            color: #fff;
+            text-shadow: 0 0 1px #000;
+            letter-spacing: 1px;
+}
+.wide{
+    width:464px;
+}
+
+.tall{
+    height:314px;
+}
+
+.tall a {
+padding-top: 284px;
+}
+
+.howTo {
+       background-color:#2A99BD;
+position: relative;
+}
+
+    .watchNow .img,
+    .favorite .img,
+    .board .img,
+    .network .img,
+    .archive .img,
+    .monetize .img,
+    .follow .img,
+    .howTo .img,
+    .profile .img
+    {
+        background: url("/images/contrPanelIcons.png") no-repeat scroll -26px -261px ;
+height: 90px;
+margin: 22px auto auto;
+position: static;
+width: 94px;
+display: block;
+    }
+
+
+
+    .howTo .img {
+background: url("/images/contrPanelIcons.png") no-repeat scroll -262px -257px ;
+/*height: 76px;
+left: 192px;
+position: absolute;
+top: 32px;
+width: 76px;*/
+    }
+
+
+.profile {
+       background-color:#2A99BD;
+position: relative;
+}
+.profile .img {
+  background: url("/images/contrPanelIcons.png") no-repeat scroll -18px -137px;
+  /*height: 94px;
+  left: 65px;
+  position: absolute;
+  top: 20px;
+  width: 94px;*/
+}
+
+.watchNow {
+        background-color: #60b2cd;
+        position: relative;
+}
+
+
+    .watchNow .img {
+/*background: url("/images/contrPanelIcons.png") no-repeat scroll -26px -261px rgba(0, 0, 0, 0);
+height: 75px;
+left: 189px;
+position: absolute;
+top: 31px;
+width: 97px;*/
+background: url("/images/contrPanelIcons.png") no-repeat scroll -22px -259px;
+
+    }
+
+.favorite {
+        background-color: #60b2cd;
+        position: relative;
+}
+.favorite .img {
+  background: url("/images/contrPanelIcons.png") no-repeat scroll -261px -20px;
+  /*height: 93px;
+  left: 65px;
+  position: absolute;
+  top: 20px;
+  width: 93px;*/
+}
+
+.board {
+        background-color: #72aabc;
+position:  relative;
+     }
+ .board .img {
+background: url("/images/contrPanelIcons.png") no-repeat scroll -261px -133px;
+/*height: 94px;
+left: 183px;
+position: absolute;
+top: 20px;
+width: 94px;*/
+    }
+
+
+
+.network {
+        background-color: #195c71;
+position: relative;
+     }
+.network  .img {
+background: url("/images/contrPanelIcons.png") no-repeat scroll -18px -14px;
+/*height: 94px;
+left: 183px;
+position: absolute;
+top: 20px;
+width: 94px;*/
+    }
+
+
+.archive {
+background-color: #7da2ae;
+position: relative;
+}
+.archive   .img {
+background: url("/images/contrPanelIcons.png") no-repeat scroll -135px -14px;
+/*height: 93px;
+left: 65px;
+position: absolute;
+top: 20px;
+width: 93px;*/
+}
+
+.monetize{
+background-color: #387d93;
+position: relative;
+}
+.monetize   .img {
+background: url("/images/contrPanelIcons.png") no-repeat scroll -140px -132px;
+/*height: 94px;
+left: 65px;
+position: absolute;
+top: 20px;
+width: 94px;*/
+}
+
+.follow {
+background-color: #2a99bd;
+position: relative;
+}
+.follow   .img {
+background: url("/images/contrPanelIcons.png") no-repeat scroll -141px -252px;
+/*height: 93px;
+left: 65px;
+position: absolute;
+top: 20px;
+width: 93px;*/
+}
+
+
+
+    	/*	background: url('/images/contrPanelIcons.png') no-repeat -190px -8px; width: 77px; height: 76px;*/
+        
+
+
+.grey5 {
+        background-color: #a2b3b9;
+     }
+
+
+
+
+
+
+
+.blue {
+        background-color: #044178;
+     }
+.orange {
+        background-color: #ff6a00;
+     }
+.green {
+        background-color: #2e9809;
+     }
+.red
+{
+        background-color: #f00;
+     }
+.grey10 {
+ background-color: #dedede;
+}
+.empty {
+ background-color: #f9f9f9;
+}
+
+.itemDescribtion {
+bottom: 5px;
+color: #FFFFFF;
+float: right;
+
+font-size: 11px;
+height: 27px;
+line-height: 15px;
+position: absolute;
+right: 5px;
+}
+
+
+
+
+
+
+
+

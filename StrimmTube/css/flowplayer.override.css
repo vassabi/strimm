@@ -1,0 +1,60 @@
+﻿
+.flowplayer.is-loading.is-playing .fp-engine,
+.flowplayer.is-loading.is-paused.is-ready .fp-engine {
+	top: inherit;
+}
+
+.flowplayer.is-loading.is-playing .fp-ui .fp-header, .flowplayer.is-loading.is-playing .fp-ui .fp-controls 
+{
+	filter: alpha(opacity=1);
+	opacity: 1;
+}
+
+.flowplayer.is-splash.is-loading.is-playing .fp-ui > .fp-play, .flowplayer.is-poster.is-loading.is-playing .fp-ui > .fp-play 
+{
+	display: block;
+}
+
+.flowplayer.is-splash.is-loading.is-playing .fp-ui > .fp-waiting, .flowplayer.is-poster.is-loading.is-playing .fp-ui > .fp-waiting,
+{
+	display: none;
+}
+
+.flowplayer.is-loading.is-playing .fp-waiting,
+.flowplayer.is-loading.is-paused.is-ready .fp-waiting 
+{
+	display: none !important;
+}
+
+.flowplayer.is-loading.is-playing .fp-waiting svg, .flowplayer.is-loading.is-playing .fp-waiting p 
+{
+	filter: alpha(opacity=0);
+	opacity: 0;
+}
+
+.flowplayer.is-loading.is-playing .fp-play 
+{
+	display: block !important;
+}
+
+.flowplayer.fp-custom-playlist.is-loading.is-playing .fp-playlist 
+{
+	display: none;
+}
+
+.flowplayer.is-loading.is-playing .fp-ui 
+{
+	background-image: none;
+}
+
+.flowplayer.is-loading.is-playing .fp-ui > * 
+{
+	filter: alpha(opacity=0);
+	opacity: 0;
+}
+
+.flowplayer.is-loading.is-paused.is-ready .fp-ui .fp-header, .flowplayer.is-loading.is-paused.is-ready .fp-ui .fp-controls 
+{
+	filter: alpha(opacity=100);
+	opacity: 1;
+}

@@ -1,0 +1,1338 @@
+﻿   
+        /*a:active {
+            outline:none;
+        }*/
+        
+        .palert {
+            padding: 12px;
+            color: black;
+            background-color: #ededed;
+            box-shadow: none;
+        }
+body {
+
+
+    }
+h3 {
+
+font-size: 14px;
+padding: 5px;
+color: #2a99bd;
+
+}
+#divTitleUrlHolder {
+    margin-bottom: 20px;
+ 
+}
+#ytube {
+    float:left;
+    height:278px;
+    width:385px;
+    display:block;
+}
+#playlist1 {
+    display: none;
+    width:260px;
+    height:600px;
+    margin:0 -28px 0 5px;
+    padding:0;
+    float:left;
+}
+.playlist a:hover {
+    background-color:#ffc;
+}
+.playlist a.progress {
+    background-color:#efefef;
+}
+.playlist a.playing, .playlist a.paused {
+    border:1px solid #666;
+    background-color:#ffc;
+		padding:1px;
+}
+.playlist .active {
+    pointer-events: none;
+    cursor: default;
+    background-color:#d1e1fa;
+}
+#content-container {
+    display: none;
+    float:left;
+    width:435px;
+    height:165px;
+    padding-left: 5px;
+    padding-top: 10px;
+    overflow-y:hidden;
+}
+.playlist a {
+  	float:left;
+  	clear:none;
+  	margin:0;
+  	padding:2px;
+  	width:254px;
+  	text-decoration:none;
+  	display:block;
+  	overflow:hidden;
+  	color:#000;
+  	zoom:1;
+  	*cursor:pointer;
+  	background-color:#fff;
+}
+
+.playerbox {
+background-color: #000;
+height: 485px;
+margin: auto;
+width: 862px;
+}
+#related {
+    float: left;
+height: 546px;
+width: 728px;
+}
+.box.black {
+    background-color: #ffffff;
+}
+#content {
+    width:100%;
+    margin:auto;
+    height: 250px;
+}
+#channelsHead {
+background-color: #ccc;
+height: 30px;
+width: 100%;
+
+}
+
+#imgChannel {
+/*background-image: url("/images/imgUserAvatar.jpg");*/
+border-color: #ccc;
+border-style: solid;
+border-width: 1px;
+display: block;
+width: 120px;
+height: auto; 
+}
+
+#channelInfo {
+clear: both;
+display: block;
+float: left;
+
+position: relative;
+
+z-index: 2000;
+}
+#divOwnerInfo {
+float: left;
+margin-left: 1%;
+min-width: 275px;
+}
+#divownerAvatar {
+}
+#imgownerAvatar {
+    
+    width:50%
+   
+}
+#divSubscribeButton {
+display: block;
+float: left;
+margin-left: 30px;
+width: 12%;
+}
+    #divSubscribeButton a {
+        color: #FFCC00;
+        display: block;
+        font-size: 14px;
+        height: 31px;
+        letter-spacing: 1px;
+        line-height: 31px;
+        margin-top: 4px;
+        padding-left: 7px;
+        padding-right: 7px;
+        text-decoration: underline;
+        width: 120px;
+    }
+    #divSubscribeButton:hover {
+color: #fff;
+    }
+#lblChannelName_Update {
+color: #2A99BD;
+display: block;
+
+font-size: 13px;
+letter-spacing: 2px;
+line-height: 30px;
+margin: 2px 5px 5px;
+text-transform: capitalize;
+width: 100%;
+}
+#lblChannelDescription {
+background: none repeat scroll 0 0 #EEEEEE;
+border: 1px solid #CCCCCC;
+border-radius: 3px;
+color: #777777;
+display: none;
+font-size: 13px;
+height: 200px;
+padding: 7px;
+text-transform: capitalize;
+width: 120px;
+}
+.spnChannelDescription {
+    display:none;
+}
+#ulInfo {
+color: #fff;
+display: block;
+font-size: 13px;
+text-transform: capitalize;
+margin:auto;
+text-align: right;
+padding: 5px;
+float: left;
+}
+.infoHolder {
+height: 30px;
+line-height: 30px;
+margin: auto;
+width: 1024px;
+
+}
+
+.spnCategory,
+.spnSubscribers,
+.spnViews,
+.spnRating {
+margin-left: 30px;
+margin-right: 10px;
+
+}
+
+
+#lblCategory,
+#lblSubscribers,
+#lblViews,
+#lblRating { 
+color: #eee;
+}
+
+.spnBy {
+float: left;
+
+font-size: 13px;
+margin-left: 45px;
+margin-top: 6px;
+text-transform: capitalize;
+width: 20px;
+color: #eee;
+}
+
+#imgownerAvatar { 
+border: 1px solid #2A99BD;
+border-radius: 5px 5px 5px 5px;
+display: block;
+float: right;
+margin-top: 25px;
+padding: 5px;
+width: 120px;
+
+}
+#ulInfo li {
+    display:inline-block;
+}
+#playerHolder {
+background: none repeat scroll 0 0 #ddd;
+margin: auto;
+min-height: 320px;
+
+        width: 860px;
+        float: left;
+        clear: none;
+}
+
+
+
+
+
+#videoInformation span {
+     display:block;
+     float:left;
+     height:30px;
+}
+#divAddSense {
+float: left;
+height: auto;
+margin-bottom: 10px;
+margin-top: 10px;
+width: 728px;
+}
+#divSocial {
+    float:left;
+    width:728px;
+    height:50px;
+    margin-bottom: 10px;
+}
+#divfacebook {
+/*background-image: url("/images/facebook-30.jpg");*/
+background-repeat: no-repeat;
+height: 30px;
+width: 30px;
+}
+
+#divTwitter {
+
+background-repeat: no-repeat;
+
+}
+    #divSocial div {
+        float:left;
+        display: block;
+        margin-right: 30px;
+}
+#videoInformation {
+
+display: none;
+
+margin: auto;
+width: 728px;  
+}
+#ancRateIt.activeLink,
+#ancRing.activeLink,
+#ancArchive.activeLink {
+background-image: url("/images/ButtonBG.jpg");
+background-repeat: repeat-x;
+border-radius: 4px 4px 4px 4px;
+color: #EEEEEE;
+font-size: 13px;
+height: 30px;
+line-height: 30px;
+text-align: center;
+text-transform: capitalize;
+padding:0 10px 0; 
+display:block;
+}
+#ancRateIt.disabled,
+#ancRing.disabled,
+#ancArchive.disabled,
+.disabled {
+background-color: #CCCCCC;
+background-image: none;
+border: 1px solid #DDDDDD;
+border-radius: 4px 4px 4px 4px;
+color: #EEEEEE;
+cursor: default;
+display: block;
+font-size: 13px;
+height: 28px;
+line-height: 30px;
+opacity: 0.6;
+text-align: center;
+text-transform: capitalize;
+padding:0 10px 0; 
+}
+#ancAbuseReport.activeLink {
+background-image: url("/images/ButtonBGGrey.jpg");
+background-repeat: repeat-x;
+border-radius: 5px 5px 5px 5px;
+color: #EEEEEE;
+display: block;
+font-size: 13px;
+font-weight: bold;
+height: 30px;
+line-height: 30px;
+padding-left: 4px;
+padding-right: 4px;
+padding:0 10px 0; 
+}
+#ancArchive.activeLink,
+#ancArchive.disabled {
+    
+}
+#divSocial #divTwitter {
+    color: #0000FF;
+float: right;
+font-size: 13px;
+margin-right: 0;
+text-transform: capitalize;
+}
+
+#divSocial #divfacebook {
+color: #0000FF;
+float: right;
+font-size: 13px;
+margin-right: 0px;
+text-transform: capitalize;
+width: 80px;
+}
+
+
+
+
+
+#ancFaceBook {
+background-image:url("/images/f-30.png")
+}
+#tweetUpdates {
+float: left;
+min-height: 390px;
+height: auto;
+width: 728px;
+background-color: #f9f9f9;
+}
+.twitter-timeline.twitter-timeline-rendered {
+ 
+  width: 728px !important;
+  height:300px !important;
+}
+
+
+
+    #ancAbuseReport.activeLink:hover {
+background-image: url("/images/ButtonBGGreyhover.jpg");
+color: #fff;
+    }
+#divAbuse {
+    float:right;
+}
+/*FOOTER NEED TO BE FIXED ON ALL PAGES*/
+
+#ancSchedule h1,
+#ancRings h1 {
+  padding: 3px;
+
+}
+#ancRings h1{
+padding-top: 30px;
+}
+
+
+
+#divScheduleHolder{
+background-color: #333;
+height: 168px;
+left: 0px;
+margin-bottom: auto;
+margin-top:0;
+position: absolute;
+text-align: center;
+width: 55px;
+border: 1px solid #333;
+border-top-right-radius: 5px;
+border-bottom-right-radius: 5px;
+display: none;
+}
+
+#divScheduleHolder:hover {
+  background-color: #777;
+  border: 1px solid #777;
+}
+
+#divRingsHolder {
+background-color: #333;
+height: 105px;
+margin-bottom: auto;
+margin-top: 0;
+position: absolute;
+right: 0px;
+text-align: center;
+width: 55px;
+height: 168px;
+border-top-left-radius: 5px;
+border-bottom-left-radius: 5px;
+display: none;
+}
+
+#divRingsHolder:hover {
+  background-color: #777;
+}
+
+    #divScheduleHolder a#ancSchedule {
+display: block;
+margin-top: 8px;
+text-align: center;
+width: 55px;
+height:160px;
+    }
+
+    #divScheduleHolder  h1 span, #divRingsHolder h1 span  {
+color: #FFFFFF;
+display: block;
+float: left;
+font-weight: bold;
+margin-top: 4px;
+text-align: center;
+width: 55px;
+   
+    }
+    #ancRings
+    {
+        height:160px;
+        display:block;
+    }
+#divScheduleHolder .divSchedule {
+    left:56px;
+}
+    #divScheduleHolder .divSchedule, #divRingsHolder .divRings  {
+background-color: #EEEEEE;
+border: 1px solid #2A99BD;
+border-bottom-left-radius: 4px;
+border-bottom-right-radius: 4px;
+border-top-right-radius: 4px;
+height: 400px;
+
+position: absolute;
+top: 0;
+width: 265px;
+    }
+#divRingsHolder .divRings {
+margin-top: 0;
+right: 56px;
+}
+.videoScheduleBox {
+background: none repeat scroll 0 0 #2A99BD;
+height: 65px;
+margin-bottom: 1px;
+width: 250px;
+}
+.nano.scheduleScroll {
+    height:350px;
+}
+
+.videoScheduleBox span {
+color: #FFFFFF;
+display: block;
+float: left;
+font-size: 12px;
+margin: 2px;
+text-align: left;
+width: 97%;
+white-space: nowrap;
+text-overflow: ellipsis;
+overflow: hidden;
+}
+    .videoScheduleBox span.time {
+color: #FFFFFF;
+margin-top: 5px;
+padding-right: 9px;
+text-align: right;
+    }
+.videoScheduleBox .description {
+background-color: #2A99BD;
+color: #FFFFFF;
+display: none;
+max-height: 50px;
+min-height: 20px;
+width: 97%;
+}
+.videoScheduleBox a.ShowDescription {
+    display:block;
+    float:left;
+    width:100%;
+    text-align: left;
+    font-size: 12px;
+    color: #fff;
+}
+/*ABUSE MODAL*/
+ .close_x {
+    background-image:url("/images/close_pop.png");
+    display: block;
+    height:30px;
+    line-height: 1000px;
+    overflow: hidden;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    width: 30px;
+}
+#abuseModal {
+    /*display:none;
+    width:400px;
+    height:400px;
+    background-color:#fff;*/
+    background-color: #fff;
+border: 1px solid #2a99bd;
+border-radius: 5px;
+display: none;
+float: left;
+height: 234px;
+margin-bottom: 20px;
+width: 725px;
+position:relative;
+padding-top:20px;
+
+}
+#closeModal
+{
+    color: #2a99bd;
+cursor: pointer;
+font-size: 20px;
+position: absolute;
+right: 15px;
+text-decoration: none;
+top: 7px;
+}
+#closeModal:hover
+{
+    color:#777777;
+}
+#btnSendAbuseReport {
+    z-index:1003;
+    float:left;
+    cursor:pointer;
+}
+
+#lblUserBoardName {
+color: #F9F9F9;
+display: block;
+float: left;
+
+font-size: 14px;
+margin-left: 5px;
+margin-top: 4px;
+text-decoration: underline;
+text-transform: capitalize;
+}
+.scheduleDate {
+color: #777777;
+display: block;
+font-size: 12px;
+height: 12px;
+margin: auto;
+padding: 5px;
+width: 100px;
+}
+#nextSchedule {
+color: #999;
+display: block;
+font-size: 12px;
+height: 12px;
+margin: auto;
+padding: 5px;
+width: 100px;
+}
+
+#spnvideoTitle {
+color: #555555;
+display: block;
+font-size: 14px;
+margin-left: 5px;
+margin-right: 50px;
+overflow: hidden;
+text-overflow: ellipsis;
+white-space: nowrap;
+width: 380px;
+}
+#spnViews {
+    color: #555555;
+display: block;
+font-size: 14px;
+margin-left: 5px;
+margin-right: 50px;
+}
+.videoTitle {
+color: #2A99BD;
+display: block;
+font-size: 14px;
+text-transform: capitalize;
+}
+
+.views {
+    color:#2A99BD;
+display: block;
+font-size: 14px;
+text-transform: capitalize;
+}
+
+.todaySchedule {
+    color:#777;
+    font-size: 12px;
+    height:350px;
+}
+.divScheduleTomorrow {
+        color:green;
+    font-size: 12px;
+}
+
+
+.ringBoxChannel.ringBoxBoard .channelImg {
+border: 1px solid #2A99BD;
+border-radius: 2px;
+float: left;
+height: 40px;
+margin-right: 5px;
+margin-top: 9px;
+width: 40px;
+margin-left: 3px;
+}
+
+
+.spnChannelName {
+color: #555555;
+display: block;
+float: left;
+
+font-size: 13px;
+width: 80%;
+margin-top: 5px;
+font-family: Georgia;
+}
+
+.spnUserName {
+color: #2A99BD;
+float: right;
+
+font-size: 14px;
+padding-top: 2px;
+}
+.spnTime {
+
+font-size: 12px;
+color: green;
+}
+
+.timeAndUserName,
+.imgAndCannel {
+    border-bottom: 1px dotted #2A99BD;
+    clear: both;
+    display: block;
+    margin: auto;
+    padding-left: 3px;
+    padding-right: 3px;
+    width: 95%;
+}
+/* ------------------------------- LEFT------------------------------- */
+.ChannelID {
+float: left;
+margin-bottom: 15px;
+display:block;
+width: 100%;
+position:relative;
+margin-left: 5px;
+height: 70px;
+background-color: #eee;
+}
+    #imgUserAvatar{
+	width: 200px;
+	height:200px;
+	display:block;
+	/*background-image: url(images/imgUserAvatar.jpg);*/
+	border-color: #2A99BD ;
+    border-style: solid;
+    border-width: 1px;
+	border-radius: 5px;	  
+	   }
+
+#btnFollow,
+#btnContact {
+background-image: url("/images/ButtonBG.jpg");
+background-repeat: repeat-x;
+border-color: #55AAC5 #2A99BD #2A99BD #55AAC5;
+border-radius: 5px 5px 5px 5px;
+border-style: solid;
+border-width: 1px;
+color: #f3f3f3;
+font-size: 15px;
+height: 30px;
+line-height: 30px;
+width: 97px;
+padding-left: 5px;
+padding-right: 5px;
+text-transform: capitalize;
+cursor: pointer;
+ 
+}
+
+    #btnFollow:hover,
+    #btnContact:hover {
+background-image: url("/images/ButtonBGhover.jpg");
+color: #fff;
+font-size: 16px;
+    }
+
+
+
+
+/* ------------------------------- Following------------------------------- */	   
+#divFollowing {
+background-color: #FFFFFF;
+border: 1px solid #2A99BD;
+border-radius: 5px 5px 5px 5px;
+display: block;
+height: auto;
+margin-bottom: 10px;
+min-height: 130px;
+width: 200px;
+clear: both;
+}
+
+    #divFollowing h1 {
+background: none repeat scroll 0 0 #2A99BD;
+border-top-left-radius: 3px;
+border-top-right-radius: 3px;
+color: #EEEEEE;
+font-size: 14px;
+height: 8px;
+    }
+
+#imgLinksFollowings{
+display:block;
+}
+#imgLinksFollowings a {
+display:block;
+float:left;
+margin:5px;
+border: 1px solid #cecece;
+}
+
+#divFollowing a {
+color:#777;
+font-family:Arial, Helvetica, sans-serif;
+font-size:12px;
+text-decoration:none;
+
+}
+    #imgLinksFollowings a img {
+        width:30px;
+        height:30px;
+    }
+
+#divScheduleHolder h1  span.bulletSchedule {
+
+}
+#bulletSchedule {
+color:#fff;
+font-size: 24px;
+position: absolute;
+top: 0;
+right: 0;
+}
+
+#divRingsHolder h1 span.bulletSchedule {
+
+}
+#bulletRings {
+color:#fff;
+font-size: 24px;
+position: absolute;
+top: 0;
+left: 0;
+
+}
+/* ------------------------------- / Following------------------------------- */
+
+/* ------------------------------- Rings------------------------------- */
+
+#leftSideStickers {
+    display: none;
+}
+.ancimgchannel {
+    float: left;
+    display: block;
+    width: 30%;
+
+}
+
+.ringBoxChannel.ringBoxBoard {
+background-color: #2A99BD;
+height: 58px;
+margin-bottom: 1px;
+width: 99%;
+position: relative;
+}
+
+.ringBoxChannel.ringBoxBoard  .ringsHolder {
+background: none repeat scroll 0 0 #f7f7f7;
+display: block;
+margin-bottom: 10px;
+width: 96%;
+border-radius: 2px;
+height: 50px;
+}
+#divRings{
+display:block;
+background-color:#fff;
+margin-bottom:10px;
+border: 1px solid #2A99BD;
+border-radius: 5px;
+width:200px;
+min-height:130px;
+height:200px;
+height: auto;
+}
+
+    #divRings h1 {
+background: none repeat scroll 0 0 #2A99BD;
+border-top-left-radius: 3px;
+border-top-right-radius: 3px;
+color: #EEEEEE;
+font-size: 14px;
+height: 8px;
+    }
+
+.ring {
+display:block;
+margin-bottom:10px;
+margin-top:10px;
+}
+
+/*.nano .pane {
+height: 470px;
+}*/
+
+#content .nano {
+    width: 100%;
+}
+
+
+
+
+.ancToChannel {
+    display: block;
+    text-decoration: none;
+
+}
+
+.ringBoxChannel.ringBoxBoard .spnChannelName {
+  color: #FFFFFF;
+  display: block;
+  float: left;
+  
+  font-size: 13px;
+  margin-top: 5px;
+  text-decoration: underline;
+  width: 100%;
+  text-align: left;
+  height: 14px;
+}
+
+.ringBoxChannel.ringBoxBoard .spnUserName {
+color: #FFFFFF;
+float: none;
+
+font-size: 13px;
+padding-left: 4px;
+padding-top: 2px;
+text-decoration: underline;
+width: 100%;
+text-align:left;
+display: block;
+}
+.ringBoxChannel.ringBoxBoard .spnTime {
+color: #FFFFFF;
+display: block;
+float: right;
+
+font-size: 12px;
+}
+
+
+.ringBoxChannel.ringBoxBoard .senderUrl {
+display: block;
+float: left;
+height: 15px;
+width: 70%;
+margin-top: 8px;
+}
+.ringBoxChannel.ringBoxBoard .ancToChannel {
+    display: block;
+   float:left;
+   width: 70%;
+
+}
+ .ringBoxChannel.ringBoxBoard .imgAndCannel {
+ 
+  display: block;
+  
+  padding-left: 3px;
+  padding-right: 3px;
+  float:left;
+}
+.ringBoxChannel.ringBoxBoard .timeAndUserName {
+width: 50%;
+position: absolute;
+right: 0;
+top: 3px;
+}
+
+
+
+
+/* ------------------------------- / Rings------------------------------- */
+
+
+
+/* ------------------------------- / Left------------------------------- */
+
+
+/* ------------------------------- CENTER------------------------------- */
+ #divStory {
+ float: left;
+ margin-top: 20px;
+ border: 1px solid #55AAC5;
+ border-radius: 7px;
+ width: 100%;
+ position:relative;
+}
+ .editTitle {
+    position:absolute;
+top:0;
+right:0;
+background-image:url(/images/editIcon.png)
+}
+    .editTitle a {
+background-image: url("/images/editIcon.png");
+color: #F3F3F3;
+display: block;
+font-size: 13px;
+padding: 5px;
+text-decoration: underline;
+    }
+#titleEditHolder {
+    display:none;
+    padding:5px;
+}
+
+
+ #divStory h1, #titleEditHolder {
+background: none repeat scroll 0 0 #2A99BD;
+border: 1px solid #2A99BD;
+border-top-left-radius: 7px;
+border-top-right-radius: 7px;
+color: #FFFFFF;
+font-family: Verdana;
+font-size: 25px;
+letter-spacing: 3px;
+text-transform: capitalize;
+}
+
+        .lblStory {
+            display: block;
+            
+            font-size: 13px;
+            color: #777;
+            line-height: 22px;
+            padding-bottom: 5px;
+            padding-left: 5px;
+            padding-top: 5px;
+
+
+        }
+
+ #divChannels {
+ float: left;
+ margin-bottom: 20px;
+ width: 100%;
+}
+
+#divChannelsFollowingHolder {
+background: none repeat scroll 0 0 #F5F5F5;
+border-radius: 4px 4px 4px 4px;
+clear: both;
+display: block;
+float: right;
+height: 25px;
+line-height: 7px;
+margin-top: 10px;
+width: 100%;
+}
+
+.spnChannels ,
+.spnFollowings {
+color: #008000;
+display: block;
+float: left;
+
+font-size: 11px;
+font-weight: bold;
+letter-spacing: 1px;
+padding-top: 10px;
+text-transform: uppercase;
+padding-left: 4px;
+}
+
+        #lblChannelsCount, #lblFollowingCount {
+color: #2A99BD;
+display: block;
+float: left;
+font-family: Tahoma;
+font-size: 14px;
+font-weight: bold;
+padding-left: 5px;
+padding-right: 10px;
+padding-top: 9px;
+        }
+
+
+
+        .divChannelHolder {
+background: none repeat scroll 0 0 #FFFFFF;
+border: 1px solid #2A99BD;
+border-bottom-left-radius: 7px;
+border-bottom-right-radius: 7px;
+display: inline;
+float: left;
+width: 100%;         
+        }
+
+
+.divChannel {
+background-color: #ECECEC;
+border: 1px solid #2A99BD;
+border-radius: 5px 5px 5px 5px;
+float: left;
+margin: 0.9%;
+min-width: 130px;
+padding: 0.5%;
+width: 17%;
+
+}
+
+    .divChannel a {
+color: #2A99BD;
+
+font-size: 15px;
+font-weight: normal;
+text-decoration: none;
+text-transform: capitalize;
+
+    }
+
+ .divChannel a.comingSoon {
+color: #95ccdd;
+}
+
+.divChannel span {
+clear: both;
+color: #777;
+display: block;
+float: left;
+
+font-size: 12px;
+line-height: 15px;
+}
+
+.divChannel span.comingSoon {
+color: #bbb;
+}
+
+.divChannel span em {
+ color:#2A99BD ;
+ }
+
+.divChannel img {
+border: 1px solid #f9f9f9;
+display: block;
+float: left;
+height: 122px;
+margin-bottom: 10px;
+margin-top: 10px;
+width: 100%;
+border-radius: 3px;
+}
+ #fuImgAvatar {
+    width:160px;
+    margin-bottom:10px;
+}
+#uploadAvatarHolder {
+    display:none;
+}
+#storyHolderEdit {
+    display:none;
+}
+
+
+/* ------------------------------- activity------------------------------- */
+.activity {
+    width: 100%;
+    float: left;
+}
+#divActivities {
+    background: none repeat scroll 0 0 #FFFFFF;
+border: 1px solid #2A99BD;
+border-bottom-left-radius: 7px;
+border-bottom-right-radius: 7px;
+display: inline;
+float: left;
+width: 100%; 
+}
+.activityHolder {
+    display: block;
+    float: left;
+    clear: both;
+    margin-bottom: 20px;
+    width: 100%;
+}
+.spnTimeStamp {
+color: #777777;
+font-size: 12px;
+padding: 5px;
+width: 100%;
+}
+.imgActivity {
+float: left;
+padding: 5px;
+
+}
+.activityPost {
+background: none repeat scroll 0 0 #EFEFEF;
+color: #555555;
+float: right;
+font-size: 14px;
+height: 60px;
+margin-right: 2%;
+width: 83%;
+margin-top: 5px;
+padding: 5px;
+border-radius: 3px;
+}
+.imgSpanWrapper {
+display: block;
+height: 80px;
+margin-bottom: 10px;
+width: 100%;
+
+}
+
+/* -------------------------------/activity------------------------------- */
+/* ------------------------------- /CENTER------------------------------- */
+
+/* ------------------------------- RIGHT------------------------------- */
+.right {
+float: right;
+padding-left: 10px;
+padding-right: 10px;
+width: 25%;
+display: block;
+margin-top: 5px;
+min-height: 500px;
+min-width: 200px;
+margin-top: 15px;
+}
+
+.post {
+border: 1px solid #2A99BD;
+border-bottom-left-radius: 4px;
+margin-bottom: 10px;
+min-height: 130px;
+border-bottom-right-radius: 4px;
+}
+.addNewPost {
+    font-size: 12px;
+    color: #999;
+    text-decoration: underline;
+}
+
+#lblPost {
+    width:95%;
+    display: block;
+    
+    font-size: 14px;
+    color: #777;
+}
+.post h1 {
+    width: 90%;
+    display: block;
+}
+#divTodayPost {
+    display:none;
+}
+#fuUploadPost {
+    width:200px;
+}
+    
+/* ------------------------------- /RIGHT------------------------------- */
+/* ------------------------------- common------------------------------- */
+
+.shareLink {
+background-image:url(/images/shareLinkBG.jpg);
+background-repeat: repeat-x; 
+color: #FFFFFF;
+display: block;
+font-size: 12px;
+font-weight: bold;
+height: 23px;
+line-height: 23px;
+text-align: center;
+text-decoration: none;
+width: 80px;
+border: 1px solid #1A356E;
+}
+
+#showDescription { 
+color: #333333;
+font-size: 12px;
+margin-left: 6px;
+text-transform: capitalize;
+}
+
+.abuse {
+display: block;
+float: left;
+width: 230px;
+margin-left: 20px;
+margin-bottom: 10px;
+}
+
+.typeAbuse {
+    /*margin-top: 25px;*/
+}
+
+.videoAbuse {
+}
+.commentAbuse {
+}
+
+.submitAbuse {
+clear: both;
+display: block;
+float: right;
+margin-right: 20px;
+margin-top: 10px;
+width: 90%;
+}
+    .submitAbuse a {
+background-image: url("/images/button-BG-orange.jpg");
+background-repeat: repeat-x;
+border-radius: 5px;
+color: #EEEEEE;
+display: block;
+float: right;
+font-size: 13px;
+font-weight: bold;
+height: 25px;
+line-height: 25px;
+padding-left: 4px;
+padding-right: 4px;
+width: 45px;
+text-align: center;
+    }
+
+    .submitAbuse a:hover {
+     background-image: url("/images/orange-BG-hover.jpg");
+    }
+    .submitAbuse #lblMsg {
+        color: #ff6a00;
+        font-size: 12px;
+    }
+
+#txtVideoTitle {
+height: 20px;
+width: 220px;
+}
+#txtComments {
+    border-radius: 5px;
+    border: 1px solid #2a99bd;
+}
+
+#ddlCategory {
+height: 26px;
+width: 225px;
+}
+.blink {
+    background-color:#2a99bd !important;
+}
+
+
+

@@ -1,0 +1,26 @@
+﻿CREATE TABLE [dbo].[UserProfile] (
+    [Id]                           UNIQUEIDENTIFIER NOT NULL,
+    [FirstName]                    NVARCHAR (250)   NULL,
+    [LastName]                     NVARCHAR (250)   NULL,
+    [BirthDate]                    DATETIME         NULL,
+    [Address]                      NVARCHAR (250)   NULL,
+    [City]                         NVARCHAR (250)   NULL,
+    [ZipCode]                      NVARCHAR (250)   NULL,
+    [Country]                      NVARCHAR (250)   NULL,
+    [AboutMySelf]                  NVARCHAR (500)   NULL,
+    [WebSites]                     NVARCHAR (500)   NULL,
+    [EMailVerified]                BIT              CONSTRAINT [DF_UserProfile_EMailVerified] DEFAULT ((0)) NOT NULL,
+    [MyStatus]                     NVARCHAR (500)   NULL,
+    [MyStatusPrivacyLevelId]       UNIQUEIDENTIFIER NULL,
+    [TermsAndConditionsId]         UNIQUEIDENTIFIER NULL,
+    [TermsAndConditionsAgreedDate] DATETIME         NULL,
+    [DateEntered]                  DATETIME         NULL,
+    [DateModified]                 DATETIME         NULL,
+    [ReputationScore]              INT              NULL,
+    [TimeZoneId]                   NVARCHAR (250)   NULL,
+    CONSTRAINT [PK_UserProfile] PRIMARY KEY CLUSTERED ([Id] ASC),
+    CONSTRAINT [FK_UserProfile_aspnet_Users] FOREIGN KEY ([Id]) REFERENCES [dbo].[aspnet_Users] ([UserId]) ON DELETE CASCADE,
+    CONSTRAINT [FK_UserProfile_PrivacyLevel] FOREIGN KEY ([MyStatusPrivacyLevelId]) REFERENCES [dbo].[PrivacyLevel] ([Id]),
+    CONSTRAINT [FK_UserProfile_TermsAndConditions] FOREIGN KEY ([TermsAndConditionsId]) REFERENCES [dbo].[TermsAndConditions] ([Id])
+);
+

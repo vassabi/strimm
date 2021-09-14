@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="EpgScreen" extends="Group" >
+  <interface>
+    <field id="openChannelID" type="string" onChange="onOpenChannelIDChange" />
+  </interface>
+
+  <script type="text/brightscript" uri="EpgScreen.brs" />
+  <script type="text/brightscript" uri="pkg:/components/nodeUtils.brs" />
+  <script type="text/brightscript" uri="pkg:/source/generalUtils.brs" />
+
+  <children>
+    <Group id="infoGroup" translation="[700, 50]" visible="false" >
+      <Label id="channelHint" text="Channel" visible="false" />
+      <Label id="aboutHint" text="About" translation="[0, 40]" visible="false" />
+      <Group id="infoDataGroup" >
+        <Label id="channelTitle" />
+        <Label id="channelAbout" translation="[0, 40]" width="400" wrap="true" maxlines="2" lineSpacing="0" />
+      </Group>
+      <ProgramInfo id="currentProgramInfo" visible="false"  />
+    </Group>
+    <CustomTimeGrid id="timeGrid"
+      channelInfoComponentName="TimeGridChannelItemComponent"
+      channelInfoFocusable="true"
+      visible="false" />
+    <ProgramInfo id="programInfo" visible="false" />
+    <MarkupGrid id="buttonGroup" focusBitmapUri="pkg:/images/buttons_frame.9.png" focusFootprintBitmapUri=""
+        numRows="1" itemComponentName="ButtonIconMarkup" />
+    <Poster id="hintsGroupFrame" uri="pkg:/images/hint_frame.png" opacity="0" >
+      <LayoutGroup id="hintsGroup" layoutDirection="horiz" itemSpacings="[12, 12, 12]" >
+        <Label id="clickHint" text="Click" />
+        <Poster uri="pkg:/images/icon_back.png" width="32" height="24" />
+        <Label id="searchHint" text="to go to top" />
+      </LayoutGroup>
+    </Poster>
+    <Animation id="hintsGroupFrameAnimation" repeat="false" >
+      <FloatFieldInterpolator
+        keyValue="[1, 1, 0]"
+        key="[0, 0.9, 1]"
+        fieldToInterp="hintsGroupFrame.opacity" />
+    </Animation>
+    <LayoutGroup id="hintsGroup2" layoutDirection="horiz" itemSpacings="[12, 12, 12]" visible="false" >
+      <Label id="clickHint2" text="Click" />
+      <Poster uri="pkg:/images/icon_ok.png" width="24" height="24" />
+      <Label id="fullscreenHint" text="" />
+    </LayoutGroup>
+    <Poster id="networkLogo" uri="pkg:/images/mm_icon_focus_hd.png" />
+    <Label id="networkTitle" />
+    <ProgramPanel id="programPanel" width="640" height="300" buttonWidth="140" visible="false" />
+    <ChannelPanel id="channelPanel" width="640" height="80" buttonWidth="140" visible="false" />
+  </children>
+</component>

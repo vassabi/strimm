@@ -1,0 +1,504 @@
+﻿
+
+
+#divSearchOptionHolder {
+display: block;
+height: 115px;
+margin-bottom: auto;
+margin-left: auto;
+margin-right: auto;
+padding-top: 5px;
+width: 100%;
+}
+
+#searchHolder {
+    display: block;
+    float: left;
+    margin: auto;
+    position: relative;
+    text-align: center;
+    width: 90%;
+}
+
+    #searchHolder .clearSearch {
+        /*background-color: transparent;
+        float: right;
+        height: 37px;
+        width: 37px;
+        background-image: url(/images/close_pop.png);
+        background-repeat: no-repeat;
+        background-size: 55%;
+        color: transparent;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+        border: none;*/
+        display: none;
+    }
+
+.searchClearIcon
+{
+    display:none;
+    width:20px;
+}
+
+
+.btnSearch {
+background-image: url(/images/lupa-search.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 22px;
+    display: block;
+    float: left;
+    height: 40px;
+    width: 40px;
+    opacity: 0.8;
+    float: right;
+    background-color: #eee;
+    cursor: pointer;
+}
+    .btnSearch:hover {
+        background-color: #bbb;
+    }
+
+#optionHolder {
+display: block;
+margin: 50px auto auto;
+min-width: 700px;
+}
+
+#optionHolder #radioBtnList {
+border-collapse: collapse;
+border-spacing: 0;
+clear: both;
+margin: 40px auto auto;
+}
+
+
+.channelTiming {
+    background-color: red;
+    border-top-left-radius: 15px;
+    bottom: 0;
+    color: #fff;
+    display: block;
+    float: right;
+    font-size: 14px;
+    height: 20px;
+    padding-left: 10px;
+    padding-right: 5px;
+    position: absolute;
+    text-align: left;
+    line-height: 20px;
+}
+
+
+
+#btnSearch {
+    background-color: #2A99BD;
+background-image: url("/images/ButtonBG.jpg");
+background-position: -10px center;
+background-repeat: repeat-x;
+border: medium none;
+border-radius: 3px;
+color: #FFFFFF;
+cursor: pointer;
+
+font-size: 13px;
+padding: 3px 5px;
+}
+    #btnSearch:hover {
+background-image: url("/images/ButtonBGhover.jpg");
+color: #fff;
+    }
+
+
+
+.sortBy {
+display: block;
+float: left;
+margin-left: 10px;
+}
+#sortBy {
+color: #777777;
+display: block;
+float: left;
+font-size: 13px;
+text-transform: capitalize;
+}
+
+.divSortHolder {
+clear: both;
+display: block;
+height: 30px;
+line-height: 20px;
+float: left;
+margin: 20px;
+}
+
+
+
+.spnTitle {
+color: #2A99BD;
+font-size: 21px;
+text-transform: capitalize;
+}
+
+#radioBtnList label {
+color: #555555;
+font-size: 16px;
+margin-left: 5px;
+height: 20px;
+line-height: 20px;
+margin-right: 20px;
+}
+#radioBtnList input {
+margin-top: 5px;
+display: block;
+float: left;
+margin-bottom: 5px;
+}
+
+.videoBox {
+background: none repeat scroll 0 0 #F3F3F3;
+border: 1px solid #2A99BD;
+border-radius: 4px;
+display: block;
+float: left;
+margin: 0.2%;
+padding: 0.2%;
+width: 31%;
+}
+
+.videoImg {
+    display: block;
+    float: left;
+    width: 20%;
+    border-radius: 3px;
+}
+.spnVideoTitle {
+color: #555555;
+display: block;
+float: left;
+font-size: 13px;
+overflow: hidden;
+width: 95%;
+white-space: nowrap;
+text-overflow: ellipsis;
+margin-left: 2%;
+height: 40px;
+line-height: 30px;
+
+}
+.DurationViewsHolder {
+display: block;
+float: left;
+height: 29px;
+padding-left: 2%;
+}
+
+.spnDuration {
+    display: block;
+    float: left;
+    font-size: 12px;
+    width: 99%;
+    color: #555;
+}
+
+.spnViews {
+        display: block;
+    float: left;
+    font-size: 12px;
+    width: 99%;
+      color: #555;
+      margin-top: 5px;
+}
+.channelname {
+color: #2A99BD;
+display: block;
+font-size: 13px;
+height: 20px;
+line-height: 20px;
+margin: auto;
+overflow: hidden;
+text-overflow: ellipsis;
+white-space: nowrap;
+width: 95%;
+text-align: center;
+}
+.spnStartTime {
+display: block;
+font-size: 12px;
+height: 40px;
+line-height: 40px;
+text-align: center;
+}
+
+
+    #txtKeyword:focus {
+        outline: none;
+    }
+
+.styled-selectSortSearch {
+    background-color: transparent;
+    background-image: url("/images/ddl-Opt.png");
+    background-position: right center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    width: 280px;
+    cursor: pointer;
+    margin-right: 20px;
+    margin-left: 30px;
+    margin-bottom: 15px;
+    background-size: 22px;
+}
+
+.mainSearch {
+    background-image: url(/images/ddl-mainSearch.png);
+    margin-top: 5px;
+    width: 200px;
+}
+
+    #txtKeyword input {
+        color: red
+    }
+
+#searchBoxHolder {
+    width: 100%;
+    display: block;
+    background: transparent;
+    height: 39px;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+}
+
+#searchHolderUp{
+    float:left;
+    width: 100%;
+}
+
+.searchSoartingHolder {
+display: block;
+height: 40px;
+line-height: 40px;
+margin-top: 35px;
+}
+#searchBoxHolder input, #searchBoxHolder a {
+display: block;
+    float: left;
+    max-width: 400px;
+    background-color: transparent;
+    border: none;
+    height: 37px;
+    border-right: none;
+    line-height: 37px;
+    font-family: Roboto-Light,'Helvetica Neue',Helvetica,Arial,sans-serif;
+    width: 300px;
+    padding-left: 5px;
+}
+
+#searchBoxHolder a {
+    border-left: 1px solid #999;
+    height: 30px;
+    margin-top: 4px;
+    cursor: pointer;
+}
+
+
+
+#searchBoxHolder label {
+display: block;
+float: left;
+font-size: 14px;
+margin-right: 20px;
+color: #555;
+}
+
+
+
+
+#lblMsg {
+    color: #555;
+    display: block;
+    font-size: 17px;
+    font-weight: normal;
+    text-align: center;
+    width: 100%;
+
+}
+.divChannel {
+background-color: #ECECEC;
+border: 1px solid #2A99BD;
+border-radius: 5px;
+float: left;
+margin: 0.2%;
+min-width: 130px;
+padding: 0.1%;
+width: 24%;
+}
+
+    .divChannel a {
+color: #2A99BD;
+display: block;
+float: left;
+
+font-size: 15px;
+text-align: center;
+text-transform: capitalize;
+width: 100%;
+margin-top: 10px;
+    }
+
+ .divChannel a.comingSoon {
+color: #95ccdd;
+}
+
+.divChannel span {
+color: #777777;
+display: block;
+float: left;
+
+font-size: 12px;
+line-height: 15px;
+width: 100%;
+text-align: center;
+margin-top: 20px;
+}
+
+.divChannel span.comingSoon {
+color: #bbb;
+}
+
+.divChannel span em {
+ color:#2A99BD ;
+ }
+
+.divChannel img {
+border: 1px solid #F9F9F9;
+border-radius: 3px;
+display: block;
+float: left;
+height: 70px;
+margin-bottom: 1px;
+margin-top: 1px;
+width: 20%;
+}
+
+.channelViewsHolder {
+    display:block;
+    float: left;
+    width: 75%;
+}
+
+#ancSearch {
+background-color: #2a99bd;
+color: #fff;
+display: block;
+float: left;
+font-size: 17px;
+height: 39px;
+line-height: 41px;
+margin-right: 20px;
+text-align: center;
+text-transform: capitalize;
+width: 120px;
+}
+
+    #ancSearch:hover {
+background-color: #286c82;
+    }
+
+.searchBoxHolderLoad {
+   
+}
+
+.other {
+    font-size:12px;
+    float: left;
+}
+
+#ancCloseSearchControl {
+    display: block;
+    background-image: url(/images/close_pop.png);
+    background-size: 70%;
+    background-repeat: no-repeat;
+    height: 40px;
+    width: 40px;
+    color: transparent;
+    background-position: center;
+    float: left;
+}
+
+    #ancCloseSearchControl:hover {
+        opacity: 1;
+    }
+
+#ddlSearchSelect {
+    display: block;
+    float: right;
+    background: transparent;
+    color: #555;
+    text-transform: capitalize;
+    font-family: Roboto-Light,'Helvetica Neue',Helvetica,Arial,sans-serif;
+    height: 29px;
+    line-height: 29px;
+    border: none;
+    border-left: 1px solid #eee;
+    margin-top: 4px;
+}
+
+
+    #ddlSearchSelect:focus {
+        outline: none;
+    }
+
+
+
+
+@media (max-width:760px) {
+
+    #ancCloseSearchControl {
+        position: absolute;
+        top: -60px;
+        right: 20px;
+    }
+
+    #searchHolder {
+        width: 100%;
+    }
+
+    .btnSearch {
+        width: 40px;
+    }
+}
+
+
+@media (max-width:520px) {
+    #ancCloseSearchControl {
+        top: -42px;
+    }
+
+    #searchBoxHolder {
+        background: #fff;
+        border-radius: 0;
+    }
+}
+
+
+@media (max-width:460px) {
+    #searchBoxHolder input, #searchBoxHolder a {
+        width: 150px;
+    }
+}
+@media (max-width:370px) {
+    #searchBoxHolder input, #searchBoxHolder a {
+        width: 120px;
+    }
+}
+
+
+
+
+
+
+
+

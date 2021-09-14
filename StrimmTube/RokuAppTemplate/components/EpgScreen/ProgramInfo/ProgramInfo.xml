@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<component name="ProgramInfo" extends="Poster" >
+  <interface>
+    <field id="program" type="assocarray" onChange="onProgramChange" />
+    <field id="width" type="float" value="690" />
+    <field id="margins" alias="programInfoGroup.translation" />
+    <field id="maxDescLines" type="int" value="3" alias="programDesc.maxLines" />
+  </interface>
+
+  <script type="text/brightscript" uri="./ProgramInfo.brs" />
+  <script type="text/brightscript" uri="pkg:/components/nodeUtils.brs" />
+  <script type="text/brightscript" uri="pkg:/source/generalUtils.brs" />
+
+  <children>
+    <LayoutGroup id="programInfoGroup" layoutDirection="vert" horizAlignment="left" vertAlignment="top" itemSpacings="[4, 12]" >
+      <Label id="programTitle" font="font:SmallBoldSystemFont" />
+      <LayoutGroup layoutDirection="horiz" horizAlignment="left" vertAlignment="top" itemSpacings="[0]" >
+        <Label id="programSubtitle" font="font:SmallestSystemFont" />
+      </LayoutGroup>
+      <Label id="programDesc" font="font:SmallestSystemFont" wrap="true" lineSpacing="0" />
+    </LayoutGroup>
+  </children> 
+</component>

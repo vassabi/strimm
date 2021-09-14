@@ -1,0 +1,623 @@
+﻿<!DOCTYPE html>
+<html >
+<head>
+    <meta name="viewport" content="width=700,maximum-scale=1.0,user-scalable=yes">
+    <script src="/jquery/jquery-1.11.1.min.js" type="text/javascript"></script>
+    <script src="/jquery/jquery-migrate-1.2.1.min.js" type="text/javascript"></script>
+    <script src="/JS/swfobject.js" type="text/javascript"></script>
+    <script src="//www.google.com/jsapi" type="text/javascript"></script>
+    <script src="https://www.youtube.com/iframe_api"></script>
+      <script type="text/javascript">
+          google.load("swfobject", "2.1");
+          </script>
+    <style type="text/css">
+      
+        body
+        {
+            background-color:#222;
+        }
+      #topMenu {
+    background-image: none;
+    background-repeat: repeat;
+    height: 70px;
+    width: 100%;
+    display: block;
+    float: left;
+    background-color: #222;
+    position: absolute;
+    top: 0;
+    z-index: 1000;
+}
+      .fullHolder {
+    display: none;
+    float: left;
+    width: 98%;
+    margin: auto;
+}
+
+      .channelsBG {
+    display: block;
+    float: left;
+    width: 100%;
+    background-color: #222;
+}
+
+      .homeBlocksHolder {
+    background-color: transparent;
+    clear: both;
+    display: block;
+    float: left;
+    text-align: center;
+    width: 80%;
+}
+
+      .footerHomeBlock {
+          width: 100%;
+      }
+
+      .televisionByPeople {
+    background-color: transparent;
+    display: block;
+    float: left;
+    height: 225px;
+    position: relative;
+    width: 100%;
+}
+
+      .televisionByPeopleH2 {
+    color: #eee;
+    display: block;
+    
+    font-size: 35px;
+    letter-spacing: 3px;
+    line-height: 70px;
+    margin: 30px auto auto;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    font-weight: normal;
+}
+
+
+
+
+      .video-box-h1 {
+    color: #eee;
+    display: block;
+    float: left;
+    
+    font-size: 25px;
+    height: 30px;
+    margin-left: 8px;
+    margin-top: 30px;
+    text-align: left;
+    text-transform: capitalize;
+    width: 100%;
+    font-weight: normal;
+}
+
+      .sliderCaptionsHN {
+    display: none;
+    min-width: 320px;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    margin-top: 80px;
+    padding-bottom: 50px;
+}
+
+      .homeActionsHolder {
+          width: 600px;
+          margin: auto;
+      }
+
+      .btnCreate {
+    width: 250px;
+    color: #fff;
+    height: 50px;
+    display: block;
+    background-color: #3bcd4e;
+    line-height: 50px;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 17px;
+    float: left;
+    background: #3bcd4e;
+    margin-top: 35px;
+    cursor: pointer;
+      }
+          .btnCreate:hover {
+  background: #2e913b;
+          }
+
+      .watchVideoIcon200 {
+   
+     background-image: url("/images/videoTutorialIconHover.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 170px;
+    height: 170px;
+    margin: auto;
+    display: block;
+    cursor: pointer;
+    float: right;
+}
+
+                  .watchVideoIcon200:hover {
+                 background-image: url("/images/videoTutorialIcon.png");
+                width: 170px;
+                height: 170px;
+                background-repeat: no-repeat;
+             margin: auto;
+            display: block;
+             background-size: 100%;
+            }
+
+      .whatIskWrapper {
+          width: 100%;
+          height: auto;
+          border-top: 1px solid #555;
+           display: block;
+          float: left;
+          margin-bottom: 150px;
+      }
+
+      .whatIs {
+          display: block;
+          float: right;
+          width: 300px;
+          border-left: 1px solid #555;
+
+      }
+
+      .whatIsBlock {
+    width: 100%;
+    height: 300px;
+    display: block;
+    float: left;
+      }
+
+      .video-box-h1 {
+    color: #eee;
+    display: block;
+    float: left;
+    
+    font-size: 25px;
+    height: 70px;
+    text-align: left;
+    text-transform: capitalize;
+    width: 100%;
+    font-weight: normal;
+    line-height: 80px;
+    margin-top: 0;
+}
+
+      .whatIsTitle {
+          display: block;
+          float: left;
+          height: 70px;
+          line-height: 80px;
+          
+          text-align: center;
+          font-size: 25px;
+          color: #fff;
+          width: 100%;
+      }
+
+      .whatIsStep {
+           display: block;
+          float: left;
+          height: 30px;
+          line-height: 30px;
+          font-family:arial,sans-serif;
+          text-align: center;
+          font-size: 19px;
+          color: #eee;
+          width: 100%;
+          font-weight: bold;
+
+      }
+
+      .whatIsDescription {
+          display: block;
+          float: left;
+          height: 25px;
+          line-height: 25px;
+          font-family:arial,sans-serif;
+          text-align: center;
+          font-size: 15px;
+          color: #ccc;
+          width: 100%;
+      }
+
+      .whatIsIcon {
+    background-image: url("/images/whatIsIcons/whatIsIcons-1.png");
+    display: block;
+    width: 280px;
+    height: 150px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+         
+      } 
+      
+      .chanBox {
+    border: 1px solid #555;
+    display: block;
+    float: left;
+    height: 230px;
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+    width: 230px;
+}
+        
+          .home-video-box:hover,
+.home-video-box-01:hover,
+.home-video-box-02:hover,
+.home-video-box-03:hover,
+.home-video-box-04:hover,
+.home-video-box-05:hover,
+.home-video-box-06:hover,
+.home-video-box-07:hover,
+.home-video-box-08:hover,
+.home-video-box-09:hover,
+.home-video-box-10:hover,
+.home-video-box-11:hover,
+.home-video-box-add:hover{
+    box-shadow:none;
+    border-color: #2a99bd;
+}  
+          
+          .home-video-box-add {
+    background-image: url("/images/seeMoreNewDec.png");
+    background-size: 100% auto;
+    border: 1px solid #ddd;
+    width: 228px;
+}
+
+      .whatIslearnMore {
+          display: block;
+          float: left;
+          height: 50px;
+          width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+      }
+
+      .btnWhatIslearnMore {
+          display: block;
+          height: 50px;
+          width: 180px;
+          margin: auto;
+          background-color: #3bcd4e;
+          color: #eee;
+          text-align: center;
+          line-height: 50px;
+          cursor: pointer;
+      }
+
+      .btnWhatIslearnMore:hover {
+ background-color: #2e913b;
+ color: #fff;
+      }
+
+      #homesliderHN {
+    display: block;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    background-color: #444;
+    margin-top: 70px;
+}
+
+            .webHolder {
+    position: relative;
+    display: block;
+    width: 60%;
+    height: auto;
+    float: left;
+    background-image: url("/images/001.jpg");
+    background-color: #999;
+    height: 560px;
+    padding-top: 0;
+}
+
+      .webHolderLeft,
+      .webHolderRight {
+          display: block;
+          float: left;
+          width: 16%;
+          background-color: transparent;
+          padding-left: 2%;
+          padding-right: 2%;
+          padding-top:0;
+          padding-bottom:0;
+      }
+
+      .webHolderRight {
+          width: 20%;;
+          padding: 0;
+      }
+
+      .channelWatchig {
+          width: 100%;
+          height: 50px;
+          line-height: 50px;
+          font-size: 17px;
+          color: #2a99bd;
+          text-align: left;
+      }
+
+
+      .channelWatchigDescription {
+          width: 100%;
+          float: left;
+          height: 200px;
+      }
+
+          .channelWatchigDescription p {
+              color: #ccc;
+              line-height: 25px;
+              font-size: 13px;
+              
+          }
+
+      .channelCreator {
+          display: block;
+          width: 100%;
+          float: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+      }
+
+      .channelCreatorImg {
+          display: block;
+          float: left;
+          width: 50px;
+          height: 50px;
+          border: 1px solid #3bcd4e;
+          border-radius: 25px;
+      }
+
+      .spnChannelCreator {
+    display: block;
+    float: left;
+    margin-left: 5px;
+    margin-right: 5px;
+    color: #ccc;
+    height: 50px;
+    line-height: 50px;
+    text-transform: capitalize;
+    font-size: 14px;
+      }
+
+      .spnChannelCreatorName {
+          display: block;
+          float: left;
+          text-decoration: underline;
+          color: #fff;
+          height: 50px;
+          line-height: 50px;
+              font-size: 14px;
+              font-style: italic;
+      }
+
+
+      .scheduleHome {
+          display: block;
+          float: left;
+          width: 100%;
+          height: 50px;
+          border-bottom: 1px solid #777;
+      }
+
+      .scheduleHomeTime {
+          display: block;
+          float: left;
+          height: 50px;
+          width: 100px;
+          line-height: 50px;
+          color: #ddd;
+          text-align: center;
+          margin-right:5px;
+          background-color: #555;
+          font-size: 14px;
+          position: relative;
+      }
+
+      .playingNowHome,
+      .playingNextHome {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 15px;
+    color: #fff;
+    background-color: #ff4b00;
+    opacity: 0.85;
+    line-height: 15px;
+    font-size: 12px;
+      }
+
+    .playingNextHome {
+        background-color: #3bcd4e;
+      }
+
+
+
+            .scheduleHomeTitle {
+          display: block;
+          float: left;
+          height: 50px;
+          line-height: 50px;
+          color: #bbb;
+          font-size: 14px;
+          overflow: hidden;
+         white-space: nowrap;
+          text-overflow: ellipsis;
+          width: 70%;
+      }
+            #ancPlayerSound
+            {
+                color: #fff;
+font-size: 22px;
+width: 100%;
+display: block;
+text-align: center;
+float:left;
+            }
+
+    </style>
+    <title>Youtube Player modest mode</title>
+
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+          
+            onYouTubeIframeAPIReady();
+        });
+        var player;
+      
+           
+
+        function onYouTubeIframeAPIReady() {
+            player = new YT.Player('relatedtutorial', {
+                height: '560',
+                width: '100%',
+              //  videoId: 'DllD6WARp8Q',
+                playerVars: {
+                    autoplay: 0,
+                    html5: 1,
+                    rel: false,
+                    controls: 0,
+                    modestbranding: 1
+                },
+                events: {
+                    'onReady': onPlayerReady,
+                    'onStateChange': onPlayerStateChange
+                }
+            });
+        };
+
+         
+
+            // 4. The API will call this function when the video player is ready.
+            function onPlayerReady(event) {
+                var playlist = ["KsjEJpp-i-M", "y7I8Ku_05s4", "N0zxsHqX-ag", "CTUQ2wPdxCo", "Q2pP-By4Org", "5V7S0NQ5m6A", "GSKRQuhSgbQ", "qMyv7qLNe6g", "RNLLPbMThGM", "y7I8Ku_05s4", "N0zxsHqX-ag"];
+                event.target.loadPlaylist(playlist, 0, 0, "large");
+                event.target.mute();
+                event.target.playVideo();
+
+            };
+
+            // 5. The API calls this function when the player's state changes.
+            //    The function indicates that when playing a video (state=1),
+            //    the player should play for six seconds and then stop.
+            var done = false;
+            function onPlayerStateChange(event) {
+
+                if (event.data == YT.PlayerState.PLAYING && !done) {
+                    // setTimeout(stopVideo, 6000);
+
+                    done = true;
+                    ////console.log(done);
+                }
+            };
+       
+
+        function Unmute() {
+            player.unMute();
+            $("#ancPlayerSound").text("").text("mute").removeAttr('onclick').attr('onclick', 'Mute()');
+
+        };
+
+        function Mute()
+        {
+            player.mute();
+            $("#ancPlayerSound").text("").text("unmute").removeAttr('onclick').attr('onclick', 'Unmute()');
+        }
+    </script>
+</head>
+
+
+<body>
+    
+    <div id="homesliderHN">
+
+        <div class="webHolderLeft">
+            <div class="channelWatchig"> Fashion Tv</div>
+            <div class="channelWatchigDescription">
+                <p>Lorem ipsum dolor sit amet, est ut falli quaestio, magna timeam vidisse et vel, cu ius civibus prodesset. Modo laoreet nominavi vis eu, eos cu enim graecis, nam at saepe perfecto nominati. Eu vis rebum persequeris, sonet nominati an pri. Delenit philosophia ea vis, his officiis scribentur te, in diam quidam nec. Dicit interesset an usu, at eirmod dissentiet usu.</p>
+
+            </div>
+            <div class="channelCreator">
+                <div class="channelCreatorImg"></div>
+                <span class="spnChannelCreator"> creator</span>
+                <span class="spnChannelCreatorName">Robert</span>
+            </div>
+        </div>
+        <div class="webHolder  block">
+
+            <div id="relatedtutorial">
+
+            </div>
+        </div>
+      
+        <div class="webHolderRight">
+            <div class="scheduleHome">
+                <div class="scheduleHomeTime">
+                    12:30
+                    <span class="playingNowHome"> playing Now</span>
+                </div>
+                <div class="scheduleHomeTitle">
+                    Ranway show from Paris 2014
+                    Ranway show from Paris 2014
+                    Ranway show from Paris 2014
+                    Ranway show from Paris 2014
+                </div>
+            </div>
+
+            <%------------------------------------------------------------------------------NEED TO BE DELETED--%>
+            <%------------------------------------------------------------------------------NEED TO BE DELETED--%>
+            <%------------------------------------------------------------------------------NEED TO BE DELETED--%>
+
+            <div class="scheduleHome">
+                <div class="scheduleHomeTime">
+                    12:30
+                    <span class="playingNextHome"> playing Next</span>
+                </div>
+                <div class="scheduleHomeTitle"> Ranway show from Paris 2014</div>
+            </div>
+            <div class="scheduleHome">
+                <div class="scheduleHomeTime"> 12:30</div>
+                <div class="scheduleHomeTitle"> Ranway show from Paris 2014</div>
+            </div>
+            <div class="scheduleHome">
+                <div class="scheduleHomeTime"> 12:30</div>
+                <div class="scheduleHomeTitle"> Ranway show from Paris 2014</div>
+            </div>
+            <div class="scheduleHome">
+                <div class="scheduleHomeTime"> 12:30</div>
+                <div class="scheduleHomeTitle"> Ranway show from Paris 2014</div>
+            </div>
+            <div class="scheduleHome">
+                <div class="scheduleHomeTime"> 12:30</div>
+                <div class="scheduleHomeTitle"> Ranway show from Paris 2014</div>
+            </div>
+            <div class="scheduleHome">
+                <div class="scheduleHomeTime"> 12:30</div>
+                <div class="scheduleHomeTitle"> Ranway show from Paris 2014</div>
+            </div>
+
+
+            <%------------------------------------------------------------------------------ ///NEED TO BE DELETED--%>
+            <%------------------------------------------------------------------------------ ///NEED TO BE DELETED--%>
+            <%------------------------------------------------------------------------------ ///NEED TO BE DELETED--%>
+
+        </div>
+        <a onclick="Unmute()" id="ancPlayerSound">unmute</a>
+    </div>
+    
+</body>
+</html>

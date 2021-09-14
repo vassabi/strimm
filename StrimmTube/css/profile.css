@@ -1,0 +1,268 @@
+﻿ body {
+background-color:#f9f9f9;
+}
+#divBoardContent {
+width: 960px;
+margin: auto;
+height: auto;
+min-height: 600px;
+}
+  #divBoardTop {
+ height: 40px;
+ width: 100%;
+margin-top: 10px;
+ }
+#divBackTo {
+float: left;
+}
+#divBoardLiveView {
+float: right;
+}
+#divBoardTop a {
+            display: block;
+            text-decoration: none;
+            color: #555;
+            text-align: center;
+			font-weight:bold;
+ }
+#divBackTo,
+#divBoardLiveView {
+display: block;
+height: 20px;
+padding-top: 4px;
+padding-bottom:: 4px;
+padding-right:2px;
+padding-left:2px;
+border-radius: 3px;
+-webkit-box-shadow: 2px 2px 7px #cecece;
+-moz-box-shadow:2px 2px 7px #999;
+-ms-box-shadow:2px 2px 7px #999;
+-o-box-shadow: 2px 2px 7px #999;
+box-shadow: 2px 2px 7px #999;
+width: 150px;
+line-height: 20px;
+font-size: 13px;
+ }
+#divBackTo:hover,
+#divBoardLiveView:hover {
+background-color: #ececec;
+}
+#divTitleUrlHolder {
+background-color: #0088ff;
+display: block;
+height: 27px;
+margin: 10px auto;
+padding: 8px;
+border-radius: 4px;
+-webkit-box-shadow: inset 0px 0px 11px #777;
+-moz-box-shadow: inset 0px 0px 11px #777;
+-ms-box-shadow: inset 0px 0px 11px #777;
+-o-box-shadow:  inset 0px 0px 11px #777;
+box-shadow: inset 0px 0px 11px #777;
+ }
+ .pageTitle {
+color: #fff;
+display: block;
+float: left;
+font-size: 22px;
+font-weight: bold;
+line-height: 30px;
+margin-left: 5px;
+text-shadow: 1px 0 2px #000;
+}
+.spnPleaseComplete {
+color: #555555;
+display: block;
+font-size: 15px;
+font-style: italic;
+height: 35px;
+line-height: 20px;
+margin: 20px auto;
+text-align: center;
+}
+ /* ------------------------------- Profile ------------------------------- */
+ #divProfile {
+display:block;
+width:400px;
+height:auto;
+margin:20px auto;
+}
+#divProfile li {
+width: 400px;
+margin-bottom: 10px;
+}
+#divProfile ul{
+width: 400px;
+} 
+#divProfile li span {
+color: #0088ff;
+display: block;
+font-size: 15px;
+letter-spacing: 1px;
+margin: 5px;
+text-transform: capitalize;
+width: 100px;
+}
+ #divProfile li span.dd-pointer-down {
+ width: 0;
+ margin: 0;
+ }
+#divProfile li input {
+border-color: #ECECEC #CECECE #CECECE #ECECEC;
+border-style: solid;
+border-width: 3px;
+border-radius: 5px;
+height: 20px;
+margin-left: 0;
+margin-top: 3px;
+width: 400px;
+background-color:#f9f9f9;
+}
+.dd-select {
+border-color: #ECECEC #CECECE #CECECE #ECECEC !important;
+border-style: solid !important;
+border-width: 3px !important;
+border-radius: 5px !important;
+margin-left: 0 !important;
+margin-top: 3px !important;
+width: 400px !important;
+background-color:#f9f9f9 !important;
+}
+#divProfile li input:focus {
+border-color: #999 #999 #999 #999;
+border-style: solid;
+background-color:#fff;
+}
+.ListItemMale,
+.ListItemFemale {
+height:25px;
+line-height:25px;
+display:block;
+width: 40px;
+}
+#divProfile .ListItemMale input,
+#divProfile .ListItemFemale input {
+display:block;
+width:15px;
+float:right;
+}
+.ListItemMale label {
+display:block;
+height:20px;
+line-height:20px;
+margin:auto;
+}
+.dd-selected {
+  color: #777777;
+  display: block;
+  font-family: arial;
+  font-size: 13px;
+  font-weight:normal !important;
+  letter-spacing: 1px;
+  overflow: hidden;
+  padding: 10px;
+  letter-spacing:1px;
+}
+ /* ------------------------------- ChangePassword------------------------------- */
+#divProfile #btnChangePass,
+#btnPassSubmit {
+background-color: #0088ff;
+border: 3px solid #0088ff;
+border-radius: 5px 5px 5px 5px;
+box-shadow: 5px 5px 11px #333333;
+color: #fff;
+float: right;
+font-size: 15px;
+height: 25px;
+line-height: 25px;
+padding-left: 8px;
+padding-right: 8px;
+width: 160px;
+margin-top:20px;
+cursor:pointer;
+margin-bottom:20px;
+margin-top:5px;
+}
+#divProfile #btnChangePass:hover,
+#btnPassSubmit:hover {
+background-color: #f9f9f9;
+border: 3px solid #f9f9f9;
+color: #0088ff;
+}
+#divChangePassword {
+display:none;
+width:400px;
+clear:both;
+background-color:#ececec;
+margin-bottom:20px;
+padding:10px;
+}
+.spnChangePassword {
+color: #0088ff;
+display:block;
+font-size: 15px;
+letter-spacing: 1px;
+margin: 5px;
+text-transform: capitalize;
+width: 150px;
+}
+#txtCurPass,
+#txtNewPass,
+#txtReEnterPass {
+border-color: #ECECEC #CECECE #CECECE #ECECEC;
+border-style: solid;
+border-width: 3px;
+border-radius: 5px;
+height: 20px;
+margin-left: 0;
+margin-top: 3px;
+width: 400px;
+background-color:#f9f9f9;
+}
+#txtCurPass:focus,
+#txtNewPass:focus,
+#txtReEnterPass:focus {
+border-color: #999 #999 #999 #999;
+border-style: solid;
+background-color:#fff;
+}
+#divSave {
+width: 100%;
+text-align: right;
+margin-top: 30px;
+clear: both;
+}
+#btnSave {
+font-size: 15px;
+text-transform:capitalize;
+font-weight:bold;
+letter-spacing:1px;
+line-height: 25px;
+padding-left: 8px;
+padding-right: 8px;
+background-color: #999;
+border: 1px solid #999;
+border-radius: 3px;
+color: #fff;
+-webkit-box-shadow:  2px 2px 6px #333;
+-moz-box-shadow:  2px 2px 6px #333;
+-ms-box-shadow: 2px 2px 6px #333;
+-o-box-shadow:  2px 2px 6px #333;
+box-shadow:   2px 2px 6px #333;
+height: 25px;
+float: right;
+width: 80px;
+margin: 20px;
+cursor:pointer;
+}
+#btnSave:hover {
+color:#333;
+background-color: #fc0;
+border: 1px solid #fc0;
+}
+#lblMessage  {
+font-family:Arial, Helvetica, sans-serif;
+font-size:12px;
+color:#ff7700;
+letter-spacing:1px;
+}

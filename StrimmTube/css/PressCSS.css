@@ -1,0 +1,430 @@
+﻿
+#divBoardContent {
+    float: none;
+    margin: auto;
+    width: 98%;
+    max-width: 1520px;
+}
+
+
+            .learnMoreButtonHolder {
+    background-image: url(/images/PRHolder.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+    position: relative;
+    background-repeat: no-repeat;
+}
+
+
+h3 {
+    display: block;
+    float: left;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    color: #555;
+    font-size: 17px;
+    
+    padding-left: 30px;
+    margin-top: 20px;
+}
+
+                    .PRTitle {
+    color: #fff;
+    
+    font-size: 65px;
+    font-weight: normal;
+    height: 600px;
+    letter-spacing: 1px;
+    line-height: 600px;
+    margin: auto;
+    text-align: center;
+    width: 600px;
+}
+
+.PRIMG {
+    display: block;
+    float: left;
+    margin-right: 20px;
+    border: 1px solid #eee;
+    height: auto;
+    max-width: 100px;
+    margin-left: 2%;
+    margin-top: 5px;
+    width: 20%;
+}
+
+    .PRIMG img {
+        width: 100%;
+        height: 100%;
+        border: 1px solid #ddd;
+    }
+
+
+
+                .PRLeft,
+                .PRRight {
+display: block;
+float: left;
+height: 450px;
+padding: 2%;
+width: 45%;
+margin-top: 100px;
+
+        }
+
+        .PRRight {
+        border-left: 1px solid #2a99bd;
+        padding-top: 100px;
+        }
+
+        .PRLeft {
+          padding-top: 0;
+        }
+
+
+                .PR {
+height: 370px;
+width: 380px;
+margin: auto;
+background-image: url(/images/PR.png)
+        }
+
+        .comingSoon {
+            font-family:DejaVu Sans Condensed,arial,sans-serif;
+font-weight: normal;
+clear: both;
+color: #2a99bd;
+display: block;
+font-size: 32px;
+height: 40px;
+line-height: 40px;
+margin-top: 40px;
+text-align: center;
+width: 100%;
+text-transform: capitalize;
+        }
+
+        #comingSoonMsg {
+display: block;
+
+font-weight: normal;
+font-size: 17px;
+line-height: 25px;
+padding: 30px;
+text-align: left;
+width: 100%;
+color: #555;
+        }
+
+        #contentPR a {
+background-color: #08779b;
+color: #fff;
+cursor: pointer;
+display: block;
+font-size: 15px;
+height: 37px;
+line-height: 37px;
+margin: auto;
+opacity: 0.9;
+text-align: center;
+text-decoration: none;
+width: 140px;
+        }
+
+
+
+            #contentPR a:hover {opacity: 1;}
+
+#divContentWrapper {
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 100px;
+    display: block;
+    float: left;
+    width: 100%;
+    position: relative;
+}
+
+.backToPR {
+    position: absolute;
+    top: 25px;
+    left: 30px;
+    color: #555;
+    text-decoration: underline;
+    font-size: 15px;
+}
+
+    .backToPR:hover {
+        color: #000;
+    }
+
+
+#divContentWrapper p {
+    
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 25px;
+    margin-bottom: 10px;
+    text-align: justify;
+    width: 96%;
+    padding-left: 2%;
+    padding-right: 2%;
+    height: 100%;
+}
+
+        .PRDate {
+    display: block;
+    float: left;
+    color: #2a99bd;
+    font-size: 17px;
+    margin-bottom: 10px;
+    font-weight: normal;
+    width: 100%;
+    margin-top: 20px;
+        }
+
+.PRBlockTitle {
+    display: block;
+    float: left;
+    width: 100%;
+    text-align: left;
+    height: 30px;
+    line-height: 50px;
+;
+    font-size: 20px;
+    color: #000;
+
+}
+
+.PRH1 {
+    display: block;
+    float: left;
+    color: #08779b;
+    font-size: 20px;
+    margin-bottom: 30px;
+    font-weight: normal;
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+    line-height: 24px;
+}
+
+p strong {
+    font-size: 16px;
+    color: #555;
+}
+
+
+.PRH2 {
+display: block;
+    float: left;
+    color: #000;
+    font-size: 17px;
+    margin-bottom: 20px;
+;
+    width: 100%;
+    line-height: 24px;
+}
+
+.pressBlock,
+.mediaBlock {
+    display: block;
+    float: left;
+    width: 50%;
+}
+
+
+.PRBlock {
+    display: block;
+    float: left;
+    width: 95%;
+    clear: both;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    background: #eee;
+    padding: 1%;
+    padding-left: 0;
+        border-top: 1px solid #ddd;
+}
+
+        .PRInfoBlock{
+display: block;
+float: left;
+margin: 20px;
+height: 200px;
+        }
+
+        .PRInfo {
+     display: block;
+     float: left;
+     width: 100%;
+
+
+        }
+
+        .PRWebAdress {
+            color: #2a99bd;
+            cursor:pointer;
+        }
+
+        .infoName {
+            color: #000;
+            font-size: 17px;
+        }
+
+
+        #divContentWrapper .introP {
+    display: block;
+    float: left;
+    width: 96%;
+    color: #2a99bd;
+    font-size: 20px;
+    text-align: center;
+    line-height: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+;
+    height: 100%;
+        }
+        .prInfo {
+display: block;
+    float: left;
+    width: 70%;
+    height: auto;
+    min-height: 100px;
+        }
+
+
+                @-moz-document url-prefix() {
+            .learnMoreButtonHolder {
+                height: 450px;
+            }
+
+            .PRTitle {
+                height: 450px;
+                line-height: 450px;
+            }
+
+            #divContentWrapper p {
+                font-size: 15px;
+            }
+
+            p strong {
+    font-size: 15px;
+    color: #555;
+}
+
+        }
+
+
+#divContentWrapper ol {
+    display: block;
+    float: left;
+}
+
+    #divContentWrapper ol li {
+        display: block;
+        float: left;
+        margin-left: 60px;
+        line-height: 24px;
+        margin-bottom: 10px;
+        color: #555;
+    }
+
+@media (max-width:768px) {
+      .pressBlock .PRBlock
+        {
+            display:none;
+        }
+
+        .mediaBlock .PRBlock
+        {
+            display:none;
+        }
+    .pressBlock, .mediaBlock {
+    width: 100%;
+}
+
+    .PRIMG {
+    margin-right: 5px;
+    margin-top: 0;
+    margin-left: 0;
+}
+
+    .learnMoreButtonHolder {
+    height: 200px;
+}
+
+    .PRTitle {
+    color: #fff;
+    font-size: 30px;
+    position: absolute;
+    bottom: 20px;
+    left: 10px;
+    height: auto;
+    line-height: normal;
+    text-align: left;
+}
+
+.PRBlock {
+    width: 98%;
+    padding: 1%;
+    margin-bottom: 7px;
+    margin-top: 0;
+}
+
+.PRDate {
+margin-top: 0;
+}
+
+    .consolPR {
+    display: block;
+    float: left;
+    width: 100%;
+    background-image: url(/images/arrows/remoteDOWN.png);
+    background-position: 90%;
+    background-size: 27px;
+    background-color: #2a99bd;
+    background-repeat: no-repeat;
+    height: 50px;
+    margin-bottom: 10px;
+    }
+
+    .PRBlockTitle {
+    color: #fff;
+    padding-left: 5%;
+    height: auto;
+}
+
+    .PRH2 {
+    font-size: 13px;
+    margin-bottom: 0;
+}
+
+    .prInfo {
+     min-height: 100%; 
+}
+
+ 
+        .mediaBlock .consolPR.active {
+            background-image:url('/images/arrows/remoteUP.png');
+        }
+
+    .pressBlock .consolPR.active {
+   background-image:url('/images/arrows/remoteUP.png');
+    }
+
+    #divContentWrapper {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+}
+
+
+
+
+ 

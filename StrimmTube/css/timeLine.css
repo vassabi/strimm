@@ -1,0 +1,1012 @@
+﻿body {
+    background-color: #000;
+}
+
+#mytimeline {
+    display: block;
+    float: left;
+    width: 100%;
+    position: relative;
+    /*background-image: url('../images/00075.png');*/
+    /*background-image: url('../images/BG-repeat/14334b50.png');*/
+    background-repeat: repeat;
+    z-index: 9;
+}
+
+/*#tvGuideControl #mytimeline {
+    position: fixed;
+    bottom: 0;
+}*/
+
+.visChannelsInfoHolder {
+    background: #ff6a00;
+}
+
+.visChannelImg {
+    width: 50px;
+    height: 50px;
+    float: left;
+    display: none;
+}
+
+.TLchannelBoxAvatar {
+    display: block;
+    float: left;
+    width: 100%;
+    height: 100%;
+    background-image: url(/images/comingSoonBG.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.visChannelName {
+    color: #fff;
+    font-size: 11px;
+    display: block;
+    padding-left: 5px;
+    width: 100%;
+    margin-top: 10px;
+    line-height: 40px;
+    width: 125px;
+    float: left;
+    height: 40px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-top: 0;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+
+/*.vis-group {
+    height: 70px!important ;
+}
+
+.vis-label {
+    height: 70px!important;
+}*/
+
+.TLVideoInfoHolder {
+    display: block;
+    position: fixed;
+    width: 280px;
+    height: auto;
+    background-color: #0d3340;
+    border: 3px solid #111;
+    z-index: 300;
+    top: 50%;
+    left: 50%;
+    margin-left: -260px;
+    box-shadow: 1px 2px 20px #111;
+    padding: 10px;
+}
+
+.popupContainer {
+    padding: 5px;
+}
+
+.info {
+    float: right;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    color: white;
+    vertical-align: middle;
+    margin-top: 31px;
+}
+
+.TLleft {
+    display: block;
+    float: left;
+    width: 200px;
+}
+
+.searchIconClose {
+    display: none;
+}
+
+.TLinfoTopPannelMobile {
+    display: none;
+}
+
+.TLimage {
+    display: block;
+    float: none;
+    width: 200px;
+    height: 150px;
+    z-index: 2;
+    margin-bottom: 10px;
+    background-image: url(/images/comingSoon.jpg);
+    background-size: 93%;
+    background-position: center;
+    border: none;
+    margin: auto;
+    margin-top: 10px;
+}
+
+    .TLimage img {
+        width: 100%;
+        height: 100%;
+        max-height: 160px;
+        max-width: 200px;
+    }
+
+.TLactionHolder {
+    display: block;
+    clear: both;
+    width: 200px;
+    margin: auto;
+    height: 35px;
+    margin-top: 5px;
+}
+
+.TLrec {
+    display: block;
+    float: left;
+    background-color: none;
+    font-size: 14px;
+    color: #fff;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+}
+
+.TLrecordLed {
+    background-image: url(/images/social/watchLater-round-active.png);
+    height: 30px;
+    width: 30px;
+    background-size: 30px;
+    display: block;
+    float: left;
+    border: none;
+    background-color: transparent;
+    margin-top: 6px;
+    cursor: pointer;
+}
+
+
+
+.TLrecordRec,
+.spnAbuseRep {
+    display: block;
+    float: left;
+    color: #ddd;
+    margin-left: 5px;
+    text-transform: uppercase;
+    font-size: 10px;
+    margin-top: 4px;
+}
+
+.TLbtnWhatchNow {
+    display: block;
+    float: right;
+    width: 130px;
+    height: 35px;
+    line-height: 33px;
+    text-align: center;
+    color: #04b604;
+    text-transform: capitalize;
+    cursor: pointer;
+    font-weight: bold;
+    border: 1px solid #04b604;
+}
+
+.TLRight {
+    display: block;
+    float: left;
+    width: 100%;
+    padding: 1%;
+}
+
+
+
+
+.TLTitle {
+    display: -webkit-box;
+    float: left;
+    width: 97%;
+    color: #30b1db;
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: bold;
+    line-height: 24px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 20px;
+    cursor: default;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+
+.TLDescription {
+    display: -webkit-box;
+    height: auto;
+    max-height: 90px;
+    margin: 0 auto;
+    font-size: 12px;
+    line-height: 17px;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #aaa;
+    text-align: left;
+    padding-top: 10px;
+    width: 100%;
+    float: left;
+}
+
+.TLDuration,
+.TLstartTime {
+    display: block;
+    float: left;
+    width: 100%;
+    color: #eee;
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+.TLstartTime {
+    color: #36ff00;
+    margin-top: 15px;
+}
+
+
+.ddHolder {
+    display: block;
+    margin-top: 0;
+}
+
+.ddlHOlderCreator {
+    margin-top: 0;
+}
+
+
+.TLtr {
+    background-color: #222;
+    border-color: #111;
+    border-style: solid;
+    border-width: 3px 0 0 3px;
+    content: "";
+    display: none;
+    height: 15px;
+    left: 20%;
+    margin-left: -13px;
+    position: absolute;
+    top: 232px;
+    transform: rotate(-135deg);
+    width: 15px;
+    z-index: 1;
+}
+
+.TLVideoInfoHolder .TLtr {
+    display: none;
+    top: 224px;
+}
+
+
+.info {
+    float: right;
+    cursor: pointer;
+    width: 22px;
+    height: 40px;
+    color: transparent;
+    margin-top: 0;
+    background-image: url(/images/infoIconSlider.png);
+    background-size: 17px;
+    background-repeat: no-repeat;
+    opacity: 0.9;
+    background-color: #07222b;
+    background-position: center;
+    border-bottom: 1px solid #000;
+}
+
+    .info:hover {
+        opacity: 1;
+    }
+
+
+.TLchannelInfoHolder {
+    display: block;
+    position: fixed;
+    width: 280px;
+    height: auto;
+    background-color: #0d3340;
+    border: 3px solid #111;
+    z-index: 300;
+    top: 50%;
+    left: 50%;
+    margin-left: -260px;
+    box-shadow: 1px 2px 20px #111;
+    padding: 10px;
+}
+
+.TLchannelInfoLeft {
+    display: block;
+    float: left;
+    width: 60px;
+    height: 60px;
+    margin-bottom: 30px;
+}
+
+.TLchannelBoxTitle {
+    display: -webkit-box;
+    float: left;
+    width: 97%;
+    color: #30b1db;
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: bold;
+    line-height: 24px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 20px;
+    cursor: default;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+
+.TLchannelBoxDescription {
+    display: -webkit-box;
+    height: auto;
+    margin: 0 auto;
+    font-size: 12px;
+    line-height: 20px;
+    color: #eee;
+    text-align: left;
+    width: 100%;
+    float: left;
+    -webkit-line-clamp: 10;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-top: 5px;
+}
+
+.TLchannelBoxCreatorInfo {
+    display: block;
+    float: left;
+    width: 250px;
+    height: 50px;
+}
+
+.TLchannelInfoBottom {
+    display: block;
+    float: left;
+    width: 100%;
+    /*margin-top: 20px;*/
+    clear: both;
+}
+
+.TLcreatorImg {
+    display: block;
+    float: left;
+    width: 36px;
+    height: 36px;
+    border: 2px solid #04b604;
+    border-radius: 22px;
+    background-image: url(/images/imgUserAvatarMale.jpg);
+    background-size: 100%;
+    background-position: center;
+}
+
+
+.TLcreator {
+    display: block;
+    float: left;
+    height: 50px;
+    line-height: 50px;
+    color: #fff;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 12px;
+}
+
+.TLcreatorName {
+    display: block;
+    float: left;
+    height: 50px;
+    line-height: 50px;
+    color: #fff;
+    font-size: 12px;
+    text-decoration: underline;
+}
+
+.TLchannelInfoRight {
+    width: 205px;
+    display: block;
+    float: left;
+    width: 190px;
+    margin-left: 10px;
+}
+
+
+
+
+
+.TLvideoClose {
+    position: absolute;
+    top: 7px;
+    right: 7px;
+    background-image: url(../images/closeBut.png);
+    background-size: 100%;
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    color: transparent;
+}
+
+
+
+.TLactionsTopHolder {
+    width: 100%;
+    /* height: auto; */
+    display: block;
+    float: left;
+    background-image: url(/images/00075.png);
+    background-repeat: repeat;
+    border-bottom: 1px solid #222;
+    /* background-color: #227894; */
+    height: 40px;
+    background: #111;
+}
+
+.keywordHolder {
+    display: block;
+    float: left;
+    width: 240px;
+    height: 30px;
+    background-color: transparent;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    border: 1px solid #555;
+    border-radius: 4px;
+}
+
+.keywordHolderIcon {
+    display: none;
+}
+
+.TLserchInput {
+    display: block;
+    float: left;
+    width: 198px;
+    height: 30px;
+    background-color: transparent;
+    border: none;
+    font-size: 14px;
+    color: #ddd;
+    padding-left: 2px;
+    font-family: Roboto-Light,'Helvetica Neue',Helvetica,Arial,sans-serif;
+    line-height: 35px;
+    padding-left: 5px;
+    outline: none;
+}
+
+.TLserchInputIcon {
+}
+
+.TLsearch {
+    background-image: url(/images/lupa-search-white.png);
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.7;
+    float: right;
+    font-family: Roboto-Light,'Helvetica Neue',Helvetica,Arial,sans-serif;
+    border-left: 1px solid #555;
+}
+
+    .TLsearch:hover {
+        opacity: 1;
+    }
+
+
+.styled-selectOpt {
+    background-color: transparent;
+    background-image: url(/images/ddl.png);
+    background-position: right center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    border: none;
+    width: 120px;
+    height: 40px;
+    float: left;
+    margin-right: 20px;
+    color: #fff;
+    text-transform: capitalize;
+    line-height: 40px;
+    padding-left: 5px;
+    margin-left: 2px;
+    opacity: 1;
+    background-size: 22px;
+}
+
+@-moz-document url-prefix() {
+    
+.styled-selectOpt {
+    width: 110px;
+}
+}
+
+.TLenglishChannels {
+    background-color: transparent;
+    color: #ddd;
+    border: none;
+    width: 142px;
+    font-size: 14px;
+    height: 40px;
+    margin-left: -3px;
+    font-family: Roboto-Light,'Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-weight: normal;
+    text-transform: capitalize;
+    outline: none;
+}
+
+    .TLenglishChannels option {
+        color: #ddd;
+        background-color: #333;
+    }
+
+
+.paginationHolder {
+    width: 100%;
+    height: auto;
+    background-image: none;
+    background-repeat: repeat;
+    display: block;
+    line-height: 30px;
+    background-color: #000;
+    position: fixed;
+    bottom: 0;
+    z-index: 9;
+}
+
+#divPagination {
+    display: block;
+    width: 170px;
+    height: 30px;
+    margin: auto;
+    float: none;
+}
+
+#firstPage,
+#priorPage,
+#nextPage,
+#lastPage {
+    height: 20px;
+    width: 20px;
+    background-color: transparent;
+    border-color: black;
+    float: left;
+    cursor: pointer;
+    background-image: url(/images/arrows/back-first.png);
+    background-size: 15px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 0;
+    opacity: 0.9;
+    background-position: center;
+    margin-top: 4px;
+}
+
+/*#nextPage {
+    margin-left: 15px;
+}*/
+
+
+
+#priorPage {
+    background-image: url('/images/arrows/back-one.png');
+}
+
+
+#nextPage {
+    background-image: url('/images/arrows/Next-one.png');
+}
+
+
+#lastPage {
+    background-image: url('/images/arrows/next-last.png');
+}
+
+
+    #nextPage:hover,
+    #lastPage:hover,
+    #priorPage:hover,
+    #firstPage:hover {
+        opacity: 1;
+    }
+
+#status {
+    float: left;
+    margin: 5px;
+    font-size: 12px;
+    color: #999;
+    font-weight: bold;
+    line-height: 20px;
+}
+
+.noChannels {
+    display: block;
+    width: 100%;
+    height: 30px;
+    float: left;
+    background-color: #000;
+    text-align: center;
+}
+
+    .noChannels span {
+        line-height: 30px;
+        color: #fc0;
+        font-size: 15px;
+        width: auto;
+        margin: auto;
+        display: block;
+        text-transform: capitalize;
+        font-weight: bold;
+    }
+
+
+
+/*-----------------------------------------------------------------------------------------CSS for Max*/
+
+
+/*text color not curently playing*/
+.vis-itemBefore,
+.vis-itemAfter {
+    color: #999;
+}
+
+/*text color timeline date*/
+.TLdate {
+    color: red;
+}
+
+
+
+.TVguideTitle,
+.TLchannlesBy,
+.TLcreateChannel,
+.TLtopChannels,
+.TLmyChannels,
+.TLfavChannels,
+.TLchannlesBy,
+.TLLive {
+    display: block;
+    float: left;
+    color: #ccc;
+    width: auto;
+    text-align: center;
+    background-image: none;
+    line-height: 25px;
+    cursor: pointer;
+    background-image: none;
+    margin-left: 3%;
+    margin-right: 3%;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 1px;
+    margin-top: 5px;
+}
+
+.TLLive {
+    color: #fff;
+    background: #d50404;
+    width: 50px;
+    height: 20px;
+    line-height: 20px;
+    font-style: italic;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+    .TLLive:hover {
+    background: #ff0000;
+    }
+
+.TVguideTitle {
+    background-image: url(/images/TV-Guide.png);
+    background-repeat: no-repeat;
+    background-position: 2px;
+    background-size: 30px;
+    overflow: visible;
+    margin-top: 0;
+    width: 75px;
+    background-color: #ddd;
+    height: 30px;
+    line-height: 33px;
+    color: #000;
+    text-align: right;
+    padding-right: 10px;
+    border-radius: 3px;
+    opacity: 0.7;
+}
+
+.TLcreateChannel {
+    display: none;
+}
+
+
+.TLcreateChannel {
+    color: #04b604;
+}
+
+@-moz-document url-prefix() {
+    .TLcreateChannel {
+        display: none;
+    }
+}
+
+
+.TVguideTitle:hover,
+.TLchannlesBy:hover,
+.TLcreateChannel:hover,
+.TLtopChannels:hover,
+.TLmyChannels:hover,
+.TLfavChannels:hover,
+.TLchannlesBy:hover {
+    background-image: none;
+    border-bottom: 1px solid;
+    color: #fff;
+}
+
+.TVguideTitle:hover {
+    opacity: 1;
+    border-bottom: 1px solid #000;
+    color: #000;
+    background-image: url(/images/TV-Guide.png);
+        color: transparent;
+    background-size: 30px;
+}
+
+
+.TVguideTitleActive,
+.TLchannlesByActive,
+.TLcreateChannelActive,
+.TLtopChannelsActive,
+.TLmyChannelsActive,
+.TLfavChannelsActive,
+.TLchannlesByActive,
+.TLLiveActive {
+    background-image: none;
+    /*color: #2db9e7;*/
+    border-bottom: 1px solid #fff;
+    color: #fff;
+}
+
+.TLLiveActive {
+background: #ff0000;
+}
+
+.TVguideTitleActive {
+        opacity: 1;
+    border-bottom: 1px solid #000;
+    background-image: url(/images/TV-Guide.png);
+    color: #000;
+        background-color: #fff;
+}
+
+
+/*record active*/
+.TLrecordLed:hover,
+.TLrecordLedActive {
+    background-image: url('/images/social/watchLater-round-hover.png');
+}
+
+
+        .vis-item .vis-item-content {
+    padding: 0;
+    padding-left: 3px;
+}
+        
+
+    .vis-labelset .vis-label .vis-inner {
+  padding: 0;
+}
+
+
+
+/*----------------------------------------------------------------------------------------- /// CSS for Max*/
+
+
+
+
+
+@media (max-width:1024px) {
+    .keywordHolder {
+        display: none;
+    }
+}
+
+
+
+
+@media (max-width: 768px) {
+
+
+.info {
+    display: none;
+}
+
+    .TLrecordLed {
+    margin-left: 5px;
+}
+
+        .TLinfoTopPannelBrCH .TLinfoTopPannel {
+    text-align: center;
+}
+    .TVguideTitle, .TLchannlesBy, .TLcreateChannel, .TLtopChannels, .TLmyChannels, .TLfavChannels, .TLchannlesBy, .TLLive {
+        display: block;
+        float: left;
+        width: auto;
+        text-align: center;
+        line-height: 35px;
+        font-size: 12px;
+        letter-spacing: 1px;
+        margin-bottom: 0;
+        width: 33%;
+        margin-left: 0;
+        margin-right: 0;
+        border-bottom: 1px solid #000;
+        border-right: 1px solid #000;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    }
+
+    .TLLive {
+    margin: auto;
+    text-align: center;
+    line-height: 40px;
+    float: none;
+    height: 40px;
+    background: transparent;
+    color: #ed0303;
+    font-weight: bold;
+    }
+        .TLLive:hover {
+            background-color: transparent;
+                color: #ff0000;
+        }
+
+    .TLrecordRec {
+        font-size: 10px;
+    }
+
+    .TVguideTitle {
+    color: #fff;
+    background-image: url(/images/TV-Guide.png);
+    opacity: 0.9;
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: 6px 3px;
+    overflow: visible;
+
+    margin-top: 4px;
+    padding-right: 0;
+    background-color: transparent;
+    border-radius: 0;
+    height: 35px;
+    line-height: 35px;
+}
+
+
+
+
+
+    .TVguideTitleActive,
+    .TLchannlesByActive,
+    .TLcreateChannelActive,
+    .TLtopChannelsActive,
+    .TLmyChannelsActive,
+    .TLfavChannelsActive,
+    .TLchannlesByActive,
+    .TLLiveActive {
+        background-image: none;
+        color: #2db9e7;
+        border-bottom: 1px solid #2db9e7;
+    }
+    .TVguideTitleActive{
+    color: transparent;
+    background-image: url(/images/TV-Guide.png);
+    opacity: 0.9;
+    background-size: 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: visible;
+    line-height: 35px;
+    margin-top: 5px;
+    border-bottom: 1px solid #000;
+
+}
+
+
+    .TLpannelIconsHolder {
+        float: none;
+        margin: auto;
+    }
+
+    .TLpannelDDLHOlder {
+        margin-top: 0;
+    }
+
+
+    .TLcreatorImg {
+        float: right;
+        width: 36px;
+        height: 36px;
+        border-radius: 22px;
+        margin-right: 5px;
+    }
+
+
+    .TLenglishChannels {
+        font-size: 12px;
+    }
+
+}
+
+@media (max-width: 520px) {
+
+    .TLVideoInfoHolder {
+    width: 96%;
+    top: 50%;
+    left: 0;
+    margin-left: 0;
+    padding: 2%;
+}
+    .TLvideoClose {
+    top: 20px;
+    right: 20px;
+    width: 20px;
+    height: 20px;
+}
+    .TLVideoInfoHolderEmbedded {
+    width: 100%!important;
+}
+    .TLDescription {
+    -webkit-line-clamp: 3;
+}
+    .TVguideTitle, .TLchannlesBy, .TLcreateChannel, .TLtopChannels, .TLmyChannels, .TLfavChannels, .TLchannlesBy , .TLLive {
+        font-size: 9px;
+    }
+
+.TLrecordRec {
+    font-size: 9px;
+    margin-top: 0;
+    line-height: 40px;
+}
+.recHolder,
+.TLabuseReportHolder {
+    float: right;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+
+    .TLchannelInfoHolder {
+        width: 100%;
+        top: 50%;
+        left: 0;
+        margin-left: 0;
+        background-color: #18596f;
+    }
+}
+
+@media (max-width: 320px) {
+    .TVguideTitle, .TLchannlesBy, .TLcreateChannel, .TLtopChannels, .TLmyChannels, .TLfavChannels, .TLchannlesBy {
+    font-size: 8px;
+    line-height: 25px;
+}
+
+}

@@ -1,0 +1,170 @@
+﻿<!DOCTYPE html>
+<html >
+<head>
+    <title></title>
+    <link href="css/VideoFinderPopUp.css" rel="stylesheet" />
+    <link href="css/Schedule.css" rel="stylesheet" />
+    <script src="/jquery/jquery-1.11.1.min.js" type="text/javascript"></script>
+    <script src="/jquery/jquery-migrate-1.2.1.min.js" type="text/javascript"></script>
+    <script src="/JS/Froogaloop.js"></script>
+    <script src="JS/Controls.js"></script>
+    <script>
+        var urlX = 'https://api.vimeo.com/videos/126360743,125382531?method=vimeo.videos.getThumbnailUrls&page=3&per_page=50&access_token=fcc0d7a4ac801220a385e077e5881d4e';
+        var VideoTubePageModel = [];
+        var VideoTubeModel = [];
+        $.getJSON(urlX, function (data) {
+           
+             //console.log(data);
+            $.each(data, function (i, c) {
+                if (i == "data")
+                {
+                    $.each(c, function (i, v) {
+                        //console.log(v);
+                        var vimeoVideo = new Object();
+                        var r = /(videos|video|channels|\.com)\/([\d]+)/, uri = v.uri;
+                        var id = uri.match(r)[2];
+                        vimeoVideo.ProviderVideoId = id;
+                        vimeoVideo.Title = v.name;
+                        vimeoVideo.Description = v.description;
+                        vimeoVideo.Duration = v.duration;
+                        //vimeoVideo.CategoryId=
+                        vimeoVideo.VideoProviderId=2
+                        vimeoVideo.IsRRated=false
+                        vimeoVideo.IsRemovedByProvider = false
+                        if (v.status == "available")
+                        {
+                            vimeoVideo.IsRestrictedByProvider = false;
+                        }
+                        else
+                        {
+                            vimeoVideo.IsRestrictedByProvider = true;
+
+                        }
+                       
+                        vimeoVideo.IsInPublicLibrary = false;
+                        if (v.privacy.view == "anybody")
+                        {
+                            vimeoVideo.IsPrivate = true;
+                        }
+                        else
+                        {
+                            vimeoVideo.IsPrivate = false;
+                        }
+                        vimeoVideo.Thumbnail = v.pictures.sizes[2].link;
+                        vimeoVideo.VideoProviderName = "vimeo";
+                        //vimeoVideo.CategoryName
+                        vimeoVideo.IsScheduled = false;
+                        vimeoVideo.UseCounter = 0;
+                        vimeoVideo.ViewCounter = v.stats.plays;
+                      
+                        vimeoVideo.DurationString = GetDurationString(v.duration);
+                        vimeoVideo.IsInChannel = false;
+                        vimeoVideo.Message = "";
+                        vimeoVideo.DateAdded = Date.now;
+                        //console.log(vimeoVideo)
+                        VideoTubeModel.push(vimeoVideo);
+                       // $("#content").text(id);
+                    });
+                }
+
+               
+                var PageIndex = 0
+                var PrevPageIndex = 0;
+                var NextPageIndex = 0;
+                var PageSize = 50;
+                var PageCount = 0;
+                var PageToken = 0;
+                VideoTubePageModel.push(PageIndex);
+                VideoTubePageModel.push(PrevPageIndex);
+                VideoTubePageModel.push(NextPageIndex);
+                VideoTubePageModel.push(PageSize);
+                VideoTubePageModel.push(PageCount);
+                VideoTubePageModel.push(PageToken);
+                VideoTubePageModel.push(VideoTubeModel);
+                var videos = VideoTubeModel;
+                var pageType = "add-videos";
+                var videoControls = Controls.BuildViodeBoxControlForAddVideosPage("by-keyword", videos);
+                //console.log(videoControls);
+                $("#content").append(videoControls);
+                //console.log(VideoTubePageModel);
+
+            })
+        });
+      
+  
+        function GetDurationString(seconds)
+        {
+            // multiply by 1000 because Date() requires miliseconds
+            var date = new Date(seconds * 1000);
+            var hh = date.getUTCHours();
+            var mm = date.getUTCMinutes();
+            var ss = date.getSeconds();
+            // If you were building a timestamp instead of a duration, you would uncomment the following line to get 12-hour (not 24) time
+            // if (hh > 12) {hh = hh % 12;}
+            // These lines ensure you have two-digits
+            if (hh < 10) { hh = "0" + hh; }
+            if (mm < 10) { mm = "0" + mm; }
+            if (ss < 10) { ss = "0" + ss; }
+            // This formats your string to HH:MM:SS
+            return hh + ":" + mm + ":" + ss;
+        }
+
+       
+        //specify the Vimeo API script
+     
+
+        //function to initialize the player, establish the three events, and define how those events will be tracked in Optimizely
+        function initPlayer() {
+           // console.log("here");
+            window.$('.video-tracking').each(function() {
+
+                // get the vimeo player(s)
+                var iframe = window.$(this);
+                var player = window.$f(iframe[0]);
+                //console.log(player);
+                // When the player is ready, add listeners for pause, finish, and playProgress
+                player.addEvent('ready', function() {
+                   // console.log('Vimeo player \'' +iframe.attr('id') +'\': ready');
+
+                    //these are the three standard events Vimeo's API offers
+                    player.addEvent('play', onPlay);
+                    player.addEvent('pause', onPause);
+                    player.addEvent('finish', onFinish);
+                   // player.api('seekTo', 375);
+                });
+            });
+
+            //define the custom events to push to Optimizely
+            //appending the id of the specific video (dynamically) is recommended
+
+            //to make this script extensible to all possible videos on your site
+            function onPause(id) {
+                //console.log('Vimeo player \'' +id +'\': pause');
+                window['optimizely'] = window['optimizely'] || [];
+                window.optimizely.push(["trackEvent", id +"Pause"]);
+            }
+
+            function onFinish(id) {
+                //console.log('Vimeo player \'' +id +'\': finish');
+                window['optimizely'] = window['optimizely'] || [];
+                window.optimizely.push(["trackEvent", id +"Finish"]);
+            }
+
+            function onPlay(id) {
+                //console.log('Vimeo player \'' +id +'\': play');
+                window['optimizely'] = window['optimizely'] || [];
+                window.optimizely.push(["trackEvent", id +"Play"]);
+            }
+
+          
+
+        }
+    </script>
+</head>
+<body>
+    <!--<iframe id="myVideo" class="video-tracking" width="500" height="281" src="//player.vimeo.com/video/15321875?api=1&player_id=myVideo;autoplay=1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>-->
+   <div id="content">
+
+   </div>
+</body>
+</html>

@@ -1,0 +1,50 @@
+﻿CREATE PROCEDURE [strimm].[GetUserPoById]
+(
+	@UserId int
+)
+AS
+BEGIN
+	SELECT
+		ul.UserId, 
+		ul.UserName, 
+		ul.CreatedDate, 
+		ul.LastUpdateDate, 
+		ul.ExternalUserId,
+		ul.AccountNumber,
+		ul.IsDeleted,
+		ul.UserMembershipId, 
+		ul.[Password], 
+		ul.Email, 
+		ul.RecoveryEmail,
+		ul.IsLockedOut, 
+		ul.ActivationEmailSendDate, 
+		ul.ActivationEmailRetryCount,
+		ul.OptOutFromEmailActivation, 
+		ul.LastLoginDate, 
+		ul.EmailActivationOptOutDate,
+		ul.LastPasswordChangeDate, 
+		ul.FailedPasswordAttemptCount, 
+		ul.EmailVerified,
+		ul.IsTempUser, 
+		ul.UserProfileId, 
+		ul.FirstName, 
+		ul.LastName, 
+		ul.BirthDate,
+		ul.[Address], 
+		ul.City, 
+		ul.StateOrProvince, 
+		ul.Country, 
+		ul.ZipCode,
+		ul.Gender, 
+		ul.UserStory, 
+		ul.Company, 
+		ul.TermsAndConditionsAcceptanceDate,
+		ul.ProfileImageUrl, 
+		ul.UserIp, 
+		ul.PhoneNumber,
+		ul.UserMembershipCreatedDate, 
+		ul.UserProfileCreatedDate
+	FROM  [strimm].[vw_Users] ul (nolock)
+	WHERE
+		ul.UserId = @UserId
+END

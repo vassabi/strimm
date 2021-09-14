@@ -1,0 +1,637 @@
+﻿
+/*body {
+    background-color: #f8fafb;
+}
+
+
+
+.chanBoxtitle {
+    color: #000;
+    float: left;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 20px;
+    padding-left: 3px;
+    width: 100%;
+    padding-top: 10px;
+}
+
+
+
+.channelTiming {
+    background-color: red;
+    border-top-left-radius: 20px;
+    bottom: 0;
+    color: #ccc;
+    display: block;
+    float: left;
+    font-size: 14px;
+    font-weight: bold;
+    height: 22px;
+    right: 0;
+    line-height: 22px;
+    opacity: .9;
+    position: absolute;
+    text-align: center;
+    width: 50px;
+}
+
+
+#homeslider {
+    border-bottom: 5px solid #eee;
+    display: block;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.homeSliderImg {
+    height: auto;
+    max-width: 100%;
+    margin: auto;
+    display: block;
+    width: 100%;
+}
+
+.sliderCaptions {
+    display: block;
+    position: absolute;
+    top: 90px;
+    width: 50%;
+    min-width: 320px;
+    height: 300px;
+    z-index: 20;
+    left: 5%;
+}
+
+    .sliderCaptions h5 {
+        color: #fff;
+        font-size: 33px;
+        font-weight: normal;
+        letter-spacing: 1px;
+        margin-bottom: 5px;
+        text-shadow: 0 0 2px #000;
+    }
+
+    .sliderCaptions h6 {
+        color: #fc0;
+        font-size: 27px;
+        line-height: 1.2em;
+        margin-bottom: 20px;
+        text-shadow: 0 0 5px #000;
+        font-weight: normal;
+    }
+
+    .sliderCaptions p {
+        font-size: 16px;
+        color: #ddd;
+        text-shadow: 0 0 5px #000;
+        margin-bottom: 20px;
+        line-height: 1.2em;
+    }
+
+.sliderActionBtn {
+    background-image: url("/images/videoTutorialIcon.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: block;
+    height: 200px;
+    opacity: 0.8;
+    width: 200px;
+    margin: auto;
+    cursor: pointer;
+}
+
+    .sliderActionBtn:hover {
+        background-image: url("/images/videoTutorialIconHover.png");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        display: block;
+        height: 200px;
+        opacity: 1;
+        width: 200px;
+        margin: auto;
+    }
+
+.verticalNav {
+    position: fixed;
+    right: 10px;
+    top: 150px;
+    width: 30px;
+    height: 330px;
+    z-index: 30;
+}
+
+    .verticalNav a {
+        background-color: #eee;
+        border-radius: 12px;
+        color: #000;
+        display: block;
+        font-size: 14px;
+        height: 24px;
+        line-height: 24px;
+        margin-bottom: 15px;
+        opacity: 0.4;
+        text-align: center;
+        width: 24px;
+    }
+
+        .verticalNav a:hover {
+            opacity: 0.9;
+        }
+
+
+.homeBlocksHolder {
+    background-color: #f8fafb;
+    clear: both;
+    display: block;
+    float: left;
+    text-align: center;
+    width: 100%;
+}
+
+
+.ovpHome {
+    background-image: url(/images/homeNewBanners-01.jpg);
+    width: 100%;
+    height: 1000px;
+    position: relative;
+}
+
+.ovpHomeBlack {
+    position: relative;
+    width: 100%;
+    max-width: 2560px;
+    margin: auto;
+}
+
+.paragraphSlogan {
+    color: #fff;
+    font-size: 40px;
+    left: 200px;
+    position: absolute;
+    top: 200px;
+    width: 500px;
+    text-align: left;
+    line-height: 60px;
+}
+
+.paragraphSloganBlack {
+    background-image: url("/images/fff85.png");
+    color: #00587c;
+    display: block;
+    font-size: 27px;
+    line-height: 50px;
+    margin: auto;
+    padding: 1%;
+    text-align: center;
+    text-shadow: 0 3px 3px #000;
+    font-weight: normal;
+}
+
+.paragraphSloganStudio {
+    color: #fff;
+    display: block;
+    font-size: 27px;
+    line-height: 50px;
+    margin: auto;
+    padding: 1%;
+    text-align: center;
+    text-shadow: 0 3px 3px #000;
+    font-weight: normal;
+}
+
+.blueBG {
+    height: auto;
+    position: absolute;
+    width: 100%;
+    top: 0;
+}
+
+.BGHolder {
+    background-image: url("/images/00025.png");
+    border-radius: 4px;
+    left: 90px;
+    padding: 20px;
+    position: absolute;
+    text-align: left;
+    top: 10%;
+    width: 500px;
+    height: 170px;
+}
+
+.BGHolderBG {
+    height: auto;
+    position: relative;
+    text-align: center;
+    max-width: 100%;
+}
+
+.fullPageImg {
+    max-width: 100%;
+    height: auto;
+}
+
+
+.titleHome {
+    border-top: 1px solid #999;
+    clear: both;
+    color: #fff;
+    display: block;
+    font-weight: normal;
+    letter-spacing: 1px;
+    padding: 10px;
+    width: 100%;
+}
+
+.boxHome {
+    box-shadow: 0 3px 4px #999;
+    display: inline-block;
+    margin: 5px;
+    vertical-align: top;
+    width: 175px;
+    border: 3px solid #fff;
+    border-radius: 2px;
+}
+
+#fc, #ovp, #cyon {
+    position: absolute;
+    display: block;
+    z-index: 1;
+    top: 600px;
+}
+
+.entertainment,
+.discovery,
+.music,
+.kids {
+    display: block;
+    margin-bottom: 80px;
+    width: 100%;
+    float: none;
+    margin: auto;
+    max-width: 1520px;
+}
+
+.bottomButtonsHolder {
+    background-image: url("/images/06970.png");
+    display: block;
+    height: 90px;
+    margin: auto;
+    width: 350px;
+    position: relative;
+}
+
+.learnMoreHome {
+    background: none repeat scroll 0 0 #00567a;
+    border: 1px solid #00567a;
+    color: #fff;
+    display: block;
+    float: left;
+    font-size: 17px;
+    font-weight: bold;
+    height: 39px;
+    line-height: 39px;
+    margin: 26px auto auto;
+    text-align: center;
+    width: 120px;
+}
+
+.learnMoreHomeTop {
+    background: none repeat scroll 0 0 #00567a;
+    border: 1px solid #00567a;
+    color: #fff;
+    display: block;
+    float: left;
+    font-size: 17px;
+    font-weight: bold;
+    height: 39px;
+    line-height: 39px;
+    margin: 40px auto auto;
+    text-align: center;
+    width: 120px;
+}
+
+.learnMoreProduction {
+    margin: auto;
+}
+
+.learnMoreHomeAL {
+    border: 1px solid #ddd;
+    color: #ddd;
+    display: block;
+    float: left;
+    font-size: 17px;
+    font-weight: bold;
+    height: 39px;
+    left: 114px;
+    line-height: 39px;
+    position: absolute;
+    text-align: center;
+    top: 25px;
+    width: 120px;
+}
+
+    .learnMoreHomeAL:hover {
+        border: 1px solid #fff;
+        color: #fff;
+    }
+
+
+
+
+.bottomSignUp {
+    background: none repeat scroll 0 0 #fff;
+    color: #555;
+    display: block;
+    float: left;
+    font-size: 17px;
+    font-weight: bold;
+    height: 40px;
+    line-height: 40px;
+    margin: 26px 20px 20px 35px;
+    opacity: 0.9;
+    text-align: center;
+    text-shadow: 1px 2px 3px #fff;
+    text-transform: uppercase;
+    width: 138px;
+}
+
+    .bottomSignUp:hover {
+        opacity: 1;
+    }
+
+
+.home-video-box-holder {
+    display: block;
+    margin: auto;
+    max-width: 1520px;
+    min-width: 1024px;
+    position: relative;
+    width: 100%;
+}
+
+.home-video-box,
+.home-video-box-01,
+.home-video-box-02,
+.home-video-box-03,
+.home-video-box-04,
+.home-video-box-05,
+.home-video-box-06,
+.home-video-box-07,
+.home-video-box-08,
+.home-video-box-09,
+.home-video-box-010,
+.home-video-box-011,
+.home-video-box-add {
+    cursor: pointer;
+    display: block;
+    float: left;
+    height: 230px;
+    margin: 10px;
+    width: 230px;
+}
+
+.chanBox {
+    border: 1px solid #eee;
+    display: block;
+    float: left;
+    height: 230px;
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+    width: 230px;
+}
+
+.channelImg {
+    height: 230px;
+    width: 230px;
+}
+
+.seeMore {
+    background-color: #fff;
+    box-shadow: 1px 3px 5px #eee;
+    color: #2a99bd;
+    cursor: pointer;
+    display: block;
+    height: 230px;
+    width: 230px;
+}
+
+    .seeMore:hover {
+        color: #fc0;
+    }
+
+.home-video-box {
+    cursor: pointer;
+    display: none;
+    float: left;
+    height: 400px;
+    margin: 10px;
+    width: 400px;
+}
+
+    .home-video-box:hover,
+    .home-video-box-01:hover,
+    .home-video-box-02:hover,
+    .home-video-box-03:hover,
+    .home-video-box-04:hover,
+    .home-video-box-05:hover,
+    .home-video-box-06:hover,
+    .home-video-box-07:hover,
+    .home-video-box-08:hover,
+    .home-video-box-09:hover,
+    .home-video-box-10:hover,
+    .home-video-box-11:hover,
+    .home-video-box-add:hover {
+        box-shadow: none;
+        border-color: #2a99bd;
+    }
+
+.home-video-box-01 {
+    background-image: url("/images/avatarChannelBoxIMG-06.jpg");
+    background-size: 100%;
+}
+
+.home-video-box-02 {
+    background-image: url("/images/avatarChannelBoxIMG-02.jpg");
+    background-size: 100%;
+}
+
+.home-video-box-03 {
+    background-image: url("/images/avatarChannelBoxIMG-03.jpg");
+    background-size: 100%;
+}
+
+.home-video-box-04 {
+    background-image: url("/images/avatarChannelBoxIMG-04.jpg");
+    background-size: 100%;
+}
+
+.home-video-box-05 {
+    background-image: url(/images/avatarChannelBoxIMG-05.jpg);
+    background-size: 100%;
+}
+
+.home-video-box-06 {
+    background-image: url("/images/avatarChannelBoxIMG-06.jpg");
+    background-size: 100%;
+}
+
+.home-video-box-07 {
+    background-image: url(/images/avatarChannelBoxIMG-02.jpg);
+    background-size: 100%;
+}
+
+.home-video-box-08 {
+    background-image: url(/images/avatarChannelBoxIMG-03.jpg);
+    background-size: 100%;
+}
+
+.home-video-box-09 {
+    background-image: url(/images/avatarChannelBoxIMG-04.jpg);
+    background-size: 100%;
+}
+
+.home-video-box-10 {
+    background-image: url(/images/avatarChannelBoxIMG-05.jpg);
+    background-size: 100%;
+}
+
+.home-video-box-11 {
+    background-image: url(/images/avatarChannelBoxIMG-02.jpg);
+    background-size: 100%;
+}
+
+.home-video-box-add {
+    background-image: url("/images/seeMoreNew.png");
+    background-size: 100% auto;
+    border: 1px solid #2a99bd;
+    width: 228px;
+}
+
+
+
+
+
+.video-box-h1 {
+    color: #2a99bd;
+    display: block;
+    float: left;
+    font-size: 25px;
+    height: 30px;
+    margin-left: 8px;
+    margin-top: 30px;
+    text-align: left;
+    text-transform: capitalize;
+    width: 100%;
+    font-weight: normal;
+}
+
+.whatsPlayingNow {
+    background-color: #f8fafb;
+    display: block;
+    float: left;
+    height: 120px;
+    position: relative;
+    width: 100%;
+}
+
+    .whatsPlayingNow h2 {
+        color: #555;
+        display: block;
+        font-size: 30px;
+        height: 70px;
+        letter-spacing: 1px;
+        line-height: 70px;
+        margin: 30px auto auto;
+        position: relative;
+        text-align: center;
+        width: 100%;
+        font-weight: normal;
+    }
+
+
+.whatsPlayingNowIcon {
+    background-image: url("/images/arrow-down.png");
+    display: block;
+    height: 55px;
+    left: 50%;
+    position: absolute;
+    top: -33px;
+    width: 55px;
+    background-position: center center;
+    background-size: 130%;
+}
+
+.joinUsChair {
+    background-image: url("/images/joinUsChair.jpg");
+    background-repeat: no-repeat;
+    cursor: pointer;
+    display: block;
+    height: 400px;
+    margin: 100px auto auto;
+    width: 500px;
+    cursor: pointer;
+}
+
+    .joinUsChair:hover {
+        background-image: url("/images/joinUsChair-hover.jpg");
+    }
+
+
+
+.btnPlay {
+    border-bottom: none;
+    display: block;
+    height: 100px;
+    overflow: hidden;
+    width: 100%;
+}
+
+
+
+
+
+    .btnPlay:hover {
+        color: #fff;
+    }
+
+a.btnPlay {
+    display: block;
+    float: left;
+    width: 100%;
+    height: auto;
+}
+
+
+.PLAY-ICON {
+    opacity: 0;
+    position: absolute;
+    top: 10px;
+    width: 100%;
+    height: auto;
+    margin-left: -50%;
+}
+
+    .PLAY-ICON:hover {
+        width: 120%;
+        margin-left: -60%;
+        margin-top: -5%;
+    }
+
+
+
+
+.plain {
+    margin-bottom: 10px;
+    margin-top: 5%;
+    text-shadow: none;
+    width: 670px;
+}
+
+.center {
+    float: none;
+}*/
+
+

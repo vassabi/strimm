@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E71EE160-9CFE-4B0D-A322-A789882F9B0D}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Strimm.SqlCompare</RootNamespace>
+    <AssemblyName>Strimm.SqlCompare</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <PropertyGroup Label="SlowCheetah">
+    <SlowCheetahToolsPath>$([System.IO.Path]::GetFullPath( $(MSBuildProjectDirectory)\..\packages\SlowCheetah.2.5.15\tools\))</SlowCheetahToolsPath>
+    <SlowCheetah_EnableImportFromNuGet Condition=" '$(SlowCheetah_EnableImportFromNuGet)'=='' ">true</SlowCheetah_EnableImportFromNuGet>
+    <SlowCheetah_NuGetImportPath Condition=" '$(SlowCheetah_NuGetImportPath)'=='' ">$([System.IO.Path]::GetFullPath( $(MSBuildProjectDirectory)\Properties\SlowCheetah\SlowCheetah.Transforms.targets ))</SlowCheetah_NuGetImportPath>
+    <SlowCheetahTargets Condition=" '$(SlowCheetah_EnableImportFromNuGet)'=='true' and Exists('$(SlowCheetah_NuGetImportPath)') ">$(SlowCheetah_NuGetImportPath)</SlowCheetahTargets>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="log4net">
+      <HintPath>..\packages\log4net.2.0.3\lib\net40-client\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\RedGate SQL Compare SDK\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="RedGate.BackupReader">
+      <HintPath>..\packages\RedGate SQL Compare SDK\RedGate.BackupReader.dll</HintPath>
+    </Reference>
+    <Reference Include="RedGate.BackupReader.SqbReader">
+      <HintPath>..\packages\RedGate SQL Compare SDK\RedGate.BackupReader.SqbReader.dll</HintPath>
+    </Reference>
+    <Reference Include="RedGate.Migrations.Core">
+      <HintPath>..\packages\RedGate SQL Compare SDK\RedGate.Migrations.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="RedGate.Shared.ComparisonInterfaces">
+      <HintPath>..\packages\RedGate SQL Compare SDK\RedGate.Shared.ComparisonInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="RedGate.Shared.SQL">
+      <HintPath>..\packages\RedGate SQL Compare SDK\RedGate.Shared.SQL.dll</HintPath>
+    </Reference>
+    <Reference Include="RedGate.Shared.Utils">
+      <HintPath>..\packages\RedGate SQL Compare SDK\RedGate.Shared.Utils.dll</HintPath>
+    </Reference>
+    <Reference Include="RedGate.SOCCompareInterface">
+      <HintPath>..\packages\RedGate SQL Compare SDK\RedGate.SOCCompareInterface.dll</HintPath>
+    </Reference>
+    <Reference Include="RedGate.SQLCompare.ASTParser">
+      <HintPath>..\packages\RedGate SQL Compare SDK\RedGate.SQLCompare.ASTParser.dll</HintPath>
+    </Reference>
+    <Reference Include="RedGate.SQLCompare.Engine">
+      <HintPath>..\packages\RedGate SQL Compare SDK\RedGate.SQLCompare.Engine.dll</HintPath>
+    </Reference>
+    <Reference Include="RedGate.SQLCompare.Engine.UIProject">
+      <HintPath>..\packages\RedGate SQL Compare SDK\RedGate.SQLCompare.Engine.UIProject.dll</HintPath>
+    </Reference>
+    <Reference Include="RedGate.SQLCompare.Rewriter">
+      <HintPath>..\packages\RedGate SQL Compare SDK\RedGate.SQLCompare.Rewriter.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.SQLite">
+      <HintPath>..\packages\RedGate SQL Compare SDK\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading">
+      <HintPath>..\packages\RedGate SQL Compare SDK\System.Threading.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="xSQL.DataCompare.Core">
+      <HintPath>..\packages\xSql\xSQL.DataCompare.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="xSQL.DataCompare.SqlServer">
+      <HintPath>..\packages\xSql\xSQL.DataCompare.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="xSQL.Licensing.v4, Version=7.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\xSql\xSQL.Licensing.v4.dll</HintPath>
+    </Reference>
+    <Reference Include="xSQL.ObjectSchema">
+      <HintPath>..\packages\xSql\xSQL.ObjectSchema.dll</HintPath>
+    </Reference>
+    <Reference Include="xSQL.Schema.Core, Version=5.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\xSql\xSQL.Schema.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="xSQL.Schema.SqlServer, Version=7.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\xSql\xSQL.Schema.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="xSQL.SchemaCompare.SqlServer, Version=7.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\xSql\xSQL.SchemaCompare.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="xSQL.Utils, Version=4.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\xSql\xSQL.Utils.dll</HintPath>
+    </Reference>
+    <Reference Include="xSQL.xSQLShared">
+      <HintPath>..\packages\xSql\xSQL.xSQLShared.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Compare\DataComparer.cs" />
+    <Compile Include="Compare\ISchemaCompare.cs" />
+    <Compile Include="Compare\SchemaComparer.cs" />
+    <Compile Include="Enums\DbType.cs" />
+    <Compile Include="Enums\DiffFilterType.cs" />
+    <Compile Include="Enums\SqlAction.cs" />
+    <Compile Include="Exceptions\ProcessorException.cs" />
+    <Compile Include="Extensions\DifferenceFilterExtensions.cs" />
+    <Compile Include="Model\DbConnectionProperties.cs" />
+    <Compile Include="Model\RunTimeParameters.cs" />
+    <Compile Include="ProcessorFactory.cs" />
+    <Compile Include="Processor\IDbProcessor.cs" />
+    <Compile Include="Processor\RedGateDbProcessor.cs" />
+    <Compile Include="Processor\xSqlDbProcessor.cs" />
+    <Compile Include="SqlCompare.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Settings\GlobalConfig.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="JiraItemsToDeploy.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\SlowCheetah\SlowCheetah.Transforms.targets" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(SlowCheetahTargets)" Condition="Exists('$(SlowCheetahTargets)')" Label="SlowCheetah" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

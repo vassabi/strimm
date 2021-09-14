@@ -1,0 +1,584 @@
+﻿
+.mainTitleOverIMG {
+    color: #fff;
+    font-size: 65px;
+    font-weight: normal;
+    height: 200px;
+    letter-spacing: 1px;
+    line-height: 250px;
+    margin: auto;
+    text-align: center;
+    width: 100%;
+}
+
+.actionButtonHolder {
+    display: block;
+    float: left;
+    width: 100%;
+}
+
+.broadcast.grey,
+.createChannelLMore.grey {
+    background-color: #eee;
+}
+
+.actionButton {
+    min-width: 120px;
+    color: #fff;
+    background-color: #2db9e7;
+    display: block;
+    height: 37px;
+    line-height: 37px;
+    text-align: center;
+    border-radius: 4px;
+    padding: 15px;
+    padding-top: 0;
+    padding-bottom: 0;
+    width: auto;
+    margin-left: 4%;
+    float: none;
+    font-size: 20px;
+    margin: auto;
+    width: 200px;
+}
+
+    .actionButton:hover {
+        background-color: #FF9800;
+    }
+
+#divContentWrapper p.strong {
+    font-weight: bold;
+}
+
+.mainTitle {
+    color: #000;
+    font-weight: normal;
+    font-size: 30px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+#divContentWrapper {
+    height: auto;
+}
+
+#divBoardContent {
+    float: none;
+    margin: auto;
+    width: 90%;
+    max-width: 1520px;
+}
+
+#divContentWrapper h5 {
+    color: #000;
+    font-size: 17px;
+    margin-bottom: 5px;
+    margin-top: 40px;
+    width: 98%;
+    font-weight: normal;
+    padding-left: 2%;
+}
+
+
+h6 {
+    color: #2a99bd;
+    font-size: 20px;
+    margin-bottom: 5px;
+    margin-top: 40px;
+    width: 100%;
+    font-weight: normal;
+}
+
+#divContentWrapper p {
+    color: #555;
+    font-size: 15px;
+    line-height: 24px;
+    margin-bottom: 10px;
+    font-weight: normal;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 90%;
+    margin: auto;
+}
+
+
+
+#divContentWrapper ul {
+    display: block;
+    float: left;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    width: 29%;
+    margin-right: 4%;
+}
+
+    #divContentWrapper ul li {
+        font-size: 17px;
+        color: #555;
+        line-height: 1.3em;
+        list-style-type: disc;
+        color: #2a99bd;
+        width: 100%;
+        margin-bottom: 7px;
+    }
+
+#divContentWrapper ol {
+    margin-bottom: 20px;
+}
+
+    #divContentWrapper ol li {
+        font-size: 14px;
+        color: #555;
+        line-height: 20px;
+        margin-left: 40px;
+        margin-bottom: 5px;
+    }
+
+.faq {
+    color: #2a99bd;
+    font-size: 17px;
+    border-bottom: 1px solid #2a99bd;
+}
+
+    .faq:hover {
+        color: #24748e;
+        border-bottom: 1px solid #24748e;
+    }
+
+.backtotop {
+    display: block;
+    float: right;
+    font-size: 14px;
+    height: 30px;
+    line-height: 30px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    text-align: right;
+    width: 98%;
+    padding-right: 2%;
+}
+
+    .backtotop a {
+        color: #2a99bd;
+        text-decoration: underline;
+    }
+
+        .backtotop a:hover {
+            color: #35beea;
+        }
+
+.FAQHolder {
+    background-image: url("/images/FAQHolder.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+    position: relative;
+}
+
+.columnHolder {
+    display: block;
+    float: left;
+    width: 98%;
+    margin-bottom: 50px;
+    margin-top: 30px;
+    padding-left: 2%;
+}
+
+p {
+    color: #000;
+    font-size: 15px;
+    line-height: 25px;
+    padding: 20px;
+}
+
+.experience p,
+.content p {
+    border-right: none;
+}
+
+.copyrightsAddress {
+    padding: 0;
+}
+
+#topPlaceHolder {
+    margin-bottom: 0;
+}
+
+.whatIs {
+    font-size: 45px;
+    height: 200px;
+    letter-spacing: 1px;
+    line-height: 250px;
+    text-align: center;
+    width: 1000px;
+    font-weight: normal;
+    color: #fff;
+    margin: auto;
+}
+
+.platform, .content, .broadcast, .experience, .createChannelLMore {
+    display: block;
+    float: left;
+    width: 92%;
+    background-color: transparent;
+    max-width: 100%;
+    margin: auto;
+    /*margin-bottom: 50px;*/
+    padding: 4%;
+}
+
+/*.platform {
+    margin-top: 40px;
+}*/
+
+
+.platformImg, .contentImg, .experienceImg, .broadcastImg,
+.createChannelLMoreImg, .businessImg {
+    background-image: url(/images/mobile/producerChair.png);
+    background-repeat: no-repeat;
+    background-size: 200px;
+    width: 20%;
+    height: 250px;
+    margin-top: -50px;
+}
+
+.businessImg {
+    background-image: url('/images/mobile/make-a-deal.png');
+}
+
+.createChannelLMoreImg {
+    background-image: url('/images/whatIsIcons/whatIsIcons-create.png');
+}
+
+.contentImg {
+    background-image: url('/images/whatIsIcons/whatIsIcons-add.png');
+}
+
+.broadcastImg {
+    background-image: url('/images/whatIsIcons/whatIsIcons-broadcast.png');
+}
+
+.experienceImg {
+    background-image: url(/images/mobile/experience-popcorn.png);
+}
+
+
+
+
+.platformHead, .contentHead {
+    color: #2a99bd;
+    display: block;
+    height: auto;
+    width: 100%;
+    font-size: 37px;
+    text-align: center;
+    text-transform: capitalize;
+    margin: auto;
+    font-weight: normal;
+}
+
+
+.pageHolder {
+    display: block;
+    margin: auto;
+    max-width: 1320px;
+    padding: 1%;
+    width: 98%;
+    margin-top: 50px;
+}
+
+.platformContent, .contentContent {
+    display: block;
+    width: 80%;
+}
+
+.leftfloat {
+    float: left;
+}
+
+.rightfloat {
+    float: right;
+}
+
+
+.buttonsHolder {
+    width: 100%;
+    margin: auto;
+    height: 200px;
+}
+
+.learmMoreWatchVideo {
+    /*background-repeat: no-repeat;
+    background: rgba(0, 0, 0, 0) url("/images/Sprites/Strimm_TV_Home.png") no-repeat scroll -787px -8px;
+    cursor: pointer;
+    display: block;
+    height: 77px;
+    margin: auto;
+    width: 220px;
+    margin-top: 30px;*/
+    display: block;
+    float: none;
+    background: #FF9800;
+    height: 37px;
+    width: 200px;
+    margin: auto;
+    color: #fff;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+    .learmMoreWatchVideo:hover {
+        /*background: rgba(0, 0, 0, 0) url("/images/Sprites/Strimm_TV_Home.png") no-repeat scroll -790px -126px;
+            background-repeat: no-repeat;
+            width: 220px;
+            margin: auto;
+            display: block;
+            cursor: pointer;
+            height: 77px;
+            margin-top: 30px;
+                display: block;*/
+        background: #35beea;
+        text-decoration: none;
+    }
+
+
+.howToHolderLM {
+    display: block;
+    float: left;
+    width: 100%;
+    text-align: center;
+    height: 70px;
+    font-size: 19px;
+    font-weight: normal;
+    color: #777;
+    margin-bottom: 50px;
+    margin-top: 30px;
+}
+
+
+
+.howToGuides {
+    padding: 5px;
+    text-transform: capitalize;
+    color: #777;
+    text-decoration: underline;
+}
+
+    .howToGuides:hover {
+        color: #2a99bd;
+    }
+
+.buttonsContent {
+    display: block;
+    float: left;
+    width: 280px;
+    padding: 10px;
+    font-size: 15px;
+    line-height: 22px;
+    color: #555;
+}
+
+.bottomSignUpHolder {
+    display: block;
+    float: left;
+    width: 100%;
+    height: 50px;
+}
+
+.bottomSignUp {
+    color: #fff;
+    display: none;
+    font-size: 17px;
+    font-weight: normal;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    width: 180px;
+    border: 1px solid #4eb030;
+    background-color: #4eb030;
+    margin: auto;
+    margin-top: 0;
+    border-radius: 4px;
+}
+
+#ancCreateOrSignUpBottom {
+    display: none;
+    width: 180px;
+    height: 50px;
+    float: none;
+    color: #fff;
+    background-color: #32A901;
+    text-align: center;
+    line-height: 50px;
+    text-transform: capitalize;
+    font-size: 17px;
+    margin-top: 0;
+    border-radius: 4px;
+    margin: auto;
+}
+
+    .bottomSignUp:hover,
+    #ancCreateOrSignUpBottom:hover {
+        background-color: #277b05;
+    }
+
+.width325 {
+    width: 325px;
+}
+
+.paragraphText {
+    color: #555;
+    font-family:;
+    font-size: 16px;
+    line-height: 25px;
+    padding: 20px;
+}
+
+@-moz-document url-prefix() {
+    .paragraphText {
+        font-size: 15px;
+    }
+}
+
+.learnMoreDetails {
+    color: #5CADC8;
+    font-size: 14px;
+    font-style: italic;
+    height: 25px;
+    cursor: pointer;
+}
+
+    .learnMoreDetails:hover {
+        border-bottom: 1px solid #2a99bd;
+    }
+
+.learnMoreButtonHolder {
+    background-image: url("/images/learnMoreButtonHolder.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+    position: relative;
+}
+
+.marginHead {
+    margin-bottom: 0;
+}
+
+
+
+@media (max-width:1024px) {
+    .platformHead, .contentHead {
+        font-size: 27px;
+    }
+
+
+
+
+    #divContentWrapper ul {
+        display: block;
+        float: left;
+        margin-bottom: 0;
+        margin-top: 0;
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .platform, .content, .broadcast, .experience, .createChannelLMore {
+        margin-bottom: 0;
+    }
+
+    .platformContent, .contentContent {
+        width: 100%;
+    }
+
+    .platformImg, .contentImg, .experienceImg, .broadcastImg, .createChannelLMoreImg, .businessImg {
+        background-size: 200px;
+        width: 100%;
+        height: 220px;
+        margin-top: 0;
+        background-position: center center;
+        margin: auto;
+    }
+
+    .experienceImg {
+        background-size: 160px;
+    }
+
+    .margin300 {
+        float: left;
+    }
+}
+
+
+@media (max-width:760px) {
+    .learnMoreButtonHolder {
+        height: 200px;
+    }
+
+    .whatIs {
+        color: #fff;
+        font-size: 30px;
+        ;
+        position: absolute;
+        bottom: 20px;
+        left: 10px;
+        height: auto;
+        line-height: 1.3em;
+        text-align: left;
+        width: 96%;
+    }
+
+    .learmMoreWatchVideo {
+        display: none;
+    }
+
+    .platform {
+        margin-top: 0;
+    }
+
+    .pageHolder {
+        margin-top: 30px;
+    }
+
+    .platformContent, .contentContent {
+        padding-top: 0;
+    }
+
+    .marginHead {
+        margin-bottom: 40px;
+    }
+
+    .FAQHolder {
+        height: 200px;
+        position: relative;
+        background-position: right;
+    }
+
+    .mainTitleOverIMG {
+        color: #fff;
+        font-size: 30px;
+        position: absolute;
+        bottom: 20px;
+        left: 10px;
+        height: auto;
+        line-height: 1.3em;
+        text-align: left;
+        width: 96%;
+    }
+
+    .columnHolder {
+        margin-top: 0;
+    }
+}
+
+
+@media (max-width:520px) {
+    h6 {
+    text-align: center;
+    line-height: 30px;
+}
+}
+

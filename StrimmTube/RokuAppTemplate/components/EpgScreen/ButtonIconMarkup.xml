@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<component name="ButtonIconMarkup" extends="Group" >
+  <interface>
+    <field id="itemContent" type="node" onChange="onContentChanged"/> 
+    <field id="width" type="float" onChange="onContentChanged" /> 
+    <field id="height" type="float" onChange="onContentChanged" /> 
+    <field id="index" type="int" /> 
+    <field id="focusPercent" type="float" value="0" onChange="showfocus" /> 
+    <field id="gridHasFocus" type="bool" value="false" /> 
+    <field id="itemHasFocus" type="bool" value="false" /> 
+  </interface>
+
+  <script type="text/brightscript" uri="pkg:/components/nodeUtils.brs" />
+  <script type="text/brightscript" uri="pkg:/source/generalUtils.brs" />
+
+  <script type="text/brightscript" >
+  <![CDATA[
+    sub Init()
+      m.buttonBackground = m.top.findNode("buttonBackground")
+      m.buttonLabel = m.top.findNode("buttonLabel")
+      m.mainGroup = m.top.findNode("mainGroup")
+      m.icon = m.top.findNode("icon")
+      onLayoutChange(theme().ButtonIconMarkup)
+    end sub
+
+
+    sub onContentChanged()
+      if m.top.itemContent <> invalid and m.top.width > 0 and m.top.height > 0
+        m.buttonBackground.width = m.top.width
+        m.buttonBackground.height = m.top.height
+        m.mainGroup.translation = [m.top.width / 2, m.top.height / 2]
+        m.buttonLabel.height = m.top.height
+        m.buttonLabel.text = m.top.itemContent.title
+        if isnonemptystr(m.top.itemContent.hdPosterUrl)
+          m.icon.uri = m.top.itemContent.hdPosterUrl
+          m.icon.width = 26
+          m.icon.height = 26
+          m.mainGroup.itemSpacings = [4]
+        else
+          m.icon.uri = ""
+          m.icon.width = 1
+          m.icon.height = 1
+          m.mainGroup.itemSpacings = [0]
+        end if
+        showfocus()
+      end if
+    end sub
+
+
+    sub showfocus()
+      if m.top.focusPercent > 0.6 and m.top.gridHasFocus
+        m.buttonLabel.color = "0xffffff"
+      else
+        m.buttonLabel.color = theme().ButtonIconMarkup.buttonLabel.color
+      end if
+      'm.buttonBackground.opacity = 0  '.5 + 0.5 * m.top.focusPercent
+    end sub
+  ]]>
+  </script>
+  <children>
+    <Rectangle id="buttonBackground" color="0x121E2A00" />
+    <LayoutGroup id="mainGroup" layoutDirection="horiz" horizAlignment="center" vertAlignment="center" >
+      <Poster id="icon" width="1" height="1" />
+      <Label id="buttonLabel" vertAlign="center" horizAlign="center" />
+    </LayoutGroup>
+  </children> 
+</component>

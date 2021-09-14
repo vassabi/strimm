@@ -1,0 +1,236 @@
+﻿
+        .h1company {
+    color: #fff;
+    
+    font-size: 65px;
+    font-weight: normal;
+    letter-spacing: 1px;
+    position: absolute;
+    bottom: 300px;
+    left: 50px;
+
+}
+
+
+        #divBoardContent {
+float: none; 
+    margin: auto;
+    min-width: 984px;
+    width: 96%;
+    max-width: 1520px;
+}
+
+        #divContentWrapper {
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    background-image: url("/images/filmWatermark.png");
+    float: left;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+        background-size: 45%;
+
+        }
+
+
+            #divContentWrapper p {
+
+font-weight: normal;
+font-size: 16px;
+line-height: 25px;
+margin-bottom: 10px;
+color: #333;
+            }
+
+        .companyIMG {
+            display: block;
+            float: left;
+            margin-right: 20px;
+            width: 150px;
+        }
+            .companyIMG img {
+                width: 150px;
+            }
+
+        .companyHolder {
+    background-image: url("/images/indieHolder.jpg");
+    background-size: 100%;
+    width: 100%;
+    position: relative;
+    height: 600px;
+    background-repeat: no-repeat;
+
+}
+
+        .companySubTitle {
+    color: #1a9621;
+    font-size: 27px;
+    
+    font-weight: normal;
+    display: block;
+    margin-bottom: 10px;
+        }
+        .companyPageTitle {
+            display: block;
+            float: left;
+
+        }
+
+       #divContentWrapper p.pTitle {
+    width: 100%;
+    margin: auto;
+    font-size: 19px;
+    color: #3C130D;
+    margin-bottom: 15px;
+    text-align: left;
+    margin-top: 35px;
+        }
+
+        .indieHolder {
+    width: 100%;
+    /* margin: auto; */
+    font-weight: normal;
+    
+    /* margin-top: 30px; */
+    color: #fff;
+    position: absolute;
+    bottom: 100px;
+    left: 50px;
+    font-size: 40px;
+    line-height: 60px;
+        }
+
+        .indieBlock {
+            display: block;
+            float: left;
+            width: 100%;
+            margin-bottom: 50px;
+            height: 100%;
+        }
+
+.indieActionsHolder {
+    display: block;
+    float: left;
+    width: 100%;
+    height: 50px;
+
+}
+
+
+.indieSignUp {
+    display: block;
+    margin: auto;
+    width: 200px;
+    height: 50px;
+    color: #fff;
+    background-color: #1a9621;
+    font-size: 17px;
+    line-height: 50px;
+    text-align: center;
+}
+
+    .indieSignUp:hover {
+    background-color: #17781c;
+
+    }
+
+@media(max-width:1460px) {
+.companyHolder {height: 500px;}
+ .h1company {font-size: 55px;bottom: 220px;}
+.indieHolder  {font-size: 35px;bottom: 70px;line-height: 50px;}
+}
+
+@media(max-width:1320px) {
+.companyHolder {height: 450px;}
+ .h1company {font-size: 50px;bottom: 200px;}
+.indieHolder  {font-size: 30px;bottom: 50px;line-height: 45px;}
+   
+}
+
+@media(max-width:1200px) {
+.companyHolder {height: 400px;}
+}
+
+
+/*-----------GALAXY--------------*/
+/* Portrait */
+@media screen 
+  and (device-width: 320px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 2) 
+  and (orientation: portrait) {
+    .companyHolder {height: 400px;}
+
+}
+
+/* Landscape */
+@media screen 
+  and (device-width: 320px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 2) 
+  and (orientation: landscape) {
+    .companyHolder {height: 400px;}
+
+}
+
+
+/*-----------iphone5--------------*/
+/* Portrait */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+        .companyHolder {height: 400px;}
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+    .companyHolder {height: 400px;}
+
+}
+
+/*-----------iphone6--------------*//* Portrait */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) { 
+
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) { 
+    .companyHolder {height: 400px;}
+}
+
+/*-----------iphone6+--------------*/
+/* Portrait */
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) { 
+
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) { 
+    .companyHolder {height: 400px;}
+}
+
+

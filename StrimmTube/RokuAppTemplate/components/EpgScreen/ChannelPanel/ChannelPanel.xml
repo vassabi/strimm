@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<component name="ChannelPanel" extends="Group">
+  <interface>
+    <field id="channel" type="assocarray" onChange="onChannelChange" />
+    <field id="color" alias="frame.blendColor" />
+    <field id="width" type="float" alias="frame.width" onChange="updateLayout" />
+    <field id="height" type="float" alias="frame.height" onChange="updateLayout" />
+    <field id="buttonWidth" type="float" onChange="onButtonWidthChanged" />
+    <field id="selectedButtonId" type="string" alwaysnotify="true" />
+    <field id="enableOpenChannel" type="boolean" value="true" />
+  </interface>
+  
+  <script type="text/brightscript" uri="./ChannelPanel.brs" />
+  <script type="text/brightscript" uri="pkg:/components/nodeUtils.brs" />
+  <script type="text/brightscript" uri="pkg:/source/generalUtils.brs" />
+  
+  <children>
+    <Poster id="frame" uri="pkg:/images/frame.9.png" >
+    <LayoutGroup id="infoLabels" translation="[0, 20]" horizAlignment="center" >
+      <Label id="channelTitle" font="font:MediumBoldSystemFont" horizAlign="center" />
+      <Label id="channelAbout" font="font:SmallestSystemFont" horizAlign="left" wrap="true" lineSpacing="0" maxLines="3" />
+    </LayoutGroup>
+    <MarkupGrid id="buttonGroup" focusBitmapUri="pkg:/images/list_focus.9.png" focusFootprintBitmapUri=""
+        numRows="1" itemComponentName="ButtonMarkup" itemSpacing="[40, 0]" />
+    </Poster>
+  </children> 
+</component>

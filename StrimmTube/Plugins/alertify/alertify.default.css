@@ -1,0 +1,81 @@
+/**
+ * Default Look and Feel
+ */
+.alertify,
+.alertify-log {
+	font-family: sans-serif;
+}
+.alertify {
+	background: #FFF;
+	border: 1px solid #fc0; /* browsers that don't support rgba */
+
+}
+
+.alertify-message {
+    font-family:'Open Sans';
+    color: #777;
+    border-bottom: 1px solid #ddd;
+    font-size: 15px;
+    line-height: 25px;
+        
+}
+	.alertify-text {
+		border: 1px solid #CCC;
+		padding: 10px;
+		border-radius: 0;
+	}
+	.alertify-button {
+background: none repeat scroll 0 0 #2a99bd;
+color: #fff;
+font-weight: bold;
+height: 33px;
+margin-top: 10px;
+width: 85px;
+	}
+	.alertify-button:hover,
+	.alertify-button:focus {
+		outline: none;
+		background-image: -webkit-linear-gradient(top, rgba(0,0,0,.1), rgba(0,0,0,0));
+		background-image:    -moz-linear-gradient(top, rgba(0,0,0,.1), rgba(0,0,0,0));
+		background-image:     -ms-linear-gradient(top, rgba(0,0,0,.1), rgba(0,0,0,0));
+		background-image:      -o-linear-gradient(top, rgba(0,0,0,.1), rgba(0,0,0,0));
+		background-image:         linear-gradient(top, rgba(0,0,0,.1), rgba(0,0,0,0));
+	}
+	.alertify-button:focus {
+		box-shadow:none;
+	}
+	.alertify-button:active {
+		position: relative;
+		box-shadow:none;
+	}
+		.alertify-button-cancel,
+		.alertify-button-cancel:hover,
+		.alertify-button-cancel:focus {
+			background-color: #ccc;
+			
+		}
+		.alertify-button-ok {
+			background-color: #2a99bd;
+		}
+
+            .alertify-button-ok:hover
+            /*.alertify-button-ok:focus*/ {
+background-color: #26728b;
+            }
+
+.alertify-log {
+	background: #1F1F1F;
+	background: rgba(0,0,0,.9);
+	padding: 15px;
+	border-radius:0;
+	color: #FFF;
+	text-shadow:none;
+}
+	.alertify-log-error {
+		background: #FE1A00;
+		background: rgba(254,26,0,.9);
+	}
+	.alertify-log-success {
+		background: #5CB811;
+		background: rgba(92,184,17,.9);
+	}

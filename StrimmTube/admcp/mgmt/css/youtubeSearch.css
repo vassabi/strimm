@@ -1,0 +1,562 @@
+﻿body {
+    width: 100%;
+}
+
+
+
+
+
+.spnExplanation {
+    display: block;
+    float: left;
+    font-size: 10px;
+}
+#divResultURL
+{
+    width:90%;
+    margin:auto;
+}
+
+#divShowImage {
+   background-image: url("/images/youtubeExample.jpg");
+background-repeat: no-repeat;
+border: 1px solid #CECECE;
+display: none;
+height: 212px;
+left: 0;
+position: absolute;
+top: 63%;
+width: 627px;
+z-index: 100;
+}
+
+.spanLink {
+    background-color: #fc0;
+    color: #000;
+    cursor: pointer;
+    display: block;
+    float: left;
+    font-size: 13px;
+    height: 22px;
+    line-height: 22px;
+    margin-right: 10px;
+    width: 23px;
+    border-radius: 4px;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+
+
+#SearchByKeyWords {
+    width:100%;
+}
+
+.inputHolder {
+display: block;
+float: left;
+height: 30px;
+margin-bottom: 10px;
+margin-top: 10px;
+width: 98%;
+min-width: 700px;
+margin-left: 1%;
+}
+
+.spnTitle {
+    color: #777777;
+    display: block;
+    float: left;
+    
+    font-size: 15px;
+    letter-spacing: 1px;
+    padding-right: 10px;
+    line-height: 20px;
+    margin-left: 2px;
+
+}
+
+
+#importUrl input {
+    border-bottom: 1px solid #2A99BD;
+    border-right: 1px solid #2A99BD;
+    border-top: 1px solid #32b4df;
+    border-left: 1px solid #32b4df;
+    border-radius: 4px 4px 4px 4px;
+    float: left;
+    margin-right: 10px;
+    padding: 2px;
+}
+
+#importUrl #btnSearchByURL {
+    border: none;
+    padding: 5px;
+    padding-bottom: 3px;
+    padding-top: 1px;
+}
+
+
+
+
+#btnResetResultURL {
+}
+
+#divResulSearchURL {
+width: 99%;
+height: auto;
+min-width: 990px;
+}
+
+#content {
+    width: 90%;
+    margin: auto;
+}
+
+body .youtubeSearch {
+    margin: auto;
+    width: 90%;
+    max-width: 1520px;
+}
+
+#divSortByURL {
+display: none;
+margin-bottom: 10px;
+float: right;
+
+}
+
+
+
+#related.player {
+   background-color: #999999;
+display: block;
+height: 315px;
+margin-left: auto;
+margin-right: auto;
+margin-top: 25px;
+width: 560px;
+}
+.close_x {
+    background-image: url("/images/close_pop.png");
+background-repeat: no-repeat;
+background-size: 63% auto; 
+display: block;
+height: 17px;
+line-height: 1000px;
+overflow: hidden;
+position: absolute;
+right: 5px;
+top: 5px;
+width: 25px;
+}
+    .playerbox
+{background-color: #999999;
+height: 366px;
+width: 580px;
+
+}
+
+
+
+/*------------------------VideoBoxCSS------------------------------*/
+.divBoxContent {
+  background-color: #EEEEEE;
+  border: 1px solid #2A99BD;
+  border-radius: 5px;
+  float: left;
+  height: 88px;
+  margin: 4px 0.5%;
+  max-width: 900px;
+  min-width: 400px;
+  padding: 0.5%;
+  position: relative;
+  width: 75%;
+}
+
+.ancClose {
+color: #DDDDDD;
+font-size: 12px;
+margin-right: 7px;
+position: absolute;
+right: 0;
+width: 80px;
+text-align: center;
+}
+
+    .ancClose:hover {
+color: #fff;background-image: url("/images/ButtonBGhover.jpg");
+color: #fff;
+    }
+
+.divVideoInformation {
+    float: left;
+    margin-left: 15px;
+    width:200px;
+}
+
+.actions {
+    float: right;
+}
+
+    .actions a {
+float: left;
+font-size: 12px;
+margin-top: 53px;
+padding: 3px 10px 4px;
+text-align: center;
+text-transform: lowercase;
+color: #ddd;
+width:80px;
+    }
+.divCustomize .actions a {
+   margin: 2px  2px;
+  
+}
+
+ .divCustomize .actions a.addToSchedule {
+	background: url('/images/BUTTONS.png') no-repeat -21px -55px; width: 16px; height: 16px;
+    
+}
+
+.divCustomize .actions a.addToVr {
+background: none repeat scroll 0 0 #ececec;
+border-color: #FFFFFF;
+border-radius: 3px;
+border-style: solid;
+border-width: 1px;
+color: #2A99BD;
+cursor: pointer;
+float: right;
+font-size: 12px;
+margin-top: 10px;
+padding-left: 5px;
+padding-right: 5px;
+text-transform: none;
+}
+    .divCustomize .actions a.addToVr:hover {
+background-color: #fff;
+    }
+
+.divVideoInformation span {
+    clear: both;
+    display: block;
+    float: left;
+    font-size: 12px;
+    height: 20px;
+    margin-top: 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 400px;
+    
+    line-height: 20px;
+   
+}
+
+.divVideoInformation .title {
+color: #2A99BD;
+
+font-size: 13px;
+font-weight: bold;
+max-width: 200px;
+overflow: hidden;
+text-overflow: ellipsis;
+white-space: nowrap;
+}
+
+.divVideoInformation .views {
+    color: #777;
+}
+
+.divVideoInformation .duration {
+    color: #777;
+}
+
+
+
+.divVideoThumb {
+    float: left;
+}
+
+
+
+.imgThumb {
+float: left;
+height: 79px;
+width: 112px;
+}
+
+.showDescription {
+    background-color: #FFFFFF;
+    border: 1px solid #2A99BD;
+    display: none;
+    font-size: 10px;
+    height: 54%;
+    position: absolute;
+    top: 53px;
+    width: 62%;
+    z-index: 100;
+}
+
+.divCustomize {
+    display: none;
+   background-color: #268eaf;
+clear: both;
+display: none;
+float: left;
+height: 100%;
+left: 0;
+position: absolute;
+top: 0;
+width: 100%;
+border-radius: 5px;
+}
+    /*.divCustomize .ancClose {
+	background: url('/images/BUTTONS.png') no-repeat -128px -43px; width: 14px; height: 21px;
+    margin-right: 9px;
+    margin-top: 8px;
+    }
+
+        .divCustomize .ancClose:hover {
+	background: url('/images/BUTTONS.png') no-repeat -102px -11px; width: 10px; height: 18px;
+    margin-right: 9px;
+    margin-top: 8px;
+    }*/
+
+    .divCustomize .ancClose {
+background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+font-size: 25px;
+margin-top: 10px;
+transform: rotate(-180deg);
+    }
+
+    .divCustomize .ancClose:hover {
+        color: #fc0;
+    }
+    .divCustomize span {
+color: #ececec;
+
+
+font-size: 12px;
+float:left;
+display:block;
+max-width: 200px;
+overflow: hidden;
+text-overflow: ellipsis;
+white-space: nowrap;
+    }
+    .divTitle .originTitle, .divCustomize .originDesc
+    {
+display: block;
+height: 14px;
+overflow: hidden;
+padding-left: 0;
+text-overflow: ellipsis;
+white-space: nowrap;
+width: 60%;
+
+    }
+     
+     .divCustomize .checkBoxValue
+     {
+         width:210px;
+     }
+
+    .divCustomize input {
+display: block;
+float: left;
+margin-bottom: 1px;
+margin-top: 5px;
+background-color: #eee;
+border: none;
+
+
+    }
+        .divCustomize select {
+background-color: #fff;
+margin-top: 5px;
+
+    }
+.divCustomize select option {
+background-color: #f9f9f9;
+}
+
+   .divCustomize input.customizeTitle {
+width: 240px;
+
+   }
+
+        .divCustomize input.makeDescription {
+width: 450px;
+        }
+
+.divDesc {
+    float: left;
+    clear: both;
+     width:75%;
+     
+}
+
+.divTitle {
+    float: left;
+    clear: both;
+    width:75%;
+}
+
+.spnCat {
+    float: left;
+}
+
+.divCategory {
+    float: left;
+    clear: both;
+}
+
+.rated {
+bottom: 2px;
+left: 20%;
+position: absolute;
+
+}
+
+
+
+/*---------------------- sasha CSS -------------------------*/
+
+
+
+#resultHolder {
+    float: left;
+    width: 100%;
+    clear: left;
+    min-width: 1000px;
+
+}
+
+
+    #resultHolder .nano {
+        width: 99%;
+        clear: none;
+        border-radius: 5px;
+    }
+#divNext {
+    display: block;
+    width: 180px;
+    height: 50px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+#divPrevResults {
+    display: none;
+    width: 98%;
+    background-color: #ececec;
+    height: 17px;
+    line-height: 15px;
+    padding-left: 5px;
+    border-radius: 5px;
+
+}
+.prevResult.active {
+color: #2A99BD;
+
+font-size: 13px;
+font-weight: bold;
+}
+
+.prevResult {
+    padding: 3px;
+    color: #808080;
+}
+
+.hidden {
+    display: none;
+}
+
+.newresult {
+background-color: #2A99BD;
+background-image: url("/images/ButtonBG.jpg");
+background-position: -10px center;
+background-repeat: repeat-x;
+border: medium none;
+border-radius: 3px;
+color: #FFFFFF;
+cursor: pointer;
+
+font-size: 13px;
+padding-bottom: 5px;
+padding-top: 4px;
+text-transform: lowercase;
+}
+
+    .newresult:hover {
+background-image: url("/images/ButtonBGhover.jpg");
+color: #fff;
+    }
+
+
+
+#divPageResults {
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+select option {
+
+font-size: 13px;
+color: #777;
+}
+
+select option:hover {
+            background-color: #999;
+    }
+
+.error .spnError {
+color: #FFCC00;
+display: block;
+font-size: 10px;
+font-style: italic;
+letter-spacing: 1px;
+float: right;
+margin-top: 7px;
+width: 235px;
+}
+
+.divTitle .spnCount {
+    display: none;
+}
+
+.divDesc .spnCount {
+        display: none;
+}
+
+#divMenuHolder .search {
+    color: #fff;
+}
+
+#txtKeyword {
+    width: 350px;
+}
+
+#txtURL {
+  width: 350px;
+}
+
+
+/*------------------MEDIA*/
+
+/*------------------------- control panel search*/
+
+
+    
+
+/*------------------------- / control panel search*/
+
+
+@media only screen and (min-width : 1280px) and (max-width: 1366px) {
+    .divBoxContent {
+  width: 47%;
+}
+}
+

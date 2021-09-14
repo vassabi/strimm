@@ -1,0 +1,237 @@
+﻿/*@media only screen and (max-width: 1320px) {
+    .blueNav a {
+        padding-left: 1%;
+    }
+}
+
+@media (max-width: 1240px) {
+    .feedeback {
+        top: 150px;
+        right: 0;
+    }
+}
+
+
+
+
+
+@media only screen and (max-width: 1024px) {
+
+
+    #divBoardContentMyBoard {
+        min-width: 300px;
+        max-width: 1024px;
+    }
+
+    #divBoardDetails .center {
+        width: 575px;
+    }
+
+    .divChannel {
+        width: 30%;
+    }
+
+    #divTop .container,
+    #divTopWrapper,
+    #divTitleUrlHolder,
+    #divMenuHolder ul,
+    body .youtubeSearch {
+        max-width: 1024px;
+        min-width: 300px;
+    }
+
+    #divContent .container {
+        max-width: 1024px;
+    }
+
+    .how {
+        max-width: 990px;
+    }
+
+    #homeBox, #homeBox3, #homeBox2 {
+        width: 31%;
+        max-width: 32%;
+    }
+
+    #divSlider {
+        height: 330px;
+    }
+
+    body #fwslider .slide_content_wrap {
+        padding-top: 40px;
+        padding-left: 60px;
+    }
+
+
+    #divSlider h1 {
+        font-size: 25px;
+        line-height: 40px;
+    }
+
+    #divSlider h2 {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    #homeBox p, #homeBox2 p, #homeBox3 p {
+        height: 125px;
+    }
+
+
+    body #resultHolder .nano,
+    body .videoResultsHolder {
+        max-width: 950px;
+        min-width: 900px;
+        width: 95%;
+    }
+
+    body .divBoxContent {
+        width: 95%;
+        float: none;
+        margin: 8px 0.5%;
+    }
+
+
+
+
+
+    body .divVideoInformation .title,
+    body .divVideoInformation span.title {
+        max-width: 500px;
+        overflow: visible;
+    }
+
+    body .sortDateHolder {
+        min-width: 700px;
+        max-width: 700px;
+    }
+
+    #optionHolder #radioBtnList tr td {
+        display: flex;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+
+    body .divInfo .title {
+        width: 400px;
+    }
+}
+
+
+@media only screen and (min-width: 1800px) {
+    #divBoardContentMyBoard {
+        min-width: 1770px;
+        max-width: 1770px;
+    }
+
+    #divBoardDetails .center {
+        width: 1320px;
+    }
+
+    .videoResultsHolder {
+        min-width: 1520px;
+        max-width: 1520px;
+    }
+
+
+
+
+    .divChannel {
+        width: 14.7%;
+        margin: 0.4%;
+        min-width: 130px;
+    }
+
+
+
+    #divLogo {
+        margin-left: 0;
+        background:rgba(0, 0, 0, 0) url("/images/Sprites/Strimm_TV_Home.png") no-repeat scroll 13px 11px;
+    }
+
+
+
+
+    body #fwslider .slide_content_wrap { 
+        max-width: 1240px;
+    }
+}
+
+@media only screen and (max-width: 1230px), (max-height: 660px) {
+    #divTopNavAfterLogin {
+      
+        min-width: 1024px;
+        width: 100%;
+    }
+}
+
+
+@media (min-height: 980px) and (min-width: 1720px) {
+    #mainWrapper {
+        max-width: 1650px;
+    }
+
+
+
+    .schedule, #channelManagementContentInner {
+        max-width: 1520px;
+    }
+
+    .leftSchedule {
+        width: 1140px;
+    }
+}
+
+
+
+@media (max-width: 1280px) {
+
+
+    .playerbox, #player, #PlayerHolder {
+        width: 700px;
+        height: 420px;
+    }
+
+    .videoBoxNew {
+    width: 255px;
+    height: 150px;
+}
+
+
+    .videoBoxNew {
+        width: 160px;
+    }
+}
+
+
+
+
+
+@media (max-width: 1080px) {
+
+    #mainWrapper {
+        max-width: 1000px;
+    }
+
+
+    .playerbox, #player, #PlayerHolder {
+        width: 660px;
+        height: 400px;
+    }
+
+
+    .videoBoxNew {
+    width: 255px;
+    height: 150px;
+}
+
+    .leftSchedule {
+        width: 645px;
+    }
+
+    .videoBoxNew {
+        width: 175px;
+        margin: 6px;
+    }
+}*/

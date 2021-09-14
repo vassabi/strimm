@@ -1,0 +1,921 @@
+﻿ /* ------------------------------- BoardDetails------------------------------- */
+h1.followers {
+    padding: 3px;
+    display:block;
+    width: 100%;
+}
+
+#divBoardContentMyBoard {
+    display: block;
+    margin: auto;
+    width: 100%;
+    height: auto;
+    min-width: 1280px;
+    max-width: 1280px;
+}
+
+#divBoardDetails {
+clear: both;
+}
+
+
+#divBoardDetails .left {
+float: left;
+margin-bottom: 5px;
+margin-top: 10px;
+display:block;
+width: 200px;
+position:relative;
+}
+
+.editAvatar {
+border-radius: 4px;
+float: right;
+height: 25px;
+margin-bottom: 10px;
+text-align: center;
+width: 71px;
+}
+    .editAvatar a {
+color: #999999;
+display: block;
+font-size: 12px;
+padding: 5px;
+text-decoration: underline;
+
+    }
+
+#divBoardDetails .center {
+display: block;
+float: left;
+margin-left: 10px;
+margin-right:0;
+padding-left: 10px;
+padding-right: 10px;
+width:65%;
+width: 835px;
+}
+
+
+
+
+#divRight {
+float: right;
+padding-left: 10px;
+padding-right: 10px;
+width: 195px;
+display: block;
+margin-top: 20px;
+}
+
+
+
+
+
+
+
+/*h1 {
+padding:10px;
+color: #2A99BD;
+font-size: 17px;
+}*/
+
+h2 {
+background: none repeat scroll 0 0 #2A99BD;
+border: 1px solid #2A99BD;
+border-top-left-radius: 4px;
+border-top-right-radius: 4px;
+color: #EEEEEE;
+font-size: 13px;
+padding: 5px;
+text-transform: uppercase;
+width: 99%;
+}
+
+#divChannels h2 {
+padding: 5px 1%;
+width: 98%;
+}
+
+.activityHolder h2 {
+padding: 5px 1%;
+width: 98%;
+}
+ /* ------------------------------- / BoardDetails------------------------------- */
+
+/* ------------------------------- LEFT------------------------------- */
+
+       #imgUserAvatar{
+	width: 200px;
+	height:200px;
+	display:block;
+	/*background-image: url(/images/imgUserAvatar.jpg);*/
+	border-color: #2A99BD ;
+    border-style: solid;
+    border-width: 1px;
+	border-radius: 5px;	  
+	   }
+
+#btnFollow,
+#btnContact {
+background-image: url("/images/ButtonBG.jpg");
+background-repeat: repeat-x;
+border-color: #55AAC5 #2A99BD #2A99BD #55AAC5;
+border-radius: 5px;
+border-style: solid;
+border-width: 1px;
+color: #F3F3F3;
+cursor: pointer;
+display: block;
+float: left;
+
+font-size: 15px;
+height: 28px;
+line-height: 28px;
+margin-bottom: 10px;
+text-align: center;
+text-transform: capitalize;
+width: 85px;
+}
+
+    #btnFollow:hover,
+    #btnContact:hover {
+background-image: url("/images/ButtonBGhover.jpg");
+color: #fff;
+font-size: 15px;
+    }
+
+
+
+
+/* ------------------------------- Following------------------------------- */	   
+#divFollowing {
+
+display: block;
+height: auto;
+margin-bottom: 10px;
+min-height: 130px;
+width: 200px;
+clear: both;
+}
+
+#divFollowing h2 {
+    padding: 5px 1%;
+width: 98%;
+border-radius: 3px;
+}
+
+    /*#divFollowing h1 {
+background: none repeat scroll 0 0 #2A99BD;
+border-top-left-radius: 3px;
+border-top-right-radius: 3px;
+color: #EEEEEE;
+font-size: 14px;
+height: 8px;
+    }*/
+
+#imgLinksFollowings{
+display:block;
+}
+#imgLinksFollowings a, #allFollwersHolder a {
+display:block;
+float:left;
+margin:5px;
+border: 1px solid #cecece;
+}
+
+#divFollowing a, #allFollwersHolder a {
+color: #777777;
+font-family: Arial,Helvetica,sans-serif;
+font-size: 12px;
+text-decoration: none;
+margin: 2px;
+
+}
+
+#divFollowing a.seeAllFollowers {
+margin-bottom: 10px;
+text-decoration: underline;
+display: block;
+margin-left: 3px;
+}
+    #imgLinksFollowings a img, #allFollwersHolder a img {
+        width:60px;
+        height:60px;
+    }
+
+    .fuHolder {
+  background-image: url("/images/ButtonBGGrey.jpg");
+  background-repeat: repeat-x;
+  border-radius: 5px;
+  cursor: pointer;
+  display: block;
+  float: left;
+  height: 30px;
+  margin: 0 0 auto;
+  position: relative;
+  width: 120px;
+}
+    .fuHolder span {
+  color: #FFFFFF;
+  cursor: pointer;
+  display: block;
+  font-size: 12px;
+  height: 30px;
+  left: 0;
+  line-height: 30px;
+  position: absolute;
+  text-align: center;
+  text-transform: uppercase;
+  top: 0;
+  width: 120px;
+}
+
+#fuImgAvatar,#fuUploadPost {
+cursor: pointer;
+display: block;
+height: 25px;
+margin: 0;
+opacity: 0;
+width: 120px;
+z-index: -1;
+filter:alpha(opacity=0);
+}
+
+ .fuHolder:hover {
+      background-image: url("/images/ButtonBGGreyhover.jpg");
+
+}
+#saveImgAvatar,
+#btnChangeTitle {
+background-color: #2A99BD;
+background-image: url("/images/ButtonBG.jpg");
+background-position: -10px center;
+background-repeat: repeat-x;
+border: medium none;
+border-radius: 3px;
+color: #FFFFFF;
+cursor: pointer;
+
+font-size: 13px;
+padding: 3px 5px;
+margin-left: 30px;
+margin-top: 5px;
+}
+#btnChangeTitle {
+
+    float: left;
+    margin-top: 68px;
+    margin-left: 17px;
+}
+    #saveImgAvatar:hover,
+    #btnChangeTitle:hover {
+background-image: url("/images/ButtonBGhover.jpg");
+
+    }
+
+#txtStory {
+display: block;
+float: left;
+
+font-size: 15px;
+color: #555;
+}
+
+#uploadAvatarHolder {
+border: 1px solid #2A99BD;
+border-radius: 5px;
+display: none;
+float: left;
+margin-bottom: 10px;
+padding: 2px;
+width: 196px;
+
+}
+
+/* ------------------------------- / Following------------------------------- */
+
+/* ------------------------------- Rings------------------------------- */
+.ancimgchannel {
+  display: block;
+  float: left;
+  width: 30%;
+}
+
+.ringsHolder {
+background: none repeat scroll 0 0 #f7f7f7;
+display: block;
+height: 50px;
+margin-bottom: 10px;
+width: 96%;
+border-radius: 2px;
+}
+#divRings{
+display:block;
+
+margin-top:10px;
+margin-bottom:10px;
+
+border-radius: 5px;
+width:200px;
+min-height:130px;
+height:200px;
+height: auto;
+}
+
+#divRings h2 {
+    padding: 5px 1%;
+width: 98%;
+border-radius: 3px;
+}
+
+    #divRings h1 {
+background: none repeat scroll 0 0 #2A99BD;
+border-top-left-radius: 3px;
+border-top-right-radius: 3px;
+color: #EEEEEE;
+font-size: 14px;
+height: 8px;
+    }
+
+
+
+/*.nano .pane {
+height: 470px;
+}
+
+#content .nano {
+    width: 100%;
+}*/
+
+
+
+/*channelImg {
+border: 1px solid #2A99BD;
+border-radius: 2px 2px 2px 2px;
+float: left;
+height: 30px;
+margin-right: 5px;
+margin-top: 5px;
+width: 30px;
+}
+.ancToChannel {
+    display: block;
+    text-decoration: none;
+
+}
+
+.spnChannelName {
+color: #555555;
+display: block;
+float: left;
+
+font-size: 13px;
+width: 80%;
+margin-top: 5px;
+font-family: Georgia;
+}
+
+.spnUserName {
+color: #2A99BD;
+float: right;
+
+font-size: 14px;
+padding-top: 2px;
+}
+.spnTime {
+
+font-size: 12px;
+color: green;
+}
+
+.timeAndUserName,
+.imgAndCannel {
+border-bottom: 1px dotted #2A99BD;
+clear: both;
+display: block;
+margin: auto;
+padding-left: 3px;
+padding-right: 3px;
+width: 95%;
+}*/
+.ringBoxBoard {
+background-color: #f9f9f9;
+height: 58px;
+width: 100%;
+border-bottom: 1px solid #2A99BD;
+position: relative;
+}
+
+.ringBoxBoard  .ringsHolder {
+background: none repeat scroll 0 0 #f7f7f7;
+display: block;
+margin-bottom: 10px;
+width: 96%;
+border-radius: 2px;
+height: 50px;
+}
+.ancToChannel {
+    display: block;
+    text-decoration: none;
+
+}
+
+.ringBoxBoard .spnChannelName {
+color: #2A99BD;
+display: block;
+float: left;
+
+font-size: 11px;
+margin-top: 10px;
+text-decoration: underline;
+width: 100%;
+white-space: nowrap;
+text-overflow: ellipsis;
+overflow: hidden;
+height: 16px;
+}
+
+.ringBoxBoard .spnUserName {
+color: #2A99BD;
+display: block;
+float: none;
+font-family:raleway-light;
+font-size: 13px;
+padding-left: 4px;
+padding-top: 2px;
+text-align: left;
+width: 100%;
+}
+.ringBoxBoard .spnTime {
+color: #2A99BD;
+display: block;
+float: right;
+
+font-size: 12px;
+margin-right: 5px;
+}
+
+
+.ringBoxBoard .senderUrl {
+display: block;
+float: left;
+height: 15px;
+margin-top: 8px;
+width: 70%;
+text-decoration: underline;
+color: #2A99BD;
+}
+.ringBoxBoard .ancToChannel {
+display: block;
+float: left;
+width: 70%;
+}
+ .ringBoxBoard .imgAndCannel {
+display: block;
+float: left;
+padding-left: 3px;
+padding-right: 3px;
+}
+.ringBoxBoard .timeAndUserName {
+position: absolute;
+right: 0;
+top: 3px;
+width: 50%;
+}
+.ringBoxBoard .channelImg {
+border: 1px solid #2A99BD;
+border-radius: 2px;
+float: left;
+height: 40px;
+margin-left: 3px;
+margin-right: 5px;
+margin-top: 9px;
+width: 40px;
+}
+
+.ring {
+display:block;
+margin-bottom:10px;
+margin-top:10px;
+width: 100%;
+}
+
+
+/* ------------------------------- / Rings------------------------------- */
+
+
+
+/* ------------------------------- / Left------------------------------- */
+
+
+ #divStory {
+ float: left;
+ margin-top: 20px;
+ border: 1px solid #55AAC5;
+ border-radius: 7px;
+ width: 100%;
+ position:relative;
+ 
+}
+ .editTitle {
+    position:absolute;
+top:0;
+right:0;
+background-image:url(/images/editIcon.png)
+}
+    .editTitle a {
+background-image: url("/images/editIcon.png");
+color: #F3F3F3;
+display: block;
+font-size: 13px;
+padding: 5px;
+text-decoration: underline;
+    }
+#titleEditHolder {
+    display:none;
+    padding:5px;
+}
+
+
+ #divStory h1, #titleEditHolder {
+background: none repeat scroll 0 0 #2A99BD;
+border: 1px solid #2A99BD;
+border-top-left-radius: 7px;
+border-top-right-radius: 7px;
+color: #FFFFFF;
+
+font-size: 21px;
+letter-spacing: 1px;
+text-transform: none;
+padding: 4px;
+}
+
+    #titleEditHolder span {
+        font-size: 13px;
+    }
+    #titleEditHolder input {
+        width: 220px;
+    }
+
+        .lblStory {
+ display: block;
+ 
+ font-size: 13px;
+color: #777;
+ line-height: 22px;
+ padding-left: 5px;
+         
+
+
+        }
+
+ #divChannels {
+ float: left;
+ width: 100%;
+ margin-top: 15px;
+}
+
+#divChannelsFollowingHolder {
+background: none repeat scroll 0 0 #F5F5F5;
+border-radius: 4px 4px 4px 4px;
+clear: both;
+display: block;
+float: right;
+height: 25px;
+line-height: 7px;
+margin-top: 10px;
+width: 100%;
+}
+
+.spnChannels ,
+.spnFollowings {
+color: #008000;
+display: block;
+float: left;
+
+font-size: 12px;
+letter-spacing: 1px;
+padding-left: 4px;
+padding-top: 10px;
+text-transform: uppercase;
+}
+
+        #lblChannelsCount, #lblFollowingCount, #lnkBtn,#lblVisitors {
+color: #2A99BD;
+display: block;
+float: left;
+font-family: Tahoma;
+font-size: 14px;
+font-weight: bold;
+padding-left: 5px;
+padding-right: 10px;
+padding-top: 9px;
+        }
+
+
+
+        .divChannelHolder {
+background: none repeat scroll 0 0 #FFFFFF;
+border: 1px solid #2A99BD;
+border-bottom-left-radius: 7px;
+border-bottom-right-radius: 7px;
+display: inline;
+float: left;
+width: 100%;         
+        }
+
+
+.divChannel {
+background-color: #fff;
+border: 1px solid #2A99BD;
+border-radius: 5px 5px 5px 5px;
+float: left;
+margin: 0.85%;
+min-width: 130px;
+padding: 0.5%;
+width: 22%;
+height: 245px;
+overflow: hidden;
+
+}
+
+    .divChannel a {
+color: #2A99BD;
+display: block;
+
+font-size: 15px;
+font-weight: normal;
+text-decoration: none;
+text-transform: capitalize;
+width: 99%;
+white-space: nowrap;
+overflow: hidden;
+text-overflow: ellipsis;
+
+    }
+
+ .divChannel a.comingSoon {
+color: #95ccdd;
+}
+
+.divChannel span {
+clear: both;
+color: #777;
+display: block;
+float: left;
+
+font-size: 12px;
+line-height: 15px;
+}
+
+.divChannel span.comingSoon {
+color: #bbb;
+}
+
+.divChannel span em {
+ color:#2A99BD ;
+ font-style: normal;
+ }
+
+.divChannel img {
+border: 1px solid #F9F9F9;
+border-radius: 3px;
+display: block;
+float: left;
+margin: 5px 2%;
+height: 165px;
+width: 96%;
+}
+
+
+#storyHolderEdit {
+    display:none;
+    padding: 3px;
+}
+/* ------------------------------- CENTER------------------------------- */
+
+/* ------------------------------- activity------------------------------- */
+.activity {
+background: none repeat scroll 0 0 #F9F9F9;
+border: 1px solid #2A99BD;
+border-radius: 4px;
+float: left;
+margin: 3px;
+}
+#divActivities {
+display: inline;
+float: left;
+width: 95%; 
+}
+.activityHolder {
+    display: block;
+    float: left;
+    clear: both;
+    margin-bottom: 20px;
+    width: 100%;
+    margin-top: 15px;
+}
+.spnTimeStamp {
+color: #999;
+display: block;
+float: right;
+
+font-size: 11px;
+margin-right: 6px;
+padding: 5px;
+width: 95%;
+padding-left:5%; 
+}
+.spnuserName {
+color: #2A99BD;
+font-size: 14px;
+margin-left: 9px;
+}
+.imgActivity {
+float: left;
+margin-left: 3px;
+padding: 3px;
+margin-top: 5px;
+margin-right: 8px;
+}
+.activityPost {
+border-radius: 3px;
+color: #555555;
+
+}
+.imgSpanWrapper {
+display: block;
+height: 80px;
+margin-bottom: 10px;
+width: 100%;
+
+}
+.TestimonialBox img {
+    float: left;
+}
+
+
+
+/* -------------------------------/activity------------------------------- */
+/* ------------------------------- /CENTER------------------------------- */
+
+
+/* ------------------------------- RIGHT------------------------------- */
+
+.post {
+border: 1px solid #2A99BD;
+border-bottom-left-radius: 4px;
+margin-bottom: 10px;
+border-bottom-right-radius: 4px;
+width: 99%;
+padding: 5px;
+}
+
+#postImgWrapper {
+    width: 99%;
+
+}
+
+    .post.postImg {
+border: medium none;
+margin-bottom: 5px;
+max-width: 99%;
+padding: 0;
+
+    }
+.addNewPost {
+    font-size: 12px;
+    color: #999;
+    text-decoration: underline;
+    margin-top: 5px;
+}
+
+#lblPost {
+    width:95%;
+    display: block;
+    
+    font-size: 14px;
+    color: #777;
+}
+.post h1 {
+    width: 90%;
+    display: block;
+}
+#divTodayPost {
+    display:none;
+}
+#fuUploadPost {
+
+}
+#txtPost {
+margin-bottom: 5px;
+margin-top: 5px;
+
+font-size: 13px;
+color: #555;
+width: 185px;
+}
+
+#btnSaveNewPost {
+background-color: #2A99BD;
+background-image: url("/images/ButtonBG.jpg");
+background-position: -10px center;
+background-repeat: repeat-x;
+border: medium none;
+border-radius: 3px;
+color: #FFFFFF;
+cursor: pointer;
+
+font-size: 13px;
+padding: 3px 5px;
+margin-top: 5px;
+
+}
+    #btnSaveNewPost:hover {
+        background-image: url("/images/ButtonBGhover.jpg");
+    }
+    #divFooter.regular, #divFooter.default {
+position:relative;
+}
+/* ------------------------------- /RIGHT------------------------------- */
+
+/*------------------MEDIA*/
+
+/*------------------------- control panel board*/
+/*@media only screen and (min-width : 1920px) {
+   .container {
+  width: 60%;
+}
+
+   #divBoardContentMyBoard {
+  width: 60%;
+}*/
+
+   
+
+/*------------------------- / control panel board*/
+
+
+/*#followersModal
+{
+    display:none;
+    background-color:#fff;
+    height:500px;
+    width:350px;
+}
+
+@media only screen and (min-width : 1366px) and (max-width: 1440px) {
+        .divChannel {
+        width: 16%;
+    }
+        .activityPost {
+  width: 80%;
+}
+
+}*/
+
+.TestimonialBox {
+display: block;
+padding:8px;
+margin:2%;
+margin-bottom: 10px;
+font-size: 13px;
+line-height: 1.644;
+word-breakNo: break-all;
+word-wrapNo: break-word;
+color: #333;
+background-color: #f5f5f5;
+border: 1px solid #ccc;
+border-top: 1px solid #2a99bd;
+border-radius: 3px;
+min-width: 140px;
+-webkit-box-shadow: inset 0 0 6px #ccc;
+-moz-box-shadow:   inset 0 0 6px #ccc;
+-ms-box-shadow: inset 0 0 6px #ccc;
+-o-box-shadow:  inset 0 0 6px #ccc;
+box-shadow:   inset 0 0 6px #ccc;
+clear: none;
+float: none;
+position: relative;
+top: 0px;
+}
+
+    .TestimonialBox img {
+        width: auto;
+        height: auto;
+        max-width: 120px;
+        max-height: 120px;
+    }
+
+.imgSize {
+color: #0C6B8F;
+display: block;
+float: left;
+
+font-size: 10px;
+font-style: normal;
+margin-bottom: 3px;
+margin-top: 3px;
+}
+

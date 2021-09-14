@@ -1,0 +1,742 @@
+﻿
+
+body {
+    background-color: #f9f9f9;
+    font-size: 14px;
+}
+
+
+
+#sideBarChannel {
+background-color: transparent;
+display: block;
+float: right;
+min-height: 800px;
+position: relative;
+width: 320px;
+}
+#lblChannelCount {
+    margin-top: 10px;
+}
+
+.chanBox .chanBoxPlay {
+    width: 40px;
+}
+
+.emailBtnSocial {
+    display: block;
+    float: left;
+    background-image: url("/images/social/mail.jpg");
+    background-repeat: no-repeat;
+    width: 32px;
+    height: 32px;
+    background-size: 104%;
+    margin-right: 6px;
+    background-position: center center;
+    cursor:pointer;
+}
+
+
+#txtAreaBio {
+    
+    font-size: 14px;
+    color: #555;
+    line-height: 25px;
+}
+
+/*.chanBox {
+    min-width: 185px;
+    float: left;
+    margin-left: 0;
+}*/
+
+
+.sideBarOptionsDashboard {
+border-bottom: 1px solid #ddd;
+display: block;
+height: 37px;
+padding-bottom: 5px;
+position: relative;
+}
+
+.msg {
+font-size: 13px;
+display: block;
+width: 100%;
+text-align: center;
+margin-top: 30px;
+}
+
+
+.sideBarOptionsDashboard .addtofavorite, .sideBarOptionsDashboard .toprated,
+.sideBarOptionsDashboard .addBio{
+background-position: center 0;
+background-repeat: no-repeat;
+background-size: 30px auto;
+display: block;
+float: right;
+font-size: 11px;
+height: 37px;
+margin-top: 5px;
+opacity: 1;
+width: 37px;
+}
+
+.sideBarOptionsDashboard .addBio {
+    background-image: url('/images/social/socialRound/dashboard-bio-round.png');
+}
+
+.sideBarOptionsDashboard .addtofavorite {
+    background-image: url('/images/social/socialRound/dashboard-favorite-round.png');
+}
+
+.sideBarOptionsDashboard .toprated {
+    background-image: url('/images/social/socialRound/dashboard-top-round.png');
+}
+
+
+
+
+.sideBarOptionsDashboard .addBio:hover,
+.sideBarOptionsDashboard .addBioActive {
+    background-image: url('/images/social/socialRound/dashboard-bio-active-round.png');
+}
+
+
+.sideBarOptionsDashboard .addtofavorite:hover,
+.sideBarOptionsDashboard .addFavoritesActive  {
+    background-image: url('/images/social/socialRound/dashboard-favorive-active-round.png');
+}
+
+.sideBarOptionsDashboard .toprated:hover,
+.sideBarOptionsDashboard .topRatedActive {
+    background-image: url('/images/social/socialRound/dashboard-top-active-round.png');
+}
+
+
+
+
+#spnLimit
+{
+    display:block;
+    float:left;
+    color:#555;
+    margin-top:10px;
+}
+
+#bioEdit {
+    float: left;
+    text-decoration: underline;
+    cursor: pointer;
+    margin-bottom: 20px;
+    width: 95%;
+    text-align: right;
+    text-transform: capitalize;
+    font-style: italic;
+    color: #2a99bd;
+}
+
+    #bioEdit:hover {
+   color: #1e6981;
+    }
+
+
+#dashboardProfileHolder {
+    overflow: hidden;
+}
+
+#spnLimit {
+display: block;
+    float: left;
+    width: 100%;
+    color: #555;
+    text-align: left;
+    padding-left: 10px;
+    font-style: italic;
+}
+#btnSaveBio,
+#btnCancelEdit{
+    display:block;
+    float:right;
+    background-color:#2a99bd;
+    color:#fff;
+    margin-top:20px;
+    padding:10px;
+    width:50px;
+    text-transform: capitalize;
+}
+
+#btnSaveBio {
+    margin-right: 40px;
+}
+
+#btnCancelEdit {
+    background-color:#bbb;
+    margin-right: 10px;
+}
+
+#btnCancelEdit:hover {
+    background-color:#555;
+}
+
+#btnSaveBio:hover {
+    background-color:#1e6981;
+}
+#popUpOverlay {
+  background-image: url("/images/opacity-0.3.png");
+  background-repeat: repeat;
+  display: block;
+  left: 0;
+  min-height: 700px;
+  padding-bottom: 2%;
+  padding-top: 5%;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+#bioHolder{
+    display:block;
+    float:left;
+
+}
+#lblBio {
+    display: block;
+    float: left;
+    text-align: left;
+    line-height: 20px;
+    padding: 10px;
+    font-style: italic;
+    font-family: 'Book Antiqua';
+    font-size: 17px;
+    color: #98480A;
+}
+#bioActionHolder
+{
+    display:none;
+}
+#dashboardProfileHolder ul {
+background: none repeat scroll 0 0 #fff;
+display: block;
+height: 450px;
+margin-bottom: auto;
+margin-left: auto;
+margin-right: auto;
+width: 400px;
+padding-bottom: 25px;
+opacity: 0.97;
+position: relative;
+}
+
+.iconDescriptionDashboard {
+color: #016e92;
+display: block;
+font-size: 15px;
+font-weight: bold;
+left: 10px;
+position: absolute;
+float:left;
+top: 12px;
+}
+
+    #dashboardProfileHolder ul li input {
+display: block;
+margin: auto auto 10px;
+width: 300px;
+height: 37px;
+padding-left: 5px;
+        
+
+    }
+
+ #dashboardProfileHolder ul li #btnSaveDashBoardInfo {
+background-color: #2a99bd;
+color: #fff;
+cursor: pointer;
+display: block;
+float: right;
+height: 37px;
+margin: auto 20px 10px auto;
+width: 120px;
+}
+
+    #dashboardProfileHolder ul li #btnSaveDashBoardInfo:hover {
+background-color: #1e6981;
+    }
+
+#dashboardProfileHolder .closeEditFoarm {
+display: block;
+font-size: 27px;
+position: absolute;
+right: 15px;
+top: 7px;
+}
+
+
+#dashboardProfileHolder .closeEditFoarm:hover {
+color: #2a99bd;
+    }
+
+#txtBio {
+border: 1px solid #ccc;
+border-radius: 3px;
+color: #555;
+display: block;
+float: left;
+
+font-size: 14px;
+line-height: 20px;
+margin: 10px auto 10px 10px;
+padding: 5px;
+width: 356px;
+
+}
+
+.sideContentHolder {
+display: block;
+min-height: 100px;
+padding-top: 10px;
+position: relative;
+text-align: center;
+width: 100%;
+/*z-index: 10; bad for walk thru, comment the line doesnt affect on view*/
+/*margin-top: 20px;*/
+font-size: 14px;
+}
+
+.containerBackgroundImageEditorDashboard {
+    margin:50px;
+}
+
+.containerBackgroundImageEditorAvatar {
+    margin:50px;
+}
+
+.sideChannel {
+  border-bottom: 1px solid #eee;
+  display: block;
+  float: left;
+  padding: 1%;
+  width: 98%;
+}
+
+.minHeightMobile {
+    min-height: 735px;
+     max-height: 2000px;
+}
+
+.sideChannel .channelAvatar {
+border: 1px solid #eee;
+display: block;
+float: left;
+height: 75px;
+margin-right: 10px;
+overflow: hidden;
+width: 75px;
+}
+
+.sideChannel .channelAvatar img {
+height: auto;
+max-width: 75px;
+min-height: 100%;
+}
+
+.sideChannel strong {
+display: block;
+float: left;
+font-weight: normal;
+height: 75px;
+position: relative;
+width: 205px;
+}
+
+#fuAvatar,
+#fuBackground {
+    opacity: 0;
+  
+    cursor:pointer;
+}
+
+.liUpload span .secInfo {
+  display: block;
+  font-size: 11px;
+  position: absolute;
+  right: 0;
+}
+
+.liUpload {
+border: 1px solid #ccc;
+border-radius: 3px;
+height: 40px;
+margin: auto auto 10px;
+position: relative;
+width: 307px;
+cursor: pointer;
+float:left;
+}
+
+
+
+.liUpload strong {
+font-size: 11px;
+font-weight: normal;
+}
+
+
+    .liUpload span {
+color: #999;
+display: block;
+font-size: 16px;
+height: 40px;
+line-height: 30px;
+padding-left: 5px;
+position: absolute;
+width: 307px;
+line-height: 40px;
+    }
+        .liUpload span:hover {
+            color: #2a99bd;
+        }
+          #imgDashBoardAvatarPrev, #imgDashboardBackgroundPrev {
+float: left;
+margin-left: 10px;
+margin-right: 10px;
+width: 50px;
+}
+
+.sideChannel .channelTiming {
+  background-color: red;
+    border-top-left-radius: 40px;
+    bottom: -1px;
+  color: #ccc;
+  display: block;
+  float: left;
+  font-size: 13px;
+  font-weight: bold;
+    height: 20px;
+    left: -66px;
+  opacity: .7;
+  position: absolute;
+  text-align: center;
+    width: 40px;
+}
+
+.channelTimingDB {
+background-color: #f00;
+    border-top-left-radius: 16px;
+bottom: 0;
+    color: #eee;
+display: block;
+float: right;
+font-size: 13px;
+font-weight: bold;
+    height: 20px;
+    opacity: 0.9;
+position: absolute;
+right: 0;
+text-align: center;
+    width: 50px;
+    line-height: 20px;
+}
+
+
+
+
+
+      input {
+        /* Use relative position to prevent from being covered by image background */
+        position: relative;
+        z-index: 10;
+        display: block;
+      }
+
+      .export {
+background-color:#2a99bd;
+display: block;
+float: left;
+height: 40px;
+line-height: 40px;
+margin-top: 10px;
+text-align: center;
+width: 150px;
+color: #fff;
+margin-bottom:40px;
+      }
+.export:hover {
+background-color:#016e92;
+}
+
+.cropit-image-preview-container {
+display: block;
+margin: auto;
+width: 250px;
+}
+
+
+
+/* Translucent background image */
+.cropit-image-background {
+  opacity: .2;
+}
+
+/*
+ * If the slider or anything else is covered by the background image,
+ * use relative or absolute position on it
+ */
+
+
+/* Limit the background image by adding overflow: hidden */
+#image-cropper {
+  overflow: hidden;
+}
+
+input.cropit-image-input {
+    visibility: collapse;
+}
+
+#slider3 {
+    position: relative;
+    width: 100%;
+    background-color: #fff;
+    margin-left: 10px;
+    background-image: none;
+}
+
+
+
+
+#btnStartTourHolder {
+display: none;
+float: left;
+}
+
+#btnStartTourHolder:hover{
+    opacity:1;
+}
+
+#btnWatchVideoHolderDashboard {
+    display: block;
+    float: left;
+    text-decoration:underline;
+}
+
+#divPlaceHolderStepTwo {
+display: block;
+float: left;
+width: auto;
+}
+
+#stepThreeDiv {
+    display: block;
+  
+    height: 21px;
+    position: absolute;
+    top: 0;
+  left: 0;
+    z-index: 100;
+}
+#stepThreeDiv #ancCropBackground {
+    background-color: #fff;
+    background-image: url("/images/crop.png");
+    background-size: 100% auto;
+    border-bottom: 1px solid #2a99bd;
+    border-right: 1px solid #2a99bd;
+    color: #fc0;
+    cursor: pointer;
+    display: block;
+    font-weight: bold;
+    height: 35px;
+    opacity: 0.7;
+    z-index: 100;
+    width: 35px;
+    position: relative;
+    font-weight: bold;
+}
+    #stepThreeDiv #ancCropBackground:hover {
+        opacity: 1;
+    }
+
+#channels {
+    display: block;
+    text-align: center;
+}
+
+
+.dashboardMobileMenu {
+    display: none;
+}
+
+
+@media (max-width:1300px) {
+#mainContent {
+    width: 68%;
+}
+}
+@media (max-width:1120px) {
+#mainContent {
+    width: 64%;
+}
+}
+@media (max-width:1000px) {
+#mainContent {
+    width: 55%;
+}
+
+.addChannel {
+    padding-left: 7px;
+    padding-right: 7px;
+    width: auto;
+}
+
+}
+
+
+@media (max-width:786px) {
+
+        #dashboardAvatar {
+    border: 1px solid #eee;
+    bottom: 5px;
+    height: 160px;
+    left: 5px;
+    position: absolute;
+    width: 160px;
+    z-index: 20;
+}
+
+
+    #mainContent {
+    width: 98%;
+    padding: 1%;
+    margin: auto;
+    float: none;
+    padding-top: 0;
+}
+
+        #channels {
+    display: block;
+     float: none; 
+     margin-left: 0; 
+     width: 100%;
+}
+
+
+    #sideBarChannel {
+        width: 100%;
+    }
+
+    .dashboardMobileMenu {
+        width: 100%;
+        height: 70px;
+        display: block;
+        float:left;
+
+    }
+
+    .btnDashboardMobileMenuDuo {
+    width: 320px;
+    float: none;
+    display: block;
+    color: #555;
+    line-height: 70px;
+    text-align: center;
+    margin: auto;
+    height: 50px;
+    line-height: 50px;
+    margin-top: 20px;
+    }
+
+    .duoTour {
+        background-color: #2a99bd;
+        color: #fff;
+        display: none;
+    }
+
+    .duoChannel {
+              background-color: #54b90f;
+                 color: #fff;
+    }
+
+    .btnDashboardMobileMenu {
+        width: 25%;
+        float: left;
+        display: block;
+        color: #555;
+        line-height: 70px;
+        text-align: center;
+    }
+
+        .btnDashboardMobileMenu:hover {
+           color: #2a99bd;
+           font-weight: bold;
+        }
+
+        .btnDashboardMobileMenuActive {
+            color: #2a99bd;
+           font-weight: bold;
+        }
+
+
+    #headH1 {
+    display: none;
+}
+
+    #avatarInfo,
+    #DashboardBackgroungImg {
+        height: 220px;
+    }
+
+    .sideBarOptionsDashboard ,
+    .iconDescriptionDashboard{
+        display: none;
+    }
+
+    .btnTutorialTourHolderDashboard {
+        display: none;
+    }
+
+    #headMenu {
+margin-left: 175px;
+    }
+
+    #lblUserInfo,
+    #lblCountry {
+        display: block;
+        width: 100%;
+    }
+
+    .addChannel {
+        display: none;
+    }
+
+    .chanBoxtitleAdjust {
+    padding-top: 50%;
+}
+
+    .minHeightMobile {
+    min-height:0;
+     max-height:0;
+}
+
+    #sideBarChannel {
+        min-height: 0;
+        border: none;
+    }
+
+
+    #liImageEditor .image-editor {
+    width: 100%;
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+

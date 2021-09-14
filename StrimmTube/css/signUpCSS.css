@@ -1,0 +1,623 @@
+﻿@import url('reset.css');
+body {
+background-color: #f9f9f9;
+}
+
+::-webkit-input-placeholder {
+   color: #000;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #000;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #000;  
+}
+
+:-ms-input-placeholder {  
+   color: #000;  
+}
+.haveAnAccount {
+    font-size: 17px;
+    line-height: 50px;
+}
+
+    .haveAnAccount a {
+        color: #2a99bd;
+        font-weight: bold;
+        text-decoration: underline;
+    }
+
+
+.spnPleaseComplete {
+color: #fff;
+display: block;
+font-size: 11px;
+line-height: 20px;
+margin: auto;
+text-align: left;
+width: 370px;
+}
+ /* ------------------------------- SignUp ------------------------------- */
+
+ .mainContentWrapper {
+    display: block;
+    min-height: 600px;
+    margin: auto;
+    width: 100%;
+    max-width: 100%;
+}
+
+.MainSignUpHolder {
+    display: block;
+    width: 98%;
+    margin: auto;
+}
+
+#contentSignUp {
+    float: left;
+    min-height: 600px;
+    width: 100%;
+}
+
+#divSignUpContent {
+    display: block;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+#divSignUp .spnTerms a {
+    color: #999999;
+    display: inline;
+    float: none;
+    margin-left: 10px;
+    width: auto;
+    text-decoration: underline;
+}
+
+.pageTitle {
+    
+font-weight: normal;
+color: #fff;
+display: block;
+font-size: 41px;
+margin: auto;
+padding-bottom: 40px;
+padding-top: 40px;
+text-align: left;
+text-transform: capitalize;
+width: 500px;
+}
+
+.SignUpTitle {
+color: #fff;
+display: block;
+float: left;
+
+font-weight: normal;
+font-size: 27px;
+margin-bottom: 10px;
+text-align: center;
+text-transform: capitalize;
+margin-top: 40px;
+}
+
+.contactTitle {
+color: #fff;
+display: block;
+float: left;
+
+font-size: 32px;
+font-weight: normal;
+padding-bottom: 40px;
+padding-top: 40px;
+text-align: center;
+text-transform: capitalize;
+}
+
+
+.connectWF {
+    display: none;
+    background: red;
+}
+
+
+#divSignUp {
+    display: block;
+    width: 100%;
+    float: left;
+    background-image: url(/images/signUPtoStrimm.png);
+    background-position: -100px top;
+    background-size: 800px;
+    background-repeat: no-repeat;
+}
+#divSignUp ul{
+    width: 100%;
+    max-width: 340px;
+    float: right;
+}
+    #divSignUp li .divError span {
+    color: #fff;
+    display: none;
+    font-size: 14px;
+    height: auto;
+    line-height: 24px;
+    text-align: left;
+    }
+
+.spnErrorCloseMobile {
+    display: none;
+}
+
+
+#divSignUp .cap {
+    text-transform: capitalize;
+}
+
+
+.birthday {
+color: #555;
+display: block;
+font-size: 18px;
+padding-left: 3px;
+}
+
+.ageConfirmation {
+font-size: 14px;
+}
+
+#divSignUp li span.red
+{
+    color:#FF6A00;
+}
+
+    #divSignUp ul li {
+        display: block;
+        float: left;
+        margin-bottom: 15px;
+        width:100%;
+        position: relative;
+    }
+
+.signUpHeader {
+    display: block;
+    font-size: 30px;
+    color: #2a99bd;
+    width: 96%;
+    line-height: 50px;
+    font-weight: normal;
+    text-align: center;
+}
+
+.signUpSlogan {
+    display: block;
+    font-size: 27px;
+    color: #333;
+    font-weight: normal;
+    width: 96%;
+    text-align: center;
+}
+
+.createSignUp {
+    display: block;
+    float: left;
+    width: 100%;
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+
+.divError {
+    left: -350px;
+    position: absolute;
+    width: 96%;
+    bottom: 0;
+    background-color: #ff7373;
+    padding: 2%;
+    border-top: 1px solid #da5e5e;
+    display: none;
+}
+
+#divSignUp li span.spnBirthday {
+    color: #fff;
+    float: left;
+    font-size: 14px;
+    text-transform: none;
+    width: 95px;
+    margin-right: 33px;
+    margin-top: -5px;
+}
+
+#divSignUp ul li .ddlBirthday,
+#divSignUp ul li .ddlCountry {
+    font-size: 18px;
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+
+    #divSignUp ul li .ddlBirthday {
+    text-align: center;
+    width: 32.5%;
+    box-sizing: border-box;
+    }
+
+    #divSignUp ul li .ddlCountry {
+        width: 100%;
+    }
+
+#divSignUp li input {
+    background-color: #fff;
+    float: left;
+    height: 35px;
+    margin-left: 0;
+    margin-top: 3px;
+    width: 100%;
+    border-color: #fff;
+    text-transform: none;
+    opacity: 0.95;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+
+#divSignUp li input:focus {border-color: #2a99bd;}
+#txtFirstName,
+#txtLastName,
+#txtName,
+#txtEmail,
+#txtReenterEmail,
+#txtUserNameSignUp,
+#txtPasswordSignUp {
+    border: 1px solid #999;
+color: #000;
+
+font-size: 18px;
+padding: 2px 2px 2px 10px;
+}
+#divSignUp li input.errorActive
+{
+    border-color: #ff7373;
+}
+
+.ListItemMale,
+.ListItemFemale {
+height:25px;
+line-height:25px;
+display:block;
+width: 40px;
+}
+#divSignUp .ListItemMale input,
+#divSignUp .ListItemFemale input {
+display:block;
+width:15px;
+float:right;
+}
+.ListItemMale label {
+display:block;
+height:20px;
+line-height:20px;
+margin:auto;
+}
+
+#divSignUp li span.radioList {
+width: 320px;
+color: #fff;
+font-size: 13px;
+}
+    #divSignUp li span.radioList input {
+display: block;
+float: left;
+height:25px;
+margin-right: 5px;
+width: 20px;
+background-color: transparent;
+    }
+
+    #divSignUp li span.radioList label {
+display: block;
+float: left;
+font-size: 18px;
+height: 30px;
+line-height: 30px;
+margin-right:43px;
+color: #555;
+    }
+
+#divSignUp #lblShowHidePassSignUp input {
+    width: 22px;
+    margin-top: 10px;
+}
+
+
+#divSignUp #lblShowHidePassSignUp input {
+    width: 22px;
+    margin-top: 10px;
+}
+
+#chkBxShowHidePasswordSignUp[type="checkbox"] {
+    -webkit-appearance: none;
+    outline: none;
+    width: 22px;
+    height: 22px;
+    background-color: #eee;
+}
+
+    #chkBxShowHidePasswordSignUp[type="checkbox"]:checked {
+    -webkit-appearance: none;
+    outline: none;
+    background-image: url('/images/checkIcons/check-mark-green.png');
+    background-size: 100%;
+    width: 22px;
+    height: 22px;
+    }
+
+#chkBxIamfilmmaker[type="checkbox"], #chkTerms[type="checkbox"] {
+    -webkit-appearance: none;
+  background-color: #fff;
+height: 22px;
+outline: medium none;
+width: 22px;
+float: left;
+clear: both;
+}
+
+    #chkBxIamfilmmaker[type="checkbox"]:checked,
+    #chkTerms[type="checkbox"]:checked {
+    -webkit-appearance: none;
+    outline: none;
+    background-image: url('/images/checkIcons/check-mark-green.png');
+    background-size: 100%;
+    width: 22px;
+    height: 22px;
+    }
+
+.spnFilmmaker, .spnTerms {
+    color: #555;
+    font-size: 15px;
+    height: 30px;
+    line-height: 30px;
+    
+}
+
+.lblFilmmaker {
+    height:24px;
+}
+
+#divSignUp li span.radioList input[type="radio"] {
+        -webkit-appearance: none;
+    outline: none;
+    width: 22px;
+    height: 22px;
+    background-color: #fff;
+    border-radius: 11px;
+}
+    #divSignUp li span.radioList input[type="radio"]:checked {
+    -webkit-appearance: none;
+    outline: none;
+    background-image: url('/images/radioButton-active.png');
+    background-size: 120%;
+    width: 22px;
+    height: 22px;
+    border: 1px solid #eee;
+    background-position: center
+    }
+
+
+/* ------------------------------- / SignUp ------------------------------- */
+/* ------------------------------- Terms@Policy ------------------------------- */
+#divChkTerms {
+display: block;
+float: left;
+text-align: center;
+width: 100%;
+}
+#divChkPolicy {
+display:block;
+margin:0 auto;
+width:365px;
+}
+#spnTerms {
+    color: #555;
+    display: block;
+    font-size: 14px;
+    line-height: 20px;
+    margin: auto auto 20px;
+    text-align: left;
+    width: 370px;
+    
+}
+
+    #spnTerms a {
+        color: #555;
+        text-decoration: underline;
+        font-size: 14px;
+        
+    }
+
+#spnTerms a:hover {
+text-decoration: underline;
+}
+/* ------------------------------- / Terms@Policy ------------------------------- */
+/* ------------------------------- btnJoin@btnCancel ------------------------------- */
+#divSignUp li input#btnJoin {
+    background-color: #3BCD4E;
+    border: 1px solid #3BCD4E;
+    clear: both;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    font-size: 18px;
+    font-weight: normal;
+    height: 40px;
+    line-height: 30px;
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    text-transform: capitalize;
+    width: 180px;
+    float:none;
+}
+
+
+    #divSignUp li input#btnJoin:hover {
+        background-color: #2d8639;
+        color: #fff;
+        border: 1px solid #2d8639;
+    }
+
+
+#btnCancel {
+
+color: #bbb;
+font-size: 15px;
+height: 30px;
+line-height: 30px;
+padding-left: 5px;
+padding-right: 5px;
+margin-right: 10px;
+cursor: pointer;
+text-decoration: underline;
+}
+#btnCancel:hover {
+background-image: url("/images/ButtonBGGreyhover.jpg");
+color: #fff;
+}
+
+.buttonHolder {
+display: block;
+margin: auto;
+width: 300px;
+margin-top: 20px;
+}
+/* ------------------------------- /  btnJoin@btnCancel ------------------------------- */
+/* ------------------------------- divFooter ------------------------------- */
+
+#lblMessage {
+color: red;
+display: block;
+float: left;
+font-size: 13px;
+line-height: 20px;
+margin-bottom: 20px;
+margin-top: 17px;
+padding: 5px;
+width: 100%;
+}
+#lblMessage  a
+{
+    color: #FF6A00;
+}
+
+.textHigh{
+font-size: 15px;
+}
+
+
+.sign-up-divider {
+    height: 1px;
+    width: 333px;
+    margin: 25px 0;
+    text-align: center;
+    background-color: #aaa;
+}
+  
+.sign-up-divider span {
+background-color: #ccc;
+border: 1px solid #eee;
+border-radius: 50px;
+color: #000;
+display: block;
+height: 22px;
+line-height: 22px;
+margin: auto;
+opacity: 1;
+padding: 5px;
+position: relative;
+text-align: center;
+top: -17px;
+width: 22px;
+}
+
+.fb_iframe_widget iframe {
+opacity:0;
+}
+
+#divSignUp ul li.ConnectWithFacebook {
+    width: 100%;
+    display: block;
+}
+
+
+
+#divSignUp ul li.facebookLog {
+    background-attachment: scroll;
+    background-clip: border-box;
+    /*background-color: #3b5b93;*/
+    background-color: #5272aa;
+ 
+    background-origin: padding-box;
+    background-position: 0 center;
+    background-repeat: no-repeat;
+    color: #fff;
+    display: block;
+    float: left;
+    height: 40px;
+    line-height: 40px;
+    margin-bottom: 15px;
+    position: relative;
+    text-align: center;
+    width: 333px;
+    border: 1px solid #5272aa;
+    cursor: pointer;
+    background-image: url('/images/facebookSignUp.jpg');
+}
+
+    #divSignUp ul li.facebookLog:hover {
+background-color: #3b5b93;
+    }
+
+.signUpTextHolder {
+    display: none;
+    float: left;
+    width: 50%;
+    height: 600px;
+    text-align: left;
+    margin-top: 100px;
+    position: relative;
+}
+  /*media*/
+
+@media (max-width:560px) {
+    #divSignUp {
+        background-image: none;
+    }
+    #divSignUp ul {
+    float: none;
+    margin: auto;
+}
+    .createSignUp {
+    margin-top: 30px;
+    margin-bottom: 0;
+}
+#divSignUp ul li.haveAnAccount {
+    text-align: center;
+}
+.signUpHeader {
+    font-size: 25px;
+    line-height: 30px;
+}
+    
+    .divError {
+    left: 0;
+    padding-top: 0;
+    top: 39px;
+    height: 45px;
+    display: none;
+}
+
+}
+
+
+@media (max-width:450px) {
+
+}

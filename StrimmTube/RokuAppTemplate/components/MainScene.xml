@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<component name="MainScene" extends="Scene" >
+  <interface>
+    <field id="apprunning" type="Boolean" onChange="onAppLaunch" />
+
+    <field id="video" type="node" />
+
+    <field id="deepLinking" type="assocarray" />
+
+    <!-- On/Off loading indicator on App Scene -->
+    <field id="loadingIndicatorOn" type="Boolean" value="true" alias="loadingIndicator.show" />
+  </interface>
+
+  <script type="text/brightscript" uri="./MainScene.brs" />
+  <script type="text/brightscript" uri="pkg:/components/nodeUtils.brs" />
+  <script type="text/brightscript" uri="pkg:/source/generalUtils.brs" />
+
+  <children>
+    <Group id="mainGroup" />
+  
+    <LoadingIndicator id="loadingIndicator" translation="[640, 360]" width="1280" height="720" />
+  </children>
+</component>

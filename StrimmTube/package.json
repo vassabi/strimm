@@ -1,0 +1,16 @@
+{
+  "name": "StrimmTube",
+  "version": "1.0.0",
+  "description": "Strimm TV Web Application",
+  "main": "Default.aspx",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Max Stolyarov",
+  "license": "ISC",
+  "dependencies": {
+    "dbghost": "^0.1.6",
+    "gulp-dotnet-assembly-info": "^0.1.10",
+    "yargs": "^3.6.0"
+  }
+}

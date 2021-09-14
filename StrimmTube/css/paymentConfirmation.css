@@ -1,0 +1,152 @@
+﻿body {
+    background-color: #fff;
+}
+
+.pageHolder {
+    display :block;
+    float: left;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+        h1 {
+    height: 100px;
+    font-weight: normal;
+    color: #2a99bd;
+    font-size: 25px;
+    line-height: 100px;
+        }
+
+        h2 {
+    height: 30px;
+    font-weight: normal;
+    color: #555;
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 20px;
+        }
+
+#successContent, #successLinksHolder {
+    display: block;
+    margin: auto;
+    width: 80%;
+    text-align: center;
+   
+}
+
+#successLinksHolder {
+    width: 450px;
+     margin-bottom: 50px;
+}
+
+.successProfile {
+    width: 200px;
+    float: left;
+    height: 35px;
+    text-align: center;
+    color: #fff;
+    background: #2eabd4;
+    line-height: 35px;
+     cursor: pointer;
+}
+
+    .successProfile:hover {
+         background: #237b98;
+    }
+
+.successNetwork {
+    width: 200px;
+    float: right;
+    height: 35px;
+    text-align: center;
+    color: #fff;
+    background: #78dc46;
+    line-height: 35px;
+    cursor: pointer;
+}
+    .successNetwork:hover {
+         background: #5ca837;
+    }
+
+#packageContent {
+    display: block;
+    margin: auto;
+    width: 80%;
+}
+
+#divTitleUrlHolder {
+    display: block;
+    margin: auto;
+    width: 80%;
+}
+/*#successLinksHolder a
+{
+    display:block;
+    margin:auto;
+    width:20%;
+    margin-bottom:35px;
+    background-color:green;
+    color:white;
+    height:50px;
+    line-height:50px;
+    
+}*/
+
+.packagePriceConf {
+    display: block;
+    float: left;
+    width: 100%;
+    height: 50px;
+    color: #2a99bd;
+    font-size: 35px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.termsadnpolicy {
+    color: #555;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+    .termsadnpolicy:hover {
+        color: #2a99bd;
+    }
+
+#continueHolder {
+    width: 80%;
+    display: block;
+    text-align: center;
+    margin: auto;
+    clear: both;
+}
+
+    #continueHolder a {
+        display: block;
+        margin: auto;
+        width: 180px;
+        margin-bottom: 10px;
+        background-color: #167797;
+        color: white;
+        height: 50px;
+        line-height: 50px;
+    }
+
+     #continueHolder #spnAllowPopup
+     {
+         display:block;
+         margin-bottom:25px;
+     }
+
+#btnContinueStripe {
+    width: 312px;
+    height: 74px;
+    background-image: url(/images/payment-stripe-button.png);
+}
+
+#btnContinuePaypal {
+    width: 291px;
+    height: 59px;
+    background-image: url(/images/payment-paypal-button.png);
+}

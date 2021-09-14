@@ -1,0 +1,622 @@
+﻿
+#tabsWrapper {
+    height: 120px;
+    width: 100%;
+}
+
+
+.loadMoreBtnHolder {
+    display: block;
+    float: left;
+    width: 100%;
+    height: 50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.classloadMoreVideos {
+    display: block;
+    width: 170px;
+    height: 50px;
+    background-color: #2a99bd;
+    margin: auto;
+    color: #eee;
+    border: none;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+    .classloadMoreVideos:hover {
+        background-color: #1e5e72;
+        color: #fff;
+    }
+
+
+
+
+
+
+#popUpOverlay {
+    width: 100%;
+    display: block;
+    min-height: 700px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-top: 5%;
+    padding-bottom: 2%;
+    z-index: 999;
+    background-image: url(/images/opacity-0.3.png);
+    background-repeat: repeat;
+}
+
+#popUpWrapper {
+    background-color: #F9F9F9;
+    display: block;
+    margin: auto;
+    min-height: 700px;
+    padding: 1%;
+    position: relative;
+    width: 97%;
+    height: 100%;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    box-shadow: 0 0 35px #999;
+}
+
+body {
+    margin-top: 20px;
+}
+
+.videoFinderH1 {
+    color: #fff;
+    display: block;
+    font-size: 20px;
+    font-weight: normal;
+    margin-bottom: 30px;
+    text-align: center;
+    margin-top: 30px;
+    background: #2a99bd;
+    height: 50px;
+    line-height: 50px;
+}
+
+.videoFinderH1.selectLiveEventH1 {
+    color: #2a99bd;
+    display: block;
+    font-size: 20px;
+    font-weight: normal;
+    margin-bottom: 10px;
+    text-align: left;
+    height: 30px;
+    line-height: 30px;
+    border-bottom: 1px solid #2a99bd;
+    background-color: transparent;
+}
+
+.closeBut {
+    background-image: url("/images/removebutton.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    height: 22px;
+    opacity: 0.7;
+    position: absolute;
+    right: 15px;
+    top: 13px;
+    width: 22px;
+}
+
+    .closeBut:hover {
+        opacity: 1;
+    }
+
+.loadedContent {
+    background-color: #f9f9f9;
+    display: block;
+    height: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: auto;
+    padding-top: 10px;
+    width: 100%;
+}
+
+.videoBox {
+    display: block;
+    margin: 5px;
+    float: left;
+    width: 165px;
+    height: auto;
+}
+
+.sortAbsolutePL {
+    position: absolute;
+    right: 50px;
+    top: 120px;
+    width: 165px;
+    clear: both;
+}
+
+.sort {
+    display: block;
+    height: 30px;
+    background-color: transparent;
+}
+
+
+
+    .sort input, .sort select {
+        font-family: Roboto,'Helvetica Neue',Helvetica,Arial,sans-serif;
+        font-size: 14px;
+        height: 30px;
+        padding: 2px 2px 2px 10px;
+        width: 185px;
+        background-color: transparent;
+        text-transform: capitalize;
+        border: none;
+        font-weight: bold;
+    }
+
+
+
+
+
+#SearchByKeyWords input {
+    display: inline;
+    float: left;
+    font-size: 14px;
+    line-height: 30px;
+    padding-bottom: 0;
+    margin-left: 0;
+}
+
+.stepWrapper {
+    display: block;
+    float: left;
+    width: 135px;
+    height: 30px;
+    margin-bottom: 10px;
+}
+
+#txtKeyword.searchInput {
+    background-color: transparent;
+    border-color: #ddd;
+    font-size: 14px;
+    height: 32px;
+    padding-left: 10px;
+    width: 232px;
+    margin-left: 0;
+    border-right: none;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    line-height: 30px;
+    margin-top: 0;
+    line-height: 23px;
+    font-family: Roboto-light,'Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+
+@-moz-document url-prefix() {
+    #txtKeyword.searchInput {
+        height: 25px;
+        padding-top: 5px;
+    }
+}
+
+#SearchByKeyWords {
+    display: inline;
+    float: left;
+    font-size: 20px;
+    line-height: 30px;
+    padding-bottom: 0;
+    width: 100%;
+    height: auto;
+    margin-top: 6px;
+}
+
+#popUpOverlay .videoBoxNew {
+    border: none;
+    display: block;
+    float: left;
+    height: 240px;
+    margin: 5px;
+    overflow: hidden;
+    position: relative;
+    text-align: left;
+    width: 15.6666%;
+    margin: 0.5%;
+    max-width: 300px;
+}
+
+
+@-moz-document url-prefix() {
+    .chkGreenMarkStyle {
+        display: inline;
+        float: left;
+        font-size: 20px;
+        line-height: 30px;
+        padding-bottom: 0;
+        width: 20px;
+        height: 20px;
+        margin-top: 6px;
+    }
+}
+
+
+.chkGreenMarkStyle {
+    display: inline;
+    float: left;
+    font-size: 20px;
+    line-height: 30px;
+    padding-bottom: 0;
+    width: 20px;
+    height: 20px;
+    margin-top: 6px;
+}
+
+.btnImport {
+    background-color: #2a99bd;
+    border: medium none;
+    color: #fff;
+    cursor: pointer;
+    display: inline;
+    line-height: 30px;
+    padding: 0;
+    text-align: center;
+    height: 33px;
+    font-size: 14px;
+    width: 50px;
+    text-transform: capitalize;
+}
+
+    .btnImport:hover {
+        background-color: #1f6379;
+    }
+
+.ddlVideoRoomCategoryHolder {
+    margin-right: 15px;
+    width: 100%;
+    float: left;
+    margin-top: 20px;
+}
+
+#SearchByKeyWords .selectStepHolder,
+.inputHolderUrl .selectStepHolder {
+    clear: both;
+}
+
+
+
+#SearchByUrl .inputHolderUrl {
+    width: 320px;
+}
+
+#divUrlCategory{
+margin-top: 15px;
+}
+
+
+.btnFirst {
+    background-image: url('/images/lupa-search-white.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 22px;
+    display: block;
+    float: left;
+    height: 33px;
+    width: 33px;
+    opacity: 0.8;
+    cursor: pointer;
+    background-color: #2a99bd;
+    border: 1px solid #2a99bd;
+}
+
+.txtPopoupBlockigComment {
+    display: none;
+    float: left;
+    width: 400px;
+    margin: auto;
+    font-size: 15px;
+    color: #777;
+    line-height: 25px;
+    text-align: justify;
+}
+
+.txtPopoupBlockigComment {
+    display: none;
+    float: none;
+    width: 300px;
+    margin: auto;
+    font-size: 14px;
+    color: #555;
+    line-height: 25px;
+    text-align: justify;
+    padding-top: 10px;
+    clear: both;
+}
+
+.btnFirst:hover {
+    background-image: url('/images/lupa-search-white.png');
+    background-color: #1e5e72;
+}
+
+#ddlByKeywordsCategory {
+    background-color: transparent;
+}
+
+
+.categoryKeyword {
+    border: 1px solid #ddd;
+    float: left;
+    margin-left: 0;
+    width: 280px;
+}
+
+.categoryKeywordURL {
+        border: 1px solid #ddd;
+    float: none;
+    margin-left: 0;
+    width: 280px;
+    margin: auto;
+}
+
+#loadingDiv .spinner {
+    position: fixed!important;
+}
+
+#divKeywordCategory .ddlCategory,
+#divUrlCategory .ddlCategory {
+    width: 300px;
+    font-family: Roboto-Light,'Helvetica Neue',Helvetica,Arial,sans-serif;
+    outline: none;
+    color: #555;
+}
+#divKeywordCategory .ddlCategory {
+    color: #555;
+}
+
+#divKeywordCategory {
+    margin-top: 15px;
+}
+
+#SearchPublicLibrary .categoryKeyword {
+    width: 135px;
+}
+
+.videosSorting {
+    display: block;
+    float: left;
+    width: 100%;
+}
+
+.videosSortingOpt {
+    display: block;
+    float: none;
+    width: 200px;
+    clear: both;
+    margin: auto;
+    height: 40px;
+    text-align: center;
+}
+
+.videoMinus label {
+    display: block;
+    float: left;
+    height: 20px;
+    line-height: 20px;
+}
+
+.chkGreenMarkStyle[type="checkbox"], .importURLradio[type="radio"], .importYourVideosradio[type="radio"] {
+    float: left;
+}
+
+
+.SearchByUrlInnerHolder {
+    display: block;
+    float: none;
+    width: 320px;
+    height: auto;
+    clear: both;
+    margin: auto;
+}
+
+.checkMatureBoxHolder,
+.checkImportPrivateBoxHolder {
+    width: 320px;
+    margin: auto;
+    clear: both;
+}
+
+
+
+/*MEDIA*/ /*MEDIA*/ /*MEDIA*/ /*MEDIA*/ /*MEDIA*/ /*MEDIA*/ /*MEDIA*/ /*MEDIA*/ /*MEDIA*/ /*MEDIA*/ /*MEDIA*/ /*MEDIA*/
+
+@media (max-width: 1600px) {
+
+    #popUpOverlay .videoBoxNew {
+        border: none;
+        display: block;
+        float: left;
+        height: 240px;
+        margin: 5px;
+        overflow: hidden;
+        position: relative;
+        text-align: left;
+        width: 19%;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    .sortAbsolutePL {
+        right: 12px;
+    }
+}
+
+
+@media (max-width: 1280px) {
+
+
+    #popUpOverlay .videoBoxNew {
+        border: none;
+        display: block;
+        float: left;
+        height: 240px;
+        margin: 5px;
+        overflow: hidden;
+        position: relative;
+        text-align: left;
+        width: 24%;
+    }
+
+    /*#popUpOverlay .addButtonContainer {
+        height: 160px;
+    }*/
+}
+
+
+
+@media (max-width: 1024px) {
+        .closeBut {
+        background-image: url(/images/close_pop-white.png);
+        opacity: 1;
+        right: 5px;
+        top: 33px;
+        width: 35px;
+        height: 35px;
+    }
+
+    #popUpWrapper {
+        width: 100%;
+        padding: 0;
+        padding-top: 30px;
+    }
+}
+
+
+
+@media (max-width:768px) {
+        .etabs li {
+    margin-left: 5px;
+    margin-right: 15px;
+    font-size: 15px;
+}
+    .videoFinderH1 {
+        color: #fff;
+        display: block;
+        font-size: 17px;
+        text-align: center;
+        margin-top: 0;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        height: 40px;
+        line-height: 40px;
+        background: #3684a8;
+    }
+
+
+    .addVideoInstructions,
+    #SearchPublicLibrary .categoryKeyword {
+        margin-left: 5px;
+    }
+
+    #popUpOverlay .videoBoxNew {
+        width: 23.333%;
+        max-width: 23.333%;
+        height: 200px;
+    }
+
+    .btnFirst {
+        background-size: 60% auto;
+    }
+
+    .sortAbsolutePL {
+        position: static;
+        display: none;
+    }
+
+
+    .btnImport {
+        margin-right: 5px;
+        text-transform: capitalize;
+    }
+
+    .searchInput {
+        width: 190px;
+    }
+
+    #divSearchVideobyKeywordForVideoRoomHolder {
+        display: block;
+        float: left;
+        width: 100%;
+    }
+
+    /*#txtKeyword.searchInput {
+        width: 202px;
+    }*/
+}
+
+
+
+@media (max-width:520px) {
+
+        .videoFinderH1.selectLiveEventH1 {
+    text-align: center;
+    height: auto;
+    line-height: 1.3em;
+    width: 90%;
+    margin: auto;
+    border-bottom: none;
+}
+
+    #SearchByUrl .inputHolderUrl {
+    width: 320px;
+}
+    .VideoBoxPlay {
+    background-size: 27px;
+}
+    .VideoBoxRemove {
+    background-size: 20px;
+    background-position: right 7px;
+}
+            .closeBut {
+        top: 22px;
+    }
+
+    #popUpWrapper {
+        padding-top: 20px;
+    }
+}
+
+
+@media (max-width:460px) {
+
+    .etabs li {
+    margin-left: 5px;
+    margin-right: 15px;
+    font-size: 14px;
+}
+    .videoFinderH1 {
+    font-size: 15px;
+}
+    #popUpOverlay .videoBoxNew {
+        width: 45.555%;
+        max-width: 45.555%;
+        height: 200px;
+    }
+}
+
+@media (max-width:320px) {
+    #popUpOverlay .videoBoxNew {
+    height: 170px;
+}
+    .etabs li {
+    margin-left: 0;
+    margin-right: 0;
+    font-size: 14px;
+}
+
+}
+

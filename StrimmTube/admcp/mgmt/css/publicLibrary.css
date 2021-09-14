@@ -1,0 +1,95 @@
+﻿#divTitleUrlHolder h1 {
+  color: #FFFFFF;
+display: block;
+
+font-size: 16px;
+height: 35px;
+line-height: 35px;
+margin-bottom: 0;
+margin-left: auto;
+margin-right: auto;
+text-transform: capitalize;
+width: 44%;
+}
+
+#providers
+{
+   float: left;
+width: 40%;
+height: 35px;
+line-height: 35px;
+}
+#providers li
+{
+    display:inline-block;
+     width:20%;
+    text-align:center;
+}
+#providers li a
+{
+    text-decoration:none;
+    color:#ccc;
+    text-transform:uppercase;
+   
+}
+#providers li a.active
+{
+    color:#fff;
+}
+.videoBoxHolder .divBoxContent
+{
+    width:31%;
+}
+
+.loadedContent {
+  background-color: #f9f9f9;
+  border-bottom: 1px solid #eee;
+  display: block;
+  height: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: auto;
+  padding-top: 10px;
+  width: 100%;
+}
+
+/*.loadMoreBtnHolder {
+    display: block;
+    float: left;
+    width: 100%;
+    height: 50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+classloadMoreVideos {
+    display: block;
+    width: 170px;
+    height: 50px;
+    background: red;
+    margin: auto;
+}*/
+
+
+#loadMoreVideos {
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  background-color: #fff;
+  border-color: -moz-use-text-color -moz-use-text-color #777;
+  border-image: none;
+  border-radius: 0;
+  border-style: none none solid;
+  border-width: medium medium 1px;
+  clear: both;
+  color: #777;
+  cursor: pointer;
+  display: block;
+  font-size: 13px;
+  height: 25px;
+  line-height: 25px;
+  margin: 20px auto auto;
+  text-align: center;
+}

@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html>
+<html >
+<head>
+    <title></title>
+	<link href="Flowplayer7/skin/skin.css" rel="stylesheet" />
+	<link href="css/flowplayer.override.css" rel="stylesheet" />
+    <script src="jquery/jquery-1.11.1.min.js"></script>
+    <script src="jquery/jquery-migrate-1.2.1.min.js"></script>
+    <script src="Flowplayer7/flowplayer.js"></script>
+    <script src="Flowplayer7/cc-button-7.0.0.js"></script>
+    <script src="Flowplayer7/settingsmenu-7.0.0.js"></script>
+    <script src="Flowplayer7/vimeo-7.0.0.js"></script>
+    <script src="Flowplayer7/youtube-7.0.0.js"></script>
+    <script src="Flowplayer7/dailymotion-7.0.0.js"></script>
+    <style>
+        .flowplayer {
+  background-color: #333;
+}
+ 
+/* hide UI while disabled */
+.flowplayer.is-disabled .fp-header,
+.flowplayer.is-disabled .fp-controls,
+.flowplayer.id-disabled .fp-time {
+  visibility: hidden;
+}
+    </style>
+    <script>
+        flowplayer.conf.cuepoints = [5, 10];
+
+        flowplayer(function (api, root) {
+            api.bind("cuepoint", function (e, api, cuepoint) {
+
+                if (cuepoint.time === 10 && /bauhaus/.test(api.video.src)) {
+
+                    $(".fp-ui", root).hide();
+                    $(".info").text("playing 5 second midroll at " + cuepoint.time + " seconds");
+
+                    api.load([
+                      { webm: "//edge.flowplayer.org/functional.webm" },
+                      { mp4: "//edge.flowplayer.org/functional.mp4" },
+                      { flash: "mp4:functional" }
+                    ], function (e, api) {
+
+                        api.disable(true);
+
+                    });
+
+                } else if (cuepoint.time === 5 && /functional/.test(api.video.src)) {
+
+                    api.disable(false).load([
+                      { webm: "//edge.flowplayer.org/bauhaus.webm" },
+                      { mp4: "//edge.flowplayer.org/bauhaus.mp4" },
+                      { flash: "mp4:bauhaus" }
+                    ], function (e, api) {
+
+                        function info() {
+                            $(".fp-ui", root).show();
+                            $(".info").text("feature resumed at 10.2 seconds");
+                        }
+
+                        // seek on start
+                        if (flowplayer.support.seekable) {
+          s                  api.seek(10.2).resume();
+                            info();
+                        } else {
+                            // deal with unreliable event handling e.g. on iOS
+                            // with a custom one-off event handle
+                            api.one("progress.seek", function (e, api) {
+                                api.seek(10.2, function (e, api) {
+                                    api.resume();
+                                    info();
+                                });
+                            });
+                        }
+
+                    });
+                }
+            });
+
+        });
+    </script>
+</head>
+<body>
+    <div data-ratio="0.4167" class="flowplayer fixed-controls">
+        <video>
+            <source type="video/webm" src="//edge.flowplayer.org/bauhaus.webm">
+            <source type="video/mp4" src="//edge.flowplayer.org/bauhaus.mp4">
+            <source type="video/flash" src="mp4:bauhaus">
+        </video>
+    </div>a
+</body>
+</html>

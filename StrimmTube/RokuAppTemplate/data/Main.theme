@@ -1,0 +1,227 @@
+{
+    "name": "Main",
+
+    "backgroundColor": "0x121212",
+
+    "selectorColor": "0xE17600",
+
+    "minTimeGridDuration" : 3600,
+    "EpgScreen": {
+        "timeGrid": {
+            "pastTimeScreenBlendColor": "#ffffff",
+            "showPastTimeScreen": true,
+            "channelInfoFocusable": true,
+
+            "translation": [-30, 450],
+
+            "nowBarWidth": 4,
+            "nowBarBlendColor": "#f21c1c",
+
+            "channelInfoWidth": 260,
+            "infoGridGap": 0,
+
+            "timeBarHeight": 46,
+            "timeLabelColor": "#dddddd",
+            "timeLabelFont": "font:SmallestBoldSystemFont",
+            "focusBitmapUri": "pkg:/images/list_focus.9.png",
+            "focusBitmapBlendColor": "0xE17600",
+
+            "programBackgroundBitmapUri": "pkg:/images/program_background.9.png",
+            "timeBarBitmapUri": "pkg:/images/program_background.png",
+
+            "programTitleFocusedColor": "#e6e6e6",
+            "programTitleColor": "#dddddd",
+            "programTitleFont": "font:SmallestSystemFont"
+        },
+        "buttonGroup": {
+            "translation": [750, 30],
+            "itemSize": [240, 50],
+            "itemSpacing": [20, 0],
+            "focusBitmapUri": "pkg:/images/buttons_frame.9.png",
+            "focusFootprintBitmapUri": "pkg:/images/buttons_frame.9.png",
+            "focusBitmapBlendColor": "0xE17600",
+            "focusFootprintBlendColor": "#808080"
+        },
+        "programPanel": {
+            "translation": [720, 100],
+            "color": "#000000e6",
+            "width": 520,
+            "height": 580
+        },
+        "channelPanel": {
+            "translation": [50, 420],
+            "color": "0xE17600",
+            "width": 690,
+            "height": 180
+        },
+        "programInfo": {
+            "translation": [840, 560],
+            "width": 390,
+            "height": 100,
+            "maxDescLines": 1,
+            "uri": "pkg:/images/frame.9.png",
+            "margins": [10, 10],
+            "blendColor": "0xE17600"
+        },
+        "currentProgramInfo": {
+            "translation": [0, 40],
+            "width": 500,
+            "height": 100,
+            "maxDescLines": 5
+        },
+        "channelHint": {
+            "color": "#dddddd",
+            "font": {"size" : 26, "weight" : "Medium"}
+        },
+        "infoGroup": {
+            "translation": [730, 100]
+        },
+        "aboutHint": {
+            "color": "#dddddd",
+            "font": {"size" : 26, "weight" : "Medium"}
+        },
+        "channelAbout": {
+            "color": "#dddddd",
+            "font": {"size" : 24, "weight" : "Regular"}
+        },
+        "channelTitle": {
+            "color": "0xE17600",
+            "font": {"size" : 28, "weight" : "Bold"}
+        },
+        "networkLogo": {
+            "translation": [1140, 30],
+            "width": 90,
+            "height": 66,
+            "visible": false
+        },
+        "networkTitle": {
+            "translation": [980, 30],
+            "color": "0xE17600",
+            "width": 250,
+            "height": 50,
+            "wrap": true,
+            "vertAlign": "center",
+            "horizAlign": "right",
+            "linespacing": 0,
+            "font": {"size" : 18, "weight" : "Bold"}
+        },
+        "hintsGroupFrame": {
+            "translation": [960, 620],
+            "blendColor": "0xE17600",
+            "width": 360,
+            "height": 60
+        },
+        "hintsGroup": {
+            "translation": [30, 16]
+        },
+        "hintsGroup2": {
+            "translation": [730, 360]
+        },
+        "clickHint" : {
+            "color": "0xdddddd",
+            "font": {"size" : 24, "weight" : "Thin"}
+        },
+        "searchHint" : {
+            "color": "0xdddddd",
+            "font": {"size" : 24, "weight" : "Thin"}
+        },
+        "clickHint2" : {
+            "color": "0xdddddd",
+            "font": {"size" : 24, "weight" : "Thin"}
+        },
+        "fullscreenHint" : {
+            "color": "0xdddddd",
+            "font": {"size" : 24, "weight" : "Thin"}
+        }
+    },
+    "timeLabelFont": {"size" : 20, "weight" : "Medium"},
+    "programTitleFont": {"size" : 20, "weight" : "Regular"},
+    "channelInfo": {
+        "separator": {
+            "color": "0x000000",
+            "height": 2
+        },
+        "favStar": {
+            "blendColor": "0xE17600"
+        },
+        "frame": {
+            "blendColor": "0xE17600"
+        },
+        "title": {
+            "font": {"size" : 24, "weight" : "Medium"}
+        }
+    },
+    "ProgramInfo": {
+        "programSubtitle": {
+            "color": "#dddddd",
+            "font": {"size" : 20, "weight" : "Regular"}
+        },
+        "programDesc": {
+            "color": "#dddddd",
+            "font": {"size" : 20, "weight" : "Regular"}
+        },
+        "programTitle": {
+            "color": "#dddddd",
+            "font": {"size" : 22, "weight" : "Medium"}
+        }
+    },
+    "onScreenInfo": {
+        "favStar": {
+            "blendColor": "0xE17600",
+            "width": 18,
+            "height": 18
+        },
+        "channelName": {
+            "color": "#dddddd"
+        }
+    },
+    "searchScreen": {
+        "keyboard": {
+            "translation": [100, 100]
+        },
+        "background": { "color": "0x000000eb" },
+        "results":  {
+            "focusBitmapUri": "pkg:/images/buttons_frame.9.png",
+            "focusFootprintBitmapUri": "pkg:/images/buttons_frame.9.png",
+            "focusBitmapBlendColor": "0xE17600",
+            "focusFootprintBlendColor": "#808080",
+            "itemSize": [620, 50],
+            "translation": [580, 100]
+        }
+    },
+    "ButtonIconMarkup": {
+        "buttonLabel": {
+            "color": "0xcccccc",
+            "font": {"size" : 22, "weight" : "Medium"}
+        }
+    },
+    "AboutScreen": {
+        "appTitle": {
+            "color": "0xEBEBEB",
+            "font": {"size" : 28, "weight" : "Bold"}
+        },
+        "aboutText": {
+            "color": "0xcccccc",
+            "font": {"size" : 22, "weight" : "Medium"}
+        },
+        "version": {
+            "color": "0xdddddd",
+            "font": {"size" : 20, "weight" : "Medium"}
+        }
+    },
+    "channelInfoFocusedTextColor": "0x000000",
+    "channelInfoTextColor": "0xdddddd",
+    "channelInfoFocusedBackgroundColor": "0xE17600",
+    "channelInfoBackgroundColor": "0x12121200",
+    "searchResultHighlightColor": "0xE17600",
+    "searchResultColor": "#e6e6e6",
+
+    "Large": "font:LargeSystemFont",
+    "LargeBold": "font:LargeBoldSystemFont",
+    "Medium": "font:MediumSystemFont",
+    "MediumBold": "font:MediumBoldSystemFont",
+    "Small": "font:SmallSystemFont",
+    "SmallBold": "font:SmallBoldSystemFont",
+    "Smallest": "font:SmallestSystemFont",
+    "SmallestBold": "font:SmallestBoldSystemFont"
+}

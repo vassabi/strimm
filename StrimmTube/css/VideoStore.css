@@ -1,0 +1,676 @@
+﻿body {
+}
+
+.vsVideoBox {
+    border: 1px solid #ddd;
+    display: block;
+    float: left;
+    height: 240px;
+    margin: 4px;
+    overflow: hidden;
+    text-align: left;
+    width: 100%;
+    position:relative;
+}
+
+.vsVideoInfoLabel {
+    color: #555;
+    float: left;
+    font-size: 10px;
+    font-weight: bold;
+    line-height: 15px;
+    padding-right: 5px;
+}
+
+.vsVideoContent {
+    color: #555;
+    float: left;
+    font-size: 10px;
+    line-height: 15px;
+    padding-left: 3px;
+}
+
+.vsVideoOwnerHolder,
+.vsVideoIDHolder,
+.vsVideoDurationHolder,
+.vsVideoCategoryHolder,
+.vsVideoViewsHolder,
+.vsDateAdded,
+.vsVideoRentalFeeHolder {
+    display: block;
+    float: left;
+    width: 100%;
+}
+
+.vsVideoInfoLabel {
+    color: #555;
+    float: left;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 17px;
+    padding-right: 5px;
+}
+
+.vsVideoContent {
+    color: #555;
+    float: left;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 17px;
+    padding-right: 5px;
+}
+
+
+        #divHeader {
+            display: block;
+            float: left;
+            width: 100%;
+            position: relative;
+        }
+
+
+.vsPageTitle {
+    position: absolute;
+    bottom: 50%;
+    left: 45%;
+    color: #fff;
+    font-size: 33px;
+    z-index: 2;
+    font-weight: lighter;
+    
+    letter-spacing: 3px;
+    text-shadow: 1px 2px 7px #ccc;
+}
+
+.pageVStitle {
+    display: block;
+    float: left;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    color: #2a99bd;
+    font-size: 20px;
+    padding: 20px;
+    padding-bottom: 0;
+    border-bottom: 1px solid #2a99bd;
+    margin-top: 0;
+    margin-left: 0;
+}
+
+.vsActionContainer {
+    display: block;
+    width: 100%;
+    height: 40px;
+    float: left;
+    background: #eee;
+}
+
+.ddlVideoStoreCategory {
+    display: block;
+    float: left;
+    width: 150px;
+}
+
+.vsCategoryFilter {
+    display: block;
+    float: left;
+}
+
+.vsSearch {
+    border: 1px solid #2a99bd;
+    display: block;
+    float: left;
+    width: 400px;
+    padding-left: 10px;
+    font-size: 13px;
+    height: 35px;
+    line-height: 24px;
+    background: transparent;
+}
+
+
+.vsSearchVideosSortingInput {
+    display: block;
+    float: left;
+    width: 20px;
+    height: 20px;
+    margin-top: 10px;
+    color: red;
+}
+
+.vsVideoSorting {
+    color: #555;
+    font-size: 15px;
+    height: 40px;
+    line-height: 40px;
+    display: block;
+    float: left;
+    margin-right: 10px;
+}
+
+
+#divLoadMore {
+    display: block;
+    float: left;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    text-align: center;
+    width: 100%;
+    font-size: 13px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#divActionsHolder {
+    display: block;
+    float: left;
+    height: 45px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    position: relative;
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+}
+
+.actionSearchContainer {
+    display: block;
+    float: left;
+    width: 100%;
+    height: 45px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+.vsSearchMidHolder {
+    display: block;
+    width: 800px;
+    margin: auto;
+}
+
+#divActionRightContainer {
+    display: block;
+    float: right;
+    margin-right: 50px;
+}
+
+#divVideoCategoryFilter {
+    width: 120px;
+    float: left;
+    display: block;
+    margin-right: 20px;
+    border: none;
+    background: transparent;
+}
+
+#divVideoSort {
+    width: 120px;
+    float: left;
+    display: block;
+    margin-right: 20px;
+    border: none;
+    background: transparent;
+}
+
+#rdVideosInVideoRoom[type="radio"],
+#rdVideoOwners[type="radio"] {
+    -webkit-appearance: none;
+    outline: none;
+    width: 22px;
+    height: 22px;
+    background-color: #eee;
+}
+
+
+#rdVideosInVideoRoom[type="radio"]:checked,
+#rdVideoOwners[type="radio"]:checked{
+        -webkit-appearance: none;
+    outline: none;
+    background-image: url('/images/checkIcons/check-mark-green.png');
+    width: 22px;
+    height: 22px;
+    background-size: 100%;
+}
+
+#ddlVideoStoreVideos {
+  background: transparent none repeat scroll 0 0;
+  border: medium none;
+  color: #555;
+  display: block;
+  float: left;
+  font-size: 15px;
+  height: 30px;
+  text-transform: lowercase;
+  width: 150px;
+  height: 33px;
+}
+
+.categoryKeyword {
+    border: 1px solid #999;
+    float: left;
+    margin-left: 0;
+}
+.styled-selectSort {
+    background-color: #f9f9f9;
+    border: 1px solid #999;
+    background-image: url("/images/ddl-Opt.png");
+    background-position: right center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    width: 160px;
+}
+
+.styled-selectSortSearch {
+    background-color: transparent;
+    background-image: url("/images/ddl-Opt.png");
+    background-position: right center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    width: 155px;
+    cursor: pointer;
+    margin-right: 20px;
+    margin-left: 0;
+}
+
+.ddlVideoStoreCategory {
+    display: block;
+    float: left;
+    width: 170px;
+    border: none;
+    background: transparent;
+    height: 33px;
+}
+
+#divVideosHolder {
+    display: block;
+    float: left;
+    width: 100%;
+    min-height: 450px;
+}
+
+.addButtonContainer {
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.vsActionsVideoBoxHolder {
+  box-shadow: 0 1px 3px #999; 
+    cursor: pointer;
+    display: block;
+    float: left;
+  position: absolute; 
+    width: 100%;
+    z-index: 20;
+}
+
+.videoBoxInfo {
+    display: block;
+    float: left;
+    width: 98%;
+    height: 80px;
+    position: absolute;
+    bottom: 0;
+    background-color: #eee;
+    padding-left: 2%;
+}
+
+.vsVideoThumbHolder {
+    background-color: #ddd;
+    display: block;
+    float: left;
+    height: 70%;
+    width: 100%;
+}
+
+
+.vsVideoBoxPlay {
+    background-image: url("/images/playbuttonWhiteNew.png");
+    background-position: left 5px;
+    background-repeat: no-repeat;
+    background-size: 20% auto;
+    cursor: pointer;
+    display: block;
+    height: 40px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 50%;
+    z-index: 2;
+    display: none;
+}
+
+.addButtonHolder {
+    background-image: url("/images/add-middle.png");
+    background-repeat: no-repeat;
+    cursor: pointer;
+    display: none;
+    height: 110px;
+    position: absolute;
+    width: 100%;
+    background-position: center center;
+}
+.vsVideoTitle {
+    display: block;
+    float: left;
+    width: 98%;
+    margin-top: 10px;
+    font-size: 15px;
+    color: #000;
+    margin-bottom: 7px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.addButtonHolder:hover {
+    background-image: url("/images/add-middle-hover.png");
+}
+
+.vsAncSearch {
+    background-color: #2a99bd;
+    color: #fff;
+    display: block;
+    float: left;
+    font-size: 17px;
+    height: 39px;
+    line-height: 41px;
+    margin-right: 20px;
+    text-align: center;
+    text-transform: capitalize;
+    width: 120px;
+}
+
+.vsAncSearch:hover {
+    background-color: #286c82;
+}
+
+/*EXPANDED MENU*/
+
+.gridder{margin:0px;padding:0px;list-style-type:none}
+.gridder-list{display:inline-block;vertical-align:top}
+.gridder-show{display:block;float:left;width:100%;position:relative;background:#EEE url("../images/loading-spin.svg") no-repeat center}
+.gridder-show.loading{background:#EEE url("../images/loading-spin.svg") no-repeat center}
+.gridder-content{display:none}.gridder-list{width:15.83333%}
+.gridder-list:nth-child(n){margin-bottom:1%;margin-right:1%}
+.gridder-list:nth-of-type(6n){margin-right:0;margin-bottom:0}
+.gridder-show{padding:20px;background:#555;margin-bottom:1%}
+.gridder-navigation .gridder-nav.disabled{opacity:.5}
+.gridder-list{cursor:pointer}
+.gridder-list:hover{opacity:0.8}
+.hasSelectedItem .gridder-list{opacity:.5}
+.hasSelectedItem .gridder-list.selectedItem{opacity:1}
+
+.expandPanelContentWrapper {
+   
+}
+
+.expandPanelContentWrapper .addButtonContainer
+{
+  
+}
+.expandPanelContentWrapper .selectedVideoThumbWrapper
+{
+width: 30%;
+float: left;
+}
+
+    .expandPanelContentWrapper .expActionsVideoBoxHolder {
+        height: 225px;
+        width: 352px;
+        position: relative;
+        float: right;
+        margin-top: 10px;
+        border: 1px solid #ccc;
+    }
+
+    .expandPanelContentWrapper .videoPopularityHolder {
+        display: block;
+        float: left;
+    }
+
+    .expandPanelContentWrapper .videoPopularityHolder {
+        display: block;
+        float: left;
+        width: 100%;
+        text-align: right;
+        margin-top: 35px;
+    }
+
+    .expandPanelContentWrapper .videoPopularityHolder span {
+    width: 15%;
+    display: block;
+    float: right;
+    margin-right: 10px;
+    color: #ccc;
+    font-size: 15px;
+    height: 25px;
+    line-height: 25px;
+    margin-top: 0;
+    }
+
+    .expandPanelContentWrapper .sameCreatorVideosContent {
+        clear: both;
+        float: left;
+        width: 100%;
+    }
+
+    .expandPanelContentWrapper .videoBoxNew.expandedBox {
+    float: left;
+    width: 35%;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    height: 155px;
+        border: 1px solid #ccc;
+    }
+
+    .expandPanelContentWrapper .videoBoxInfo {
+        display: block;
+        float: left;
+        width: 98%;
+        height: 60px;
+       position: static;
+        padding-left: 2%;
+        background-color: #ddd;
+    }
+    .expandPanelContentWrapper .sameCreatorVideosHolder {
+    float: left;
+    width: 25%;
+    }
+
+   .expandPanelContentWrapper  .vsVideoThumbHolder {
+    background-color: #555;
+    display: block;
+    float: left;
+    height: 95px;
+    width: 100%;
+}
+
+     .expandPanelContentWrapper  .vsVideoTitle {
+    display: block;
+    float: left;
+    width: 98%;
+    margin-top: 7px;
+    font-size: 14px;
+    color: #000;
+    margin-bottom: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+        .expandPanelContentWrapper .sameCreatorVideosHolder .spnSameCreator {
+            float: left;
+            display: block;
+            font-size: 14px;
+            text-transform: capitalize;
+            text-decoration: underline;
+            color: #ccc;
+            margin-bottom: 10px;
+        }
+
+    .expandPanelContentWrapper .licenseHolder {
+    display: block;
+    float: left;
+    width: 100%;
+    background: red;
+    width: 230px;
+    float: right;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    color: #fff;
+    clear: both;
+    margin-top: 25px;
+    opacity: 0.7;
+    }
+
+.videoQuality380,
+.videoQuality480,
+.videoQuality720 {
+    color: #555;
+    background-color: #ccc;
+    height: 25px;
+    width: 30px; 
+    border-radius: 4px;
+    padding-left: 3px;
+    padding-right: 3px;
+    line-height: 25px;
+}
+
+.expandPanelContentWrapper .infoListHolder {
+    float: left;
+    display: block;
+    width: 25%;
+    color: #ccc;
+    font-size: 14px;
+    text-transform: capitalize;
+    line-height: 30px;
+    margin-left: 5%;
+    margin-top: 25px;
+}
+
+.expVideoRoomUrl {
+    color: #ccc;
+    text-decoration: underline;
+}
+
+.videoCreator {
+    text-decoration: underline;
+}
+
+.vsVideoTitleExpView {
+    color: #fff;
+}
+.expandPanelContentWrapper .infoListHolder ul li .expVideoRoomUrl
+{
+    width:230px;
+}
+.expandPanelContentWrapper .infoListHolder ul li span{
+    display:block;
+    float:left;
+    width:40%;
+    margin-right:10px;
+}
+    
+.expandPanelContentWrapper .infoListHolder ul li a
+{
+  display:block;
+    float:left;
+  
+    margin-right:10px;
+}
+
+.expVideoBoxPlay {
+    background-image: url("/images/playIconGoToChannel.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 80%;
+    cursor: pointer;
+    display: block;
+    height: 99%;
+    /* left: 0; */
+    position: absolute;
+    /* top: 0; */
+    width: 100%;
+    z-index: 2;
+    opacity: 0.7;
+}
+
+    .expVideoBoxPlay:hover {
+            opacity: 1;
+    }
+
+.expandPanelContentWrapper .sameCreatorVideosHolder a{
+    /* float: left; */
+    display: block;
+    text-align: center;
+    color: #ddd;
+    font-size: 14px;
+    text-transform: capitalize;
+    text-decoration: underline;
+    clear: both;
+    /* margin-top: 10px; */
+    padding-top: 10px;
+    /* padding-bottom: 2px; */
+}
+
+
+.gridder-navigation {
+    display: block;
+    float: left;
+    width: 100%;
+    background: #555;
+    height: 40px;
+    position: relative;
+    margin-bottom: 20px;
+
+}
+
+.gridder-close {
+    position: absolute;
+    right: 45px;
+    color: transparent;
+    background-image: url("/images/closeBut.png");
+    background-repeat: no-repeat;
+    width: 45px;
+    height: 45px;
+    opacity: 0.7;
+}
+
+    .gridder-close:hover {
+        opacity: 1;
+    }
+
+
+.gridder-navigation .prev,
+.gridder-navigation .next {
+    position: absolute;
+    background-image: url("/images/slideArrows/slideArrowHide.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    color: transparent;
+    opacity: 0.7;
+}
+
+.gridder-navigation .prev {
+  left: 45%;  
+}
+
+.gridder-navigation .next {
+    right: 45%;
+    background-image: url('/images/slideArrows/slideArrowShow.png');
+}
+
+    .gridder-navigation .next:hover,
+    .gridder-navigation .prev:hover {
+        background-color: transparent;
+        color: transparent;
+        opacity: 1;
+    }
+
+
+

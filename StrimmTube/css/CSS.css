@@ -1,0 +1,7375 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+
+/*@font-face {
+    font-family: 'OpenSans-Regular';
+    src: url('/Fonts/league-gothic.woff')  format('woff');
+}*/
+
+@font-face {
+    font-family: 'Roboto-Bold';
+    src: url('/Fonts/Roboto-Bold.ttf') format('truetype');
+}
+
+
+@font-face {
+    font-family: 'brubeck-ah.regular';
+    src: url('/Fonts/brubeck-ah.regular.woff') format('woff');
+}
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url('/Fonts/Roboto-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Roboto-Light';
+    src: url('/Fonts/Roboto-Light.ttf') format('truetype');
+}
+@font-face {
+  font-family: flowplayer;
+  src: url("/Flowplayer7/skin/icons/flowplayer.eot?#iefix") format("embedded-opentype"), url("/Flowplayer7/skin/icons/flowplayer.woff2") format("woff2"), url("/Flowplayer7/skin/icons/flowplayer.woff") format("woff"); }
+
+body {
+    background-color: #f9f9f9;
+    /*font-family: 'Source Sans Pro','Helvetica Neue',Helvetica,Arial,sans-serif;*/
+    /*font-family:'Lato',arial,sans-serif;*/
+    margin: 0;
+    padding: 0;
+    font-family: Roboto-Regular,'Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-size: 14px;
+}
+
+
+
+#topPlaceHolder {
+    height: 70px;
+    display: block;
+    width: 100%;
+    /*margin-bottom: 10px;*/
+}
+
+.mainContentWrapper {
+    background-color: transparent;
+    display: block;
+    height: auto;
+    margin: auto;
+    max-width: 1320px;
+    min-width: 302px;
+    width: 100%;
+}
+
+/*---------------------------------------------- common css--------------------------------------------------*/
+ul.dropdown li {
+    display: block;
+}
+/*ul.dropdown
+{
+    width:172px;
+}*/
+#topMenu {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    background-color: #fff;
+    height: 70px;
+}
+
+.TLinfoTopPannelBrCH {
+    display: none;
+}
+
+
+
+#divBoardContent {
+    float: left;
+    margin: auto;
+    width: 100%;
+}
+
+#divBoardContent_Update {
+    width: 95%;
+    margin: 20px;
+    min-height: 300px;
+}
+
+@font-face {
+    font-family: 'OpenSans-Light';
+    src: url('/Fonts/OpenSans-Light.woff') format('woff');
+}
+
+/*@font-face {
+    font-family: OpenSans-Light;
+    src: url('/Fonts/OpenSans-Light.ttf');
+}*/
+
+@font-face {
+    font-family: OpenSans-Light;
+    src: url('/Fonts/OpenSans-Light.ttf');
+}
+
+@font-face {
+    font-family: OpenSans-Regular;
+    src: url('/Fonts/OpenSans-Regular.ttf');
+}
+
+@font-face {
+    font-family: OpenSans-Bold;
+    src: url('/Fonts/OpenSans-Bold.ttf');
+}
+
+#divTitleUrlHolder h1 {
+    color: #FFFFFF;
+    display: block;
+    font-size: 16px;
+    height: 35px;
+    line-height: 35px;
+    margin-bottom: 0;
+    margin-left: 296px;
+    text-transform: uppercase;
+    width: 444px;
+}
+
+.details {
+    color: #2a99bd;
+    text-transform: capitalize;
+    padding-left: 10px;
+    text-decoration: underline;
+}
+.unsubscribe {
+    display: block;
+    height: 37px;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+    .details:hover {
+        color: #f3521a;
+    }
+
+.actionBtnHolder {
+    display: block;
+    float: left;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+.actionBtn {
+    display: block;
+    height: 30px;
+    padding: 5px;
+    color: #fff;
+    background: #05c705;
+    text-align: center;
+    text-transform: capitalize;
+    width: 160px;
+    margin: auto;
+    line-height: 30px;
+    border-radius: 4px;
+    font-size: 15px;
+    font-family: Roboto-Regular,'Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+
+    .actionBtn:hover {
+        background: #05e005;
+    }
+
+
+.pageTitle {
+    color: #f9f9f9;
+    display: block;
+    font-size: 41px;
+    font-weight: normal;
+    margin: auto;
+    padding-bottom: 40px;
+    padding-top: 40px;
+    text-align: left;
+    text-transform: capitalize;
+    width: 355px;
+}
+
+.startWatchingOrCreate {
+    color: #40d304;
+}
+
+
+    .startWatchingOrCreate:hover {
+        border-bottom: 1px solid #4bfe02;
+        color: #4bfe02;
+    }
+
+
+.blueNav {
+    width: 100%;
+    min-width: 320px;
+    max-width: 1280px;
+    margin: auto;
+    text-align: center;
+    clear: both;
+    display: none;
+}
+
+    /*.blueNav a {
+        display: inline-block;
+        
+        font-size: 13px;
+        text-transform: uppercase;
+        color: #ddd;
+        line-height: 38px;
+        letter-spacing: 1px;
+        padding-left: 2%;
+        font-weight: bold;
+    }*/
+    .blueNav a {
+        border-left: 1px solid #ddd;
+        color: #fff;
+        font-size: 13px;
+        font-weight: bold;
+        letter-spacing: 1px;
+        line-height: 44px;
+        padding-left: 1%;
+        text-align: center;
+        text-transform: uppercase;
+        padding-right: 1%;
+    }
+
+    .blueNav .Welcome {
+        border: none;
+    }
+
+    .blueNav a:active {
+        color: #fc0;
+    }
+
+    .blueNav a:hover {
+        color: #fc0;
+    }
+
+    .blueNav .welcome {
+        padding-left: 0;
+    }
+/*----------------------------------------------  / common css-----------------------------------------*/
+
+.gradient150 {
+    background-image: -webkit-gradient(linear, left top, left bottom, from( #999 /*{c-bup-background-start}*/ ), to( #f9f9f9 /*{c-bup-background-end}*/ )); /* Saf4+, Chrome */
+    background-image: -webkit-linear-gradient( #999 /*{c-bup-background-start}*/, #f9f9f9 /*{c-bup-background-end}*/ ); /* Chrome 10+, Saf5.1+ */
+    background-image: -moz-linear-gradient( #999 /*{c-bup-background-start}*/, #f9f9f9 /*{c-bup-background-end}*/ ); /* FF3.6 */
+    background-image: -ms-linear-gradient( #999 /*{c-bup-background-start}*/, #f9f9f9 /*{c-bup-background-end}*/ ); /* IE10 */
+    background-image: -o-linear-gradient( #999 /*{c-bup-background-start}*/, #f9f9f9 /*{c-bup-background-end}*/ ); /* Opera 11.10+ */
+    background-image: linear-gradient( #999 /*{c-bup-background-start}*/, #f9f9f9 /*{c-bup-background-end}*/ );
+    background-size: auto 150px;
+    background-repeat: repeat-x;
+}
+
+
+
+#form1 {
+    max-width: 100%;
+    overflow: hidden;
+}
+
+a {
+    cursor: pointer;
+}
+
+
+p {
+    font-size: 14px;
+    color: #555;
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+
+
+#divWrapper {
+    width: 100%;
+    margin: 0;
+    display: block;
+    background-color: #fc0;
+    min-height: 700px;
+}
+
+#content {
+    background-color: transparent;
+    float: left;
+    margin: auto;
+    min-height: 600px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#divTop {
+    display: none;
+    height: 70px;
+    margin: auto;
+    max-width: 1520px;
+    width: 100%;
+    position: relative;
+    margin-top: 0;
+}
+
+#divTopAdmin {
+    display: block;
+    height: 70px;
+    margin: auto;
+    max-width: 1520px;
+    width: 100%;
+    position: relative;
+    margin-top: 0;
+}
+
+
+#divLogo {
+    display: block;
+    width: 170px;
+    height: 77px;
+    float: left;
+    background-repeat: no-repeat;
+    margin-top: 15px;
+}
+
+    #divLogo img {
+        display: block;
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+    }
+
+
+#divTopNav {
+    color: #777;
+    display: block;
+    float: right;
+    height: 35px;
+    line-height: 35px;
+    margin-right: 20px;
+    width: auto;
+}
+
+    #divTopNav:hover {
+        color: #000;
+    }
+
+
+.secondaryMenu {
+    display: none;
+}
+
+#divTopWrapper {
+    border-bottom: 2px solid #2a99bd;
+    box-shadow: 0 0 5px #999;
+    position: relative;
+    width: 100%;
+    z-index: 9999;
+    height: 70px;
+    display: none;
+}
+
+#topLeftHolder {
+    display: block;
+    float: left;
+    height: 35px;
+    margin-top: 25px;
+    width: 375px;
+}
+
+#topRightHolder {
+    display: block;
+    padding-top: 25px;
+    position: relative;
+}
+
+#topRightHolderBL {
+    display: block;
+    padding-top: 25px;
+}
+
+    #topRightHolderBL .spnCreateChannel {
+        background-color: #05C705;
+        border-radius: 2px;
+        color: #fff;
+        cursor: pointer;
+        display: block;
+        float: left;
+        font-size: 17px;
+        font-weight: normal;
+        height: 35px;
+        letter-spacing: 0;
+        line-height: 34px;
+        margin-left: 5px;
+        margin-right: 5px;
+        text-align: center;
+        text-transform: capitalize;
+        width: 145px;
+    }
+
+        #topRightHolderBL .spnCreateChannel:hover {
+            background: #05e005;
+        }
+
+
+
+
+#divTopNavAfterLogin {
+    /*float: left;
+    position: relative;
+    width: 81%;*/
+    width: 100%;
+}
+
+#divTopNav a
+/*#divTopNavAfterLogin a*/ {
+    color: #000;
+    display: block;
+    float: right;
+    font-size: 16px;
+    background-image: none;
+    letter-spacing: 0;
+    text-align: center;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+    #divTopNav a:hover
+    /*#divTopNavAfterLogin a:hover*/ {
+        color: #2a99bd;
+    }
+
+.leftTopHolderBeforeLogin {
+    display: block;
+    float: left;
+    margin-top: 25px;
+}
+
+.businessSolBeforeLog {
+    color: #555;
+    cursor: pointer;
+    display: block;
+    float: left;
+    height: 35px;
+    line-height: 35px;
+    margin-left: 15px;
+}
+
+    .businessSolBeforeLog:hover {
+        color: #2a99bd;
+    }
+
+#divTopNav #LogIn {
+    border-right: 1px solid #ccc;
+    padding-left: 10px;
+    text-align: left;
+    padding-right: 5px;
+    /* line-height: 35px; */
+    background-image: none;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+#divTopNav a.signUpFree {
+    padding-right: 10px;
+    text-align: right;
+    width: 95px;
+    background-image: none;
+}
+
+.InsetShadow {
+    -webkit-box-shadow: inset 0 0 17px #000;
+    -moz-box-shadow: inset 0 0 17px #000;
+    -ms-box-shadow: inset 0 0 17px #000;
+    -o-box-shadow: inset 0 0 17px #000;
+    box-shadow: inset 0 0 17px #000;
+}
+
+
+.mainTopHoplder {
+    display: block;
+    float: left;
+    width: 100%;
+    height: 70px;
+    box-shadow: 0 0 15px #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+.mainMenuBL,
+.mobileMenu,
+.mainMenuBL.active,
+.mobileMenu.active {
+    background-image: url(/images/menu/menu-black.png);
+    width: 32px;
+    height: 32px;
+    background-size: 32px;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 23px;
+    left: 22px;
+    background-position: center;
+    cursor: pointer;
+}
+    .mainMenuBL.active,
+    .mobileMenu.active {
+       background-image: url(/images/close_pop.png);
+    background-size: 140%;
+    }
+
+
+    .mobileMenu,
+    .mobileMenu.active {
+            top: 28px;
+    }
+
+.mobileMenuOpen,
+.mainMenuBLOpen {
+    width: 320px;
+    height: 100vh;
+    background-color: #144554;
+    position: absolute;
+    left: 0;
+    top: 70px;
+    z-index: 2;
+    display: none;
+    opacity: 0.95;
+}
+
+
+
+.divLogo {
+    display: block;
+    width: 210px;
+    height: auto;
+    float: none;
+    background-repeat: no-repeat;
+    padding-top: 7px;
+    margin: auto;
+}
+    .divLogo img {
+        width: 100%;
+    }
+
+.createChannelTopRRight {
+    background-color: #00b014;
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+    border-radius: 4px;
+    text-transform: capitalize;
+    padding-left: 10px;
+    padding-right: 10px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+    .createChannelTopRRight:hover {
+        background-color: #35a807;
+    }
+
+.mainSignIn {
+    width: auto;
+    line-height: 40px;
+    text-align: center;
+    color: #000;
+    border-radius: 4px;
+    text-transform: capitalize;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 180px;
+}
+
+.pricingHome,
+.pricingHomeAfter {
+    line-height: 33px;
+    text-align: center;
+    color: #000;
+    text-transform: capitalize;
+    cursor: pointer;
+    position: absolute;
+    top: 23px;
+    right: 250px;
+    width: 100px;
+    border-radius: 0;
+    border-right: 1px solid #000;
+}
+
+.pricingHomeAfter {
+    right: 280px;
+}
+    .pricingHome:hover,
+    .pricingHomeAfter:hover {
+   color: #2db9e7;
+    }
+
+
+#exploreBusinessOpt {
+    background-color: #2db9e7;
+    float: right;
+    background-image: none;
+    background-position: 5px;
+    background-repeat: no-repeat;
+    background-size: 40px;
+    color: #fff;
+    border-radius: 4px;
+    font-size: 15px;
+    font-family: Roboto-bold,'Helvetica Neue',Helvetica,Arial,sans-serif;
+    display: block;
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    position: absolute;
+    top: 20px;
+    right: 10px;
+}
+
+
+    #exploreBusinessOpt:hover {
+        background-color: #ffa200;
+        text-decoration: none;
+    }
+
+    .mainSignIn:hover {
+      color: #2db9e7;
+    }
+
+
+#275MenuHolder {
+    position: relative;
+    float: left;
+    margin-top: 7px;
+}
+
+#divTopMenu {
+    border-right: 1px solid #999;
+    color: #555;
+    display: block;
+    font-size: 17px;
+    font-weight: normal;
+    height: 35px;
+    letter-spacing: 0;
+    line-height: 35px;
+    margin-right: 5px;
+    text-transform: capitalize;
+    width: 75px;
+}
+
+    #divTopMenu:hover {
+        color: #2a99bd;
+    }
+
+#MenuImg,
+#helloImg {
+    cursor: pointer;
+    display: block;
+    float: right;
+    margin-left: 10px;
+    margin-right: 5px;
+    color: #333;
+    float: right;
+    font-size: 9px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    transform: scale(-2, 1);
+    width: 10px;
+}
+
+#menuTopList, #helloMenuList {
+    display: none;
+    position: absolute;
+    top: 70px;
+}
+
+#helloMenuList {
+    display: block;
+}
+
+#menuTopList ul {
+    background-color: #2a99bd;
+    border-radius: 0;
+    display: block;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    width: 200px;
+    border-top: 1px solid #2a99bd;
+}
+
+#helloMenuList ul {
+    background-color: #2a99bd;
+    border-radius: 0;
+    display: none;
+    width: 155px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+    #menuTopList ul li,
+    #helloMenuList ul li {
+        display: block;
+        line-height: 25px;
+        margin-left: 20px;
+        margin-right: 5px;
+        padding: 7px;
+        text-transform: capitalize;
+    }
+
+
+        #menuTopList ul li a,
+        #helloMenuList ul li a {
+            color: #eee;
+            font-size: 17px;
+        }
+
+            #menuTopList ul li a:hover,
+            #helloMenuList ul li a:hover {
+                color: #fff;
+                text-decoration: underline;
+            }
+
+/*.ShadowDropDown {
+    -webkit-box-shadow: 0 -5px 15px #000;
+    -moz-box-shadow: 0 -5px 15px #000;
+    -ms-box-shadow: 0 -5px 15px #000;
+    -o-box-shadow: 0 -5px 15px #000;
+    box-shadow: 0 -5px 15px #000;
+}*/
+
+#divSlider {
+    border-bottom: 2px solid #CECECE;
+    height: 450px;
+    overflow: hidden;
+    width: 100%;
+}
+
+#sliderBlock {
+    margin-left: 50%;
+    display: block;
+    padding-top: 100px;
+}
+
+#divSlider h1, #divSlider h2, .actionButton {
+    display: block;
+    margin-bottom: 20px;
+}
+
+#divSlider h1 {
+    color: #becfdf;
+    font-size: 29px;
+    letter-spacing: 9px;
+    line-height: 46px;
+    font-weight: normal;
+    opacity: 0.7;
+}
+
+#divSlider h2 {
+    font-size: 23px;
+    color: #ddd;
+    letter-spacing: 2px;
+    line-height: 35px;
+}
+
+//actionButton {
+    width: 120px;
+    color: #fff;
+    background-color: #2db9e7;
+    position: absolute;
+    top: 440px;
+    left: 50px;
+    display: block;
+    height: 37px;
+    line-height: 37px;
+    text-align: center;
+    border-radius: 4px;
+}
+
+    .actionButton:hover {
+        color: #fff;
+        background-color: #002953;
+    }
+
+#slider1, #slider2, #slider3 {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: auto 100%;
+}
+
+#slider1 {
+    background-color: #0F1A35;
+    background-image: url("/images/slider/1.png");
+    border-top: 3px solid #CCCCCC;
+}
+
+2 #slider2 {
+    background-image: url(/images/slider/2.png);
+    background-color: #182045;
+}
+
+#slider3 {
+    background-image: url(/images/slider/3.png);
+    background-color: #009999;
+}
+
+#divContent {
+    background-color: #f9f9f9;
+    background-image: url("/images/hr-shadow-frontpage-960.png");
+    background-position: center top;
+    background-repeat: no-repeat;
+    height: auto;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    width: 100%;
+    min-width: 302px;
+}
+
+    #divContent .container {
+        width: 1280px;
+    }
+
+
+
+
+.homePic {
+    display: block;
+    float: left;
+    height: auto;
+    margin: 0 10px 10px;
+    width: 80px;
+}
+
+.container {
+    display: block;
+    margin: auto;
+}
+
+#homeBox, #homeBox3, #homeBox2 {
+    border-left: 1px solid #fff;
+    border-right: 1px solid #DDDDDD;
+    display: block;
+    float: left;
+    margin-top: 10px;
+    min-height: 190px;
+    width: 32%;
+    max-width: 400px;
+}
+
+
+    #homeBox.first {
+        border-left: none;
+    }
+
+    #homeBox h3, #homeBox2 h3, #homeBox3 h3 {
+        color: #2A99BD;
+        display: block;
+        float: left;
+        font-size: 18px;
+        line-height: 22px;
+        margin-left: 4%;
+        margin-right: 4%;
+        text-align: center;
+        text-transform: uppercase;
+        width: 92%;
+        margin-bottom: 10px;
+    }
+
+
+
+#homeBox3 {
+    border-right: none;
+}
+
+
+
+    #homeBox p img, #homeBox2 p img, #homeBox3 p img {
+        -webkit-box-shadow: 2px 2px 6px #999999;
+        -moz-box-shadow: 2px 2px 6px #999999;
+        -ms-box-shadow: 2px 2px 6px #999999;
+        -o-box-shadow: 2px 2px 6px #999999;
+        box-shadow: 2px 2px 6px #999999;
+        float: left;
+        height: 65px;
+        margin-bottom: 10px;
+        margin-top: 0;
+        width: 65px;
+        border-radius: 3px;
+        margin-right: 10px;
+    }
+
+    #homeBox p, #homeBox2 p, #homeBox3 p {
+        clear: both;
+        font-size: 14px;
+        height: 95px;
+        line-height: 22px;
+        margin: auto;
+        margin-right: 1%;
+        padding: 0 20px 10px;
+        text-align: left;
+        color: #777;
+    }
+
+
+.homeBoxReadMoreBtn {
+    color: #2A99BD;
+    display: block;
+    float: right;
+    width: 100px;
+    margin-top: 25px;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+    .homeBoxReadMoreBtn:hover {
+        color: #777;
+        text-decoration: none;
+    }
+
+
+
+
+
+body .first, .container:first-child {
+    background-image: none;
+}
+
+
+#ageVerificationPopup {
+    width: 90%;
+    max-width: 500px;
+    height: auto;
+    padding: 2%;
+    display: none;
+    background-color: #fff;
+}
+    #ageVerificationPopup h2 {
+        display: block;
+        display: block;
+        line-height: 30px;
+        text-align: center;
+        color: #2a99bd;
+        border-bottom: 1px solid #2a99bd;
+        margin-bottom: 10px;
+    }
+
+#pContent {
+    line-height: 22px;
+}
+#pContent a {
+   color: #000;
+   text-decoration: underline;
+}
+    #pContent a:hover {
+color: #2a99bd;
+font-weight: bold;
+    }
+#pActions {
+    display: block;
+    float: left;
+    width: 100%;
+    margin-bottom: 20px;
+}
+#disagreeButton,
+#confirmButton {
+    height: 40px;
+    width: 45%;
+    color: #fff;
+    float: none;
+    line-height: 50px;
+    text-align: center;
+    cursor: pointer;
+    margin: 2%;
+    line-height: 40px;
+    background: #aaa;
+    border-radius: 3px;
+    text-transform: capitalize;
+    display: inline-block;
+    background-color: #02b702;
+}
+
+#disagreeButton {
+    background: #aaa;
+}
+
+    #disagreeButton:hover{
+        background: #777;
+    }
+
+#confirmButton:hover  {
+background-color: #008000;
+}
+
+
+#pSignup {
+    width: 100%;
+    float: left;
+    text-align: center;
+    line-height: 20px;
+}
+    #pSignup a {
+        font-weight: bold;
+        text-decoration: underline;
+    }
+
+
+
+/*------------------------------------------------FOOTER-HOME----------------------------------------------------------------------------*/
+.logoFooter {
+    background-image: url(/images/logoFooterWhite.png);
+    background-repeat: no-repeat;
+    display: block;
+    width: 100%;
+    height: 60px;
+    background-size: 200px;
+    opacity: 0.9;
+}
+
+
+.footerSocialHolder {
+    display: block;
+    float: right;
+    width: 110px;
+}
+
+.footerSocial {
+    display: block;
+    float: left;
+    width: 38px;
+    height: 38px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+
+.footerSocialFacebook {
+    display: block;
+    float: left;
+    background-image: url("/images/social/facebookBW.jpg ");
+    background-repeat: no-repeat;
+    opacity: 0.7;
+}
+
+.footerSocialTwitter {
+    display: block;
+    float: left;
+    background-image: url("/images/social/twitterBW.jpg ");
+    background-repeat: no-repeat;
+    opacity: 0.7;
+}
+
+.footerSocialGoogle {
+    display: block;
+    float: left;
+    background-image: url("/images/social/googleplusBW.jpg ");
+    background-repeat: no-repeat;
+    opacity: 0.7;
+}
+
+.footerSocialPinterest {
+    display: block;
+    float: left;
+    background-image: url("/images/social/pinterestBW.jpg ");
+    background-repeat: no-repeat;
+    opacity: 0.7;
+}
+
+    .footerSocialFacebook:hover,
+    .footerSocialTwitter:hover,
+    .footerSocialGoogle:hover,
+    .footerSocialPinterest:hover {
+        opacity: 1;
+    }
+
+.columnFooterSocial li a {
+    display: block;
+    margin-left: 0;
+    width: 38px;
+    height: 38px;
+}
+
+
+/*------------------------------------------------ //////// FOOTER-HOME----------------------------------------------------------------------------*/
+
+
+
+
+
+/*#divFooter.default {
+    background-color: #276e90;
+    bottom: 0;
+    clear: both;
+    float: left;
+    margin: auto;
+    max-width: 100%;
+    min-width: 960px;
+    width: 100%;
+    height: 300px;
+    padding-top: 50px;
+      background-image: url("/images/footerImgBasic.jpg");
+          background-repeat: no-repeat;
+    background-size: 100%;
+
+}*/
+
+#divFooter.default {
+    bottom: 0;
+    clear: both;
+    float: left;
+    margin: auto;
+    width: 100%;
+    background-image: url(/images/footerImgBasic.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: auto;
+    position: relative;
+    padding-top: 20px;
+}
+
+.bottomButtonsHolderFoooterBasic {
+    display: none;
+    height: 90px;
+    margin: auto;
+    width: 350px;
+    position: relative;
+    height: 200px;
+}
+
+.bottomSignUpFoooterBasic {
+    color: transparent;
+    display: block;
+    float: left;
+    font-size: 17px;
+    font-weight: bold;
+    height: 40px;
+    line-height: 40px;
+    margin: 26px 20px 20px 35px;
+    opacity: 0.9;
+    text-align: center;
+    text-transform: uppercase;
+    width: 138px;
+    border: none;
+}
+
+    .bottomSignUpFoooterBasic:hover {
+        background-color: transparent;
+        color: transparent;
+    }
+
+.paragraphSloganBlackFoooterBasic {
+    color: transparent;
+    display: block;
+    font-size: 40px;
+    font-weight: normal;
+    line-height: 50px;
+    margin: 40px auto auto;
+    padding: 1%;
+    text-align: center;
+}
+
+
+
+
+.televisionByPeople {
+    background-color: transparent;
+    display: block;
+    /* float: left; */
+    height: 180px;
+    position: relative;
+    width: 90%;
+    margin-bottom: 40px;
+    margin: auto;
+}
+
+.televisionByPeopleH2 {
+    color: #555;
+    display: block;
+    font-size: 35px;
+    line-height: 1.5em;
+    margin: 30px auto auto;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    font-weight: normal;
+}
+
+.homeActionsHolder {
+    width: 100%;
+    margin: auto;
+}
+
+.btnCreate {
+    width: 250px;
+    color: #fff;
+    height: 50px;
+    display: block;
+    background-color: #3bcd4e;
+    line-height: 50px;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 17px;
+    background: #3bcd4e;
+    cursor: pointer;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.watchVideoIcon200 {
+    background-image: url("/images/videoWhatIsStrimm.png");
+    background-repeat: no-repeat;
+    width: 170px;
+    height: 120px;
+    margin: auto;
+    display: block;
+    cursor: pointer;
+    float: right;
+    background-size: 100%;
+    display: none;
+}
+
+
+
+.learnMoreHomeFoooterBasic {
+    color: transparent;
+    display: block;
+    float: left;
+    font-size: 17px;
+    font-weight: bold;
+    height: 41px;
+    line-height: 39px;
+    margin: 26px auto auto;
+    text-align: center;
+    width: 120px;
+}
+
+
+
+    .learnMoreHomeFoooterBasic:hover {
+        border-bottom: 1px solid transparent;
+        color: transparent;
+    }
+
+
+
+
+.holder {
+    clear: both;
+    margin: auto;
+    max-width: 1520px;
+    min-width: 302px;
+    width: 100%;
+}
+
+#divFooter .holder {
+    text-align: center;
+    vertical-align: top;
+}
+
+.column {
+    display: inline-block;
+    margin: 20px 1% 1%;
+    text-align: center;
+    vertical-align: top;
+    width: 20%;
+}
+
+    .column h3 {
+        color: #fff;
+        font-size: 18px;
+        height: 35px;
+        line-height: 35px;
+        padding-bottom: 10px;
+        text-align: left;
+        font-weight: normal;
+    }
+
+    .column li a {
+        color: #ddd;
+        display: block;
+        font-size: 13px;
+        height: 25px;
+        line-height: 25px;
+        margin-bottom: 8px;
+        text-align: left;
+        text-decoration: none;
+        float: left;
+        width: 100%;
+    }
+
+        .column li a.socialLink {
+            margin-left: 0;
+            width: 38px;
+        }
+
+        .column li a:hover {
+            cursor: pointer;
+            color: #fff;
+        }
+
+#divTitleUrlHolder h1 {
+    color: #FFFFFF;
+    display: block;
+    font-size: 16px;
+    height: 35px;
+    line-height: 35px;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    /*width: 82%;*/
+    width: 444px;
+}
+
+#modalRemove {
+    display: none;
+    float: left;
+    width: 90%;
+    height: auto;
+    max-width: 500px;
+    background-color: #fff;
+    padding: 2%;
+
+}
+
+
+
+#divFooterLink {
+    float: left;
+    margin-left: 8%;
+}
+
+
+
+    #divFooterLink ul li {
+        color: #fff;
+        display: block;
+        height: 40px;
+        line-height: 40px;
+        padding-left: 15px;
+        padding-right: 15px;
+        font-size: 11px;
+        float: left;
+    }
+
+
+
+        #divFooterLink ul li.first {
+            background-image: none;
+        }
+
+
+.footerLink {
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+body #divFooterLink li a {
+    font-size: 11px;
+    color: #555;
+}
+
+.footerLink:hover, #divFooter.default .footerLink:hover {
+    color: #2A99BD;
+}
+
+#divAllRights {
+    clear: both;
+    display: block;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+    #divAllRights span {
+        color: #eee;
+        display: block;
+        font-size: 12px;
+        line-height: 40px;
+        margin-left: 20px;
+        text-align: center;
+        text-transform: capitalize;
+    }
+
+.copyrights {
+    color: #555;
+    display: block;
+    float: left;
+    font-size: 13px;
+    line-height: 40px;
+    margin-left: 20px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+    .copyrights:hover {
+        color: #2a99bd;
+    }
+
+#divBrowseChannelsHolder {
+    display: block;
+    float: left;
+    width: 100%;
+}
+
+.absGuide {
+background-image: url(/images/TV-Guide.png);
+    width: 110px;
+    background-size: 30px;
+    position: absolute;
+    top: 25px;
+    left: 65px;
+    background-repeat: no-repeat;
+    background-position: 2px;
+    background-color: #f9f9f9;
+    color: #555;
+    height: 30px;
+    line-height: 30px;
+    padding-right: 10px;
+    border-radius: 3px;
+    text-align: right;
+    border: 1px solid #ddd;
+}
+    .absGuide:hover {
+    background-color: #ddd;
+    }
+
+.advancedSearch {
+    height: 30px;
+    position: absolute;
+    left: 200px;
+    top: 25px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+    .advancedSearch.activeSearch {
+    left: 125px;
+    top: 20px;
+    width: 50%;
+    min-width: 600px;
+    background-color: transparent;
+    border: none;
+    }
+
+
+
+
+
+.lblDefaultMessage {
+    color: #555555;
+    display: none;
+    font-size: 20px;
+    line-height: 22px;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    margin-top: 100px;
+}
+
+
+.advanced {
+    display: block;
+    float: left;
+    text-decoration: none;
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+    .advanced:hover {
+        opacity: 1;
+    }
+
+.spnAdvSearch {
+color: #000;
+    display: block;
+    float: left;
+    height: 30px;
+    line-height: 30px;
+    text-transform: capitalize;
+    padding-left: 5px;
+}
+
+
+.AdvSearchImg {
+    background-image: url("/images/lupa-search.png");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    display: block;
+    float: left;
+    height: 16px;
+    margin-left: -3px;
+    margin-top: 25px;
+    opacity: 0.5;
+    width: 16px;
+}
+
+.AdvSearchImg {
+    background-image: url("/images/lupa-search.png");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    display: block;
+    float: left;
+    height: 16px;
+    margin-left: -3px;
+    margin-top: 25px;
+    opacity: 0.5;
+    width: 16px;
+    opacity: 1;
+}
+
+.AdvSearchImgHN {
+    background-image: url(/images/lupa-search.png);
+    background-repeat: no-repeat;
+    display: block;
+    float: right;
+    height: 30px;
+    opacity: 1;
+    width: 30px;
+    background-size: 20px;
+    background-position: center;
+    border-left: 1px solid #eee;
+    margin-left: 20px;
+    background-color: #eee;
+}
+
+
+.loginPasswordReset {
+    color: #2a99bd;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/*
+.loginPasswordReset :hover {
+    color: #19627a;
+}
+*/
+
+#divBrowseChannels,
+#divSearchChannels,
+.whatIsStrimmTop {
+    float: left;
+    display: block;
+    width: 100%;
+}
+
+.whatIsStrimmTop {
+    margin-top: 0;
+}
+
+
+    #divBrowseChannels:hover,
+    .whatIsStrimmTop:hover {
+        color: #2a99bd;
+    }
+
+#divBrowseChannels.closed:after {
+    border-color: #2A99BD;
+    border-style: solid;
+    border-width: 6px 6px 0;
+    content: "";
+    height: 0;
+    margin-top: -3px;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    width: 0;
+}
+
+
+
+.whatIsStrimmTop a {
+    border-right: 1px solid #555;
+    color: #555;
+    display: block;
+    float: left;
+    font-size: 17px;
+    height: 35px;
+    line-height: 35px;
+    text-transform: capitalize;
+    width: 135px;
+}
+
+    .whatIsStrimmTop a:hover {
+        color: #2a99bd;
+    }
+
+#divBrowseChannels a #divImg, .divImg,
+#divImgBusinesses a #divImg {
+    color: #333;
+    float: right;
+    font-size: 22px;
+    text-align: center;
+    /* transform: scale(-2, 1); */
+    width: 40px;
+}
+
+#divImgBusinesses a #divImg {
+    color: #2a99bd;
+}
+
+
+#divBrowseChannels a #divImg:hover {
+    color: red;
+}
+
+#divBrowseChannels a #divImg {
+    color: red;
+}
+
+.divImgBusinesses {
+    color: #6cdbff;
+}
+
+#divTopMenuHolder #ancMenu {
+    display: block;
+    height: 35px;
+    line-height: 35px;
+    width: 72px;
+    min-width: 70px;
+}
+
+    #divTopMenuHolder #ancMenu:hover {
+        color: #2a99bd;
+    }
+
+#divTopMenuHolder {
+    float: left;
+    position: relative;
+}
+
+
+
+#divChannelsCategory,
+.subBlock {
+    display: none;
+    position: absolute;
+    top: 70px;
+    width: 70%;
+    background: #0e2d35;
+    opacity: 0.97;
+    border-top: 1px solid #2a99bd;
+    height: 100vh;
+    left: 320px;
+    z-index: 99;
+    border-left: 1px solid #2a99bd;
+}
+
+    #divChannelsCategory.loading {
+        background: #2a99bd url("/images/loading-spinWhite.svg") no-repeat center;
+    }
+
+    #divChannelsCategory ul li {
+        float: left;
+        height: 55px;
+        line-height: 20px;
+        width: 320px;
+    }
+
+        #divChannelsCategory ul li:hover {
+            color: #fff;
+        }
+
+        #divChannelsCategory ul li.last {
+            border-bottom: none;
+        }
+
+
+
+        /*#divChannelsCategory ul li.first {
+        border-bottom: 1px solid #eee;
+    }*/
+
+        /*#divChannelsCategory ul li.last {
+        border-top: 1px solid #f9f9f9;
+    }*/
+
+        #divChannelsCategory ul li.lastColumn {
+            border-right: none;
+        }
+
+        #divChannelsCategory ul li.firstColumn {
+            border-left: none;
+        }
+
+        #divChannelsCategory ul li a {
+            color: #fff;
+            display: block;
+            font-size: 12px;
+            height: 20px;
+            line-height: 24px;
+            margin: auto;
+            padding: 14px 0 7px;
+            position: relative;
+            text-align: left;
+            text-decoration: none;
+            text-transform: uppercase;
+            width: 165px;
+            line-height: 27px;
+            letter-spacing: 1.5px;
+            border-bottom: 1px solid #555;
+        }
+
+            #divChannelsCategory ul li a:hover {
+                color: #fff;
+                text-decoration: underline;
+            }
+
+.advSearchFullHolder {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 70px;
+    background-color: #fff;
+    width: 100%;
+    z-index: 99;
+    display: none;
+}
+
+.advSearchFull {
+    display: block;
+    width: 600px;
+    height: 40px;
+    border: 1px solid #ddd;
+    margin: auto;
+    margin-top: 15px;
+    line-height: 40px;
+    padding-left: 3px;
+    font-size: 18px;
+}
+
+.advSearchClose {
+    background-image: url(/images/close_pop.png);
+    width: 30px;
+    height: 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-size: 100%;
+    cursor: pointer;
+}
+
+.advSearchFullHolder .divLogo {
+    margin-left: 100px;
+}
+
+.advSearchOptions {
+    display: block;
+    float: right;
+    width: 120px;
+    line-height: 24px;
+    text-align: center;
+    border-left: 1px solid #ccc;
+    height: 24px;
+    margin-top: 8px;
+    color: #555;
+    font-size: 14px;
+}
+
+.advSearchButton {
+    display: block;
+    float: right;
+    width: 100px;
+    /* background-image: url(/images/lupa-search.png); */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    height: 40px;
+    background-color: #eee;
+    line-height: 40px;
+    text-align: center;
+    font-size: 24px;
+    border-left: 1px solid #ddd;
+    cursor: pointer;
+}
+
+    .advSearchButton:hover {
+        background-color: #ddd;
+    }
+
+
+.embDivHolder {
+    display: block;
+    float: left;
+    width: 100%;
+    height: 650px;
+}
+
+#divChannelsCategory ul {
+    display: block;
+    margin: auto;
+    padding-top: 30px;
+    width: 100%;
+    height: 100%;
+}
+
+#divChannelsCategory .galleryView {
+    display: block;
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    bottom: 120px;
+}
+
+#divChannelsCategory .btnGalleryView {
+    display: block;
+    margin: auto;
+    width: 300px;
+    height: 50px;
+    line-height: 50px;
+    color: #fff;
+    text-align: center;
+    background-image: url(/images/social/socialRound/gallery.png);
+    background-position: 30px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    font-size: 12px;
+    background-size: 55px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+    #divChannelsCategory .btnGalleryView:hover {
+        text-decoration: underline;
+    }
+
+
+
+.spnHelloHolder {
+    display: block;
+    height: 40px;
+    position: absolute;
+    top: 20px;
+    right: 180px;
+}
+
+
+#spnHello {
+    color: #555;
+    display: block;
+    float: left;
+    line-height: 40px;
+    text-transform: capitalize;
+    width: 100%;
+    text-align: center;
+}
+
+#divMyStaff span {
+    float: right;
+}
+
+#divMyStaffMenu {
+    background-color: #ddd;
+    clear: both;
+    display: none;
+    float: right;
+    height: 160px;
+    position: absolute;
+    right: 0;
+    top: 65px;
+    width: 165px;
+    z-index: 100;
+    border-bottom: 2px solid #2A99BD;
+    padding: 0;
+}
+
+    #divMyStaffMenu ul li {
+        border-bottom: 1px solid #F9F9F9;
+        border-top: 1px solid #CECECE;
+        float: left;
+        line-height: 50px;
+        text-align: right;
+        width: 165px;
+        clear: both;
+    }
+
+    #divMyStaffMenu ul {
+        margin-top: 0px;
+    }
+
+        #divMyStaffMenu ul li.first {
+            background-image: none;
+        }
+
+        #divMyStaffMenu ul li:hover {
+            background-color: #ececec;
+        }
+
+        #divMyStaffMenu ul li a {
+            background-image: none;
+            color: #555555;
+            display: block;
+            padding-right: 10px;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+
+        #divMyStaffMenu ul li a {
+            height: 30px;
+            text-align: left;
+            line-height: 30px;
+            background: none;
+            padding-left: 12px;
+            width: 141px;
+        }
+
+
+.spacer {
+    clear: both;
+    display: block;
+    height: 1px;
+    width: 100%;
+}
+
+
+input,
+select {
+    border: 1px solid #ddd;
+    color: #555;
+    font-size: 14px;
+    font-family: Roboto,'Helvetica Neue',Helvetica,Arial,sans-serif;
+  
+    
+    background-color: #f7f7f7;
+}
+
+    input:active {
+        border: 1px solid #ddd;
+        background-color: #fff;
+    }
+
+
+
+#divProfile li span.spnBirthday {
+    color: #777777;
+    float: left;
+    font-size: 11px;
+    letter-spacing: 0;
+    margin: -7px 55px 2px 2px;
+    text-transform: none;
+    width: 35px;
+}
+
+body.chrome #divProfile li span.spnBirthday {
+    width: 35px;
+}
+
+#txtSearchChannels {
+    width: 240px;
+}
+
+.inputLong {
+    width: 300px;
+    padding: 3px;
+}
+
+.newresult {
+    background-color: #eee;
+    border-radius: 5px;
+    clear: both;
+    color: #999;
+    cursor: pointer;
+    display: block;
+    font-size: 17px;
+    line-height: 32px;
+    margin: auto auto 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: center;
+    text-transform: capitalize;
+    width: 150px;
+}
+
+    .newresult:hover {
+        background-color: #ddd;
+        color: #333;
+    }
+
+.btn, .ancClose {
+    /*background-color: #2A99BD;*/
+    color: #FFFFFF;
+    cursor: pointer;
+    border: none;
+    font-size: 13px;
+    float: right;
+    margin-right: 10px;
+    width: 90px;
+    text-align: center;
+    height: 27px;
+    line-height: 27px;
+    margin-bottom: 5px;
+}
+
+/*-------------------------------------------------------------------------------------TAKE a TOUR--------------------------------------------------*/
+
+.prev {
+    background-color: #ccc;
+    color: #fff;
+}
+
+    .prev:hover {
+        background-color: #ddd;
+        color: #fff;
+    }
+
+.next {
+    background-color: #2a99bd;
+    color: #fff;
+}
+
+
+
+    .next:hover {
+        background-color: #1e6981;
+        color: #fff;
+    }
+
+
+.endTour {
+    background-color: transparent;
+    color: #999 !important;
+    border: none !important;
+}
+
+    .endTour:hover {
+        color: #000 !important;
+    }
+
+/*------------------------------------------------------------------------------------- /////TAKE a TOUR--------------------------------------------------*/
+
+
+.actions a {
+    background-position: -10px center;
+    border: medium none;
+    color: #eee;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 0 5px;
+    color: #64e272;
+}
+
+
+.ancClose:hover {
+    /*background-color: #034;*/
+    color: #000;
+}
+
+.actions span {
+    font-size: 11px;
+}
+
+
+#ancLogin {
+    background-color: #2a99bd;
+    color: #f3f3f3;
+    cursor: pointer;
+    float: left;
+    font-size: 20px;
+    font-weight: normal;
+    height: 40px;
+    line-height: 40px;
+    margin-bottom: 10px;
+    margin-right: 2px;
+    margin-top: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: center;
+    text-transform: capitalize;
+    width: 120px;
+}
+
+.signUpNow {
+    display: block;
+    float: left;
+    width: 100%;
+    border-top: 1px solid #ddd;
+    margin-top: 10px;
+    line-height: 30px;
+}
+
+#ancSignUp {
+    color: #2a99bd;
+    cursor: pointer;
+    float: right;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: capitalize;
+    text-decoration: underline;
+}
+
+
+
+    #ancSignUp:hover {
+        color: #1e6177;
+    }
+
+#ancLogin:hover {
+    background-color: #0a799d;
+    color: #fff;
+}
+
+#loginBox, #divForgotPass, #divResendLink {
+    background-color: #fff;
+    display: none;
+    opacity: 1;
+    padding: 20px;
+    position: relative;
+    width: 700px;
+}
+
+
+#divForgotPass,
+#divResendLink {
+    height: 240px;
+    width: 500px;
+}
+
+.divPopupContainer {
+    position: relative;
+    margin: 30px;
+}
+
+
+
+.popupHeader {
+    border-bottom: 1px solid #2a99bd;
+    color: #2a99bd;
+    display: block;
+    float: left;
+    font-size: 25px;
+    height: 30px;
+    margin-bottom: 25px;
+    width: 100%;
+    font-weight: normal;
+}
+
+.channelProtectedTitle {
+    font-size: 17px;
+}
+
+#channelPasswordInput {
+    width: 280px;
+    height: 37px;
+    border: 1px solid #ddd;
+    line-height: 37px;
+    padding-left: 10px;
+    float: left;
+    color:#000;
+}
+
+.passwordChannelGo {
+    display: block;
+    float: left;
+    width: 40px;
+    height: 37px;
+    line-height: 37px;
+    text-align: center;
+    background: #2a99bd;
+    margin-left: 20px;
+    padding: 1px;
+    color: #fff;
+    font-size: 17px;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+    .passwordChannelGo:hover {
+        background: #1f677e;
+    }
+
+
+.spnPopUpMes {
+    display: block;
+    height: 30px;
+    width: 700px;
+    margin: auto;
+    margin-top: 40px;
+    margin-left: 10px;
+}
+
+.optionOr {
+    background-color: #bbb;
+    border-radius: 18px;
+    color: #fff;
+    font-size: 14px;
+    height: 36px;
+    left: 402px;
+    line-height: 36px;
+    position: absolute;
+    text-align: center;
+    text-transform: uppercase;
+    top: 145px;
+    width: 36px;
+    display: none;
+}
+
+#loginBox h3 {
+    border-bottom: 1px solid #ccc;
+    color: #2a99bd;
+    display: block;
+    font-size: 23px;
+    font-weight: normal;
+    height: 48px;
+    line-height: 50px;
+    margin-bottom: 15px;
+}
+
+.welcomeWalkTour {
+    display: block;
+    width: 96%;
+    font-size: 20px;
+    text-align: center;
+    line-height: 30px;
+    color: #2a99bd;
+    margin-bottom: 10px;
+    padding-right: 2%;
+    padding-left: 2%;
+}
+
+#divLoginLeft {
+    display: block;
+    float: left;
+    width: 300px;
+}
+
+#divLoginRight {
+    display: block;
+    float: right;
+    height: auto;
+    padding-left: 0;
+    padding-top: 0;
+    width: 300px;
+    margin-top: 25px;
+}
+
+
+
+.close_x,
+#closeCreateChannelModal {
+ background-image: url(/images/removebutton.png);
+    background-repeat: no-repeat;
+    background-size: 25px;
+    display: block;
+    height: 25px;
+    overflow: hidden;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 25px;
+    z-index: 100;
+    background-position: center;
+    color: transparent;
+}
+
+
+.closeFeedback,
+.closeFogotPassword {
+    background-image: url("/images/removebutton.png");
+    background-repeat: no-repeat;
+    background-size: 75% auto;
+    display: block;
+    height: 30px;
+    opacity: 0.7;
+    position: absolute;
+    right: -30px;
+    top: -30px;
+    width: 30px;
+    background-position: center;
+}
+
+.closeGetPublicname {
+    right: 5px;
+    top: 5px;
+}
+
+.closePlayerBox {
+    background-image: url(/images/removebutton-white.png);
+    right: -25px;
+}
+
+.closeLogin {
+    background-image: url("/images/removebutton.png");
+    background-repeat: no-repeat;
+    background-size: 75% auto;
+    display: block;
+    height: 30px;
+    opacity: 0.7;
+    overflow: hidden;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 30px;
+    z-index: 100;
+    background-position: center;
+    border: 1px solid #fff;
+    color: transparent;
+}
+
+
+
+.close_x:hover {
+    opacity: 1;
+}
+
+.closeCrop {
+    background-image: none;
+    bottom: 0;
+    color: #777;
+    display: block;
+    font-size: 15px;
+    line-height: 12px;
+    overflow: hidden;
+    position: absolute;
+    right: 22px;
+    text-decoration: underline;
+    top: 437px;
+}
+
+.rightFBconnection {
+    display: block;
+    float: left;
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+}
+
+    .rightFBconnection ul {
+        list-style: outside none circle;
+    }
+
+    .rightFBconnection li {
+        color: #777;
+        font-size: 14px;
+        line-height: 30px;
+    }
+
+#txtUserName,
+#txtPassword {
+    color: #777;
+}
+
+#loginBox label input {
+    border: 1px solid #ccc;
+    display: block;
+    font-size: 17px;
+    height: 30px;
+    line-height: 35px;
+    margin-bottom: 10px;
+    padding: 2%;
+    width: 96%;
+    font-family: 'Source Sans Pro','Helvetica Neue',Helvetica,Arial,sans-serif;
+    color: #333;
+}
+
+#loginBox input {
+    text-transform: unset;
+}
+
+#loginBox label input:focus {
+    border-color: #2a99bd;
+}
+
+
+a {
+    cursor: pointer;
+    color: #2a99bd;
+    text-decoration: none;
+}
+
+
+.Copyrights {
+    color: #2a99bd;
+    text-decoration: underline;
+}
+
+    .Copyrights:hover {
+        color: #00c2ff;
+    }
+
+
+
+#forgotPass, #resentCofirmLink {
+    font-size: 14px;
+    color: #777;
+    text-transform: capitalize;
+}
+
+#spanMessage {
+    color: #f25d06;
+    display: block;
+    font-size: 12px;
+    height: 15px;
+    line-height: 15px;
+    margin-bottom: 10px;
+}
+
+a#resentCofirmLink {
+    float: right;
+    padding-top: 4px;
+}
+
+
+
+#divResendLink {
+    display: none;
+}
+
+#spnDontYouHave {
+    color: #555;
+    display: block;
+    float: left;
+    font-size: 14px;
+    padding-top: 3px;
+    text-align: left;
+}
+
+#actions {
+    display: block;
+    height: 20px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    width: 100%;
+}
+
+#spnPopUpMes, #spnPopUpMesLink {
+    font-size: 14px;
+    display: block;
+}
+
+#ancForgotPass, #resendLink {
+    background-color: #2a99bd;
+    color: #ffffff;
+    cursor: pointer;
+    float: left;
+    font-size: 13px;
+    height: 35px;
+    line-height: 35px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#lblInfoMsg {
+    color: red;
+    line-height: 40px;
+    padding-left: 65px;
+    width: 95%;
+}
+
+#ancForgotPass:hover, #resendLink:hover {
+    background-color: #1f677e;
+}
+
+
+#txtEmailForgot,
+#txtResendLink {
+    display: block;
+    float: left;
+    height: 31px;
+    line-height: 31px;
+    padding-left: 5px;
+    width: 98%;
+    margin-bottom: 20px;
+}
+
+.actionsVideoBoxHolder {
+    cursor: pointer;
+    display: block;
+    float: left;
+    height: 40px;
+    position: absolute;
+    width: 100%;
+    z-index: 3;
+    opacity: 0.9;
+    background-image: url("/images/actionButtonHolderBG.png");
+    background-repeat: repeat-x;
+}
+
+.spnEmailForgot {
+    display: block;
+    float: left;
+    height: 37px;
+    line-height: 37px;
+}
+
+.txtEmailForgot {
+    display: block;
+    float: left;
+    height: 60px;
+    width: 330px;
+}
+
+#spnForgotPass, #spnResendLink {
+    color: #ff6a00;
+    display: block;
+    font-size: 14px;
+    margin-top: 5px;
+    float: left;
+    width: 100%;
+}
+
+.modalDDl {
+    background-color: #EEEEEE;
+    border: 1px solid #2A99BD;
+    border-radius: 4px;
+    color: #FF0000;
+    display: none;
+    height: 70px;
+    width: 230px;
+}
+
+divSubmitUp868 #spnCooseChannel {
+    color: #555555;
+    display: block;
+    font-size: 13px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.chooseChannelwrapper {
+    margin: 13px auto auto;
+    width: 200px;
+}
+
+
+.nano.searchnano {
+    height: 500px;
+}
+
+
+
+
+
+/*---------------------iPad horizontal-------------------------------*/
+
+
+
+
+/*#divTop .container {
+   max-width: 1320px;
+}*/
+
+#divMenuHolder {
+    clear: both;
+    width: 100%;
+    background-color: #1680A4;
+}
+
+    #divMenuHolder ul {
+        width: 100%;
+        display: block;
+        background-color: #1680A4;
+        border-bottom: 1px solid #1680A4;
+        height: 30px;
+        margin: auto;
+        min-width: 1020px;
+        max-width: 1320px;
+        padding-top: 3px;
+    }
+
+        #divMenuHolder ul li {
+            line-height: 30px;
+            padding-left: 10px;
+            padding-right: 10px;
+            text-decoration: none;
+            float: left;
+        }
+
+            #divMenuHolder ul li a {
+                color: #ccc;
+                display: block;
+                font-size: 13px;
+                letter-spacing: 1px;
+                text-decoration: none;
+                text-transform: uppercase;
+            }
+
+                #divMenuHolder ul li a:hover, #divMenuHolder ul li a:active, #divMenuHolder ul li .searchButton {
+                    color: #fff;
+                }
+
+                #divMenuHolder ul li a.active {
+                    color: #fff;
+                }
+
+
+    #divMenuHolder select {
+        margin-right: 30px;
+        border: 1px solid #2A99BD;
+        width: 150px;
+    }
+
+.feedeback {
+    background-image: url("/images/feedbackButton.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    box-shadow: 1px 2px 3px #777;
+    height: 123px;
+    position: fixed;
+    right: 0;
+    top: 112px;
+    width: 22px;
+    z-index: 1;
+}
+
+.feedbackValue {
+    border-bottom: 1px solid #ccc;
+    color: #2a99bd;
+    display: block;
+    font-size: 23px;
+    font-weight: normal;
+    height: 30px;
+    margin-bottom: 15px;
+    margin-top: 0;
+}
+
+.feedbackh1 {
+    color: #555;
+    font-size: 20px;
+}
+
+..rotate {
+    -moz-transform: rotate(-90.0deg); /* FF3.5+ */
+    -o-transform: rotate(-90.0deg); /* Opera 10.5 */
+    -webkit-transform: rotate(-90.0deg); /* Saf3.1+, Chrome */
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0.083); /* IE6,IE7 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=0.083)"; /* IE8 */
+}
+
+#feedbackModal {
+    background-color: #f9f9f9;
+    padding: 20px;
+    width: 350px;
+    height: 560px;
+}
+
+#txtFeedback {
+    color: #555;
+    font-size: 14px;
+    padding: 2%;
+    width: 96%;
+}
+
+.feedbackPage {
+    line-height: 40px;
+}
+
+#ddlFeedCat {
+    width: 100%;
+    height: 30px;
+}
+
+#feedbackModal h3 {
+    clear: both;
+    color: #555;
+    display: block;
+    font-size: 15px;
+    height: 20px;
+    line-height: 20px;
+    margin-bottom: 7px;
+    margin-top: 15px;
+    text-align: left;
+    font-weight: normal;
+}
+
+.feedbackwrapper {
+    display: block;
+}
+
+.pageName {
+    color: #555;
+    display: block;
+    float: left;
+    font-size: 15px;
+    height: 30px;
+    width: 100%;
+}
+
+.feedbackTitle {
+    color: #555;
+    display: block;
+    float: left;
+    font-size: 19px;
+    font-weight: normal;
+    height: 40px;
+    line-height: 36px;
+    text-align: left;
+    width: 205px;
+}
+
+#feedbackModal h1 {
+    /*margin-bottom: 20px;*/
+}
+
+.btnSendFeedback {
+    background-color: #2a99bd;
+    color: #ffffff;
+    cursor: pointer;
+    float: right;
+    font-size: 15px;
+    height: 35px;
+    line-height: 35px;
+    margin-top: 20px;
+    text-align: center;
+    width: 90px;
+    text-transform: capitalize;
+}
+
+    .btnSendFeedback:hover {
+        background-color: #206b83;
+    }
+
+#lblMsgFeedback {
+    font-size: 12px;
+    color: #ff6a00;
+}
+
+
+.inputHolderKeywords,
+.inputHolderUrl,
+.inputHolder {
+    margin-left: 19px;
+    margin-top: 50px;
+}
+
+.activityHolder .slider {
+    margin-top: 10px;
+}
+
+.block {
+    display: block;
+}
+
+    .block:before,
+    .block:after {
+        content: " ";
+        display: table;
+    }
+
+
+    .block:after {
+        clear: both;
+    }
+
+
+#loadingDivHolder {
+    background-repeat: no-repeat;
+    height: 48px;
+    margin: 25% auto;
+    width: 48px;
+}
+
+.loadingDivHolder {
+    /*background-image: url(/images/opacity-0.3.png);*/
+    background-repeat: no-repeat;
+    height: 48px;
+    margin: 25% auto;
+    width: 48px;
+    position: absolute;
+    margin-left: 50%;
+    z-index: 9999;
+    display: none;
+}
+
+.spin {
+    z-index: 1;
+    border-color: #262626;
+    border-right-color: transparent;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+    -webkit-animation: spin 1s linear infinite;
+    -moz-animation: spin 1s linear infinite;
+    -o-animation: spin 1s linear infinite;
+    animation: spin 1s linear infinite;
+}
+
+
+.ReadMoreBtn {
+    display: block;
+    clear: both;
+    margin: auto;
+    width: 100px;
+    background: #2a99bd;
+    border-radius: 4px;
+    padding: 7px;
+    font-size: 13px;
+}
+
+    .ReadMoreBtn:hover {
+        background: #1483a7;
+    }
+
+.pageComent {
+    /*border: 1px solid #2A99BD;*/
+    border-radius: 7px;
+    display: none;
+    margin: 20px auto;
+    min-height: 25px;
+    width: 930px;
+    clear: both;
+}
+
+    .pageComent p {
+        font-size: 13px;
+        color: #555;
+        margin: 5px;
+        margin-left: 17px;
+    }
+
+    .pageComent a {
+        color: #555;
+        font-style: italic;
+        text-decoration: underline;
+    }
+
+#channelNameBox {
+    color: #555555;
+    margin: auto;
+    max-width: 1280px;
+    min-width: 1000px;
+    padding-left: 25px;
+    width: 100%;
+}
+
+#selectedChannel {
+    color: #555555;
+    font-size: 13px;
+}
+
+#lblSelectedChannel {
+    color: #2A99BD;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.stepline {
+    width: 960px;
+    height: 55px;
+    display: none;
+    margin: auto;
+    clear: both;
+    padding-left: 20px;
+}
+
+.steplineBox {
+    width: 110px;
+    height: 45px;
+    display: block;
+    float: left;
+    background-repeat: no-repeat;
+    text-align: right;
+    background-position: right 25px;
+    color: #999;
+}
+
+    .steplineBox strong {
+        font-size: 21px;
+    }
+
+.stepline .notdone {
+    background-image: url(/images/Steps-notdone.png);
+    color: #ccc;
+}
+
+.stepline .active {
+    background-image: url(/images/Steps-active.png);
+    color: #2A99BD;
+}
+
+.stepline .done {
+    background-image: url(/images/Steps-done.png);
+    color: #999;
+}
+
+
+.stepline .backBtn,
+.stepline .continueBtn {
+    width: 100px;
+    height: 30px;
+    line-height: 28px;
+    display: block;
+    float: left;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 15px;
+    color: #ececec;
+    background-image: url("/images/ButtonBG.jpg");
+    background-repeat: repeat-x;
+    border-color: #2A99BD;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    text-align: center;
+}
+
+    .stepline .backBtn:hover,
+    .stepline .continueBtn:hover {
+        background-image: url("/images/ButtonBGHover.jpg");
+        color: #fff;
+    }
+
+    .stepline .backBtn a,
+    .stepline .continueBtn a {
+        color: #ececce;
+    }
+
+.steplineBox p {
+    font-size: 12px;
+    color: #ccc;
+    text-align: left;
+    margin-top: 15px;
+}
+
+.backBtn.disabled {
+    cursor: default !important;
+    background: #ccc;
+    color: #ececec;
+    border: #ccc;
+}
+
+    .backBtn.disabled:hover {
+        cursor: default !important;
+        background: #ccc;
+        color: #ececec;
+        border: #ccc;
+    }
+
+.pageHelp {
+    display: block;
+    width: 120px;
+    height: 30px;
+    margin: 20px auto;
+    font-size: 12px;
+    color: #999999;
+    text-decoration: underline;
+}
+
+    .pageHelp:hover {
+        color: #2A99BD;
+    }
+
+.timeExpl {
+    display: block;
+    width: 100%;
+    height: 30px;
+    font-size: 11px;
+    color: #cecece;
+}
+
+.btnCreateChannel {
+    display: block;
+    float: right;
+}
+
+/*.btnCreateChannel:hover {color: #fff;}*/
+
+.spnCreateChannel {
+    background-color: #05C705;
+    border: medium none;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    float: left;
+    font-size: 17px;
+    font-weight: normal;
+    height: 35px;
+    letter-spacing: 0;
+    line-height: 35px;
+    margin-left: 5px;
+    margin-right: 5px;
+    text-align: center;
+    text-transform: capitalize;
+    width: 145px;
+}
+
+
+
+    .spnCreateChannel:hover {
+        background-color: #2e913b;
+        color: #fff;
+    }
+
+    .spnCreateChannel strong {
+    }
+
+        .spnCreateChannel strong:hover {
+            color: #fff;
+        }
+
+.secondaryLineHolder {
+    background: #eee;
+    width: 90%;
+    padding: 5%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: -20px;
+}
+
+.secondaryLine {
+    max-width: 1280px;
+}
+
+
+/* FADES */
+
+.FadeOne, .FadeTwo, .FadeThree {
+    padding-bottom: 20px;
+    clear: both;
+    background-repeat: repeat-x;
+    padding: 1%;
+    min-width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: 1px;
+}
+
+    .FadeOne:before,
+    .FadeOne:after,
+    .FadeTwo:before,
+    .FadeTwo:after,
+    .FadeThree:before,
+    .FadeThree:after {
+        content: " ";
+        display: table;
+    }
+
+        .FadeOne:after,
+        .FadeTwo:after .FadeThree:after {
+            clear: both;
+        }
+
+
+/*.FadeOne {
+    background-image: url(/images/bg-1fade.png);
+    background-repeat: repeat-x;
+    padding-top: 10px;
+}*/
+
+.FadeTwo {
+    background-image: url(/images/bg-2fade.png);
+    background-color: #eee;
+}
+
+.FadeThree {
+    background-image: url(/images/bg-3fade.png);
+    background-color: #ddd;
+    color: #222;
+}
+
+    .FadeThree .pageList {
+        color: #222;
+    }
+
+.BANNER {
+    background-image: url("/images/stock-photo-35865604-xxxl-panorama-morning-sun-rays-penetrating-forest.jpg");
+    background-size: 50% auto;
+    margin-top: 0;
+    /*background-image: url("/images/2.jpg");
+background-repeat: no-repeat;
+background-size: 100% auto;*/
+}
+
+/* End - FADES */
+
+#divContentWelcome {
+    margin: auto auto 10px;
+    max-width: 1280px;
+    padding-left: 15px;
+    width: 100%;
+}
+
+
+
+
+.boxCreateChannel, .boxGoSocial, .boxHowItWorks, .boxWatchNow {
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: auto auto;
+    height: 245px;
+    position: relative;
+    border-right: none;
+    display: inline-block;
+    float: left;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    min-height: 190px;
+    width: 32%;
+    max-width: 400px;
+}
+
+
+
+    .boxCreateChannel img, .boxGoSocial img, .boxHowItWorks img, .boxWatchNow img {
+        display: block;
+        margin: auto;
+        height: auto;
+        max-width: 350px;
+        border: 2px solid #034;
+        opacity: 0.9;
+    }
+
+
+.actionBTN {
+    /*font-family:'LeagueGothic', 'Helvetica', 2346;
+font-size:22px;
+display: block;
+padding: 5px;
+border-radius: 2px;
+text-align: center;
+letter-spacing: 1px;
+color: #2A99BD;*/
+    border-radius: 2px;
+    color: #034;
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+    line-height: 20px;
+}
+
+.actionBTN {
+    /*color: #2382A0;
+	text-shadow: 0 0 2px #fff;background: #ffcc00;
+	background: -moz-linear-gradient(top, #ffcc00 0%, #ffcc00 2%, #f2de96 45%, #ffcc00 93%, #ffcc00 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, #ffcc00), color-stop(2%, #ffcc00), color-stop(45%, #f2de96), color-stop(93%, #ffcc00), color-stop(100%, #ffcc00));
+	background: -webkit-linear-gradient(top, #ffcc00 0%, #ffcc00 2%, #f2de96 45%, #ffcc00 93%, #ffcc00 100%);
+	background: -o-linear-gradient(top, #ffcc00 0%, #ffcc00 2%, #f2de96 45%, #ffcc00 93%, #ffcc00 100%);
+	background: -ms-linear-gradient(top, #ffcc00 0%, #ffcc00 2%, #f2de96 45%, #ffcc00 93%, #ffcc00 100%);
+	background: linear-gradient(to bottom, #ffcc00 0%, #ffcc00 2%, #f2de96 45%, #ffcc00 93%, #ffcc00 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffcc00', endColorstr='#ffcc00', GradientType=0 );*/
+    background-color: #e9b600;
+    height: 20px;
+}
+
+
+
+
+#divContentWelcome .actionBTN {
+    bottom: 15px;
+    left: 35%;
+    margin: auto;
+    position: absolute;
+    width: 62%;
+    z-index: 100;
+}
+
+    #divContentWelcome .actionBTN .middle {
+        bottom: 50px;
+        left: 20%;
+        margin: auto;
+        position: absolute;
+        width: 62%;
+        z-index: 100;
+    }
+
+.boxWatchNow h2 {
+    width: 400px;
+    font-size: 14px;
+    color: #fff;
+    margin-bottom: 10px;
+    text-align: center;
+    width: 200%;
+}
+
+.boxCreateChannel h2 {
+    width: 400px;
+    font-size: 14px;
+    color: #fff;
+    margin-bottom: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+.boxGoSocial h2 {
+    color: #034;
+}
+
+.divMainButtonHolder {
+    margin: auto;
+    width: 1000px;
+    text-align: center;
+    height: 130px;
+}
+
+    .divMainButtonHolder ul {
+        width: 100%;
+        margin: auto;
+    }
+
+
+
+        .divMainButtonHolder ul li a {
+            display: block;
+            float: left;
+            height: 68px;
+            margin: 20px 5px 5px;
+            width: 155px;
+            background: #fff;
+            box-shadow: 0px 0px 4px #ccc;
+            padding: 7px;
+        }
+
+            .divMainButtonHolder ul li a.managementTools {
+                background: #fff;
+            }
+
+
+            .divMainButtonHolder ul li a:hover {
+                /*border: 2px solid #fc0;*/
+                box-shadow: 0px 0px 4px #999;
+            }
+
+
+            .divMainButtonHolder ul li a.search {
+                margin-left: 103px;
+            }
+
+            .divMainButtonHolder ul li a .step {
+                text-align: center;
+                color: #2A99BD;
+                text-transform: capitalize;
+                display: block;
+                padding-top: 15px;
+                padding-bottom: 5px;
+                font-weight: bold;
+                font-size: 18px;
+            }
+
+
+
+            .divMainButtonHolder ul li a .stepDescription {
+                color: #555;
+                display: block;
+                font-size: 11px;
+            }
+
+            .divMainButtonHolder ul li a .managementToolsTitle {
+                color: #2a99bd;
+                display: block;
+                text-transform: capitalize;
+                font-size: 18px;
+                font-weight: bold;
+                line-height: 1.2em;
+                padding-top: 5px;
+                padding-bottom: 5px;
+            }
+
+            .divMainButtonHolder ul li a .managementToolsDescription {
+                color: #555;
+                display: block;
+                font-size: 11px;
+            }
+
+        .divMainButtonHolder ul li .addVideos .managementToolsTitle,
+        .divMainButtonHolder ul li .videoRoom .managementToolsTitle {
+            padding-top: 15px;
+        }
+
+
+
+.channelBox {
+    background-color: #f9f9f9;
+    border: 1px solid #eee;
+    border-radius: 0;
+    display: inline-block;
+    float: left;
+    height: 170px;
+    margin-bottom: 10px;
+    margin-left: 8px;
+    overflow: hidden;
+    padding-bottom: 7px;
+    padding-top: 0;
+    position: relative;
+    text-align: center;
+    width: 170px;
+}
+
+    .channelBox:hover {
+        border: 1px solid #ddd;
+    }
+
+    .channelBox .PLAY-ICON:hover {
+        opacity: 1;
+    }
+
+    .channelBox span {
+        line-height: 1em;
+        padding-bottom: 0;
+    }
+
+
+        .channelBox span.recentlyadded {
+            color: #64e272;
+            font-weight: bold;
+            padding-bottom: 0;
+        }
+
+    .channelBox .PLAY-ICON {
+        opacity: 0.5;
+        position: absolute;
+        top: 10px;
+        width: 100%;
+        height: auto;
+    }
+
+    .channelBox a img,
+    body divBoxContent a img {
+        display: block;
+        margin: auto;
+        padding: 0;
+        margin-bottom: 10px;
+    }
+
+    .channelBox img,
+    body divBoxContent img {
+        display: block;
+        margin: auto;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+body .channelBox .PLAY-ICON:hover {
+    /*opacity: 1;*/
+    width: 120%;
+    margin-left: -10%;
+    margin-top: -5%;
+}
+
+.channelBox a {
+    max-height: 120px;
+}
+
+.channelBox .IMG,
+body .imgThumb,
+.addToScheduleImg {
+    opacity: 1;
+    max-height: 130px;
+}
+
+#sideBar .channelBox {
+    width: 99%;
+    height: 75px;
+    text-align: center;
+    display: inline-block;
+    float: left;
+    border: none;
+    box-shadow: none;
+    border-bottom: 1px solid #eee;
+    margin-top: 10px;
+}
+
+    #sideBar .channelBox .thumbLink {
+        width: 122px;
+        float: left;
+        clear: none;
+        margin-right: 5px;
+        border: none;
+    }
+
+    #sideBar .channelBox .IMG, body #sideBar .imgThumb, #sideBar .addToScheduleImg, #sideBar .PLAY-ICON,
+    #sideBar .PLAY-ICON:hover {
+        height: 70px;
+        width: 120px;
+        margin: 0;
+    }
+
+#sideBar span {
+    width: 190px;
+}
+
+#sliderCheckmarksHolder label,
+#sliderCheckmarksHolder input {
+    color: #000;
+    float: left;
+    font-size: 13px;
+    font-weight: bold;
+    height: 17px;
+    line-height: 17px;
+    margin-top: 10px;
+}
+
+#sliderCheckmarksHolder label {
+    margin-right: 20px;
+}
+
+
+
+#sideBar .boxChannelName {
+    display: block;
+    margin-bottom: 4px;
+    margin-top: 7px;
+    overflow: hidden;
+    text-align: left;
+    width: 200px;
+}
+
+#sideBar .fchannelName {
+    color: #555;
+    display: block;
+    font-size: 14px;
+    text-transform: capitalize;
+}
+
+.userMainInfoFav {
+    width: 100%;
+    display: block;
+    float: left;
+}
+
+
+.fchannelName {
+    color: #2a99bd;
+    display: block;
+    font-size: 16px;
+    text-transform: capitalize;
+}
+
+.userBoxInfo {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-image: url('/images/00065.png');
+    background-repeat: repeat;
+}
+
+    .userBoxInfo .actionHolder a {
+        display: block;
+        float: left;
+        margin-right: 20px;
+    }
+
+.fchannelNameFav {
+    color: #fff;
+    display: block;
+    float: left;
+    font-size: 14px;
+    text-align: center;
+    text-transform: capitalize;
+    width: 100%;
+}
+
+.userBoxCountryFav {
+    display: block;
+    float: left;
+    font-size: 14px;
+    text-align: center;
+    width: 100%;
+    line-height: 20px;
+}
+
+.lblChannelsFav {
+    color: #555;
+    font-size: 14px;
+    font-weight: bold;
+    margin-right: 3px;
+}
+
+.userBoxChannelListFav {
+    color: #555;
+    font-weight: normal;
+    font-size: 12px;
+}
+
+.thumbLinkOther {
+    color: #555;
+    font-size: 12px;
+    font-weight: normal;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.userBoxChannelsFav {
+    display: block;
+}
+
+.fchannelcategory {
+    color: #777;
+    font-size: 12px;
+}
+
+.feturedChannelName,
+.feturedChannelcategory {
+    /*display: block;
+    float: left;
+    width: 100%;
+    color: #999;
+    font-size: 13px;
+    line-height: 25px;*/
+    color: #999;
+    display: block;
+    float: left;
+    font-size: 12px;
+    padding: 3px;
+    text-align: left;
+    width: 100%;
+}
+/*---------watch it Later---------*/
+.watchLater .divBoxContent,
+.divBoxContent,
+.addToScheduleContainer {
+    width: 225px;
+    padding-top: 0;
+    padding-right: 0;
+    padding-left: 0;
+    padding-bottom: 7px;
+    height: auto;
+    text-align: center;
+    display: inline-block;
+    margin: 5px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 0;
+    overflow: hidden;
+    -webkit-box-shadow: 0 0 3px #ddd;
+    -moz-box-shadow: 0 0 3px #ddd;
+    -ms-box-shadow: 0 0 3px #ddd;
+    -o-box-shadow: 0 0 3px #ddd;
+    box-shadow: 0 0 3px #ddd;
+    position: relative;
+    min-width: 225px;
+    vertical-align: top;
+    position: relative;
+}
+
+    .watchLater .divBoxContent:hover,
+    .divBoxContent:hover {
+        border: 1px solid #ccc;
+        -webkit-box-shadow: 0 0 6px #ccc;
+        -moz-box-shadow: 0 0 6px #ccc;
+        -ms-box-shadow: 0 0 6px #ccc;
+        -o-box-shadow: 0 0 6px #ccc;
+        box-shadow: 0 0 6px #ccc;
+        opacity: 1;
+        background-color: #fff;
+    }
+
+.watchLater .PLAY-ICON {
+    height: auto;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+    .watchLater .PLAY-ICON:hover {
+        width: 120%;
+        opacity: 1;
+        margin-left: -10%;
+        top: -5%;
+    }
+
+.watchLater .imgThumb {
+    opacity: 1;
+    width: 100%;
+    margin-top: 0;
+}
+
+.watchLater .divVideoThumb a.btnPlay {
+    display: block;
+    float: left;
+    width: 100%;
+    height: auto;
+}
+
+.watchLater .divVideoThumb,
+.divVideoThumb,
+.thumbnail {
+    width: 100%;
+    background-color: black;
+    overflow: hidden;
+}
+
+.imgThumb {
+    height: auto;
+    width: 100%;
+}
+
+
+
+.watchLater .divVideoInformation span.title {
+    width: 200px;
+    font-weight: normal;
+}
+
+.watchLater .actions {
+    float: none;
+    height: auto;
+    margin: auto;
+    width: 95px;
+    display: block;
+    max-width: 100px;
+    clear: both;
+}
+
+    .watchLater .actions a {
+        float: right;
+        font-size: 12px;
+        margin-top: 5px;
+        padding: 4px;
+        text-align: center;
+        text-transform: lowercase;
+        width: 95px;
+        margin-bottom: 5px;
+    }
+
+.ancClose,
+.removedVideo {
+    font-size: 1px;
+    position: absolute;
+    right: 0;
+    margin-right: 3px;
+    margin-top: 3px;
+    color: #ddd;
+    height: 12px;
+    width: 12px;
+    border-radius: 0;
+    background-image: none;
+    background-color: #ddd;
+    overflow: hidden;
+    padding: 0;
+    top: 0px;
+}
+
+    .ancClose:hover {
+        border-radius: 0;
+        background-image: none;
+        background-color: #ddd;
+    }
+
+.actions {
+    background: none repeat scroll 0 0 #fff;
+    color: #fff;
+    float: left;
+    height: 20px;
+    line-height: 20px;
+    margin-right: 7px;
+    position: absolute;
+    text-align: left;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+    box-shadow: 0 1px 2px #999;
+}
+
+    .actions:hover {
+        opacity: 1;
+    }
+
+    .actions input {
+        height: 20px;
+        float: left;
+    }
+
+
+
+.divVideoInformation,
+.divInfo {
+    float: left;
+    margin-left: 3%;
+    width: 97%;
+}
+
+    .divVideoInformation .title,
+    .divInfo .title {
+        color: #2A99BD;
+        font-size: 13px;
+        font-weight: bold;
+        max-width: 95%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        text-align: left;
+    }
+
+    .divVideoInformation .views {
+        color: #777;
+    }
+
+    .divVideoInformation .duration {
+        color: #777;
+    }
+
+    .divVideoInformation .category {
+        color: #777;
+    }
+
+    .divVideoInformation span,
+    .divInfo span {
+        clear: both;
+        display: block;
+        float: left;
+        margin-top: 5px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        font-size: 11px;
+        color: #777;
+        font-style: normal;
+    }
+
+.spnError {
+    color: #ff3333;
+    display: none;
+    font-size: 8px;
+}
+
+.delete {
+    background-image: url("/images/close_pop.png");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    display: block;
+    float: right;
+    height: 12px;
+    width: 12px;
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    background-color: #eee;
+}
+
+.breadcrumb {
+    position: relative;
+    z-index: 1;
+    padding: 8px 15px;
+    list-style: none;
+    margin: auto;
+    font-size: 13px;
+    width: 95%;
+    max-width: 1280px;
+}
+
+    .breadcrumb li {
+        float: left;
+        padding-right: 5px;
+        display: inline-block;
+        margin-top: 5px;
+    }
+
+    .breadcrumb .active {
+        color: #2A99BD;
+        font-weight: bold;
+    }
+
+    .breadcrumb li a {
+        color: #999;
+    }
+
+    .breadcrumb > li + li:before {
+        content: "»\00a0";
+        padding: 0 5px;
+        color: #cccccc;
+    }
+
+/*.Scallop {
+    height: 50px;
+    display: block;
+    width: 90%;
+    margin: 0px 0px -30px;
+    background: url(/images/hrs.png) no-repeat scroll center 0px;
+    background-size: 100% auto;
+    clear: both;
+    margin-bottom: -30px;
+    margin-top: 15px;
+    opacity: 0.8;
+}*/
+
+.channelSelectorWrapper {
+    width: 100%;
+    background-color: #eee;
+}
+
+.channelSelector {
+    width: 94%;
+    max-width: 1280px;
+    clear: both;
+    margin: auto;
+    padding-bottom: 12px;
+    padding-top: 8px;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+
+
+
+#divSubmitUp {
+    display: none;
+}
+
+#divSubmitUp_Update {
+    display: none;
+}
+
+.titleH1 {
+    color: #2a99bd;
+    font-size: 35px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    padding: 10px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.titleH6 {
+    color: #2a99bd;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: normal;
+    letter-spacing: 1px;
+    margin-bottom: 0;
+    padding: 10px;
+    text-transform: capitalize;
+}
+
+
+
+
+.SelectCustom {
+    font-size: 14px;
+    color: #333;
+    border: 1px solid #999;
+    height: 28px;
+    line-height: 20px;
+    width: 240px;
+    background: url(/images/selectbox-arrow.jpg) no-repeat right;
+    padding: 2px;
+    padding-left: 3px;
+    border-radius: 2px;
+    height: 26px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.divSelectCustom {
+    display: inline-block;
+    background: #fff;
+    background: -moz-linear-gradient(top, #fff 0%, #fff 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, #fff), color-stop(100%, #fff));
+    background: -webkit-linear-gradient(top, #fff 0%, #fff 100%);
+    background: -o-linear-gradient(top, #fff 0%, #fff 100%);
+    background: -ms-linear-gradient(top, #fff 0%, #fff 100%);
+    background: linear-gradient(to bottom, #fff 0%, #fff 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff', endColorstr='#fff', GradientType=0 );
+}
+
+.SelectCustom ::-ms-expand {
+    display: none;
+}
+
+
+
+.custom ::-ms-expand {
+    display: none;
+}
+
+
+
+#dashboardContent {
+    display: block;
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    min-width: 302px;
+    max-width: 1320px;
+    width: 100%;
+}
+
+
+#avatarInfo {
+    background: none repeat scroll 0 0 #ddd;
+    display: block;
+    float: left;
+    height: 300px;
+    width: 100%;
+    position: relative;
+}
+
+#lblAbout {
+    bottom: 60px;
+    color: #fff;
+    font-family: times new roman;
+    font-size: 15px;
+    font-style: italic;
+    height: 20px;
+    left: 145px;
+    line-height: 20px;
+    opacity: 1;
+    padding-left: 5px;
+    position: absolute;
+    text-shadow: 0 0 3px #000;
+    width: 65%;
+    z-index: 20;
+    display: none;
+}
+
+#mainContent {
+    display: block;
+    width: 74%;
+    float: left;
+}
+
+#sideBar {
+    display: block;
+    float: right;
+    height: 770px;
+    width: 350px;
+}
+
+#about {
+    position: absolute;
+}
+
+
+
+#headMenu {
+    bottom: 10px;
+    margin-left: 150px;
+    position: absolute;
+    width: 76%;
+    z-index: 20;
+}
+
+#DashboardBackgroungImg {
+    height: 300px;
+    width: 100%;
+    display: block;
+    overflow: hidden;
+}
+
+
+#imgDashboard {
+    height: 300px;
+    width: 100%;
+    background-color: #eee;
+    background-image: url(/images/defaultBG.jpg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+}
+
+
+
+#dashboardAvatar {
+    border: 1px solid #eee;
+    bottom: 10px;
+    height: 120px;
+    left: 20px;
+    position: absolute;
+    width: 120px;
+    z-index: 20;
+}
+
+#imgDashboardAvatar {
+    width: 100%;
+    height: 100%;
+}
+
+.ancEditDashBoard {
+    background-color: #fff;
+    background-image: url("/images/editIconDashboard.png");
+    background-position: right top;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    display: block;
+    height: 32px;
+    opacity: 0.95;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 30px;
+    z-index: 10;
+}
+
+    .ancEditDashBoard:hover {
+        opacity: 0.7;
+    }
+
+.ancEditBlack:hover, .settingsOtt:hover {
+    opacity: 1;
+}
+
+.ancEdit:hover {
+    /*background-image: url("/images/editIconDashboardHover.png");*/
+    opacity: 1;
+}
+
+#headH1 {
+    display: block;
+    float: left;
+    height: 37px;
+    margin-bottom: 5px;
+    width: 100%;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #ddd;
+}
+
+    #headH1 h1 {
+        display: block;
+        float: left;
+        font-size: 14px;
+        text-transform: capitalize;
+        color: #777;
+        line-height: 37px;
+        font-weight: lighter;
+        margin-left: 5px;
+    }
+
+.channelsHolder {
+    display: block;
+    float: none;
+    min-height: 600px;
+    width: 100%;
+}
+
+.channelsHolderDashboard {
+    display: block;
+    float: left;
+    min-height: 500px;
+    /*overflow: hidden; <--this attribute block walk thru step*/
+    width: 100%;
+}
+
+
+
+.addChannel {
+    background-color: #ee6b03;
+    border: none;
+    border-radius: 4px;
+    display: block;
+    float: left;
+    height: 40px;
+    margin-left: 0;
+    margin-top: 0;
+    width: 150px;
+    text-align: center;
+    line-height: 37px;
+    color: #fff;
+}
+
+    .addChannel:hover {
+        background-color: #d56104;
+    }
+
+#stepFiveHolder {
+    width: 180px;
+    display: inline-table;
+    float: left;
+    height: 200px;
+    line-height: 200px;
+    padding-right: 5px;
+    vertical-align: top;
+}
+
+.linkBlack {
+    color: #000;
+    cursor: default;
+}
+
+
+.addChannel:hover {
+    opacity: 1;
+    box-shadow: 0 2px 7px #ccc;
+}
+
+#channelManagementContent {
+    display: block;
+    height: 300px;
+    margin: auto;
+    min-width: 302px;
+    width: 100%;
+    position: relative;
+    background-image: url(/images/defaultBG.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.channelManagementContentInner{
+    display: block;
+    height: 300px;
+    margin: auto;
+    max-width: 1360px;
+    min-width: 302px;
+    width: 98%;
+    padding: 1%;
+}
+.contentShcedule {
+    display: block;
+    height: auto;
+    margin: auto;
+    max-width: 1360px;
+    min-width: 302px;
+    width: 98%;
+    padding: 1%;
+}
+
+
+.channelManagementContentUpper {
+    display: block;
+    height: 175px;
+    margin: auto;
+    min-width: 302px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+.topWrapperHolder {
+    position: absolute;
+    z-index: 10; /*commented by Valya, the wrapper not giving click on anything on page*/
+    width: 100%;
+    height: 100%;
+    top: 0;
+}
+
+#bottomHolder {
+    display: none;
+    width: 100%;
+    height: 400px;
+    background-color: #ddd;
+}
+
+
+#leftWrapper {
+    display: block;
+    float: left;
+    padding-top: 45px;
+    position: relative;
+    width: 61%;
+    height: 200px;
+}
+
+#rightWrapper {
+    display: block;
+    float: right;
+    margin-right: 18px;
+    margin-top: 10px;
+    position: relative;
+    width: 353px;
+}
+
+#channelInfoHolder {
+    display: block;
+    float: left;
+    height: 210px;
+    position: relative;
+    z-index: 30;
+}
+
+.channelActionsHolder {
+    height: 40px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 205px;
+}
+
+.ancEditBlack {
+    background-image: url('/images/btnChannelSettings.png');
+    background-position: 2px 4px;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    border: medium none;
+    /* border-radius: 4px; */
+    display: block;
+    height: 40px;
+    opacity: 0.85;
+    position: absolute;
+    right: -195px;
+    top: 112px;
+    width: 180px;
+    float: left;
+    z-index: 200;
+    cursor: pointer;
+}
+
+.settingsOtt {
+    background-image: url('/images/btnAppSettings.png');
+    background-position: 2px 4px;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    border: medium none;
+    /* border-radius: 4px; */
+    display: block;
+    height: 40px;
+    opacity: 0.85;
+    position: absolute;
+    right: -165px;
+    top: 150px;
+    width: 150px;
+    float: left;
+    z-index: 200;
+    cursor: pointer;
+}
+
+.iconLabel {
+    display: block;
+    position: absolute;
+    float: left;
+    color: #fff;
+}
+
+.channelSettingsLabel {
+    top: 125px;
+    right: -170px;
+}
+
+.ottSettingsLabel {
+    top: 165px;
+    right: -145px;
+}
+
+.ottDemo, .ottData {
+    float: left;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.imageCropperTitle {
+    margin-top:20px;
+    font-size:15px;
+    font-weight:bold;
+}
+
+.ottDemo img {
+    max-width: 100%;
+}
+
+.ottDemo .createModalLeft, .ottDemo .createModalRight
+{
+    vertical-align:top;
+}
+.modalBody {
+    margin: 20px;
+}
+
+body #calendarHolder {
+    display: block;
+    width: 100%;
+    height: auto;
+    position: relative;
+    top: 35px;
+}
+
+#innerLeftWrapper {
+    background-color: #fff;
+    display: block;
+    float: left;
+    height: 200px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    width: 200px;
+}
+
+.imgChannelAvatarChannel {
+    height: 40px;
+    width: 40px;
+    float: left;
+    margin-top: 7px;
+    margin-right: 10px;
+    margin-bottom: 0;
+}
+
+#imgChannelAvatar {
+    height: 100%;
+    width: 100%;
+}
+
+
+    #imgChannelAvatar:hover {
+        background-image: url(/images/run-channel.png);
+        z-index: 20;
+        width: 100%;
+        height: 100%;
+    }
+
+#channelLink {
+    height: 100%;
+    width: 100%;
+}
+
+    #channelLink:hover {
+        background-image: url(/images/run-channel.png);
+    }
+
+#clickPlayText {
+    position: absolute;
+    bottom: -15px;
+    left: 7px;
+    color: #fff;
+}
+
+#innerRightWrapper {
+    display: block;
+    float: left;
+    height: 80px;
+    margin-left: 20px;
+    margin-top: 115px;
+    position: relative;
+}
+
+#titleHolder {
+    display: block;
+    float: left;
+    padding-right: 55px;
+    position: relative;
+    width: 90%;
+    margin-top: 15px;
+}
+
+/*#ancName {
+    color: #fff;
+    display: block;
+    float: left;
+    font-size: 30px;
+    height: 40px;
+    line-height: 40px;
+}*/
+
+#categoryHolder {
+    display: block;
+    width: 200px;
+}
+
+#lblCategory {
+    display: block;
+    float: left;
+    font-size: 12px;
+    line-height: 20px;
+    text-transform: lowercase;
+}
+
+#channelInfo {
+    display: block;
+    width: 200px;
+    color: #000;
+    font-size: 12px;
+    float: left;
+    clear: both;
+}
+
+
+    #channelInfo span {
+        display: block;
+        float: left;
+        text-align: center;
+        padding-right: 20px;
+    }
+
+#lblSubscribers {
+}
+
+#lblViews {
+}
+
+
+#channelMenuHolder {
+    display: block;
+    width: 100%;
+    float: left;
+    clear: both;
+    margin-top: 6px;
+}
+
+#divSchedule {
+    background-color: #eee;
+    display: block;
+    float: left;
+    height: 37px;
+    width: 150px;
+    border: 1px solid #eee;
+    border-radius: 4px;
+}
+
+    #divSchedule a {
+        background-color: #2a99bd;
+        border-radius: 2px;
+        display: inline-block;
+        float: right;
+        height: 30px;
+        margin-top: 3px;
+        width: 100px;
+        margin-right: 2px;
+    }
+
+
+
+
+
+
+.divAddVideosMenuHolder {
+    background-image: url('/images/basicSteps-1.png');
+    background-repeat: no-repeat;
+    background-position: left;
+    background-color: #f18a11;
+    border: 1px solid #f18a11;
+    display: inline-block;
+    float: left;
+    height: 50px;
+    line-height: 50px;
+    width: 135px;
+    margin-right: 15px;
+    padding-left: 60px;
+    margin-top: -10px;
+}
+
+
+
+
+
+
+
+.menuAddVideosDropdown {
+    display: block;
+    float: left;
+    width: 200px;
+    display: none;
+}
+
+.ddlCategory,
+#ddlChannelVideos,
+#ddlVideoStoreVideos {
+    background: none repeat scroll 0 0 transparent;
+    border: medium none;
+    display: block;
+    float: left;
+    text-transform: capitalize;
+}
+
+#ddlChannelVideos {
+    width: 158px;
+    height: 30px;
+}
+
+
+
+
+.ddlCategory {
+    width: 155px;
+    font-family: Roboto-Bold,'Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    color: #555;
+    height: 30px;
+    line-height: 30px;
+}
+
+.categoryPrVodeos {
+    width: 300px;
+    font-family: Roboto-Light,'Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+
+
+
+#lblUserInfo {
+    color: #fff;
+    font-size: 25px;
+    font-weight: normal;
+    text-shadow: 0 0 3px #000;
+}
+
+
+
+#lblCountry {
+    color: #fff;
+    font-size: 13px;
+    opacity: 0.8;
+    padding-left: 10px;
+}
+
+
+
+.thumbLink,
+.btnPlay {
+    /*border-bottom: 1px solid #eee;
+    display: block;
+    height: 100px;
+    overflow: hidden;
+    width: 100%;*/
+    display: block;
+    float: left;
+    height: auto;
+    width: 100%;
+}
+
+.boxChannelName {
+    /*display: block;
+margin-bottom: 4px;
+margin-top: 7px;
+overflow: hidden;
+width: 100%;*/
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+
+.trBrowseChannels,
+.trBusinesses {
+    background-color: #112d34;
+    border-color: #2a99bd;
+    border-style: solid;
+    border-width: 1px 0 0 1px;
+    content: "";
+    display: block;
+    height: 15px;
+    left: 4px;
+    margin-left: -13px;
+    position: absolute;
+    top: 365px;
+    transform: rotate(-45deg);
+    width: 15px;
+    z-index: 901;
+}
+
+.trBusinesses {
+    top: 313px;
+}
+
+.trBrowseChannelsBefore {
+    top: 130px;
+}
+
+.trBusinessesBefore {
+    top: 75px;
+}
+
+
+.trHello {
+    left: 80%;
+}
+
+
+
+#helloMenuList span {
+    display: none;
+}
+
+#helloMenuList:hover span, #spnHello {
+    display: block;
+}
+
+
+
+
+
+
+.ddHolder {
+    display: block;
+    margin-top: -6px;
+}
+
+#sliderCheckmarksHolder {
+    display: block;
+    width: 98%;
+    margin-left: 1%;
+    margin-right: 1%;
+    float: left;
+    border-bottom: 1px solid #eee;
+}
+
+.ancEditChannel {
+    /*background-image: url("/images/editPencil.png");
+border: medium none;
+border-radius: 2px;
+display: block;
+height: 90px;
+opacity: 0.1;
+right: 5px;
+top: 96px;
+width: 100%;
+z-index: 99;
+background-position: right 26px ;
+}*/
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+    .ancEditChannel:hover {
+        opacity: 1;
+    }
+
+
+.remove {
+    display: block;
+    float: right;
+}
+
+.inputHolderKeywords,
+.inputHolder {
+    display: block;
+    margin: auto;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    clear: both;
+    margin-left: 0;
+}
+
+.inputHolderUrl {
+    display: none;
+    margin: auto;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    clear: both;
+    float: none;
+}
+
+
+.inputProvider {
+    margin-left: 0;
+}
+
+#importUserYoutubeUploadsHolder {
+    display: none;
+    margin: auto;
+    margin-top: 20px;
+    clear: both;
+    width: 280px;
+}
+
+
+#tabsWrapper .inputHolderKeywords {
+    width: 320px;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.spnChooseCategory {
+    color: #777;
+    display: inline-block;
+    float: left;
+    font-size: 13px;
+    line-height: 25px;
+    margin-left: 7px;
+}
+
+
+#helloMenuList {
+    position: absolute;
+    top: 76px;
+    right: 145px;
+}
+
+.divMonth {
+    display: block;
+}
+
+.menuAddVideosDropdown {
+    background-color: #eee;
+    display: none;
+    width: 180px;
+    border: 1px solid #eee;
+    border-top-right-radius: 4px;
+    border-top: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+}
+
+    .menuAddVideosDropdown li {
+        border-bottom: 1px solid #ddd;
+        display: block;
+        height: 20px;
+        line-height: 20px;
+        margin-left: 5px;
+        margin-right: 5px;
+        padding: 5px;
+        text-transform: capitalize;
+    }
+
+        .menuAddVideosDropdown li a {
+            color: #2a99bd;
+            font-family: verdana;
+            font-size: 13px;
+        }
+
+            .menuAddVideosDropdown li a:hover {
+                color: #000;
+                border-bottom: 3px solid #000;
+            }
+
+.borderBottom {
+    border-bottom: 1px solid #777;
+    line-height: 25px;
+    height: 25px;
+    display: inline-block;
+}
+
+    .borderBottom:hover {
+        border-bottom: 3px solid #2a99bd;
+        cursor: pointer;
+        color: #000;
+    }
+
+.arrow-down {
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 5px solid #bbb;
+    width: 0;
+    display: inline-block;
+    float: left;
+    margin-left: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+    .arrow-down:hover {
+        border-top: 5px solid #2a99bd;
+    }
+
+.arrow-up {
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: 5px solid #bbb;
+    width: 0;
+    height: 0;
+    display: inline-block;
+    float: left;
+    margin-left: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+    .arrow-up:hover {
+        border-top: 5px solid #2a99bd;
+    }
+
+
+
+.arrow-right {
+    width: 0;
+    height: 0;
+    border-top: 60px solid transparent;
+    border-bottom: 60px solid transparent;
+    border-left: 60px solid green;
+}
+
+.arrow-left {
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 10px solid blue;
+}
+
+.gradient {
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    background-image: url(/images/gradient.png);
+    background-position: left bottom;
+    background-repeat: repeat-x;
+}
+
+#lblChannelCount {
+    color: #ee6b03;
+    display: block;
+    float: left;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 17px;
+    margin-left: 10px;
+}
+
+
+
+.YTicon {
+    background-image: url("/images/YouTube-logo.png");
+    background-repeat: no-repeat;
+    display: block;
+    float: right;
+    height: 39px;
+    margin-bottom: 30px;
+    margin-top: -6px;
+    width: 61px;
+}
+
+.closer {
+    background-image: url("/images/YouTube-logo.png");
+    background-repeat: no-repeat;
+    display: block;
+    float: right;
+    height: 39px;
+    margin-bottom: 0;
+    margin-top: 0;
+    position: absolute;
+    right: 25px;
+    top: 0;
+    width: 61px;
+}
+
+.centrLeft {
+    display: block;
+    float: left;
+    margin-left: 43px;
+    width: 60px;
+}
+
+
+.channelBox a.removesymbol {
+    display: block;
+    float: right;
+    color: #eee;
+}
+
+    .channelBox a.removesymbol:hover {
+        color: red;
+    }
+
+.channelBox a.addsymbol {
+    color: #64e272;
+}
+
+    .channelBox a.addsymbol:hover {
+        color: #b7fbbe;
+    }
+
+.sideContentHolder .channelTitle {
+    color: #000;
+    cursor: pointer;
+    float: left;
+    font-size: 15px;
+    line-height: 50px;
+    width: 100%;
+    font-weight: bold;
+    text-align: left;
+}
+
+    .sideContentHolder .channelTitle:hover {
+        color: #2a99bd;
+    }
+
+
+
+.sideContentHolder .videoTitle {
+    bottom: 20px;
+    color: #000;
+    display: block;
+    float: left;
+    font-size: 12px;
+    line-height: 20px;
+    overflow: hidden;
+    position: absolute;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+    text-align: left;
+}
+
+.sideContentHolder .channelTiming {
+    width: 100%;
+    float: left;
+    color: #000;
+    font-size: 13px;
+}
+
+.sideContentHolder .spnSubscribers,
+.sideContentHolder .spnViews {
+    bottom: 0;
+    color: #000;
+    float: left;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 20px;
+    position: absolute;
+    width: 50%;
+    left: 0px;
+}
+
+.sideContentHolder .spnViews {
+    left: 115px;
+}
+
+#socialHolder {
+    float: right;
+    position: relative;
+}
+
+.shareLink {
+    background-image: url("/images/shareLinkBG.jpg");
+    background-repeat: repeat-x;
+    border: 1px solid #1a356e;
+    color: #ffffff;
+    display: block;
+    float: left;
+    font-size: 12px;
+    font-weight: bold;
+    height: 23px;
+    line-height: 23px;
+    margin-right: 50px;
+    margin-top: 1px;
+    text-align: center;
+    text-decoration: none;
+    width: 80px;
+}
+
+
+
+
+.chanBox {
+border: none;
+    display: block;
+    float: left;
+    height: auto;
+    margin: 0.3%;
+    max-width: 175px;
+    overflow: hidden;
+    position: relative;
+    width: 32%;
+    vertical-align: top;
+}
+
+
+.chanBoxEmbedded {
+    border: none;
+    clear: right;
+    display: inline-block;
+    float: none;
+    height: 200px;
+    margin: 0.5%;
+    max-width: 100%;
+    min-width: 15.666%;
+    overflow: hidden;
+    position: relative;
+    vertical-align: top;
+    width: 200px;
+    /*width: 15.666%;*/
+    /*height: 200px;*/
+}
+
+.bx-next {
+    margin-right: 10px;
+}
+
+.chanBoxInfo {
+background-image: url(/images/channelBoxInfoBG.png);
+    background-repeat: repeat-x;
+    bottom: 0;
+    box-shadow: none;
+    cursor: default;
+    display: block;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    background-position: center;
+    background-size: 100%;
+    text-align: left;
+}
+
+
+.channelImg {
+    height: 100%;
+    width: 100%;
+}
+
+.chanBox01 {
+    background-image: url(/images/avatarChannelBoxIMG-01.jpg);
+}
+
+.chanBox02 {
+    background-image: url(/images/avatarChannelBoxIMG-02.jpg);
+}
+
+.chanBox03 {
+    background-image: url(/images/avatarChannelBoxIMG-03.jpg);
+}
+
+.chanBox04 {
+    background-image: url(/images/avatarChannelBoxIMG-04.jpg);
+}
+
+.chanBox05 {
+    background-image: url(/images/avatarChannelBoxIMG-05.jpg);
+}
+
+.chanBox06 {
+    background-image: url(/images/avatarChannelBoxIMG-06.jpg);
+}
+
+.chanBox07 {
+    background-image: url(/images/avatarChannelBoxIMG-07.jpg);
+}
+
+
+    .chanBoxInfo:hover {
+        background-image: url('/images/00025.png');
+        background-repeat: repeat;
+    }
+
+
+
+.homeBlocksHolder .chanBoxInfo {
+    background-color: transparent;
+    background-image: url("/images/chanBoxInfoBG.png");
+    background-repeat: repeat-x;
+    bottom: 0;
+    box-shadow: none;
+    cursor: pointer;
+    display: block;
+    height: 230px;
+    opacity: 1;
+    position: absolute;
+    width: 100%;
+}
+
+
+
+
+/*.chanBoxtitle {
+    width: 100%;
+    line-height: 20px;
+    color: #000;
+    font-weight: bold;
+    font-size: 15px;
+    float: left;
+    padding-left: 3px;
+}*/
+
+.chanBoxtitle {
+    color: #eee;
+    float: left;
+    font-size: 15px;
+    font-weight: normal;
+    padding-left: 5%;
+    padding-top: 70%;
+    width: 95%;
+}
+
+.chanBoxtitleAdjust {
+    padding-top: 40%;
+}
+
+.fullBox {
+    display: block;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    position: absolute;
+    z-index: 2;
+}
+.fp-controls-button.fp-live-cc.is-toggle{
+    display:none;
+}
+
+    .fullBox:hover {
+        background-image: url('/images/00025.png');
+        background-repeat: repeat;
+    }
+
+.chanBoxcateg {
+    color: #ddd;
+    float: left;
+    font-size: 13px;
+    line-height: 17px;
+    text-align: left;
+    width: 95%;
+    padding-left: 5%;
+    text-transform: capitalize;
+    font-weight: normal;
+}
+
+    .chanBoxcateg strong {
+        font-weight: normal;
+    }
+
+.chanBoxsub,
+.chanBoxviews {
+    color: #fff;
+    float: left;
+    font-size: 12px;
+    line-height: 15px;
+    padding-left: 5%;
+    width: 90%;
+}
+
+.actionschanBoxHolder {
+    cursor: pointer;
+    display: block;
+    float: left;
+    height: 40px;
+    opacity: 0.9;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+
+.actionHOlderFull {
+    height: 100%;
+}
+
+    .actionHOlderFull:hover {
+        background-image: url('/images/00025.png');
+        background-repeat: repeat;
+    }
+
+
+
+/*.actionschanBoxHolder:hover {
+    background-image: url('/images/00025.png');
+    background-repeat: repeat;
+    }*/
+
+
+.actionschanBoxHolder:hover {
+    opacity: 1;
+}
+
+.ddlborder {
+    color: #555555;
+    font-size: 14px;
+    height: 31px;
+    width: 300px;
+}
+
+
+
+
+
+.chanBox .chanBoxEdit,
+.chanBox01 .chanBoxEdit,
+.chanBox02 .chanBoxEdit,
+.chanBox03 .chanBoxEdit,
+.chanBox04 .chanBoxEdit,
+.chanBox05 .chanBoxEdit,
+.chanBox06 .chanBoxEdit,
+.chanBox07 .chanBoxEdit {
+    background-image: url("/images/settingsDashboard.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 70% auto;
+    cursor: pointer;
+    display: block;
+    height: 40px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 40px;
+}
+
+
+.chanBox .chanBoxPlay, .chanBox01 .chanBoxPlay, .chanBox02 .chanBoxPlay, .chanBox03 .chanBoxPlay, .chanBox04 .chanBoxPlay, .chanBox05 .chanBoxPlay, .chanBox06 .chanBoxPlay, .chanBox07 .chanBoxPlay {
+    background-image: url(/images/playbuttonWhiteNew.png);
+    background-position: 3px 5px;
+    background-repeat: no-repeat;
+    background-size: 32px;
+    cursor: pointer;
+    display: block;
+    height: 40px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+
+
+.pageInfoHolder {
+    border-bottom: 1px solid #2a99bd;
+    display: block;
+    float: left;
+    width: 98%;
+    padding: 1%;
+}
+
+    .pageInfoHolder h1 {
+    color: #2a99bd;
+    display: block;
+    float: left;
+    font-size: 20px;
+    font-weight: normal;
+    text-transform: capitalize;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    }
+
+.videoSorting {
+    display: block;
+    float: right;
+}
+
+.ddlSortVideo,
+.ddlSortChannels,
+#sortFavorite {
+    border-radius: 2px;
+    float: right;
+    font-size: 14px;
+    height: 36px;
+    margin-right: 10px;
+    /* margin-top: 5px; */
+    width: 150px;
+    font-family:Roboto-light,'Helvetica Neue',Helvetica,Arial,sans-serif;
+    text-transform: capitalize;
+}
+
+
+
+.channelCount {
+    color: #ffc800;
+    display: block;
+    float: right;
+    font-size: 15px;
+    height: 20px;
+    line-height: 25px;
+    margin-left: 5px;
+    min-width: 20px;
+    padding: 2px;
+    text-align: center;
+}
+
+.userBox {
+    border: 1px solid #eee;
+    border-radius: 0;
+    display: block;
+    float: left;
+    height: 180px;
+    margin: 10px;
+    position: relative;
+}
+
+.thumbLink {
+    height: 180px;
+    width: 180px;
+}
+
+.IMG {
+    display: block;
+    float: left;
+    height: 180px;
+    width: 180px;
+}
+
+.userBoxFirstName {
+    color: #fff;
+    font-weight: bold;
+    width: 100%;
+    line-height: 25px;
+    text-align: center;
+    display: block;
+}
+
+
+.txtSearchByTextHolder {
+    display: block;
+    float: right;
+}
+
+#txtSearchByText {
+    display: block;
+    float: left;
+    font-size: 14px;
+    height: 31px;
+    font-family:Roboto-light,'Helvetica Neue',Helvetica,Arial,sans-serif;
+    padding-left: 3px;
+
+}
+
+    #txtSearchByText:focus {
+        border-color: #bbb;
+    }
+
+.clearSearch {
+    color: #777;
+    display: block;
+    float: left;
+    font-size: 14px;
+    height: 31px;
+    line-height: 31px;
+    padding-left: 5px;
+    text-align: center;
+}
+
+    .clearSearch:hover {
+        color: #000;
+    }
+
+.btnSearchByText {
+    background-image: url('/images/lupa-search.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 80% auto;
+    display: block;
+    float: left;
+    height: 33px;
+    width: 33px;
+    opacity: 1;
+    border: 1px solid #999;
+    border-left: none;
+}
+
+    .btnSearchByText:hover {
+        background-color: #ddd;
+    }
+
+.alertInfoMessage,
+.alertWarnMessage {
+    font-size: 15px;
+    padding: 5px;
+}
+
+.onAirSignSideBar {
+    background: red;
+}
+
+#modalRemove span {
+    display: block;
+    float: left;
+    width: 100%;
+    text-align: center;
+     margin-bottom: 20px; 
+    line-height: 24px;
+}
+
+.confurmButtons {
+    display: block;
+    width: 225px;
+    margin: auto;
+    margin-top: 10px;
+}
+
+
+#cancelRemove,
+#removeOk {
+    background-color: #2a99bd;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    float: right;
+    font-weight: bold;
+    height: 25px;
+    line-height: 25px;
+    margin-right: 50px;
+    text-align: center;
+    width: 60px;
+}
+
+    #cancelRemove:hover {
+        background-color: #297892;
+    }
+
+#removeOk {
+    background-color: #ddd;
+    margin-right: 15px;
+}
+
+    #removeOk:hover {
+        background-color: #2a99bd;
+    }
+
+#msgRemove {
+    height: 12px;
+}
+
+
+
+.doNotShow {
+    clear: both;
+    display: block;
+    float: left;
+    margin-top: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+.sideChannel .channelTiming {
+    background-color: #f00;
+    border-top-left-radius: 10px;
+    bottom: 0;
+    color: #ccc;
+    display: block;
+    float: left;
+    font-size: 13px;
+    font-weight: bold;
+    height: 15px;
+    left: -56px;
+    opacity: 0.7;
+    position: absolute;
+    text-align: center;
+    width: 45px;
+}
+
+.playTime {
+    bottom: 0;
+    color: #777;
+    font-size: 12px;
+    height: 20px;
+    left: 0;
+    line-height: 20px;
+    position: absolute;
+    width: 100%;
+    text-align: left;
+}
+
+#okButton {
+    background-color: #2a99bd;
+    border-radius: 2px;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    float: right;
+    height: 37px;
+    line-height: 37px;
+    margin-right: 50px;
+    text-align: center;
+    width: 37px;
+    font-weight: bold;
+}
+
+    #okButton:hover {
+        background-color: #0b7a9e;
+    }
+
+
+
+.videoRemoveMessage {
+    color: #fc0;
+    font-size: 12px;
+    line-height: 25px;
+    text-align: left;
+    padding-left: 5px;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+#modalInfo {
+    background-color: #eee;
+    border: 3px solid #fff;
+    border-radius: 0;
+    box-shadow: 0 1px 7px #999;
+    display: none;
+    font-size: 15px;
+    height: 140px;
+    opacity: 0.97;
+    width: 500px;
+}
+
+    #modalInfo #infoMessage {
+        display: block;
+        margin: 40px auto 20px;
+        padding: 5px;
+        width: 95%;
+        text-align: center;
+        font-size: 14px;
+    }
+
+    #modalInfo #dialogImage {
+        display: none;
+    }
+
+#ratingHolder {
+    bottom: 10px;
+    display: block;
+    float: right;
+    position: absolute;
+    right: 0;
+    width: 310px;
+}
+
+
+
+#mainWrapper {
+    box-sizing: border-box;
+    display: block;
+    float: left;
+    padding: 1%;
+    width: 100%;
+}
+
+
+.leftWrapperRS {
+    display: block;
+    width: 100%;
+    height: auto;
+    float: left;
+    position: relative;
+}
+
+#userInterestsModal {
+    width: 1000px;
+    display: none;
+}
+
+.leftWrapperRS .ancEditBlack {
+    background-image: url("/images/settingsDashboard.png");
+    background-position: 2px 4px;
+    background-repeat: no-repeat;
+    background-size: 80% auto;
+    border: medium none;
+    border-radius: 4px;
+    display: block;
+    height: 40px;
+    opacity: 0.85;
+    position: absolute;
+    right: 10px;
+    top: 3px;
+    width: 40px;
+    z-index: 20;
+}
+
+
+.leftSchedule {
+    clear: both;
+    float: left;
+    overflow: hidden;
+    width: 875px;
+}
+
+
+#fbLogHolder {
+    background-color: #3b52ac;
+    border-radius: 1px;
+    display: block;
+    float: right;
+    height: 30px;
+    margin-top: 20px;
+    padding-top: 11px;
+    text-align: center;
+    width: 125px;
+}
+
+
+    #fbLogHolder:hover {
+        background-color: #4b62bc;
+    }
+
+.passwordActivity {
+    display: block;
+    float: left;
+    height: 35px;
+    line-height: 36px;
+    width: 100%;
+}
+
+#lblKeepMeLoggedIn, #lblShowHidePass, #lblShowHidePassSignUp {
+    color: #555;
+    display: block;
+    float: left;
+    font-size: 14px;
+    height: 30px;
+    line-height: 35px;
+    width: 100%;
+}
+
+#lblShowHidePass, #lblShowHidePassSignUp {
+    color: #555;
+    display: block;
+    float: left;
+    font-size: 14px;
+    height: 40px;
+    line-height: 40px;
+    width: 50%;
+}
+
+.fogortresendHolder {
+    width: 50%;
+    text-align: right;
+    float: right;
+    height: 40px;
+    line-height: 37px;
+}
+
+#lblShowHidePassSignUp {
+    clear: both;
+}
+
+.infoPlusRel {
+    display: block;
+    position: relative;
+}
+
+.infoPlasAbs {
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 11px;
+    background-image: url(/images/infoIcon.png);
+    background-repeat: no-repeat;
+    background-size: 20px;
+    height: 20px;
+    width: 20px;
+    z-index:1000;
+}
+
+.textUnderline {
+    text-decoration: underline;
+}
+
+
+
+a#forgotPass, a#resentCofirmLink {
+    text-decoration: none;
+    clear: both;
+}
+
+    a#forgotPass:hover, a#resentCofirmLink:hover {
+        color: #000;
+    }
+
+#lblShowHidePassSignUp {
+    clear: both;
+}
+
+
+#loginBox #lblKeepMeLoggedIn input, #loginBox #lblShowHidePass input, #divSignUp #lblShowHidePassSignUp input {
+    float: left;
+    margin-right: 7px;
+    width: 15px;
+    background-color: #fff;
+}
+
+#divGetPublicname {
+    height: 160px;
+    width: 400px;
+    background-color: #fff;
+    display: none;
+    position: relative;
+    padding: 20px;
+}
+
+    #divGetPublicname #txtPublicName {
+        display: block;
+        width: 320px;
+        margin: auto;
+        padding: 5px;
+        height: 30px;
+    }
+
+    #divGetPublicname #ancPublicName {
+        background-color: #2a99bd;
+        color: #fff;
+        display: block;
+        float: right;
+        font-weight: bold;
+        height: 37px;
+        line-height: 37px;
+        text-align: center;
+        text-transform: capitalize;
+        width: 120px;
+    }
+
+    #divGetPublicname #spnError {
+        color: #ff7373;
+        display: block;
+        font-size: 13px;
+        margin: 10px auto;
+        width: 302px;
+        height: 20px;
+    }
+
+#divBoardContent ul li span.spnCreateChannelError {
+    color: #ff7373;
+    display: none;
+    float: left;
+    font-size: 12px;
+    height: 50px;
+    line-height: 17px;
+    margin-bottom: 20px;
+    margin-top: 0;
+    text-transform: none;
+    width: 320px;
+}
+/*ABOUT BLOCK*/
+.aboutHolder {
+    width: 100%;
+    max-width: 1280px;
+    min-width: 750px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.aboutBlock {
+    background: #f3f3f3;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: auto;
+    margin-right: 10px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    box-shadow: inset 0 0 15px #ddd;
+    -webkit-box-shadow: inset 0 0 15px #ddd;
+    margin-left: 20px;
+}
+
+    .aboutBlock img {
+        max-width: 300px;
+        display: block;
+        height: auto;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        padding: 8px;
+        background: #ddd;
+        float: left;
+        margin-right: 20px;
+    }
+
+.aboutTitle {
+    font-size: 20px;
+    color: #000;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+    letter-spacing: 3px;
+}
+
+.aboutDescription {
+    font-size: 22px;
+    color: #2a99bd;
+    margin-bottom: 20px;
+    line-height: 40px;
+    letter-spacing: 1px;
+}
+
+.aboutBlock p {
+    color: #808080;
+}
+/*END ABOUT BLOCK*/
+
+/*WATCHIT LATER*/
+.archive #lblmessage {
+    color: #555555;
+    display: block;
+    line-height: 1.3em;
+    text-align: center;
+    width: 100%;
+    font-size: 20px;
+    float: left;
+}
+
+
+.archive .left {
+    width: 100%;
+    margin: auto;
+}
+
+.archive .inputHolder {
+    display: block;
+    float: left;
+    height: 30px;
+    margin: 20px auto;
+    min-width: 244px;
+    width: 0;
+}
+
+
+/*#content {overflow: auto;}*/
+
+.archive .channelsHolder {
+    display: block;
+    float: none;
+    margin: auto;
+    min-height: 600px;
+    width: 100%;
+}
+
+/*END WATCHIT LATER*/
+
+
+
+.styled-selectOpt {
+    background: none repeat scroll 0 0 transparent;
+    border: 0 none;
+    border-radius: 0;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    height: 30px;
+    line-height: 30px;
+    width: 180px;
+}
+
+.styled-selectOpt {
+    background-color: #fff;
+    background-image: url("/images/ddl-Opt.png");
+    background-position: right center;
+    background-repeat: no-repeat;
+    border: medium none;
+    overflow: hidden;
+    border: 1px solid #ccc;
+}
+
+
+.selectStep {
+    color: #2a99bd;
+    display: none;
+    float: left;
+    font-weight: bold;
+    height: 30px;
+    line-height: 30px;
+    margin-right: 0;
+    width: 28px;
+    text-transform: capitalize;
+    text-align: center;
+    margin-left: -23px;
+}
+
+.filterStep {
+    border: none;
+    width: 40px;
+    height: 30px;
+    line-height: 35px;
+    font-size: 14px;
+    margin-right: 0;
+    text-align: left;
+    color: #555;
+    margin-left: 5px;
+}
+
+.shareSocial {
+    /* display: block; */
+    width: 82px;
+    height: 42px;
+    line-height: 42px;
+    /* float: left; */
+    background-image: url('/images/shareIcon.png');
+    background-repeat: no-repeat;
+    background-position: right;
+    position: absolute;
+    top: 0;
+    right: 160px;
+    /* background-color: red; */
+    color: #777;
+    text-transform: capitalize;
+}
+
+.shareSocialchannel {
+    color: #ccc;
+    background-image: url('/images/shareIconChannel.png');
+}
+
+
+.actionsHolderDisactivated a {
+    color: #eee;
+    cursor: default;
+    font-size: 12px;
+    margin-right: 20px;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+
+    .actionsHolderDisactivated a:hover {
+        color: #eee;
+        cursor: default;
+    }
+
+
+.actionsHolder a.publishedDisactivated {
+    background: none repeat scroll 0 0 #eee;
+    color: #fff;
+    cursor: default;
+    display: block;
+    float: left;
+    font-size: 11px;
+    font-weight: bold;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: capitalize;
+    width: 70px;
+}
+
+
+
+.facebookLog {
+    background-attachment: scroll;
+     background-clip: border-box; 
+    background-color: #fff;
+    background-origin: padding-box;
+    background-position: 0 center;
+    background-repeat: no-repeat;
+    color: #fc0;
+    display: block;
+    float: left;
+    height: 40px;
+    line-height: 40px;
+    margin-bottom: 15px;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    cursor: pointer;
+    background-image: url(/images/facebookSignUp.jpg);
+    max-width: 340px;
+    border: none;
+}
+
+    .facebookLog:hover {
+        background-color: #3b5b93;
+    }
+
+#ancCrop, #ancCropBackground, #ancCropSchedule {
+    background-color: #fff;
+    background-image: url("/images/crop.png");
+    background-size: 100% auto;
+    border-right: 1px solid #2a99bd;
+    color: #fc0;
+    cursor: pointer;
+    display: block;
+    font-weight: bold;
+    height: 35px;
+    opacity: 0.7;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 35px;
+    z-index: 100;
+    border-bottom: 1px solid #2a99bd;
+    background-repeat: no-repeat;
+}
+
+
+
+#ancCropSchedule {
+    width: 35px;
+    height: 35px;
+    display: none;
+}
+
+    #ancCropSchedule:hover {
+        opacity: 1;
+    }
+
+#ancCrop:hover, #ancCropBackground:hover {
+    opacity: 1;
+}
+
+#divCropImgContainer {
+    z-index: 1020;
+    position: fixed;
+    display: none;
+    width: 300px;
+    background: #fff none repeat scroll 0 0;
+    margin: -255px auto auto -475px;
+    left: 50%;
+    top: 50%;
+    padding: 40px;
+}
+
+#divChannelCropContainer {
+    z-index: 1020;
+    position: fixed;
+    display: none;
+    background: #fff none repeat scroll 0 0;
+    margin: -255px auto auto -475px;
+    left: 50%;
+    top: 50%;
+    width: 350px;
+}
+
+.select-image-btn {
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    float: left;
+    font-size: 17px;
+    margin: 100px 10px 10px 0px;
+    width: 100%;
+    background-color: #f18a11;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    float: left;
+    display: block;
+}
+
+.uploadImgDashboard {
+    margin: 40px 10px 10px 0px;
+}
+
+.imageUploadDashboard {
+    width: 250px;
+}
+
+.select-image-btn:hover {
+    background-color: #65AB31;
+    text-decoration: underline;
+}
+
+.imageUploadDashboard {
+    margin: 30px 10px 10px 0;
+}
+
+
+.image-size-label {
+    clear: both;
+    display: block;
+    font-size: 14px;
+    height: 30px;
+    text-align: left;
+    width: 100%;
+    color: #555;
+    margin-bottom: 10px;
+    line-height: 30px;
+}
+
+input.cropit-image-zoom-input {
+    border: medium none;
+    cursor: move;
+    display: block;
+    margin: 0;
+    position: relative;
+    width: 100%;
+}
+
+.minImgSize {
+    display: block;
+    float: left;
+    width: 100%;
+    height: 20px;
+    font-size: 12px;
+    color: #777;
+    margin-top: 10px;
+}
+
+.image-editor {
+    margin: 0;
+}
+
+#divCropImgBackgroundContainer {
+    z-index: 1020;
+    position: fixed;
+    display: none;
+    background: #fff none repeat scroll 0 0;
+    margin: -255px auto auto -475px;
+    left: 50%;
+    top: 50%;
+    max-width: 900px;
+    padding: 1%;
+    width: 98%;
+
+}
+
+#divCropImgBackgroundContainer .cropit-image-preview {
+    background-image: url(/images/Drag-and-Drop-900.jpg);
+    background-color: #f8f8f8;
+    background-size: cover;
+    cursor: move;
+    display: block;
+    float: left;
+    height: 200px;
+    width: 100%;
+    background-position: center!important;
+}
+
+    #divCropImgBackgroundContainer .cropit-image-preview-container {
+        display: block;
+        float: left;
+        width: 100%;
+    }
+
+#divCropImgContainer #imgContainer {
+    width: 200px;
+    height: 200px;
+    margin: auto;
+}
+
+.liImageEditor .image-editor {
+    width: 334px;
+}
+
+.liImageEditor .cropit-image-preview {
+    width: 200px;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.cropit-image-background-container {
+    margin-left: 15px;
+    border: 3px dashed #ccc;
+    width: 330px !important;
+}
+
+.upgradeChannel .cropit-image-background-container {
+    margin-left: 60px;
+}
+
+.liImageEditor .cropit-image-input {
+    opacity: 0;
+}
+
+#divCropImgContainer #cropAction {
+    display: block;
+    float: left;
+    width: 400px;
+    height: 70px;
+    margin-top: 10px;
+}
+
+    #divCropImgContainer #cropAction a {
+        display: block;
+        float: left;
+        margin-right: 50px;
+    }
+
+#divCropImgContainer #imgContainer #cropbox {
+    width: 100%;
+}
+
+#divCropImgContainer .cropit-image-preview {
+    background-color: #f8f8f8;
+    background-image: url('/images/Drag-and-Drop-250.jpg');
+    background-size: cover;
+    border: 1px solid #eee;
+    cursor: move;
+    float: left;
+    height: 250px;
+    width: 250px;
+}
+
+.cropit-image-background {
+    opacity: .2;
+    cursor: auto;
+}
+
+#divChannelCropContainer .cropit-image-preview {
+    background-color: #f8f8f8;
+    background-image: url("/images/Drag-and-Drop-900.jpg");
+    background-size: cover;
+    border: 1px solid #eee;
+    cursor: move;
+    height: 250px;
+    margin-top: 7px;
+    width: 250px;
+}
+
+
+/*#chkIsLongDuration {
+display: block;
+float: left;
+height: 38px;
+margin-left: 5px;
+}*/
+
+.videoMinus {
+    display: block;
+    float: left;
+    font-size: 14px;
+    color: #555;
+    line-height: 36px;
+}
+
+#content-containertutorial {
+    display: none;
+    float: left;
+    width: 435px;
+    height: 165px;
+    padding-left: 5px;
+    padding-top: 10px;
+    overflow-y: hidden;
+}
+
+.playerboxtutorial .playerbox-youtube .playerbox-vimeo .playerbox-strimm {
+    background-color: #111;
+    height: 600px;
+    padding: 10px;
+    width: 800px;
+    z-index: 10000;
+}
+
+.playerboxtutorial {
+    overflow: hidden;
+    position: relative;
+    flex-grow: 1;
+    width: 800px;
+    height: 600px;
+    padding-bottom: 30px;
+}
+
+.playerboxtutorial iframe {
+    left: 0;
+    top: 0;
+    z-index:1;
+    width:100%;
+    height:100%;
+}
+
+#playertutorial, #PlayerHoldertutorial {
+    width: 660px;
+    height: 400px;
+}
+
+#relatedtutorial.playertutorial {
+    background-color: #999999;
+    display: block;
+    **height: 570px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    **width: 800px;
+}
+
+#passwordContent {
+    display: block;
+    float: left;
+    margin: auto;
+    width: 100%;
+}
+
+#spnMsgPassword {
+    color: #f03636;
+    display: block;
+    width: 102%;
+    height: 40px;
+    text-align: center;
+}
+
+#spnPasswordChanged {
+    display: block;
+    width: 100%;
+    line-height: 100px;
+    text-align: center;
+    color: #555;
+    font-size: 17px;
+}
+
+.webHolder {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 2560px;
+    margin: auto;
+}
+
+.share42init {
+    padding-top: 0;
+    height: 32px;
+}
+
+.facebookLogSignUp {
+    background-attachment: scroll;
+    background-clip: border-box;
+    /* background-color: #3b5b93; */
+    background-color: #5272aa;
+    background-origin: padding-box;
+    background-position: 0 center;
+    background-repeat: no-repeat;
+    color: #fff;
+    display: block;
+    float: left;
+    height: 40px;
+    line-height: 40px;
+    margin-bottom: 15px;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    background-image: url('/images/facebookLogSignUp.jpg');
+    background-size: 100%;
+}
+
+.spnShowPassword {
+    color: #333;
+    font-size: 15px;
+}
+
+.businessMenu {
+    display: none;
+}
+
+
+.lb_overlay {
+    opacity: 0.7 !important;
+}
+
+
+#embeddedLinkInfo {
+    width: 500px;
+    display: none;
+    background-color: white;
+    padding: 20px;
+}
+
+    #embeddedLinkInfo .closeInterestsPopup {
+        top: 7px;
+        right: 7px;
+    }
+
+#popupTitle {
+    display: block;
+    float: left;
+    width: 100%;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    font-size: 20px;
+    color: #2a99bd;
+    border-bottom: 1px solid #2a99bd;
+    margin-bottom: 20px;
+}
+
+#popupContent {
+    display: block;
+    float: left;
+    line-height: 24px;
+    text-align: center;
+    width: 100%;
+}
+
+.gotoBusinessSolutions {
+    color: #2a99bd;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+    .gotoBusinessSolutions:hover {
+        color: #33c8f8;
+    }
+
+
+.videoOrTour {
+    color: #f9f9f9;
+    padding-left: 5px;
+    font-size: 12px;
+    text-transform: capitalize;
+}
+
+.videoOrTourDashboard {
+    border-bottom: none;
+    text-decoration: underline;
+}
+
+.videoOrTour:hover {
+    border-bottom: 1px solid #f9f9f9;
+}
+
+
+#btnWatchVideoHolderDashboard a {
+    display: block;
+    height: 20px;
+    line-height: 20px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 12px;
+    text-transform: capitalize;
+}
+
+    #btnWatchVideoHolderDashboard a:hover {
+        background-image: url("/images/how-to-video-white-hover.jpg");
+        opacity: 1;
+    }
+
+
+.takeTourP {
+    font-size: 14px;
+    text-align: left;
+    line-height: 23px;
+}
+
+.pCenter {
+    text-align: center;
+}
+
+
+
+
+
+#btnWatchVideoHolder {
+    cursor: pointer;
+    display: block;
+    float: left;
+    height: 20px;
+}
+
+.btnTutorialTourHolder {
+    display: block;
+    position: absolute;
+    top: 45px;
+    left: 225px;
+    height: 20px;
+    z-index: 20;
+}
+
+#btnWatchVideoHolder a {
+    color: #f9f9f9;
+    display: block;
+    font-size: 12px;
+    text-align: center;
+    height: 20px;
+    line-height: 22px;
+    text-transform: capitalize;
+}
+
+
+
+    #btnWatchVideoHolder a:hover {
+        color: #fff;
+        border-bottom: 1px solid #fff;
+    }
+
+#btnStartTourHolderPS #ancStartTour,
+#btnStartTourHolderPS #advancedTour {
+    color: #eee;
+    display: block;
+    float: left;
+    font-size: 12px;
+    height: 21px;
+    line-height: 21px;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+
+#btnStartTourHolderPS {
+    cursor: pointer;
+    float: left;
+    font-size: 13px;
+    height: 20px;
+    margin-left: 10px;
+    text-align: right;
+    z-index: 30;
+    width: 110px;
+}
+
+
+
+.btnTutorialTourHolderDashboard {
+    display: block;
+    float: right;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    margin-top: 9px;
+}
+
+
+.closeSymbol {
+    display: block;
+    float: right;
+    width: 100%;
+    height: 40px;
+    font-size: 17px;
+    color: #fff;
+    text-align: right;
+    box-sizing: border-box;
+    padding: 5%;
+    cursor: pointer;
+}
+
+.channelTiming {
+    background-color: red;
+    border-top-left-radius: 20px;
+    bottom: 0;
+    color: #ccc;
+    display: block;
+    float: left;
+    font-size: 14px;
+    font-weight: bold;
+    height: 22px;
+    line-height: 22px;
+    opacity: 0.9;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    width: 50px;
+    z-index: 2;
+}
+
+.guideSam {
+    background-image: url('/images/sam/sam-006.png');
+    display: block;
+    width: 120px;
+    height: 120px;
+    margin: auto;
+    margin-top: 10px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.sam01 {
+    background-image: url('/images/sam/sam-001.png');
+}
+
+.sam02 {
+    background-image: url('/images/sam/sam-002.png');
+}
+
+.sam03 {
+    background-image: url('/images/sam/sam-003.png');
+}
+
+.sam04 {
+    background-image: url('/images/sam/sam-004.png');
+}
+
+.sam05 {
+    background-image: url('/images/sam/sam-005.png');
+}
+
+.businessSolAfterLog {
+    color: #2a99bd;
+    cursor: pointer;
+    display: block;
+    float: right;
+    height: 35px;
+    line-height: 35px;
+    width: 145px;
+    border-right: 1px solid #999;
+    margin-right: 15px;
+}
+    /*@-moz-document url-prefix() {
+    .businessSolAfterLog {
+        width: 140px;
+    }
+}*/
+
+    .businessSolAfterLog:hover {
+        color: #000;
+    }
+
+
+.mobileNav {
+    display: block;
+    float: left;
+    color: #fff;
+    line-height: 2em;
+    width: 100%;
+    padding: 2%;
+    border-bottom: 1px solid #1b596c;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 1px;
+    font-weight: 400;
+    background-image: url(/images/social/socialRound/network-mobile.png);
+    background-position: 10px;
+    background-repeat: no-repeat;
+    background-size: 27px;
+    padding-left: 20%;
+    background-color: #144554;
+    line-height: 27px;
+    box-sizing: border-box;
+}
+
+    .mobileNav:hover {
+        text-decoration: underline;
+    }
+
+.customIconProdStudio {
+    background-image: url('/images/social/socialRound/production.png');
+}
+
+.customIconFav {
+    background-image: url('/images/social/socialRound/favorits-mobile.png');
+}
+    .customIconFAQ {
+            background-image: url('/images/mobile/FAQ.png');
+    }
+
+.customIconWLater {
+    background-image: url('/images/social/socialRound/watchLater-mobile.png');
+}
+
+.customProfile {
+    background-image: url('/images/social/socialRound/profile.png');
+}
+
+.customGallery {
+    background-image: url('/images/social/socialRound/gallery.png');
+}
+
+.customSignUp {
+    background-image: url('/images/social/socialRound/signUP.png');
+}
+
+.customLogin {
+    background-image: url('/images/social/socialRound/login.png');
+}
+
+.customSignOut {
+    background-image: url('/images/social/socialRound/signOUT.png');
+}
+
+.customHowTo {
+    background-image: url('/images/social/socialRound/howTo-mobile.png');
+}
+.customIconFav {
+    background-image: url('/images/social/socialRound/favorits-mobile.png');
+}
+    .customIconFAQ {
+            background-image: url('/images/mobile/FAQ.png');
+    }
+
+
+.whatIsStrimmMobile {
+    background-image: url('/images/social/socialRound/what-is-strimm-mobile.png');
+    padding-top: 10px;
+}
+
+.customIconNone {
+    background-image: none;
+}
+
+
+
+    .tvGuide span {
+        font-size: 22px;
+        color: red;
+        font-weight: bold;
+    }
+
+.businessesMobileMenu {
+    color: #6cdbff;
+    border-top: none;
+}
+
+.mobileNavCreateChannel {
+    background-image: url(/images/social/socialRound/createChannel-mobile.png);
+    width: 249px;
+    background-color: #07d427;
+    margin: auto;
+    float: none;
+    margin-top: 20px;
+    height: 40px;
+    line-height: 40px;
+    padding: 0;
+    text-align: center;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.mobileNavCreateChannel:hover {
+text-decoration: none;
+ background-color: green;
+}
+
+.guideMobileHolder,
+.businessesMobileHolder {
+    background-position: 10px;
+    background-repeat: no-repeat;
+    background-size: 40px;
+    width: 100%;
+    float: left;
+}
+
+    .guideMobileHolder {
+    background-image: url(/images/TV-Guide.png);
+    opacity: 1;
+    background-size: 27px;
+    }
+    .guideMobileHolder:hover {
+        opacity: 1;
+    }
+
+.businessesMobileHolder {
+    background-image: url('/images/social/socialRound/businesses-mobile.png');
+}
+
+.mobileNavHeader {
+    /*background-image: url(/images/arrows/remoteDOWN.png);
+    background-position: 90%;
+    background-repeat: no-repeat;
+    background-size: 24px;*/
+    cursor: pointer;
+    background-color: transparent;
+    background-image: none;
+}
+
+    .mobileNavHeader.active {
+        /*background-image: url('/images/arrows/remoteUP.png');
+    background-position: 90%;
+    background-repeat: no-repeat;
+    background-size: 27px;*/
+        cursor: pointer;
+        background-image: none;
+    }
+
+.subBlock {
+    display: none;
+}
+
+.businessesMenuBlock {
+    width: 33%;
+    box-sizing: border-box;
+    padding: 7%;
+    display: block;
+    float: left;
+    padding-top: 0;
+}
+
+.submobileNav {
+    display: block;
+    float: left;
+    color: #fff;
+    line-height: 2em;
+    width: 100%;
+    border-bottom: 1px solid #0e2b34;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 15px;
+    letter-spacing: 1.5px;
+    height: 70px;
+}
+
+.businessesMenuBlockText {
+    display: block;
+    width: 100%;
+    line-height: 30px;
+    color: #eee;
+    font-size: 14px;
+    text-align: center;
+    clear: both;
+}
+
+.businessesMenuBlockMore {
+    display: block;
+    float: none;
+    margin: auto;
+    clear: both;
+    border: 1px solid #eee;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 4px;
+    text-align: center;
+    color: #fff;
+    margin-top: 20px;
+    width: 120px;
+}
+
+
+@media (max-width:1024px) {
+
+    .pricingHome {
+        right: 80px;
+    }
+
+    .pricingHomeAfter {
+  right: 125px;
+    }
+    .mobileMenuOpen {
+        height: 100vh;
+    }
+
+    #divChannelsCategory .galleryView {
+        bottom: 150px;
+    }
+
+    #divChannelsCategory {
+        height: 100vh;
+    }
+
+    #divChannelsCategory,
+    .subBlock {
+        width: 100%;
+        left: 0;
+        background: #111;
+        border-top: 1px solid #555;
+    }
+
+
+    .mainSignIn {
+        margin-right: 10px;
+        right: 0;
+    }
+        #exploreBusinessOpt {
+        display: none;
+
+    }
+        .spnHelloHolder {
+    right: 20px;
+}
+}
+
+
+@media (max-width:960px) {
+    #divChannelsCategory ul li {
+        width: 50%;
+    }
+}
+
+
+@media (max-width:768px) {
+
+    .playerboxtutorial {
+        width: 620px;
+        height: 380px;
+    }
+
+    #clickPlayText {
+        display: none;
+    }
+
+    .pricingHome,
+    .pricingHomeAfter {
+        display: none;
+    }
+        .mainSignIn,
+    .spnAdvSearch {
+        display: none;
+    }
+
+    
+    .advancedSearch {
+    left: 90%;
+    border: none;
+    }
+    .AdvSearchImgHN {
+        border-left: none;
+        background-color: transparent;
+    }
+
+
+    .divLogo {
+    width: 160px;
+    padding-top: 15px;
+}
+    .advancedSearch.activeSearch {
+        left: 0;
+        top: 74px;
+        width: 98%;
+        background: #fff;
+        padding: 1%;
+        min-width: 98%;
+    }
+
+    .selectStep {
+        display: none;
+    }
+
+    .filterStep {
+        margin-left: 27px !important;
+    }
+
+    .createChannelTopRRight {
+        display: none;
+    }
+
+    .businessesMenuBlock {
+        width: 90%;
+        float: none;
+        padding-top: 7%;
+        border-bottom: 1px solid #555;
+        margin: auto;
+    }
+
+    .businessesMenuBlockNoBorder {
+        border-bottom: none;
+    }
+
+
+
+    .createChannelTopRRight {
+        display: none;
+    }
+
+
+
+    .lb_overlay {
+        opacity: 1 !important;
+    }
+
+    .closePlayerBox {
+        top: -27px;
+    }
+
+    #userInterestsModal {
+        width: 98%;
+        margin: auto;
+        display: none;
+    }
+
+    .feedeback {
+        display: none;
+    }
+
+
+
+    #divLoginRight {
+        border-left: none;
+        display: block;
+        float: none;
+        height: auto;
+        padding-left: 0;
+        padding-top: 25px;
+        width: 100%;
+        margin: auto;
+        clear: both;
+    }
+
+
+    #ancLogin {
+        color: #fff;
+        font-weight: normal;
+        margin-right: 0;
+        margin-top: 20px;
+        padding-left: 0;
+        padding-right: 0;
+        width: 100%;
+    }
+
+    .fullvh {
+        height: 600vh;
+    }
+
+    .mobileNav {
+        width: 100%;
+        padding: 3%;
+        padding-left: 15%;
+        line-height: 2em;
+    }
+
+    .customIconProdStudio {
+        background-image: url('/images/social/socialRound/production.png');
+    }
+
+    .customIconFav {
+        background-image: url('/images/social/socialRound/favorits-mobile.png');
+ 
+    }
+    
+    .customIconFAQ {
+            background-image: url('/images/mobile/FAQ.png');
+    }
+
+    .customIconWLater {
+        background-image: url('/images/social/socialRound/watchLater-mobile.png');
+    }
+
+    .customProfile {
+        background-image: url('/images/social/socialRound/profile.png');
+    }
+
+    .customGallery {
+        background-image: url('/images/social/socialRound/gallery.png');
+    }
+
+    .customHowTo {
+        background-image: url('/images/social/socialRound/howTo-mobile.png');
+    }
+
+    .whatIsStrimmMobile {
+        background-image: url('/images/social/socialRound/what-is-strimm-mobile.png');
+    }
+
+    .customIconNone {
+        background-image: none;
+    }
+
+    .tvGuide,
+    .mobileNavCreateChannel,
+    .businessesMobileMenu {
+    }
+
+        .tvGuide span {
+            font-size: 22px;
+            color: red;
+            font-weight: bold;
+        }
+
+    .businessesMobileMenu {
+        color: #6cdbff;
+        border-top: none;
+    }
+
+    .mobileNavCreateChannel {
+    background-image: url(/images/social/socialRound/createChannel-mobile.png);
+    width: 249px;
+    padding: 0;
+    }
+
+    .guideMobileHolder,
+    .businessesMobileHolder {
+        background-position: 5px;
+        background-repeat: no-repeat;
+        background-size: 40px;
+        width: 100%;
+        float: left;
+    }
+
+    .guideMobileHolder {
+        /* background-image: url(/images/social/socialRound/remote-mobile.png); */
+        background-image: url(/images/TV-Guide.png);
+        opacity: 0.9;
+        background-size: 35px;
+    }
+
+    .guideMobileHolder:hover {
+        opacity: 1;
+    }
+
+    .businessesMobileHolder {
+        background-image: url('/images/social/socialRound/businesses-mobile.png');
+    }
+
+
+
+    .subBlock {
+        display: none;
+    }
+
+
+    #divLogo {
+        width: 125px;
+    }
+
+
+    .leftTopHolderBeforeLogin {
+        display: none;
+    }
+
+    #topRightHolderBL {
+        display: none;
+    }
+
+    #loginBox, #divForgotPass, #divResendLink {
+        width: 300px;
+    }
+
+    .btnCreateChannel,
+    #divTopMenuHolder {
+        display: none;
+    }
+
+    .logoFooter {
+    width: 130px;
+    margin: auto;
+    background-size: 100%;
+    background-position:top;
+    }
+
+    .footerSocialHolder {
+        display: block;
+        float: none;
+        width: 110px;
+        margin-left: 0;
+        padding-right: 0;
+        margin-top: 0;
+        margin: auto;
+    }
+
+    .column {
+        margin: auto;
+        width: 45%;
+        height: 230px;
+    }
+
+        .column li a,
+        .column h3 {
+            text-align: center;
+            margin-bottom: 0;
+            color: #eee;
+            font-size: 14px;
+            height: auto;
+            line-height: 2.3em;
+        }
+
+        .column h3 {
+    color: #fff;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 30px;
+    height: 40px;
+    text-align: center;
+        }
+
+    .paragraphSloganBlackFoooterBasic {
+        display: none;
+    }
+
+    #helloMenuList {
+        display: none;
+    }
+
+    #topLeftHolder,
+    .businessSolAfterLog {
+        display: none;
+    }
+
+    #topRightHolder {
+        width: 40%;
+        margin: auto;
+    }
+
+.spnHelloHolder {
+    right: 10px;
+}
+
+    #spnHello {
+        color: #2a99bd;
+        float: none;
+        text-align: right;
+        line-height: 40px;
+        width: 100%;
+        margin: auto;
+        display: none;
+    }
+
+    #MenuImg, #helloImg {
+        display: none;
+    }
+
+
+    .selectStepHolder {
+    display: block;
+    float: left;
+    width: 100%;
+    margin: auto;
+    margin-left: 5px;
+    }
+
+
+
+    .ddlCategory {
+        width: 295px;
+    }
+
+
+    .channelCount {
+        font-size: 14px;
+        font-weight: normal;
+    }
+}
+
+
+@media (max-width:520px){
+
+    .playerboxtutorial {
+        width: 400px;
+        height: 280px;
+    }
+
+    #clickPlayText {
+        display: none;
+    }
+
+    #disagreeButton, #confirmButton {
+    width: 95%;
+}
+
+    .mobileNav {
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+}
+
+    .advancedSearch {
+    border: none;
+    top: 5px;
+    left: 85%;
+}
+    .absGuide {
+        width: 30px;
+        height: 30px;
+        top: 7px;
+        left: 45px;
+        background-color: transparent;
+        color: transparent;
+        background-size: 30px;
+        background-position: center;
+        border: none;
+    }
+
+    .txtSearchByTextHolder,
+    .videoSorting {
+        width: 100%;
+        float: left;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    #txtSearchByText {
+        width: 200px;
+    }
+
+    .ddlSortVideo {
+        width: 237px;
+        float: left;
+    }
+
+    .mainMenuBL, .mainMenuBL.active,
+    .mobileMenu, .mobileMenu.active {
+    top: 7px;
+    left: 7px;
+}
+
+    .advancedSearch.activeSearch {
+        top: 42px;
+        height: 38px;
+        padding: 0;
+        width: 100%;
+    }
+
+
+    #divChannelsCategory, .subBlock {
+        top: 40px;
+    }
+
+    #ancCloseSearchControl {
+        top: -40px;
+    }
+
+    .mobileMenuOpen, .mainMenuBLOpen {
+        top: 40px;
+    }
+
+
+    .mainTopHoplder {
+        height: 37px;
+        padding-top: 3px;
+    }
+
+
+    #topMenu {
+        height: 40px;
+    }
+
+
+    .AdvSearchImgHN {
+    border: none;
+    }
+
+    .divLogo {
+    width: 120px;
+    padding-top: 0;
+}
+
+
+    .spnHelloHolder {
+        padding-top: 0;
+        position: absolute;
+        right: 5px;
+        top: 3px;
+        font-size: 12px;
+    }
+
+    #topPlaceHolder {
+        height: 40px;
+    }
+
+    .VideoInfoCL {
+        top: 45px;
+    }
+}
+
+
+@media (max-width:460px) {
+
+
+    .submobileNav {
+        font-size: 12px;
+        height: auto;
+    }
+
+    .businessesMenuBlockText {
+        line-height: 1.3em;
+        font-size: 13px;
+    }
+
+    .businessesMenuBlockMore {
+        border: none;
+        width: 100%;
+        height: 40px;
+        line-height: 40px;
+        color: #fff;
+        margin-top: 0;
+        font-size: 13px;
+        text-transform: capitalize;
+        text-decoration: underline;
+    }
+
+
+    #divChannelsCategory {
+        width: 100%;
+        height: 100vh;
+        left: 0;
+    }
+
+        #divChannelsCategory .galleryView {
+            bottom: 80px;
+        }
+
+    .mobileMenuOpen {
+        width: 100%;
+        overflow: hidden;
+        height: 100vh;
+    }
+
+
+    .pageInfoHolder {
+        padding: 1%;
+        border: none;
+        float: none;
+        margin: auto;
+        width: 98%;
+    }
+
+    .ddlSortChannels {
+        height: 37px;
+        width: 100%;
+        border: 1px solid #2a99bd;
+        color: #2a99bd;
+        margin: auto;
+        margin-bottom: 5px;
+    }
+
+
+
+    #sortFavorite {
+        height: 37px;
+        width: 100%;
+        border: 1px solid #2a99bd;
+        color: #2a99bd;
+        margin: auto;
+        margin-bottom: 10px;
+    }
+
+    .mobileNavHeader {
+        /*background-image: url(/images/arrows/remoteDOWN.png);
+        background-position: 90%;
+        background-repeat: no-repeat;
+        background-size: 27px;*/
+        cursor: pointer;
+        background-image: none;
+    }
+
+
+        .mobileNavHeader:active {
+            /*background-image: url('/images/arrows/remoteUP.png');
+    background-position: 90%;
+    background-repeat: no-repeat;
+    background-size: 27px;*/
+            cursor: pointer;
+            background-image: none;
+        }
+}
+
+@media (max-width:350px) {
+    #divChannelsCategory ul li {
+        width: 50%;
+        height: 40px;
+    }
+
+        #divChannelsCategory ul li a {
+            width: 140px;
+            letter-spacing: 1px;
+            font-size: 10px;
+        }
+
+    .channelCount {
+        font-size: 12px;
+        font-weight: normal;
+    }
+
+    
+}
+
+#STRIMM_PLAYER_ROOT
+{
+    width:800px;
+}

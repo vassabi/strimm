@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="TimeGridChannelItemComponent" extends="Group">
+  <interface>
+    <field id="content" type="node" onChange="onContentChange" />
+    <field id="width" alias="background.width" onChange="onContentChange" />
+    <field id="height" alias="background.height" onChange="onContentChange" />
+    <field id="focusPercent" type="float" onChange="onFocusPercentChange" />
+    <field id="hasFocus" type="bool" onChange="onFocusChange" />
+  </interface>
+
+  <script type="text/brightscript" uri="./TimeGridChannelItemComponent.brs" />
+  <script type="text/brightscript" uri="pkg:/components/nodeUtils.brs" />
+  <script type="text/brightscript" uri="pkg:/source/generalUtils.brs" />
+
+  <children>
+    <Rectangle id="background" />
+    <Rectangle id="selector" />
+    <Rectangle id="separator" />
+    <Label id="title" vertAlign="center" horizAlign="center" font="font:SmallestSystemFont" />
+    <Poster id="poster" loadDisplayMode="scaleToFit" />
+    <Poster id="favStar" loadDisplayMode="scaleToFit" blendColor="0xfac90d" uri="pkg:/images/star.png" />
+    <Poster id="frame" blendColor="0xfac90d" uri="pkg:/images/list_focus.9.png" opacity="0" />
+  </children>
+</component>

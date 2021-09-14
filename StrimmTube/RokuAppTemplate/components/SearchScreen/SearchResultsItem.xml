@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="SearchResultsItem" extends="Group" >
+  <interface>
+    <field id = "itemContent" type = "node" onChange = "showContent" />
+    <field id = "width" type = "float" onChange="showContent"/>
+    <field id = "height" type = "float" onChange="showContent"/>
+    <field id = "focusPercent" type = "float" />
+    <field id = "listHasFocus" type = "bool" />
+    <field id = "itemHasFocus" type = "bool" />
+  </interface>
+
+	<script type="text/brightscript" uri="pkg:/components/SearchScreen/SearchResultsItem.brs" />
+  <script type="text/brightscript" uri="pkg:/components/nodeUtils.brs" />
+  <script type="text/brightscript" uri="pkg:/source/generalUtils.brs" />
+
+  <children>
+    <Label id="channelName" vertAlign="center" horizAlign="left" font="font:SmallestSystemFont" />
+    <Label id="programName" vertAlign="center" horizAlign="right" font="font:SmallestSystemFont" />
+  </children>
+</component>

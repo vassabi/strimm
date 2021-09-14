@@ -1,0 +1,396 @@
+﻿
+.h1FAQ {
+    color: #fff;
+    font-size: 65px;
+    font-weight: normal;
+    height: 200px;
+    letter-spacing: 1px;
+    line-height: 250px;
+    margin: auto;
+    text-align: center;
+    width: 600px;
+}
+
+
+.walkthruHolder {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    max-width: 900px;
+}
+
+h4 {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 300;
+    text-align: center;
+    line-height: 1.3em;
+}
+
+h6 {
+    color: #2a99bd;
+    font-size: 20px;
+    font-weight: normal;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    height: 100%;
+}
+
+.subTitleH6 {
+    font-weight: normal;
+}
+
+
+
+#divContentWrapper {
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    position: relative;
+}
+
+#content {
+    background-color: transparent;
+    /* float: left; */
+    margin: auto;
+    width: 98%;
+    /* box-shadow: 0 7px 15px #ccc; */
+    max-width: 1520px;
+    padding-left: 1%;
+    padding-right: 1%;
+    float: none;
+}
+
+#btnWatchVideoHolderGuides {
+    background-image: url("/images/how-to-video.png");
+    background-repeat: no-repeat;
+    bottom: -5px;
+    cursor: pointer;
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 140px;
+    z-index: 20;
+}
+
+#divContentWrapper h5,
+.howToMiniHead {
+    border-bottom: 1px solid #2a99bd;
+    color: #000;
+    font-family:;
+    font-size: 27px;
+    line-height: 40px;
+    margin-bottom: 35px;
+    position: relative;
+    width: 500px;
+    height: 100%;
+    font-weight: normal;
+}
+
+
+#divContentWrapper p {
+    color: #555555;
+    font-family:;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: justify;
+    margin-bottom: 10px;
+    width: 96%;
+    padding-right: 2%;
+    padding-left: 1%;
+    height: 100%;
+}
+
+
+
+#divContentWrapper ul {
+    clear: both;
+    display: block;
+    float: left;
+    margin-top: 20px;
+    width: 100%;
+}
+
+    #divContentWrapper ul li {
+        color: #2a99bd;
+        float: left;
+        font-size: 15px;
+        line-height: 25px;
+        list-style-type: disc;
+        width: 100%;
+        margin-left: 40px;
+    }
+
+#divContentWrapper ol {
+    margin-bottom: 20px;
+    height: 100%;
+}
+
+    #divContentWrapper ol ol {
+        margin-left: 4%;
+        width: 94%;
+    }
+
+
+    #divContentWrapper ol li {
+        color: #666;
+        font-size: 15px;
+        line-height: 25px;
+        margin-bottom: 5px;
+        height: 100%;
+    }
+
+
+.faq {
+    font-size: 20px;
+    color: #eee;
+    line-height: 50px;
+    width: 100%;
+    height: 50px;
+    border-bottom: none;
+    display: inline-block;
+    float: none;
+    text-align: center;
+    cursor: pointer;
+}
+
+    .faq:hover {
+        color: #fff;
+        text-decoration: underline;
+    }
+
+
+
+.guides {
+    color: #777777;
+    display: block;
+    font-size: 13px;
+    line-height: 22px;
+    margin-left: 10px;
+    text-decoration: underline;
+}
+
+#ancHowTo {
+    display: block;
+    float: right;
+    margin-left: 20px;
+}
+
+/*#ancHowTo {
+            background-image: url(/images/btnWatchVideo.png);
+            
+        }*/
+
+.btnWatchVideoHolderHToo {
+    background-image: url("/images/how-to-video.png");
+    background-repeat: no-repeat;
+    cursor: pointer;
+    display: block;
+    float: right;
+    height: 40px;
+    left: 250px;
+    line-height: 40px;
+    position: absolute;
+    top: 0;
+    width: 140px;
+}
+
+    .btnWatchVideoHolderHToo a {
+        color: #2a99bd;
+        display: block;
+        font-size: 13px;
+        font-weight: bold;
+        line-height: 35px;
+        text-align: right;
+        text-decoration: underline;
+    }
+
+
+.aTerms {
+    color: #777;
+    text-decoration: underline;
+}
+
+    .aTerms:hover {
+        color: #2A99BD;
+    }
+
+.limarginLeft {
+    margin-left: 20px;
+}
+
+
+
+.subtitlestrong {
+    font-size: 16px;
+    color: rgb(183, 56, 8);
+    /* font-weight: bold; */
+}
+
+.indieFrase {
+    display: block;
+    width: 100%;
+    line-height: 30px;
+}
+
+.howToImgRSide {
+    display: block;
+    float: right;
+    height: auto;
+    margin: 0 20px 20px;
+    width: 400px;
+}
+
+.flowLeft {
+    float: left;
+}
+
+.howToImgRSide img {
+    width: 100%;
+}
+
+.miniBlock {
+    display: block;
+    float: left;
+    margin-top: 50px;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.olNewVideos {
+    background-color: #eee;
+    padding: 1%;
+    width: 98%;
+    margin: auto;
+}
+
+
+.learnMoreButtonHolderNoMarg {
+    background-image: url("/images/howToHolder.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+    position: relative;
+}
+
+.pageTitleHolder {
+    display: block;
+    width: 100%;
+}
+
+.left230 {
+    left: 230px;
+}
+
+.walkthruUL {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+}
+
+.subtitlestrongSecondary {
+    color: #000;
+    font-weight: normal;
+    font-style: italic;
+    margin-bottom: -5px;
+    display: block;
+    margin-top: 20px;
+}
+
+.margin30 {
+    margin-left: 30px;
+}
+
+.RightSideColumnsBlock {
+    display: block;
+    float: left;
+}
+
+.subTitleSecondary {
+    font-weight: normal;
+}
+
+@media(max-width:1280px) {
+
+    /*.btnWatchVideoHolderHToo {
+            left: 500px;
+        }*/
+}
+
+@media (max-width:786px) {
+    .learnMoreButtonHolderNoMarg {
+        height: 200px;
+        background-position: right;
+    }
+
+    #divContentWrapper ol ol {
+        margin-left: 0;
+    }
+
+    .h1FAQ {
+        color: #fff;
+        font-size: 30px;
+        position: absolute;
+        bottom: 20px;
+        left: 10px;
+        height: auto;
+        line-height: normal;
+        text-align: left;
+    }
+
+    .walkthruHolder {
+        display: none;
+    }
+
+    #divContentWrapper p {
+        clear: both;
+    }
+
+    .howToImgRSide {
+        width: 100%;
+        float: none;
+        margin: 0;
+    }
+
+        .howToImgRSide img {
+            width: 150px;
+            display: block;
+            float: none;
+            margin: auto;
+        }
+
+    .miniBlock {
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+
+    .btnWatchVideoHolderHToo {
+        display: none;
+    }
+
+    .faq {
+        line-height: 50px;
+        width: 100%;
+        height: 50px;
+    }
+
+    h4 {
+        font-size: 25px;
+    }
+}
+
+@media(max-width:520px) {
+
+    #divContentWrapper h5, .howToMiniHead {
+        width: 100%;
+        text-align: center;
+        border-bottom: none;
+        color: #2a99bd;
+        margin-bottom: 0;
+    }
+}

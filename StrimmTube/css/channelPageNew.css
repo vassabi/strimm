@@ -1,0 +1,4199 @@
+﻿body {
+    background-color: #000;
+    font-size: 14px;
+    max-width: 100%;
+}
+
+
+#lblCategory {
+    font-size: 14px;
+}
+
+
+
+#mainWrapper {
+    display: block;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    background-color: #000;
+    max-width: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.mainSignIn {
+    color: #eee;
+}
+
+    .mainSignIn:hover {
+        color: #eee;
+    }
+
+.advancedSearch {
+    border: 1px solid #777;
+}
+
+.mainMenuBL {
+    background-image: url(/images/menu/menu-white.png);
+    opacity: 0.7;
+}
+
+    .mobileMenu.active, .mainMenuBL.active {
+        background-image: url('/images/close_pop-white.png');
+        background-color: transparent;
+    }
+
+.mobileMenuOpen, .mainMenuBLOpen {
+    background-color: #111;
+}
+
+.mobileNav {
+    border-bottom: 1px solid #333;
+    background-color: #111;
+}
+
+.mobileNavCreateChannel {
+    background-color: #07d427;
+}
+
+.mobileNavHeader {
+    cursor: pointer;
+    background-color: transparent;
+    background-image: none;
+}
+
+
+.wedHolderChannel {
+    display: block;
+    margin: auto;
+    width: 100%;
+    height: auto;
+}
+
+.businessSolAfterLog {
+    color: #ddd;
+}
+
+    .businessSolAfterLog:hover {
+        color: #fff;
+    }
+
+#ancCloseSearchControl {
+    border-right: none;
+}
+
+.fp-share.fp-icon {
+    display: none !important;
+}
+
+.socialShareOuterHolder {
+    background-color: #111;
+    display: block;
+    float: left;
+    height: 71px;
+    position: relative;
+    width: 100%;
+    border-bottom: 1px solid #444;
+    margin: auto;
+}
+
+.socialShareInnerHolder {
+    display: block;
+    margin: auto;
+    width: 1024px;
+    padding-top: 20px;
+}
+
+.televisionByPeopleH2 {
+    color: #eee;
+    display: block;
+    font-size: 29px;
+    letter-spacing: 3px;
+    line-height: 70px;
+    /* margin: auto; */
+    position: relative;
+    text-align: center;
+    width: 700px;
+    font-weight: normal;
+    float: left;
+}
+
+#divChannelsCategory, .subBlock {
+    background-color: #333;
+    border-left: 1px solid #000;
+    border-top: 1px solid #000;
+}
+
+.trBrowseChannels, .trBusinesses {
+    background-color: #333;
+    border-color: #000;
+}
+
+.homeActionsHolder {
+    width: 300px;
+    float: left;
+}
+
+.btnCreate {
+    width: 250px;
+    color: #fff;
+    height: 50px;
+    display: block;
+    background-color: #3bcd4e;
+    line-height: 50px;
+    text-align: center;
+    text-transform: capitalize;
+    background: #3bcd4e;
+    cursor: pointer;
+    margin: auto;
+    margin-top: 40px;
+}
+
+.watchVideoIcon200 {
+    background-image: url("/images/videoWhatIsStrimm.png");
+    background-repeat: no-repeat;
+    width: 170px;
+    height: 170px;
+    margin: auto;
+    display: block;
+    cursor: pointer;
+    float: right;
+    background-size: 100%;
+    display: none;
+}
+
+
+#divTopWrapper {
+    border-bottom: none;
+    box-shadow: none;
+    position: relative;
+    width: 100%;
+    z-index: 9999;
+    height: 70px;
+}
+
+#topMenu {
+    background-image: none;
+    background-repeat: repeat;
+    height: 70px;
+    width: 100%;
+    display: block;
+    float: left;
+    position: fixed;
+    top: 0;
+    background-color: #333;
+    z-index: 1000;
+}
+
+#divTopMenu,
+#divBrowseChannels a {
+    border-right: none;
+}
+
+#divTopMenu,
+#spnHello,
+.spnAdvSearch,
+.divImg,
+#divTopNav a,
+.whatIsStrimmTop a,
+.pricingHomeAfter,
+.pricingHome {
+    color: #ddd;
+}
+
+.pricingHomeAfter,
+.pricingHome {
+    border-right: 1px solid #ddd;
+}
+
+/*#divTopMenu:hover,
+    #spnHello:hover,
+    .spnAdvSearch:hover,
+    .divImg:hover,
+    #divTopNav a:hover,
+    .whatIsStrimmTop a:hover {
+    }*/
+
+#divBrowseChannels a #divImg {
+    color: red;
+}
+
+.mainTopHoplder {
+    box-shadow: 0 0 15px #000;
+    border: none;
+}
+
+.mobileMenu {
+    background-image: url(/images/menu/menu-white.png);
+    opacity: 0.7;
+    background-color: transparent;
+}
+
+    .mobileMenu.active {
+        background-image: url('/images/close_pop-white.png');
+    }
+
+.AdvSearchImg {
+    background-image: url("/images/lupa-search-white.png");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    display: block;
+    float: left;
+    height: 16px;
+    margin-left: -3px;
+    margin-top: 25px;
+    opacity: 0.5;
+    width: 16px;
+    opacity: 1;
+}
+
+.AdvSearchImgHN {
+    background-image: url("/images/lupa-search-white.png");
+    border-left: 1px solid #777;
+    background-color: transparent;
+}
+
+#MenuImg, #helloImg {
+    color: #eee;
+}
+
+.tweetUpdates ._491z {
+    border-bottom: 1px solid #777;
+}
+
+
+.playTime {
+    bottom: 0;
+    color: #777;
+    float: left;
+    height: 20px;
+    left: 0;
+    line-height: 20px;
+    position: absolute;
+    text-align: left;
+    width: 100%;
+    color: #eee;
+}
+
+
+
+
+
+/*-----------------------------------------------------------------------CHANNEL PAGE ONLY*/
+/*------------------------------------------ FOOTER-DOUBLE-CSS------------------------------------------------------*/
+
+#divFooterNH.default {
+    background-color: #222;
+    background-image: url("/images/footerImgHomeDecember.jpg");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    bottom: 0;
+    clear: both;
+    float: left;
+    height: 700px;
+    margin: auto;
+    max-width: 100%;
+    min-width: 960px;
+    position: relative;
+    width: 100%;
+}
+
+.footerSocialHolder {
+    display: block;
+    float: right;
+    width: 110px;
+    margin-left: 0;
+    padding-right: 20px;
+    margin-top: 5px;
+}
+
+.footerSocial {
+    display: block;
+    float: left;
+    width: 38px;
+    height: 38px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+
+.footerSocialFacebook {
+    display: block;
+    float: left;
+    background-image: url("/images/social/facebookBW.jpg ");
+    background-repeat: no-repeat;
+    opacity: 0.7;
+}
+
+.footerSocialTwitter {
+    display: block;
+    float: left;
+    background-image: url("/images/social/twitterBW.jpg ");
+    background-repeat: no-repeat;
+    opacity: 0.7;
+}
+
+.footerSocialGoogle {
+    display: block;
+    float: left;
+    background-image: url("/images/social/googleplusBW.jpg ");
+    background-repeat: no-repeat;
+    opacity: 0.7;
+}
+
+.footerSocialPinterest {
+    display: block;
+    float: left;
+    background-image: url("/images/social/pinterestBW.jpg ");
+    background-repeat: no-repeat;
+    opacity: 0.7;
+}
+
+    .footerSocialFacebook:hover,
+    .footerSocialTwitter:hover,
+    .footerSocialGoogle:hover,
+    .footerSocialPinterest:hover {
+        opacity: 1;
+    }
+
+.columnFooterSocial li a {
+    display: block;
+    margin-left: 0;
+    width: 38px;
+    height: 38px;
+}
+
+.columnFooterSocial {
+    margin: auto;
+}
+
+.columnHN {
+    display: inline-block;
+    margin: 120px 1% 1%;
+    text-align: center;
+    vertical-align: top;
+    /* width: 15%; */
+    width: 20%;
+}
+
+.holderNH {
+    clear: both;
+    margin: auto;
+    min-width: 1024px;
+    width: 100%;
+    height: 400px;
+    width: 100%;
+    max-width: 1520px;
+    margin: auto;
+    text-align: center;
+}
+
+.paragraphSloganBlackFoooterBasic {
+    color: transparent;
+    display: block;
+    font-size: 40px;
+    font-weight: normal;
+    line-height: 50px;
+    margin: 40px auto auto;
+    padding: 1%;
+    text-align: center;
+}
+
+.bottomButtonsHolderFoooterBasic {
+    display: block;
+    height: 90px;
+    margin: auto;
+    width: 350px;
+    position: relative;
+    height: 200px;
+}
+
+
+
+
+/*------------------------------------------////////FOOTER-DOUBLE-CSS------------------------------------------------------*/
+#PlayerHolder {
+    /*height: 100%;*/
+    height: 839px;
+    margin: auto;
+    background-image: url(/images/loading.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    width: 85%;
+    background-size: 900px;
+}
+
+/*@-moz-document url-prefix() {
+    #PlayerHolder {
+        max-width: 890px;
+    }
+}*/
+
+
+.playerbox,
+#player {
+    height: 100%;
+    width: 100%;
+}
+
+#dMotionPlayer {
+    height: 560px;
+    width: 100%;
+}
+
+/*#sideBarChannel {
+    background-color: transparent;
+    box-shadow: none;
+    display: block;
+    position: absolute;
+    height: 100%;
+    right: 0;
+    top: 0;
+    width: 320px;
+}*/
+
+
+#ChannelPageInfoHolder {
+    background: transparent none repeat scroll 0 0;
+    box-shadow: none;
+    float: left;
+    position: relative;
+    width: 100%;
+}
+
+#channelPageInfoWrapper {
+    display: block;
+    float: left;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.block {
+}
+
+.sideBarFake {
+    display: block;
+    float: left;
+    max-width: 100%;
+}
+
+.sideContentHolder .videoTitle
+/*.sideChannel .videoTitle*/ {
+    color: #bbb;
+    display: block;
+    float: left;
+    height: 50px;
+    line-height: 50px;
+    overflow: hidden;
+    position: static;
+    text-overflow: ellipsis;
+    white-space: normal;
+    width: auto;
+    /* -webkit-line-clamp: 2; */
+    /* -webkit-box-orient: vertical; */
+    font-size-adjust: 0.5;
+    white-space: nowrap;
+}
+
+.sideContentHolder .liveEvent .videoTitle {
+    width: 90%;
+}
+
+.videoLveInfoBox {
+    display: none;
+    position: absolute;
+    width: 300px;
+    height: auto;
+    overflow: hidden;
+}
+
+
+
+
+
+.sideChannel .videoTitle {
+    height: 25px;
+    line-height: 25px;
+    overflow: hidden;
+    text-align: left;
+    white-space: nowrap;
+    width: 99%;
+}
+
+.infoDevider {
+    display: block;
+    float: left;
+    width: 90%;
+    height: auto;
+    border-bottom: 1px solid #444;
+    padding: 2%;
+}
+
+
+
+.mainWrapperDublicate {
+    display: none;
+    width: 100%;
+    height: 800px;
+    float: left;
+}
+
+.browseChannelsView {
+    display: none;
+    float: left;
+    height: 410px;
+    width: 100%;
+    background-color: #0b0b1d;
+    position: fixed;
+    z-index: 99;
+    min-width: 100%;
+    margin-top: 5px;
+    background-image: url(/images/BG-repeat/channelGuideVideoBG.png);
+    background-repeat: repeat-x;
+    background-position: bottom;
+    box-shadow: 0 0 30px #000;
+    padding-bottom: 5px;
+}
+
+.browseChannelsDublicate {
+    display: none;
+    float: left;
+    height: 400px;
+    width: 100%;
+    min-width: 100%;
+}
+
+.ChannelInfoCL {
+    display: block;
+    float: left;
+    width: 45%;
+    height: auto;
+    padding-left: 2%;
+    box-sizing: border-box;
+    /*margin-top: 50px;*/
+    padding-right: 2%;
+}
+
+.openChannelInfo {
+    display: none;
+}
+
+.spnCreateChannel {
+    background-color: #05C705;
+    border: medium none;
+    color: #000;
+    cursor: pointer;
+    display: block;
+    float: left;
+    font-weight: normal;
+    height: 35px;
+    letter-spacing: 0;
+    line-height: 34px;
+    margin-left: 5px;
+    margin-right: 5px;
+    text-align: center;
+    text-transform: capitalize;
+    width: 145px;
+}
+
+    .spnCreateChannel:hover {
+        color: #fff;
+        background-color: #05C705;
+    }
+
+.channelNameCL,
+.channelCodeCL,
+.nowPlayingCL,
+.channelDescriptionCL,
+.runtimeCL {
+    display: block;
+    float: left;
+    width: 98%;
+    height: 30px;
+    line-height: 30px;
+    color: #f9f9f9;
+    text-transform: capitalize;
+    margin-bottom: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.nowPlayingCL {
+    position: relative;
+}
+
+.channelDescriptionCL {
+    height: 98px;
+}
+
+.lineupVideoTitle {
+    color: #ccc;
+}
+
+.moreDescription {
+    display: block;
+    float: left;
+    width: 735px;
+    text-align: right;
+    color: #00B300;
+    font-style: italic;
+}
+
+.titleCLFixed {
+    width: 90px;
+    float: left;
+    height: 50px;
+}
+
+
+.businessSolBeforeLog {
+    color: #fff;
+}
+
+    .businessSolBeforeLog:hover {
+        color: #fc0;
+    }
+
+.channelNameCL {
+    margin-top: 20px;
+}
+
+    .channelNameCL span,
+    .channelCodeCL span,
+    .nowPlayingCL span,
+    .channelDescriptionCL span,
+    .runtimeCL span {
+        text-transform: capitalize;
+    }
+
+
+.channelDescriptionCL span {
+    display: -webkit-box;
+    overflow: hidden;
+    word-wrap: normal;
+    width: 80%;
+    vertical-align: bottom;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    line-height: 30px;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    color: #bbb;
+}
+
+.nowPlayingCL span {
+    display: -webkit-box;
+    line-height: 30px;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    float: left;
+    color: #bbb;
+    padding-left: 0px;
+    width: 80%;
+}
+
+
+
+@-moz-document url-prefix() {
+    .channelDescriptionCL span {
+        max-height: 120px;
+    }
+
+    .nowPlayingCL span {
+        max-height: 50px;
+        line-height: 24px;
+    }
+}
+
+.channelDescriptionCL .descrCL {
+    display: block;
+    float: left;
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    color: #f9f9f9;
+    text-transform: capitalize;
+    margin-bottom: 15px;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.channelNameCL span {
+    font-size: 19px;
+    color: #fff000;
+}
+
+.lipa {
+    display: block;
+    float: left;
+    width: 100%;
+    height: 600px;
+    background: #000;
+    position: absolute;
+    bottom: 0;
+    z-index: 99;
+}
+
+.closeMenuLive {
+ display: block;
+
+background-image: url(/images/close_pop-white.png);
+background-position: right;
+background-repeat: no-repeat;
+background-size: 30px;
+height: 12px;
+width: 100%;
+background: ;
+background-size: cover;
+height: 20px;
+width: 20px;
+float: right;
+}
+.closeLivePanel
+{
+     display: block;
+
+background-image: url(/images/close_pop-white.png);
+background-position: right;
+background-repeat: no-repeat;
+background-size: 30px;
+height: 12px;
+width: 100%;
+background: ;
+background-size: cover;
+height: 30px;
+width: 30px;
+float: right;
+}
+
+.menuChannelLive,
+.infoChannelLive {
+    display: block;
+    float: left;
+    width: 100%;
+}
+
+/*.btnPlayLiveVideo {
+    float: left;
+    line-height: 40px;
+    border-bottom: 1px solid #555;
+}*/
+
+.btnPlayLiveVideo.material-icons {
+    float: left;
+    line-height: 40px;
+    border-bottom: 1px solid #555;
+    color: #32bae6;
+}
+.titleLive.active {
+background-color:#2a99bd;
+}
+ .btnPlayLiveVideo.material-icons.active {
+        color: red;
+    }
+
+.submenuChannelLive,
+.subinfoChannelLive,
+.liveEventInfo {
+    display: block;
+    float: left;
+    width: 30%;
+    text-align: center;
+    line-height: 40px;
+    color: #ddd;
+    text-transform: none;
+    border-bottom: 1px solid #555;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+    .submenuChannelLive.submenuChannelLiveTitle {
+        width: 38%;
+    }
+
+.submenuChannelLive {
+    color: #fc0;
+}
+
+.liveEventInfo {
+    width: 3%;
+    text-transform: lowercase;
+    background-image: url(/images/infoIconSlider.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    height: 40px;
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.subinfoChannelLive.titleLive {
+    width: 34%;
+}
+
+
+.liveEventInfoPopUp {
+	display: none;
+	position: relative;
+	/* left: 30%; */
+	width: 98%;
+	/* max-width: 290px; */
+	height: auto;
+	background-color: #555;
+	/* padding: 1%; */
+	/* height: 271px; */
+	/* overflow: hidden; */
+	z-index: 999;
+	/* padding-top: 0.5%; */
+}
+
+.liveEventInfoPopUpTitle, .liveEventInfoPopUpDescription {
+	display: block;
+	float: left;
+	color: #ccc;
+	line-height: 20px;
+	text-align: left;
+	width: 99%;
+	background: #555;
+}
+.liveEventInfoPopUpDescription {
+
+	overflow: hidden;
+	padding-bottom: 1%;
+	text-overflow: ellipsis;
+	width: 100%;
+	display: block;
+	display: -webkit-box;
+	/* max-width: 290px; */
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+    height:116px;
+}
+.nano .content.liveInfo {
+	bottom: 0;
+	left: 0;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	padding-left: 5px;
+	padding-top: 5px;
+	position: absolute;
+	right: 0;
+	top: 0;
+	padding-left: 1%;
+	padding-right: 1%;
+}
+/*.liveEventInfoPopUpDescription.more
+{
+    height: 116px;
+}*/
+.liveEventInfoPopUpDescription.less
+{
+    height: auto;
+}
+.showMoreLessLive {
+	position: absolute;
+	bottom: 0px;
+	right: 10px;
+	display: block;
+	color: #2db9e7;
+    cursor:pointer;
+}
+
+.liveEventInfoPopUpTitle {
+    color: #fff;
+}
+
+.liveEventInfoPopUpTitle {
+    border-bottom: 1px solid #999;
+    padding-left:1%;
+}
+
+
+
+.closeGuide {
+    display: none;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-image: url(/images/closeBut.png);
+    width: 17px;
+    height: 17px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    opacity: 1;
+    background-size: 100%;
+}
+
+    .closeGuide:hover {
+        opacity: 1;
+    }
+
+.actionsCLHolder {
+    display: block;
+    float: left;
+    width: 100%;
+    height: auto;
+}
+
+@-moz-document url-prefix() {
+    .actionsCLHolder {
+        bottom: 20px;
+        width: 300px;
+    }
+}
+
+.VideoInfoCL {
+    display: block;
+    float: left;
+    width: 50%;
+    height: 100%;
+    position: relative;
+}
+
+
+
+.videoCL {
+    width: 100%;
+    height: 100%;
+    background-image: url('/images/loading.png');
+    background-position: center;
+    background-size: 100%;
+    position: absolute;
+    right: 0;
+}
+
+
+.durationTimelCL {
+    color: #fff;
+    cursor: pointer;
+    height: 30px;
+    line-height: 30px;
+    text-align: left;
+    text-transform: capitalize;
+    display: block;
+    float: left;
+}
+
+.TLrecordRecCL,
+.spnAbuseRep {
+    line-height: 33px;
+}
+
+
+
+.watchCL {
+    width: 100%;
+    margin-bottom: 10px;
+    margin-top: -1px;
+    display: block;
+    float: left;
+}
+
+    .watchCL span {
+        background: transparent;
+        text-transform: capitalize;
+        width: 130px;
+        text-align: center;
+        float: left;
+        border: 1px solid #008000;
+        color: #05C705;
+        border-radius: 2px;
+        cursor: pointer;
+        height: 37px;
+        line-height: 37px;
+    }
+
+
+        .watchCL span:hover {
+            background: #05C705;
+            color: #fff;
+        }
+
+.recordlCL {
+    width: 20%;
+    margin-right: 15%;
+}
+
+.recHolder,
+.TLabuseReportHolder {
+    display: block;
+    float: left;
+    width: auto;
+    background: transparent;
+    margin-right: 20px;
+}
+
+
+
+.ledCL {
+    display: block;
+    float: left;
+    width: 14px;
+    height: 14px;
+    border-radius: 12px;
+    border: 5px solid #BFBFBF;
+    background-color: red;
+    margin-top: 15px;
+}
+
+
+.muteCL,
+.abuseCL {
+    display: block;
+    float: left;
+    width: 30px;
+    background-image: url(/images/social/socialRound/abuse-round.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 30px;
+    height: 30px;
+    margin-top: 6px;
+    cursor:pointer;
+}
+
+.muteCL {
+    background-image: url('/images/muteOFF-white.png');
+    background-size: 30px;
+}
+
+
+.TVGuideBottomList {
+    display: block;
+    float: left;
+    width: 100%;
+    position: static;
+    margin-top: 420px;
+}
+
+.TVGuideBottom {
+    display: block;
+    float: left;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    z-index: 999;
+    background-image: url(/images/00050.png);
+    background-repeat: repeat;
+    height: auto;
+    box-shadow: 1px 2px 17px #555;
+    max-height: 555px;
+}
+
+
+.TLinfoTopPannelBrCH {
+    display: block;
+    float: left;
+    width: 100%;
+    background: #000;
+}
+
+.channelWatchigDescription {
+    width: 100%;
+    float: left;
+    height: auto;
+    margin-top: 10px;
+}
+
+    .channelWatchigDescription p, .channelCreatorBIO p,
+    .describtionP,
+    .creatorBioP {
+        display: block;
+        height: auto;
+        max-height: 55px;
+        margin: 0 auto;
+        line-height: 22px;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        color: #bbb;
+        text-align: left;
+        width: 100%;
+        float: left;
+    }
+
+.creatorBioP {
+    height: 71px;
+    max-height: 70px;
+    width: 100%;
+    text-align: justify;
+    margin-top: 10px;
+}
+
+.creatorInfoPopUPFull {
+    height: 450px;
+}
+
+.visitMyPage {
+    display: block;
+    width: 100%;
+    clear: both;
+}
+
+.spnVisitMyPage {
+    display: block;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #fff;
+    background-color: #2da43c;
+    height: 35px;
+    line-height: 35px;
+    float: right;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+    .spnVisitMyPage:hover {
+        background-color: #277c32;
+    }
+
+@-moz-document url-prefix() {
+    .channelWatchigDescription p, .channelCreatorBIO p,
+    .describtionP,
+    .creatorBioP {
+        max-height: 50px;
+        line-height: 22px;
+        color: #ccc;
+        padding-top: 5px;
+    }
+}
+
+input::-placeholder {
+    color: #999;
+}
+
+input::-webkit-input-placeholder {
+    color: #999;
+}
+
+input::-webkit-input-placeholder {
+    color: #999;
+}
+
+input:-moz-placeholder {
+    color: #999;
+}
+/* FF 4-18 */
+input::-moz-placeholder {
+    color: #999;
+}
+/* FF 19+ */
+input:-ms-input-placeholder {
+    color: #999;
+}
+/* IE 10+ */
+
+
+
+.descriptionPFull {
+    display: block;
+    float: left;
+    height: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #ccc;
+    text-align: left;
+    line-height: 25px;
+    width: 100%;
+}
+
+.defaultDesc {
+    display: block;
+    height: 70px;
+    margin: 0 auto;
+    line-height: 60px;
+    color: #ccc;
+    text-align: left;
+}
+
+
+
+.moreInfo {
+    display: block;
+    float: left;
+    width: 100%;
+    text-align: left;
+    color: #2a99bd;
+    cursor: pointer;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+    .moreInfo:hover {
+        color: #3bcd4e;
+    }
+
+
+.videoTitleMain {
+    display: block;
+    float: left;
+    margin-left: 20px;
+    width: 70%;
+}
+
+
+.videoTitle h1 {
+    font-size: 16px;
+    line-height: 1.3em;
+    width: 100%;
+    color: #eee;
+    display: none;
+}
+
+.videoTitle span {
+    position: absolute;
+    right: 0;
+    color: #777;
+    top: 0;
+    font-size: 13px;
+}
+
+#innerLeftWrapperChannel {
+    border: 1px solid #777;
+    box-shadow: none;
+    display: block;
+    float: left;
+    height: 50px;
+    width: 50px;
+    margin-right: 7px;
+    margin-bottom: 7px;
+    margin-top: 7px;
+}
+
+.deviderMargin {
+    margin-bottom: 20px;
+    display: none;
+}
+
+#ChannelPageInfoHolder #innerRightWrapper {
+    height: auto;
+    float: left;
+    margin-top: 10px;
+    margin-left: 0;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.moreChannelsHolder {
+    display: block;
+    float: none;
+    width: 1200px;
+    height: auto;
+    background-color: black;
+    margin: auto;
+    padding-bottom: 1px;
+}
+
+.noChannelsMessage {
+    color: #eee;
+    display: block;
+    float: left;
+    width: 100%;
+    height: auto;
+    margin-left: 8px;
+    height: 20px;
+    padding: 10px;
+    padding-left: 0;
+}
+
+.spnMoreChannels {
+    color: #eee;
+    display: block;
+    float: left;
+    font-size: 25px;
+    font-weight: normal;
+    height: 30px;
+    margin-left: 8px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+}
+
+.chanBoxcategAdjust {
+    color: transparent;
+}
+
+#ratingHolder {
+    display: block;
+    float: left;
+    position: static;
+    width: 100%;
+}
+
+#ChannelPageInfoHolder #titleHolder {
+    display: block;
+    float: left;
+    margin-top: 0;
+    padding-right: 0;
+    width: 159px;
+}
+
+.channelCreatorBIO {
+    display: block;
+    float: left;
+    clear: both;
+}
+
+#ChannelPageInfoHolder #ancName {
+    color: #2a99bd;
+    cursor: default;
+    font-size: 20px;
+    font-weight: bold;
+    height: auto;
+    line-height: 20px;
+    margin-bottom: 10px;
+    text-align: left;
+    width: 100%;
+}
+
+#ancUserName {
+    color: #eee;
+    float: left;
+    height: 50px;
+    line-height: 50px;
+    text-decoration: underline;
+    text-align: left;
+    margin-left: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+    #ancUserName:hover {
+        color: #2db9e7;
+    }
+
+
+
+#embededCodeCopyArea {
+    width: 100%;
+    height: 100%;
+}
+
+#ChannelPageInfoHolder #categoryHolder {
+    margin-bottom: 0;
+    display: block;
+    float: left;
+    cursor: default;
+}
+
+.channelInfoCategory,
+#ChannelPageInfoHolder #lblCategory {
+    display: block;
+    float: left;
+    color: #ccc;
+    text-transform: capitalize;
+    line-height: 20px;
+}
+
+.channelInfoCategory {
+    margin-right: 5px;
+}
+
+
+#ChannelPageInfoHolder #channelInfo {
+    height: 15px;
+    line-height: 15px;
+    color: #ddd;
+    width: 100%;
+    margin: auto;
+    display: block;
+    float: none;
+    text-transform: capitalize;
+    padding-top: 10px;
+}
+
+.infoShowIconInfo {
+    /* background-image: url(/images/infoIconSlider.png); */
+    background-image: url(/images/social/socialRound/channelnfo.png);
+    background-repeat: no-repeat;
+    background-size: 35px;
+    display: block;
+    height: 40px;
+    width: 40px;
+    opacity: 0.7;
+    margin-top: 0;
+    background-position: center;
+}
+
+
+
+
+    .infoShowIconInfo:hover {
+        opacity: 1;
+    }
+
+#ChannelPageSocialHolder {
+    background: transparent;
+    width: 98%;
+    padding: 1%;
+    box-shadow: none;
+    float: left;
+    border-top: none;
+    padding-top: 0;
+}
+
+
+.channelCreator {
+    display: block;
+    width: 100%;
+    float: left;
+}
+
+.channelCreatorImg {
+    border: 2px solid #3BCD4E;
+    display: block;
+    float: left;
+    height: 50px;
+    margin-right: 7px;
+    width: 50px;
+    margin-top: 7px;
+    border-radius: 27px;
+}
+
+.creatorRight,
+.creatorLeft,
+.channelLeft,
+.channelRight {
+    display: block;
+    float: left;
+}
+
+.channelLeft,
+.channelRight {
+    /*margin-top: 10px;*/
+}
+
+.imgChannelAvatarChannel {
+    height: 120px;
+    width: 120px;
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+
+
+.channelChannelImg {
+    display: none;
+}
+
+.spnChannelCreator {
+    display: block;
+    float: left;
+    margin-right: 5px;
+    color: #30b1db;
+    height: 50px;
+    line-height: 50px;
+    text-transform: capitalize;
+    width: 60px;
+    text-align: left;
+    font-weight: bold;
+}
+
+.spnChannelCreatorName {
+    display: block;
+    float: left;
+}
+
+
+.playerboxSmall, #playerSmall {
+    width: 400px;
+    height: 225px;
+}
+
+
+
+.options .schedule,
+.options .watchlater,
+.options .abusereport,
+.options .addtofavorite,
+.options .toprated {
+    background-image: url('/images/social/socialRound/watchLater-round.png');
+    background-size: 35px;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+    display: block;
+    float: left;
+    height: 35px;
+    line-height: 40px;
+    margin-right: 15px;
+    opacity: 0.7;
+    padding-left: 40px;
+    text-transform: lowercase;
+}
+
+
+
+.fb_iframe_widget iframe {
+    background-image: url('/images/fff50.png');
+    background-repeat: repeat;
+    position: absolute;
+    min-height: 610px;
+    overflow: hidden;
+    margin-left: 3px;
+    width: 100% !important;
+}
+
+
+
+.fb_iframe_widget {
+    display: block !important;
+    position: relative;
+    right: 0;
+}
+
+    .fb_iframe_widget span {
+        width: 100% !important;
+    }
+
+
+.hideInfoBlock {
+    background-image: url(/images/00075.png);
+    background-repeat: repeat;
+    bottom: 0;
+    display: none;
+    height: 350px;
+    left: 0;
+    min-width: 100%;
+    padding: 2%;
+    position: absolute;
+    width: 96%;
+    z-index: 1;
+}
+
+
+.hideSchedule {
+    background-image: url(/images/slideArrows/slideArrowShow.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 55px;
+    left: 0;
+    cursor: pointer;
+    display: block;
+    z-index: 1;
+    height: 30px;
+    color: transparent;
+    width: 30px;
+    opacity: 1;
+    z-index: 999;
+    cursor: pointer;
+    background-size: 25px;
+    /* margin-top: 45px; */
+    display: none;
+}
+
+#divBrowseChannels a {
+    font-weight: bold;
+}
+
+.hideSchedule:hover {
+    opacity: 1;
+}
+
+.webHolderRight {
+    display: block;
+    float: left;
+    margin-top: 20px;
+}
+
+.hideInfoScheduleBlock {
+    width: 95%;
+    background-image: url(/images/00075.png);
+    background-repeat: repeat;
+    min-width: 320px;
+    position: absolute;
+    right: 45px;
+    top: 40%;
+    height: 100%;
+    z-index: 99;
+    display: none;
+}
+
+.webHolderRightWrapper {
+    height: 560px;
+    width: 19%;
+    overflow: hidden;
+    right: 0;
+    top: 0;
+    padding-left: 1%;
+    position: absolute;
+    min-width: 280px;
+}
+
+
+
+.expandPanel {
+    /*background-image: url('/images/slideArrows/slideArrowHide.png');
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    color: #fff;
+    display: block;
+    height: 30px;
+    width: 30px;
+    opacity: 0.7;
+    cursor: pointer;*/
+    display: none;
+}
+
+    .expandPanel:hover {
+        opacity: 1;
+    }
+
+.showSchedule {
+    background-image: url(/images/social/socialRound/scheduleActive-round.png);
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: 40px;
+    color: #fff;
+    display: block;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+}
+
+.showFavorite {
+    background-image: url('/images/social/socialRound/favoriteNotActive-round.png');
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    color: #fff;
+    display: block;
+    height: 40px;
+    width: 40px;
+    margin-top: 10px;
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.showTopChannels {
+    background-image: url('/images/social/socialRound/topNotActive-round.png');
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    color: #fff;
+    display: block;
+    height: 40px;
+    width: 40px;
+    margin-top: 10px;
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.showMyChannels {
+    background-image: url('/images/social/socialRound/my-channels-not-active-round.png');
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    color: #fff;
+    display: block;
+    height: 40px;
+    width: 40px;
+    margin-top: 10px;
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.showChat {
+    background-image: url('/images/social/socialRound/chat.png');
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    color: #fff;
+    display: block;
+    height: 40px;
+    width: 40px;
+    margin-top: 10px;
+    opacity: 0.7;
+    cursor: pointer;
+    display: block;
+}
+
+.showSchedul:hover {
+    color: #07c720;
+}
+
+.showChat:hover,
+.showMyChannels:hover,
+.showFavorite:hover,
+.showTopChannels:hover,
+.showSchedule:hover {
+    opacity: 1;
+}
+
+
+
+/*.showInfoBar {
+    position: absolute;
+    top: 452px;
+    right: 0;
+    width: 25px;
+    height: 200px;
+    background-image: url(/images/00065.png);
+    background-repeat: repeat;
+    z-index: 10;
+    color: #fff;
+    
+    font-style: italic;
+    display: none;
+    cursor: pointer;
+    border: 1px solid #333;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-right: none;
+    padding: 5px;
+}*/
+
+.showScheduleWrapper,
+.showInfoBar {
+    display: none !important;
+}
+
+.outerWrapperClose,
+.switchModeNav {
+    position: absolute;
+    height: 100px;
+    width: 40px;
+    background: #333;
+    z-index: 22;
+    right: 0;
+    box-shadow: none;
+    background-image: url(/images/social/socialRound/videoInfo.png);
+    background-repeat: no-repeat;
+    background-position: center 10px;
+    top: 402px;
+    padding: 5px;
+    border: none;
+    background-size: 35px;
+    cursor: pointer;
+    display: none;
+}
+
+.switchModeNav {
+    top: 513px;
+    background-image: url('/images/screenMode/screenMode-list.png');
+}
+
+.showInfoBar {
+    top: 211px;
+}
+
+.channelNavigationHolder {
+    position: absolute;
+    right: 4px;
+    top: 170px;
+    width: 40px;
+    height: auto;
+    background-color: #000;
+    z-index: 99;
+    display: block;
+}
+
+.channelNavigationChInfo,
+.channelNavigationSchedule,
+.channelNavigationVideoInfo,
+.channelNavigationSwitchMode,
+.channelNavigationGuide,
+.channelNavigationChat,
+.channelNavigationLive {
+    display: block;
+    float: left;
+    width: 100%;
+    height: 50px;
+    background-color: #333;
+    margin-bottom: 1px;
+    background-image: url(/images/social/socialRound/channelnfo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 40px;
+    cursor: pointer;
+    padding: 2px;
+    cursor: pointer;
+    color: #00b3b7;
+    line-height: 50px;
+    text-align: center;
+    font-size: 13px;
+}
+
+
+.channelNavigationLive {
+    background-image: none;
+}
+
+    .channelNavigationChInfo.active,
+    .channelNavigationSchedule.active,
+    .channelNavigationVideoInfo.active,
+    .channelNavigationSwitchMode.active,
+    .channelNavigationGuide.active,
+    .channelNavigationChat.active,
+    .channelNavigationLive.active {
+        background-color: #000;
+        opacity: 1;
+    }
+
+.channelNavigationGuide.active {
+    background-color: #000;
+}
+
+.liveEventHolder {
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid #555;
+    height: 40px;
+}
+
+#hideIcon,
+.hideIcon {
+    display: block;
+    float: right;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    margin-right: 40px;
+    background-image: url('/images/close_pop-white.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 40px;
+    opacity: 0.9;
+}
+
+    #hideIcon:hover {
+        opacity: 1;
+    }
+
+.videoLiveInfo {
+    background-image: url('/images/infoIcon.png');
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    display: block;
+    float: right;
+    height: 17px;
+    width: 17px;
+    right: 0;
+}
+
+#hideIcon .material-icons {
+    color: #555;
+    font-size: 35px;
+}
+
+.sideSchedule .liveEvent {
+    display: block;
+    float: left;
+    width: 25%;
+    text-align: left;
+}
+
+.liveEventHolder .liveHeadear {
+    display: block;
+    width: 22%;
+    text-align: center;
+    color: #FFF;
+    float: left;
+    height: 35px;
+    line-height: 35px;
+}
+
+.channelNavigationChat {
+    background-image: none;
+}
+
+    .channelNavigationChInfo:hover,
+    .channelNavigationSchedule:hover,
+    .channelNavigationVideoInfo:hover,
+    .channelNavigationSwitchMode:hover,
+    .channelNavigationGuide:hover,
+    .channelNavigationChat:hover,
+    .channelNavigationLive:hover {
+        background-color: #111;
+        opacity: 1;
+    }
+
+.channelNavigationGuide {
+    background-image: url('/images/TV-Guide.png');
+    opacity: 0.9;
+}
+
+
+.guideLetters {
+    display: block;
+    float: left;
+    width: 100%;
+    line-height: 15px;
+    text-align: center;
+    color: transparent;
+}
+
+.guideLettersTV {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.channelNavigationSchedule {
+    background-image: url(/images/social/socialRound/scheduleActive-round.png);
+}
+
+.channelNavigationVideoInfo {
+    background-image: url(/images/social/socialRound/videoInfo.png);
+}
+
+.channelNavigationSwitchMode {
+    background-image: url('/images/screenMode/screenMode-list.png');
+}
+
+
+
+
+.infoShowIcon {
+    /*background-image: url('/images/slideArrows/slideArrowShow.png');
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    color: #fff;
+    display: block;
+    height: 30px;
+    width: 30px;
+    opacity: 0.7;
+    cursor: pointer;
+    margin-left: 4px;*/
+    display: none;
+}
+
+    .infoShowIcon:hover {
+        opacity: 1;
+    }
+
+
+#btnHide {
+    background-image: url(/images/slideArrows/slideArrowHide.png);
+    background-repeat: no-repeat;
+    color: transparent;
+    float: right;
+    height: 20px;
+    padding-right: 10px;
+    padding-top: 10px;
+    position: absolute;
+    right: 30px;
+    top: 10px;
+    width: 20px;
+    z-index: 2;
+    cursor: pointer;
+    background-size: 25px;
+    display: none;
+}
+
+    #btnHide:hover {
+        opacity: 1;
+    }
+
+.embeddedCode {
+    background-image: url('/images/social/socialRound/embed.png');
+    background-position: center;
+    display: block;
+    width: 35px;
+    height: 35px;
+    float: left;
+    opacity: 0.7;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-right: 15px;
+}
+
+
+    .embeddedCode:hover {
+        opacity: 1;
+    }
+
+
+.social-container {
+    height: 30px;
+    width: 200px;
+}
+
+    .social-container .links {
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+        .social-container .links a {
+            display: block;
+            float: left;
+            font-size: 34px;
+            font-weight: bold;
+            height: 30px;
+            margin-left: 5px;
+            text-decoration: none;
+            text-shadow: 0 2px 3px #fff;
+            width: 30px;
+            margin-right: 0;
+            float: right;
+        }
+
+            .social-container .links a:hover {
+            }
+
+.source {
+    width: 350px;
+    margin: 0 auto;
+    background: #eee;
+    color: #666;
+    font-weight: bold;
+    display: block;
+    white-space: pre;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-box-shadow: inset #ccc 0px 0px 6px 0px;
+    -moz-box-shadow: inset #ccc 0px 0px 6px 0px;
+    box-shadow: inset #ccc 0px 0px 6px 0px;
+}
+
+.fa-twitter {
+    background: rgba(0, 0, 0, 0) url("/Plugins/Share42/icons.png") no-repeat scroll -96px 0;
+    display: inline-block;
+    height: 32px;
+    outline: medium none;
+    padding: 0;
+    vertical-align: bottom;
+    width: 32px;
+}
+
+.fa-facebook {
+    background: rgba(0, 0, 0, 0) url("/Plugins/Share42/icons.png") no-repeat scroll 0 0;
+    display: inline-block;
+    height: 32px;
+    outline: medium none;
+    padding: 0;
+    vertical-align: bottom;
+    width: 32px;
+}
+
+.fa-google-plus {
+    background: rgba(0, 0, 0, 0) url("/Plugins/Share42/icons.png") no-repeat scroll -32px 0;
+    display: inline-block;
+    height: 32px;
+    outline: medium none;
+    padding: 0;
+    vertical-align: bottom;
+    width: 32px;
+}
+
+.fa-pinterest {
+    background: rgba(0, 0, 0, 0) url("/Plugins/Share42/icons.png") no-repeat scroll -64px 0;
+    display: inline-block;
+    height: 32px;
+    outline: medium none;
+    padding: 0;
+    vertical-align: bottom;
+    width: 32px;
+}
+
+.shareInfo {
+    background-image: url('/images/social/socialRound/share.png');
+    background-position: center;
+    display: block;
+    width: 40px;
+    height: 40px;
+    float: left;
+    opacity: 1;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-right: 5px;
+}
+
+@-moz-document url-prefix() {
+    .shareInfo {
+        background-size: 75%;
+    }
+}
+
+#socialHolderMobile {
+    display: none;
+}
+
+.options .watchlater:hover {
+    background-image: url('/images/social/socialRound/watchLater-round-hover.png');
+    opacity: 1;
+}
+
+.options .watchlaterActive {
+    background-image: url('/images/social/socialRound/watchLater-round-active.png');
+    opacity: 1;
+}
+
+.options .addtofavorite {
+    background-image: url('/images/social/socialRound/add-to-fav-round.png');
+}
+
+    .options .addtofavorite:hover {
+        background-image: url('/images/social/socialRound/add-to-favorite-round-active.png');
+        opacity: 1;
+    }
+
+.options .addtofavoriteActive {
+    background-image: url('/images/social/socialRound/add-to-favorite-round-active.png');
+    opacity: 1;
+}
+
+
+
+.options .abusereport {
+    background-image: url('/images/social/socialRound/abuse-round.png');
+}
+
+    .options .abusereport:hover {
+        background-image: url('/images/social/abuse-round-hover.png');
+    }
+
+
+
+.sideBarOptions {
+    border-bottom: none;
+    display: block;
+    height: 10px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    width: 10%;
+}
+
+.iconDescription {
+    color: #fff;
+    display: block;
+    font-weight: normal;
+    width: 300px;
+    float: none;
+    height: auto;
+    line-height: 40px;
+    text-align: center;
+    text-transform: capitalize;
+    border-bottom: 1px solid #555;
+    margin: auto;
+}
+
+.creatorMobileHolder {
+    display: none;
+}
+
+.sideBarOptions .schedule,
+.sideBarOptions .watchlater,
+.sideBarOptions .abusereport,
+.sideBarOptions .favoriteChannels,
+.sideBarOptions .toprated,
+.sideBarOptions .ringsactive,
+.sideBarOptions .rings,
+.sideBarOptions .mychannels,
+.sideBarOptions .myChat {
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    color: #000;
+    display: block;
+    float: right;
+    font-size: 11px;
+    height: 40px;
+    line-height: 90px;
+    margin-left: 4px;
+    margin-right: 4px;
+    opacity: 1;
+    padding-top: 5px;
+    text-align: center;
+    text-transform: lowercase;
+    width: 40px;
+}
+
+@-moz-document url-prefix() {
+    .sideBarOptions .schedule,
+    .sideBarOptions .watchlater,
+    .sideBarOptions .abusereport,
+    .sideBarOptions .favoriteChannels,
+    .sideBarOptions .toprated,
+    .sideBarOptions .ringsactive,
+    .sideBarOptions .rings,
+    .sideBarOptions .mychannels {
+        background-size: 75% auto;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+@-moz-document url-prefix() {
+    .sideBarOptions .myChat {
+        background-size: 87% auto;
+    }
+}
+
+
+
+
+
+.sideBarOptions .myChat {
+    display: none;
+}
+
+    .sideBarOptions .myChat.myChatActive {
+        background-image: url('/images/social/socialRound/chatActive.png');
+    }
+
+
+.sideBarOptions .favoriteChannels {
+    background-image: url('/images/social/socialRound/favoriteNotActive-round.png');
+}
+
+
+
+.sideBarOptions .favoriteChannelsActive {
+    background-image: url('/images/social/socialRound/favoriteActive-round.png');
+}
+
+.sideBarOptions .favoriteChannels:hover {
+    background-image: url('/images/social/socialRound/add-to-favorite-round-active.png');
+}
+
+
+
+
+
+
+
+
+
+
+.sideBarOptions .mychannels {
+    /*background-image: url("/images/social/mychannels.jpg");*/
+    background-image: url('/images/social/socialRound/my-channels-not-active-round.png');
+}
+
+    .sideBarOptions .mychannels:hover {
+        /*background-image: url("/images/social/mychannels.jpg");*/
+        background-image: url('/images/social/socialRound/my-channels-active-round.png');
+    }
+
+
+.sideBarOptions .mychannelsactive {
+    /*background-image: url("/images/social/mychannels.jpg");*/
+    background-image: url('/images/social/socialRound/my-channels-active-round.png');
+}
+
+
+
+.shareMobile {
+    display: none;
+}
+
+
+
+.sideBarOptions .scheduleactive {
+    display: none;
+}
+
+.sideBarOptions .toprated {
+    /*background-image: url("/images/social/topNotActive-round.png");*/
+    background-image: url('/images/social/socialRound/topNotActive-round.png');
+}
+
+#ancLike.like.likeActive {
+    background-image: url('/images/social/socialRound/likeActive-round.png');
+    opacity: 1;
+}
+
+#ancLike.like {
+    background-image: url('/images/social/socialRound/likeNotActive-round.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: block;
+    width: 35px;
+    height: 35px;
+    float: left;
+    opacity: 0.7;
+    margin-right: 15px;
+}
+
+
+.seeMoreChannels {
+    color: #1abaed;
+    display: block;
+    float: right;
+    font-weight: normal;
+    height: 30px;
+    margin-left: 10px;
+    margin-top: 28px;
+    text-transform: capitalize;
+    text-decoration: underline;
+    padding-right: 20px;
+    cursor: pointer;
+}
+
+    .seeMoreChannels:hover {
+        color: #eee;
+    }
+
+.seeMoreCategoryHolder {
+    float: left;
+    width: 99%;
+}
+
+
+.home-video-box-add {
+    background-color: transparent;
+    background-image: url("/images/seeMoreNew.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border-radius: 0;
+    display: block;
+    float: left;
+    height: 100%;
+    min-height: 160px;
+    min-width: 200px;
+    width: 15%;
+}
+
+@-moz-document url-prefix() {
+    #ancLike.like {
+        background-size: 75%;
+        background-position: center;
+    }
+}
+
+
+
+
+
+.sideBarOptions .toprated:hover {
+    background-image: url('/images/social/socialRound/topActive-round.png');
+}
+
+.sideBarOptions .topRatedActive {
+    background-image: url('/images/social/socialRound/topActive-round.png');
+}
+
+.sideBarOptions .myChannelsActive {
+    background-image: url('/images/social/socialRound/my-channels-active-round.png');
+}
+
+
+
+.options .schedule:hover,
+.options .watchlater:hover,
+.options .abusereport:hover {
+    opacity: 1;
+    text-decoration: underline;
+}
+
+
+
+.social {
+    display: block;
+    float: left;
+    width: 35%;
+}
+
+.options {
+    display: block;
+    float: left;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.favorite {
+    display: block;
+    float: right;
+    width: 40px;
+}
+
+
+.socialIcons {
+    display: block;
+    float: right;
+    margin: 5px;
+    width: 30px;
+}
+
+    .socialIcons img {
+        width: 100%;
+        height: auto;
+        border: none;
+        opacity: 0.5;
+    }
+
+    .socialIcons:hover img {
+        opacity: 1;
+    }
+
+.favorite .socialIcons {
+    width: 40px;
+}
+
+.tweetUpdates {
+    min-height: 200px;
+    color: #fff;
+    background-color: #999;
+    opacity: 0.7;
+}
+
+.sideContentHolder {
+    display: block;
+    padding-top: 10px;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    color: #ddd;
+    font-size: 13px;
+    height: 525px;
+}
+
+
+.webHolderRightWrapperOverlay {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-image: url("/images/infoBarBG.png");
+    background-repeat: repeat-x;
+    background-position: bottom;
+    z-index: 999;
+    width: 19%;
+    height: 200px;
+    min-width: 320px;
+    display: none;
+}
+
+.sideSchedule {
+    display: block;
+    float: left;
+    width: 95%;
+    height: 50px;
+    border-bottom: 1px solid #0a6215;
+    min-width: 300px;
+    position: relative;
+}
+
+    .sideSchedule.liveSideSchedule {
+    }
+
+.record {
+    position: absolute;
+    right: 0;
+    top: 22px;
+    width: 35px;
+    height: 17px;
+    background-image: url(/images/record/recordOff.png);
+    background-position: initial;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: #000;
+    background-size: 18px;
+    border: 1px solid #555;
+    border-radius: 15px;
+}
+
+.recordActive {
+    background-image: url('/images/record/recordOn.png');
+    background-position: right;
+}
+
+.sideSchedule.playingNow {
+    color: #ddd;
+}
+
+    .sideSchedule.playingNow .videoTitle {
+        /*color: #000;*/
+    }
+
+/*.sideSchedule.playingNow .videoTiming {
+        color: #fff;
+        background-color: #2a99bd;
+    }*/
+
+
+.sideSchedule strong {
+    display: block;
+    float: left;
+    font-weight: normal;
+    height: 50px;
+    width: 92%;
+    position: relative;
+}
+
+.sideSchedule .videoAvatar {
+    display: block;
+    float: left;
+    margin-right: 10px;
+    width: 125px;
+    height: 75px;
+    overflow: hidden;
+    display: none;
+}
+
+    .sideSchedule .videoAvatar img {
+        max-width: 100%;
+        height: auto;
+        min-height: 100%;
+    }
+
+
+
+.sideSchedule .videoTiming {
+    display: block;
+    float: left;
+    height: 50px;
+    width: 135px;
+    line-height: 50px;
+    color: #fff;
+    text-align: center;
+    font-size: 12px;
+    position: relative;
+}
+
+.liveEvent .sideSchedule .videoTiming {
+    width: 100%;
+}
+
+
+.scheduleScrollHomePage {
+    height: 100%;
+    width: 100%;
+    min-height: 660px;
+}
+
+
+
+
+.sideChannel {
+    display: block;
+    width: 96%;
+    padding: 2%;
+    border-bottom: 1px solid #777;
+    float: left;
+}
+
+    .sideChannel strong {
+        display: block;
+        float: left;
+        font-weight: normal;
+        height: 60px;
+        position: relative;
+        width: 200px;
+    }
+
+    .sideChannel .channelAvatar {
+        border: 1px solid #777;
+        display: block;
+        float: left;
+        height: 60px;
+        margin-right: 5px;
+        overflow: hidden;
+        width: 60px;
+    }
+
+        .sideChannel .channelAvatar img {
+            width: 100%;
+            height: 60px;
+        }
+
+    .sideChannel .channelTiming {
+        background-color: #f00;
+        border-top-left-radius: 10px;
+        bottom: -1px;
+        color: #ccc;
+        display: block;
+        float: left;
+        font-size: 13px;
+        font-weight: bold;
+        height: 15px;
+        left: -60px;
+        opacity: 0.7;
+        position: absolute;
+        text-align: center;
+        width: 40px;
+        line-height: 15px;
+    }
+
+.material-icons.muteMobile {
+    display: none;
+}
+
+
+.sideChannel .spnSubscribers,
+.sideChannel .spnViews {
+    bottom: 0;
+    color: #000;
+    display: block;
+    float: left;
+    font-weight: bold;
+    position: absolute;
+}
+
+.sideChannel .spnSubscribers {
+    padding-right: 10px;
+}
+
+
+.sideChannel:hover .videoTitle {
+    color: #fff;
+}
+
+.sideChannel .channelTitle {
+    color: #2a99bd;
+    display: block;
+    float: left;
+    height: 20px;
+    line-height: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+    text-align: left;
+}
+
+.sideChannel:hover .channelTitle {
+    color: #2a99bd;
+}
+
+.channelInfoLeftHolder,
+.channelInfoRightHolder {
+    display: block;
+    float: left;
+    padding: 1%;
+    width: 45%;
+}
+
+#divBrowseChannels a, .whatIsStrimmTop a {
+    border-right: none;
+}
+
+.closeAbuseReport {
+    background-image: url("/images/removebutton.png");
+    background-repeat: no-repeat;
+    background-size: 95% auto;
+    display: block;
+    height: 30px;
+    line-height: 1000px;
+    opacity: 0.7;
+    overflow: hidden;
+    position: absolute;
+    right: 20px;
+    top: 12px;
+    width: 30px;
+}
+
+    .closeAbuseReport:hover {
+        opacity: 1;
+    }
+
+    .closeAbuseReport span {
+        color: #000;
+        float: right;
+        font-size: 25px;
+        padding-right: 5px;
+    }
+
+        .closeAbuseReport span:hover {
+            color: #2a99bd;
+            background-image: none;
+        }
+
+#abuseModal {
+    background-color: #f9f9f9;
+    display: none;
+    float: left;
+    height: auto;
+    margin-bottom: 20px;
+    overflow: hidden;
+    padding: 50px 50px 20px;
+    position: relative;
+    width: 725px;
+}
+
+#closeModal {
+    color: #2a99bd;
+    cursor: pointer;
+    font-size: 20px;
+    position: absolute;
+    right: 15px;
+    text-decoration: none;
+    top: 7px;
+}
+
+    #closeModal:hover {
+        color: #777777;
+    }
+
+#btnSendAbuseReport {
+    z-index: 1003;
+    float: left;
+    cursor: pointer;
+}
+
+.abuse {
+    display: block;
+    float: left;
+    width: 230px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+
+.H3abuseReport {
+    margin-bottom: 10px;
+    color: #555;
+    font-weight: normal;
+}
+
+.fontFamily {
+    line-height: 20px;
+    color: #555;
+}
+
+.submitAbuse {
+    clear: both;
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+    .submitAbuse a {
+        background-color: #2a99bd;
+        color: #fff;
+        display: block;
+        height: 32px;
+        line-height: 32px;
+        margin: auto;
+        text-align: center;
+        width: 120px;
+        clear: both;
+        text-transform: capitalize;
+    }
+
+.ddlCategoryAbuse {
+    height: 30px;
+    color: #333 !important;
+}
+
+.submitAbuse a:hover {
+    background-color: #0f7ea2;
+}
+
+.submitAbuse span {
+    display: block;
+    float: left;
+    width: 200px;
+    margin-top: 12px;
+    margin-left: 20px;
+    color: #ff7373;
+    height: 20px;
+    line-height: 20px;
+}
+
+.msg {
+    display: block;
+    float: left;
+    width: 100%;
+    text-align: center;
+    line-height: 24px;
+}
+
+.fb-comments iframe {
+    max-width: inherit;
+}
+
+#spnAVGRating {
+    background-image: url("/images/social/rating-star.png");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    color: #000;
+    display: block;
+    float: left;
+    font-weight: bold;
+    line-height: 45px;
+    text-align: center;
+    width: 45px;
+}
+
+.rateit {
+    display: -moz-inline-box;
+    display: inline-block;
+    position: relative;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+    width: 100%;
+    text-align: center;
+    margin-top: -15px;
+}
+
+
+.tcvpb-videoWrapper-vimeo .player .controls {
+    display: none !important;
+}
+
+#controls {
+    /* margin: auto auto 25px; */
+    width: 100%;
+    display: none;
+    max-width: 900px;
+    margin: auto;
+}
+
+    #controls div {
+        float: left;
+        margin-left: 15px;
+    }
+
+#currTime span {
+    display: block;
+    float: left;
+    color: #fff;
+    font-size: 10px;
+    margin-top: 7px;
+}
+
+#currTime input#progress-bar {
+    float: left;
+    width: 450px;
+}
+
+
+
+.material-icons {
+    color: #fff;
+    direction: ltr;
+    display: inline-block;
+    font-family: "Material Icons";
+    font-feature-settings: "liga";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: normal;
+    letter-spacing: normal;
+    line-height: 1;
+    overflow-wrap: normal;
+    text-transform: none;
+    white-space: nowrap;
+}
+
+.hp_slide {
+    background: #fff none repeat scroll 0 0;
+    height: 3px;
+    margin-top: 10px;
+    width: 450px;
+    opacity: 0.7;
+}
+
+#controls div.hp_range {
+    width: 0;
+    background: #2a99bd;
+    height: 3px;
+    margin-left: 0px;
+}
+
+
+
+.outerWrapper {
+    display: none;
+    /* float: left; */
+    width: 100%;
+    height: auto;
+    background-color: #111;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    margin: auto;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 0;
+    z-index: 99;
+    opacity: 0.9;
+}
+
+
+.innerWrapper {
+    display: block;
+    margin: auto;
+    width: 100%;
+    position: relative;
+    max-width: 900px;
+}
+
+#socialHolder {
+    position: absolute;
+    right: 0;
+    top: 20px;
+}
+
+.likeItshareIt {
+    display: block;
+    float: right;
+    height: 40px;
+    color: #fff;
+    line-height: 50px;
+}
+
+.TLtrcreator {
+    background-color: #222;
+    border-color: #555;
+    border-style: solid;
+    border-width: 0 0 2px 2px;
+    content: "";
+    display: block;
+    height: 15px;
+    margin-left: 0;
+    position: absolute;
+    transform: rotate(45deg);
+    width: 15px;
+    z-index: 1;
+    left: -10px;
+    bottom: 15px;
+}
+
+.videoInfoHolderPlayer {
+    display: block;
+    float: left;
+    height: 100px;
+}
+
+.videoInfoHolderPlayer {
+    height: auto;
+    width: 100%;
+    padding-top: 35px;
+}
+
+.videoinfoPlayer,
+.channelInfoPlayer {
+    width: 100%;
+    clear: both;
+    display: block;
+    float: left;
+}
+
+.openChannelInfoGuide {
+    display: none;
+}
+
+
+.creatorInfoPopUP {
+    display: block;
+    position: absolute;
+    left: 100px;
+    bottom: 0;
+    background: #222;
+    width: 400px;
+    border: 2px solid #555;
+    min-height: 220px;
+    padding: 20px;
+    font-weight: normal;
+    z-index: 2;
+}
+
+.channelInfoPlayer {
+    position: relative;
+}
+
+
+
+.videoTitlePlayer {
+    display: block;
+    float: left;
+    overflow: hidden;
+    height: 30px;
+    line-height: 30px;
+    color: #aaa;
+    max-width: 600px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.videoDurationPlayer {
+    display: block;
+    float: left;
+    width: auto;
+    overflow: hidden;
+    height: 30px;
+    line-height: 30px;
+    color: #fff;
+    margin-right: 20px;
+}
+
+.absGuide {
+    border: 1px solid #777;
+    background-color: #ccc;
+}
+
+.channelTitlePlayer {
+    display: block;
+    float: left;
+    overflow: hidden;
+    height: 37px;
+    line-height: 37px;
+    color: #eeeeee;
+    font-size: 17px;
+    margin-right: 20px;
+}
+
+.creatorInfoPlayer {
+    display: block;
+    float: left;
+    height: 37px;
+    line-height: 37px;
+    color: #aaa;
+    margin-right: 5px;
+    position: relative;
+    text-decoration: underline;
+}
+
+    .creatorInfoPlayer:hover {
+        color: #2db9e7;
+    }
+
+.byCreatorName {
+    display: block;
+    float: left;
+    margin-right: 10px;
+    text-decoration: none;
+    color: #aaa;
+    font-weight: normal;
+}
+
+.creatorInfoPlayer.byCreatorName:hover {
+    color: #eee;
+    font-weight: normal;
+}
+
+.ratingContainer {
+    float: left;
+    text-align: center;
+    width: 150px;
+    line-height: 45px;
+}
+
+.yourRating {
+    color: #eee;
+    display: block;
+    float: left;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    padding-left: 0px;
+    width: 160px;
+}
+
+.chanBoxtitleAdjust {
+    padding-top: 70%;
+}
+
+
+.browseChannels .divChannel {
+    background-color: #ECECEC;
+    border: 1px solid #2A99BD;
+    border-radius: 5px;
+    float: left;
+    margin: 6px;
+    min-width: 130px;
+    padding: 0.5%;
+    width: 171px;
+}
+
+    .browseChannels .divChannel a {
+        color: #2A99BD;
+        font-weight: normal;
+        overflow: hidden;
+        text-decoration: none;
+        text-overflow: ellipsis;
+        text-transform: capitalize;
+        white-space: nowrap;
+        width: 150px;
+    }
+
+        .browseChannels .divChannel a.comingSoon {
+            color: #95ccdd;
+        }
+
+    .browseChannels .divChannel span {
+        clear: both;
+        color: #777;
+        display: block;
+        float: left;
+        line-height: 15px;
+    }
+
+        .browseChannels .divChannel span.comingSoon {
+            color: #bbb;
+        }
+
+.divChannel span em {
+    color: #2A99BD;
+}
+
+.browseChannels .divChannel img {
+    border: 1px solid #f9f9f9;
+    display: block;
+    float: left;
+    height: 122px;
+    margin-bottom: 10px;
+    margin-top: 1px;
+    width: 100%;
+    border-radius: 3px;
+}
+
+/*BROWSE CHANNEL*/
+.browseChannels #lblmessage {
+    color: #000;
+    display: block;
+    font-size: 20px;
+    height: 20px;
+    line-height: 300px;
+    margin: auto;
+    text-align: center;
+    width: 100%;
+}
+
+.ChannelInfoCLMobile {
+    display: none;
+}
+
+.emailBtnSocial {
+    display: block;
+    float: right;
+    background-image: url(/images/social/mail.jpg);
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    background-size: 100%;
+    background-position: center center;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.browseChannels .spnMsg {
+    float: left;
+    display: block;
+    width: 150px;
+    text-transform: capitalize;
+    margin-top: 10px;
+}
+
+.browseChannels .red.spnMsg {
+    color: #ff6a00;
+}
+
+.browseChannels .green.spnMsg {
+    color: green;
+}
+
+.browseChannels .channelTiming {
+    background-color: #F00;
+    border-top-left-radius: 10px;
+    bottom: 0px;
+    color: #CCC;
+    display: block;
+    float: left;
+    font-size: 13px;
+    font-weight: bold;
+    height: 15px;
+    left: 150px;
+    opacity: 0.7;
+    position: absolute;
+    text-align: center;
+    width: 55px;
+    top: 55px;
+}
+
+.homeBlocksHolderFooterChP {
+    display: none;
+}
+
+.TLchannlesBy.spnCrByText {
+    display: block;
+    color: red;
+}
+
+select:focus {
+    color: #333333;
+    border: none !important;
+    outline: none !important;
+}
+
+#searchHolder .clearSearch {
+    background-image: url(/images/close_pop-white.png);
+    opacity: 0.7;
+}
+
+
+.mainSearch {
+    background-image: url("/images/ddl.png");
+    margin-top: 3px;
+    opacity: 0.9;
+}
+
+.styled-selectSortSearch {
+    width: 150px;
+}
+
+#ancCloseSearchControl {
+    background-image: url('/images/close_pop-white.png');
+}
+
+#ddlSearchSelect option {
+    background-color: #333;
+    outline: #555;
+}
+
+input,
+select {
+    border: 1px solid #999;
+}
+
+    input[select] {
+        background-color: #2a99bd;
+    }
+
+#searchBoxHolder {
+    border: 1px solid #777;
+}
+
+    #searchBoxHolder input, #searchBoxHolder,
+    input, select {
+        color: #eee;
+    }
+
+#ddlSearchSelect {
+    color: #eee;
+    border-left: 1px solid #777;
+}
+
+
+.sideSchedule .playingNowShow,
+.sideSchedule .playingNextShow {
+    background: #ff4b00 none repeat scroll 0 0;
+    bottom: 0;
+    color: #fff;
+    display: none;
+    font-weight: bold;
+    height: 15px;
+    left: 0;
+    line-height: 15px;
+    opacity: 0.9;
+    position: absolute;
+    text-align: center;
+    width: 130px;
+    text-transform: capitalize;
+}
+
+.sideSchedule .playingNextShow {
+    background: #22cb71;
+}
+
+.placeholderImage {
+    height: auto;
+    width: 100%;
+    margin-bottom: 5px;
+    display: none;
+}
+/*BROWSE CHANNEL*/
+
+
+
+.webHolderLeftChanel {
+    left: 0;
+    min-width: 290px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.mainHolder {
+    display: block;
+    float: left;
+    width: 100%;
+    height: 100%;
+}
+
+.TLnavigationHolder {
+    position: fixed;
+    z-index: 9999;
+    display: none;
+    width: 120px;
+    height: 120px;
+    background-color: #000;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    box-shadow: 1px 4px 14px #000;
+    right: 0;
+    bottom: 22px;
+    border: 1px solid #222;
+    border-right: none;
+}
+
+.TLinfoTopPannelFull {
+    display: none;
+    float: left;
+    width: 100%;
+    bottom: 0;
+    position: relative;
+    padding-top: 10px;
+}
+
+
+
+    .TLinfoTopPannelFull .TLinfoTopPannel {
+        display: none;
+        float: left;
+        width: 100%;
+        height: 50px;
+        background-color: #111;
+        position: fixed;
+        z-index: 9999;
+        max-width: 100%;
+        top: 70px;
+    }
+
+.TLinfoTopPannel {
+    display: block;
+    float: left;
+    width: 100%;
+    height: 50px;
+    background-color: transparent;
+    position: absolute;
+    bottom: 0;
+}
+
+.TLinfoTopPannelBrCH .TLinfoTopPannel {
+    display: block;
+    float: none;
+    height: auto;
+    background-color: transparent;
+    line-height: 20px;
+    margin: auto;
+    width: 100%;
+    margin: auto;
+    position: static;
+    text-align: center;
+    height: 40px;
+}
+
+
+.TLpannelIconsHolder {
+    display: block;
+    float: none;
+    width: 100%;
+    max-width: 900px;
+    margin: auto;
+}
+
+#divTop {
+    margin-top: 0;
+}
+
+.TLnavigationHolderChanLine {
+    position: fixed;
+    z-index: 99;
+    display: block;
+    width: 120px;
+    height: 120px;
+    background-color: #000;
+    box-shadow: 1px 4px 14px #000;
+    right: 0;
+    bottom: 10px;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border: 1px solid #555;
+    border-right: none;
+}
+
+.TLnavPrior,
+.TLnavNext,
+.TLnavUP,
+.TLnavDOWN {
+    background-image: url(/images/arrows/next-last-hover.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 85%;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.TLnavPrior {
+    background-image: url('/images/arrows/back-first-hover.png');
+    position: absolute;
+    left: 0;
+    top: 44px;
+    margin-left: 10px;
+}
+
+.TLnavUP {
+    background-image: url('/images/arrows/remoteUP.png');
+    position: absolute;
+    top: 0;
+    left: 44px;
+    margin-top: 10px;
+}
+
+    .TLnavUP:hover,
+    .TLnavDOWN:hover,
+    .TLnavNext:hover,
+    .TLnavPrior:hover {
+        opacity: 1;
+    }
+
+.TLnavDOWN {
+    background-image: url('/images/arrows/remoteDOWN.png');
+    position: absolute;
+    bottom: 0;
+    left: 44px;
+    margin-bottom: 10px;
+}
+
+
+
+.TLnavNext {
+    position: absolute;
+    right: 0;
+    top: 44px;
+    margin-right: 10px;
+}
+
+
+.switchMode {
+    display: block;
+    float: left;
+    background-image: url('/images/social/socialRound/remote-mobile.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 50px;
+    height: 50px;
+    margin-top: 35px;
+    margin-left: 35px;
+    cursor: default;
+    background-size: 100%;
+}
+
+.switchModeList {
+    display: block;
+    float: left;
+    background-image: url('/images/screenMode/screenMode-full-hover.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 30px;
+    height: 30px;
+    margin-top: 44px;
+    margin-left: 45px;
+    cursor: pointer;
+    background-size: 100%;
+}
+
+
+.filterOPEN,
+.videoFilter {
+    display: none;
+}
+
+.openSaveVideo {
+    display: none;
+}
+
+.ChannelInfoCLGradient {
+    display: none;
+}
+
+@media (min-width: 1400px) {
+    .wedHolderChannel {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 1240px) {
+
+
+
+    .ChannelInfoCL {
+        margin-top: 0;
+        width: 40%;
+    }
+
+
+    .VideoInfoCL {
+        width: 60%;
+    }
+
+    .titleCLFixed {
+        display: none;
+    }
+}
+
+@media (max-width: 1024px) {
+
+    .browseChannelsView {
+        height: auto;
+    }
+
+    .VideoInfoCL {
+        width: 100%;
+        height: 430px;
+        position: fixed;
+        top: 75px;
+        z-index: 99;
+    }
+
+    .ChannelInfoCL {
+        margin-top: 435px;
+        width: 100%;
+        background-color: #222;
+        margin-bottom: 5px;
+    }
+
+
+    .channelNavigationHolder {
+        display: none;
+    }
+
+    .TVGuideBottomList {
+        margin-top: 0;
+    }
+
+    .browseChannelsView {
+        position: static;
+    }
+
+
+
+
+    .VideoInfoCL {
+        width: 100%;
+        min-width: 600px;
+        background: #000;
+    }
+
+    .ChannelInfoCL {
+        width: 100%;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    .advancedSearch {
+        border: none;
+        opacity: 0.7;
+    }
+
+    .AdvSearchImgHN {
+        border: none;
+    }
+
+    .ChannelInfoCLGradient {
+        position: absolute;
+        width: 100%;
+        height: 45px;
+        background-image: url(/images/BG-repeat/bg1X120GradientUP.png);
+        background-repeat: repeat-x;
+        bottom: -15px;
+        background-position: bottom;
+        display: block;
+    }
+
+
+    .advancedSearch.activeSearch {
+        background: #111;
+    }
+
+
+    .runtimeCL span {
+        font-size: 10px;
+        color: #05e105;
+        font-weight: bold;
+    }
+
+    .TLinfoTopPannelBrCH {
+        background: #222;
+    }
+
+    .watchCL {
+        display: none;
+    }
+
+    #mytimeline {
+        background-color: #000;
+        background-image: none;
+    }
+
+    .actionsCLHolder {
+        display: block;
+        float: left;
+        width: 100%;
+        height: auto;
+        clear: both;
+        margin-top: 10px;
+    }
+
+
+
+    .channelNameCL {
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+
+        .channelNameCL span {
+        }
+
+    .nowPlayingCL span {
+        width: 95%;
+        line-height: 20px;
+        font-size: 13px;
+        display: block;
+    }
+
+    .channelNameCL span {
+        font-size: 17px;
+    }
+
+
+    .actionsCLHolder {
+        display: none;
+    }
+
+    .recHolder {
+        float: right;
+    }
+
+
+    .channelDescriptionCL {
+        font-size: 13px;
+    }
+
+        .channelDescriptionCL span {
+            line-height: 20px;
+            width: 100%;
+            -webkit-line-clamp: 2;
+        }
+
+
+
+    #socialHolder {
+        top: 30px;
+    }
+
+    .likeItshareIt {
+        display: none;
+    }
+
+    #currTime {
+        width: 165px;
+        margin-right: 10px;
+    }
+
+    #currTime {
+        width: 230px;
+    }
+
+    .hp_slide {
+        width: 180px;
+    }
+
+    .material-icons {
+        font-size: 40px !important;
+    }
+
+    #controls div {
+        margin-left: 5px;
+    }
+
+    .showChat,
+    .sideBarOptions .myChat {
+        display: none;
+    }
+
+    .options .schedule, .options .watchlater, .options .abusereport, .options .addtofavorite, .options .toprated,
+    #ancLike.like,
+    .embeddedCode {
+        background-size: 80%;
+        opacity: 1;
+        background-position: center;
+    }
+
+
+    .expandPanel,
+    .showSchedule,
+    .infoShowIconInfo {
+        background-size: 80%;
+        opacity: 1;
+        margin-top: 0;
+    }
+
+    .infoShowIcon,
+    .expandPanel {
+        display: none;
+    }
+
+    .TLinfoTopPannelFull .TLinfoTopPannel {
+        /*height: auto;
+        bottom: 0;*/
+    }
+
+    .TLnavigationHolder {
+        bottom: 600px;
+    }
+
+
+
+    .sortGuideView {
+        display: none;
+        float: left;
+        color: #fff;
+        width: 300px;
+        height: 50px;
+        line-height: 50px;
+    }
+
+
+
+
+    .outerWrapper {
+        padding-bottom: 0;
+        padding-top: 5px;
+        width: 100%;
+        padding-left: 1%;
+        padding-right: 1%;
+        box-sizing: border-box;
+        position: static;
+        display: block;
+        float: left;
+    }
+
+
+
+    .videoDurationPlayer {
+        width: 100%;
+        height: auto;
+        line-height: 22px;
+        font-weight: normal;
+        margin-right: 0;
+    }
+
+    .channelTitlePlayer {
+        height: auto;
+        line-height: 36px;
+        font-size: 18px;
+        font-weight: normal;
+        margin-right: 0;
+    }
+
+    .creatorInfoPlayer {
+        height: auto;
+        line-height: 33px;
+        color: #aaa;
+        font-size: 13px;
+        margin-right: 0;
+        float: right;
+    }
+
+    .byCreatorName {
+        margin-right: 5px;
+        color: #aaa;
+    }
+
+    .videoTitlePlayer {
+        display: block;
+        float: left;
+        overflow: visible;
+        height: auto;
+        line-height: 22px;
+        color: #aaa;
+        font-size: 13px;
+        width: 100%;
+        max-width: 100%;
+        text-overflow: inherit;
+        white-space: normal;
+    }
+
+    .iconDescription {
+        width: 100%;
+        border-bottom: 1px solid #555;
+    }
+
+    .sideBarOptions {
+        height: 30px;
+        padding: 5px;
+        width: 15%;
+        float: left;
+        border-bottom: none;
+    }
+
+    .infoTopPanel-fixed {
+        position: fixed;
+        top: 265px;
+        z-index: 99;
+    }
+
+    .openChannelInfo,
+    .openAbuseReport,
+    .openSaveVideo,
+    .material-icons.muteMobile {
+        display: block;
+        float: left;
+        color: #FFF;
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        top: 80px;
+        right: 0;
+        border-left: 1px solid #555;
+    }
+
+    .openAbuseReport {
+        top: 0;
+        background-image: url(/images/social/socialRound/abuse-round.png);
+        background-size: 32px;
+        border-bottom: 1px solid #555;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .openSaveVideo {
+        top: 40px;
+        border-bottom: 1px solid #555;
+    }
+
+    .material-icons.muteMobile {
+        font-size: 24px !important;
+        top: 0;
+        padding-left: 3px;
+        border-bottom: 1px solid #555;
+        width: 27px;
+    }
+
+    .ChannelInfoCL {
+        margin-top: 435px;
+        height: 120px;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .channelDescriptionCL span {
+        line-height: 20px;
+        width: 95%;
+        -webkit-line-clamp: inherit;
+        display: block;
+        float: left;
+        height: auto;
+    }
+}
+/* Landscape */
+
+
+@media (max-width: 520px) {
+
+    .btnPlayLiveVideo.material-icons {
+    width: 20px;
+    font-size: 20px!important;
+}
+    .submenuChannelLive, .subinfoChannelLive, .liveEventInfo {
+        font-size: 11px;
+    }
+
+    .liveEventInfo {
+        display: none;
+    }
+
+    .sideSchedule .videoTiming {
+        width: 110px;
+        font-size: 11px;
+    }
+
+    #abuseModal {
+        width: 80%;
+    }
+
+    .channelNameCL, .channelCodeCL, .nowPlayingCL, .channelDescriptionCL, .runtimeCL {
+        margin-bottom: 0;
+        height: auto;
+        line-height: 20px;
+    }
+
+    .durationTimelCL {
+        height: 20px;
+        line-height: 20px;
+    }
+
+
+
+    #topMenu {
+        height: 40px;
+    }
+
+    .filterNavigation {
+        font-size: 14px;
+    }
+
+    .ChannelInfoCL {
+        margin-top: 230px;
+    }
+
+
+    .browseChannelsView {
+        height: auto;
+        padding-bottom: 0;
+    }
+
+    .carouselMobibe {
+        position: fixed;
+        height: 40px;
+        width: 100%;
+        background: #2a99bd;
+        top: 300px;
+        display: none;
+    }
+
+    .sideContentHolder .videoTitle
+    /*.sideChannel .videoTitle*/ {
+        width: 150px;
+    }
+
+
+    .VideoInfoCL {
+        width: 100%;
+        height: 235px;
+        min-width: 100%;
+        top: 41px;
+    }
+
+    .showScheduleWrapper, .showInfoBar {
+        width: 40px;
+        height: 40px;
+    }
+
+    .outerWrapperClose, .switchModeNav {
+        height: 40px;
+        width: 40px;
+        top: 379px;
+    }
+
+    .switchModeNav {
+        top: 520px;
+    }
+
+    .showInfoBar {
+        top: 240px;
+    }
+
+    .social-container {
+        display: none;
+    }
+
+    #mainWrapper, .playerbox, #player {
+        height: 232px;
+        overflow: visible;
+    }
+
+
+
+    .mainHolder {
+        display: block;
+        float: left;
+        width: 100%;
+        height: 100%;
+        height: 90vh;
+    }
+
+    .sideBarOptions .scheduleactive {
+        display: none;
+    }
+
+
+
+    .hideSchedule {
+        width: 27px;
+        background-size: 100%;
+        left: 20px;
+        opacity: 1;
+    }
+
+    .showSchedule {
+        background-size: 80%;
+        margin-top: 0;
+        opacity: 1;
+    }
+
+    .hideInfoScheduleBlock {
+        width: 100%;
+        background-image: none;
+        background: #000;
+        z-index: 99;
+        height: 100%;
+        left: 0;
+    }
+
+    .TLnavigationHolderChanLine {
+        display: none !important;
+    }
+
+
+
+    #sideBarChannel {
+        width: 100%;
+    }
+
+    .expandPanel {
+        display: none;
+    }
+
+
+    .closeGuide {
+        right: 0;
+        width: 20px;
+        top: 7px;
+        background-size: 15px;
+        opacity: 1;
+    }
+}
+
+@media (max-width: 375px) {
+
+    .VideoInfoCL {
+        height: 210px;
+    }
+
+    .ChannelInfoCL {
+        margin-top: 210px;
+    }
+
+    #mainWrapper, .playerbox, #player {
+        height: 210px;
+        overflow: visible;
+    }
+}
+
+@media (max-width: 360px) {
+    .TVguideTitle, .TLchannlesBy, .TLcreateChannel, .TLtopChannels, .TLmyChannels, .TLfavChannels, .TLchannlesBy {
+        font-size: 9px;
+        line-height: 25px;
+    }
+
+    .ChannelInfoCL {
+        margin-top: 190px;
+    }
+
+    .ChannelInfoCL {
+        margin-top: 205px;
+    }
+}
+
+@media (max-width: 320px) {
+    .ChannelInfoCL {
+        margin-top: 180px;
+    }
+
+    .ChannelInfoCL {
+        margin-top: 185px;
+    }
+}
+
+
+
+@media only screen and (min-device-width : 375px) and (max-device-width : 667px) and (orientation : landscape) {
+
+    #topMenu,
+    .mainTopHoplder,
+    #topPlaceHolder {
+        background-color: transparent;
+        height: 30px;
+        box-shadow: none;
+    }
+
+    .mobileMenu,
+    .absGuide,
+    .AdvSearchImgHN {
+        display: none;
+    }
+
+    .VideoInfoCL {
+        top: 0;
+    }
+
+
+    .divLogo {
+        display: none;
+    }
+
+    .mainMenuBL {
+        display: none;
+    }
+
+    .TLnavigationHolderChanLine {
+        display: none !important;
+    }
+}
+
+@media only screen and (min-device-width : 414px) and (max-device-width : 736px) and (orientation : landscape) {
+    #topMenu,
+    .mainTopHoplder,
+    #topPlaceHolder {
+        background-color: transparent;
+        height: 30px;
+        box-shadow: none;
+    }
+
+    .mobileMenu,
+    .absGuide,
+    .AdvSearchImgHN {
+        display: none;
+    }
+
+    .VideoInfoCL {
+        top: 0;
+    }
+
+
+    .divLogo {
+        display: none;
+    }
+
+    .mainMenuBL {
+        display: none;
+    }
+
+    .TLnavigationHolderChanLine {
+        display: none !important;
+    }
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : landscape) {
+    #topMenu,
+    .mainTopHoplder,
+    #topPlaceHolder {
+        background-color: transparent;
+        height: 30px;
+        box-shadow: none;
+    }
+
+    .mobileMenu,
+    .absGuide,
+    .AdvSearchImgHN {
+        display: none;
+    }
+
+    .VideoInfoCL {
+        top: 0;
+    }
+
+    .divLogo {
+        display: none;
+    }
+
+    .mainMenuBL {
+        display: none;
+    }
+
+    .TLnavigationHolderChanLine {
+        display: none !important;
+    }
+}

@@ -1,0 +1,1683 @@
+﻿.spnTitleUpdate {
+    margin-bottom: 5px;
+    width: 100%;
+}
+
+#ottSettingsModalContent_Update ul li span.spnDesc,
+#ottSettingsModalContent ul li span.spnDesc {
+    height: 127px;
+    line-height: 124px;
+}
+
+#ottSettingsModalContent_Update {
+    height: 500px;
+    background: #fff;
+}
+
+#btnCancel_Update {
+    float: right;
+    display: block;
+}
+
+#ottSettingsModal {
+    background-color: #fff;
+}
+
+
+#divTermOfUse_Update input,
+#divTermOfUse input {
+    width: 10px;
+    margin-right: 10px;
+}
+
+
+
+.cropit-image-preview {
+    background-color: #f8f8f8;
+    background-image: url("/images/Drag-and-Drop-250.jpg");
+    background-size: cover;
+    border: 1px solid #eee;
+    cursor: move;
+    margin-top: 7px;
+    width:200px;
+}
+
+.image-editor-sd, image-editor-hd{
+    height:230px;
+}
+
+#ottSettingsModalContent ul li {
+    width: 400px;
+    margin-top: 20px;
+}
+
+.image-preview-container
+{
+    border: 3px dashed #DDD;
+    height:260px;
+}
+.image-preview {
+    margin: auto;
+    background-color: #f8f8f8;
+    background-image: url(/images/Drag-and-Drop-250.jpg);
+    background-size: cover;
+    margin:20px;
+}
+
+.hd
+{
+    height:218px;
+}
+
+.sd {
+    height: 178px;
+}
+
+.img-validation, .app-validation {
+    margin-top: 10px;
+    color:red;
+}
+
+#genRokuAppBtn {
+    background-color: #2db9e7;
+    background-image: none;
+    background-position: 5px;
+    background-repeat: no-repeat;
+    background-size: 40px;
+    color: #fff;
+    border-radius: 4px;
+    font-size: 17px;
+    font-family: Roboto-bold,'Helvetica Neue',Helvetica,Arial,sans-serif;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    display:block;
+    padding:5px;
+}
+.createModalCenter {
+    text-align: center;
+    width: 100%;
+    float: left;
+    margin-top: 30px;
+}
+
+#genRokuAppBtn:hover {
+    background-color: #ffa200;
+    text-decoration: none;
+}
+
+#snippetPopup {
+    width: 96%;
+    height: auto;
+    background-color: #f9f9f9;
+    padding: 2%;
+    max-width: 300px;
+    box-shadow: 0 0 19px #999;
+}
+
+#snippetPopup .pageTitle {
+    border-bottom: 2px solid #2a99bd;
+    color: #2a99bd;
+    display: block;
+    font-size: 23px;
+    height: 30px;
+    line-height: 30px;
+    margin: auto;
+    padding-bottom: 0;
+    text-align: left;
+    text-transform: capitalize;
+    width: 95%;
+    margin-bottom: 20px;
+    padding-top: 0;
+}
+
+#snippetContent {
+        line-height: 22px;
+    text-align: center;
+    font-size: 17px;
+}
+
+        #ottSettingsModalContent_Update ul li span,
+        #ottSettingsModalContent_Update ul li div #ottSettingsModalContent ul li span,
+        #ottSettingsModalContent ul li div {
+            margin-bottom: 10px;
+            width: 100%;
+        }
+
+
+        #ottSettingsModalContent_Update ul li span,
+        #ottSettingsModalContent ul li span {
+            display: block;
+            text-transform: capitalize;
+        }
+
+
+
+.spnExplantaion {
+    color: #999999;
+    display: block;
+    font-size: 10px;
+    width: 400px;
+    text-transform: capitalize;
+}
+
+    .spnExplantaion a {
+        text-decoration: underline;
+    }
+
+        .spnExplantaion a:hover {
+            color: #2A99BD;
+        }
+
+#txtDescription {
+    background-color: #F9F9F9;
+    border: 1px solid #2A99BD;
+    font-size: 12px;
+    height: 25px;
+    margin-left: 0;
+    margin-top: 5px;
+    min-height: 120px;
+    width: 304px;
+    color: #777;
+}
+
+.fuimgHolder {
+    background: none repeat scroll 0 0 #fff;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    display: block;
+    height: 55px;
+    width: 320px;
+}
+
+#ottSettingsModal #ottSettingsModalContent ul li.enbeddedBlock {
+    margin-top: 57px;
+}
+#ottSettingsModal #ottSettingsModalContent ul li.allowSubscribtion
+{
+    display:none;
+}
+
+
+.dd-selected {
+    background-color: #F9F9F9;
+    color: #999;
+    display: block;
+    font-size: 12px;
+    font-weight: normal !important;
+    overflow: hidden;
+    padding: 5px !important;
+}
+
+#ottSettingsModalContent_Update ul li .dd-select,
+#ottSettingsModalContent ul li .dd-select {
+    background-color: #F9F9F9 !important;
+    border-color: #999 !important;
+    border-style: solid !important;
+    height: 25px;
+    margin-left: 0 !important;
+    padding-top: 2px;
+    width: 304px !important;
+}
+
+.dd-options {
+    top: 29px !important;
+    width: 304px !important;
+    margin-top: 0px !important;
+}
+
+    .dd-options li {
+        width: 284px;
+    }
+
+.dd-option-text {
+    font-size: 13px;
+    color: #555;
+}
+
+ul li input {
+    border-style: solid;
+    height: 23px;
+    margin-left: 0;
+    margin-top: 3px;
+    width: 300px;
+}
+
+#divTermOfUse_Update #divTermOfUse {
+    color: #777;
+    display: block;
+    font-size: 12px;
+    height: 30px;
+    line-height: 30px;
+    margin: 30px auto auto;
+    text-transform: capitalize;
+}
+
+.spnTerms {
+    display: block;
+    float: left;
+}
+
+    .spnTerms a {
+        color: #999999;
+        display: block;
+        float: right;
+        margin-left: 10px;
+        width: 85px;
+        text-decoration: underline;
+    }
+
+#ottSettingsModalContent_Update ul li span, #ottSettingsModalContent ul li .spnError {
+    color: #ff3333;
+    font-size: 10px;
+    margin-top: 5px;
+}
+
+#chkBoxterms_Update,
+#chkBoxterms {
+    display: block;
+    float: left;
+    height: 26px;
+}
+
+#lblMsg_Update,
+#lblMsg {
+    color: #ff6a00;
+    display: block;
+    font-size: 12px;
+    margin: auto;
+    float: left;
+}
+
+.divSubmit {
+    display: block;
+    margin-left: 282px;
+}
+
+#btnDeleteChannel_Update,
+#btnDeleteChannel {
+    float: left;
+}
+
+#btnSubmit_Update,
+#btnSubmit {
+    float: right;
+    width: 95px;
+}
+
+#btnSubmit_Update,
+#ancCancel,
+#btnSubmit {
+    border-color: #ccc;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 2px;
+    color: #333;
+    cursor: pointer;
+    font-size: 15px;
+    line-height: 28px;
+    margin-top: 10px;
+    padding-left: 9px;
+    padding-right: 9px;
+    background-color: #ddd;
+    text-align: center;
+}
+
+#btnDeleteChannel_Update,
+#btnDeleteChannel {
+    border: medium none;
+    color: #999999;
+    float: left;
+    font-size: 15px;
+    height: 38px;
+    line-height: 38px;
+    text-transform: lowercase;
+    width: auto;
+    cursor: pointer;
+}
+
+#ancCancel:hover {
+    background-color: #ccc;
+}
+
+#btnDeleteChannel_Update:hover,
+#btnDeleteChannel:hover {
+    color: #777;
+}
+
+
+#ancCancel {
+    display: none;
+}
+
+
+.grayButton {
+    border-color: #ccc;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 2px;
+    color: #333;
+    cursor: pointer;
+    font-size: 15px;
+    line-height: 28px;
+    padding-left: 9px;
+    padding-right: 9px;
+    box-shadow: 0 0 4px #ccc;
+    background-color: #ddd;
+    text-align: center;
+    display: inline-block;
+    width: 95px;
+    margin-left: 200px;
+}
+
+.blueButton {
+    border-color: #2A99BD;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 2px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 15px;
+    line-height: 23px;
+    padding-left: 9px;
+    padding-right: 9px;
+    box-shadow: 0 0 4px #ccc;
+    background-color: #2a99bd;
+    text-align: center;
+    display: inline-block;
+    max-width: 150px;
+    margin-left: 200px;
+}
+
+#btnSubmit_Update,
+#btnSubmit {
+    background-color: #2a99bd;
+    background-repeat: repeat-x;
+    border-color: #55aac5 #2a99bd #2a99bd #55aac5;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    color: #f3f3f3;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    height: 40px;
+    line-height: 30px;
+    margin-bottom: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-transform: capitalize;
+    width: 150px;
+}
+
+    #btnSubmit_Update:hover {
+        color: #fff;
+        background-color: #0a799d;
+    }
+
+    #btnSubmit:hover {
+        color: #fff;
+        background-color: #0a799d;
+    }
+
+#ancCancel {
+    float: right;
+    width: 95px;
+}
+
+#fuChannelAvatar_Update,
+#fuChannelAvatar {
+    cursor: pointer;
+    display: block;
+    height: 55px;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    width: 259px;
+}
+
+.fuHolder_Update,
+.fuHolder {
+    background-color: #ccc;
+    border-radius: 2px;
+    cursor: pointer;
+    display: block;
+    height: 30px;
+    position: relative;
+    text-align: center;
+    margin-left: 20px;
+    margin-top: 20px;
+    width: 80px;
+    margin-right: 20px;
+}
+
+    .fuHolder_Update:hover,
+    .fuHolder:hover {
+        background-color: #777;
+        color: #fff;
+    }
+
+    .fuHolder_Update span,
+    .fuHolder span {
+        color: #FFFFFF;
+        display: block;
+        font-size: 12px;
+        height: 30px;
+        left: 0;
+        line-height: 30px;
+        position: absolute;
+        text-align: center;
+        text-transform: uppercase;
+        top: 0;
+        width: 80px;
+        cursor: pointer;
+    }
+
+.cropImg {
+    color: #2A99BD;
+    display: none;
+    font-size: 13px;
+    margin-left: 5px;
+    text-decoration: underline;
+    float: left;
+    margin-top: 3px;
+    width: 200px;
+}
+
+#txtChannelName {
+    color: #777;
+    font-size: 12px;
+    height: 37px;
+    line-height: 37px;
+    width: 320px;
+}
+
+#ottSettingsModalContent_Update ul li div #spnMsg_Update,
+#ottSettingsModalContent ul li div #spnMsg {
+    display: block;
+    float: right;
+    font-size: 12px;
+    height: 30px;
+    line-height: 30px;
+    width: 73px;
+    text-align: center;
+    margin-right: 0;
+}
+
+#ottSettingsModalContent_Update ul li #lblChannelUrl_Update,
+#ottSettingsModalContent ul li #lblChannelUrl {
+    background: none repeat scroll 0 0 #fff;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    color: #777;
+    height: 37px;
+    line-height: 37px;
+    text-align: center;
+    width: 320px;
+    padding: 2px;
+}
+
+
+#cropModal {
+    width: 500px;
+    height: 500px;
+    background-color: #fff;
+    display: none;
+}
+
+#ottSettingsModalContent_Update ul li .lblChannelName_Update {
+    background-color: #fff;
+    border: 1px solid #eee;
+    color: #555;
+    font-size: 20px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    width: 320px;
+}
+
+#ottSettingsModalContent ul li .lblChannelName {
+    background-color: #fff;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    color: #555;
+    float: left;
+    font-size: 20px;
+    height: 35px;
+    line-height: 35px;
+    margin-left: 0;
+    margin-top: 3px;
+    text-align: center;
+    width: 320px;
+}
+
+.CreateNewChannelcoment {
+    clear: both;
+    display: block;
+    margin: 40px auto;
+    min-height: 25px;
+    width: 80%;
+}
+
+
+    .CreateNewChannelcoment p {
+        color: #2A99BD;
+        font-size: 20px;
+        text-align: center;
+    }
+
+#ottSettingsModalContent_Update ul li span, #ottSettingsModalContent ul li .spnPorametr {
+    clear: both;
+    display: block;
+    font-size: 11px;
+    margin-top: 5px;
+}
+
+
+
+.picLogoHolder {
+}
+
+#ottSettingsModalContent ul li div#fuHolder {
+    display: block;
+    float: left;
+    height: 55px;
+    margin-left: 5px;
+    position: relative;
+    width: 259px;
+}
+
+#fuHolder span {
+    cursor: pointer;
+    display: block;
+    height: 55px;
+    left: 0;
+    line-height: 55px;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 259px;
+}
+
+.fuimgHolder #imgChannelAvatar_Update,
+.fuimgHolder #imgChannelAvatar {
+    border: 1px solid #eee;
+    float: left;
+    height: 50px;
+    margin: 2px;
+    width: 50px;
+}
+
+
+.fuimgHolder #imgChannelAvatar_Update {
+    border: 1px solid #eee;
+    height: 50px;
+    margin-top: 10px;
+    width: 80px;
+}
+
+#ddlChannelCategory_Update,
+#ddlChannelCategory {
+    border-color: #eee;
+    color: #777;
+    font-size: 17px;
+    height: 42px;
+    text-align: left;
+    text-transform: capitalize;
+    width: 327px;
+}
+
+
+
+#createChannelPopup {
+    background-image: url("/images/opacity-0.3.png");
+    background-repeat: repeat;
+    display: none;
+    left: 0;
+    min-height: 700px;
+    padding-bottom: 2%;
+    padding-top: 5%;
+    position: absolute;
+    top: 72px;
+    width: 100%;
+    z-index: 999;
+}
+
+
+
+
+#ottSettingsModal .pageTitle {
+    border-bottom: 2px solid #2a99bd;
+    color: #2a99bd;
+    display: block;
+    font-size: 23px;
+    font-weight: normal;
+    height: 30px;
+    line-height: 30px;
+    margin: auto;
+    padding-bottom: 0;
+    padding-top: 20px;
+    text-align: left;
+    text-transform: capitalize;
+    width: 100%;
+}
+
+#ottSettingsModal .ottSettingsForm {
+    margin: 0 auto;
+    width: 332px;
+}
+
+#ottSettingsModal #ottSettingsModalContent_Update ul, #ottSettingsModal #ottSettingsModalContent ul {
+    margin: 50px auto auto;
+    padding-top: 1px;
+    width: 332px;
+}
+
+
+#ottSettingsModal .cap {
+    border: 1px solid #ddd;
+    height: 32px;
+    line-height: 32px;
+    color: #555;
+    padding: 5px;
+    width: 320px;
+    display: block;
+    float: left;
+    font-size: 15px;
+}
+
+#ottSettingsModal table td {
+    vertical-align: top;
+    padding: 10px;
+}
+
+
+
+#ottSettingsModal #txtChannelCategory {
+    border: 1px solid #ddd;
+    height: 45px;
+    padding: 5px;
+    width: 334px;
+}
+
+#ottSettingsModal #liUploadChannelAvatar {
+    border-radius: 3px;
+    cursor: pointer;
+    height: 70px;
+    position: relative;
+    width: 242px;
+    float: right;
+}
+
+#ottSettingsModal #fuChannelAvatar {
+    cursor: pointer;
+    display: block;
+    height: 37px;
+    margin-top: 18px;
+    opacity: 0;
+    width: 234px;
+}
+
+#ottSettingsModal #txtChannelLogo {
+    border: 1px solid #ddd;
+    float: right;
+    height: 32px;
+    line-height: 30px;
+    padding: 5px;
+    position: absolute;
+    width: 225px;
+    color: #777;
+}
+
+
+#ottSettingsModal #TextURL {
+    display: block;
+    width: 320px;
+    float: left;
+    line-height: 30px;
+    color: #999;
+    font-size: 15px;
+    text-transform: lowercase;
+}
+
+#ottSettingsModal .liTitle {
+    border: medium none;
+    color: #2a99bd;
+    display: none;
+}
+
+#ottSettingsModal #btnCreate {
+    background-color: #2a99bd;
+    border: medium none;
+    color: #fff;
+    display: block;
+    float: right;
+    height: 37px;
+    width: 100px;
+    text-align: center;
+    line-height: 37px;
+}
+
+#ottSettingsModal #btnSaveUpdate {
+    background-color: #2a99bd;
+    border: medium none;
+    color: #fff;
+    display: none;
+    float: right;
+    height: 37px;
+    width: 100px;
+    text-align: center;
+    line-height: 37px;
+}
+
+#ottSettingsModal #btnDelete {
+    background-color: #ccc;
+    border: medium none;
+    color: #fff;
+    display: none;
+    float: left;
+    font-size: 14px;
+    height: 37px;
+    line-height: 37px;
+    text-align: center;
+    width: 110px;
+}
+
+    #ottSettingsModal #btnDelete:hover {
+        background-color: #bbb;
+    }
+
+#ottSettingsModal #btnCreate:hover, #ottSettingsModal #btnUpdate:hover {
+    background-color: #1f7490;
+}
+
+#ottSettingsModal #ottSettingsModalContent {
+    background-color: #fff;
+    margin: auto;
+    height: auto;
+}
+
+#ottSettingsModal .close_x {
+    top: 7px;
+    background-image: url("/images/removebutton.png");
+}
+
+#ottSettingsModal #imgChannelAvatar {
+    display: block;
+    height: 70px;
+    width: 70px;
+    float: left;
+    border: 1px solid #ddd;
+    margin-bottom: 15px;
+}
+
+#ottSettingsModal #ottSettingsModalContent ul li span#spnChannelNameErr {
+    color: #ff7373;
+    display: none;
+    float: left;
+    margin: 7px 0 0;
+    width: 7px;
+}
+
+#ottSettingsModal #ottSettingsModalContent ul li#liUploadChannelAvatar span#spnChannelLogoErr {
+    color: #ff7373;
+    display: none;
+    float: left;
+    margin: 7px 0 0;
+    width: 7px;
+}
+
+#ottSettingsModal #ottSettingsModalContent ul li span#spnChannelLogoErr {
+    color: #ff7373;
+    display: none;
+    float: right;
+    margin: 7px 0 0;
+    width: 7px;
+}
+
+
+
+
+#ottSettingsModal .pageTitle {
+    border-bottom: 2px solid #2a99bd;
+    color: #2a99bd;
+    display: block;
+    font-size: 23px;
+    height: 30px;
+    line-height: 30px;
+    margin: auto;
+    padding-bottom: 0;
+    padding-top: 60px;
+    text-align: left;
+    text-transform: capitalize;
+    width: 95%;
+    margin-bottom: 20px;
+}
+
+#ottSettingsModal .ottSettingsForm {
+    margin: 0 auto;
+    width: 90%;
+    position: relative;
+    min-height: 500px;
+    margin-top:50px;
+}
+
+.ottSettingsForm small
+{
+    font-size:11px;
+    color:#999;
+}
+
+#ottSettingsModal #ottSettingsModalContent ul li span.spnCreateChannelError {
+    color: rgb(255, 115, 115);
+    display: none;
+    float: left;
+    font-size: 12px;
+    height: 28px;
+    margin-bottom: 0;
+    text-transform: none;
+    width: 320px;
+}
+
+input[type=range]::-ms-track {
+    width: 100%;
+    height: 5px;
+    /*remove bg colour from the track, we'll use ms-fill-lower and ms-fill-upper instead */
+    background: transparent;
+    /*leave room for the larger thumb to overflow with a transparent border */
+    border-color: transparent;
+    border-width: 6px 0;
+    /*remove default tick marks*/
+    color: transparent;
+  
+}
+
+input[type=range]::-ms-fill-lower {
+    background: #777;
+    border-radius: 10px;
+}
+
+input[type=range]::-ms-fill-upper {
+    background: #ddd;
+    border-radius: 10px;
+}
+
+input[type=range]::-ms-thumb {
+    border: 1px solid #999;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background: #ddd;
+}
+
+input[type=range]:focus::-ms-fill-lower {
+    background: #888;
+}
+
+input[type=range]:focus::-ms-fill-upper {
+    background: #ccc;
+}
+
+
+#ottSettingsModal #ottSettingsModalContent_Update ul, #ottSettingsModal #ottSettingsModalContent ul {
+    padding-top: 1px;
+    width: 340px;
+}
+
+    #ottSettingsModal #ottSettingsModalContent_Update ul#leftUl, #ottSettingsModal #ottSettingsModalContent ul#leftUl {
+        float: left;
+        margin-top: 19px;
+    }
+
+    #ottSettingsModal #ottSettingsModalContent_Update ul#rightUl, #ottSettingsModal #ottSettingsModalContent ul#rightUl {
+        float: right;
+    }
+
+    #ottSettingsModal #ottSettingsModalContent ul li {
+        width: 100%;
+        float: left;
+        margin-bottom: 5px;
+    }
+
+        #ottSettingsModal #ottSettingsModalContent ul li.shortField {
+            width: 200px;
+            float: left;
+        }
+
+        #ottSettingsModal #ottSettingsModalContent ul li.shortFieldRight {
+            float: right;
+        }
+
+        #ottSettingsModal #ottSettingsModalContent ul li.subcribtionOFF {
+            display: none;
+        }
+
+#ottSettingsModal .liContentWrapper span.muteRight {
+   
+    margin-right: 21px;
+}
+
+#toggleMute.inputMusicON.muteRight {
+    float: right;
+}
+
+#ottSettingsModal .cap,
+#ottSettingsModal #TextURL {
+    border: 1px solid #ddd;
+    color: #000;
+    display: block;
+    float: left;
+    font-size: 14px;
+    height: 32px;
+    line-height: 20px;
+    padding: 1%;
+    width: 98%;
+    margin-bottom: 5px;
+    font-family: Roboto-Light,'Helvetica Neue',Helvetica,Arial,sans-serif;
+    background-color: #f7f7f7;
+}
+#ottSettingsModal .cap {
+    font-family: Roboto-Bold,'Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+
+#ottSettingsModal textarea.cap {
+    height: 80px;
+}
+#ottSettingsModal .liContentWrapper a.upgragePackg {
+    display: block;
+    float: right;
+    color: #2A99BD;
+    text-decoration: underline;
+    cursor: pointer;
+}
+#textBrandingHolder, 
+#imageBrandingHolder
+{
+    float:left;
+    display:block;
+    margin-left:50px;
+    width:100%;
+}
+#textBrandingHolder input, 
+#imageBrandingHolder input
+{
+    float: left;
+width: 20px;
+height: 20px;
+}
+#textBrandingHolder label, 
+#imageBrandingHolder label
+{
+line-height:24px;
+}
+.showpassword,
+#txtPasswordProtected,
+.inputCustomBranding {
+display: block;
+    float: left;
+    width: 100%;
+    height: 35px;
+    line-height: 35px;
+    padding: 1%;
+     font-family:'Source Sans Pro','Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+
+    .inputCustomBranding input {
+        color: red;
+    }
+
+.showpasswordcheckbox {
+    display: block;
+    float: left;
+    width: 20px;
+    height: 20px;
+}
+
+
+
+#ottSettingsModalContent ul li span.showPassUpgrade {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+
+
+.showpasswordlabel {
+   float: left;
+font-size: 14px;
+height: 45px;
+line-height: 24px;
+margin-bottom: 20px;
+width: 100%;
+}
+
+
+#ottSettingsModal #txtChannelCategory {
+    border: 1px solid #ddd;
+    height: 40px;
+    padding: 0;
+    width: 100%;
+    text-transform: capitalize;
+    font-size: 14px;
+    float: left;
+    line-height: 40px;
+    font-family:  Roboto-Light,'Helvetica Neue',Helvetica,Arial,sans-serif;
+    color: #555;
+    margin-top:3px;
+}
+
+/*
+.liContentWrapper {
+    position: relative;
+    width: 320px;
+    float: left;
+    height:40px;
+}
+    This was breaking custom branding styles
+*/
+
+#customBrandingOptions
+{
+    display:none;
+}
+.image-editor2.logo{
+    display:none;
+}
+#ottSettingsModal .liContentWrapper span {
+    display: block;
+    float: left;
+    font-size: 14px;
+    margin-top: 0;
+    color: #000;
+    line-height: 20px;
+}
+
+#ottSettingsModal select#slctLang {
+    font-family: Roboto-Light,'Helvetica Neue',Helvetica,Arial,sans-serif;
+    border: 1px solid #ddd;
+    height: 45px;
+    width: 100%;
+    font-size: 14px;
+}
+
+#ottSettingsModal #liUploadChannelAvatar {
+    border-radius: 3px;
+    cursor: pointer;
+    height: 70px;
+    position: relative;
+    width: 242px;
+    float: right;
+}
+
+#ottSettingsModal #fuChannelAvatar {
+    cursor: pointer;
+    display: block;
+    height: 37px;
+    margin-top: 18px;
+    opacity: 0;
+    width: 234px;
+}
+
+#ottSettingsModal #txtChannelLogo {
+    display: block;
+    width: 98%;
+    float: left;
+    line-height: 37px;
+    color: #000;
+    text-transform: lowercase;
+    height: 37px;
+}
+
+
+#ottSettingsModal #TextURL {
+    display: block;
+    width: 98%;
+    float: left;
+    line-height: 30px;
+    color: #555;
+    text-transform: lowercase;
+    background-color: #f7f7f7;
+}
+
+#ottSettingsModal .liTitle {
+    border: medium none;
+    color: #2a99bd;
+    display: none;
+}
+
+.createUpdateHolder {
+    display: block;
+    float: left;
+    width: 100%;
+    clear: both;
+    height: 40px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+#ottSettingsModalContent ul li span.copyText {
+    /*display: none;*/
+    float: left;
+    font-size: 14px;
+    line-height: 20px;
+    height: 20px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+
+#ottSettingsModal #btnCreate {
+    background-color: #2a99bd;
+    border: medium none;
+    color: #fff;
+    height: 37px;
+    line-height: 37px;
+    text-align: center;
+    width: 120px;
+    font-size: 15px;
+}
+
+
+#ottSettingsModal #btnSaveOttSettings {
+    background-color: #2a99bd;
+    border: medium none;
+    color: #fff;
+    height: 37px;
+    line-height: 37px;
+    text-align: center;
+    width: 120px;
+    font-size: 15px;
+    float: right;
+}
+
+#ottSettingsModal #btnDelete {
+    background-color: #aaa;
+    border: medium none;
+    color: #fff;
+    height: 37px;
+    line-height: 37px;
+    text-align: center;
+    width: 120px;
+    font-size: 15px;
+    float: right;
+    margin-right: 20px;
+}
+
+#txtAreaChannelDesc {
+    font-family: Roboto-Light,'Helvetica Neue',Helvetica,Arial,sans-serif;
+    width: 98%;
+    border: 1px solid #ddd;
+    padding: 1%;
+    line-height: 24px;
+    font-size: 14px!important;
+    height: 70px;
+    background-color: #f7f7f7;
+}
+
+#ottSettingsModal #btnDelete:hover {
+    background-color: #999;
+}
+
+#ottSettingsModal #btnCreate:hover, #ottSettingsModal #btnUpdate:hover {
+    background-color: #1f7490;
+}
+
+#ottSettingsModal #ottSettingsModalContent {
+    background-color: #fff;
+    margin: auto;
+    width: 100%;
+    min-width: 100%;
+}
+
+#ottSettingsModal .close_x {
+    top: 7px;
+    right: 7px;
+    background-image: url("/images/removebutton.png");
+}
+
+#ottSettingsModal #imgChannelAvatar {
+    display: block;
+    height: 70px;
+    width: 70px;
+    float: left;
+    border: 1px solid #ddd;
+    margin-bottom: 15px;
+}
+
+#ottSettingsModal #ottSettingsModalContent ul li span#spnChannelNameErr {
+    color: #ff7373;
+    display: none;
+    float: left;
+    margin: 7px 0 0;
+    width: 7px;
+}
+
+#ottSettingsModal #ottSettingsModalContent ul li#liUploadChannelAvatar span#spnChannelLogoErr {
+    color: #ff7373;
+    display: none;
+    float: left;
+    margin: 7px 0 0;
+    width: 7px;
+}
+
+#ottSettingsModal #ottSettingsModalContent ul li span#spnChannelLogoErr {
+    color: #ff7373;
+    display: none;
+    float: right;
+    margin: 7px 0 0;
+    width: 7px;
+}
+
+#ottSettingsModal .Error {
+    border-color: #ff7373;
+}
+
+.subscribe_error
+{
+    color:red;
+    margin-top:15px;
+}
+
+#ottSettingsModal #txtChannelCategory.categoryErr {
+    border: 1px solid #ff7373;
+}
+#ottSettingsModal select#slctLang.categoryErr
+{
+     border: 1px solid #ff7373;
+}
+#ottSettingsModal select#slctLang.categoryErr
+{
+     border: 1px solid #ff7373;
+}
+
+.createModalLeft {
+    display: block;
+    float: left;
+    width: 340px;
+}
+
+.createModalRight {
+    display: block;
+    float: right;
+    width: 320px;
+}
+
+#userInterestsModal {
+    background-color: #fff;
+}
+
+    #userInterestsModal .pageTitle {
+        border-bottom: 2px solid #2a99bd;
+        color: #2a99bd;
+        display: block;
+        font-size: 23px;
+        font-weight: normal;
+        height: 30px;
+        line-height: 30px;
+        margin: auto;
+        padding-bottom: 0;
+        padding-top: 20px;
+        text-align: left;
+        text-transform: capitalize;
+        width: 100%;
+    }
+
+        #userInterestsModal .pageTitle.interestPopupTitle {
+            text-align: center;
+        }
+
+
+
+#userInterests_Body {
+    padding: 2%;
+    display: block;
+    float: left;
+    width: 96%;
+}
+
+
+#userInterests_Message {
+    display: block;
+    float: none;
+    width: 100%;
+    height: auto;
+    line-height: 24px;
+    font-size: 16px;
+    text-align: center;
+    border-bottom: 1px solid #2a99bd;
+    color: #555;
+    margin: auto;
+}
+#userInterests_Welcome {
+        display: block;
+    float: left;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#userInterestsModal .pageTitle.interestPopupTitle {
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    border-bottom: none;
+}
+
+#userInterests_Container {
+    display: block;
+    width: 800px;
+    margin: auto;
+}
+
+.categoryBlock {
+    display: block;
+    float: left;
+    width: 400px;
+    height: 50px;
+}
+
+    .categoryBlock input {
+        display: block;
+        float: left;
+    }
+
+    .categoryBlock .checkTitle {
+        display: block;
+        float: left;
+        color: #555;
+        font-size: 16px;
+        line-height: 30px;
+        padding-left: 20px;
+        width: 80%;
+    }
+
+.chkGreenMarkStyle[type="checkbox"] {
+    -webkit-appearance: none;
+    outline: none;
+    width: 22px;
+    height: 22px;
+    background-color: #eee;
+}
+
+
+    .chkGreenMarkStyle[type="checkbox"]:checked {
+        -webkit-appearance: none;
+        outline: none;
+        background-image: url('/images/checkIcons/check-mark-green.png');
+        background-size: 100%;
+        width: 22px;
+        height: 22px;
+    }
+
+#userInterests_Actions {
+    display: block;
+    float: left;
+    width: 100%;
+}
+
+
+#userInterestsModal .userInterests_SubmitDisable {
+    background-color: #747677;
+    border: medium none;
+    color: #ddd;
+    height: 37px;
+    line-height: 37px;
+    text-align: center;
+    width: 120px;
+    font-size: 15px;
+    display: block;
+    float: right;
+    cursor: default;
+    opacity: 0.5;
+}
+
+#userInterestsModal .userInterests_Submit {
+    background-color: #2a99bd;
+    border: medium none;
+    color: #fff;
+    height: 37px;
+    line-height: 37px;
+    text-align: center;
+    width: 120px;
+    font-size: 15px;
+    display: block;
+    float: right;
+    cursor: pointer;
+}
+
+    #userInterestsModal .userInterests_Submit:hover {
+        background-color: #236980;
+    }
+
+.closeInterestsPopup {
+    top: 20px;
+    right: 20px;
+}
+
+#userInterests_Body table {
+    border: none;
+}
+
+    #userInterests_Body table tbody tr td {
+        border: none;
+        padding: 0;
+    }
+
+.inputEmbeddedOFF,
+#toggleWhiteLabel.inputWhiteLabelOFF,
+#toggleMute.inputMusicOFF,
+#togglePassword.inputPasswordOFF,
+#toggleCustomBranding.inputBrandingOFF,
+#toggleControls.controlsInputOFF,
+#toggleMatureContent.matureInputOFF,
+#togglePrivateMode.privateInputOFF,
+#toggleLifeFirst.inputLiveFirstOFF,
+#toggleKeepGuide.inputKeepGuideOFF {
+    background-color: transparent;
+    background-image: url('/images/ledLightOFF.jpg');
+    border-radius: 20px;
+    float: left;
+    height: 20px;
+    margin-right: 5px;
+    width: 50px;
+}
+
+#toggleMute.inputMusicOFF {
+    float: left;
+}
+
+
+.opacityNotActive {
+    opacity: 0.3;
+}
+.extraMargin {
+    margin-top: 10px;
+}
+
+
+#toggleAddChannelToRoku.inputEmbeddedON,
+#toggleWhiteLabel.inputWhiteLabelON,
+#toggleMute.inputMusicON,
+#togglePassword.inputPasswordON,
+#toggleCustomBranding.inputBrandingON,
+#toggleControls.controlsInputON,
+#toggleMatureContent.matureInputON,
+#toggleEmbedOnlyMode.inputEmbeddedON,
+#togglePrivateMode.privateInputON,
+#toggleLifeFirst.inputLiveFirstON,
+#toggleKeepGuide.inputKeepGuideON{
+    background-color: transparent;
+    background-image: url('/images/ledLightON.jpg');
+    border-radius: 20px;
+    float: left;
+    height: 20px;
+    margin-right: 5px;
+    width: 50px;
+}
+
+
+.spnSubscribtionError {
+    width: 100%;
+    line-height: 24px;
+    text-align: center;
+    color: #ff7373;
+}
+#txtEmbeddingDomain {
+    display: none;
+}
+
+#txtPasswordProtected {
+}
+
+#embededCodeCopyArea {
+    display: none;
+    width: 99%;
+    margin-bottom: 10px;
+    height: 65px;
+}
+
+#facebookCodeCopyArea {
+    width: 99%;
+    margin-bottom: 10px;
+    height: 65px;
+}
+
+.enbeddedErea {
+     width: 100%;
+    display: block;
+    float: left;
+}
+
+#txtEmbeddingDomain {
+    display: inline;
+    height: 35px;
+    width: 98%;
+    border: 1px solid #ddd;
+    line-height: 35px;
+    padding: 1%;
+     font-family:'Source Sans Pro','Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+
+.infoSetUP {
+    background-image: url('/images/infoIcon.png');
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    display: block;
+    float: left;
+    height: 20px;
+    width: 20px;
+}
+
+.subscrEmbed {
+    display: block;
+    float: right;
+    height: 30px;
+    text-align: center;
+    line-height: 21px;
+    color: #2a99bd;
+    text-decoration: underline;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+}
+
+.instrLink {
+    display: block;
+    text-align: right;
+    line-height: 40px;
+    color: #2a99bd;
+    text-decoration: underline;
+    cursor: pointer;
+    width: 100%;
+}
+
+    .subscrEmbed:hover {
+        color: #5dbdec;
+    }
+
+#toggleAddChannelToRoku.infoblya {
+    background-image: url('/images/infoIcon.png');
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    display: block;
+    float: left;
+    height: 20px;
+    width: 20px;
+}
+
+
+    #ottSettingsModal {
+    background-color: #fff;
+    width: 810px;
+    padding: 20px;
+}
+
+
+
+
+
+@media (max-width:760px) {
+
+    #ottSettingsModal #ottSettingsModalContent {
+	background-color: #fff;
+	width: 100%;
+	max-width: 340px;
+    min-width: 340px;
+	margin: auto;
+	float: none;
+}
+
+
+    #ottSettingsModal {
+    background-color: #fff;
+    width: 98%!important;
+    margin: auto!important;
+    left: 0!important;
+    padding: 1%;
+    top: 0!important;
+}
+
+        #ottSettingsModal .ottSettingsForm {
+	width: 100%;
+}
+    .createModalLeft {
+	width: 100%;
+}
+
+    #ottSettingsModal #ottSettingsModalContent ul {
+        width: 100%;
+    }
+
+    .createModalRight {
+	display: block;
+	float: left;
+	width: 100%;
+}
+.image-editor {
+	width: 100%;
+}
+}
+
+
+
+.ottData{
+    display:none;
+}
+
+
+
+
+
+
+@media (max-width:500px) {
+    #userInterests_Message {
+    width:90%;
+}
+
+
+
+}
+
+.image-editor-hd .select-image-btn, .image-editor-sd .select-image-btn {
+    margin-top: 50px;
+}

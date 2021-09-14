@@ -1,0 +1,6 @@
+﻿CREATE TABLE [dbo].[SnEventType] (
+    [Id]   UNIQUEIDENTIFIER NOT NULL,
+    [Name] NVARCHAR (100)   NOT NULL,
+    CONSTRAINT [PK_SnEventType] PRIMARY KEY CLUSTERED ([Id] ASC)
+);
+

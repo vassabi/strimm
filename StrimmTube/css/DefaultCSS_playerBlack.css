@@ -1,0 +1,2302 @@
+﻿  
+body {
+    background-color: #222;
+    font-family: OpenSans-regular,OpenSans-regular,arial,sans-serif,sans-serif;
+
+}
+
+#topPlaceHolder {
+    display: none;
+}
+
+
+        .GRADIENT-DOWN {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 80px;
+            display: block;
+              z-index: 2;
+              opacity: 0.9;
+              background-size: 100%;
+    background: rgba(0,0,0,1);
+background: -moz-linear-gradient(top, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0,0,0,1)), color-stop(100%, rgba(0,0,0,0)));
+background: -webkit-linear-gradient(top, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+background: -o-linear-gradient(top, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+background: -ms-linear-gradient(top, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+background: linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000', GradientType=0 );
+        }
+
+.blackBarOver {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 80px;
+            display: block;
+              z-index: 2;
+              opacity: 0.5;
+background-color: #000;
+        }
+
+                .GRADIENT-UP {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 200px;
+            display: block;
+            z-index: 2;
+            opacity: 0.9;
+background: rgba(0,0,0,0);
+background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0,0,0,0)), color-stop(100%, rgba(0,0,0,1)));
+background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+background: -o-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+background: -ms-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000', GradientType=0 );
+}
+
+.btnCreate {
+    width: 250px;
+    color: #fff;
+    height: 50px;
+    display: block;
+    background-color: #3bcd4e;
+    line-height: 50px;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 17px;
+    float: left;
+    background: #3bcd4e;
+    margin-top: 35px;
+    cursor: pointer;
+    font-family: OpenSans-regular,OpenSans-regular,arial,sans-serif,sans-serif;
+        }
+
+    .btnCreate:hover {
+        background: #2e913b;
+    }
+
+.channelHolderCategoryLP {
+    display: block;
+    float: left;
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+}
+
+.whatIskWrapper {
+    width: 90%;
+    height: auto;
+    display: block;
+    margin-bottom: 150px;
+    background-color: transparent;
+    border-bottom: 1px solid #444;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+.whatIsHolder {
+    display: block;
+    float: none;
+    width: 90%;
+    height: 700px;
+    background-color: #222;
+    border-bottom: 1px solid #444;
+    margin: auto;
+}
+
+.whatIs {
+    display: block;
+    width: 100%;
+    max-width: 1520px;
+    margin: auto;
+    height: 650px;
+}
+
+.whatIsBlock {
+    width: 33%;
+    height: 300px;
+    display: block;
+    float: left;
+    margin-top: 25px;
+    border-right: 1px solid #444;
+}
+.borderNone {
+    border-right: none;
+
+}
+
+
+
+.homeActionsHolder {
+    width: 600px;
+    margin: auto;
+}
+
+.sliderCaptionsHN {
+    display: none;
+    min-width: 320px;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    margin-top: 80px;
+    padding-bottom: 50px;
+}
+
+.sliderCaptionsHN h5 {
+    color: #fff;
+    font-family: opensans-light,OpenSans-regular,arial,sans-serif,sans-serif;
+    font-size: 72px;
+    font-weight: normal;
+    letter-spacing: 5px;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    text-shadow: 5px 2px 12px #333;
+}
+
+.sliderCaptionsHN h6 {
+    color: #fc0;
+    font-family: opensans-light,OpenSans-regular,arial,sans-serif,sans-serif;
+    font-size: 50px;
+    font-weight: normal;
+    line-height: 2em;
+    margin-bottom: 15px;
+}
+
+        .watchVideoIcon200 {
+            background-image: url("/images/videoTutorialIcon.png");
+            background-size: 100%;
+            background-repeat: no-repeat;
+            width: 170px;
+            height: 170px;
+            margin: auto;
+            display: block;
+            cursor: pointer;
+        }
+
+            .watchVideoIcon200:hover {
+                background-image: url("/images/videoTutorialIconHover.png");
+                width: 170px;
+                height: 170px;
+                background-repeat: no-repeat;
+             margin: auto;
+            display: block;
+             background-size: 100%;
+            }
+
+
+
+.webHolder {
+    display: block;
+    margin: auto;
+    width: 1024px;
+    height: 540px;
+    position: relative;
+    max-width: 1024px;
+}
+
+@-moz-document url-prefix() {
+        .webHolder {
+        max-width: 1024px;
+        width: 900px;
+    }
+}
+
+
+
+.webHolderRightWrapperOverlay {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-image: url("/images/infoBarBG.png");
+    background-repeat: repeat-x;
+    background-position: bottom;
+    z-index: 999;
+    width: 19%;
+    height: 50px;
+    min-width: 280px;
+}
+
+.hideInfoScheduleBlock {
+    width: 98%;
+    background-image: url("/images/00065.png");
+    background-repeat: repeat;
+    min-width: 280px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding-left: 2%;
+    min-height: 650px;
+}
+
+.webHolderRightWrapper {
+    height: 560px;
+    width: 20%;
+    overflow: hidden;
+    right: 0;
+    top: 0;
+    position: absolute;
+    min-width: 300px;
+}
+
+
+.webHolderHidden {
+    background-color: transparent;
+    background-image: url("/images/00050.png");
+    background-repeat: repeat;
+    display: block;
+    float: left;
+    position: relative;
+    width: 300px;
+}
+
+
+
+.hideInfoBlock {
+    background-image: url("/images/00065.png");
+    background-repeat: repeat;
+    position: absolute;
+    top: 0;
+    cursor: pointer;
+    display: block;
+    z-index: 1;
+    height: 560px;
+    width: 300px;
+}
+   
+.hideSchedule {
+    background-image: url('/images/slideArrows/slideArrowShow.png');
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 10px;
+    left: -3px;
+    cursor: pointer;
+    display: block;
+    z-index: 1;
+    height: 30px;
+    color: transparent;
+    width: 30px;
+    opacity: 0.7;
+}
+
+    .hideSchedule:hover {
+        opacity: 1;
+}
+
+
+
+
+.webHolderLeft {
+            display: block;
+            float: left;
+            width: 98%;
+    background-color: transparent;
+    padding-left: 2%;
+    padding-top: 13px;
+    padding-bottom: 0;
+    position: relative;
+    height: 560px;
+        }
+
+.fullHolder {
+    display: none;
+    float: left;
+    width: 98%;
+    margin: auto;
+}
+
+/*.mute {
+           background-image: url("/images/mute.png");
+       background-repeat: no-repeat;
+       display: block;
+       position: absolute;
+       bottom: 10px;
+       right: 10px;
+       width: 40px;
+       height: 40px;
+       cursor: pointer;
+      }
+            .muteOFF {
+           background-image: url("/images/muteOFF.png");
+       background-repeat: no-repeat;
+       display: block;
+       position: absolute;
+       bottom: 10px;
+       right: 10px;
+       width: 40px;
+       height: 40px;
+      }*/
+.mute {
+    background-image: url("/images/mute.png");
+    background-repeat: no-repeat;
+    display: block;
+    position: absolute;
+    bottom: 10px;
+    left: -70px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    z-index: 9999;
+}
+
+#divTopWrapper {
+    border-bottom: 2px solid #222;
+}
+
+.muteOFF {
+    background-image: url("/images/muteOFF.png");
+    background-repeat: no-repeat;
+    display: block;
+    position: absolute;
+    bottom: 10px;
+    left: -70px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    z-index: 9999;
+}
+
+
+
+.webHolderRight {
+    display: block;
+    float: left;
+    margin-left: 30px;
+}
+
+.scheduleScrollHomePage {
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+}
+
+.channelWatchig {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    font-size: 17px;
+    color: #2a99bd;
+    text-align: left;
+}
+
+
+.channelWatchigDescription {
+    width: 90%;
+    float: left;
+    height: auto;
+}
+
+.hrefToChannel {
+    color: #2a99bd;
+}
+
+    .hrefToChannel:hover {
+        color: #37ceff;
+    }
+
+
+.channelWatchigDescription p,
+.channelCreatorBIO p {
+display: block;
+    height: 80px;
+    margin: 0 auto;
+    font-size: 13px;
+    line-height: 25px;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-family: OpenSans-light,OpenSans-regular,arial,sans-serif,sans-serif;
+    color: #ccc;
+    text-align: left;
+}
+
+.channelCreator {
+    display: block;
+    width: 100%;
+    float: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.channelCreatorImg,
+.channelChannelImg {
+    display: block;
+    float: left;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #555;
+    margin-right: 10px;
+    margin-top: 7px;
+}
+
+.spnChannelCreator {
+    display: block;
+    float: left;
+    margin-right: 5px;
+    color: #2a99bd;
+    height: 50px;
+    line-height: 50px;
+    text-transform: capitalize;
+    font-size: 17px;
+}
+
+.spnChannelCreatorName {
+    display: block;
+    color: #eee;
+    height: 50px;
+    line-height: 50px;
+    font-size: 14px;
+    float: left;
+}
+
+
+.scheduleHome {
+    display: block;
+    float: left;
+    width: 95%;
+    height: 50px;
+    border-bottom: 1px solid #0a6215;
+    min-width: 300px;
+}
+
+
+#topRightHolderBL .spnCreateChannel {
+    background-color: #3BCD4E;
+    border: 1px solid #3BCD4E;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    float: left;
+    font-size: 12px;
+    font-weight: bold;
+    height: 35px;
+    letter-spacing: 1px;
+    line-height: 36px;
+    margin-left: 5px;
+    margin-top: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 145px;
+}
+
+.scheduleScrollHomePage {
+    height: 560px;
+}
+
+#topRightHolderBL .spnCreateChannel:hover {
+    background-color: #2e913b;
+    border: 1px solid #2e913b;
+}
+
+.spnCreateChannel {
+    background-color: #3BCD4E;
+    border: 1px solid #3BCD4E;
+    color: #fff;
+}
+
+    .spnCreateChannel:hover {
+        background-color: #2e913b;
+        border: 1px solid #2e913b;
+    }
+
+.PlayerHolderHome {
+    height: 100%;
+    width: 1024px;
+    margin: auto;
+    position: relative;
+}
+
+@-moz-document url-prefix() {
+    .PlayerHolderHome {
+        height: 100%;
+        width: 100%;
+        max-width: 900px;
+        margin: auto;
+    }
+}
+
+
+
+.playerbox, #player, #PlayerHolder {
+    width: 100%;
+    height: 100%;
+}
+
+
+.howToHolder {
+    /* bottom: 0; */
+    display: block;
+    max-width: 1520px;
+    min-width: 1024px;
+    position: relative;
+    width: 100%;
+    margin: auto;
+    padding-bottom: 50px;
+    /* padding-top: 100px; */
+    text-align: center;
+    /* margin-top: -85px; */
+    margin-top: 100px;
+    /* margin-bottom: 50px; */
+    /* float: left; */
+}
+
+
+
+
+
+
+ .leftHowToBoxesHolder {
+    display: inline-block;
+    width: 20%;
+    text-align: center;
+    vertical-align: top;
+    float: left;
+        }
+
+.rightHowToBoxesHolder {
+    display: inline-block;
+    width: 70%;
+    text-align: center;
+    vertical-align: top;
+    float: right;
+    min-width: 800px;
+}
+
+
+
+.howToBox {
+   display: block;
+    float: right;
+   width: 230px;
+   height: 230px;
+   position: relative;
+   margin-left: 10px;
+   float: right;
+   background-image: url("/images/howToBoxBG.png");
+   background-repeat: repeat;
+}
+
+
+.howToBoxlink {
+    display: block;
+    float: right;
+    width: 230px;
+    height: 230px;
+    /* background: red; */
+    margin-left: 10px;
+}
+
+
+
+
+        .watchNowBoxLeft {
+ background-image: url("/images/watchNowBox.jpg");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 100%;
+    background-size: cover;
+    width: 230px;
+    height: 230px;
+   float: left;
+        }
+
+            .watchNowBoxLeft:hover {
+ background-image: url("/images/watchNowBoxBG.jpg");
+            }
+
+        .boxAction {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+    height: 45px;
+ background-color: #2a99bd;  
+        }
+
+.webHolderRightWrapperOverlay {
+    display: none;
+}
+
+
+
+        .noBG {
+            background-color: transparent;
+        }
+
+        .actionNumber {
+background-color: #1b576a;
+color: #fff;
+display: block;
+float: left;
+
+font-size: 19px;
+font-weight: bold;
+height: 45px;
+line-height: 45px;
+text-align: center;
+width: 15%;
+        }
+
+.avtionWording {
+    color: #fff;
+    display: block;
+    height: 45px;
+    text-transform: capitalize;
+    line-height: 45px;
+    width: 85%;
+    font-size: 19px;
+    text-align: center;
+}
+
+.actionWatchNow {
+    color: #fff;
+    display: block;
+    text-align: center;
+    height: 45px;
+    width: 100%;
+    text-transform: capitalize;
+    line-height: 45px;
+    font-size: 25px;
+}
+
+
+
+.boxDescription {
+    display: block;
+    float: left;
+    width: 100%;
+    height: 200px;
+    margin-top: 45px;
+}
+
+
+.spnBoxDescription {
+    display: block;
+    float: left;
+    padding: 20px;
+    line-height: 24px;
+    font-size: 15px;
+    text-align: center;
+    color: #fff;
+    /* width: 230px; */
+    height: 160px;
+    /* background-color: red; */
+    /* opacity: 0.7; */
+    padding-top: 40px;
+}
+
+            .spnBoxDescription:hover {
+   background-image: url("/images/howToBoxesHoverLM.png");
+   background-repeat: no-repeat;
+   /*color: rgba(0,0,0,0);*/
+   /*color: #777;*/
+   color: #eee;
+   background-position: top center;
+}
+
+        .plainNH {
+            margin-bottom: 10px;
+margin-top: 5%;
+text-shadow: none;
+width: 100%;
+        }
+
+        .paragraphSloganBlackNH {
+color: #fff;
+display: block;
+font-family: OpenSans-light,OpenSans-regular,arial,sans-serif,sans-serif;
+font-size: 40px;
+font-weight: normal;
+line-height: 50px;
+margin: 40px auto auto;
+padding: 1%;
+text-align: center;
+}
+
+        .bottomButtonsHolderNH {
+    display: block;
+    height: 90px;
+    margin: auto;
+    width: 350px;
+    position: relative;
+}
+
+.bottomSignUpNH {
+    display: block;
+    float: left;
+    font-size: 17px;
+    font-weight: normal;
+    height: 40px;
+    line-height: 40px;
+    margin: 26px 20px 20px 35px;
+    text-align: center;
+    width: 170px;
+    background-color: #3bcd4e;
+    color: #fff;
+    border: 1px solid #3bcd4e;
+}
+
+.weightNormal {
+    font-weight: normal;
+}
+
+.bottomSignUpNH:hover {
+    border: 1px solid #2e913b;
+    background-color: #2e913b;
+    color: #fff;
+}
+
+        .learnMoreHomeNH {
+  color: #fff;
+  display: block;
+  float: left;
+  font-size: 17px;
+  height: 41px;
+  line-height: 43px;
+  margin: 26px auto auto;
+  text-align: center;
+  width: 120px;
+}
+
+
+
+            .learnMoreHomeNH:hover {
+               border-bottom: 1px solid #fff;
+               color: #fff;
+            }
+
+#divFooterNH.default {
+    bottom: 0;
+    clear: both;
+    float: left;
+    margin: auto;
+    max-width: 100%;
+    min-width: 960px;
+    width: 100%;
+    background-image: url("/images/footerImg.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    /* height: 800px; */
+    position: relative;
+    background-position: bottom;
+    background-color: #BEB5B0;
+}
+
+
+@media (max-width:1320px) {
+            #divFooterNH.default {
+   background-size: 140%;
+            }
+        }
+
+        .emptyHolderForSlider {
+            max-width: 100%;
+            height: auto;
+        }
+       
+
+.holderNH {
+    clear: both;
+    margin: auto;
+    min-width: 1024px;
+    width: 100%;
+    height: 400px;
+    /* position: absolute; */
+    /* bottom: 0; */
+    width: 100%;
+    max-width: 1520px;
+    margin: auto;
+    margin-top: 80px;
+}
+
+        .columnHN {
+    display: inline-block;
+    margin: 120px 1% 1%;
+    text-align: center;
+    vertical-align: top;
+    /*width: 15%;*/
+    width: 20%;
+}
+
+.whatIsTitle {
+      display: block;
+    float: left;
+    height: 100px;
+    line-height: 100px;
+    font-family: OpenSans-Light,OpenSans-regular,arial,sans-serif,sans-serif;
+    text-align: center;
+    font-size: 40px;
+    color: #ccc;
+    width: 100%;
+    margin-bottom: 50px;
+    margin-top: 30px;
+}
+
+.whatIsStep {
+    display: block;
+    float: left;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 1.2em;
+    color: #eee;
+    width: 100%;
+    clear: both;
+}
+
+.whatIsDescription {
+    display: block;
+    float: left;
+    line-height: 25px;
+    text-align: center;
+    font-size:17px;
+    color: #aaa;
+    width: 98%;
+    margin: auto;
+    clear: both;
+}
+
+.whatIsIcon {
+    display: block;
+    width: 280px;
+    height: auto;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+    .whatIsIcon img {
+        /*width: 100%;
+        height: 100%;*/
+    }
+
+.video-box-h1 {
+    color: #ddd;
+    display: block;
+    float: left;
+    font-family: OpenSans-Regular,OpenSans-regular,arial,sans-serif,sans-serif;
+    font-size: 25px;
+    height: 30px;
+    margin-left: 8px;
+    margin-top: 30px;
+    text-align: left;
+    text-transform: capitalize;
+    width: 100%;
+    font-weight: normal;
+}
+/*.video-box-h1 {
+    color: #eee;
+    display: block;
+    float: left;
+    font-family: OpenSans-Regular,OpenSans-regular,arial,sans-serif,sans-serif;
+    font-size: 25px;
+    height: 70px;
+    text-align: left;
+    text-transform: capitalize;
+    width: 100%;
+    font-weight: normal;
+    line-height: 80px;
+    margin-top: 0;
+}*/
+
+.blackBlock {
+display: block;
+height: 50px;
+background: #000;
+width: 100%;
+}
+
+#divBrowseChannels a, .whatIsStrimmTop a,
+.spnAdvSearch {
+    font-family:OpenSans-Light,arial,sans-serif;
+}
+
+.stepsBlockDetails {
+    display: block;
+    float: left;
+    width: 100%;
+    text-align: center;
+    color: green;
+    text-decoration: underline;
+    font-size: 17px;
+    
+    height: 20px;
+    line-height: 20px;
+    margin-top: 10px;
+}
+
+#searchBoxHolder {
+    width: 100%;
+    display: block;
+    background: #444;
+    height: 35px;
+    border: 2px solid #555;
+    color: #eee;
+    padding: 3px;
+    padding-right: 0;
+}
+
+::-webkit-input-placeholder { /* Chrome */
+  color: #999;
+  
+  font-size: 15px;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #999;
+  
+  font-size: 15px;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #999;
+  
+  font-size: 15px;
+}
+:-moz-placeholder { /* Firefox 4 - 18 */
+  color: #999;
+  
+  font-size: 15px;
+}
+
+
+#ancCloseSearchControl {
+ background-image: url('/images/close_pop-white.png');
+}
+
+#searchBoxHolder input, #searchBoxHolder a {
+    display: block;
+    float: left;
+    border: none;
+    padding-top: 1px;
+    height: 27px;
+    background-color: #333;
+    color: #ddd;
+}
+
+#searchHolder .clearSearch {
+    display: block;
+    float: left;
+    height: 29px;
+    width: 41px;
+    background-image: url('/images/close_pop-white.png');
+    background-repeat: no-repeat;
+    background-size: 55%;
+    color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 4px;
+    cursor: pointer;
+    background-color: #222;
+    opacity: 0.5;
+}
+
+    #searchHolder .clearSearch:hover {
+        opacity: 1;
+    }
+
+        select option {
+background: #1b576a;
+outline: none!important;
+border: 1px solid #000!important;
+    }
+
+#createChannelModal #divBoardContent select option{
+    background: #fff;
+}
+
+
+
+#ddlSearchSelect {
+    color: #fff;
+     
+     margin-bottom: 0;
+     letter-spacing: 0;
+}
+
+#ancCloseSearchControl {
+    opacity: 0.9;
+    top: 2px;
+    right: -4px;
+    border-left: 2px solid #666;
+    height: 42px;
+}
+
+    #ancCloseSearchControl:hover {
+        opacity: 1;
+    }
+
+
+.btnSearch {
+background-image: url('/images/lupa-search-white.png');
+    margin-top: 1px;
+    border-right: 2px solid #666;
+    height: 44px;
+    cursor: pointer;
+}
+
+    .btnSearch:hover {
+        opacity: 1;
+    }
+
+.mainSearch {
+    background-image: url("/images/ddl.png");
+    margin-top: 3px;
+    opacity: 0.9;
+}
+
+.styled-selectSortSearch {
+    width: 150px;
+}
+
+    .stepsBlockDetails:hover {
+    color: #32e94a;
+    }
+
+.televisionByPeople {
+    background-color: #222;
+    display: block;
+    float: none;
+    height: 230px;
+    position: relative;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 0;
+    border-bottom: 1px solid #444;
+    padding-left: 2%; 
+}
+
+.televisionByPeopleH2 {
+    color: #ddd;
+    display: block;
+    font-family: OpenSans-light,arial,sans-serif,sans-serif;
+    font-size: 52px;
+    letter-spacing: 0;
+    line-height: 70px;
+    margin: 30px auto auto;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    font-weight: normal;
+}
+
+
+
+                .columnFooterSocial {
+                    margin: auto;
+        }
+
+.columnHN li a {
+    font-size: 14px;
+    color: #ccc;
+    text-shadow: 0px 0px 0px #fff;
+}
+
+.logoFooter {
+    background-image: url("/images/logoFooterWhite.png");
+    background-repeat: no-repeat;
+    display: block;
+    width: 100%;
+    height: 60px;
+    opacity: 0.75;
+    margin-top: -10px;
+}
+
+body .footerHomeBlock {
+    width: 100%;
+    margin-top: 50px;
+}
+
+
+.channelsBG {
+    display: block;
+    float: left;
+    width: 100%;
+    background-color: #222;
+}
+
+#homesliderHN {
+    display: block;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    background-color: #000;
+    margin-top: 70px;
+    min-width: 1024px;
+}
+
+@-moz-document url-prefix() {
+    #homesliderHN {
+        height: 500px;
+    }
+
+    .webHolder, .webHolderRightWrapper {
+        height: 500px;
+    }
+
+    .hideInfoScheduleBlock {
+          min-height: 500px;
+    }
+}
+
+.whatsPlayingNowIconHN {
+    background-image: url("/images/arrow-down.png");
+    display: none;
+    height: 55px;
+    left: 50%;
+    position: absolute;
+    top: -33px;
+    width: 55px;
+    background-position: center center;
+    background-size: 130%;
+}
+
+.whatsPlayingNowHN {
+    background-color: transparent;
+    display: block;
+    float: left;
+    height: 70px;
+    position: relative;
+    width: 100%;
+}
+
+.whatsPlayingNowHN h2 {
+    color: #0E0E10;
+    display: block;
+    font-family: OpenSans-regular,OpenSans-regular,arial,sans-serif,sans-serif;
+    font-size: 32px;
+    height: 70px;
+    letter-spacing: 1px;
+    line-height: 70px;
+    margin: 30px auto auto;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    font-weight: normal;
+}
+
+.AdvSearchImgHN {
+    background-image: url("/images/lupa-search-white.png");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    display: block;
+    float: left;
+    height: 25px;
+    /* margin-left: 0px; */
+    margin-top: 20px;
+    width: 25px;
+    opacity: 0.7;
+}
+    .AdvSearchImgHN:hover {
+        opacity: 1;
+    }
+
+
+/*-------------------------------------------------------------------------------------CSS-NOT- CHANGED*/
+.AdvSearchImg {
+    background-image: url(/images/lupa-search-white.png);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    display: block;
+    float: left;
+    height: 16px;
+    margin-left: -3px;
+    margin-top: 25px;
+ opacity: 1;
+    width: 16px;
+}
+/*-------------------------------------------------------------------------------------//////// CSS-NOT- CHANGED*/
+.option2 {
+    display: block;
+    float: left;
+    width: 81%;
+    height: 30px;
+    color: #fc0;
+    font-size: 25px;
+    text-align: right;
+    margin-bottom: 10px;
+}
+
+.option1 {
+    display: block;
+    float: left;
+    width: 100%;
+    height: 30px;
+    color: #fc0;
+    font-size: 25px;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+
+.chanBoxtitle {
+    color: #fff;
+    float: left;
+    font-size: 16px;
+    font-weight: normal;
+    padding-left: 3px;
+    width: 100%;
+    padding-top: 170px;
+    padding-bottom: 10px;
+    font-family: OpenSans-Regular,OpenSans-regular,arial,sans-serif,sans-serif;
+}
+
+
+.homeBlocksHolder {
+    background-color: transparent;
+    clear: both;
+    display: block;
+    float: left;
+    text-align: center;
+    width: 100%;
+    min-width: 1024px;
+    position: relative;
+}
+
+/*.homeBlocksHolderChannels {
+       margin-bottom: 100px;
+}*/
+
+.home-video-box-01 {
+    background-image: none;
+    background-size: 100%;
+}
+
+.homeBlocksHolder .chanBoxInfo {
+    background-image: url("/images/chanBoxInfoBG.png");
+    background-repeat: repeat-x;
+    bottom: 0;
+    box-shadow: none;
+    display: block;
+    height: 230px;
+    width: 100%;
+    opacity: 1;
+    position: absolute;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+
+        .homeBlocksHolder .chanBoxInfo:hover {
+   background-image: url("/images/chanBoxInfoBGhover.png");
+   background-repeat: no-repeat;
+        background-size: 100%;
+        height: 100%;
+        }
+
+/*------------------------------------------ FOOTER-DOUBLE-CSS------------------------------------------------------*/
+.footerSocialHolder {
+    display: block;
+    float: right;
+    width: 110px;
+    margin-left: 0;
+    padding-right: 20px;
+    margin-top: 5px;
+}
+
+.footerSocial {
+    display: block;
+    float: left;
+    width: 38px;
+    height: 38px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+
+        .footerSocialFacebook {
+            display: block;
+            float: left;
+            background-image: url("/images/social/facebookBW.jpg ");
+         background-repeat: no-repeat;
+           opacity: 0.7;
+        }
+ 
+        .footerSocialTwitter {
+            display: block;
+            float: left;
+         background-image: url("/images/social/twitterBW.jpg ");
+           background-repeat: no-repeat;
+    opacity: 0.7;
+        }
+
+        .footerSocialGoogle {
+                  display: block;
+            float: left;
+             background-image: url("/images/social/googleplusBW.jpg ");
+               background-repeat: no-repeat;
+    opacity: 0.7;
+        }
+
+        .footerSocialPinterest {
+                  display: block;
+            float: left;
+            background-image: url("/images/social/pinterestBW.jpg ");
+              background-repeat: no-repeat;
+    opacity: 0.7;
+        }
+
+        .footerSocialFacebook:hover,
+        .footerSocialTwitter:hover,
+         .footerSocialGoogle:hover,
+        .footerSocialPinterest:hover {
+            opacity: 1;
+        }
+
+        .columnFooterSocial li a {
+    display: block;  
+    margin-left: 0;
+    width: 38px;
+    height: 38px;
+        }
+/*------------------------------------------////////FOOTER-DOUBLE-CSS------------------------------------------------------*/
+
+
+
+
+
+
+       
+        /*------------------------------------------------------ CSS NOT CHANGED -----------------------------------------------*/
+
+
+                #topMenu {
+    background-image: none;
+    background-repeat: repeat;
+    height: 70px;
+    width: 100%;
+    display: block;
+    float: left;
+    background-color: #333;
+    position: absolute;
+    top: 0;
+         z-index: 1000;
+   }
+
+        #divTopWrapper {
+border: medium none;
+height: 70px;
+position: relative;
+width: 100%;
+z-index: 9999;
+box-shadow: none;
+}
+
+ #divBrowseChannels a,
+   #divTopMenu,
+#spnHello,
+.whatIsStrimmTop a {
+  color: #ddd;
+}
+
+
+        #divBrowseChannels a #divImg, .divImg {
+  color: #ddd;
+  float: right;
+  font-size: 9px;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  transform: scale(-2, 1);
+  width: 10px;
+}
+
+
+
+        
+ #divBrowseChannels a:hover,
+ .spnAdvSearch:hover,
+  #divTopNav a:hover,
+ #divTopMenu:hover,
+    #spnHello:hover,
+    .whatIsStrimmTop a:hover {
+color: #61D6FC;
+}
+
+ #divTopMenu,
+#divBrowseChannels a,
+.whatIsStrimmTop a {
+    border-right: 1px solid #555;
+}
+
+
+
+
+
+
+        .spnAdvSearch {
+  color: #ddd;
+    display: block;
+  float: left;
+  font-size: 12px;
+  font-weight: bold;
+  height: 45px;
+  letter-spacing: 1px;
+  line-height: 45px;
+  margin-top: 10px;
+  padding-left: 15px;
+  padding-right: 7px;
+    text-transform: uppercase;
+}
+
+
+#divTopNav a {
+    background-image: url("/images/plusSimbolGray.png");
+    color: #ddd;
+    display: block;
+    float: right;
+    font-family: opensans-regular,OpenSans-regular,arial,sans-serif,sans-serif;
+    font-size: 16px;
+    letter-spacing: 0;
+    margin-top: 10px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: capitalize;
+    width: 55px;
+}
+
+
+
+#divTopNav #LogIn {
+    border-left: 1px solid #ddd;
+}
+
+
+
+.whatIslearnMore {
+    display: block;
+    float: left;
+    height: 50px;
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.btnWhatIslearnMore {
+    display: block;
+    height: 50px;
+    width: 180px;
+    margin: auto;
+    /* background-color: #3bcd4e; */
+    color: #3bcd4e;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+    border: 1px solid #3bcd4e;
+}
+
+    .btnWhatIslearnMore:hover {
+        background-color: #2e913b;
+         border: 1px solid #2e913b;
+        color: #fff;
+  }
+
+    .whatIsSubTitle {
+    display: block;
+    float: left;
+    height: 44px;
+    line-height: 17px;
+    font-family: OpenSans-regular,OpenSans-regular,arial,sans-serif,sans-serif;
+    text-align: left;
+    font-size: 22px;
+    color: #ccc;
+    width: 100%;
+}
+
+
+.home-video-box:hover,
+.home-video-box-01:hover,
+.home-video-box-02:hover,
+.home-video-box-03:hover,
+.home-video-box-04:hover,
+.home-video-box-05:hover,
+.home-video-box-06:hover,
+.home-video-box-07:hover,
+.home-video-box-08:hover,
+.home-video-box-09:hover,
+.home-video-box-10:hover,
+.home-video-box-11:hover,
+.home-video-box-add:hover {
+    box-shadow: none;
+    border-color: #2a99bd;
+}
+
+.home-video-box-add {
+    background-image: url("/images/seeMoreNewDec.png");
+    background-size: 100% auto;
+    border: 1px solid #ddd;
+    width: 228px;
+  }
+
+.home-video-box, .home-video-box-01, .home-video-box-02, .home-video-box-03, .home-video-box-04, .home-video-box-05, .home-video-box-06, .home-video-box-07, .home-video-box-08, .home-video-box-09, .home-video-box-010, .home-video-box-011, .home-video-box-add {
+    cursor: pointer;
+    display: inline-block;
+    float: left;
+    height: auto;
+    margin: 0.5%;
+    width: 15%;
+    min-width: 180px;
+}
+
+
+
+.home-video-box-add {
+    background-image: url("/images/seeMoreNew.png");
+    background-size: 100% auto;
+    border: 1px solid #ddd;
+    width: 228px;
+}
+
+.channelTiming {
+    background-color: red;
+    border-top-left-radius: 20px;
+    bottom: 0;
+    color: #ccc;
+    display: block;
+    float: left;
+    font-size: 14px;
+    font-weight: bold;
+    height: 22px;
+    right: 0;
+    line-height: 22px;
+    opacity: .9;
+    position: absolute;
+    text-align: center;
+    width: 50px;
+}
+
+
+.scheduleHomeTitle {
+    display: block;
+    float: left;
+    height: 30px;
+    line-height: 16px;
+    padding-top: 15px;
+    color: #bbb;
+    font-size: 13px;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 70%;
+    font-family: OpenSans-light,OpenSans-regular,arial,sans-serif,sans-serif;
+}
+
+.whatsPlayingNow {
+    background-color: transparent;
+    display: block;
+    float: left;
+    height: 120px;
+    position: relative;
+    width: 100%;
+}
+
+.chanBox {
+    border: 1px solid #333;
+    display: block;
+    float: left;
+    height: auto;
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    max-width: 230px;
+}
+
+.channelImg {
+    height: auto;
+    width: 100%;
+}
+
+.scheduleHomeTime {
+    display: block;
+    float: left;
+    height: 50px;
+    width: 24%;
+    line-height: 50px;
+    color: #ddd;
+    text-align: center;
+    margin-right: 1%;
+    font-size: 14px;
+    position: relative;
+}
+
+.playingNowHome,
+.playingNextHome {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 15px;
+    color: #fff;
+    background-color: #ff4b00;
+    opacity: 0.85;
+    line-height: 15px;
+    font-size: 12px;
+}
+
+.playingNextHome {
+    background-color: #3bcd4e;
+    display: none;
+}
+
+.playingNowHome {
+    display: none;
+}
+
+.watchVideoIcon200 {
+    background-image: url("/images/videoWhatIsStrimm222.png");
+    background-repeat: no-repeat;
+    width: 170px;
+    height: 170px;
+    margin: auto;
+    display: block;
+    cursor: pointer;
+    float: right;
+}
+
+    .watchVideoIcon200:hover {
+        background-image: url("/images/videoWhatIsStrimm222Hover.png");
+        background-repeat: no-repeat;
+        width: 170px;
+        height: 170px;
+        margin: auto;
+        display: block;
+        cursor: pointer;
+        float: right;
+    }
+
+
+
+
+
+.moreInfo {
+    display: block;
+    float: left;
+    width: 95%;
+    text-align: right;
+    color: #2a99bd;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+    .moreInfo:hover {
+        color: #3bcd4e;
+    }
+
+.descriptionFull, .aboutFull {
+    display: block;
+    left: 5%;
+    width: 90%;
+    height: auto;
+    background-color: transparent;
+    margin: auto;
+    padding-top: 5%;
+}
+
+
+    .descriptionFull p,
+    .aboutFull p {
+    display: block;
+    float: left;
+    color: #bbb;
+    font-size: 14px;
+    line-height: 25px;
+    font-family: OpenSans-regular,OpenSans-regular,arial,sans-serif,sans-serif;
+    height: auto;
+    }
+
+.ancCreatorLink {
+    display: block;
+    float: left;
+    width: 100%;
+}
+
+.ancCreatorLinkFull {
+    display: block;
+    float: left;
+    padding: 5%;
+}
+
+.channelCreatorBIO {
+    display: block;
+    float: left;
+    width: 90%;
+}
+
+#divFooterNH.default {
+    bottom: 0;
+    clear: both;
+    float: left;
+    margin: auto;
+    max-width: 100%;
+    min-width: 960px;
+    width: 100%;
+    background-image: url("/images/footerImgHomeDecember.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: relative;
+    background-position: bottom;
+    background-color: #222;
+    margin-top: 50px;
+}
+
+.showInfoBar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 560px;
+    background-image: url("/images/00065.png");
+    background-repeat: repeat;
+    z-index: 999;
+    color: #fff;
+    font-size: 14px;
+    font-style: italic;
+    display: none;
+    cursor: pointer;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+
+    .showInfoBar:hover {
+        color: #03fb23;
+    }
+
+.showScheduleWrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 560px;
+    background-image: url("/images/00065.png");
+    background-repeat: repeat;
+    z-index: 999;
+    color: #fff;
+    font-size: 14px;
+    font-style: italic;
+    cursor: pointer;
+    padding-right: 10px;
+    padding-top: 10px;
+}
+
+.showSchedule {
+    background-image: url('/images/slideArrows/slideArrowHide.png');
+    background-repeat: no-repeat;
+    color: #fff;
+    display: block;
+    height: 30px;
+    width: 30px;
+    opacity: 0.7;
+}
+
+
+.seeAllChannels {
+    display: block;
+    float: left;
+    text-align: center;
+    color: #eee;
+    font-size: 22px;
+    text-transform: capitalize;
+    /* text-decoration: underline; */
+    cursor: pointer;
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    font-family: OpenSans-Light,OpenSans-regular,arial,sans-serif,sans-serif;
+}
+
+    .seeAllChannels:hover {
+        color: #eee;
+        text-decoration: underline;
+    }
+
+.showScheduleIcon {
+    background-image: url('/images/homeSliderIcons/ShowScheduleIcon.png');
+    background-repeat: no-repeat;
+    color: #fff;
+    display: block;
+    height: 35px;
+    width: 35px;
+    opacity: 0.7;
+    margin-top: 20px;
+    background-size: 100%;
+}
+
+
+
+.showSchedul:hover,
+.showScheduleIcon:hover {
+    opacity: 1;
+}
+
+.infoShowIcon {
+    background-image: url('/images/slideArrows/slideArrowShow.png');
+    background-repeat: no-repeat;
+    color: #fff;
+    display: block;
+    height: 30px;
+    width: 30px;
+    opacity: 0.7;
+}
+
+.infoShowIconInfo {
+    background-image: url('/images/infoIconSlider.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: block;
+    height: 33px;
+    width: 33px;
+    opacity: 0.7;
+    margin-top: 20px;
+    background-position: center;
+}
+
+
+
+    .infoShowIcon:hover,
+    .infoShowIconInfo:hover {
+        opacity: 1;
+    }
+
+
+#btnHide {
+    background-image: url("/images/slideArrows/slideArrowHide.png");
+    background-repeat: no-repeat;
+    color: transparent;
+    float: right;
+    height: 20px;
+    padding-right: 10px;
+    padding-top: 10px;
+    position: absolute;
+    right:0;
+    top: 10px;
+    width: 20px;
+    opacity: 0.7;
+    z-index: 2;
+}
+
+    #btnHide:hover {
+        color: transparent;
+        opacity: 1;
+    }
+
+.embeddedView {
+    display: block;
+    width: 100%;
+    max-width: 1520px;
+    margin: auto;
+}
+
+.emneddedImg {
+    display: block;
+    float: left;
+    width: 40%;
+   
+}
+
+    .emneddedImg img {
+            width: 100%;
+    box-shadow: 2px 3px 10px #000;
+   
+    }
+
+
+.emneddedText {
+    display: block;
+    float: left;
+    width: 56%;
+    height: auto;
+    padding: 2%;
+    text-align: left;
+    padding-top: 1%;
+}
+
+.learnMoreHomeAL {
+        display: block;
+    float: left;
+    font-size: 17px;
+    font-weight: normal;
+    height: 50px;
+    line-height: 50px;
+    margin: 26px 20px 20px 35px;
+    text-align: center;
+    width: 170px;
+    background-color: #3bcd4e;
+    color: #fff;
+    border: 1px solid #3bcd4e;
+}
+
+.emneddedTextH2 {
+    display: block;
+    float: left;
+    font-family: OpenSans-Light,OpenSans-regular,arial,sans-serif,sans-serif;
+    text-align: center;
+    font-size: 30px;
+    color: #aaa;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.emneddedTextH3 {
+    color: #3bcd4e;
+    font-family: OpenSans-Regular,OpenSans-regular,arial,sans-serif,sans-serif;
+    font-size: 19px;
+    display: block;
+    float: left;
+    margin-bottom: 20px;
+    width: 100%;
+    font-weight: normal;
+    text-align: center;
+}
+.emneddedText p {
+    color: #999;
+    
+    font-size: 16px;
+    max-width: 800px;
+    line-height: 24px;
+    text-align: justify;
+    height: 100%;
+}
+
+
+        /*------------------------------------------------------ ///// CSS NOT CHANGED -----------------------------------------------*/
+
+   /*------------------------------------------------------ MEDIA CSS  -----------------------------------------------*/
+
+@media(min-width:1660px) {
+    .webHolderRightWrapperOverlay {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        background-image: url("/images/infoBarBG.png");
+        background-repeat: repeat-x;
+        background-position: bottom;
+        z-index: 999;
+        width: 19%;
+        height: 200px;
+        min-width: 280px;
+        display: block;
+    }
+}
+
+@media(min-width:1520px) {
+    .webHolder,
+    .webHolderRightWrapper {
+        height: 650px;
+    }
+
+    .scheduleScrollHomePage,
+    .hideInfoBlock {
+        height: 650px;
+    }
+
+    @-moz-document url-prefix() {
+        .scheduleScrollHomePage,
+        .hideInfoBlock {
+            height: 500px;
+        }
+            .webHolder, .webHolderRightWrapper {
+          height: 500px;
+    }
+    }
+
+  .channelHolderCategoryLP {
+    height: 250px;
+}
+
+
+}
+
+@media(max-width:1520px) {
+            #divChannelsCategory {
+        height: 560px;
+    }
+
+              .channelHolderCategoryLP {
+    height: 195px;
+}
+
+
+}
+
+@media(max-width:1450px) {
+
+    #homesliderHN {
+        height: 480px;
+    }
+
+    .webHolder, .webHolderRightWrapper {
+        height: 480px;
+    }
+
+    .hideInfoScheduleBlock {
+          min-height: 480px;
+    }
+
+
+}
+
+
+@media(max-width:1350px) {
+
+    #btnHide {
+        padding-top: 10px;
+        display: block;
+        padding-right: 10px;
+        color: transparent;
+    }
+
+        #btnHide:hover {
+            color: transparent;
+        }
+            .mute,
+    .muteOFF {
+        left: -50px;
+    }
+
+
+            @-moz-document url-prefix() {
+    #homesliderHN {
+        height: 450px;
+    }
+
+    .webHolder, .webHolderRightWrapper {
+        height: 450px;
+    }
+
+    .hideInfoScheduleBlock {
+          min-height: 450px;
+    }
+}
+
+}
+
+@media(max-width:1320px) {
+    .embeddedView {
+    width: 90%;
+    margin: auto;
+}
+
+   #divFooterNH.default {
+        margin-top: 0;
+    }
+
+   .emneddedText {
+        height: auto;
+    }
+.emneddedImg,
+.emneddedText {
+    width: 100%;
+    margin: auto;
+    padding: 0;
+  }
+
+
+    .whatIsSubTitle {
+        margin-top: 40px;
+    }
+
+.emneddedText p {
+    max-width: 100%;
+
+}
+
+    .emneddedTextH2 {
+        margin-top:0;
+    }
+
+    @-moz-document url-prefix() {
+    #ancCreateOrSignUp {
+    margin-top: 40px;
+}
+}
+}
+
+
+@media(max-width:1280px) {
+
+    .channelWatchigDescription p,
+    .channelCreatorBIO p {
+        color: #ccc;
+    }
+}
+
+
+
+
+@media(max-width:1230px) {
+
+    .boxAction {
+        height: 35px;
+    }
+
+    .channelHolderCategoryLP {
+    height: 195px;
+}
+
+.avtionWording {
+    height: 35px;
+    line-height: 35px;
+    width: 90%;
+    font-size: 19px;
+    text-align: center;
+    font-size: 17px;
+}
+
+.actionNumber {
+    height: 35px;
+    line-height: 35px;
+    width: 10%;
+}
+
+
+.boxDescription {
+font-size: 15px;
+line-height: 20px;
+height: 30px;
+}
+
+        .spnBoxDescription {
+    display: block;
+    float: none;
+    line-height: 20px;
+    font-size: 15px;
+    text-align: center;
+    padding: 5px;
+    width: 90%;
+    margin: auto;
+        }
+
+    .sliderCaptionsHN h5 {
+        font-size: 60px;
+    }
+
+   .sliderCaptionsHN h6 {
+   font-size: 49px;
+   line-height: 1.9em;
+            }
+
+    .channelWatchigDescription p,
+    .channelCreatorBIO p {
+        color: #ccc;
+    }
+
+    .mute,
+    .muteOFF {
+        left: 0;
+        bottom: 20px;
+}
+
+
+    .watchVideoIcon200, .watchVideoIcon200:hover {
+        background-size: 80%;
+    }
+}
+
+
+@media(max-width:1200px) {
+
+    .whatIsStep {
+        font-size: 1em;
+    }
+
+    .whatIsDescription {
+        font-size: 0.9em;
+    }
+
+
+    .chanBoxtitle {
+        font-size: 0.9em;
+        padding-bottom: 7px;
+    }
+
+    .video-box-h1 {
+        font-size: 1.2em;
+    }
+
+    .channelHolderCategoryLP {
+    height: 195px;
+}
+
+    .channelWatchigDescription p,
+    .channelCreatorBIO p {
+        height: 100px;
+        -webkit-line-clamp: 4;
+        color: #ccc;
+    }
+
+    .descriptionFull p,
+    .aboutFull p {
+        height: auto;
+}
+
+    .televisionByPeople {
+        height: 175px;
+    }
+            
+    .televisionByPeopleH2 {
+        line-height: 45px;
+        font-size: 30px;
+        }
+
+    .btnCreate {
+        margin-top: 23px;
+        }
+
+    .webHolder {
+        height: 500px;
+    }
+
+    #divChannelsCategory {
+        height: 500px;
+    }
+
+        .whatIsTitle, .whatIsTitleWhite, .whatIsTitleYellow,
+    .paragraphSloganBlackNH {
+        font-size: 32px;
+        height: 70px;
+        line-height: 70px;
+        margin-bottom: 0;
+        margin-bottom: 50px;
+    }
+}
+
+
+
+@media(max-width:1024px) {
+
+    .channelWatchigDescription p,
+    .channelCreatorBIO p {
+        color: #ccc;
+    }
+
+    /*.embeddedView {
+    width: 90%;
+    margin: auto;
+}
+
+    .emneddedImg {
+   height: 500px;
+    }
+
+    .emneddedText {
+        height: auto;
+    }
+.emneddedImg,
+.emneddedText {
+    width: 100%;
+    margin: auto;
+  }
+
+    .emneddedTextH2 {
+        margin-top:0;
+    }*/
+
+}
+
+ /*------------------------------------------------------ ///// MEDIA CSS  -----------------------------------------------*/
+  /*------------------------------------------------------ ///// MEDIA CSS  -----------------------------------------------*/
+   /*------------------------------------------------------ ///// MEDIA CSS  -----------------------------------------------*/
+

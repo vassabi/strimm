@@ -1,0 +1,1092 @@
+﻿<!DOCTYPE html>
+<html >
+<head>
+    <title></title>
+    <script src="jquery/jquery-1.11.1.min.js"></script>
+    <script src="jquery/jquery-migrate-1.2.1.min.js"></script>
+    <script src="JS/Controls.js"></script>
+    <script src="Plugins/Vis/dist/vis.js"></script>
+    <script src="JS/Controls.js"></script>
+    <link href="css/timeLine.css" rel="stylesheet" />
+    <script src="Plugins/Spin/spin.js"></script>
+    <link href="Plugins/Vis/dist/vis.css" rel="stylesheet" />
+    <script src="Plugins/date.format.js"></script>
+</head>
+
+
+<body onresize="/*timeline.checkResize();*/">
+  <style type="text/css">
+      #main
+      {
+        
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("http://www.mauromedi.com/wp-content/uploads/2016/10/back-1-1.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+
+       
+      }
+  </style>
+    <div id="popupChannel" class="TLchannelInfoHolder" style="display:none;">
+        <div class="ddHolder">
+            <span class="tr"></span>
+        </div>
+
+        <div class="TLvideoClose" onclick="closeChannelPopup();"></div>
+        <div class="TLchannelInfoLeft">
+            <div id="channelAvatar" class="TLchannelBoxAvatar"></div>
+        </div>
+        <div class="TLchannelInfoRight">
+            <div id="channelName" class="TLchannelBoxTitle">Fashion TV</div>
+            <div id="channelDesc" class="TLchannelBoxDescription">Dive into the world of fashion and beauty. Imagine yourself sitting front row at the most exclusive Fashion TV </div>
+        </div>
+
+        <div class="TLchannelInfoBottom">
+
+            <div class="TLchannelBoxCreatorInfo">
+                <div id="userImage" class="TLcreatorImg">
+                </div>
+                <div class="TLcreator">creator</div>
+                <div id="creatorName" class="TLcreatorName">Robert</div>
+            </div>
+            <div id="channelWatchNow" class="TLbtnWhatchNow">watch channel</div>
+        </div>
+    </div>
+    <div id="popupVideo" class="TLVideoInfoHolder" style="display:none;">
+        <div class="ddHolder">
+            <span class="tr"></span>
+        </div>
+        <div class="TLvideoClose" onclick="closeVideoPopup();"></div>
+        <div class="TLleft">
+            <div class="TLimage">
+                <img id="videoImage"/>
+            </div>
+            <div class="TLactionHolder">
+
+                <div id="videoRecord" class="TLrec">
+                    <div class="TLrecordLed"></div>
+                    <span class="TLrecordRec">rec</span>
+                </div>
+                <div id="videoWatchNow" class="TLbtnWhatchNow">watch channel</div>
+            </div>
+        </div>
+
+        
+
+        <div class="TLRight">
+            <div id="videoTitle" class="TLTitle">fashion TV</div>
+            <div id="videoDescription" class="TLDescription">Dive into the world of fashion and beauty. Imagine yourself sitting front row at the most exclusive Fashion </div>
+            <div id="videoStartTime" class="TLstartTime">1:30pm - 2:45pm</div>
+            <div id="videoDuration" class="TLDuration">1h 30min</div>
+
+        </div>
+
+        
+    </div>
+    
+    <div id="foo" style="display:none;"></div>
+
+    <div class="TLinfoTopPannel">
+        <span class="TVguideTitle TVguideTitleActive" onclick="showAllChannels()" style="cursor:pointer;">TV Guide Demo</span>
+        <span class="TLchannlesBy" onclick="showCreatorChannels()" style="cursor:pointer;">Channels by Robert</span>
+
+        <div class="TLactionsTopHolder">
+            <div class="TLnavigationHolder">
+                <div class="TLnavPrior" onclick="moveBackInTime()"></div>
+                <div class="TLnavNext" onclick="moveForwardInTime()"></div>
+            </div>
+            <div class="TLpannelIconsHolder">
+                <div id="showTopChannels" class="TLtopChannels" title="Show Top Channels" onclick="tabShowTopChannels();"></div>
+                <div id="showMyChannels" class="TLmyChannels" title="Show My Channels" onclick="tabShowMyChannels();"></div>
+                <div id="showFavoriteChannels" class="TLfavChannels" title="Show Favorite Channels" onclick="tabShowFavoriteChannels()"></div>
+
+            </div>
+            <div class="TLpannelDDLHOlder">
+                <div class="leftSortingHolder styled-selectOpt">
+                    <select id='ddlCategory' class='TLenglishChannels' onchange="tabShowChannelsByCategory()"> </select>
+                </div>
+                <div class="leftSortingHolder styled-selectOpt">
+                    <select id="ddlLang" class="TLenglishChannels" onchange="tabShowChannelsByLanguage()"> </select>
+                </div>
+                <div class="keywordHolder">
+                    <input id="txtKeywords" class="TLserchInput" type="text" placeholder="Enter Keyword" />
+                    <div id="searchByKeywords" class="TLsearch" onclick="tabShowChannelsByKeywords()"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br />
+    <div id="mytimeline">
+        
+    </div>
+    <div id="divPagination">
+        <div id="firstPage" onclick="loadFirstPage();"></div>
+        <div id="priorPage" onclick="loadPrevPage();"></div>
+        <div id="status">Page 1 of 1</div>
+        <div id="nextPage" onclick="loadNextPage();"></div>
+        <div id="lastPage" onclick="loadLastPage();"></div>
+    </div>
+    <div class="noChannels" style="display:none;">There is no channels by your request</div>
+    <script>
+
+        var webMethodTvGuideAllChannels = "/WebServices/ChannelWebService.asmx/GetTvGuideAllChannels";
+        var webMethodTvGuideTopChannels = "/WebServices/ChannelWebService.asmx/GetTvGuideTopChannels";
+        var webMethodTvGuideFavoriteChannelsForUser = "/WebServices/ChannelWebService.asmx/GetTvGuideFavoriteChannelsForUser";
+        var webMethodTvGuideUserChannelsById = "/WebServices/ChannelWebService.asmx/GetTvGuideUserChannelsById";
+        var webMethodTvGuideChannelsByLanguage = "/WebServices/ChannelWebService.asmx/GetTvGuideChannelsByLanguage";
+        var webMethodTvGuideChannelsByKeywords = "/WebServices/ChannelWebService.asmx/GetTvGuideChannelsByKeywords";
+        var webMethodTvGuideChannelsByCategory = "/WebServices/ChannelWebService.asmx/GetTvGuideChannelsByCategory";
+        var webMethodTvGuideUserChannelsByUsername = "/WebServices/ChannelWebService.asmx/GetTvGuideUserChannelsByUsername";
+
+        var webMethodGetChannelCategories = "/WebServices/ChannelWebService.asmx/GetChannelCategories";
+        var webMethodGetChannelLanguages = "/WebServices/ChannelWebService.asmx/GetChannelLanguages";
+
+        var pageIndex = 1;
+        var prevPageIndex = 1;
+        var nextPageIndex = 1;
+        var pageCount = 0;
+
+        var isAllChannelMode = false;
+        var isTopChannelMode = false;
+        var isMyChannelMode = false;
+        var isFavoriteChannelMode = false;
+        var isChannelByLanguageMode = false;
+        var isChannelByKeywordMode = false;
+        var isChannelByCategoryMode = false;
+        var isCreatorChannelsMode = false;
+
+        var activeCategoryId = 0;
+        var activeLanguageId = 0;
+        var activeChannels = [];
+        var languages = [];
+        var categories = [];
+        var activeChannelId;
+        var activeChannelCreator;
+
+        var mX, mY, isOn = false;
+        $(document).mousemove(function (e) {
+            mX = e.pageX;
+            mY = e.pageY;
+        }).mouseover();
+
+        $(document).ready(function () {
+            var container = document.getElementById('mytimeline');
+
+            var start = new Date();
+            var end = new Date();
+
+            end.setHours(start.getHours() + 1);
+
+            var options = {
+                stack: false,
+                start: start,
+                end: end,
+                editable: false,
+                margin: {
+                    item: 10, // minimal margin between items
+                    axis: 10   // minimal margin between items and the axis
+                },
+                orientation: 'top',
+                clickToUse: true,
+                timeAxis: { scale: 'minute', step: 10 },
+                showCurrentTime: true
+            };
+
+            timeline = new vis.Timeline(container, null, null, options);
+
+            var opts = {
+                lines: 12             // The number of lines to draw
+                , length: 7             // The length of each line
+                , width: 5              // The line thickness
+                , radius: 10            // The radius of the inner circle
+                , scale: 1.0            // Scales overall size of the spinner
+                , corners: 1            // Roundness (0..1)
+                , color: '#000'         // #rgb or #rrggbb
+                , opacity: 1 / 4          // Opacity of the lines
+                , rotate: 0             // Rotation offset
+                , direction: 1          // 1: clockwise, -1: counterclockwise
+                , speed: 1              // Rounds per second
+                , trail: 100            // Afterglow percentage
+                , fps: 20               // Frames per second when using setTimeout()
+                , zIndex: 2e9           // Use a high z-index by default
+                , className: 'spinner'  // CSS class to assign to the element
+                , top: '50%'            // center vertically
+                , left: '50%'           // center horizontally
+                , shadow: false         // Whether to render a shadow
+                , hwaccel: false        // Whether to use hardware acceleration (might be buggy)
+                , position: 'absolute'  // Element positioning
+            }
+            var target = document.getElementById('foo')
+            var spinner = new Spinner(opts).spin(target)
+
+            populateLanguages();
+            populateChannelCategories();
+
+            showAllChannels();
+        });
+
+        function showAllChannels(index) {
+            $("#foo").show();
+
+            resetAllModes('allchannels');
+
+            isAllChannelMode = true;
+
+            var date = new Date();
+            var timeOfRequest = (date.getMonth() + 1) + '-' + date.getDate() + '-' + date.getFullYear() + '-' + date.getHours() + '-' + date.getMinutes();
+
+            pageIndex = (index == undefined) ? 1 : index;
+
+            $('.TVguideTitle').addClass('TVguideTitleActive');
+            //$('.TLchannlesBy').removeClass('TLchannlesByActive');
+
+            $.ajax({
+                type: 'POST',
+                url: webMethodTvGuideAllChannels,
+                dataType: 'json',
+                data: '{"clientTime":' + "'" + timeOfRequest + "'" + ', "pageIndex":' + pageIndex + '}',
+                contentType: "application/json; charset=utf-8",
+                success: function (response) {
+                    var data = response.d;
+
+                    if (data) {
+                        displayTvGuide(data);
+                        setPaginationControls(data);
+                    }
+                    else {
+                        resetPaginationControls();
+                    }
+
+                    $("#foo").hide();
+                },
+                complete: function () {
+                }
+            });
+        };
+
+        function showTopChannels(index) {
+            $("#foo").show();
+
+            resetAllModes('topchannels');
+
+            isTopChannelMode = true;
+
+            var date = new Date();
+            var timeOfRequest = (date.getMonth() + 1) + '-' + date.getDate() + '-' + date.getFullYear() + '-' + date.getHours() + '-' + date.getMinutes();
+
+            pageIndex = (index == undefined) ? 1 : index;
+
+            $('.TLtopChannels').addClass('TLactiveTOP');
+
+            $.ajax({
+                type: 'POST',
+                url: webMethodTvGuideTopChannels,
+                dataType: 'json',
+                data: '{"clientTime":' + "'" + timeOfRequest + "'" + ', "pageIndex":' + pageIndex + '}',
+                contentType: "application/json; charset=utf-8",
+                success: function (response) {
+
+                    var data = response.d;
+
+                    if (data) {
+                        displayTvGuide(response.d);
+                        setPaginationControls(data);
+                    }
+                    else {
+                        resetPaginationControls();
+                    }
+
+                    $("#foo").hide();
+                },
+                complete: function () {
+                }
+            });
+        }
+
+        function showCreatorChannels(index) {
+            $("#foo").show();
+
+            resetAllModes('creatorchannels');
+
+            isCreatorChannelsMode = true;
+
+            var date = new Date();
+            var timeOfRequest = (date.getMonth() + 1) + '-' + date.getDate() + '-' + date.getFullYear() + '-' + date.getHours() + '-' + date.getMinutes();
+
+            pageIndex = (index == undefined) ? 1 : index;
+
+            var userId = 1016;
+
+            //$('.TVguideTitle').removeClass('TVguideTitleActive');
+            $('.TLchannlesBy').addClass('TLchannlesByActive');
+
+            $.ajax({
+                type: 'POST',
+                url: webMethodTvGuideUserChannelsByUsername,
+                dataType: 'json',
+                data: '{"clientTime":' + "'" + timeOfRequest + "'" + ', "userName":' + "'" + activeChannelCreator + "'" + ', "pageIndex":' + pageIndex + '}',
+                contentType: "application/json; charset=utf-8",
+                success: function (response) {
+
+                    var data = response.d;
+
+                    if (data) {
+                        displayTvGuide(response.d);
+                        setPaginationControls(data);
+                    }
+                    else {
+                        resetPaginationControls();
+                    }
+
+                    $("#foo").hide();
+                },
+                complete: function () {
+                }
+            });
+        }
+
+        function showMyChannels(index) {
+            $("#foo").show();
+
+            resetAllModes('mychannels');
+
+            isMyChannelMode = true;
+
+            var date = new Date();
+            var timeOfRequest = (date.getMonth() + 1) + '-' + date.getDate() + '-' + date.getFullYear() + '-' + date.getHours() + '-' + date.getMinutes();
+
+            pageIndex = (index == undefined) ? 1 : index;
+            
+            $('.TLmyChannels').addClass('TLactiveMyChannels');
+
+            var userId = 1016;
+
+            $.ajax({
+                type: 'POST',
+                url: webMethodTvGuideUserChannelsById,
+                dataType: 'json',
+                data: '{"clientTime":' + "'" + timeOfRequest + "'" + ', "userId":' + userId + ', "pageIndex":' + pageIndex + '}',
+                contentType: "application/json; charset=utf-8",
+                success: function (response) {
+
+                    var data = response.d;
+
+                    if (data) {
+                        displayTvGuide(response.d);
+                        setPaginationControls(data);
+                    }
+                    else {
+                        resetPaginationControls();
+                    }
+
+                    $("#foo").hide();
+                },
+                complete: function () {
+                }
+            });
+        }
+
+        function showFavoriteChannels(index) {
+            $("#foo").show();
+
+            resetAllModes('favchannels');
+
+            isFavoriteChannelMode = true;
+
+            var date = new Date();
+            var timeOfRequest = (date.getMonth() + 1) + '-' + date.getDate() + '-' + date.getFullYear() + '-' + date.getHours() + '-' + date.getMinutes();
+
+            pageIndex = (index == undefined) ? 1 : index;
+
+            var userId = 2040;
+
+            $('.TLfavChannels').addClass('TLactiveFav');
+
+            $.ajax({
+                type: 'POST',
+                url: webMethodTvGuideFavoriteChannelsForUser,
+                dataType: 'json',
+                data: '{"clientTime":' + "'" + timeOfRequest + "'" + ', "userId":' + userId + ', "pageIndex":' + pageIndex + '}',
+                contentType: "application/json; charset=utf-8",
+                success: function (response) {
+
+                    var data = response.d;
+
+                    if (data) {
+                        displayTvGuide(response.d);
+                        setPaginationControls(data);
+                    }
+                    else {
+                        resetPaginationControls();
+                    }
+
+                    $("#foo").hide();
+                },
+                complete: function () {
+                }
+            });
+        }
+
+        function showChannelsByLanguage(index) {
+            $("#foo").show();
+
+            resetAllModes('bylanguage');
+
+            isChannelByLanguageMode = true;
+
+            activeLanguageId = $("#ddlLang option:selected").val();
+
+            var date = new Date();
+            var timeOfRequest = (date.getMonth() + 1) + '-' + date.getDate() + '-' + date.getFullYear() + '-' + date.getHours() + '-' + date.getMinutes();
+
+            pageIndex = (index == undefined) ? 1 : index;
+
+            $.ajax({
+                type: 'POST',
+                url: webMethodTvGuideChannelsByLanguage,
+                dataType: 'json',
+                data: '{"clientTime":' + "'" + timeOfRequest + "'" + ', "languageId":' + activeLanguageId + ', "pageIndex":' + pageIndex + '}',
+                contentType: "application/json; charset=utf-8",
+                success: function (response) {
+
+                    var data = response.d;
+
+                    if (data) {
+                        displayTvGuide(response.d);
+                        setPaginationControls(data);
+                    }
+                    else {
+                        resetPaginationControls();
+                    }
+
+                    $("#foo").hide();
+                },
+                complete: function () {
+                }
+            });
+        }
+
+        function showChannelsByCategory(index) {
+            $("#foo").show();
+
+            resetAllModes('bycategory');
+
+            activeCategoryId = $("#ddlCategory option:selected").val();
+
+            isChannelByCategoryMode = true;
+
+            var date = new Date();
+            var timeOfRequest = (date.getMonth() + 1) + '-' + date.getDate() + '-' + date.getFullYear() + '-' + date.getHours() + '-' + date.getMinutes();
+
+            pageIndex = (index == undefined) ? 1 : index;
+
+            $.ajax({
+                type: 'POST',
+                url: webMethodTvGuideChannelsByCategory,
+                dataType: 'json',
+                data: '{"clientTime":' + "'" + timeOfRequest + "'" + ', "categoryId":' + activeCategoryId + ', "pageIndex":' + pageIndex + '}',
+                contentType: "application/json; charset=utf-8",
+                success: function (response) {
+
+                    var data = response.d;
+
+                    if (data) {
+                        displayTvGuide(response.d);
+                        setPaginationControls(data);
+                    }
+                    else {
+                        resetPaginationControls();
+                    }
+
+                    $("#foo").hide();
+                },
+                complete: function () {
+                }
+            });
+        }
+
+        function showChannelsByKeywords(index) {
+            $("#foo").show();
+
+            resetAllModes('bykeywords');
+
+            isChannelByKeywordMode = true;
+
+            var date = new Date();
+            var timeOfRequest = (date.getMonth() + 1) + '-' + date.getDate() + '-' + date.getFullYear() + '-' + date.getHours() + '-' + date.getMinutes();
+
+            pageIndex = (index == undefined) ? 1 : index;
+
+            var keywords = $("#txtKeywords").val();
+
+            $.ajax({
+                type: 'POST',
+                url: webMethodTvGuideChannelsByKeywords,
+                dataType: 'json',
+                data: '{"clientTime":' + "'" + timeOfRequest + "'" + ', "keywords":' + "'" + keywords + "'" + ', "pageIndex":' + pageIndex + '}',
+                contentType: "application/json; charset=utf-8",
+                success: function (response) {
+
+                    var data = response.d;
+
+                    if (data) {
+                        displayTvGuide(response.d);
+                        setPaginationControls(data);
+                    }
+                    else {
+                        resetPaginationControls();
+                    }
+
+                    $("#foo").hide();
+                },
+                complete: function () {
+                }
+            });
+        }
+
+        function resetPaginationControls(index) {
+            pageIndex = 1;
+            pageCount = 1;
+            nextPageIndex = 1;
+            prevPageIndex = 1;
+
+            $("#status").html('Page 1 of 1');
+
+            $("#divPagination").hide();
+        }
+
+        function setPaginationControls(data) {
+            if (data) {
+                pageIndex = data.PageIndex;
+                pageCount = data.PageCount;
+
+                nextPageIndex = (pageIndex == pageCount) ? pageIndex : pageIndex + 1;
+                prevPageIndex = (pageIndex == 1) ? 1 : pageIndex - 1;
+
+                $("#status").html('Page ' + pageIndex + ' of ' + pageCount);
+                $("#divPagination").show();
+            }
+            else {
+                resetPaginationControls();
+            }
+        }
+
+        function displayTvGuide(data) {            
+            var groups = [];
+            var items = [];
+
+            timeline.setGroups(null);
+            timeline.setItems(null);
+
+            if (data) {
+                $('.noChannels').hide();
+
+                var date = new Date();
+
+                activeChannels = data.ActiveChannels;
+
+                $.each(data.ActiveChannels, function (i, channelModel) {
+                    var schedules = channelModel.VideoSchedules;
+                    var channel = channelModel.Channel;
+                    var user = channelModel.User;
+
+                    //content: '<div class="visChannelsInfoHolder" onclick="dispayChannelInfoPopup(' + channel.ChannelTubeId + ')"> <img class=visChannelImg src="' + channel.PictureUrl + '" style="width:70px;height:70px;float:left"/> <div style="float:right;"><snap class="visChannelName">CS123</span><br><span style="cursor:pointer;">' + channel.Name + '</span></div></div>'
+
+                    if (schedules) {
+                        var group = {
+                            id: channel.ChannelTubeId,
+                            content: '<div class="visChannelsInfoHolder" onclick="dispayChannelInfoPopup(' + channel.ChannelTubeId + ')"> <div class="visChannelName" style="float:right;cursor:pointer;">' + channel.Name + '</div></div>'
+                        };
+
+                        $.each(schedules, function (j, schedule) {
+                            var jsonDateStartDate = schedule.PlaybackStartTime;
+                            var jsonDateEndDate = schedule.PlaybackEndTime;
+
+                            var start = new Date(jsonDateStartDate.match(/\d+/)[0] * 1);
+                            var end = new Date(jsonDateEndDate.match(/\d+/)[0] * 1);
+
+                            var identifier = "'" + schedule.ChannelTubeId + '-' + schedule.VideoTubeId + '-' + schedule.PlaybackOrderNumber + "'";
+                            items.push({
+                                id: schedule.ChannelTubeId + '-' + schedule.VideoTubeId + '-' + schedule.PlaybackOrderNumber,
+                                group: channel.ChannelTubeId,
+                                start: start,
+                                end: end,
+                                content: '<div onclick="dispayVideoInfoPopup(' + '' + identifier + '' + ')" ><snap id="' + schedule.ChannelTubeId + '-' + schedule.VideoTubeId + '-' + schedule.PlaybackOrderNumber + '" style="text-overflow:ellipsis;max-width:100px;cursor:pointer;" >' + schedule.VideoTubeTitle + '</span></div>'
+                            });
+                        });
+
+                        groups.push(group);
+                    }
+                });
+
+                var date2 = new Date();
+
+                date2.setHours(date.getHours() + 1);
+
+                var options = {
+                    stack: false,
+                    start: new Date(),
+                    end: date2,
+                    editable: false,
+                    margin: {
+                        item: 10, // minimal margin between items
+                        axis: 10   // minimal margin between items and the axis
+                    },
+                    orientation: 'top',
+                    clickToUse: false,
+                    timeAxis: { scale: 'minute', step: 15 },
+                    showCurrentTime: true,
+                    format: {
+                        majorLabels: {
+                            millisecond: 'HH:mm:ss',
+                            second: 'D MMMM HH:mm',
+                            minute: 'MMMM D, YYYY',
+                            hour: 'ddd D MMMM',
+                            weekday: 'MMMM YYYY',
+                            day: 'MMMM YYYY',
+                            month: 'YYYY',
+                            year: 'YYYY'
+                        }
+                    },
+                    //height: 500,
+                    //moveable: true,
+                    showMajorLabels: true,
+                    zoomable: false
+                };
+
+                timeline.setOptions(options);
+                timeline.setGroups(groups);
+                timeline.setItems(items);
+
+                timeline.on('currentTimeTick', function (properties) {
+                    var currentTime = timeline.getCurrentTime();
+                    var nextDayTime = new Date();
+
+                    identifyActiveItems();
+
+                    nextDayTime.setHours(23, 55, 0, 0);
+                    
+                    if (currentTime > nextDayTime) {
+                        console.log("retrieve next day schedule");
+                    }
+                });
+            }
+            else {
+                $('.noChannels').show();
+            }
+        }
+       
+        function moveBackInTime() {
+            var windowTimeRange = timeline.getWindow();
+            var startWindowTime = windowTimeRange.start;
+            var endWindowTime = windowTimeRange.end;
+
+            startWindowTime.setTime(startWindowTime.getTime() - 15 * 60000);
+            endWindowTime.setTime(endWindowTime.getTime() - 15 * 60000);
+
+            timeline.setWindow(startWindowTime, endWindowTime);
+        }
+
+        function moveForwardInTime() {
+            var windowTimeRange = timeline.getWindow();
+            var startWindowTime = windowTimeRange.start;
+            var endWindowTime = windowTimeRange.end;
+
+            startWindowTime.setTime(startWindowTime.getTime() + 15 * 60000);
+            endWindowTime.setTime(endWindowTime.getTime() + 15 * 60000);
+
+            timeline.setWindow(startWindowTime, endWindowTime);
+        }
+
+        function identifyActiveItems() {
+            var currentTime = timeline.getCurrentTime();
+            if (activeChannels) {
+                $.each(activeChannels, function (i, model) {
+                    var schedules = model.VideoSchedules;
+
+                    $.each(schedules, function (k, schedule) {
+                        var identifier = schedule.ChannelTubeId + '-' + schedule.VideoTubeId + '-' + schedule.PlaybackOrderNumber;
+                        
+                        var jsonDateStartDate = schedule.PlaybackStartTime;
+                        var jsonDateEndDate = schedule.PlaybackEndTime;
+
+                        var start = new Date(jsonDateStartDate.match(/\d+/)[0] * 1);
+                        var end = new Date(jsonDateEndDate.match(/\d+/)[0] * 1);
+
+                        if (start <= currentTime && currentTime < end) {
+                            $('#' + identifier).css('color', 'eee');
+                        }
+                        else {
+                            $('#' + identifier).css('color', '#999');
+                        }
+                    });
+                });
+            }
+        }
+
+        function closeVideoPopup() {
+            $("#popupVideo").hide();
+        }
+
+        function closeChannelPopup() {
+            $("#popupChannel").hide();
+        }
+
+        function openVideoPopup() {
+            closeChannelPopup();
+
+            $("#popupVideo").show();
+        }
+
+        function openChannelPopup() {
+            closeVideoPopup();
+
+            $("#popupChannel").show();
+        }
+
+        function dispayChannelInfoPopup(channelIdentifier) {
+            var targetChannel = null;
+            var user = null;
+
+            if (!$('#popupChannel').is(':visible')) {
+                if (activeChannels) {
+                    $.each(activeChannels, function (i, model) {
+                        var channel = model.Channel;
+                        user = model.User;
+
+                        if (channel.ChannelTubeId == channelIdentifier) {
+                            targetChannel = channel;
+                        }
+                    });
+
+                    if (targetChannel) {
+                        var popup = $("#popupChannel");
+
+                        if (popup) {
+                            var channelAvatar = $("#channelAvatar");
+                            var userAvatar = $(".TLcreatorImg");
+                            var channelName = $("#channelName");
+                            var channelDesc = $("#channelDesc");
+                            var channelCreator = $("#creatorName");
+                            var watch = $("#channelWatchNow");
+
+                            if (targetChannel.PictureUrl != '' && targetChannel.PictureUrl != null) {
+                                channelAvatar.css('background-image', "url('" + targetChannel.PictureUrl + "')");
+                            }
+                            else {
+                                channelAvatar.css('background-image', "url('/images/commingSoon.jpg')");
+                            }
+                            channelName.text(targetChannel.Name);
+
+                            if (targetChannel.Description != '' && targetChannel.Description != null) {
+                                channelDesc.text(targetChannel.Description);
+                            }
+                            else {
+                                channelDesc.text('Thank you for visiting my channel. More about me..... coming soon!');
+                            }
+                            channelCreator.text(targetChannel.ChannelOwnerUserName);
+
+                            if (user.ProfileImageUrl != '' && user.ProfileImageUrl != null) {
+                                userAvatar.css('background-image', "url('" + user.ProfileImageUrl + "')");
+                            }
+
+                            var command = "LoadChannel('" + targetChannel.ChannelTubeId + "', '" + targetChannel.ChannelOwnerUserName.replace(/'/g, '&apos;') + "')";
+
+                            watch.removeAttr('onclick').attr('onclick', command);
+
+                            popup.css('left', mX - 60);
+                            popup.css('top', mY + 20);
+                            popup.css('z-index', 9999);
+
+                            popup.show();
+                        }
+                    }
+                }
+            }
+            else {
+                $("#popupChannel").hide();
+            }
+        }
+
+        function dispayVideoInfoPopup(itemIdentifier) {
+            var videoSchedule;
+            var targetChannel;
+
+            if (!$('#popupVideo').is(':visible')) {
+                if (activeChannels) {
+                    var parts = itemIdentifier.split("-");
+                    var channelTubeId = parts[0];
+                    var videoTubeId = parts[1];
+                    var playbackOrder = parts[2];
+
+                    $.each(activeChannels, function (i, model) {
+                        targetChannel = model.Channel;
+                        var schedules = model.VideoSchedules;
+
+                        if (targetChannel.ChannelTubeId == channelTubeId) {
+                            $.each(schedules, function (k, schedule) {
+                                if (schedule.VideoTubeId == videoTubeId && schedule.PlaybackOrderNumber == playbackOrder) {
+                                    videoSchedule = schedule;
+                                }
+                            });
+                        }
+                    });
+                }
+
+                if (videoSchedule) {
+                    var popup = $("#popupVideo");
+
+                    if (popup) {
+                        var jsonDateStartDate = videoSchedule.PlaybackStartTime;
+                        var jsonDateEndDate = videoSchedule.PlaybackEndTime;
+
+                        var start = new Date(jsonDateStartDate.match(/\d+/)[0] * 1);
+                        var end = new Date(jsonDateEndDate.match(/\d+/)[0] * 1);
+
+                        var startTime = formatTime(start);
+                        var endTime = formatTime(end);
+
+                        var image = $("#videoImage");
+                        var record = $("#videoRecord");
+                        var title = $("#videoTitle");
+                        var description = $("#videoDescription");
+                        var duration = $("#videoDuration");
+                        var playtime = $("#videoStartTime");
+                        var watch = $("#videoWatchNow");
+
+                        if (videoSchedule.Thumbnail != null) {
+                            image.attr('src', videoSchedule.Thumbnail);
+                        }
+                        else {
+                            image.removeAttr('src');
+                        }
+
+                        record.removeAttr('onclick').attr('onclick', 'addVideoToWatchLaterList(' + videoSchedule.VideoTubeId + ')');
+
+                        if (videoSchedule.VideoTubeTitle != null && videoSchedule.VideoTubeTitle != '') {
+                            title.text(videoSchedule.VideoTubeTitle);
+                        }
+                        else {
+                            title.text('No title specified by provider.');
+                        }
+
+                        duration.text(GetDurationString(videoSchedule.Duration));
+
+                        playtime.text(startTime + '-' + endTime);
+
+                        var command = "LoadChannel('" + targetChannel.ChannelTubeId + "', '" + targetChannel.ChannelOwnerUserName.replace(/'/g, '&apos;') + "')";
+
+                        watch.removeAttr('onclick').attr('onclick', command);
+
+                        if (videoSchedule.Description != null && videoSchedule.Description != '') {
+                            description.text(videoSchedule.Description);
+                        }
+                        else {
+                            description.text('Description was not specified by provider.');
+                        }
+
+                        record.removeAttr('onclick').attr('onclick', 'playChannel(' + videoSchedule.ChannelTubeId + ')');
+
+                        popup.css('left', mX - 110);
+                        popup.css('top', mY + 20);
+                        popup.css('z-index', 9999);
+
+                        popup.show();
+                    }
+                }
+            }
+            else {
+                $("#popupVideo").hide();
+            }
+        }
+
+        function LoadChannel(channelId, creatorName) {
+            activeChannelId = channelId;
+            activeChannelCreator = creatorName;
+
+            if (activeChannelId) {
+                $(".TLchannlesBy").text('Channels by ' + creatorName.replace(/'/g, '&apos;'));
+                $('#popupVideo').hide();
+            }
+        }
+
+        function formatTime(date) {
+            var hours = date.getHours();
+            var minutes = date.getMinutes();
+            var ampm = hours >= 12 ? 'pm' : 'am';
+            hours = hours % 12;
+            hours = hours ? hours : 12; // the hour '0' should be '12'
+            minutes = minutes < 10 ? '0' + minutes : minutes;
+            var strTime = hours + ':' + minutes + ' ' + ampm;
+
+            return strTime;
+        }
+
+        function GetDurationString(seconds) {
+
+            var hours = Math.floor(seconds / (60 * 60));
+            seconds -= hours * (60 * 60);
+
+            var mins = Math.floor(seconds / (60));
+            seconds -= mins * (60);
+
+            var duration = '';
+
+            if (hours > 0) {
+                duration += (hours + 'hr ');
+            }
+
+            if (duration != '' || mins > 0) {
+                duration += (mins + 'min ');
+            }
+            
+            duration += (seconds + 'sec');
+
+            return duration;
+        }
+
+        function loadFirstPage() {
+            MakeRequestByMode(1);
+        }
+
+        function loadPrevPage() {
+            MakeRequestByMode(prevPageIndex);
+        }
+
+        function loadNextPage() {
+            MakeRequestByMode(nextPageIndex);
+        }
+
+        function loadLastPage() {
+            MakeRequestByMode(pageCount);
+        }
+
+        function MakeRequestByMode(index) {
+            if (isTopChannelMode) {
+                showTopChannels(index);
+            }
+            else if (isMyChannelMode) {
+                showMyChannels(index);
+            }
+            else if (isFavoriteChannelMode) {
+                showFavoriteChannels(index);
+            }
+            else if (isChannelByLanguageMode) {
+                showChannelsByLanguage(index);
+            }
+            else if (isChannelByKeywordMode) {
+                showChannelsByKeywords(index);
+            }
+            else if (isChannelByCategoryMode) {
+                showChannelsByCategory(index);
+            }
+            else if (isCreatorChannelsMode) {
+                showCreatorChannels(index);
+            }
+            else {
+                showAllChannels(index);
+            }
+        }
+
+        function resetAllModes(activemode) {
+            if (activemode != 'bylanguage') {
+                $('#ddlLang option[value="0"]').prop('selected', true);
+                activeLanguageId = 0;
+                isChannelByLanguageMode = false;
+            }
+
+            if (activemode != 'bycategory') {
+                $('#ddlCategory option[value="0"]').prop('selected', true);
+                activeCategoryId = 0;
+                isChannelByCategoryMode = false;
+            }
+
+            if (activemode != 'topchannels') {
+                $('.TLtopChannels').removeClass('TLactiveTOP');
+                isTopChannelMode = false;
+            }
+
+            if (activemode != 'allchannels') {
+                $('.TVguideTitle').removeClass('TVguideTitleActive');
+                isAllChannelMode = false;
+            }
+
+            if (activemode != 'creatorchannels') {
+                $('.TVguideTitle').addClass('TVguideTitleActive');
+                $('.TLchannlesBy').removeClass('TLchannlesByActive');
+                activeChannelCreator = null;
+                isCreatorChannelsMode = false;
+            }
+
+            if (activemode != 'mychannels') {
+                $('.TLmyChannels').removeClass('TLactiveMyChannels');
+                isMyChannelMode = false;
+            }
+
+            if (activemode != 'favchannels') {
+                $('.TLfavChannels').removeClass('TLactiveFav');
+                isFavoriteChannelMode = false;
+            }
+
+            if (activemode != 'bykeywords') {
+                isChannelByKeywordMode = false;
+                $('#txtKeywords').val('');
+            }
+        }
+
+        function populateLanguages() {
+            $.ajax({
+                type: "POST",
+                url: webMethodGetChannelLanguages,
+                cashe: false,
+                dataType: "json",
+                contentType: "application/json; charset=utf-8",
+                success: function (response) {
+                    languages = response.d;
+                    $("#ddlLang").html("").html("<option value=0 disabled='disabled'>Choose Language</option>")
+                    $.each(response.d, function (key, val) {
+                        if (key == 11) {
+                            $("#ddlLang").append('<option style="border-bottom:1px solid black;" disabled="disabled">&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;</option>');
+                        }
+                        $("#ddlLang").append($('<option>', { value: val.LanguageId }).text(val.Name));
+                    })
+
+                    $('#ddlLang option[value="0"]').prop('selected', true);
+                },
+                error: function (request, status, error) {
+
+                }
+            });
+        }
+
+        function populateChannelCategories() {
+            $.ajax({
+                type: "POST",
+                url: webMethodGetChannelCategories,
+                cashe: false,
+                dataType: "json",
+                contentType: "application/json; charset=utf-8",
+                success: function (response) {
+                    categories = response.d;
+
+                    $('#ddlCategory').html("").html("<option value=0 disabled='disabled'>Choose Category</option>");
+
+                    $.each(categories, function (i, c) {
+                        $("#ddlCategory").append($('<option>', { value: c.CategoryId }).text(c.Name));
+                    });
+
+                    $('#ddlCategory option[value="0"]').prop('selected', true);
+
+                },
+                complete: function (response) {
+                }
+            });
+        };
+
+    </script>
+</body>
+</html>

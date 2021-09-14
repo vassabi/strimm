@@ -1,0 +1,86 @@
+﻿#contentWrapper {
+    display: block;
+    width: 60%;
+    margin: auto;
+}
+
+p {
+    height: 100%;
+}
+#divTitleUrlHolder.packageTrialTitle h1 {
+    color: #2a99bd;
+    display: block;
+    font-size: 40px;
+    line-height: 35px;
+    margin-bottom: 0;
+    text-transform: capitalize;
+    width: 100%;
+    margin-left: 0;
+    margin-top: 60px;
+}
+
+
+#divTitleUrlHolder.packageTrialTitle h2,
+#packageContent h2 {
+    color: #000;
+    font-size: 19px;
+    font-weight: 400;
+    width: 100%;
+    margin-bottom: 30px;
+    clear: both;
+    text-align: left;
+    margin-top: 0;
+    font-family: Roboto-Regular,'Helvetica Neue',Helvetica,Arial,sans-serif;
+    letter-spacing: normal;
+    height: auto;
+        
+}
+
+.packageContentP {
+    display: block;
+    width: 100%;
+    float: left;
+    margin-bottom: 30px;
+    height: 100%;
+}
+
+.packageContentUL {
+    display: block;
+    float: left;
+    width: 100%;
+}
+
+    .packageContentUL ul {
+    display: block;
+    margin-bottom: 30px;
+    height: auto;
+    float: left;
+    }
+
+        .packageContentUL ul li {
+            display: block;
+            width: 100%;
+            float: left;
+            height: 40px;
+            line-height: 40px;
+        }
+
+            .packageContentUL ul li span.check {
+                display: block;
+                float: left;
+                background-image: url(/images/checkIcons/check-mark-green.png);
+                width: 25px;
+                height: 40px;
+                background-position: center;
+                background-size: 100%;
+                background-repeat: no-repeat;
+                margin-right: 10px;
+            }
+
+@media (max-width: 1300px) {
+#contentWrapper {
+    display: block;
+    width: 100%;
+   padding: 1%;
+}
+}

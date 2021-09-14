@@ -1,0 +1,79 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30723.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Strimm.Web.Services", "Strimm.Web.Services\Strimm.Web.Services.csproj", "{798EE03D-8EA7-433F-A8A8-E0520DE5E515}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{96E50417-8F17-4FF5-8D61-C33B5A3CF92A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BL", "BL", "{5AEB8549-75D1-470F-A305-AC069418C5A9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Strimm.Data", "..\Strimm.Data\Strimm.Data.csproj", "{CE3AEC57-2549-4AD6-8B09-980141E7C87C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Strimm.Model", "..\Strimm.Model\Strimm.Model.csproj", "{1050CEBE-CD4D-4945-A942-01E3E7A3C940}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StrimmBL", "..\StrimmBL\StrimmBL.csproj", "{DDB45487-E5AE-4748-8277-F7918A7C95AA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Strimm.Shared", "..\Strimm.Shared\Strimm.Shared.csproj", "{169850C6-2A6A-4E50-8EAB-8A3810F17BED}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 6
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://vps3.strimm.com:8080/tfs/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Strimm.Web.Services\\Strimm.Web.Services.csproj
+		SccProjectName1 = Strimm.Web.Services
+		SccLocalPath1 = Strimm.Web.Services
+		SccProjectUniqueName2 = ..\\Strimm.Data\\Strimm.Data.csproj
+		SccProjectTopLevelParentUniqueName2 = Strimm.WebServices.sln
+		SccProjectName2 = ../Strimm.Data
+		SccLocalPath2 = ..\\Strimm.Data
+		SccProjectUniqueName3 = ..\\Strimm.Model\\Strimm.Model.csproj
+		SccProjectTopLevelParentUniqueName3 = Strimm.WebServices.sln
+		SccProjectName3 = ../Strimm.Model
+		SccLocalPath3 = ..\\Strimm.Model
+		SccProjectUniqueName4 = ..\\StrimmBL\\StrimmBL.csproj
+		SccProjectTopLevelParentUniqueName4 = Strimm.WebServices.sln
+		SccProjectName4 = ../StrimmBL
+		SccLocalPath4 = ..\\StrimmBL
+		SccProjectUniqueName5 = ..\\Strimm.Shared\\Strimm.Shared.csproj
+		SccProjectName5 = ../Strimm.Shared
+		SccLocalPath5 = ..\\Strimm.Shared
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{798EE03D-8EA7-433F-A8A8-E0520DE5E515}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{798EE03D-8EA7-433F-A8A8-E0520DE5E515}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{798EE03D-8EA7-433F-A8A8-E0520DE5E515}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{798EE03D-8EA7-433F-A8A8-E0520DE5E515}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE3AEC57-2549-4AD6-8B09-980141E7C87C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE3AEC57-2549-4AD6-8B09-980141E7C87C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE3AEC57-2549-4AD6-8B09-980141E7C87C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE3AEC57-2549-4AD6-8B09-980141E7C87C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1050CEBE-CD4D-4945-A942-01E3E7A3C940}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1050CEBE-CD4D-4945-A942-01E3E7A3C940}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1050CEBE-CD4D-4945-A942-01E3E7A3C940}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1050CEBE-CD4D-4945-A942-01E3E7A3C940}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DDB45487-E5AE-4748-8277-F7918A7C95AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDB45487-E5AE-4748-8277-F7918A7C95AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DDB45487-E5AE-4748-8277-F7918A7C95AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DDB45487-E5AE-4748-8277-F7918A7C95AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{169850C6-2A6A-4E50-8EAB-8A3810F17BED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{169850C6-2A6A-4E50-8EAB-8A3810F17BED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{169850C6-2A6A-4E50-8EAB-8A3810F17BED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{169850C6-2A6A-4E50-8EAB-8A3810F17BED}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{CE3AEC57-2549-4AD6-8B09-980141E7C87C} = {96E50417-8F17-4FF5-8D61-C33B5A3CF92A}
+		{1050CEBE-CD4D-4945-A942-01E3E7A3C940} = {96E50417-8F17-4FF5-8D61-C33B5A3CF92A}
+		{DDB45487-E5AE-4748-8277-F7918A7C95AA} = {5AEB8549-75D1-470F-A305-AC069418C5A9}
+	EndGlobalSection
+EndGlobal

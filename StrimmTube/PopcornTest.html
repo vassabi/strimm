@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html >
+<head>
+    <title></title>
+
+	<link href="Flowplayer7/skin/skin.css" rel="stylesheet" />
+    <link href="Flowplayer7/cc-button.css" rel="stylesheet" />
+	<link href="Flowplayer7/settingsmenu.css" rel="stylesheet" />
+	<link href="css/flowplayer.override.css" rel="stylesheet" />
+    <script src="jquery/jquery-1.9.1.min.js"></script>
+
+    <script src="Flowplayer7/flowplayer.js"></script>
+   
+    <script src="Flowplayer7/cc-button-7.0.0.js"></script>
+    <script src="Flowplayer7/dailymotion-7.0.0.js"></script>  
+    <script src="Flowplayer7/settingsmenu-7.0.0.js"></script>
+    <script src="Flowplayer7/vimeo-7.0.0.js"></script>
+    <script src="Flowplayer7/youtube-7.0.0.js"></script>
+  
+</head>
+<body>
+    <div id="player" style="width:800px; height:480px;"></div>
+ 
+    <script>
+        flowplayer.conf.youtube = {
+            defaultQuality: "hd720"
+        };
+
+
+
+        !function () {
+
+            var player = flowplayer("#player", {
+                autoplay:1,
+                playlist: [
+                {
+                    sources: [
+                    { type: "video/youtube", src: "http://www.youtube.com/watch?v=YE7VzlLtp-4" }
+                    ]
+                },
+                {
+                    sources: [
+                    { type: "video/youtube", src: "http://www.youtube.com/watch?v=eRsGyueVLvQ" }
+                    ]
+                },
+                {
+                    sources: [
+                    { type: "video/youtube", src: "http://www.youtube.com/watch?v=R6MlUcmOul8" }
+                    ]
+                }
+                ]
+            });
+        }();
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<component name="ButtonMarkup" extends="Group" >
+  <interface>
+    <field id="itemContent" type="node" onChange="onContentChanged"/> 
+    <field id="width" type="float" onChange="onContentChanged" /> 
+    <field id="height" type="float" onChange="onContentChanged" /> 
+    <field id="index" type="int" /> 
+    <field id="focusPercent" type="float" value="0" onChange="showfocus" /> 
+    <field id="gridHasFocus" type="bool" value="false" /> 
+    <field id="itemHasFocus" type="bool" value="false" /> 
+  </interface>
+
+  <script type="text/brightscript" >
+  <![CDATA[
+    sub Init()
+      m.buttonBackground = m.top.findNode("buttonBackground")
+      m.buttonLabel = m.top.findNode("buttonLabel")
+    end sub
+
+
+    sub onContentChanged()
+      if m.top.itemContent <> invalid and m.top.width > 0 and m.top.height > 0
+        m.buttonBackground.width = m.top.width
+        m.buttonBackground.height = m.top.height
+        m.buttonLabel.width = m.top.width
+        m.buttonLabel.height = m.top.height
+        m.buttonLabel.text = UCase(m.top.itemContent.title)
+        showfocus()
+      end if
+    end sub
+
+
+    sub showfocus()
+      if m.top.focusPercent > 0.6
+        m.buttonLabel.color = "0xffffff"
+      else
+        m.buttonLabel.color = "0xcccccc"
+      end if
+      m.buttonBackground.opacity = 0  '.5 + 0.5 * m.top.focusPercent
+    end sub
+  ]]>
+  </script>
+  <children>
+    <Rectangle id="buttonBackground" color="0x121E2A00" />
+    <Label id="buttonLabel" font="font:SmallestBoldSystemFont" vertAlign="center" horizAlign="center" color="0x7a090f" />
+  </children> 
+</component>

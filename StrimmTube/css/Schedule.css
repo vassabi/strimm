@@ -1,0 +1,4197 @@
+﻿
+
+body > div {
+    -webkit-transition: all 1s ease-in-out;
+}
+
+body[orient="portrait"] .contentShcedule {
+    background-color: transparent;
+    box-shadow: none;
+    clear: both;
+    display: block;
+    float: none;
+    margin: 10px auto auto;
+    max-width: 1275px;
+    width: 100%;
+}
+
+.pageNavHolderMolile,
+.mobileNavSchedule,
+.mobileScheduleSortingHolder {
+    display: none;
+}
+.dragInfoImage {
+    width: 95%;
+    /* float: left; */
+    margin-right: 0%;
+    background-image: url(/images/draganddrop1.jpg);
+    height: 373px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: auto;
+    margin-top: 41px;
+}
+  
+#drafanddropInfo a:hover {
+    text-decoration: underline;
+}
+
+#modalDragInfo .pageTitle {
+    border-bottom: 2px solid #2a99bd;
+    color: #2a99bd;
+    display: block;
+    font-size: 23px;
+    height: 30px;
+    line-height: 30px;
+    margin: auto;
+    padding-bottom: 0;
+    padding-top: 60px;
+    text-align: left;
+    text-transform: capitalize;
+    width: 95%;
+    margin-bottom: 20px;
+}
+#spnAttention {
+    line-height: 18px;
+    color: #ff6300;
+    font-size: 11px;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    float: left;
+}
+
+
+
+#novideosmsg {
+    display: block;
+    width: 96%;
+    text-align: center;
+    line-height: 36px;
+    font-size: 22px;
+    float: left;
+    color: #2a99bd;
+    padding: 2%;
+}
+#btnBackToAll {
+	width: 202px;
+	display: block;
+	text-align: center;
+	height: 50px;
+	line-height: 50px;
+	background-color: #2a99bd;
+	clear: both;
+	color: #fff;
+	cursor: pointer;
+	font-size: 17px;
+	margin: auto;
+}
+#btnBackToAll:hover
+{
+    background-color:#226e87;
+}
+
+select#ddlSelectProvider, select#ddlSelectProviderUrl {
+    float: left;
+    height: 31px;
+    width: 300px;
+    border: none;
+    background-color: transparent;
+    text-transform: capitalize;
+    font-family: Roboto-light,'Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+
+
+#SearchByUrl {
+    width: 670px;
+    margin: auto;
+    display: block;
+    margin-top: 30px;
+}
+
+.rightSchedule {
+    float: left;
+    width: 370px;
+}
+
+.rightnewSchedulePopup {
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    float: right;
+    margin-bottom: 10px;
+    min-width: 320px;
+    position: relative;
+    width: 370px;
+}
+
+
+.right {
+    float: right;
+    min-width: 320px;
+    position: relative;
+    width: 370px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+#SearchByKeyWords #radioYoutube,
+#SearchByKeyWords #radioVimeo,
+#SearchByUrl #radioYoutubeUrl,
+#SearchByUrl #radioVimeoUrl {
+    display: block;
+    float: left;
+    margin-right: 10px;
+}
+
+.inputHolderKeywords label, .inputHolderUrl label {
+    float: left;
+    line-height: 30px;
+    font-size: 14px;
+}
+
+#spnMatureInfo {
+    background-image: url(/images/infoIcon.png);
+    width: 17px;
+    height: 17px;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: transparent;
+    margin-left: 7px;
+    background-size: 17px;
+    display: block;
+    float: left;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+
+
+#btnWatchVideoHolder a {
+    padding-bottom: 1px;
+}
+
+
+.lblYoutube {
+    background-image: url("/images/YouTube-logo.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 40px;
+    width: 45px;
+}
+
+.lblVimeo {
+    background-image: url('/images/Vimeo-logo.png');
+    background-repeat: no-repeat;
+    height: 40px;
+    width: 60px;
+    background-position: center;
+    background-size: 150%;
+}
+
+.lblDmotion {
+    background-image: url('/images/dMotion.png');
+    background-repeat: no-repeat;
+    height: 40px;
+    width: 40px;
+    background-position: center;
+    background-size: contain;
+}
+
+/*.addToScheduleContainer {
+background-color: #EEEEEE;
+border: 1px solid #2A99BD;
+border-radius: 5px 5px 5px 5px;
+display: block;
+float: left;
+margin: 5px 1%;
+padding: 7px;
+position: relative;
+width: 46%;
+height:60px;
+}*/
+/*.addToScheduleImg {
+float: left;
+height: 60px;
+margin-right: 10px;
+width: 100px;
+}*/
+
+.customScheduleCreatePopup {
+    height: 150px;
+    width: 370px;
+    left: 50%;
+    display: none;
+    margin-left: -215px;
+    z-index: 1002;
+    position: fixed;
+    top: 50%;
+    margin-top: -115px;
+    padding: 50px 30px 30px;
+    background: #fff;
+}
+.HLSLinkPopup {
+    height: 550px;
+    width: 570px;
+    left: 50%;
+    display: none;
+    margin-left: -215px;
+    z-index: 1002;
+    position: fixed;
+    top: 50%;
+    margin-top: -115px;
+    padding: 50px 30px 30px;
+    background: #fff;
+}
+#related.player {
+    /*background-color: #999999;
+    display: block;
+    height: 450px;
+    max-width: 100%*/;
+    background-color: #999999;
+    display: block;
+    max-width: 100%;
+    margin: auto;
+}
+
+@media (max-width:760px) {
+    #related.player {
+        height: 340px;
+    }
+}
+
+@media (max-width:720px) {
+    #related.player {
+        height: 310px;
+    }
+}
+
+@media (max-width:650px) {
+    #related.player {
+        height: 300px;
+    }
+}
+
+@media (max-width:530px) {
+    #related.player {
+        height: 280px;
+    }
+}
+
+@media (max-width:440px) {
+    #related.player {
+        height: 240px;
+    }
+}
+
+@media (max-width:360px) {
+    #related.player {
+        height: 200px;
+    }
+}
+
+@media (max-width:320px) {
+    #related.player {
+        height: 180px;
+    }
+}
+
+.divGetVideosBtnHolder {
+    display: block;
+    float: left;
+    width: 100%;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    min-width: 600px;
+}
+
+
+.addVideoPL {
+    display: block;
+    height: 20px;
+    line-height: 1000px;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    top: 4px;
+    width: 25px;
+    opacity: 0.9;
+    color: red;
+}
+
+
+.playerbox,
+.playerboxVimeo,
+.playerBoxDMotion,
+.playerBoxFlowplayer {
+    /*background-color: #000;
+    height: auto;
+    padding: 10px;
+    width: 820px;*/
+    width: 820px;
+    height: 461px;
+}
+
+
+.spnTitle {
+    color: #eee;
+    display: block;
+    float: left;
+    font-size: 12px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 47%;
+    padding-left: 3px;
+    text-transform: none;
+}
+
+
+.samTitle {
+    color: #000;
+    display: block;
+    float: left;
+    font-size: 17px;
+    width: 47%;
+    text-transform: none;
+    background-color: #9ae0f7;
+    background-image: url('/images/sam/sam-004.png');
+    background-repeat: no-repeat;
+    background-size: 47%;
+    background-position: center 95px;
+    height: 250px;
+    padding: 3px;
+    text-align: center;
+    line-height: 30px;
+    padding-top: 30px;
+    overflow: visible;
+    text-overflow: inherit;
+    white-space: normal;
+    box-shadow: 1px 2px 3px #eee;
+}
+
+
+.divChooseDate {
+    float: right;
+    padding-bottom: 5px;
+    text-align: center;
+    width: 370px;
+}
+
+.divDate {
+    display: none;
+    height: 35px;
+    margin: 2px auto 0 5px;
+    width: 182px;
+    display: none;
+}
+
+.divDateMonthHolder {
+    display: block;
+    height: 35px;
+    margin: 2px auto 0 0;
+}
+
+
+.divChooseDate span strong {
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 20px;
+}
+
+.divChooseDate .divMonth .txtMonth,
+.divChooseDate .divTime .txtTime {
+    border: 1px solid #eee;
+    border-radius: 4px;
+    color: #ccc;
+    float: left;
+    font-size: 17px;
+    height: 33px;
+    margin-left: 5px;
+    text-transform: lowercase;
+    width: 245px;
+}
+
+.divChooseDate .divBtnGo /*Valentinaa`s Add*/ {
+    display: block;
+}
+
+.divChooseDate .divBtnGoUpdate /*Valentinaa`s Add*/ {
+    display: none;
+}
+/*#mainBody #contentRight .divChooseDate .btnGo,
+#mainBody #contentRight .divChooseDate .btnGoUpdate /*Valentinaa`s Add*/
+/*background-color: #2a99bd;
+background-repeat: repeat-x;
+border-color: #55aac5 #2a99bd #2a99bd #55aac5;
+border-radius: 5px;
+border-style: solid;
+border-width: 1px;
+color: #f3f3f3;
+cursor: pointer;
+font-size: 18px;
+font-weight: bold;
+line-height: 30px;
+margin-bottom: 20px;
+padding-left: 5px;
+padding-right: 5px;
+text-transform: capitalize;*/
+
+
+body .btnGo {
+    background-color: #2a99bd;
+    background-repeat: repeat-x;
+    border-color: #55aac5 #2a99bd #2a99bd #55aac5;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    color: #f3f3f3;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 30px;
+    margin-bottom: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-transform: uppercase;
+}
+
+.divChooseDate .btnGo:hover,
+.divChooseDate .btnGoUpdate:hover
+/*Valentina`s Add*/ {
+}
+
+
+
+.divDate .spnDate {
+    color: #333333;
+    display: block;
+    float: left;
+    font-size: 12px;
+    letter-spacing: 1px;
+    margin: 0;
+    text-transform: capitalize;
+    width: 114px;
+}
+
+.divDate .btnUpdate {
+    border: 1px solid #ECECEC;
+    border-radius: 4px 4px 4px 4px;
+    color: #333333;
+    cursor: pointer;
+    float: right;
+    font-size: 11px;
+    letter-spacing: 1px;
+    padding-bottom: 2px;
+}
+
+.btnUpdate:hover {
+}
+
+.imgScheduleThumb {
+    float: left;
+    height: 45px;
+    width: 60px;
+    margin-top: 7px;
+    margin-bottom: 2px;
+}
+
+.clearSchedule, .btnSaveSchedule, .repeatSchedule {
+    display: inline-block;
+    float: left;
+    margin-left: 20px;
+    border-bottom: 1px solid #777;
+    height: 25px;
+    line-height: 25px;
+    color: #777;
+    font-size: 13px;
+}
+
+.removeAll {
+    color: #555;
+    display: block;
+    font-size: 14px;
+    text-transform: capitalize;
+    font-family: Roboto-Bold,'Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+
+    .clearSchedule:hover, .btnSaveSchedule:hover, .repeatSchedule:hover, .removeAll:hover {
+        color: #000;
+    }
+
+.btnSaveSchedule {
+    float: right;
+}
+
+.repeatBox {
+    display: none;
+    width: 300px;
+    height: 100px;
+    background-color: #fff;
+}
+
+#restrictedDiv {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    z-index: 2;
+    width: 80%;
+}
+
+.ancConfirmDateTime {
+    color: #fff;
+    float: right;
+    font-size: 17px;
+    height: 20px;
+    margin-left: 10px;
+    padding-right: 20px;
+}
+
+.ancCloseCalendar {
+    color: #fff;
+    float: left;
+    font-size: 17px;
+    height: 20px;
+    margin-left: 10px;
+    padding-right: 20px;
+}
+/*.divInfo {
+float: left;
+margin-left: 5px;
+width: 155px;
+}*/
+
+/*.divInfo span {
+clear: both;
+color: #777777;
+display: block;
+float: left;
+font-size: 12px;
+height: 12px;
+margin-top: 3px;
+overflow: hidden;
+text-overflow: ellipsis;
+white-space: nowrap;
+width: 155px;
+font-style: normal;
+
+}*/
+/*.divInfo .title {
+color: #2A99BD;
+font-weight: bold;
+width: 280px;
+font-family: raleway-light;
+}*/
+.veiws,
+.duration {
+    color: #777;
+    font-style: italic;
+}
+
+
+
+
+.divSchedule {
+    border-bottom: 1px solid #999;
+    height: 62px;
+    line-height: 60px;
+    width: 99%;
+    position: relative;
+    background-color: #777;
+}
+
+.spnTime {
+    color: #fff;
+    display: block;
+    float: left;
+    font-family: OpenSans-Regular,Arial, sans-serif;
+    font-size: 11px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    font-weight: normal;
+    width: 115px;
+    background: #555;
+    text-align: center;
+}
+
+.btnRemove {
+    display: block;
+    opacity: 1;
+    position: absolute;
+    right: 0;
+    width: 15px;
+    font-size: 18px;
+    text-align: center;
+    /* margin-right: 2px; */
+    /* margin-left: 2px; */
+    background: #555;
+    z-index: 2;
+    color: #fff;
+}
+
+    .btnRemove:hover {
+        color: red;
+    }
+
+.sortBy {
+    clear: both;
+    display: block;
+    float: left;
+}
+
+
+
+.repeat {
+    color: #777777;
+    display: block;
+    float: left;
+    font-size: 13px;
+    margin-bottom: 6px;
+    width: 135px;
+}
+
+.submitRepeat {
+    background-color: #2A99BD;
+    background-image: url("/images/ButtonBG.jpg");
+    background-position: -10px center;
+    background-repeat: repeat-x;
+    border: medium none;
+    border-radius: 3px;
+    color: #FFFFFF;
+    cursor: pointer;
+    float: right;
+    font-size: 13px;
+    margin-right: 20px;
+    padding: 3px 5px;
+}
+
+    .submitRepeat:hover {
+        background-image: url("/images/ButtonBGhover.jpg");
+    }
+
+.repeatHolder {
+    display: block;
+    margin-top: 25px;
+    margin-left: 20px;
+}
+
+#txtReapeatDate {
+    display: block;
+    float: left;
+}
+
+.divInfo .rated {
+    color: #ff6a00;
+}
+
+].scheduleHolder {
+    display: block;
+    height: 30px;
+    margin: 10px auto auto;
+    max-width: 1520px;
+    min-width: 1024px;
+    width: 100%;
+}
+
+.spnMsg {
+    color: #000;
+    display: block;
+    width: 100%;
+    float: left;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+
+.actionMiddleHolder {
+    display: block;
+    float: left;
+    position: relative;
+}
+
+.leftSortingHolder {
+    display: block;
+    float: left;
+    width: 20%;
+}
+
+.leftAddRemoveActionHolder {
+    display: block;
+    float: left;
+}
+
+.leftClearHolder {
+    background: url(/images/ddl-Opt.png) no-repeat scroll right center #f7f7f7;
+    border: 1px solid #ddd;
+    display: block;
+    float: left;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 5px;
+    width: 130px;
+    margin-right: 15px;
+    margin-left: 15px;
+    font-weight: bold;
+    background-size: 22px;
+}
+
+.removeOptions {
+    display: block;
+    height: 70px;
+    left: 152px;
+    position: absolute;
+    top: 40px;
+    width: 130px;
+    z-index: 200;
+}
+
+    .removeOptions ul {
+        width: 180px;
+    }
+
+
+
+        .removeOptions ul li {
+            background-color: #f7f7f7;
+            border-bottom: none;
+            color: #555;
+            cursor: pointer;
+            font-size: 14px;
+            height: 30px;
+            line-height: 30px;
+            padding-left: 3px;
+            width: 100%;
+            border: 1px solid #eee;
+            text-transform: capitalize;
+            box-sizing: border-box;
+            font-weight: bold;
+        }
+
+            .removeOptions ul li:hover {
+                background-color: #eee;
+            }
+
+
+
+
+.leftSortActionHolder {
+    display: block;
+    height: 30px;
+    float: left;
+    width: 100%;
+    position: relative;
+    border-top: 1px solid #ddd;
+    margin-bottom: 10px;
+    padding-top: 10px;
+}
+
+.leftCategory {
+    display: block;
+    float: left;
+}
+
+.sortDateHolder {
+    display: block;
+    height: 40px;
+    width: 100%;
+}
+
+.point {
+    color: #F18A11;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.removedMsg {
+    color: #FF0000;
+    float: left;
+    text-align: left;
+    font-size: 11px;
+    margin-left: 3px;
+}
+
+.actions #addVideo .add {
+    float: right;
+    display: block;
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    padding-bottom: 0;
+    padding-top: 0;
+}
+
+#channelNameBox {
+    /*color: #555555;
+  margin: auto auto auto 14%;
+  max-width: 1520px;
+  min-width: 1000px;
+  padding-bottom: 10px;
+  padding-left: 25px;
+  width: 100%;*/
+    display: block;
+    margin: auto;
+    max-width: 1320px;
+    min-width: 1024px;
+    width: 100%;
+    padding: 0;
+    margin-bottom: 10px;
+}
+
+.ancLoadMoreHolder {
+    display: block;
+    float: left;
+    width: 100%;
+    height: 50px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.classancLoadMore {
+    display: block;
+    width: 170px;
+    height: 50px;
+    color: #eee;
+    font-size: 17px;
+    line-height: 50px;
+    background-color: #2a99bd;
+    cursor: pointer;
+    margin: auto;
+}
+
+    .classancLoadMore:hover {
+        background-color: #1b637a;
+        color: #fff;
+    }
+
+/*#ancLoadMore {
+    border: none;
+    clear: both;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    font-size: 15px;
+    height: 30px;
+    line-height: 30px;
+    margin: auto;
+    margin-top: 30px;
+    text-align: center;
+    background-color: #2a99bd;
+    border-radius: 0;
+    width: 120px;
+}
+
+    #ancLoadMore:hover {
+background-color: #21748f;
+    }*/
+
+.instantSchedule .repeatHolder {
+    margin-top: 55px;
+}
+
+#divInstSchedule {
+    float: right;
+    display: block;
+}
+
+#instChkBoxDiv {
+    margin-top: 5px;
+}
+
+    #instChkBoxDiv span {
+        color: #777777;
+        display: block;
+        float: right;
+        font-size: 13px;
+        margin-bottom: 6px;
+        width: 330px;
+    }
+
+/*------------------ makes SMALL BOX on video boxes----------------------------*/
+.divVideoThumb,
+.addToScheduleImg {
+    height: 95px;
+}
+
+
+body .imgThumb,
+addToScheduleImg {
+    height: 95px;
+    margin-top: 6px;
+}
+
+.divBoxContent,
+.addToScheduleContainer {
+    width: 165px;
+    min-width: 165px;
+    height: 150px;
+}
+
+/*------------------  ////////SMALL BOX----------------------------*/
+#divStartHere {
+    background: none repeat scroll 0 0 #fc0;
+    color: green;
+    display: block;
+    float: left;
+    height: 40px;
+    line-height: 40px;
+    opacity: 0.9;
+    position: absolute;
+    right: 428px;
+    text-align: right;
+    text-transform: capitalize;
+    top: 264px;
+    transform: rotate(45deg);
+    width: 200px;
+    z-index: 1000;
+    padding-right: 5px;
+}
+
+
+#spnInfo {
+    color: #777;
+    display: block;
+    line-height: 20px;
+    margin-top: 40px;
+    padding: 10px;
+    text-align: justify;
+}
+
+.instantSchedule {
+    background-color: #ccc;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    color: #fff;
+    display: block;
+    float: left;
+    height: 35px;
+    line-height: 35px;
+    margin-left: 320px;
+    text-align: center;
+    text-transform: capitalize;
+    width: 160px;
+    margin-top: 3px;
+}
+
+    .instantSchedule:hover {
+        background-color: #999999;
+    }
+
+.showInfoDiv {
+    display: none;
+    width: 500px;
+    height: 200px;
+    background-color: #fff;
+    border-radius: 2px;
+}
+
+#ancInfo {
+    background-image: url("/images/quastionMarkIMG.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: block;
+    float: right;
+    height: 30px;
+    line-height: 30px;
+    width: 30px;
+    margin-top: 2px;
+    margin-right: 2px;
+    background-size: 95%;
+}
+
+    #ancInfo:hover {
+        background-image: url("/images/quastionMarkIMGhover.png");
+    }
+.mirrorContainer
+{
+    display:none;
+}
+
+.actionsHolder a {
+    margin-left: 10px;
+}
+
+#btnNewSchedule {
+    /*color: #2a99bd;*/
+}
+
+/*#newScheduleBtnHolder,
+#newScheduleActions {
+display: block;
+float: left;
+width: 100%;
+position: relative;
+}*/
+
+/*#newScheduleBtnHolder a,
+    #newScheduleActions a {
+     background-image: url('/images/basicSteps-2.png');
+    background-repeat: no-repeat;
+    background-position: 50px;
+    color: #FFFFFF;
+    display: block;
+    float: left;
+    font-size: 17px;
+    font-weight: normal;
+    height: 33px;
+    line-height: 33px;
+    margin-left: 6px;
+    text-align: center;
+    text-transform: capitalize;
+     width: 100%;
+    margin-top: 70px;
+    }*/
+
+/*#newScheduleBtnHolder a,
+    #newScheduleActions a{
+        background-image: url('/images/basicSteps-2.png');
+    background-repeat: no-repeat;
+    background-position: 50px;
+    display: block;
+    margin: auto;
+    width: 100%;
+    height: 50px;
+    background-color: #65AB31;
+    line-height: 50px;
+    color: #fff;
+    font-size: 17px;
+    text-transform: capitalize;
+    font-weight: normal;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-top: 70px;
+
+    }*/
+
+/*#newScheduleBtnHolder a:hover,
+        #newScheduleActions a:hover {
+color: #fff;
+background-color:#08840f;
+        }*/
+
+
+#newScheduleBtnHolder #btnAutopilot,
+#newScheduleActions #btnAutopilot {
+    text-align: left;
+    float: right;
+    position: relative;
+}
+
+    #newScheduleBtnHolder #btnAutopilot a .autopilotON,
+    #newScheduleActions #btnAutopilot a .autopilotON {
+        background-color: #aaa;
+        background-image: url("/images/autopilotON.jpg");
+        background-position: right center;
+        background-repeat: no-repeat;
+        background-size: 25% auto;
+        color: #fff;
+        float: right;
+        margin-right: 10px;
+        text-align: left;
+        width: 90px;
+    }
+
+#newScheduleBtnHolder a.autopilotON {
+    margin-left: 1%;
+    margin-right: 10px;
+    text-align: center;
+    float: right;
+}
+
+#newScheduleActions .instantschedule {
+    margin-left: 10%;
+    text-align: center;
+}
+
+#newScheduleActions .disabled,
+#newScheduleActions .disabled:hover {
+    background-color: #ccc;
+    border: 1px solid #ccc;
+    color: #eee;
+    cursor: default;
+}
+
+
+
+#newScheduleActions #btnInstantSchedule {
+    margin-left: 3px;
+    text-align: center;
+}
+
+#newScheduleActions a.autoPilotOnIn {
+    margin-left: 10%;
+    text-align: center;
+}
+
+.scheduleBoxContentBox {
+    background-color: #555;
+    clear: both;
+    display: block;
+    float: left;
+    width: 100%;
+}
+
+    .scheduleBoxContentBox .scheduleContent {
+        background-color: #f9f9f9;
+        border-top: 1px solid #ccc;
+        display: block;
+        margin-top: 40px;
+        padding-top: 0;
+    }
+
+#calendarPickerHolder {
+    position: absolute;
+    top: 30px;
+}
+
+
+#divPickedDate {
+    border-bottom: 1px solid #eee;
+    display: block;
+    float: left;
+    width: 100%;
+}
+
+    #divPickedDate span {
+        background-color: #444;
+        border-bottom: 1px solid #ccc;
+        color: #fff;
+        display: block;
+        font-size: 13px;
+        font-weight: bold;
+        height: 27px;
+        line-height: 27px;
+        text-align: center;
+    }
+
+        #divPickedDate span:hover {
+            color: #fff;
+        }
+
+.actionsHolder {
+    display: block;
+    margin-top: 5px;
+    padding-top: 5px;
+    height: 30px;
+    line-height: 30px;
+}
+
+    .actionsHolder a {
+        color: #555;
+        font-size: 15px;
+        text-transform: capitalize;
+        text-decoration: underline;
+        margin-right: 20px;
+    }
+
+        .actionsHolder a.colorChange {
+            color: #eee;
+        }
+
+            .actionsHolder a.colorChange:hover {
+                color: #fff;
+            }
+
+        .actionsHolder a:hover {
+            color: #2a99bd;
+        }
+
+        .actionsHolder a.ancPublishSchedule {
+            background: #fc0;
+            color: #000;
+            display: block;
+            float: left;
+            font-size: 15px;
+            height: 25px;
+            line-height: 25px;
+            text-align: center;
+            text-decoration: none;
+            text-transform: capitalize;
+            width: 80px;
+            letter-spacing: 1px;
+        }
+
+
+        .actionsHolder a.ancOnAirPublishSchedule {
+            background-color: #ff3000;
+            color: #fff;
+            display: block;
+            float: left;
+            font-size: 15px;
+            font-weight: normal;
+            height: 25px;
+            letter-spacing: 1px;
+            line-height: 25px;
+            text-align: center;
+            text-decoration: none;
+            text-transform: capitalize;
+            width: 70px;
+        }
+
+        .actionsHolder a.ancOffAirPublishSchedule {
+            background-color: #eee;
+            color: #999;
+            cursor: default;
+            letter-spacing: 1px;
+            text-transform: capitalize;
+            font-size: 15px;
+            font-weight: normal;
+        }
+
+        .actionsHolder a.aAirncOn {
+            background: #e62e08;
+            color: #fff;
+            display: block;
+            float: left;
+            font-size: 11px;
+            font-weight: bold;
+            height: 25px;
+            line-height: 25px;
+            text-align: center;
+            text-decoration: none;
+            text-transform: capitalize;
+            width: 70px;
+        }
+
+        .actionsHolder a.published {
+            background: none repeat scroll 0 0 #55BF07;
+            color: #fff;
+            display: block;
+            float: left;
+            font-size: 15px;
+            height: 25px;
+            line-height: 25px;
+            text-align: center;
+            text-transform: capitalize;
+            width: 80px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+#ancToggleSchedule_117 {
+    display: block;
+    float: right;
+}
+
+.playbackTime,
+.playback {
+    color: #eee;
+    display: block;
+    font-size: 14px;
+    padding-left: 5px;
+    font-weight: bold;
+    text-transform: capitalize;
+    float: left;
+    height: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 10px;
+}
+
+.playbackTime {
+    width: auto;
+    padding-right: 10px;
+}
+
+.airtimeHolder {
+    display: block;
+    float: left;
+    width: 100%;
+    border-bottom: 5px solid #eee;
+}
+
+.quickViewArrow {
+    color: #2a99bd;
+    display: block;
+    float: left;
+    height: 15px;
+    line-height: 15px;
+    margin-top: 10px;
+}
+
+.scheduleThumbHolder {
+    display: block;
+    float: left;
+    min-height: 510px;
+    /*overflow: auto;*/
+    width: 100%;
+    height: auto;
+}
+
+#calendarPicker {
+    display: block;
+    float: left;
+    left: 5px;
+    position: absolute;
+    top: 2px;
+}
+
+.divProviderLogo {
+    bottom: 7px;
+    height: 20px;
+    position: absolute;
+    right: 0;
+    width: auto;
+    z-index: 1;
+}
+
+.liveMark {
+    margin-right: 3px;
+    position: absolute;
+    bottom: 100px;
+    background-color: red;
+    width: 60px;
+    height: 20px;
+    line-height: 20px;
+    color: #fff;
+    text-align: center;
+    display: block;
+    right: -5px;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+.divProviderLogo img {
+    width: 20px;
+    height: 20px;
+    display: block;
+    float: right;
+    margin-left: 2px;
+}
+
+.isPrivateTag,
+.rRatedTag {
+    background-image: url('/images/privateVideoIcon.png');
+    display: block;
+    float: right;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    width: 20px;
+    height: 20px;
+    margin-left: 2px;
+}
+
+.divSchedule .isPrivateTag {
+    position: absolute;
+    right: 16px;
+    bottom: 2px;
+}
+
+.rRatedTag {
+    background-image: url(/images/18Rated.png);
+}
+
+#calendarPicker .dhtmlxcalendar_dhx_skyblue {
+    box-shadow: 1px 3px 3px #555;
+    width: 257px;
+    border: 1px solid #fff;
+}
+
+#calendarPicker .dhtmlxcalendar_label_hours,
+#calendarPicker .dhtmlxcalendar_label_colon,
+#calendarPicker .dhtmlxcalendar_label_minutes {
+    font-size: 23px;
+    color: #fff;
+    cursor: pointer;
+}
+
+    #calendarPicker .dhtmlxcalendar_label_hours:hover,
+    #calendarPicker .dhtmlxcalendar_label_minutes:hover {
+        text-decoration: underline;
+    }
+
+#calendarPicker .dhtmlxcalendar_time_img {
+    background-image: none;
+}
+
+#calendarPicker .dhtmlxcalendar_dhx_skyblue div.dhtmlxcalendar_time_cont {
+    background: none repeat scroll 0 0 #2a99bd;
+    border: 1px solid #2a99bd;
+    height: 30px;
+    line-height: 30px;
+    width: 100%;
+}
+
+#calendarPicker .dhtmlxcalendar_dhx_skyblue div.dhtmlxcalendar_dates_cont ul.dhtmlxcalendar_line li.dhtmlxcalendar_cell.dhtmlxcalendar_cell_month {
+    background-color: #f9f9f9;
+    border-color: #f9f9f9;
+}
+
+#calendarPicker .dhtmlxcalendar_dhx_skyblue div.dhtmlxcalendar_dates_cont ul.dhtmlxcalendar_line li.dhtmlxcalendar_cell.dhtmlxcalendar_cell_month_date {
+    background-color: #2a99bd;
+    border-color: #2a99bd;
+    color: #fff;
+}
+
+#calendarPicker .dhtmlxcalendar_dhx_skyblue div.dhtmlxcalendar_month_cont {
+    background: #f9f9f9;
+    width: 100%;
+}
+
+#calendarPicker .dhtmlxcalendar_dhx_skyblue div.dhtmlxcalendar_days_cont {
+    width: 100%;
+    background-color: #f9f9f9;
+}
+
+#calendarPicker .dhtmlxcalendar_dhx_skyblue div.dhtmlxcalendar_dates_cont {
+    width: 100%;
+    background-color: #f9f9f9;
+}
+
+#calendarPicker .dhtmlxcalendar_dhx_skyblue div.dhtmlxcalendar_time_cont ul.dhtmlxcalendar_line li {
+    line-height: 30px;
+    width: 100%;
+}
+
+#calendarPicker .dhtmlxcalendar_dhx_skyblue div.dhtmlxcalendar_dates_cont ul.dhtmlxcalendar_line {
+    width: 100%;
+}
+
+.dhtmlxcalendar_dhx_skyblue ul.dhtmlxcalendar_line {
+    background-color: #fff;
+}
+
+#calendarPicker .dhtmlxcalendar_dhx_skyblue ul.dhtmlxcalendar_line {
+    width: 100%;
+}
+
+#calendarPicker ul li {
+    width: 12.9%;
+}
+
+
+    #calendarPicker ul li.dhtmlxcalendar_cell dhtmlxcalendar_month_hdr {
+        width: 100%;
+    }
+
+#calendarPicker .dhtmlxcalendar_dhx_skyblue div.dhtmlxcalendar_month_cont ul.dhtmlxcalendar_line li.dhtmlxcalendar_cell.dhtmlxcalendar_month_hdr {
+    width: 100%;
+}
+
+#calendarPicker .dhtmlxcalendar_dhx_skyblue div.dhtmlxcalendar_days_cont ul.dhtmlxcalendar_line li {
+    background-color: #eee;
+    width: 12.9%;
+    border: 1px solid #f9f9f9;
+}
+
+#calendarPicker .dhtmlxcalendar_dhx_skyblue div.dhtmlxcalendar_selector_obj table.dhtmlxcalendar_selector_table td.dhtmlxcalendar_selector_cell_middle {
+    width: 200px;
+    cursor: pointer;
+}
+
+#calendarPicker .dhtmlxcalendar_dhx_skyblue div.dhtmlxcalendar_selector_obj.dhtmlxcalendar_selector_month div.dhtmlxcalendar_area_selector_month, .dhtmlxcalendar_dhx_skyblue div.dhtmlxcalendar_selector_obj.dhtmlxcalendar_selector_year div.dhtmlxcalendar_area_selector_year, .dhtmlxcalendar_dhx_skyblue div.dhtmlxcalendar_selector_obj.dhtmlxcalendar_selector_hours div.dhtmlxcalendar_area_selector_hours, .dhtmlxcalendar_dhx_skyblue div.dhtmlxcalendar_selector_obj.dhtmlxcalendar_selector_minutes div.dhtmlxcalendar_area_selector_minutes, .dhtmlxcalendar_dhx_skyblue div.dhtmlxcalendar_selector_obj.dhtmlxcalendar_selector_minutes div.dhtmlxcalendar_area_selector_minutes4, .dhtmlxcalendar_dhx_skyblue div.dhtmlxcalendar_selector_obj.dhtmlxcalendar_selector_minutes div.dhtmlxcalendar_area_selector_minutes5 {
+    width: 100%;
+    cursor: pointer;
+    background-color: #fff;
+}
+
+#calendarPicker .dhtmlxcalendar_dhx_skyblue div.dhtmlxcalendar_selector_obj.dhtmlxcalendar_selector_hours table.dhtmlxcalendar_selector_table td.dhtmlxcalendar_selector_cell_middle ul.dhtmlxcalendar_selector_line, .dhtmlxcalendar_dhx_skyblue div.dhtmlxcalendar_selector_obj.dhtmlxcalendar_selector_minutes table.dhtmlxcalendar_selector_table td.dhtmlxcalendar_selector_cell_middle ul.dhtmlxcalendar_selector_line {
+    width: 100%;
+}
+
+    #calendarPicker .dhtmlxcalendar_dhx_skyblue div.dhtmlxcalendar_selector_obj.dhtmlxcalendar_selector_hours table.dhtmlxcalendar_selector_table td.dhtmlxcalendar_selector_cell_middle ul.dhtmlxcalendar_selector_line li.dhtmlxcalendar_selector_cell, .dhtmlxcalendar_dhx_skyblue div.dhtmlxcalendar_selector_obj.dhtmlxcalendar_selector_minutes table.dhtmlxcalendar_selector_table td.dhtmlxcalendar_selector_cell_middle ul.dhtmlxcalendar_selector_line li.dhtmlxcalendar_selector_cell {
+        width: 15.2%;
+    }
+
+#calendarPicker .dhtmlxcalendar_dhx_skyblue div.dhtmlxcalendar_selector_obj table.dhtmlxcalendar_selector_table td.dhtmlxcalendar_selector_cell_middle ul li {
+    background-color: #eee;
+    border-color: #eee;
+}
+
+    #calendarPicker .dhtmlxcalendar_dhx_skyblue div.dhtmlxcalendar_selector_obj table.dhtmlxcalendar_selector_table td.dhtmlxcalendar_selector_cell_middle ul li.dhtmlxcalendar_selector_cell_active {
+        background-color: #2a99bd;
+        border-color: #2a99bd;
+        color: #fff;
+    }
+
+.dhtmlxcalendar_dhx_skyblue {
+    font-size: 15px !important;
+    font-family: Arial !important;
+}
+
+    .dhtmlxcalendar_dhx_skyblue div.dhtmlxcalendar_month_cont ul.dhtmlxcalendar_line li.dhtmlxcalendar_cell.dhtmlxcalendar_month_hdr span.dhtmlxcalendar_month_label_month, .dhtmlxcalendar_dhx_skyblue div.dhtmlxcalendar_month_cont ul.dhtmlxcalendar_line li.dhtmlxcalendar_cell.dhtmlxcalendar_month_hdr span.dhtmlxcalendar_month_label_year {
+        color: #2a99bd !important;
+        font-family: arial !important;
+        font-size: 17px !important;
+        font-weight: normal !important;
+    }
+
+    .dhtmlxcalendar_dhx_skyblue div.dhtmlxcalendar_dates_cont ul.dhtmlxcalendar_line li div.dhtmlxcalendar_label {
+        font-size: 12px !important;
+    }
+
+
+/*.ddlAvailableChannels {
+background-color: #177b9f;
+border: 1px solid #127094;
+color: #fff;
+display: block;
+float: left;
+font-size: 15px;
+font-weight: bold;
+height: 30px;
+width: 100%;
+}*/
+
+.ddlAvailableChannels {
+    background: transparent;
+    width: 268px;
+    padding: 5px;
+    font-size: 16px;
+    line-height: 1;
+    border: 0;
+    border-radius: 0;
+    height: 34px;
+    -webkit-appearance: none;
+}
+
+.backnextMobile {
+    display: none;
+}
+
+#titleHolder {
+    display: block;
+    float: left;
+    padding-right: 55px;
+    position: relative;
+    width: 200px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+}
+
+#innerLeftWrapper {
+    /*border: 1px solid #fff;*/
+}
+
+#channelInfo,
+#lblCategory {
+    font-size: 12px;
+    color: #f9f9f9;
+    text-transform: capitalize;
+}
+
+#topHolder {
+    display: block;
+    float: left;
+    height: 220px;
+    margin-bottom: 60px;
+    margin-top: 0;
+    position: relative;
+    width: 100%;
+}
+
+
+.styled-select select {
+    background: none repeat scroll 0 0 transparent;
+    border: 0 none;
+    border-radius: 0;
+    font-size: 17px;
+    height: 34px;
+    line-height: 1;
+    padding: 5px;
+    width: 300px;
+    color: #fff;
+    font-weight: bold;
+    padding-left: 2px;
+    font-family: Roboto,'Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+
+
+
+
+
+.styled-select {
+    background-color: transparent;
+    background-image: url("/images/ddl.png");
+    background-position: right center;
+    background-repeat: no-repeat;
+    border: 1px solid #ccc;
+    height: 34px;
+    overflow: hidden;
+    border: none;
+}
+
+.styled-selectOpt {
+    background: none repeat scroll 0 0 transparent;
+    border: 0 none;
+    border-radius: 0;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    height: 30px;
+    line-height: 30px;
+    width: 135px;
+}
+
+.styled-selectOpt {
+    background-color: #f7f7f7;
+    background-image: url(/images/ddl-Opt.png);
+    background-position: right center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    border: 1px solid #ddd;
+    background-size: 22px;
+}
+
+
+.ddlCategory,
+#ddlChannelVideos {
+    cursor: pointer;
+}
+
+.styled-selectSort {
+    background-color: #f7f7f7;
+    border: 1px solid #ddd;
+    background-image: url(/images/ddl-Opt.png);
+    background-position: right center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    width: 137px;
+    background-size: 22px;
+}
+
+#ddlChannelVideos {
+    width: 155px;
+    font-size: 14px;
+    font-family: Roboto-Bold,'Helvetica Neue',Helvetica,Arial,sans-serif;
+    color: #555;
+    height: 30px;
+    line-height: 30px;
+}
+
+.sortAbsolute {
+    position: absolute;
+    right: 0;
+}
+
+.ddlAvailableChannels option {
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #eee;
+    color: #555;
+    font-size: 14px;
+    height: 25px;
+    line-height: 25px;
+    padding-top: 5px;
+}
+
+.ddlAvailableChannels select {
+    background: red;
+}
+
+#newSchedulePopup {
+    background-color: transparent;
+    border-radius: 2px;
+    /*left: 0;
+position: absolute;
+top: 0;*/
+    width: 100%;
+}
+
+#newScheduleHeader {
+    color: #000;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: right;
+}
+
+.newScheduleDateHolder {
+    background-color: transparent;
+    color: #000;
+    display: block;
+    float: left;
+    font-size: 12px;
+    font-weight: normal;
+    height: 25px;
+    line-height: 35px;
+    padding-bottom: 5px;
+    text-align: center;
+    width: 100%;
+    border-bottom: 1px solid #2a99bd;
+}
+
+#newScheduleTitle {
+    color: #eee;
+    display: block;
+    float: left;
+    font-size: 13px;
+    padding-right: 2%;
+    text-align: right;
+    width: 32%;
+}
+
+#newScheduleDate {
+    color: #2a99bd;
+    display: block;
+    float: right;
+    text-align: left;
+    width: 50%;
+    font-weight: normal;
+    font-size: 15px;
+}
+
+.createScheduleTitle {
+    font-size: 17px;
+    font-weight: normal;
+    color: #000;
+}
+
+
+#newScheduleFooter {
+    background-color: transparent;
+    color: #555;
+    display: block;
+    float: left;
+    font-size: 12px;
+    font-weight: normal;
+    height: 12px;
+    line-height: 12px;
+    padding-bottom: 5px;
+    text-align: center;
+    width: 100%;
+}
+
+#newScheduleTimePicker {
+    clear: both;
+    display: block;
+    float: left;
+    margin-top: 60px;
+    margin-bottom: 11px;
+    padding-left: 40px;
+    width: 100%;
+}
+
+#hlsCopyButtonHolder {
+    clear: both;
+    display: block;
+    float: left;
+    margin-top: 60px;
+    margin-bottom: 11px;
+    width: 100%;
+}
+
+#newScheduleStartTimePicker {
+    background: none repeat scroll 0 0 #fff;
+    border: none;
+    cursor: text;
+    display: block;
+    float: left;
+    font-size: 15px;
+    height: 30px;
+    margin-right: 27px;
+    text-align: center;
+    text-transform: none;
+    width: 115px;
+    cursor: pointer;
+    border: 1px solid #2a99bd;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.newSchedulePickTime {
+    color: #fff;
+    display: block;
+    float: left;
+    font-size: 13px;
+    font-weight: bold;
+    height: 25px;
+    line-height: 25px;
+    width: 30%;
+}
+
+
+
+#newScheduleActions {
+    background-color: transparent;
+    display: block;
+    float: left;
+    height: 20px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+
+.startScheduleCancel {
+    background-color: #fff;
+    border: medium none;
+    color: #555;
+    float: left;
+    font-size: 13px;
+    height: 30px;
+    line-height: 30px;
+    margin-left: 100px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+    .startScheduleCancel:hover {
+        text-decoration: underline;
+        color: #000;
+    }
+
+.infoI {
+    display: block;
+    float: right;
+    width: 20px;
+    height: 20px;
+    background-image: url('/images/infoIcon.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.instantInfo {
+    float: left;
+    margin-left: 7px;
+    margin-top: 20px;
+    background-image: url('/images/infoIcon.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+
+/*.liveEventStartDate.liveEvent,
+.liveEventStartTime.liveEven,
+.liveEventEndDateTime.liveEvent {
+    display: block;
+    float: left;
+    width: 20%;
+}*/
+
+
+.autopilotInfo {
+    position: absolute;
+    right: 2px;
+    background-image: url('/images/infoIcon.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    top: 19px;
+}
+
+.infoBasic {
+    position: absolute;
+    right: 60px;
+    background-image: url('/images/infoIcon.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    top: 0;
+}
+
+
+
+
+.startScheduleOk {
+    background-color: #2a99bd;
+    border: medium none;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    float: left;
+    font-size: 17px;
+    height: 34px;
+    line-height: 30px;
+    width: 137px;
+}
+
+    .startScheduleOk:hover {
+        background-color: #3FBF0E;
+    }
+
+#ancTakeTourGetVideos {
+    background-color: #2a99bd;
+    border: medium none;
+    border-radius: 2px;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    text-align: center;
+    height: 33px;
+    line-height: 33px;
+    width: 105px;
+}
+
+#divTakeTourGetVideo {
+    display: block;
+    width: 105px;
+    height: 33px;
+    position: absolute;
+    top: 91px;
+    right: 300px;
+}
+
+
+#ancTakeTourGetVideos:hover {
+    background-color: #ccc;
+}
+
+
+.tintedBackground {
+    background-image: url("/images/opacity-0.3.png");
+    background-repeat: repeat;
+    display: none;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.autopilotON {
+    background-image: url("/images/autopilotON.jpg");
+    background-size: 22% auto;
+}
+
+
+.autopilotON,
+.autopilot0FF {
+    background-position: 81px center;
+    background-repeat: no-repeat;
+    width: 100px;
+}
+
+.autopilot0FF {
+    background-image: url("/images/autopilotOFF.jpg");
+    background-size: 22% auto;
+}
+
+.actionsHolder a.aDisabled {
+    color: #ccc;
+    text-decoration: none;
+    cursor: default;
+}
+
+
+
+.customSchedule {
+    font-size: 17px;
+    text-transform: capitalize;
+    font-weight: normal;
+    color: #000;
+    float: left;
+}
+
+
+
+
+
+
+.disabled:hover {
+    background-color: #2a99bd;
+    color: #fff;
+    cursor: default;
+}
+
+
+
+body {
+    background-color: #f9f9f9;
+}
+
+.videoBoxNew {
+    border: 1px solid #eee;
+    display: block;
+    float: left;
+    height: 183px;
+    height: 220px;
+    margin: 5px;
+    overflow: hidden;
+    position: relative;
+    text-align: left;
+    width: 23.6666%;
+    margin: 0.5%;
+    max-width: 245px;
+}
+
+/*.loadedContent .videoBoxNew {
+        width: 293px;
+    margin-right: 5px;
+}*/
+
+
+
+.videoBoxInfo {
+    bottom: 0;
+    cursor: pointer;
+    display: block;
+    height: 80px;
+    position: absolute;
+    width: 100%;
+    /* background-image: url('/images/videoInfoBG.png'); */
+    /* background-repeat: repeat-x; */
+    background-color: #eee;
+}
+
+.highlight .videoBoxInfo {
+    background-color: #fc0;
+    background-image: none;
+}
+
+.justWatched {
+    background-color: #fc0;
+}
+
+.videoBoxtitle {
+    color: #2a99bd;
+    float: left;
+    font-size: 15px;
+    line-height: 20px;
+    max-width: 95%;
+    overflow: hidden;
+    padding-left: 3px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-weight: normal;
+    text-shadow: 0 0 7px #fff;
+    padding-top: 6px;
+    padding-bottom: 4px;
+}
+
+.videoBoxcateg {
+    color: #555;
+    float: left;
+    font-size: 10px;
+    line-height: 17px;
+    padding-left: 3px;
+    width: 100%;
+}
+
+.videoBoxduration,
+.videoBoxviews,
+.videoBoxcateg {
+    color: #555;
+    float: left;
+    font-size: 13px;
+    line-height: 15px;
+    padding-left: 3px;
+    width: 100%;
+    text-transform: capitalize;
+    letter-spacing: 0.3px;
+}
+
+    .videoBoxduration strong,
+    .videoBoxviews strong,
+    .videoBoxcateg strong {
+        color: #555;
+        font-weight: normal;
+        font-size: 13px;
+        text-transform: capitalize;
+        letter-spacing: 0.3px;
+    }
+
+.actionsVideoBoxHolder {
+    cursor: pointer;
+    display: block;
+    float: left;
+    height: 40px;
+    position: absolute;
+    width: 100%;
+    z-index: 3;
+    opacity: 0.9;
+    background-image: url("/images/actionButtonHolderBG.png");
+    background-repeat: repeat-x;
+}
+
+    .actionsVideoBoxHolder:hover {
+        opacity: 1;
+    }
+
+.VideoBoxPlay {
+    background-image: url(/images/playbuttonWhiteNew.png);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: 25px;
+    cursor: pointer;
+    display: block;
+    height: 35px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 50%;
+    z-index: 2;
+}
+
+    .VideoBoxPlay.isLive {
+        width: 30%;
+    }
+
+    .VideoBoxPlay:hover {
+        background-image: url('/images/playbuttonGreenNew.png');
+        opacity: 1;
+    }
+
+
+.VideoBoxRemove {
+    background-image: url("/images/trash.png");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: 25px;
+    cursor: pointer;
+    display: block;
+    height: 35px;
+    position: absolute;
+    right: 1px;
+    top: 0;
+    width: 50%;
+    z-index: 2;
+}
+
+    .VideoBoxRemove.isLive {
+        width: 30%;
+    }
+
+.isLIve.infoHolder {
+display: block;
+    height: 20px;
+    position: absolute;
+    left: 0;
+    top: 115px;
+    width: 100%;
+    color: #fff;
+    background-color: #2a99bd;
+    text-align: center;
+    line-height: 20px;
+    opacity: 0.9;
+    font-size: 12px;
+}
+
+.VideoBoxRemove:hover {
+    background-image: url('/images/trashHover.png');
+    opacity: 1;
+}
+
+
+
+.videoSettings.material-icons {
+    width: 50%;
+    height: 24px;
+    z-index: 2;
+    position: absolute;
+    right: 1px;
+    color: #ffffff;
+    font-family: "Material Icons";
+    font-feature-settings: "liga";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: normal;
+    letter-spacing: normal;
+    line-height: 30px;
+    overflow-wrap: normal;
+    text-transform: none;
+    white-space: nowrap;
+    opacity: 0.85;
+    top: 85px;
+    cursor: pointer;
+    text-align: right;
+}
+
+    .videoSettings.material-icons :hover {
+        color: red;
+    }
+
+.addButtonContainer {
+    background-repeat: no-repeat;
+    background-size: 125% auto;
+    display: block;
+    height: 165px;
+    position: absolute;
+    width: 100%;
+    background-position: bottom center;
+}
+
+.addButtonHolder {
+    /*background-image: url("/images/addVideoPlusFull.png");
+    background-repeat: no-repeat;*/
+    cursor: pointer;
+    display: block;
+    height: 240px;
+    position: absolute;
+    width: 100%;
+    background-position: center;
+    z-index: 1;
+}
+
+    .addButtonHolder:hover {
+        background-image: url("/images/addVideoPlus-hover.png");
+        z-index: 1;
+    }
+
+    .addButtonHolder.isLive:hover {
+        background-color: #393939;
+        background-image: none;
+        opacity: 0.9;
+        z-index: 1;
+    }
+
+    .addButtonHolder.isLive .spanLiveMessage {
+    display: none;
+    float: left;
+    color: #fff;
+    width: 100%;
+    margin-top: 30px;
+    text-align: center;
+    background-color: #2a99bd;
+    line-height: 19px;
+    font-size: 12px;
+    }
+
+
+
+
+
+
+
+
+.recentlyadded {
+    color: #3FBF0E;
+    display: block;
+    font-size: 13px;
+    font-weight: normal;
+    height: 50px;
+    line-height: 40px;
+    text-align: center;
+    width: 100%;
+    background-image: url('/images/recentlyadded.png');
+    background-repeat: repeat-x;
+    text-transform: uppercase;
+}
+
+#updtateChannelPopup {
+    background-image: url("/images/opacity-0.3.png");
+    background-repeat: repeat;
+    display: none;
+    left: 0;
+    min-height: 700px;
+    padding-bottom: 2%;
+    padding-top: 5%;
+    position: absolute;
+    top: 72px;
+    width: 100%;
+    z-index: 999;
+}
+
+.playIconGoToChannel {
+    background-image: url('/images/playIconGoToChannel.png');
+    background-size: 100%;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+}
+
+    .playIconGoToChannel:hover {
+        background-image: url('/images/playIconGoToChannel-hover.png');
+    }
+
+
+
+#divChannelCropContainer #imgContainer {
+    width: 400px;
+    height: 400px;
+    margin: auto;
+}
+
+#divChannelCropContainer #cropAction {
+    display: block;
+    float: left;
+    width: 400px;
+    height: 70px;
+    margin-top: 10px;
+}
+
+    #divChannelCropContainer #cropAction a {
+        display: block;
+        float: left;
+        margin-right: 50px;
+    }
+
+#divChannelCropContainer #imgContainer #cropbox {
+    width: 100%;
+}
+
+
+#divChannelCropContainer .cropit-image-background {
+    opacity: .2;
+    cursor: auto;
+}
+
+#divChannelCropContainer.image-size-label {
+    margin-top: 10px;
+}
+
+#divChannelCropContainer input {
+    /* Use relative position to prevent from being covered by image background */
+    position: relative;
+    z-index: 10;
+    display: block;
+}
+
+#divChannelCropContainer .export {
+    background-color: #2a99bd;
+    display: block;
+    float: left;
+    height: 40px;
+    line-height: 40px;
+    margin-top: 10px;
+    text-align: center;
+    width: 150px;
+    color: #fff;
+}
+
+    #divChannelCropContainer .export:hover {
+        background-color: #016e92;
+    }
+
+#divChannelCropContainer .cropit-image-preview-container {
+    display: block;
+    float: left;
+    width: 300px;
+}
+
+#divChannelCropContainer .image-size-label {
+    display: block;
+    line-height: 30px;
+}
+
+input.cropit-image-input {
+    visibility: collapse;
+    position: absolute;
+}
+
+.cropit-image-preview-channel {
+    background-image: url("/images/insert-img-200.jpg");
+    background-color: #f8f8f8;
+    background-size: cover;
+    border: 1px solid #eee;
+    cursor: move;
+    height: 200px;
+    margin-top: 7px;
+    width: 200px;
+}
+
+.containerChannelImageEditorAvatar {
+    margin: 50px;
+}
+
+#divSearchVideobyKeywordForPublicLibHolder {
+    display: block;
+    float: left;
+    margin-right: 15px;
+    position: relative;
+    width: 80%;
+}
+
+.searchAbsHolder {
+    width: 320px;
+    margin: auto;
+}
+
+.closeSearchHolder {
+    background-image: url('/images/close_pop.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: none;
+    float: left;
+    height: 30px;
+    width: 30px;
+    float: left;
+    cursor: pointer;
+    opacity: 0.7;
+    margin-top: 3px;
+}
+
+.iconSearch {
+    background-image: url(/images/lupa-search.png);
+    background-repeat: no-repeat;
+    background-size: 24px;
+    background-position: center;
+    display: block;
+    float: left;
+    height: 30px;
+    width: 30px;
+    float: left;
+    margin-left: 50px;
+    cursor: pointer;
+}
+
+    .iconSearch:hover {
+        border: 1px solid #ddd;
+        background-color: #f7f7f7;
+    }
+
+
+
+#divSearchVideobyKeywordForChannelHolder {
+    display: none;
+    float: none;
+    height: 30px;
+    float: left;
+}
+
+/*#divSearchVideobyKeywordForChannelHolder > *, #divSearchVideobyKeywordForPublicLibHolder > *
+{
+    display:none;
+    float:left;    
+}*/
+
+#btnClearSerachedVideosForPublicLib,
+#btnClearSerachedVideosForVideoRoom {
+    background-image: url('/images/close_pop.png');
+    background-position: center;
+    background-size: 100%;
+    height: 31px;
+    line-height: 30px;
+    display: none;
+    width: 20px;
+    border-top: 1px solid #999;
+    border-bottom: 1px solid #999;
+    text-align: center;
+    background-repeat: no-repeat;
+    color: transparent;
+    float: left;
+}
+
+#btnClearSerachedVideosForChannel {
+    display: none;
+    float: left;
+    width: 30px;
+    height: 31px;
+    background-image: url(/images/close_pop.png);
+    background-position: center;
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-color: #f7f7f7;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    color: transparent;
+}
+
+    #btnClearSerachedVideosForChannel:hover {
+        color: transparent;
+    }
+
+btnClearSerachedVideosForPublicLib:hover, btnClearSerachedVideosForVideoRoom:hover {
+    color: #999999;
+}
+
+#btnSearchVideoByKeywordForChannel, #btnSearchVideoByKeywordForPublicLib, #btnSearchVideoByKeywordForVideoRoom {
+    background-image: url('/images/lupa-search.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 80% auto;
+    display: block;
+    float: left;
+    height: 31px;
+    width: 30px;
+    opacity: 1;
+    border: 1px solid #999;
+    background-color: #f18a11;
+}
+
+    #btnSearchVideoByKeywordForChannel:hover, #btnSearchVideoByKeywordForPublicLib:hover, #btnSearchVideoByKeywordForVideoRoom:hover {
+        background-image: url('/images/lupa-search-white.png');
+        background-color: #f18a11;
+        border: 1px solid #f18a11;
+    }
+
+
+#txtSearchVideoByKeywordForPublicLib, #txtSearchVideoByKeywordForVideoRoom,
+.searchInput {
+    background-color: transparent;
+    height: 22px;
+    padding: 5px;
+    display: block;
+    float: left;
+    border-right: none;
+    width: 250px;
+    line-height: 23px;
+}
+
+
+.addVideoInstructions {
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    text-align: left;
+    color: #2a99bd;
+    line-height: 24px;
+    margin: auto;
+    clear: both;
+}
+
+.addVideoInstructionsBlock {
+    display: block;
+    float: left;
+    width: 100%;
+    height: 20px;
+    margin-top: 20px;
+    text-align: left;
+    padding-left: 30px;
+    color: #2a99bd;
+}
+
+#txtSearchVideoByKeywordForChannel {
+    height: 21px;
+    padding: 5px;
+    display: block;
+    float: left;
+    text-transform: capitalize;
+    border-right: none;
+    width: 320px;
+    line-height: 23px;
+    font-family: 'Source Sans Pro','Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+
+.searchInput {
+    width: 220px;
+}
+
+#txtSearchVideoByKeywordForChannel:focus, #txtSearchVideoByKeywordForPublicLib:focus, #txtSearchVideoByKeywordForVideoRoom:focus {
+    outline: none;
+}
+
+.basicInstantBntHolder {
+    display: block;
+    float: left;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.bntBasicInstantSchedule:hover {
+    background-color: #08840f;
+    color: #fff;
+    text-decoration: underline;
+}
+
+.bntBasicInstantScheduleDisabled {
+    background-image: url(/images/scheduleSteps/instantStep.png);
+    background-repeat: no-repeat;
+    background-position: 10px;
+    display: block;
+    margin: auto;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    font-size: 17px;
+    text-transform: capitalize;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    background-color: #999999;
+    color: #fff;
+    text-decoration: none;
+    cursor: default;
+    background-size: 40px;
+}
+
+.checkboxHolderON {
+    display: block;
+    float: right;
+    width: 50px;
+    height: 20px;
+    border-radius: 20px;
+    background-image: url('/images/ledLightON.jpg');
+    cursor: pointer;
+}
+
+.checkboxHolderOFF {
+    display: block;
+    float: right;
+    width: 50px;
+    height: 20px;
+    border-radius: 20px;
+    background-image: url('/images/ledLightOFF.jpg');
+    cursor: pointer;
+}
+
+.inputcheckBox {
+    opacity: 0;
+    background-color: transparent;
+    height: 20px;
+    width: 50px;
+}
+
+.bntBasicInstantSchedule,
+.btncustomSchedule {
+    background-image: url(/images/scheduleSteps/instantStep.png);
+    background-repeat: no-repeat;
+    background-position: 10px;
+    display: block;
+    margin: auto;
+    width: 100%;
+    height: 50px;
+    background-color: #65AB31;
+    line-height: 50px;
+    color: #fff;
+    font-size: 17px;
+    text-transform: capitalize;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    background-size: 40px;
+}
+
+.btncustomSchedule {
+    background-image: url('/images/scheduleSteps/customStep.png');
+    background-repeat: no-repeat;
+    background-color: #2a99bd;
+}
+
+    .btncustomSchedule:hover {
+        background-color: #226e87;
+    }
+
+
+.autopilotBasic {
+    width: 50%;
+    float: right;
+    position: absolute;
+    right: 0;
+}
+
+.advancedModeHolder {
+    width: 48%;
+    float: left;
+    display: block;
+    float: left;
+    height: 20px;
+}
+
+.spnAutopilotBasic {
+    color: #555;
+    display: block;
+    float: left;
+    font-size: 14px;
+    font-weight: bold;
+    height: 20px;
+    line-height: 20px;
+    text-align: right;
+    width: 95px;
+}
+
+.spnAdvancedMode {
+    font-size: 14px;
+    font-weight: bold;
+    color: #555;
+    height: 20px;
+    line-height: 20px;
+}
+
+.inputAdvanced {
+    width: 50px;
+    height: 20px;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.inputAdvancedWrapper {
+    background-image: url('/images/ledLightON.jpg');
+    width: 50px;
+    float: left;
+    margin-right: 5px;
+    background-color: transparent;
+    height: 17px;
+    border-radius: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.inputAdvancedWrapperOFF {
+    background-image: url('/images/ledLightOFF.jpg');
+    width: 50px;
+    float: left;
+    margin-right: 5px;
+    background-color: transparent;
+    height: 17px;
+    border-radius: 20px;
+    height: 20px;
+}
+
+.divAddVideosMenuHolderAdv {
+    background-color: #f18a11;
+    display: inline-block;
+    float: left;
+    height: 50px;
+    line-height: 50px;
+    width: 202px;
+    cursor: pointer;
+    text-align: center;
+    margin-right:15px;
+}
+
+#divGetHlsLinkMenuHolder span.spnADdVideoPopup span, #divAddVideosMenuHolder span.spnADdVideoPopup span {
+    font-size: 37px;
+    display: block;
+    float: left;
+    width: 37px;
+    text-align: center;
+}
+
+#divGetHlsLinkMenuHolder:hover, #divAddVideosMenuHolder:hover {
+    background-color: #cd5212;
+}
+
+#divGetHlsLinkMenuHolder span.spnADdVideoPopup, #divAddVideosMenuHolder span.spnADdVideoPopup {
+        -moz-user-select: none;
+        color: #fff;
+        cursor: pointer;
+        font-size: 17px;
+        width: 100%;
+        display: block;
+    }
+
+
+
+
+
+
+/*.radioHolder {
+    background-color: #f9f9f9;
+    background-image: url('/images/radioButton.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    width: 20px;
+    cursor: pointer;
+    display: block;
+    float: left;
+    height: 20px;
+    background-size: 100%;
+    margin-right: 10px;
+}*/
+
+/*#btnImportByUrl:checked {
+       color:green;
+       
+    }*/
+
+.chkGreenMarkStyle[type="checkbox"],
+.importURLradio[type="radio"],
+.importYourVideosradio[type="radio"],
+.matureContent[type=checkbox],
+.importPrivate[type=checkbox],
+#checkBoxHolder #checkMatureContentForm[type=checkbox] {
+    -webkit-appearance: none;
+    outline: none;
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    float: left;
+}
+
+    #btnImportByUrl[type="radio"]:checked,
+    #btnImportYoutubeUserUploads[type="radio"]:checked,
+    .chkGreenMarkStyle[type="checkbox"]:checked,
+    .importYourVideosradio[type="radio"]:checked,
+    .matureContent[type="checkbox"]:checked,
+    .importPrivate[type=checkbox]:checked,
+    #checkBoxHolder #checkMatureContentForm[type="checkbox"]:checked {
+        -webkit-appearance: none;
+        outline: none;
+        background-image: url('/images/checkIcons/check-mark-green.png');
+        background-size: 100%;
+        width: 20px;
+        height: 20px;
+    }
+
+label[for="checkMatureContentForm"] {
+    float: left;
+    line-height: 30px;
+}
+
+.matureContent[type="checkbox"]:checked {
+}
+
+.radioHoldercheckBox {
+    background-color: #f9f9f9;
+    background-image: url('/images/radioButton-active.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    width: 20px;
+    cursor: pointer;
+    display: block;
+    float: left;
+    height: 30px;
+    background-size: 100%;
+    margin-right: 10px;
+}
+
+.importURLradio,
+.importYourVideosradio {
+    width: 20px;
+    height: 20px;
+    display: block;
+    float: left;
+}
+
+.importURLLable,
+.importYourVideosLable,
+.lblMatureContent,
+.lblImportPrivate {
+    display: block;
+    float: left;
+    width: 250px;
+    color: #555;
+    line-height: 30px;
+    font-size: 14px;
+}
+
+.lblImportPrivate {
+    width: auto;
+}
+
+
+
+#importUserYoutubeVideosActionHolder {
+    display: block;
+}
+
+#btnImportUserUploads,
+#btnAddAllToChannel {
+    display: block;
+    color: #fff;
+    background-color: #43A70D;
+    float: none;
+    height: 40px;
+    text-align: center;
+    width: 280px;
+    margin: auto;
+    clear: both;
+    line-height: 40px;
+}
+
+
+    #btnImportUserUploads:hover {
+        background-color: #2e7209;
+        color: #fff;
+    }
+
+    #btnAddAllToChannel.addAll {
+        background-color: #f18a11;
+    }
+
+        #btnAddAllToChannel.addAll:hover {
+            background-color: #e56f07;
+        }
+
+#btnClearAllImport {
+    display: block;
+    color: #fff;
+    background-color: #777;
+    float: left;
+    padding: 10px;
+    margin-right: 20px;
+}
+
+
+
+#userYoutubeUploadsContent {
+    display: block;
+    width: 100%;
+    clear: both;
+    margin-top: 50px;
+    height: 50px;
+    line-height: 100px;
+    text-align: center;
+    font-size: 17px;
+    color: #555;
+}
+
+.backendmenuHolder {
+    width: 100%;
+    max-width: 100%;
+}
+
+#importUserYoutubeUploadsHolder {
+    display: none;
+}
+
+#editPrivateVideoModal {
+    width: 96%;
+    background-color: #fff;
+    padding: 2%;
+    max-width: 700px;
+}
+
+    #editPrivateVideoModal .pageTitle {
+        border-bottom: 2px solid #2a99bd;
+        color: #2a99bd;
+        display: block;
+        font-size: 23px;
+        height: 30px;
+        line-height: 30px;
+        margin: auto;
+        padding-bottom: 0;
+        padding-top: 60px;
+        text-align: left;
+        text-transform: capitalize;
+        width: 95%;
+        margin-bottom: 20px;
+    }
+/*# {
+    float: left;
+    width: 100%;
+    margin-top: 30px;
+}*/
+
+#importPrivateVideoHolder ul {
+    float: left;
+    width: 320px;
+}
+
+    #importPrivateVideoHolder ul#leftSide,
+    #importPrivateVideoHolder ul#rightSide {
+        float: left;
+        width: 320px;
+        height: 500px;
+    }
+
+
+
+/*-----------------------------------------------------------------------------------------------EDIT-sashaCSS*/
+#editPrivateVideoModal ul {
+    float: left;
+    width: 320px;
+}
+
+    #editPrivateVideoModal ul li {
+        float: left;
+        width: 100%;
+        border: 1px solid #ddd;
+        margin-bottom: 15px;
+    }
+
+
+        #editPrivateVideoModal ul li.pickProvidernoBorder {
+            border: none;
+        }
+
+    #editPrivateVideoModal ul#rightSide {
+        float: right;
+    }
+
+#editPrivateVideoModal .categoryPrVodeos {
+    width: 109%;
+}
+
+#editPrivateVideoModal ul#leftSide {
+    background-color: transparent;
+}
+
+#editPrivateVideoModal .close_x {
+    top: 20px;
+    width: 24px;
+}
+
+#editPrivateVideoModal .styled-selectSortSearch {
+    background-color: transparent;
+    background-image: url(/images/ddl-Opt.png);
+    background-position: right center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    width: 100%;
+    cursor: pointer;
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 15px;
+    background-size: 22px;
+    line-height: 30px;
+}
+
+
+#editPrivateVideoModal ul li.editModalcheckBoxHolder,
+#editPrivateVideoModal ul li.editModalvideoDurationHolder,
+#editPrivateVideoModal ul li.editModalUpdateVideo,
+#importPrivateVideoHolder ul li.editModalvideoDurationHolder,
+#importPrivateVideoHolder ul li.editModalcheckBoxHolder {
+    border: none;
+}
+
+#editPrivateVideoModal ul#leftSide li {
+    background-color: transparent;
+    border: none;
+}
+
+#importPrivateVideoHolder ul li.textareaDescr {
+    height: 130px;
+}
+
+#importPrivateVideoHolder ul li a.btnAddVideo {
+    border: none;
+}
+
+#importPrivateVideoHolder li.editTextArea {
+    height: 130px;
+}
+
+#importPrivateVideoHolder li.editBtnAddPrivateVideoToChannel {
+    border: none;
+    margin-top: 10px;
+}
+
+
+/*-----------------------------------------------------------------------------------------------//EDIT*/
+
+#importPrivateVideoHolder ul#rightSide {
+    float: right;
+    width: 320px;
+}
+
+#importPrivateVideoHolder li {
+    float: left;
+    width: 100%;
+    height: 30px;
+    border: 1px solid #ddd;
+    margin-bottom: 15px;
+}
+
+#importPrivateVideoHolder .categoryKeyword {
+    border: none;
+}
+
+
+#importPrivateVideoHolder ul li #btnAddVideo {
+    display: block;
+    float: right;
+    width: 130px;
+    text-align: center;
+    background: #2a99bd;
+    color: #fff;
+    height: 30px;
+    line-height: 30px;
+    margin-top: 24px;
+}
+
+#importPrivateVideoHolder #liImageEditor .cropit-image-preview,
+#editPrivateVideoModal #liImageEditor .cropit-image-preview {
+    width: 265px;
+    height: 200px;
+    background-position: center !important;
+    margin-left: 35px;
+}
+
+
+
+#importPrivateVideoHolder #liImageEditor,
+#editPrivateVideoModal #liImageEditor {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+}
+
+    #importPrivateVideoHolder #liImageEditor .image-editor,
+    #editPrivateVideoModal #liImageEditor .image-editor {
+        width: 100%;
+    }
+
+#importPrivateVideoHolder .cropit-image-preview-container,
+#editPrivateVideoModal .cropit-image-preview-container {
+    width: 100%;
+}
+
+#importPrivateVideoHolder .minImgSize,
+#editPrivateVideoModal .minImgSize {
+    margin-top: 80px;
+}
+
+#importPrivateVideoHolder .cropit-image-background-container,
+#editPrivateVideoModal .cropit-image-background-container {
+    width: 100% !important;
+}
+
+#importPrivateVideoHolder #liImageEditor .select-image-btn,
+#editPrivateVideoModal #liImageEditor .select-image-btn {
+    color: #f18a11;
+    cursor: pointer;
+    display: block;
+    float: left;
+    font-size: 17px;
+    margin: 10px 10px 10px 0px;
+    width: 100%;
+    background-color: transparent;
+    height: 48px;
+    text-align: center;
+    line-height: 48px;
+    float: left;
+    display: block;
+    border: 1px solid #f18a11;
+}
+
+
+
+#importPrivateVideoHolder #txtPrivateVideoTitle,
+#editPrivateVideoModal #txtPrivateVideoTitle {
+    width: 100%;
+    float: left;
+}
+
+#importPrivateVideoHolder #rightSide li textarea,
+#editPrivateVideoModal #rightSide li textarea {
+    width: 98%;
+    height: 130px;
+    border-color: transparent;
+    background-color: transparent;
+    font-family: Roboto,'Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    padding: 1%;
+}
+
+#pickProvider {
+    width: 99%;
+    padding-left: 1%;
+    height: 30px;
+    line-height: 30px;
+}
+
+    #pickProvider span {
+        width: 100%;
+    }
+
+
+
+#importPrivateVideoHolder #checkBoxHolder,
+#importPrivateVideoHolder #videoDurationHolder,
+#editPrivateVideoModal #checkBoxHolder,
+#editPrivateVideoModal #videoDurationHolder {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    line-height: 25px;
+}
+
+#privateVideoUrl {
+    width: 99%;
+    float: left;
+    padding-left: 1%;
+    height: 30px;
+    margin-bottom: 0;
+    line-height: 30px;
+    border: none;
+    background-color: transparent;
+}
+
+#importPrivateVideoHolder #divUrlCategory {
+    margin-top: 0;
+}
+
+#privateVideoDesc textarea {
+    display: block;
+    float: left;
+    width: 100%;
+    height: 30px;
+    padding-left: 5px;
+}
+
+#privateVideoDesc select {
+    width: 275px;
+    height: 30px;
+    padding-left: 5px;
+}
+
+#privateVideoDesc #txtPrivateVideoTitle {
+    float: left;
+    display: block;
+    width: 99%;
+    height: 30px;
+    padding-left: 1%;
+    text-transform: capitalize;
+    margin-bottom: 0;
+    background-color: transparent;
+    border: none;
+    margin-top: 0;
+}
+
+#divUrlCategory {
+    height: 30px;
+    clear: both;
+    float: left;
+    width: 100%;
+}
+
+
+#checkBoxHolder #checkMatureContentForm {
+    width: 30px;
+    float: left;
+}
+
+.chkGreenMarkStyle[type="checkbox"],
+.importURLradio[type="radio"],
+.importYourVideosradio[type="radio"],
+.matureContent[type=checkbox],
+.importPrivate[type=checkbox] #checkBoxHolder label {
+}
+
+#importPrivateVideoHolder .btnAddVideo,
+#editPrivateVideoModal .btnUpdateVideo {
+    display: block;
+    float: right;
+    height: 50px;
+    line-height: 50px;
+    color: #fff;
+    background-color: #2a99bd;
+    text-align: center;
+    width: 100%;
+    cursor: pointer;
+}
+
+    #importPrivateVideoHolder .btnAddVideo:hover,
+    #editPrivateVideoModal .btnUpdateVideo:hover {
+        background-color: #1a576b;
+    }
+
+
+
+checkBoxHolder #spnMatureInfo {
+}
+
+#videoDurationHolder {
+    width: 50%;
+    float: right;
+}
+
+    #videoDurationHolder input {
+        display: block;
+        float: left;
+        height: 20px;
+        width: 40px;
+        text-align: center;
+        margin-top: 0;
+    }
+
+    #videoDurationHolder span {
+        display: block;
+        float: left;
+        text-transform: capitalize;
+        font-size: 14px;
+        margin-right: 2px;
+    }
+
+
+.startDateTimePickerHolderLive {
+    width: 98%;
+    height: auto;
+    background-color: #fff;
+    display: none;
+    float: left;
+    max-width: 500px;
+    padding: 1%;
+}
+
+.timeZoneSelect {
+    display: none;
+    float: left;
+}
+
+#timeZoneName {
+    display: none!important;
+    float: left;
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+#timeZoneNameChange {
+    display: none!important;
+    float: left;
+    margin-top: 10px;
+    margin-left: 12px;
+    font-size: 14px;
+    color: blue;
+}
+
+#dateTimePickerHolder {
+    margin-bottom: 20px;
+    display: block;
+    float: left;
+}
+
+#saveLiveVideo {
+    display: block;
+    float: none;
+    width: 80px;
+    clear: both;
+    margin: auto;
+    height: 30px;
+    line-height: 30px;
+    background: #2a99bd;
+    color: #fff;
+    text-align: center;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+.liveStartTimePicker,
+.liveEndTimePicker {
+    float: left;
+    display: block;
+    height: 30px;
+    margin-top: 10px;
+    width: 100%;
+}
+
+    .liveStartTimePicker input,
+    .liveEndTimePicker input {
+        width: 45%;
+        height: 30px;
+        margin-right: 2%;
+        text-transform: capitalize;
+        padding-left: 1%;
+        cursor: pointer;
+    }
+
+        /*.liveStartTimePicker input.liveStartDate {
+            background-color: red;
+        }*/ 
+
+
+
+.startDateTimePickerHolderLive span {
+    display: block;
+    float: left;
+    font-size: 14px;
+    text-transform: capitalize;
+    text-align: center;
+    width: 100%;
+    margin-top: 20px;
+}
+/*MEDIA*/ /*MEDIA*/ /*MEDIA*/ /*MEDIA*/ /*MEDIA*/ /*MEDIA*/ /*MEDIA*/ /*MEDIA*/ /*MEDIA*/ /*MEDIA*/ /*MEDIA*/ /*MEDIA*/
+
+/*@media (min-width: 1520px) {
+
+    .contentShcedule,
+    .channelManagementContentInner {
+        max-width: 1455px;
+        margin: auto;
+    }
+
+    .leftSchedule {
+        width: 1070px;
+    }
+}*/
+
+/*@media (min-width: 1700px) {
+
+
+    .contentShcedule,
+    .channelManagementContentInner {
+        max-width: 1640px;
+    }
+
+    .leftSchedule {
+        width: 1250px;
+    }
+
+
+    .scheduleHolder {
+        min-width: 1024px;
+        max-width: 1640px;
+    }
+}*/
+
+@media (max-width: 1700px) {
+
+
+    .addButtonContainer {
+        height: 175px;
+        background-size: 130%;
+    }
+
+    .addButtonHolder {
+        height: 245px;
+    }
+}
+
+@media (max-width: 1520px) {
+    .videoBoxNew {
+    }
+
+    .addButtonContainer {
+        height: 170px;
+    }
+
+    .addButtonHolder {
+        height: 245px;
+        background-position: center;
+    }
+}
+
+@media (max-width: 1280px) {
+    .leftSchedule {
+        width: 60%;
+    }
+
+    .videoBoxNew {
+        height: 200px;
+    }
+
+    .chkShowAllVideos,
+    .chkShowMyVideos,
+    .chkShowLicensedVideos,
+    .chkShowExternalProvidersVideos {
+        display: block;
+        float: left;
+        margin-top: -10px;
+    }
+
+    .addButtonContainer {
+        height: 149px;
+        background-size: 150%;
+    }
+
+    .schSearch {
+        border: 1px solid #2a99bd;
+        display: block;
+        float: left;
+        width: 400px;
+        padding-left: 10px;
+        font-size: 13px;
+    }
+
+
+
+    .addButtonHolder {
+        height: 200px;
+        background-position: center;
+    }
+
+    .schAncSearch {
+        background-color: #2a99bd;
+        color: #fff;
+        display: block;
+        float: left;
+        font-size: 17px;
+        height: 39px;
+        line-height: 41px;
+        margin-right: 20px;
+        text-align: center;
+        text-transform: capitalize;
+        width: 120px;
+    }
+
+        .schAncSearch:hover {
+            background-color: #286c82;
+        }
+
+    /*.actionsVideoBoxHolder,
+    .VideoBoxPlay,
+    .VideoBoxRemove {
+        height: 50px;
+    }*/
+}
+
+
+@media (max-width:1024px) {
+
+
+    .pageNavHolderMolile,
+    .mobileNavSchedule {
+        display: block;
+    }
+
+    .playerbox, .playerboxVimeo, .playerBoxDMotion, .playerBoxFlowplayer {
+        width: 650px;
+        height: 366px;
+    }
+
+    .backnextMobile {
+        display: block;
+        float: left;
+        width: 100%;
+        height: 50px;
+        background: #fc0;
+    }
+
+    .backSchedule,
+    .nextSchedule {
+        display: block;
+        float: left;
+        width: 50%;
+        color: #fff;
+        text-align: center;
+        line-height: 50px;
+    }
+
+    .nextSchedule {
+        background-color: #75d226;
+    }
+
+    .navbar-fixed {
+        top: 40px;
+        z-index: 100;
+        position: fixed;
+    }
+
+    .spnTitle {
+        font-size: 15px;
+        width: 60%;
+    }
+
+    #newScheduleActions,
+    .basicInstantBntHolder {
+        display: none;
+    }
+
+
+    #leftWrapper {
+        display: block;
+        float: left;
+        padding-top: 10px;
+        position: relative;
+        width: 100%;
+        height: 150px;
+    }
+
+    .leftSchedule {
+        float: none;
+        width: 100%;
+        margin: auto;
+    }
+
+    .pageNavHolderMolile {
+        display: block;
+        float: left;
+        width: 100%;
+        height: auto;
+    }
+
+
+
+    .bntBasicInstantSchedule,
+    .spnADdVideoPopup,
+    .btncustomSchedule {
+        background-image: url(/images/scheduleSteps/instantStep.png);
+        background-repeat: no-repeat;
+        display: block;
+        margin: auto;
+        width: 50%;
+        height: 50px;
+        background-color: #65AB31;
+        line-height: 50px;
+        color: #fff;
+        font-size: 17px;
+        text-transform: capitalize;
+        font-weight: normal;
+        text-align: center;
+        margin-top: 5px;
+        margin-bottom: 0;
+        float: left;
+        background-position: left;
+        background-size: 40px;
+    }
+
+    .spnADdVideoPopup {
+        width: 100%;
+    }
+
+    .btncustomSchedule {
+        background-image: url('/images/scheduleSteps/customStep.png');
+        background-color: #2a99bd;
+    }
+
+    .bntBasicInstantScheduleWide {
+        width: 50%;
+    }
+
+
+    .spnADdVideoPopup {
+        background-image: url('/images/ICONS/videos.png');
+        background-color: #f18a11;
+        background-position: 7px;
+    }
+
+        .spnADdVideoPopup:hover {
+            background-color: #e56f07;
+            text-decoration: underline;
+        }
+
+    .contentShcedule {
+        margin-top: 0;
+        padding-left: 1%;
+        padding-right: 1%;
+    }
+
+    #channelManagementContent,
+    .channelManagementContentUpper,
+    .channelManagementContentInner,
+    #topHolder {
+        height: 160px;
+    }
+
+    #channelInfoHolder {
+        height: 150px;
+    }
+
+
+    #innerRightWrapper {
+        margin-top: 65px;
+        margin-left: 5px;
+    }
+
+    #titleHolder {
+        width: 145px;
+    }
+
+    .autopilotBasic {
+        width: 49%;
+        padding-right: 1%;
+    }
+
+
+    .spnAutopilotBasic {
+        color: #555;
+        display: block;
+        float: right;
+        font-size: 14px;
+        font-weight: bold;
+        height: 20px;
+        line-height: 20px;
+        text-align: right;
+        width: 60px;
+    }
+
+    .infoBasic {
+        display: none;
+    }
+
+    .btnTutorialTourHolder {
+        display: none;
+    }
+
+    .videoBoxNew {
+        width: 23.33333%;
+        height: 200px;
+    }
+
+    .addButtonContainer {
+        height: 160px;
+        background-size: 150%;
+    }
+
+    #newScheduleActionsM {
+        background-color: transparent;
+        display: block;
+        float: left;
+        height: 20px;
+        width: 100%;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+    .autopilotBasicM {
+        width: 50%;
+        float: right;
+        position: absolute;
+        right: 0;
+    }
+
+    .divGetVideosBtnHolder {
+        display: none;
+    }
+
+    #rightWrapper {
+        position: absolute;
+        top: 50px;
+        height: 110px;
+        background-color: transparent;
+        z-index: 99;
+        width: 100%;
+        margin-top: 0;
+        margin-right: 0;
+        float: none;
+        display: none;
+    }
+
+    body #calendarHolder {
+        margin-top: 0;
+        top: 0;
+        display: none;
+    }
+
+    body #calendarHolderMobile {
+        display: block;
+        margin-top: 300px;
+    }
+
+    .customScheduleCreatePopup {
+        width: 300px;
+        height: 500px;
+    }
+
+    .startScheduleOk {
+        width: auto;
+    }
+
+
+
+    #calendarHolder .dhtmlxcalendar_dhx_skyblue div.dhtmlxcalendar_dates_cont ul.dhtmlxcalendar_line {
+        height: 30px !important;
+    }
+
+    .dhtmlxcalendar_dhx_skyblue div.dhtmlxcalendar_dates_cont ul.dhtmlxcalendar_line li {
+        height: 30px !important;
+        line-height: 30px !important;
+    }
+
+    .dhtmlxcalendar_dhx_skyblue div.dhtmlxcalendar_days_cont ul.dhtmlxcalendar_line li {
+        height: 30px !important;
+        line-height: 30px !important;
+        font-size: 11px !important;
+    }
+
+    #calendarHolder .dhtmlxcalendar_dhx_skyblue {
+        width: 100% !important;
+    }
+
+    .dhtmlxcalendar_dhx_skyblue {
+        margin-top: 120px !important;
+    }
+
+    #innerLeftWrapper,
+    .playIconGoToChannel {
+        width: 140px;
+        height: 140px;
+    }
+
+    #topHolder {
+        margin-bottom: 0;
+    }
+
+    .mobileNavSchedule {
+        display: block;
+        float: left;
+        width: 100%;
+        height: 50px;
+    }
+
+    .mobileNavScheduleView {
+        display: block;
+        float: left;
+        width: 50%;
+        height: 50px;
+        text-align: center;
+        color: #fff;
+        background-color: #20667d;
+        line-height: 50px;
+        background-image: url('/images/ICONS/videos.png');
+        background-repeat: no-repeat;
+        background-position: 10px;
+        background-size: 40px;
+    }
+
+    .scheduleView {
+        background-color: #1f446e;
+        background-image: url('/images/scheduleSteps/customStep.png');
+    }
+
+    .mobileScheduleCount {
+        margin-left: 25px;
+        font-size: 25px;
+        color: red;
+        background: #fff;
+        border-radius: 42px;
+        padding-left: 5px;
+        padding-right: 5px;
+        display: none;
+    }
+
+    .leftSortActionHolder {
+        border-top: none;
+    }
+
+
+    .rightnewSchedulePopup {
+        width: 100%;
+        min-width: 100%;
+    }
+
+    .right {
+        width: 100%;
+        min-width: 100%;
+    }
+
+    .imgScheduleThumb {
+        float: right;
+        height: 60px;
+        width: 90px;
+        margin-top: 1px;
+        margin-bottom: 1px;
+    }
+
+    .VideoBoxPlay {
+        background-size: 30px;
+    }
+
+    .VideoBoxRemove {
+        background-size: 25px;
+    }
+
+    .ancEditBlack {
+        right: -12px;
+        top: 0;
+        z-index: 999;
+    }
+}
+
+@media (max-width:760px) {
+
+    #SearchByUrl {
+        margin-top: 10px;
+    }
+
+    #tabsWrapper .inputHolderKeywords {
+        margin-top: 10px;
+    }
+
+    .playerbox, .playerboxVimeo, .playerBoxDMotion, .playerBoxFlowplayer {
+        width: 650px;
+        height: 366px;
+    }
+
+    #playerDmotion {
+        height: 400px;
+    }
+
+    #SearchByUrl {
+        width: 100%;
+    }
+
+    #importPrivateVideoHolder ul#rightSide {
+        float: none;
+        margin: auto;
+    }
+
+    #importPrivateVideoHolder ul#leftSide, #importPrivateVideoHolder ul#rightSide {
+        float: none;
+        margin: auto;
+    }
+}
+
+
+
+
+
+@media (max-width:640px) {
+    .videoBoxduration strong, .videoBoxviews strong, .videoBoxcateg strong,
+    .videoBoxduration, .videoBoxviews, .videoBoxcateg,
+    .videoBoxtitle {
+        font-size: 12px;
+    }
+
+    .videoBoxNew {
+        width: 32%;
+    }
+
+    .mobileScheduleSortingHolder {
+        display: none;
+        float: left;
+        width: 100%;
+    }
+
+    .mobileScheduleSorting {
+        display: block;
+        float: left;
+        width: 25%;
+        text-align: center;
+        height: 50px;
+        line-height: 50px;
+        background-image: url(/images/mobileSortingIconscheduleMobile/category.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 30px;
+        color: transparent;
+    }
+
+
+
+
+    .styled-selectOpt,
+    .leftClearHolder,
+    .styled-selectSort,
+    .iconSearch {
+        display: block;
+        float: left;
+        width: 25%;
+        text-align: center;
+        height: 40px;
+        line-height: 40px;
+        background-image: url(/images/mobileSortingIconscheduleMobile/category.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 22px;
+        color: transparent;
+        border: none;
+        outline: 0;
+        margin-top: -3px;
+    }
+
+    .leftClearHolder {
+        background-image: url('/images/mobileSortingIconscheduleMobile/clear.png');
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .removeAll,
+    .removeAll:hover {
+        color: transparent;
+    }
+
+    .styled-selectSort {
+        background-image: url('/images/mobileSortingIconscheduleMobile/sorting.png');
+    }
+
+    .iconSearch {
+        background-image: url('/images/mobileSortingIconscheduleMobile/search.png');
+        margin-left: 0;
+        opacity: 1;
+    }
+
+    #txtSearchVideoByKeywordForChannel {
+        width: 175px;
+    }
+
+    .ddlCategory,
+    #ddlChannelVideos {
+        color: transparent;
+        outline: 0;
+    }
+
+    .ddlCategoryPopup {
+        color: #555;
+    }
+
+    .ddlCategory option,
+    #ddlChannelVideos option {
+        color: #555;
+        outline: 0;
+    }
+
+    .sortClear {
+        background-image: url('/images/mobileSortingIconscheduleMobile/clear.png');
+    }
+
+    .sortSearch {
+        background-image: url('/images/mobileSortingIconscheduleMobile/search.png');
+    }
+
+    .sortSort {
+        background-image: url('/images/mobileSortingIconscheduleMobile/sorting.png');
+    }
+
+
+    /*.leftSortActionHolder {
+        display: none;
+    }*/
+
+    .bntBasicInstantSchedule,
+    .spnADdVideoPopup,
+    .btncustomSchedule,
+    .scheduleView,
+    .mobileNavScheduleView {
+        font-size: 14px;
+        background-size: 30px;
+        background-position: 1%;
+        box-sizing: border-box;
+        font-weight: 500;
+    }
+
+
+    .bntBasicInstantSchedule, .btncustomSchedule {
+        padding-left: 10%;
+        box-sizing: border-box;
+    }
+
+    .btncustomSchedule {
+        background-image: url('/images/scheduleSteps/customStep.png');
+        background-color: #2a99bd;
+    }
+
+
+    .spnADdVideoPopup {
+        background-image: url(/images/scheduleSteps/addVideosSchedule.png);
+        background-color: #f18a11;
+    }
+}
+
+@media (max-width:550px) {
+
+    .startDateTimePickerHolderLive {
+    width: 86%;
+    padding: 5%;
+}
+
+
+    .liveStartTimePicker, .liveEndTimePicker {
+    height: auto;
+}
+
+    .liveStartTimePicker input, .liveEndTimePicker input {
+    width: 95%;
+}
+    #tabsWrapper .addButtonHolder {
+        background-image: url("/images/addVideoPlus-hover.png");
+        cursor: pointer;
+        display: block;
+        height: 240px;
+        position: absolute;
+        width: 100%;
+        background-position: center;
+        z-index: 1;
+    }
+
+    .playerbox, .playerboxVimeo, .playerBoxDMotion, .playerBoxFlowplayer {
+        width: 320px;
+        height: 180px;
+    }
+
+    #editPrivateVideoModal ul {
+        float: none;
+        width: 100%;
+        margin: auto;
+    }
+
+    .videoSettings.material-icons {
+        top: 80px;
+    }
+
+    #importPrivateVideoHolder .cropit-image-background-container, #editPrivateVideoModal .cropit-image-background-container {
+        width: 280px !important;
+        height: 280px !important;
+    }
+
+    #importPrivateVideoHolder #liImageEditor .cropit-image-preview, #editPrivateVideoModal #liImageEditor .cropit-image-preview {
+        width: 225px;
+        height: 160px;
+    }
+
+    .videoBoxNew {
+        width: 48%;
+        height: 190px;
+    }
+
+    .addButtonContainer {
+        height: 150px;
+    }
+
+    .spnTitle {
+        width: 40%;
+        font-size: 12px;
+    }
+
+    #playerDmotion {
+        height: 200px;
+    }
+}
+
+
+
+
+
+
+
+@media (max-width:460px) {
+
+    .spnAdvancedMode,
+    .spnAutopilotBasic {
+        font-size: 12px;
+        text-align: center;
+    }
+
+
+
+    .spnADdVideoPopup {
+        background-image: none;
+        background-color: #f18a11;
+    }
+
+    .btncustomSchedule {
+        background-color: #2a99bd;
+        background-image: url('/images/scheduleSteps/customStep.png');
+    }
+
+    .spnADdVideoPopup:hover {
+        background-color: #e56f07;
+        text-decoration: underline;
+    }
+
+    .divGetVideosBtnHolder {
+        display: none;
+    }
+
+    #topHolder {
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+
+    #playerDmotion {
+        height: 200px;
+    }
+}
+
+@media (max-width:360px) {
+    .imgScheduleThumb {
+        float: right;
+        height: 40px;
+        width: 60px;
+        margin-top: 12px;
+        margin-bottom: 0;
+        /* margin-right: 40px; */
+    }
+}
+
+@media (max-width:320px) {
+
+    #txtSearchVideoByKeywordForChannel {
+        width: 170px;
+    }
+
+    #innerLeftWrapper, .playIconGoToChannel {
+        width: 90px;
+        height: 90px;
+    }
+
+    #innerLeftWrapper {
+        margin-top: 50px;
+    }
+
+    #titleHolder {
+        margin-top: -15px;
+    }
+
+    .addButtonContainer {
+        height: 120px;
+    }
+
+    .videoSettings.material-icons {
+        top: 60px;
+    }
+
+    .videoBoxNew,
+    .addButtonHolder {
+        height: 170px;
+    }
+}
+
+#durationPopup {
+    width: 400px;
+    height: 400px;
+}
+
+#durationPopupWrapper {
+    background-color: #FFF;
+    width: 400px;
+    height: 400px;
+}
+
+#durationPopup input {
+    float: left;
+}
+
+.hlsLinkHolder
+{
+    width:100%;
+    font-size:20px;
+}

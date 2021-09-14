@@ -1,0 +1,104 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.master.cs" Inherits="StrimmTube.admcp.mgmt.Admin" %>
+
+<!DOCTYPE html>
+
+<html >
+<head runat="server">
+    <title></title>
+
+
+    <link href="../../css/reset.css" rel="stylesheet" type="text/css" />
+  
+    <link href="../../css/CSS.css" rel="stylesheet" type="text/css" />
+    <link href="css/Admin.css" rel="stylesheet" />
+    <link href="../../css/skeleton.css" rel="stylesheet" type="text/css" />
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+   <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="../../jquery/jqueryUi/jquery-ui.min.js"></script>
+      <link href="../../jquery/jqueryUi/jquery-ui.css" rel="stylesheet" />
+    <script src="../../Plugins/popup/jquery.lightbox_me.js"></script>
+   <script src="../../Plugins/date.format.js" type="text/javascript"></script>
+ 
+
+    <style type="text/css">
+        #divTopNavAfterLogin {
+            width: 50%;
+        }
+
+        #form1 {
+            min-height: 1024px;
+        }
+    </style>
+    <script type="text/javascript">
+        var adminUserId = '<%=adminUserId%>';
+        function ToggleMenu() {
+            if ($("#divChannelsCategory").is(":visible")) {
+                $("#divChannelsCategory").hide();
+                $("#divBrowseChannels a #divImg").text(" ").text("▼");
+                toggledBrowseChannelsMenuVisible = false;
+            }
+            if ($("#menuTopList").is(":visible")) {
+                $("#menuTopList").hide();
+                $("#divTopMenuHolder .divImg").text(" ").text("▼");
+                toggledMenuVisible = false;
+            }
+            else {
+                $("#menuTopList").show();
+                $("#divTopMenuHolder .divImg").text(" ").text("▲");
+                toggledMenuVisible = true;
+            }
+        }
+    </script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id="divTopWrapperAdmin" class="ShadowDropDown ">
+            <div id="divTopAdmin">
+
+                <a href="../home">
+                    <div id="divLogo">
+                         <img src="/images/Srtimm-LOGO.svg" />
+                    </div>
+                </a>
+             <%--   <span id="spnAdmin">admin panel</span>--%>
+                <div id="divTopNavAfterLoginAdmin">
+                    <div id="divTopMenuHolder">
+                        <div id="divTopMenuAdmin">
+                            <a id="ancMenu" class="adminMenu"  onclick="ToggleMenu()">
+                   
+                            </a>
+                            <div id="menuTopList">
+                                <div class="ddHolder"><span class="tr"></span></div>
+                                <ul class="menuListDropdown">
+                                    <li><a href="StatisticsNew.aspx">Statistics</a></li>
+                                    <li><a href="UserManagement.aspx">user management</a></li>
+                                    <li><a href="PublicLibrary.aspx">public library</a></li>
+                                      <li><a href="ChannelStatistics.aspx">channel statistics</a></li>
+                                    <li><a href="EmbeddedChannels.aspx">embedded channels</a></li>
+                                     <li><a href="Subscribtions.aspx">embedded channels subscribers</a></li>
+
+
+                                </ul>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div id="divDmainNameHolder">
+                         <asp:Button runat="server" ClientIDMode="Static" ID="btnSignOut" OnClick="btnSignOut_Click" Text="Log Out" />
+                       <asp:Label runat="server" ClientIDMode="Static" Id="spnHello" >Hello, <%=adminName%> </asp:Label>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+
+    </form>
+</body>
+</html>

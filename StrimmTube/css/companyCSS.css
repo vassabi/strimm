@@ -1,0 +1,210 @@
+﻿
+
+        .h1company {
+    color: #fff;
+    font-size: 65px;
+    font-weight: normal;
+    height: 200px;
+    letter-spacing: 1px;
+    line-height: 250px;
+    margin: auto;
+    text-align: center;
+}
+
+
+        #divBoardContent {
+float: none; 
+    margin: auto;
+    width: 96%;
+    max-width: 1520px;
+}
+
+        #divContentWrapper {
+height: auto;
+margin-left: auto;
+margin-right: auto;
+margin-top: 50px;
+margin-bottom: 100px;
+        }
+
+
+            #divContentWrapper p {
+font-weight: normal;
+font-size: 15px;
+line-height: 25px;
+margin-bottom: 10px;
+height: 100%;
+            }
+
+        .companyIMG {
+            display: block;
+            float: left;
+            margin-right: 20px;
+            width: 150px;
+        }
+            .companyIMG img {
+                width: 150px;
+            }
+
+        .companyHolder {
+    background-image: url("/images/companyHolder.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+    position: relative;
+}
+
+        .companySubTitle {
+color: #2a99bd;
+    font-size: 20px;
+    font-weight: normal;
+    display: block;
+    margin-bottom: 10px;
+        }
+        .companyPageTitle {
+            display: block;
+            float: left;
+
+        }
+
+        .margin30 {
+    margin-top: 30px;
+        }
+                .margin50 {
+    margin-top: 50px;
+        }
+
+
+        .teamHolder {
+            display: block;
+            float: left;
+            width: 100%;
+            height: auto;
+            margin-bottom: 50px;
+        }
+
+        .blockTitle {
+    color: #2a99bd;
+    font-size: 40px;
+  
+    font-weight: normal;
+    display: block;
+    height: 100px;
+    line-height: 0;
+    text-align: center;
+    text-transform: capitalize;
+
+        }
+
+        .lineHolder {
+    display: block;
+    width: 90%;
+    margin-bottom: 50px;
+    margin: auto;
+    height: auto;
+        }
+
+        .teamMemberBlock {
+display: block;
+float: left;
+height: auto;
+width: 33%;
+        }
+.executive {
+width: 50%;
+margin-bottom: 50px;
+}
+
+
+        .teamMemberImg {
+    height: 225px;
+    margin: auto;
+    width: 280px;
+}
+
+        .teamMemberName {
+    display: block;
+    float: left;
+    width: 100%;
+  
+    font-size: 22px;
+    color: #2a99bd;
+    text-align: center;
+    height: 50px;
+    line-height: 75px;
+        }
+
+        .teamMemberPosition {
+            display: block;
+            float: left;
+            width: 100%;
+          
+            font-size: 17px;
+            color: #000;
+            text-align: center;
+            height: 30px;
+            line-height: 30px;
+        }
+
+        .teamMemberInfo {
+            display: block;
+            float: left;
+            width: 100%;
+          
+            font-size: 15px;
+            color: #555;
+            line-height: 25px;
+            text-align: center;
+        }
+
+        .stayTuned {
+            display: block;
+            float: left;
+            width: 100%;
+            text-align: center;
+          
+            font-size: 17px;
+            color: #555;
+            margin-bottom: 50px;
+        }
+
+@media (max-width:1024px) {
+.teamMemberBlock {
+    display: block;
+    float: left;
+    width: 50%;
+    height: 340px;
+}
+}
+
+
+@media (max-width:760px) {
+ .companyHolder {
+height: auto;
+min-height: 200px;
+}
+
+ .h1company {
+color: #fff;
+    font-size: 30px;
+;
+    position: absolute;
+    bottom: 20px;
+    left: 10px;
+    height: auto;
+    line-height: normal;
+}
+
+    .companyIMG,
+    .companyIMG img {
+        width: 70px;
+    }
+
+
+}
+
+@media (max-width:590px) {
+    .teamMemberBlock {
+        width: 100%;
+    }
+}

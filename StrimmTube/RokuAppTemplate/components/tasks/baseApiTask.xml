@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<component name = "BaseTask" extends = "Task" >
+ 
+  <interface>
+    <field id = "params" type="assocarray" />
+    <field id = "responseNode" type="node" alwaysNotify="true" />
+    <field id = "responseAA" type="assocarray" alwaysNotify="true" />
+  </interface>
+ 
+  <script type = "text/brightscript" >
+    <![CDATA[
+ 
+    sub init()
+      m.top.functionName = "executionDone"
+    end sub
+
+    sub executionDone()
+      m.top.control = "DONE"
+    end sub
+
+
+    sub setAppConfig()
+      if not m.global.hasField("config")
+        localConfig = parseJson(readasciifile("pkg:/data/config.json"))
+        if localConfig = invalid then localConfig = {}
+        if localConfig.themes = invalid then localConfig.themes = ["Main" ]
+        localConfig.currentTheme = evalInteger(regRead("theme", constants().regSection))
+        localConfig.theme = parseJson(readasciifile("pkg:/data/" + localConfig.themes[localConfig.currentTheme] + ".theme"))
+        m.global.addFields({config: localConfig})
+      end if
+    end sub
+
+
+    sub initTask()
+      setupGlobals()
+      setAppConfig()
+      getRemoteSettings()
+      m.top.responseAA = invalid
+      m.top.control = "DONE"
+    end sub
+
+    ]]>
+  </script>
+  <script type="text/brightscript" uri="pkg:/components/nodeUtils.brs" />
+  <script type="text/brightscript" uri="pkg:/source/generalUtils.brs" />
+  <script type="text/brightscript" uri="pkg:/source/api.brs" />
+  <script type="text/brightscript" uri="pkg:/source/urlUtils.brs" />
+</component>

@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Strimm.SqlCompare", "Strimm.SqlCompare\Strimm.SqlCompare.csproj", "{2E3413A3-1DF0-44C6-89E5-83DE5AFD4AFB}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 2
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://tfs2013.strimm.com:8080/tfs/strimmtubetfs
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Strimm.SqlCompare\\Strimm.SqlCompare.csproj
+		SccProjectName1 = Strimm.SqlCompare
+		SccLocalPath1 = Strimm.SqlCompare
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2E3413A3-1DF0-44C6-89E5-83DE5AFD4AFB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E3413A3-1DF0-44C6-89E5-83DE5AFD4AFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E3413A3-1DF0-44C6-89E5-83DE5AFD4AFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E3413A3-1DF0-44C6-89E5-83DE5AFD4AFB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

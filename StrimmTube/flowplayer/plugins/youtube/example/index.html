@@ -1,0 +1,2219 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">  
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+
+		<title></title>
+
+ 
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
+
+	<script src="flowplayer-3.2.12.min.js"></script>
+
+
+
+
+
+
+</head>
+
+<body id="plugins_youtube">
+
+
+	<div id="wrap">			 
+<link rel="stylesheet" type="text/css" href="bwcheck.css" />
+<script src="flowplayer.playlist-3.2.10.min.js"></script>
+<script src="flowplayer.youtube-3.2.11.js"></script>
+<script type="text/javascript" src="jquery.showtime.js"></script>
+<script type="text/javascript" src="jquery.prettynumber.js"></script>
+<script type="text/javascript" src="jquery.overscroll.min.js"></script>
+<script type="text/javascript" src="flowplayer.bitrateselect-3.2.10.min.js"></script>
+
+
+
+<style type="text/css">
+
+
+#ytube {
+    float:left;
+    height:278px;
+    width:385px;
+    display:block;
+}
+
+#playlist1 {
+    display: none;
+    width:260px;
+    height:500px;
+    overflow-y:hidden;
+    overflow-x:hidden;
+    margin:0 0 0 0;
+    padding:0px;
+    float:right;
+    margin-left:0px;
+    margin-top:0px;
+
+}
+
+#playlist2 {
+	display: none;
+    width:260px;
+    height:500px;
+    overflow-y:hidden;
+    overflow-x:hidden;
+    margin:0 0 0 0;
+    padding:0px;
+    float:right;
+    margin-left:0px;
+    margin-top:0px;
+
+}
+
+.playlist a:hover {
+    background-color:#ffc;
+}
+
+.playlist a.progress {
+    background-color:#efefef;
+}
+
+.playlist a.playing {
+    border:1px solid #666;
+    background-color:#ffc;
+}
+
+.playlist a.paused {
+    border:1px solid #666;
+    background-color:#ffc;
+}
+
+
+.active {
+   pointer-events: none;
+   cursor: default;
+   background-color:#d1e1fa;
+}
+
+#content-container {
+    display: none;
+    float:left;
+    width:490px;
+    height:165px;
+    padding-left: 5px;
+    padding-top: 10px;
+    overflow-y:hidden;
+    overflow-x:hidden;
+}
+
+
+
+
+
+.playlist a {float:left;clear:none; margin:0 0 0 0; padding:0px;}
+.playlist a {width:260px;text-decoration:none; margin:0 0 0 0; padding:0px;}
+.playlist a {padding:2px;display:block;overflow:hidden;color:#000;zoom:1;*cursor:pointer; background-color:#fff;}
+
+
+.playlist a.selected{background:#d1e1fa}
+.playlist a:hover {background:#d1e1fa;text-decoration:none}
+.playlist a:visited .title{color:#408}
+.playlist a:hover .title{text-decoration:underline}
+.playlist a:visited .video-thumb .img{opacity:0.75;filter:alpha(opacity=75)}
+.playlist a:hover .video-thumb .img{opacity:1;filter:none}
+.playlist a .title{font-size:1.0833em;font-weight:normal;line-height:1.2;color:#03c;width:180px;max-height:32px;margin-bottom:2px;overflow:hidden;cursor:pointer;cursor:hand}
+.playlist a .stat{display:block;font-size:.9166em;color:#666;line-height:1.4em;height:1.4em;overflow:hidden}
+.playlist a .stat strong{color:#000}
+
+.playlist a .video-time{display:block;font-size:.9166em;color:#666;line-height:1.4em;height:1.4em;overflow:hidden}
+
+.playlist a img {float:left;clear:none;width:120px; height:90px; padding-right: 5px;}
+
+#playlist2 a  {height:50px;}
+
+#content .mainbox {
+	border:1px solid #ccc;
+	background-color:#FFFFFF;
+	margin:0 0 0 0;
+	padding:0px;
+    padding-left:0px;
+    width:750px;
+    height:500px;
+
+	/* outline radius */
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+}
+
+
+
+
+</style>
+
+<div id="content">
+		
+
+<h1>
+	<strong>Youtube</strong> 
+	<em>Play YouTube videos directly within Flowplayer</em>
+</h1>
+
+<br><br>
+<p>The YouTube Flowplayer plugin uses the AS3 API to show the Youtube videos using Flowplayer and the Javascript iframe API for IOS fallback.
+</p>
+
+<div class="mainbox white">
+    <div style="float:left;width:490px;height:650px;">
+
+        <a id="related" href="api:Q_6qRyYn-68" style="float:left;width:490px;height:350px;"></a>
+        <div id="content-container">
+            <div id="description"></div>
+            <br>
+            <div id="category">
+                <b>Category:</b><br>
+                <span id="category-content"></span>
+
+            </div>
+            <br>
+            <div id="tags">
+                <b>Tags:</b><br>
+                <span id="tags-content"></span>
+            </div>
+      </div>
+
+
+    </div>
+
+    <div id="playlist1" class="playlist"
+
+    </div>
+
+</div>
+
+<br clear="all" />
+
+
+
+<script type="text/javascript">
+
+
+function formatContent(text){
+    if (text) {
+        text = text.replace(
+            /((https?\:\/\/)|(www\.))(\S+)(\w{2,4})(:[0-9]+)?(\/|\/([\w#!:.?+=&%@!\-\/]))?/gi,
+            function(url){
+                var full_url = url;
+                if (!full_url.match('^https?:\/\/')) {
+                    full_url = 'http://' + full_url;
+                }
+                return '<a href="' + full_url + '" target="_blank">' + url + '</a>';
+            }
+        ).replace(/(\r\n|\r|\n)/g, "<br />");
+    }
+    return text;
+}
+
+function showInfo(gdata, container) {
+
+
+    $('#category-content').html(gdata.category);
+
+    $('#description').html(formatContent(gdata.content));
+
+    $('#content-container').show();
+
+}
+
+
+function showRelatedList(gdata, container) {
+    var relatedVideos = gdata.relatedVideos;
+    var content = '';
+
+    content += "\t" + '<a href="'+ gdata.url +'" class="first active">' + "\n";
+    content += "\t\t" + '<img src="'+ gdata.defaultThumbnail +'"/>' + "\n"
+    content += "\t" + '<span dir="ltr" class="title" title="'+ gdata.title +'">'+ gdata.title +'</span>' + "\n";
+    content += "\t" + '<span class="stat">by ' + gdata.author.name + '</span><span class="stat view-count">'+ gdata.statistics.viewCount +' views</span>' + "\n";
+    content += "\t\t" + '<span class="video-time">' + gdata.duration + '</span>' + "\n";
+    content += "\t" + '</a>' + "\n";
+
+    //add the html for the first playlist item
+    $(container).html(content);
+
+
+    jQuery.each( relatedVideos, function(index, item){
+        $f("related").addClip({
+                    provider: "youtube",
+                    url: item.url,
+                    thumbnail: item.defaultThumbnail,
+                    yttitle: item.title,
+                    author: item.author.name,
+                    views: item.statistics.viewCount,
+                    ytduration: item.duration
+
+        });
+    });
+
+
+
+
+    $("#content-container a .view-count").prettynumber({
+        delimiter : ','
+    });
+
+    $(container).overscroll();
+
+
+    $('#content-container a .video-time').showTime();
+    $(container).show();
+}
+
+
+var shownRelatedList = false;
+var playlistTemplate = "\t" + '<a href="${url}">' + "\n";
+playlistTemplate += "\t\t" + '<img src="${thumbnail}"/>' + "\n"
+playlistTemplate += "\t" + '<span dir="ltr" class="title">${yttitle}</span>' + "\n";
+playlistTemplate += "\t" + '<span class="stat">by ${author}</span><span class="stat view-count">${views} views</span>' + "\n";
+playlistTemplate += "\t\t" + '<span class="video-time">${ytduration}</span></a>' + "\n";
+
+$f("related", "../flowplayer.swf", {
+
+	plugins:  {
+		youtube: {
+			url:'../flowplayer.youtube-3.2.11.swf',
+            enableGdata: true,
+            loadOnStart: false,
+			onVideoRemoved: function() {
+                //console.log("Video Removed");
+			},
+			onVideoError: function() {
+                //console.log("Incorrect Video ID");
+            },
+			onEmbedError: function() {
+                //console.log("Embed Not Allowed");
+            },
+            onApiData: function(data) {
+                // use the function defined above to show the related clips
+                showInfo(data, "#playlist1");
+
+                //load the related list for the first clip only
+                if (shownRelatedList) return;
+                showRelatedList(data, "#playlist1");
+                shownRelatedList = true;
+
+            },
+            displayErrors: true
+		}
+	},
+	clip: {
+		provider: 'youtube',
+        url: 'api:YE7VzlLtp-4',
+        autoPlay: false,
+        start: 10,
+        duration: 10,
+        autoBuffering: true
+	},
+    log: {
+        level: 'debug',
+        filter: 'org.flowplayer.analytics.*, org.electroteque.youtube.*, org.flowplayer.controller.*'
+    }
+
+}).youtube().playlist("#playlist1", {continuousPlay: true, template: playlistTemplate});
+
+
+</script>
+
+
+<p>
+This demonstrates a setup to play a video from Youtube with a manually configured playlist of Youtube videos. Additionally fetches
+info about each video from the Gdata API.
+</p>
+
+
+
+<p>
+	The plugin can obtain a list of quality levels to be used for a bitrates config array to be used with the bwcheck and bitrateselect plugin.
+	The plugin can also be used without the bwcheck plugin to display a list of Youtube video quality levels to select manually.
+</p>
+
+<p>
+	The plugin also obtains a list of related videos from the Gdata API feed and configures a related config array to be used with building related video playlists. The data information can also be obtained from the event onApiData.
+</p>
+
+<p>
+	The plugin works with manual playlists aswell in combination with the flowplayer playlist javascript api. 
+</p>
+
+<h2>Features</h2>
+
+<ul>
+    <li>Chromeless player support with full functionality and integration with other flowplayer plugins.</li>
+    <li>Provides an event for obtaining detailed data for the video to be used for
+    customised features via the javascript API and Youtube Gdata.</li>
+    <li>Full control of the player controls including fullscreen.</li>
+    <li>Chrome embedded player support with full chrome configuration support.</li>
+    <li>Full playlist support provided by Flowplayer.</li>
+    <li>HD quality toggle support with the bwcheck and bitrateselect plugins.</li>
+    <li>Support for Bandwidth Checking and bitrate selection, Video Quality Selection and Related Videos features.</li>
+    <li>Provides events for obtaining detailed data for the video to be used for customised features aswell as quality level changes via the javascript API.</li>
+    <li>Ipad fallback support with a Javascript plugin.</li>
+</ul>
+
+<h2>Known Issues</h2>
+
+<ul>
+   <li>The javascript plugin for IOS fallback provides near features to the Flash plugin but due to limitations with the Flowplayer wrapper requires to override embedding and replicating some api
+   features therefore integration with the ipad plugin for normal videos in the same playlist will not work. A possible work around is loading the javascript plugins on demand using the `load` api method on the plugin call. </li>
+</ul>
+
+
+
+<h3>(Current Version 3.2.11)</h3>
+
+<h2>Compatibility</h2>
+
+<ul>
+    <li>Flowplayer 3.2.6 to 3.x.x</li>
+    <li>Bwcheck Plugin version 3.2.8 and above</li>
+    <li>Bitrateselect Plugin version 3.2.8 and above</li>
+</ul>
+
+<h2>Changes since 3.2.10</h2>
+<ul>
+    <li>Fixes with issues with seeking in Flowplayer 3.2.15 and above.</li>
+    <li>Fixes seeking backwards in the buffer with the Flowplayer javascript api.</li>
+    <li>Fixes for buffering measurements.</li>
+</ul>
+
+<h2>Changes since 3.2.9</h2>
+<ul>
+    <li>Refactoring of the IOS fallback Javascript plugin to work with multiple videos on the page and provide more features of the Flowplayer API.</li>
+</ul>
+
+<h2>Changes since 3.2.8</h2>
+<ul>
+    <li>Fixed issue with start time feature.</li>
+     <li>Fixed issue with start time feature used in conjunction with the auto buffering feature.</li>
+</ul>
+
+<h2>Changes since 3.2.7</h2>
+<ul>
+    <li>Fixed issue with the auto buffering feature.</li>
+</ul>
+
+
+
+<h2>Changes since 3.2.6</h2>
+
+<ul>
+    <li>HD quality toggle support with the ability of selecting a default quality.</li>
+    <li>Fixed issues with player resizing.</li>
+    <li>Fixed api changes to seeking. </li>
+    <li>Added ability to customise bitrate labels for the bitrate selection.</li>
+    <li>Fixed issues with playback completion.</li>
+    <li>Fixed issue setting ad overlay click area height setting.</li>
+    <li>Fixed duration and playback completion issues with youtube videos providing inaccurate duration information.</li>
+    <li>Fixed issue with multiple hd options and providing an option to choose which video is a hd clip. </li>
+    <li>Fixed issue with videos with only two bitrates and no hd clip available, will not toggle the hd button. </li>
+    <li>Added ability to load the api on request.</li>
+    <li>Added option to load the api via secure server urls.</a>
+    <li>Removed the need for the extra config urlResolvers, the plugin will use itself as default.</li>
+    <li>Fixed a problem with auto buffering which requires muting the audio first.</li>
+</ul>
+
+<h2>Changes since 3.2.4</h2>
+
+<ul>
+    <li>Ads overlay container support.</li>
+    <li>Video playback error event callback support.</li>
+    <li>Chrome embedded player support. </li>
+</ul>
+
+<div>
+<h2>Plugin Available For Purchase via Paypal</h2> <br>
+
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="UVSTW794Z4EQ8">
+<table>
+<tr><td><input type="hidden" name="on0" value="License Options">License Options</td></tr><tr><td><select name="os0">
+	<option value="Single Domain - Suits Small Sites">Single Domain - Suits Small Sites $210.00 AUD</option>
+	<option value="Multi Domain - Suits Larger Sites">Multi Domain - Suits Larger Sites $420.00 AUD</option>
+	<option value="Unlimited - Suits distribution with your software">Unlimited - Suits distribution with your software $1,000.00 AUD</option>
+	<option value="Single Domain Not For Profit">Single Domain Not For Profit $110.00 AUD</option>
+	<option value="Single Domain - Bundled With Dailymotion,Vimeo Plugins 20%">Single Domain - Bundled With Dailymotion,Vimeo Plugins 20% $288.00 AUD</option>
+	<option value="Multi Domain - Bundled With Dailymotion,Vimeo Plugins 30%">Multi Domain - Bundled With Dailymotion,Vimeo Plugins 30% $504.00 AUD</option>
+	<option value="Single Domain Bundle with Flowplayer 5 Plugin Version 20%">Single Domain Bundle with Flowplayer 5 Plugin Version 20% $320.00 AUD</option>
+	<option value="Multi Domain Bundle with Flowplayer 5 Plugin Version 30%">Multi Domain Bundle with Flowplayer 5 Plugin Version 30% $590.00 AUD</option>
+</select> </td></tr>
+<tr><td><input type="hidden" name="on1" value="Domain(s)">Domain(s)</td></tr><tr><td><input type="text" name="os1" maxlength="200"></td></tr>
+</table>
+<input type="hidden" name="currency_code" value="AUD">
+<input type="image" src="https://www.paypalobjects.com/en_AU/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal — The safer, easier way to pay online.">
+<img alt="" border="0" src="https://www.paypalobjects.com/en_AU/i/scr/pixel.gif" width="1" height="1">
+</form>
+
+
+
+
+
+
+
+
+
+
+
+    <p class="higher">
+        <button class="custom medium" onclick="location.href = '#download'">Download Demo</button>
+        <small>(Version <strong>3.2.10</strong>)</small>
+    </p>
+
+</div>
+
+
+<h2>License Update</h2>
+<p>The initial cost for setup for small blog sites / not for profit has been reduced on feedback, for commercial sites use the single and multi domain license as normal.</p>
+
+<h2>License Information</h2>
+
+<p>The Youtube Plugin is a once off commercial license with updates and support to the Youtube plugin only.
+    Flowplayer related questions and support may be provided on their forums at <a href="http://flowplayer.org/forum/index.html">http://flowplayer.org/forum/index.html</a></p>
+
+<ul>
+    <li>Single Domain License - Suitable for small to medium sites / blog sites / not for profit with updates and unlimited support included.</li>
+    <li>Multi Domain License - Suitable for larger commercial sites and video platform sites with updates, feature requests and unlimited priority support included.</li>
+    <li>Unlimited - Suitable for distributing with software, provided will be the plugin as an actionscript library to compile into the flopwlayer unlimited player.</li>
+</ul>
+
+
+<h2>Note:</h2>
+
+<p>With your purchase please provide your domains to be provided with your licensed plugin. New domains need to be requested manually for the moment. </p>
+
+
+<h2>List Of Examples</h2>
+
+<ul>
+	<li><a href="#manualVideoPlaylist">Youtube Video Playlist Example.</a></li>
+    <li><a href="#hd">Youtube with HD Selection Example.</a></li>
+	<li><a href="#bwcheck">Youtube with Bandwidth Check Example.</a></li>
+	<li><a href="#quality">Youtube with Video Quality Selection Example.</a></li>
+	<li><a href="#chrome">Embedded Chrome Player Example.</a></li>
+	<li><a href="#poster">Poster Splash Image Example.</a></li>
+</ul>
+
+<h2>Examples</h2>
+
+<a name="basic"></a>
+<h2>Example of Youtube videos in a playlist</h2>
+
+<h3>Flowplayer configuration</h3>
+
+<p>The clip object sets the YouTube plugin to be the video's streaming provider and URL resolver: </p>
+
+
+<div class="box code">
+<pre><code class="javascript">
+
+function formatContent(text){
+    if (text) {
+        text = text.replace(
+            /((https?\:\/\/)|(www\.))(\S+)(\w{2,4})(:[0-9]+)?(\/|\/([\w#!:.?+=&%@!\-\/]))?/gi,
+            function(url){
+                var full_url = url;
+                if (!full_url.match('^https?:\/\/')) {
+                    full_url = 'http://' + full_url;
+                }
+                return '<a href="' + full_url + '" target="_blank">' + url + '</a>';
+            }
+        ).replace(/(\r\n|\r|\n)/g, "<br />");
+    }
+    return text;
+}
+
+function showInfo(gdata, container) {
+
+
+    $('#category-content').html(gdata.category);
+
+    $('#description').html(formatContent(gdata.content));
+
+    $('#content-container').show();
+
+}
+
+
+function showRelatedList(gdata, container) {
+    var relatedVideos = gdata.relatedVideos;
+    var content = '';
+
+    content += "\t" + '<a href="'+ gdata.url +'" class="first active">' + "\n";
+    content += "\t\t" + '<img src="'+ gdata.defaultThumbnail +'"/>' + "\n"
+    content += "\t" + '<span dir="ltr" class="title" title="'+ gdata.title +'">'+ gdata.title +'</span>' + "\n";
+    content += "\t" + '<span class="stat">by ' + gdata.author.name + '</span><span class="stat view-count">'+ gdata.statistics.viewCount +' views</span>' + "\n";
+    content += "\t\t" + '<span class="video-time">' + gdata.duration + '</span>' + "\n";
+    content += "\t" + '</a>' + "\n";
+
+    //add the html for the first playlist item
+    $(container).html(content);
+
+
+    jQuery.each( relatedVideos, function(index, item){
+        var content = '';
+        content += "\t" + '<a href="'+ item.url +'" '+ (index==0 ? 'class="first"' : "") +'>' + "\n";
+        content += "\t\t" + '<img src="'+ item.defaultThumbnail +'"/>' + "\n"
+        content += "\t" + '<span dir="ltr" class="title" title="'+ item.title +'">'+ item.title +'</span>' + "\n";
+        content += "\t" + '<span class="stat">by ' + item.author.name + '</span><span class="stat view-count">'+ item.statistics.viewCount +' views</span>' + "\n";
+        content += "\t\t" + '<span class="video-time">' + item.duration + '</span></a>' + "\n";
+
+        //append the html for the related video item
+        $(container).append(content);
+        //add the related video to the playlist
+        $f("related").addClip({ url: item.url });
+    });
+
+
+
+
+    $("#content-container a .view-count").prettynumber({
+        delimiter : ','
+    });
+
+    $(container).overscroll();
+
+
+    $('#content-container a .video-time').showTime();
+    $(container).show();
+}
+
+
+var shownRelatedList = false;
+
+$f("related", "../flowplayer.swf", {
+
+	plugins:  {
+
+		youtube: {
+			url:'../flowplayer.youtube-3.2.11.swf',
+            enableGdata: true,
+            loadOnStart: false,
+			onVideoRemoved: function() {
+                //console.log("Video Removed");
+			},
+			onVideoError: function() {
+                //console.log("Incorrect Video ID");
+            },
+			onEmbedError: function() {
+                //console.log("Embed Not Allowed");
+            },
+            onApiData: function(data) {
+                // use the function defined above to show the related clips
+                showInfo(data, "#playlist1");
+
+                //load the related list for the first clip only
+                if (shownRelatedList) return;
+                showRelatedList(data, "#playlist1");
+                shownRelatedList = true;
+
+            },
+            displayErrors: true
+		}
+	},
+	clip: {
+		provider: 'youtube',
+        url: 'api:YE7VzlLtp-4',
+        autoPlay: false
+	},
+    log: {
+        level: 'debug',
+        filter: 'org.electroteque.youtube.*, org.flowplayer.controller.*'
+    }
+
+}).youtube().playlist("#playlist1", {continuousPlay: true});
+</code></pre>
+</div>
+
+
+<h2>Configuration</h2>
+
+
+<p>
+    Here is a list of the configuration options:
+</p>
+<table class="listing">
+	<thead>
+		<tr>
+			<th nowrap>property / datatype</th>
+			<th>default</th>
+			<th>description</th>
+		</tr>
+	</thead>
+
+    <tr>
+        <td class="code">enableGdata <div class="type">boolean</div></td>
+        <td class="code default">false</td>
+        <td class="description">
+			When enabled the Gdata feed will be collected and video information will be returned via the onApiData event. This will collect information like related videos, category, tags, title, description etc.
+        </td>
+    </tr>
+    <tr>
+        <td class="code">bitratesOnStart <div class="type">boolean</div></td>
+        <td class="code default">false</td>
+        <td class="description">
+			This setting will tell the plugin to obtain the quality levels / bitrates for the video before startup. 
+			This is required when used in combination with the bwcheck plugin to fill the bitrates list dynamically, this is required as the Youtube API does not expose bitrates before playback or via their data API.  
+        </td>
+    </tr>
+    <tr>
+        <td class="code">qualityLabels <div class="type">object</div></td>
+        <td class="code default"></td>
+        <td class="description">
+			Provide quality labels to be used for generating the bitrates list with the bitrateselect plugin. The keys for the config object are the youtube quality levels
+            hd720, large, medium, small and their corresponding labels.
+        </td>
+    </tr>
+    <tr>
+        <td class="code">hd <div class="type">boolean</div></td>
+        <td class="code default">false</td>
+        <td class="description">
+			Enables hd toggling mode when obtaining bitrates for a video to be used with the bitrateselect plugin. This will provide a list of a large and hd clip. If there is no hd clip available
+            the hd button wil be disabled.
+        </td>
+    </tr>
+    <tr>
+        <td class="code">hdLevel <div class="type">string</div></td>
+        <td class="code default"></td>
+        <td class="description">
+			If set, this option enables selecting which youtube quality level is a hd clip to be used in combination of the hd option and bitrateselect plugin. Possible options are hd720 or hd1080.
+            If hd720 is chosen, bitrate toggling options are large and hd720. If hd1080 is chosen bitrate toggling options are large and hd1080.
+            By default if there is a hd1080 quality option hd720 is removed from the selection and hd1080 is chosen as the hd clip.
+        </td>
+    </tr>
+    <tr>
+        <td class="code">defaultQuality <div class="type">string</div></td>
+        <td class="code default">default</td>
+        <td class="description">
+            The default quality level (default,medium,large,hd720). If used in conjunction with the hd toggle feature, setting a default quality here will start
+            playback with the desired default bitrate, if setting to hd720 as default, the hd button feature will toggle to hd automatically.
+        </td>
+    </tr>
+    <tr>
+        <td class="code">videoFormats <div class="type">array</div></td>
+        <td class="code default"></td>
+        <td class="description">
+			Obtain the preset youtube video format information. 
+        </td>
+    </tr>
+    <tr>
+        <td class="code">displayErrors <div class="type">boolean</div></td>
+        <td class="code default">false</td>
+        <td class="description">
+			Setting to enable youtube errors to be displayed for debugging purposes, or use the javascript callback functions and //console.logging.
+        </td>
+    </tr>
+    <tr>
+        <td class="code">apitype <div class="type">string</div></td>
+        <td class="code default">chromeless</td>
+        <td class="description">
+			Valid options are chromeless to display the chromeless player or chrome to display the embedded chrome player.
+        </td>
+    </tr>
+    <tr>
+        <td class="code">adOverlayHeight <div class="type">number</div></td>
+        <td class="code default">100</td>
+        <td class="description">
+			The height in pixels at the bottom to accomodate for youtube ad overlays. This will provide access to the ads overlay to be able to click the close buttons without intefering
+            with the flowplayer screen controls.
+        </td>
+    </tr>
+    <tr>
+        <td class="code">chrome <div class="type">object</div></td>
+        <td class="code default"></td>
+        <td class="description">
+			Settings for the chrome player.
+        </td>
+    </tr>
+    <tr>
+        <td class="code">durationTracking <div class="type">boolean</div></td>
+        <td class="code default">false</td>
+        <td class="description">
+			Youtube videos do not return the correct duration immediately until 1 second has passed, it will first return a second accurate representation. Some versions of Flowplayer are affected by the inaccurate
+            duration and do no complete correctly. Enabling durationTracking resets the clip duration after a second has passed. Future versions of flowplayer have the corrected duration tracking and end correctly.
+        </td>
+    </tr>
+    <tr>
+        <td class="code">loadOnStart <div class="type">boolean</div></td>
+        <td class="code default">true</td>
+        <td class="description">
+			By default the plugin will load the api on player load. By turning this off the api will load on request when working with other video providers in a playlist.
+        </td>
+    </tr>
+    <tr>
+        <td class="code">secure <div class="type">boolean</div></td>
+        <td class="code default">false</td>
+        <td class="description">
+			When loading the player in a secure server environment, enable this to load the Youtube api via secure server also.
+        </td>
+    </tr>
+</table>
+
+<h2>Handling Aspect Ratios</h2>
+<p>The Youtube API does not handle or dispatch video metadata or aspect ratio information unless the data api is requested which could cause slow startup times. Therefore
+to configure an older Youtube video or a particular video in 4x3 aspect ratios instead of 16x9 set the clip playlist item property `aspectNormal` to true.</p>
+
+<p>This will configure the metadata and internal video dimensions to the 4x3 aspect ratio dimensions instead of the default widescreen dimensions for a selected video quality.</p>
+
+
+<div class="box code">
+<pre><code class="javascript">
+   clip: {
+        ...
+        aspectNormal: true
+        ...
+   }
+</code>
+</pre>
+</div>
+
+<a name="manualVideoPlaylist"></a>
+<h2><em>Youtube Video Playlist</em> Example</h2>
+
+
+<p>
+    This example demonstrates using a manual playlist config with youtube videos.   
+</p>
+
+
+
+<div style="width:960px;">
+
+
+<!-- player container-->
+
+
+<a
+	style="display:block;width:660px;height:350px;float:left;"
+	id="manualVideoPlaylist">
+
+    <img src="/images/bbb.jpg"/>
+
+</a>
+
+<div id="playlistContainer" style="float:left;width:260px;margin-left:5px; margin-top:0px;">
+<b>Youtube Videos Playlist:</b><br/>
+
+ <div id="playlist2" class="playlist">
+			<a href="${url}">
+				
+				<span dir="ltr" class="title">${title}</span>
+				
+			</a>
+ </div>
+
+
+</div>
+
+
+<!-- Flowplayer installation and configuration -->
+<script language="JavaScript">
+
+$(function() {
+
+$f("manualVideoPlaylist", "../flowplayer.swf", {
+	// configure the required plugin
+	playlist: [
+			       {
+						url: 'api:YE7VzlLtp-4',
+						provider: 'youtube',
+						title: 'Bick Buck Bunny'
+						
+				   },
+				   {
+						url: 'http://vod01.netdna.com/vod/demo.flowplayer/Extremists.flv',
+                        provider: 'http',
+						urlResolvers: null	,
+						title: 'Extremists'
+					},
+				   {
+				   		url: 'api:bsGEWHNJ3s8',
+				   		provider: 'youtube',
+						title: 'Elephants Dream'
+				   }
+    ],
+    onLoad: function() {
+        $("#playlist2").show();
+    },
+
+	plugins:  {
+		
+		controls: { autoHide: true, playlist: true },
+		youtube: {
+				url:'../flowplayer.youtube-3.2.11.swf',
+                onVideoRemoved: function() {
+                    //console.log("Video Removed");
+                },
+                onVideoError: function() {
+                    //console.log("Incorrect Video ID");
+                },
+                onEmbedError: function() {
+                    //console.log("Embed Not Allowed");
+                }
+					
+		}
+	},
+	clip: {
+        autoPlay: true
+	},
+	log: {
+        level: 'debug',
+        filter: 'org.flowplayer.controller.*,org.flowplayer.youtube.*'
+    }
+	
+}).youtube().playlist("#playlist2", {loop:true});
+
+});
+</script>	
+
+
+</div>
+
+<br clear="all" />
+
+
+<div class="box code">
+<pre><code class="javascript">
+
+$(function() {
+
+$f("manualVideoPlaylist", "../flowplayer.swf", {
+	// configure the required plugin
+	playlist: [
+			       {
+						url: 'api:YE7VzlLtp-4',
+						provider: 'youtube',
+						title: 'Bick Buck Bunny'
+
+				   },
+				   {
+						url: 'http://vod01.netdna.com/vod/demo.flowplayer/Extremists.flv',
+                        provider: 'http',
+						urlResolvers: null	,
+						title: 'Extremists'
+					},
+				   {
+				   		url: 'api:bsGEWHNJ3s8',
+				   		provider: 'youtube',
+						title: 'Elephants Dream'
+				   }
+    ],
+    onLoad: function() {
+        $("#playlist2").show();
+    },
+
+	plugins:  {
+
+		controls: { autoHide: true, playlist: true },
+		youtube: {
+				url:'../flowplayer.youtube-3.2.11.swf',
+                onVideoRemoved: function() {
+                    //console.log("Video Removed");
+                },
+                onVideoError: function() {
+                    //console.log("Incorrect Video ID");
+                },
+                onEmbedError: function() {
+                    //console.log("Embed Not Allowed");
+                }
+
+		}
+	},
+	clip: {
+        autoPlay: true
+	},
+	log: {
+        level: 'debug',
+        filter: 'org.flowplayer.controller.*,org.flowplayer.youtube.*'
+    }
+
+}).youtube().playlist("#playlist2", {loop:true});
+
+});
+</code></pre>
+</div>
+
+<a name="hd"></a>
+<h2><em>Youtube with HD selection</em> Example</h2>
+
+<p>
+    This example demonstrates Youtube playback with hd bitrate selection using the bitrateselect plugin.
+</p>
+
+
+
+<div style="width:900px;">
+
+
+<!-- player container-->
+
+
+<a
+	style="display:block;width:660px;height:350px;float:left;"
+	id="hd">
+
+    <img src="/images/bbb.jpg"/>
+
+</a>
+
+
+
+<!-- Flowplayer installation and configuration -->
+<script language="JavaScript">
+
+$f("hd", "../flowplayer.swf", {
+	// configure the required plugin
+	plugins:  {
+
+		controls: { autoHide: true },
+		youtube: {
+			url:'../flowplayer.youtube-3.2.11.swf',
+			enableGdata: false,
+			hd: true,
+            defaultQuality: "large",
+            hdLevel: "hd720"
+		},
+		content: {
+			url: '../flowplayer.content.swf',
+			top: 0,
+			left: 0,
+			width: 250
+		},
+		bitrateselect: {
+			url: '../flowplayer.bitrateselect.swf',
+			hdButton: {
+                place: 'both'
+            },
+            onStreamSwitchBegin: function(newItem, currentItem) {
+                 $f("hd").getPlugin('content').setHtml("Will switch to quality : " + newItem.format + " from " + currentItem.format);
+            },
+            onStreamSwitch: function (newItem) {
+                $f("hd").getPlugin('content').setHtml("Switched to: " + newItem.format);
+            }
+		}
+	},
+	clip: {
+		provider: 'youtube',
+		urlResolvers: ['youtube','bitrateselect'],
+        autoPlay: true,
+        url: 'api:YE7VzlLtp-4'
+	},
+	log: {
+        level: 'debug',
+        filter: 'org.flowplayer.controller.*,org.flowplayer.bitrateselect.*,org.flowplayer.youtube.*'
+    }
+
+}).youtube();
+</script>
+
+</div>
+
+
+<br clear="all" />
+
+
+<div class="box code">
+<pre><code class="javascript">
+$f("hd", "../flowplayer.swf", {
+	// configure the required plugin
+	plugins:  {
+
+		controls: { autoHide: true },
+		youtube: {
+			url:'../flowplayer.youtube-3.2.11.swf',
+			enableGdata: false,
+			hd: true,
+            defaultQuality: "large",
+            hdLevel: "hd720"
+		},
+		content: {
+			url: '../flowplayer.content.swf',
+			top: 0,
+			left: 0,
+			width: 250
+		},
+		bitrateselect: {
+			url: '../flowplayer.bitrateselect.swf',
+			hdButton: {
+                place: 'both'
+            },
+            onStreamSwitchBegin: function(newItem, currentItem) {
+                 $f("hd").getPlugin('content').setHtml("Will switch to quality : " + newItem.format + " from " + currentItem.format);
+            },
+            onStreamSwitch: function (newItem) {
+                $f("hd").getPlugin('content').setHtml("Switched to: " + newItem.format);
+            }
+		}
+	},
+	clip: {
+		provider: 'youtube',
+		urlResolvers: ['youtube','bitrateselect'],
+        autoPlay: true,
+        url: 'api:YE7VzlLtp-4'
+	},
+	log: {
+        level: 'debug',
+        filter: 'org.flowplayer.controller.*,org.flowplayer.bitrateselect.*,org.flowplayer.youtube.*'
+    }
+
+}).youtube();
+</code></pre>
+</div>
+
+
+<a name="bwcheck"></a>
+<h2><em>Youtube with Bandwidth Check</em> Example</h2>
+
+<p>
+    This example demonstrates integration with the bandwidth check plugin to do bandwidth detection and the bitrateselect plugin
+    to manage the video bitrate selection. This example does not use hd toggle functions so the hd button is disabled.
+    The bitrateselect javascript plugin is also used to display the video bitrates for manual selection.
+</p>
+
+
+<div style="width:900px;">
+
+
+<!-- player container-->
+
+
+<a
+	style="display:block;width:660px;height:350px;float:left;"
+	id="bwcheck">
+
+    <img src="/images/bbb.jpg"/>
+
+</a>
+
+<br clear="all" />
+
+<div style="display:none; float:left;">
+<b>Choose Video Bitrate:</b> <br/>
+<div id="bitrateSelect" style="display:none;">
+	<a href="{bitrate}">{label}</a>
+</div>
+</div>
+
+
+<!-- Flowplayer installation and configuration -->
+<script language="JavaScript">
+$f("bwcheck", "../flowplayer.swf", {
+	// configure the required plugin
+	plugins:  {
+
+		controls: { autoHide: true },
+		youtube: {
+			url:'../flowplayer.youtube-3.2.11.swf',
+			enableGdata: false,
+			bitratesOnStart: true,
+            qualityLabels: {
+                "hd720": "HD 720p",
+                "large": "Large 480p",
+                "medium": "Medium 320p",
+                "small" : "Small"
+            }
+
+		},
+		content: {
+			url: '../flowplayer.content.swf',
+			top: 0,
+			left: 0,
+			width: 250
+		},
+        bitrateselect: {
+            url: '../flowplayer.bitrateselect.swf',
+            hdButton: {
+                place: false
+            },
+            onStreamSwitchBegin: function(newItem, currentItem) {
+                $f("bwcheck").getPlugin('content').setHtml("Will switch to quality : " + newItem.format + " from " + currentItem.format);
+            },
+            onStreamSwitch: function (newItem) {
+                $f("bwcheck").getPlugin('content').setHtml("Switched to: " + newItem.format);
+            }
+        },
+		bwcheck: {
+			url: '../flowplayer.bwcheck.swf',
+			netConnectionUrl: 'http://releases.flowplayer.org/swf/flowplayer-3.1.5.swf',
+			bitrateProfileName: 'YoutubeBitrateProfile',
+			maxWidth: 1920,
+            checkOnStart: true,
+            // this method is called when the bandwidth check is done
+            onBwDone: function bwDoneInfo(mappedBitrate, detectedBitrate) {
+                var content = $f("bwcheck").getPlugin('content');
+                var info = "Your speed is: " + detectedBitrate + "<br /> Your chosen bitrate: " + mappedBitrate.bitrate + "<br /> Video file served: " + mappedBitrate.url;
+                content.setHtml(info);
+            }
+		}
+
+
+	},
+	clip: {
+		provider: 'youtube',
+        urlResolvers: ['youtube','bwcheck','bitrateselect'],
+        autoPlay: true,
+        url: 'api:YE7VzlLtp-4',
+        onStart: function(clip) {
+            //console.log(clip.bitrate);
+        }
+	},
+	log: {
+        level: 'debug',
+        filter: 'org.flowplayer.controller.*,org.flowplayer.bwcheck.*,org.flowplayer.bitrateselect.*,org.flowplayer.youtube.*'
+    }
+
+}).bitrateselect('#bitrateSelect',{seperator: " | "}).youtube();
+</script>
+
+</div>
+
+
+<br clear="all" />
+
+
+<div class="box code">
+<pre><code class="javascript">
+$f("bwcheck", "../flowplayer.swf", {
+	// configure the required plugin
+	plugins:  {
+
+		controls: { autoHide: true },
+		youtube: {
+			url:'../flowplayer.youtube-3.2.11.swf',
+			enableGdata: false,
+			bitratesOnStart: true,
+            qualityLabels: {
+			    "hd1080" : "HD 1080p",
+                "hd720": "HD 720p",
+                "large": "Large 480p",
+                "medium": "Medium 320p",
+                "small" : "Small"
+            },
+
+		},
+		content: {
+			url: '../flowplayer.content.swf',
+			top: 0,
+			left: 0,
+			width: 250
+		},
+        bitrateselect: {
+            url: '../flowplayer.bitrateselect.swf',
+            hdButton: {
+                place: false
+            }
+        },
+		bwcheck: {
+			url: '../flowplayer.bwcheck.swf',
+			netConnectionUrl: 'http://releases.flowplayer.org/swf/flowplayer-3.1.5.swf',
+			bitrateProfileName: 'YoutubeBitrateProfile',
+			maxWidth: 1920,
+            checkOnStart: true,
+            onStreamSwitchBegin: function(newItem, currentItem) {
+                 $f("hd").getPlugin('content').setHtml("Will switch to quality : " + newItem.format + " from " + currentItem.format);
+            },
+            // this method is called when the bandwidth check is done
+            onBwDone: function bwDoneInfo(mappedBitrate, detectedBitrate) {
+                var content = $f("bwcheck").getPlugin('content');
+                var info = "Your speed is: " + detectedBitrate + "<br /> Your chosen bitrate: " + mappedBitrate.bitrate + "<br /> Video file served: " + mappedBitrate.url;
+                content.setHtml(info);
+            }
+		}
+
+
+	},
+	clip: {
+		provider: 'youtube',
+        urlResolvers: ['youtube','bitrateselect','bwcheck'],
+        autoPlay: true,
+        url: 'api:YE7VzlLtp-4'
+	},
+	log: {
+        level: 'debug',
+        filter: 'org.flowplayer.controller.*,org.flowplayer.bwcheck.*,org.flowplayer.bitrateselect.*,org.flowplayer.youtube.*'
+    }
+
+}).youtube().bitrateselect('#bitrateSelect',{seperator: " | "});
+</code></pre>
+</div>
+
+
+<p>
+    Labels for generating the bitrate list can be customised with the qualityLabels config property object using
+    the youtube quality levels as keys.
+
+</p>
+
+<div class="box code">
+<pre><code class="javascript">
+    qualityLabels: {
+        "hd720": "HD 720p",
+        "large": "Large 480p",
+        "medium": "Medium 320p",
+        "small" : "Small"
+    }
+ </code></pre>
+</div>
+
+<p>
+    To disable the hd button the place config is set to false
+</p>
+
+<div class="box code">
+<pre><code class="javascript">
+    hdButton: {
+        place: false
+    }
+ </code></pre>
+</div>
+
+
+
+<a name="quality"></a>
+<h2><em>Youtube with Video Quality Selection</em> Example</h2>
+
+<p>
+    This example demonstrates video quality / bitrate selection without the use of the bwcheck plugin. 
+    It will obtain the available quality levels / bitrates for the video on startup, and generate a selection to provide manual quality selection. 
+    The onVideoQualityChange event is used to provide feedback of the quality change. 
+</p>
+
+
+
+<div style="width:900px;">
+   
+
+<!-- player container-->
+
+
+<a
+	style="display:block;width:660px;height:350px;float:left;"
+	id="quality">
+
+    <img src="/images/bbb.jpg"/>
+	
+</a>
+
+
+
+<!-- Flowplayer installation and configuration -->
+<script language="JavaScript">
+
+$f("quality", "../flowplayer.swf", {
+	// configure the required plugin
+	plugins:  {
+		
+		controls: { autoHide: true },
+		youtube: {
+			url:'../flowplayer.youtube-3.2.11.swf',
+			qualityLabels: {
+			    "hd1080" : "HD 1080p",
+                "hd720": "HD 720p",
+                "large": "Large 480p",
+                "medium": "Medium 320p",
+                "small" : "Small"
+            },
+			bitratesOnStart: false,
+			onVideoQualityChange: function(level, videoFormat) {
+				var content = $f("quality").getPlugin('content');
+				var info = "Chosen bitrate is: " + videoFormat.bitrate + "<br /> Video Quality Served: " + level + "<br />";
+				content.setHtml(info);
+			},
+			
+		},
+		content: {
+			url: '../flowplayer.content.swf',
+			top: 0,
+			left: 0,
+			width: 250 
+		}
+		
+	},
+	clip: {
+		provider: 'youtube',
+		urlResolvers: 'youtube',
+        autoPlay: true,
+        url: 'api:YE7VzlLtp-4',
+		onStart: function(clip) {
+
+            var bitrates = [];
+            bitrates = $f("quality").getPlugin("youtube").getBitrateItems();
+            var index = 0;
+            var quality = $f("quality").getPlugin("youtube").getPlaybackQuality();
+
+
+            	$.each(bitrates, function() {
+         
+            		var el = $("<a> " + this.label + " </a>");
+            		el.attr("index",this.format);
+            		el.attr("href",this.bitrate);
+            		el.addClass('bitrate-active');
+            		el.click(function() {
+						el.removeClass('bitrate-active');
+
+						$("#qualitySelection a").removeClass('bitrate-selected').addClass('bitrate-active');
+						el.addClass('bitrate-selected');
+						$f("quality").getPlugin("youtube").setPlaybackQuality($(this).attr("index"));
+	
+						return false;
+					});
+            		
+            		
+            		$("#qualitySelection").append(el);
+            		if (index < bitrates.length - 1) $("#qualitySelection").append("|");
+                    index++;
+            	});
+
+
+            $('[index = "'+ quality + '"]', $("#qualitySelection")).removeClass('bitrate-active').addClass('bitrate-selected');
+
+            
+        }
+	},
+	log: {
+        level: 'debug',
+        filter: 'org.flowplayer.controller.*,org.flowplayer.youtube.*'
+    }
+	
+}).youtube();
+
+
+</script>	
+
+
+</div>
+
+<div style="float:left;">
+<b>Choose Video Bitrate:</b> <br/>		
+<div id="qualitySelection">
+
+</div>
+</div>
+
+
+
+
+<br clear="all" />
+
+
+<div class="box code">
+<pre><code class="javascript">
+
+$f("quality", "../flowplayer.swf", {
+	// configure the required plugin
+	plugins:  {
+
+		controls: { autoHide: true },
+		youtube: {
+			url:'../flowplayer.youtube-3.2.11.swf',
+			qualityLabels: {
+			    "hd1080" : "HD 1080p",
+                "hd720": "HD 720p",
+                "large": "Large 480p",
+                "medium": "Medium 320p",
+                "small" : "Small"
+            },
+			bitratesOnStart: false,
+			onVideoQualityChange: function(level, videoFormat) {
+				var content = $f("quality").getPlugin('content');
+				var info = "Chosen bitrate is: " + videoFormat.bitrate + "<br /> Video Quality Served: " + level + "<br />";
+				content.setHtml(info);
+			},
+
+		},
+		content: {
+			url: '../flowplayer.content.swf',
+			top: 0,
+			left: 0,
+			width: 250
+		}
+
+	},
+	clip: {
+		provider: 'youtube',
+		urlResolvers: 'youtube',
+        autoPlay: true,
+        url: 'api:YE7VzlLtp-4',
+		onStart: function(clip) {
+
+            var bitrates = [];
+            bitrates = $f("quality").getPlugin("youtube").getBitrateItems();
+            var index = 0;
+            var quality = $f("quality").getPlugin("youtube").getPlaybackQuality();
+
+
+            	$.each(bitrates, function() {
+
+            		var el = $("<a> " + this.label + " </a>");
+            		el.attr("index",this.format);
+            		el.attr("href",this.bitrate);
+            		el.addClass('bitrate-active');
+            		el.click(function() {
+						el.removeClass('bitrate-active');
+
+						$("#qualitySelection a").removeClass('bitrate-selected').addClass('bitrate-active');
+						el.addClass('bitrate-selected');
+						$f("quality").getPlugin("youtube").setPlaybackQuality($(this).attr("index"));
+
+						return false;
+					});
+
+
+            		$("#qualitySelection").append(el);
+            		if (index < bitrates.length - 1) $("#qualitySelection").append("|");
+                    index++;
+            	});
+
+
+            $('[index = "'+ quality + '"]', $("#qualitySelection")).removeClass('bitrate-active').addClass('bitrate-selected');
+
+
+        }
+	},
+	log: {
+        level: 'debug',
+        filter: 'org.flowplayer.controller.*,org.flowplayer.youtube.*'
+    }
+
+}).youtube();
+
+
+</code></pre>
+</div>
+
+
+
+<a name="chrome"></a>
+<h2><em>Embedded</em> Chrome Player Example</h2>
+
+<p>
+    This example demonstrates loading an embedded youtube player and configuring it.
+</p>
+<p>
+    The chrome config allows the chrome embedded player to be customised see the <a href="http://code.google.com/apis/youtube/player_parameters.html">Youtube Player Properties</a> for more.
+</p>
+
+
+<div style="width:900px;">
+
+
+<!-- player container-->
+
+
+<a
+	style="display:block;width:660px;height:350px;float:left;"
+	id="embedded">
+    <img src="/images/bbb.jpg"/>
+</a>
+
+
+<!-- Flowplayer installation and configuration -->
+<script language="JavaScript">
+
+$f("embedded", "../flowplayer.swf", {
+	// configure the required plugin
+	screen: {
+	   zIndez:1
+	},
+	plugins:  {
+		controls: null,
+		youtube: {
+			url:'../flowplayer.youtube-3.2.11.swf',
+            apitype: 'chrome',
+			onVideoRemoved: function() {
+                //console.log("Video Removed");
+			},
+			onVideoError: function() {
+                //console.log("Incorrect Video ID");
+            },
+			onEmbedError: function() {
+                //console.log("Embed Not Allowed");
+            },
+            adOverlayHeight: 100,
+            //zIndez:0,
+            displayErrors: true,
+            chrome: {
+                iv_load_policy: 3,
+			    rel: 0,
+			    showinfo: 0,
+				showsearch: 0,
+                autohide: 1
+
+            }
+		}
+	},
+	clip: {
+		provider: 'youtube',
+		urlResolvers: 'youtube',
+        autoPlay: true,
+        url: 'api:YE7VzlLtp-4'
+	},
+	log: {
+        level: 'debug',
+        filter: 'org.flowplayer.controller.*,org.flowplayer.youtube.*'
+    }
+
+}).youtube();
+</script>
+
+
+
+
+
+</div>
+
+<br clear="all" />
+
+
+<div class="box code">
+<pre><code class="javascript">
+
+$f("embedded", "../flowplayer.swf", {
+	// configure the required plugin
+	screen: {
+	   zIndez:1
+	},
+	plugins:  {
+		controls: null,
+		youtube: {
+			url:'../flowplayer.youtube-3.2.11.swf',
+            apitype: 'chrome',
+			onVideoRemoved: function() {
+                //console.log("Video Removed");
+			},
+			onVideoError: function() {
+                //console.log("Incorrect Video ID");
+            },
+			onEmbedError: function() {
+                //console.log("Embed Not Allowed");
+            },
+            adOverlayHeight: 300,
+            //zIndez:0,
+            displayErrors: true,
+            chrome: {
+                iv_load_policy: 3,
+			    rel: 0,
+			    showinfo: 0,
+				showsearch: 0,
+                autohide: 1
+
+            }
+		}
+	},
+	clip: {
+		provider: 'youtube',
+		urlResolvers: 'youtube',
+        autoPlay: true,
+        url: 'api:YE7VzlLtp-4'
+	},
+	log: {
+        level: 'debug',
+        filter: 'org.flowplayer.controller.*,org.flowplayer.youtube.*'
+    }
+
+}).youtube();
+</code></pre>
+</div>
+
+
+<p>
+    The flowplayer controls needs to be disabled to display the youtube chrome player correctly like so
+</p>
+
+<div class="box code">
+<pre><code class="javascript">
+
+    .....
+	plugins:  {
+		controls: null,
+		.....
+	},
+	....
+</code></pre>
+</div>
+
+<a name="poster"></a>
+<h2><em>Youtube Video with Poster Image</em> Example</h2>
+
+
+<p>
+    This example demonstrates having the youtube video poster in the playlist as a splash.
+</p>
+
+<p>
+
+   The configuration uses the playlist splash example <a href="http://flowplayer.org/demos/configuration/playlist-splash.html">http://flowplayer.org/demos/configuration/playlist-splash.html</a> where a splash image url is configured before the clip in the playlist.
+
+</p>
+
+<div style="width:900px;">
+
+
+<!-- player container-->
+
+
+<a
+	style="display:block;width:660px;height:350px;float:left;"
+	id="poster">
+
+
+</a>
+
+
+
+<!-- Flowplayer installation and configuration -->
+<script language="JavaScript">
+ /*
+$(function() {
+
+$f("poster", "../flowplayer.swf", {
+	// configure the required plugin
+	playlist: [
+			       {
+						url: 'http://i.ytimg.com/vi/YE7VzlLtp-4/hqdefault.jpg'
+				   },
+			       {
+						url: 'api:YE7VzlLtp-4',
+						provider: 'youtube',
+						title: 'Big Buck Bunny',
+						autoPlay: false,
+						autoBuffering: true
+				   }
+    ],
+	plugins:  {
+
+		controls: { autoHide: true, playlist: true },
+		youtube: {
+				url:'../flowplayer.youtube-3.2.11.swf',
+                onVideoRemoved: function() {
+                    //console.log("Video Removed");
+                },
+                onVideoError: function() {
+                    //console.log("Incorrect Video ID");
+                },
+                onEmbedError: function() {
+                    //console.log("Embed Not Allowed");
+                }
+
+		}
+	},
+	clip: {
+
+	},
+	log: {
+        level: 'debug',
+        filter: 'org.flowplayer.controller.*,org.flowplayer.youtube.*'
+    }
+
+}).youtube();
+
+});   */
+</script>
+
+
+</div>
+
+<br clear="all" />
+
+
+<div class="box code">
+<pre><code class="javascript">
+$(function() {
+
+$f("poster", "../flowplayer.swf", {
+	// configure the required plugin
+	playlist: [
+			       {
+						url: 'http://i.ytimg.com/vi/YE7VzlLtp-4/hqdefault.jpg'
+				   },
+			       {
+						url: 'api:YE7VzlLtp-4',
+						provider: 'youtube',
+						title: 'Big Buck Bunny',
+						autoPlay: false,
+						autoBuffering: true
+				   }
+    ],
+	plugins:  {
+
+		controls: { autoHide: true, playlist: true },
+		youtube: {
+				url:'../flowplayer.youtube-3.2.11.swf',
+                onVideoRemoved: function() {
+                    //console.log("Video Removed");
+                },
+                onVideoError: function() {
+                    //console.log("Incorrect Video ID");
+                },
+                onEmbedError: function() {
+                    //console.log("Embed Not Allowed");
+                }
+
+		}
+	},
+	clip: {
+
+	},
+	log: {
+        level: 'debug',
+        filter: 'org.flowplayer.controller.*,org.flowplayer.youtube.*'
+    }
+
+}).youtube();
+
+});
+</code></pre>
+</div>
+
+
+<div class="box code">
+<pre><code class="javascript">
+
+    .....
+	playlist: [
+	    {
+            url: 'http://i.ytimg.com/vi/YE7VzlLtp-4/hqdefault.jpg'
+        },
+        {
+		    url: 'api:YE7VzlLtp-4',
+			provider: 'youtube',
+			title: 'Big Buck Bunny',
+			autoPlay: false,
+			autoBuffering: true
+		}
+    ],
+	....
+</code></pre>
+</div>
+
+
+<p>The youtube poster image url is obtained from http://i.ytimg.com/vi/YE7VzlLtp-4/hqdefault.jpg where YE7VzlLtp-4 is the video id. </p>
+<p>The video clip config is then configured with autoPlay set to false and autoBuffering set to true. </p>
+
+
+<h2>Chrome Player Config</h2>
+
+<table class="listing">
+	<thead>
+		<tr>
+			<th nowrap>property / datatype</th>
+			<th>default</th>
+			<th>description</th>
+		</tr>
+	</thead>
+
+    <tr>
+        <td class="code">autohide <div class="type">number</div></td>
+        <td class="code default">0</td>
+        <td class="description">
+            Values: 0, 1, and 2 (default). This parameter indicates whether the video controls will automatically hide after a video begins playing. The default behavior is for the video progress bar to fade out while the player controls (play button, volume control, etc.) remain visible.
+            <br/>If this parameter is set to 0, the video progress bar and the video player controls will be visible throughout the video.
+            <br/>If this parameter is set to 1, then the video progress bar and the player controls will slide out of view a couple of seconds after the video starts playing. They will only reappear if the user moves her mouse over the video player or presses a key on her keyboard.
+        </td>
+    </tr>
+    <tr>
+        <td class="code">border <div class="type">number</div></td>
+        <td class="code default">0</td>
+        <td class="description">
+            Values: 0 or 1. Default is 0. Setting to 1 enables a border around the entire video player. The border's primary color can be set via the color1 parameter, and a secondary color can be set by the color2 parameter.
+        </td>
+    </tr>
+    <tr>
+        <td class="code">cc_load_policy <div class="type">number</div></td>
+        <td class="code default">1</td>
+        <td class="description">
+			Values: 1. Default is based on user preference. Setting to 1 will cause closed captions to be shown by default, even if the user has turned captions off.
+        </td>
+    </tr>
+    <tr>
+        <td class="code">color1,color2 <div class="type">string</div></td>
+        <td class="code default"></td>
+        <td class="description">
+        	Values: Any RGB value in hexadecimal format. color1 is the primary border color, and color2 is the video control bar background color and secondary border color.
+        </td>
+    </tr>
+    <tr>
+        <td class="code">controls <div class="type">number</div></td>
+        <td class="code default">1</td>
+        <td class="description">
+            Values: 0 or 1. Default is 1. This parameter indicates whether the video player controls will display. If this parameter is set to 0, then the player controls will not display, causing the player to look like the chromeless player.
+        </td>
+    </tr>
+    <tr>
+        <td class="code">disablekb <div class="type">number</div></td>
+        <td class="code default">0</td>
+        <td class="description">
+			Values: 0 or 1. Default is 0. Setting to 1 will disable the player keyboard controls. Keyboard controls are as follows:
+            <br/>Spacebar: Play / Pause
+            <br/>Arrow Left: Jump back 10% in the current video
+            <br/>Arrow Right: Jump ahead 10% in the current video
+            <br/>Arrow Up: Volume up
+            <br/>Arrow Down: Volume Down
+        </td>
+    </tr>
+    <tr>
+        <td class="code">fs <div class="type">number</div></td>
+        <td class="code default">1</td>
+        <td class="description">
+			Values: 0 or 1. Default is 0. Setting to 1 enables the fullscreen button in the embedded player.
+        </td>
+    </tr>
+    <tr>
+        <td class="code">hd <div class="type">number</div></td>
+        <td class="code default">1</td>
+        <td class="description">
+			Values: 0 or 1. Default is 0. Setting to 1 enables HD playback by default.
+        </td>
+    </tr>
+    <tr>
+        <td class="code">iv_load_policy <div class="type">number</div></td>
+        <td class="code default">0</td>
+        <td class="description">
+			Values: 1 or 3. Default is 1. Setting to 1 will cause video annotations to be shown by default, whereas setting to 3 will cause video annotation to not be shown by default.
+        </td>
+    </tr>
+    <tr>
+        <td class="code">loop <div class="type">number</div></td>
+        <td class="code default">0</td>
+        <td class="description">
+			Values: 0 or 1. Default is 0. In the case of a single video player, a setting of 1 will cause the player to play the initial video again and again.
+        </td>
+    </tr>
+    <tr>
+        <td class="code">playlist <div class="type">string</div></td>
+        <td class="code default"></td>
+        <td class="description">
+			Value is a comma-separated list of video IDs to play.
+        </td>
+    </tr>
+    <tr>
+        <td class="code">rel <div class="type">number</div></td>
+        <td class="code default">0</td>
+        <td class="description">
+			Values: 0 or 1. Default is 1. Sets whether the player should load related videos once playback of the initial video starts. Related videos are displayed in the "genie menu" when the menu button is pressed. The player search functionality will be disabled if rel is set to 0.
+        </td>
+    </tr>
+    <tr>
+        <td class="code">showinfo <div class="type">number</div></td>
+        <td class="code default">0</td>
+        <td class="description">
+			Values: 0 or 1. Default is 1. Setting to 0 causes the player to not display information like the video title and uploader before the video starts playing.
+        </td>
+    </tr>
+    <tr>
+        <td class="code">showsearch <div class="type">number</div></td>
+        <td class="code default">0</td>
+        <td class="description">
+			Values: 0 or 1. Default is 1. Setting to 0 disables the search box from displaying when the video is minimized. Note that if the rel parameter is set to 0 then the search box will also be disabled, regardless of the value of showsearch.
+        </td>
+    </tr>
+</table>
+
+
+
+
+<a name="api"></a>
+<h2>JavaScript API</h2>
+
+<h3>Methods</h3>
+
+<table class="listing">
+    <thead>
+		<tr>
+			<th class="col1">method</th>
+			<th class="col2">returns</th>
+			<th class="col3">description</th>
+		</tr>
+    </thead>
+    <tr>
+        <td class="code">
+				<strong>getBitrateItems</strong>
+        </td>
+        <td class="code type">array</td>
+        <td class="description">
+			Returns a list of available quality levels / bitrates for the video. 
+        </td>
+    </tr>
+    <tr>
+        <td class="code">
+            <strong>setPlaybackQuality</strong>(suggestedQuality)
+        </td>
+        <td class="code type"></td>
+        <td class="description">
+			Sets the playback video quality for the current video. Accepted levels are small, medium, large, hd720, hd1080. 
+        </td>
+    </tr>
+    <tr>
+        <td class="code">
+            <strong>getPlaybackQuality</strong>
+        </td>
+        <td class="code type">string</td>
+        <td class="description">
+			Gets the playback video quality for the current video. Levels are small, medium, large, hd720, hd1080. 
+        </td>
+    </tr>
+</table>
+
+
+<h3>Events</h3>
+
+<table class="listing">
+	<thead>
+		<tr>
+			<th nowrap>Event</th>
+			<th style="width:450px">When does it fire?</th>
+		</tr>
+	</thead>
+
+    <tr>
+        <td class="code"><em>onApiData()</em></td>
+        <td class="description">
+				Fires when the gdata feed information is collected when the enableGdata config is enabled. The callback is fed with the following arguments:
+
+				<ul>
+					<li><samp>gdata</samp> the gdata object with information of the video. </li>
+				</ul>
+        </td>
+    </tr>
+    <tr>
+        <td class="code"><em>onVideoQualityChange()</em></td>
+        <td class="description">
+				Fires when the video playback quality has changed. The callback is fed with the following arguments:
+
+				<ul>
+					<li><samp>level</samp> the youtube video quality level. </li>
+					<li><samp>videoFormat</samp> the video format object for this level which includes the bitrate, dimensions etc. </li>
+				</ul>
+        </td>
+    </tr>
+</table>
+
+<h3>Gdata Object</h3>
+
+<table class="listing">
+	<thead>
+		<tr>
+			<th nowrap>Property</th>
+			<th style="width:450px">Description</th>
+		</tr>
+	</thead>
+	<tr>
+        <td class="code"><em>url</em></td>
+        <td class="description">
+				The video url ie api:youtubeid.
+        </td>
+    </tr>
+    <tr>
+        <td class="code"><em>id</em></td>
+        <td class="description">
+				The youtube video id.
+        </td>
+    </tr>
+	<tr>
+        <td class="code"><em>author</em></td>
+        <td class="description">
+				The author object with the following properties:
+
+				<ul>
+					<li><samp>name</samp> the author username. </li>
+					<li><samp>feed</samp> the uri to the author gdata feed. </li>
+				</ul>
+        </td>
+    </tr>
+    <tr>
+        <td class="code"><em>title</em></td>
+        <td class="description">
+				The video title.
+        </td>
+    </tr>
+    <tr>
+        <td class="code"><em>category</em></td>
+        <td class="description">
+				The video category.
+        </td>
+    </tr>
+    <tr>
+        <td class="code"><em>content</em></td>
+        <td class="description">
+				The video content / description.
+        </td>
+    </tr>
+    <tr>
+        <td class="code"><em>defaultThumbnail</em></td>
+        <td class="description">
+				The default video thumbnail.
+        </td>
+    </tr>
+    <tr>
+        <td class="code"><em>duration</em></td>
+        <td class="description">
+				The duration of the video in seconds.
+        </td>
+    </tr>
+    <tr>
+        <td class="code"><em>relatedVideos</em></td>
+        <td class="description">
+				An array of related video objects also returned in the clip.related property, returns the same properties as the top level item.
+        </td>
+    </tr>
+    <tr>
+        <td class="code"><em>statistics</em></td>
+        <td class="description">
+				The statistics object with the following properties:
+
+				<ul>
+					<li><samp>favoriteCount</samp> the count of favorites added by users. </li>
+					<li><samp>viewCount</samp> the view count. </li>
+				</ul>
+        </td>
+    </tr>
+    <tr>
+        <td class="code"><em>tags</em></td>
+        <td class="description">
+				A numbered array of tags.
+        </td>
+    </tr>
+    <tr>
+        <td class="code"><em>thumbnails</em></td>
+        <td class="description">
+				An array of thumbnail objects with the following properties:
+				
+				<ul>
+					<li><samp>height</samp> the thumbnail height. </li>
+					<li><samp>width</samp> the thumbnail width. </li>
+					<li><samp>time</samp> the time in the video of the thumbnail still. </li>
+					<li><samp>url</samp> the thumbnail url. </li>
+				</ul>
+        </td>
+    </tr>
+    <tr>
+        <td class="code"><em>comments</em></td>
+        <td class="description">
+				The object of user comments:
+
+				<ul>
+					<li><samp>countHint</samp> the count of user comments. </li>
+					<li><samp>feed</samp> the feed of the user comments. </li>
+				</ul>
+        </td>
+    </tr>
+    <tr>
+        <td class="code"><em>aspectRatio</em></td>
+        <td class="description">
+				The aspect ratio of the video.
+        </td>
+    </tr>
+    <tr>
+        <td class="code"><em>embedAllowed</em></td>
+        <td class="description">
+				If the video is allowed to be embedded into the player.
+        </td>
+    </tr>
+    <tr>
+        <td class="code"><em>ratings</em></td>
+        <td class="description">
+				The ratings object with the following properties:
+
+				<ul>
+					<li><samp>average</samp> the average ratings. </li>
+					<li><samp>max</samp> the max ratings. </li>
+					<li><samp>min</samp> the min ratings. </li>
+					<li><samp>numRaters</samp> the number of raters. </li>
+				</ul>
+        </td>
+    </tr>
+</table>
+
+<h3>Bitrates</h3>
+
+<p>The bitrates array is added to the  clip.bitrates property.
+The bitrates property is to be used in conjuncton with the bandwidth check plugin for providing bitrate selections. 
+</p>
+
+<table class="listing">
+	<thead>
+		<tr>
+			<th nowrap>Property</th>
+			<th style="width:450px">Description</th>
+		</tr>
+	</thead>
+	<tr>
+        <td class="code"><em>bitrate</em></td>
+        <td class="description">
+				The video bitrate.
+        </td>
+    </tr>
+    <tr>
+        <td class="code"><em>format</em></td>
+        <td class="description">
+				The Youtube video quality level.
+        </td>
+    </tr>
+    <tr>
+        <td class="code"><em>height</em></td>
+        <td class="description">
+				The video height.
+        </td>
+    </tr>
+    <tr>
+        <td class="code"><em>width</em></td>
+        <td class="description">
+				The video width.
+        </td>
+    </tr>
+    <tr>
+        <td class="code"><em>label</em></td>
+        <td class="description">
+				The label of the bitrate option provided by a static map of bitrate / quality  levels.
+        </td>
+    </tr>
+    <tr>
+        <td class="code"><em>type</em></td>
+        <td class="description">
+				The video type.
+        </td>
+    </tr>
+    <tr>
+        <td class="code"><em>url</em></td>
+        <td class="description">
+				The video url.
+        </td>
+    </tr>
+</table>
+
+
+<a name="download"></a>
+		<h3>Download a demo</h3>
+		<br><br>
+
+
+		<table class="listing">
+			<tr>
+				<td><a href="http://static.electroteque.org/download/flowplayer.youtube-3.2.11-demo.zip" class="download">flowplayer.youtube-3.2.11-demo.zip</a></td>
+				<td>includes README.txt and LICENCE.txt, and an example page</td>
+			</tr>
+		</table>
+
+	<br>
+	<p>
+		<div class="box info">
+			This is a non expiring <strong>demo</strong> version of the plugin. Works only on your local machine on localhost or 127.0.0.1.</div>
+	</p>
+
+
+</div>
+
+		
+	</div>
+</body>
+</html>

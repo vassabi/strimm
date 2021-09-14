@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<component name="LoadingIndicator" extends="Group" xsi:noNamespaceSchemaLocation="https://devtools.web.roku.com/schema/RokuSceneGraph.xsd">
+  <interface>
+    <!--     URI of the loading indicator image/spinner graphic, if used. -->
+    <field id="uri" alias="busySpinner.uri" />
+    <!--     If specified, width of a spinning image, otherwise bitmap width is used. You can specify only imageWidth
+         and imageHeight will be calculated accordingly to image's aspect ratio. Make sure image fits into component or
+         it will be downscaled. -->
+    <field id="imageWidth" type="float" onChange="onImageWidthChange" />
+    <!--     If specified, height of a spinning image, otherwise bitmap height is used. You can specify only imageHeight
+         and imageWidth will be calculated accordingly to image's aspect ratio. Make sure image fits into component or
+         it will be downscaled. -->
+    <field id="imageHeight" type="float" onChange="onImageHeightChange" />
+    <!--     If true, animate image in imageUri field clockwise, otherwise counter-clockwise. -->
+    <field id="clockwise" alias="busySpinner.clockwise" />
+    <!--     If set, time in seconds it take for one complete image rotation.  -->
+    <field id="spinInterval" alias="busySpinner.spinInterval" />
+    <!--     Color of the background. -->
+    <field id="backgroundColor" type="color" alias="background.color" value="0x00000000" />
+    <!--     Opacity of the background. To remove background, this should be set to 0. -->
+    <field id="backgroundOpacity" type="float" alias="background.opacity" value="0" />
+    <!--     If set, specifies width of the component, otherwise, parent's width is used. -->
+    <field id="width" type="float" onChange="updateLayout" />
+    <!--     If set, specifies height of the component, otherwise, parent's height is used. -->
+    <field id="height" type="float" onChange="updateLayout" />
+    <!--     Write-only field. Can be used to start/stop spinning animation. Animation starts automatically,
+         to stop it you should set this field to "stop". To start it again, set this to "start".
+         You can also use fadeInterval field to make animation disappear once it's stopped. -->
+    <field id="show" type="bool" onChange="onControlChange" />
+    <!--     If set, time in seconds to fade from 100% to 0% opaque once control is set to "stop". -->
+    <field id="fadeInterval" type="float" value="0.2" />
+  </interface>
+
+<script type="text/brightscript" uri="LoadingIndicator.brs" />
+
+  <children>
+    <Group id="loadingIndicatorGroup">
+      <Rectangle id="background" />
+      <LayoutGroup id="loadingGroup" horizAlignment="center" vertAlignment="center" >
+        <BusySpinner id="busySpinner" uri="pkg:/images/loader.png" />
+      </LayoutGroup>
+      <Animation id="fadeAnimation" repeat="false" >
+        <FloatFieldInterpolator
+          keyValue="[1, 0]"
+          key="[0, 1]"
+          fieldToInterp="loadingIndicatorGroup.opacity" />
+      </Animation>
+    </Group>
+  </children>
+</component>

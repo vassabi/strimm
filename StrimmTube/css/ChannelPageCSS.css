@@ -1,0 +1,1303 @@
+﻿
+
+
+#divTopWrapper {
+    border-bottom: none;
+    box-shadow: none;
+    position: relative;
+    width: 100%;
+    z-index: 9999;
+    height: 70px;
+}
+
+#topMenu {
+    background-image: none;
+    background-repeat: repeat;
+    height: 100px;
+    width: 100%;
+    display: block;
+    float: left;
+    position: fixed;
+    top: 0;
+   background-image: url("/images/topMenuChannelBG.png");
+    background-repeat: repeat-x;
+}
+
+#divTopMenu,
+#divBrowseChannels a {
+    border-right: 1px solid #555;
+}
+
+#divBrowseChannels a,
+#divTopMenu,
+#spnHello,
+.spnAdvSearch,
+#divBrowseChannels a #divImg, .divImg,
+#divTopNav a {
+    color: #fff;
+}
+
+#topRightHolderBL .spnCreateChannel,
+.spnCreateChannel {
+    background-color: transparent;
+    border: 1px solid #fc0;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+    #topRightHolderBL .spnCreateChannel:hover,
+    .spnCreateChannel:hover {
+        background-color: #fc0;
+        color: #000;
+    }
+
+    .AdvSearchImg {
+    background-image: url("/images/lupa-search-white.png");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    display: block;
+    float: left;
+    height: 16px;
+    margin-left: -3px;
+    margin-top: 25px;
+    opacity: 0.5;
+    width: 16px;
+    opacity: 1;
+
+}
+
+    .AdvSearchImgHN {
+    background-image: url("/images/lupa-search-white.png");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    display: block;
+    float: left;
+    height: 16px;
+    margin-left: -3px;
+    margin-top: 25px;
+    opacity: 0.5;
+    width: 16px;
+    opacity: 1;
+}
+
+
+ .tweetUpdates ._491z {
+    border-bottom: 1px solid #777;
+}
+
+ .playTime {
+    color: #eee;
+}
+
+
+
+
+/*-----------------------------------------------------------------------CHANNEL PAGE ONLY*/
+/*------------------------------------------ FOOTER-DOUBLE-CSS------------------------------------------------------*/
+
+#divFooterNH.default {
+    bottom: 0;
+    clear: both;
+    float: left;
+    margin: auto;
+    max-width: 100%;
+    min-width: 960px;
+    width: 100%;
+    background-image: url(/images/footerImgChannel.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 800px;
+    position: relative;
+    background-position: bottom;
+    background-color: #333333;
+}
+.footerSocialHolder {
+    display: block;
+    float: right;
+    width: 110px;
+    margin-left: 0;
+    padding-right: 20px;
+    margin-top: 5px;
+}
+
+.footerSocial {
+    display: block;
+    float: left;
+    width: 38px;
+    height: 38px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+
+}
+
+        .footerSocialFacebook {
+            display: block;
+            float: left;
+            background-image: url("/images/social/facebookBW.jpg ");
+         background-repeat: no-repeat;
+           opacity: 0.7;
+        }
+ 
+        .footerSocialTwitter {
+            display: block;
+            float: left;
+         background-image: url("/images/social/twitterBW.jpg ");
+           background-repeat: no-repeat;
+             opacity:  0.7;
+        }
+        .footerSocialGoogle {
+                  display: block;
+            float: left;
+             background-image: url("/images/social/googleplusBW.jpg ");
+               background-repeat: no-repeat;
+                 opacity:  0.7;
+        }
+        .footerSocialPinterest {
+                  display: block;
+            float: left;
+            background-image: url("/images/social/pinterestBW.jpg ");
+              background-repeat: no-repeat;
+                opacity:  0.7;
+        }
+
+        .footerSocialFacebook:hover,
+        .footerSocialTwitter:hover,
+         .footerSocialGoogle:hover,
+        .footerSocialPinterest:hover {
+            opacity: 1;
+        }
+
+        .columnFooterSocial li a {
+
+    display: block;  
+    margin-left: 0;
+    width: 38px;
+    height: 38px;
+
+        }
+                       .columnFooterSocial {
+                    margin: auto;
+        }
+
+        .columnHN {
+    display: inline-block;
+    margin: 120px 1% 1%;
+    text-align: center;
+    vertical-align: top;
+    /* width: 15%; */
+    width: 20%;
+}
+
+        .holderNH {
+    clear: both;
+    margin: auto;
+    min-width: 1024px;
+    width: 100%;
+    height: 400px;
+    /* position: absolute; */
+    /* bottom: 0; */
+    width: 100%;
+    max-width: 1520px;
+    margin: auto;
+    margin-top: 80px;
+    text-align: center;
+}
+
+        .paragraphSloganBlackFoooterBasic {
+    color: transparent;
+    display: block;
+    
+    font-size: 40px;
+    font-weight: normal;
+    line-height: 50px;
+    margin: 40px auto auto;
+    padding: 1%;
+    text-align: center;
+}
+
+        .bottomButtonsHolderFoooterBasic {
+    display: block;
+    height: 90px;
+    margin: auto;
+    width: 350px;
+    position: relative;
+    height: 200px;
+}
+
+
+
+/*------------------------------------------////////FOOTER-DOUBLE-CSS------------------------------------------------------*/
+        #PlayerHolder {
+margin: auto;
+background-color: #000;
+width: 854px;
+height: 510px;
+margin-bottom: 10px;
+        }
+
+        .playerbox,
+        #player {
+background-color: #000;
+display: block;
+height: 510px;
+margin: auto;
+width: 854px;
+}
+
+        #sideBarChannel {
+background-color: transparent;
+box-shadow:none;
+display: block;
+float: right;
+width: 355px;
+position: relative;
+border: 1px solid #555;
+        }
+        #ChannelPageInfoHolder {
+background:transparent;
+box-shadow:none;
+position: relative;
+padding: 1%;
+padding-top: 10px;
+padding-bottom: 10px;
+width: 98%;
+float: left;
+border: 1px solid #555;
+}
+
+#channelPageInfoWrapper {
+    display: block;
+    float: left;
+    width:100%;
+}
+
+        .block {
+        }
+
+        .sideBarFake {
+            display: block;
+            float: left;
+            max-width: 100%;
+
+        }
+
+.sideContentHolder .videoTitle,
+.sideChannel .videoTitle {
+color: #ccc;
+display: block;
+float: left;
+font-size: 13px;
+height: 20px;
+line-height: 20px;
+overflow: hidden;
+position: absolute;
+text-overflow: ellipsis;
+top: 15px;
+white-space: nowrap;
+width: 100%;
+}
+
+
+
+
+.sideChannel .videoTitle {
+height: 60px;
+line-height: 60px;
+text-align: center;
+text-align: left;
+}
+
+
+.videoTitleMain {
+display: block;
+float: left;
+margin-left: 20px;
+width: 82%;
+}
+
+
+.videoTitle h1 {
+    font-family: opensans-light;
+    font-size: 16px;
+    line-height: 1.3em;
+    width: 100%;
+    color: #eee;
+}
+
+        .videoTitle span {
+            position: absolute;
+            right:0;
+            color: #777;
+            top: 0;
+            font-size: 13px;
+        }
+
+  #innerLeftWrapperChannel {
+border: 1px solid #777;
+box-shadow: none;
+display: block;
+float: left;
+height: 100px;
+margin-bottom: 0;
+width: 100px;
+        }
+
+
+
+        #ChannelPageInfoHolder #innerRightWrapper {
+float: left;
+height: auto;
+float: left;
+margin-top: 0;
+
+        }
+
+        #ChannelPageInfoHolder #titleHolder {
+            margin-bottom: 5px;
+margin-top: 3px;
+        }
+
+        #ChannelPageInfoHolder #ancName {
+color: #2a99bd;
+font-size: 17px;
+height: 30px;
+line-height: 30px;
+        }
+
+#ancUserName {
+color: #ddd;
+font-size: 12px;
+height: 30px;
+line-height: 32px;
+margin-left: 10px;
+text-decoration: underline;
+}
+
+       #ChannelPageInfoHolder  #categoryHolder {
+margin-bottom: 0;
+}
+
+        #ChannelPageInfoHolder #lblCategory {
+color: #ddd;
+font-size: 12px;
+height: 15px;
+line-height: 15px;
+
+}
+
+      #ChannelPageInfoHolder  #channelInfo {
+font-size: 12px;
+height: 15px;
+line-height: 15px;
+margin-top: 5px;
+color: #ddd;
+}
+
+        #ChannelPageSocialHolder{
+ background:transparent;
+width: 98%;
+padding: 1%;
+padding-bottom: 5px;
+padding-top: 5px;
+box-shadow:none;
+float: left;
+border: 1px solid #555;
+border-top: none;
+margin-bottom: 10px;
+ }
+
+       
+        #ChannelPageSocialCommentHolder {
+ background:transparent;
+ width: 98%;
+padding: 1%;
+padding-bottom: 10px;
+padding-top: 10px;
+box-shadow:none;
+margin-top: 10px;
+float: left;
+border: 1px solid #555;
+ }
+
+
+           .options .schedule ,
+            .options .watchlater ,
+             .options .abusereport,
+          .options  .addtofavorite,
+           .options  .toprated  {
+   background-image: url('/images/social/socialRound/watchLater-round.png');
+background-position: left center;
+background-repeat: no-repeat;
+color: #fff;
+display: block;
+float: left;
+font-size: 11px;
+height: 40px;
+line-height: 40px;
+margin-right: 15px;
+opacity: 0.7;
+padding-left: 40px;
+text-transform: lowercase; 
+
+           }
+
+
+
+.options .watchlater:hover{background-image: url('/images/social/socialRound/watchLater-round-hover.png');
+                           opacity: 1;
+}
+.options .watchlaterActive {background-image: url('/images/social/socialRound/watchLater-round-active.png');
+                            opacity: 1;
+}
+
+.options .addtofavorite {background-image: url('/images/social/socialRound/add-to-fav-round.png');
+}
+.options .addtofavorite:hover {background-image: url('/images/social/socialRound/add-to-favorite-round-active.png');
+                               opacity: 1;
+}
+.options .addtofavoriteActive {background-image: url('/images/social/socialRound/add-to-favorite-round-active.png');
+                               opacity: 1;
+}
+
+
+
+.options .abusereport{background-image: url('/images/social/socialRound/abuse-round.png');}
+
+.options .abusereport:hover {background-image: url('/images/social/abuse-round-hover.png');}
+
+
+
+.sideBarOptions {
+border-bottom: 1px solid #555;
+display: block;
+height: 35px;
+overflow: hidden;
+padding: 15px 10px 10px;
+position: relative;
+z-index: 1;
+        }
+
+.iconDescription {
+color: #eee;
+display: block;
+font-size: 15px;
+font-weight: bold;
+left: 10px;
+position: absolute;
+right: 0;
+top: 32px;
+width: 50%;
+}
+
+
+
+.sideBarOptions .schedule,
+.sideBarOptions .watchlater,
+.sideBarOptions .abusereport,
+.sideBarOptions .favoriteChannels,
+.sideBarOptions .toprated,
+.sideBarOptions .ringsactive,
+.sideBarOptions .rings,
+.sideBarOptions .mychannels {
+ 
+    background-image: url('/images/social/socialRound/watchLater-round.png');
+    background-position: center 3px;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    color: #000;
+    display: block;
+    float: right;
+    font-size: 11px;
+    height: 40px;
+    line-height: 90px;
+    margin-left: 4px;
+    margin-right: 4px;
+    opacity: 1;
+    padding-top: 5px;
+    text-align: center;
+    text-transform: lowercase;
+    width: 40px;
+}
+
+
+        .sideBarOptions .schedule {
+            /*background-image: url("/images/social/schedule.jpg");*/
+              background-image: url('/images/social/socialRound/scheduleNotActive-round.png');
+        }
+        
+            .sideBarOptions .schedule:hover {
+                /*background-image: url("/images/social/scheduleactive.jpg");*/
+                background-image: url('/images/social/socialRound/scheduleActive-round.png');
+            }
+
+
+
+
+
+
+
+
+
+.sideBarOptions .favoriteChannels {
+ background-image: url('/images/social/socialRound/favoriteNotActive-round.png');
+}
+
+
+
+.sideBarOptions .favoriteChannelsActive {
+background-image: url('/images/social/socialRound/favoriteActive-round.png');
+}
+
+ .sideBarOptions .favoriteChannels:hover {
+   
+        background-image: url('/images/social/socialRound/add-to-favorite-round-active.png');
+
+    }
+
+
+
+
+
+
+
+
+
+
+.sideBarOptions .mychannels {
+    /*background-image: url("/images/social/mychannels.jpg");*/
+    background-image: url('/images/social/socialRound/my-channels-not-active-round.png');
+}
+
+.sideBarOptions .mychannels:hover {
+    /*background-image: url("/images/social/mychannels.jpg");*/
+    background-image: url('/images/social/socialRound/my-channels-active-round.png');
+}
+
+
+.sideBarOptions .mychannelsactive {
+    /*background-image: url("/images/social/mychannels.jpg");*/
+    background-image: url('/images/social/socialRound/my-channels-active-round.png');
+}
+
+
+
+
+
+
+
+.sideBarOptions .scheduleactive {
+
+    background-image: url('/images/social/socialRound/scheduleActive-round.png');
+}
+
+.sideBarOptions .toprated {
+    /*background-image: url("/images/social/topNotActive-round.png");*/
+    background-image: url('/images/social/socialRound/topNotActive-round.png');
+}
+
+#ancLike.like.likeActive
+{
+    background-image: url('/images/social/socialRound/likeActive-round.png');
+        opacity: 1;
+}
+
+#ancLike.like {
+    background-image: url('/images/social/socialRound/likeNotActive-round.png');
+    display: block;
+    width: 40px;
+    height: 40px;
+    float: left;
+    opacity: 0.7;
+}
+
+
+
+    .sideBarOptions .toprated:hover {
+     
+        background-image: url('/images/social/socialRound/topActive-round.png');
+    }
+
+.sideBarOptions .topRatedActive {
+ 
+    background-image: url('/images/social/socialRound/topActive-round.png');
+}
+
+.sideBarOptions .myChannelsActive {
+   
+    background-image: url('/images/social/socialRound/my-channels-active-round.png');
+}
+
+
+
+              .options .schedule:hover ,
+            .options .watchlater:hover ,
+             .options .abusereport:hover  {
+             opacity: 1;
+              text-decoration: underline;
+
+           }
+
+
+  
+        .social {
+    
+         display: block;
+            float: left;
+            width: 35%;
+
+        }
+
+        .options {
+                  display: block;
+            float: left;
+            width: 70%;
+        }
+
+        .favorite {
+         display: block;
+            float: right;
+            width:40px;
+        }
+
+
+        .socialIcons {
+display: block;
+float: right;
+margin: 5px;
+width: 30px;
+        }
+
+            .socialIcons img {
+                width: 100%;
+                height:auto;
+                border: none;
+                opacity: 0.5;
+            }
+                        .socialIcons:hover img {
+                opacity: 1;
+            }
+
+        .favorite .socialIcons {
+            width: 40px;
+          
+        }
+
+.tweetUpdates {
+    min-height: 200px;
+    font-size: 12px;
+    color: #fff;
+    background-color: #999;
+    opacity: 0.7;
+}
+
+.sideContentHolder {
+display: block;
+line-height: 100px;
+min-height: 100px;
+padding-top: 10px;
+position: relative;
+text-align: center;
+width: 100%;
+z-index: 10;
+color: #ddd;
+font-size: 13px;
+}
+
+.sideSchedule {
+    display: block;
+width: 96%;
+padding: 2%;
+border-bottom: 1px solid #777;
+float: left;
+cursor: default;
+}
+
+.sideSchedule.playingNow 
+{
+    background-color:#eee;
+    color: #555;
+}
+
+    .sideSchedule.playingNow .videoTitle {
+        color: #000;
+    }
+
+    /*.sideSchedule.playingNow .videoTiming {
+        color: #fff;
+        background-color: #2a99bd;
+    }*/
+
+
+    .sideSchedule strong {
+display: block;
+float: left;
+font-weight: normal;
+height: 70px;
+width: 175px;
+position: relative;
+    }
+
+.sideSchedule .videoAvatar {
+    display: block;
+    float: left;
+    margin-right:10px;
+    width: 125px;
+    height: 75px;
+    overflow: hidden;
+}
+
+.sideSchedule .videoAvatar img{
+   max-width: 100%;
+    height:auto;
+    min-height: 100%;
+
+}
+
+.sideSchedule .videoTiming {
+display: block;
+float: left;
+font-size: 12px;
+text-align: center;
+width: 100%;
+position: absolute;
+}
+
+
+
+
+ .sideChannel {
+    display: block;
+width: 96%;
+padding: 2%;
+border-bottom: 1px solid #777;
+float: left;
+}
+
+   .sideChannel strong {
+display: block;
+float: left;
+font-weight: normal;
+height: 75px;
+position: relative;
+width: 235px;
+    }
+
+ .sideChannel .channelAvatar {
+border: 1px solid #777;
+display: block;
+float: left;
+height: 72px;
+margin-right: 10px;
+overflow: hidden;
+width: 72px;
+}
+
+ .sideChannel .channelAvatar img{
+   max-width: 72px;
+    height:auto;
+    min-height: 100%;
+
+}
+
+.sideChannel .channelTiming {
+    background-color: #f00;
+border-top-left-radius: 10px;
+bottom: 2px;
+color: #ccc;
+display: block;
+float: left;
+font-size: 13px;
+font-weight: bold;
+height: 15px;
+    left: -66px;
+opacity: 0.7;
+position: absolute;
+text-align: center;
+    width: 40px;
+    line-height: 15px;
+}
+
+/*.playTime {
+background: none repeat scroll 0 0 #eee;
+bottom: 16px;
+color: #000;
+font-size: 13px;
+height: 20px;
+left: 0;
+line-height: 20px;
+padding-left: 2px;
+position: absolute;
+width: 100%;
+}*/
+
+.sideChannel .spnSubscribers,
+.sideChannel .spnViews {
+bottom: 0;
+color: #000;
+display: block;
+float: left;
+font-size: 12px;
+font-weight: bold;
+position: absolute;
+}
+
+    .sideChannel .spnSubscribers {
+        padding-right: 10px;
+    }
+
+
+.sideChannel:hover   .videoTitle {
+        color: #fff;
+    }
+
+.sideChannel .channelTitle {
+color: #2a99bd;
+display: block;
+float: left;
+font-size: 15px;
+height: 20px;
+line-height: 20px;
+overflow: hidden;
+text-overflow: ellipsis;
+white-space: nowrap;
+width: 100%;
+text-align: left;
+
+}
+.sideChannel:hover   .channelTitle {
+        color: #2a99bd;
+    }
+
+
+
+
+
+ 
+
+
+
+        /*---------------------MEDIA-------------------------------*/
+/*@media only screen and (max-width: 1230px), (max-height: 660px) {
+
+    #mainWrapper {
+        max-width: 1024px;
+    }
+
+    #ChannelPageInfoHolder,
+    #ChannelPageSocialHolder,
+    #ChannelPageSocialCommentHolder {
+        width: 640px;
+    }
+
+    #PlayerHolder {
+        width: 660px;
+    }
+
+    .playerbox,
+    #player {
+        height: 380px;
+        width: 640px;
+    }
+
+    #divTopNavAfterLogin {
+        width: 75%;
+    }
+}*/
+
+
+/*ABUSE REPORT*/
+
+
+
+    /*.close_x {
+        background-image: url("/images/close_pop.png");
+        display: block;
+        height: 30px;
+        line-height: 1000px;
+        overflow: hidden;
+        position: absolute;
+        right: 5px;
+        top: 10px;
+        width: 30px;
+    }*/
+
+
+
+
+
+
+
+
+.closeAbuseReport {
+background-image: url("/images/removebutton.png");
+background-repeat: no-repeat;
+background-size: 95% auto;
+display: block;
+height: 30px;
+line-height: 1000px;
+opacity: 0.7;
+overflow: hidden;
+position: absolute;
+right: 20px;
+top: 12px;
+width: 30px;
+}
+
+    .closeAbuseReport:hover {
+           opacity:1;
+    }
+
+    .closeAbuseReport span {
+color: #000;
+float: right;
+font-size: 25px;
+padding-right: 5px;
+    }
+        .closeAbuseReport span:hover {
+            color: #2a99bd;
+            background-image: none;
+        }
+#abuseModal {
+background-color: #f9f9f9;
+display: none;
+float: left;
+height: auto;
+margin-bottom: 20px;
+overflow: hidden;
+padding: 50px 50px 20px;
+position: relative;
+width: 725px;
+}
+#closeModal
+{
+    color: #2a99bd;
+cursor: pointer;
+font-size: 20px;
+position: absolute;
+right: 15px;
+text-decoration: none;
+top: 7px;
+}
+#closeModal:hover
+{
+    color:#777777;
+}
+#btnSendAbuseReport {
+    z-index:1003;
+    float:left;
+    cursor:pointer;
+}
+
+.abuse {
+display: block;
+float: left;
+width: 230px;
+margin-left: 20px;
+margin-bottom: 10px;
+margin-top: 30px;
+}
+
+.H3abuseReport {
+
+font-size: 17px;
+margin-bottom: 10px;
+color: #555;
+font-weight: normal;
+}
+
+.fontFamily {
+    
+    line-height: 20px;
+    font-size: 14px;
+    color: #555;
+}
+
+.submitAbuse {
+clear: both;
+display: block;
+margin-bottom: 10px;
+width: 100%;
+
+}
+    .submitAbuse a {
+background-color: #2a99bd;
+color: #fff;
+display: block;
+height: 32px;
+line-height: 32px;
+margin: auto;
+text-align: center;
+width: 120px;
+    clear: both;
+    text-transform: capitalize;
+
+    }
+
+.ddlCategoryAbuse {
+    height: 30px;
+    }
+
+        .submitAbuse a:hover {
+background-color: #0f7ea2;
+        }
+
+    .submitAbuse span {
+display: block;
+float: left;
+width: 200px;
+margin-top: 12px;
+margin-left: 20px;
+color: #ff7373;
+font-size: 14px;
+height: 20px;
+line-height: 20px;
+    }
+
+.msg{
+    display: block;
+    float: left;
+    font-size: 13px;
+width: 100%;
+text-align: center;
+    padding-top: 50px;
+}
+.fb-comments iframe {
+    max-width: inherit;
+}
+
+#spnAVGRating{
+background-image: url("/images/social/rating-star.png");
+background-repeat: no-repeat;
+background-size: 100% auto;
+display: block;
+float: left;
+height: 50px;
+width: 50px;
+line-height: 50px;
+text-align: center;
+}
+
+.yourRating {
+display: block;
+float: left;
+font-size: 14px;
+height: 50px;
+line-height: 50px;
+text-align: center;
+width: 170px;
+color: #eee;
+}
+
+.browseChannels .divChannel {
+background-color: #ECECEC;
+border: 1px solid #2A99BD;
+border-radius: 5px;
+float: left;
+margin: 6px;
+min-width: 130px;
+padding: 0.5%;
+width: 171px;
+}
+
+ .browseChannels .divChannel a {
+color: #2A99BD;
+
+font-size: 15px;
+font-weight: normal;
+overflow: hidden;
+text-decoration: none;
+text-overflow: ellipsis;
+text-transform: capitalize;
+white-space: nowrap;
+width: 150px;
+}
+
+ .browseChannels .divChannel a.comingSoon {
+color: #95ccdd;
+}
+
+ .browseChannels .divChannel span {
+clear: both;
+color: #777;
+display: block;
+float: left;
+
+font-size: 12px;
+line-height: 15px;
+}
+
+ .browseChannels .divChannel span.comingSoon {
+color: #bbb;
+}
+
+ .divChannel span em {
+ color:#2A99BD ;
+ }
+
+ .browseChannels .divChannel img {
+border: 1px solid #f9f9f9;
+display: block;
+float: left;
+height: 122px;
+margin-bottom: 10px;
+margin-top: 1px;
+width: 100%;
+border-radius: 3px;
+}
+
+ /*BROWSE CHANNEL*/
+.browseChannels #lblmessage {
+color: #000;
+display: block;
+font-size: 20px;
+height: 20px;
+line-height: 300px;
+margin: auto;
+text-align: center;
+width: 100%;
+}
+
+       .browseChannels .spnMsg
+         {
+             float:left;
+             display:block;
+             width:150px;
+             font-size:12px;
+             text-transform:capitalize;
+             margin-top:10px;
+         }
+       .browseChannels .red.spnMsg
+         {
+             color:#ff6a00;
+         }
+      .browseChannels .green.spnMsg
+         {
+             color:green;
+         }
+
+    .browseChannels .channelTiming {
+    background-color: #F00;
+    border-top-left-radius: 10px;
+    bottom: 0px;
+    color: #CCC;
+    display: block;
+    float: left;
+    font-size: 13px;
+    font-weight: bold;
+    height: 15px;
+    left: 150px;
+    opacity: 0.7;
+    position: absolute;
+    text-align: center;
+    width: 55px;
+    top:55px;
+}
+
+  .sideSchedule .playingNowShow
+  {
+background: none repeat scroll 0 0 #ff4b00;
+bottom: -5px;
+color: #fff;
+display: none;
+font-size: 12px;
+font-weight: bold;
+height: 22px;
+left: -132px;
+line-height: 20px;
+opacity: 0.85;
+position: absolute;
+text-align: center;
+width: 120px;
+
+  }
+  .sideSchedule .playingNextShow
+  {
+background: #22cb71;
+bottom: -5px;
+color: #fff;
+display: none;
+font-size: 12px;
+font-weight: bold;
+height: 22px;
+left: -132px;
+line-height: 20px;
+opacity: 0.85;
+position: absolute;
+text-align: center;
+width: 120px;
+  }
+
+  .placeholderImage {
+      height: auto;
+      width: 100%;
+      margin-bottom:5px;
+      display:none;
+  }
+
+  #complete {
+      background-image: url("/images/comingSoon.jpg")
+  }
+  .flowplayer {
+      height:510px;
+      width:854px;
+  }
+      /*BROWSE CHANNEL*/
+
+
+
+
+.advancedSearch {
+    border: 1px solid #999;
+
+}
+
+
+
+
+
+
+
+
+
+
+      
+
+/* big*/
+@media (min-height: 980px) and (min-width: 1720px) {
+#mainWrapper {max-width: 1650px;}
+.leftWrapperRS {width: 1280px;}
+.playerbox,#player,#PlayerHolder {width: 1280px; height: 750px;}
+
+
+}
+
+
+/*purple*/
+@media (max-width: 1280px) {
+#mainWrapper {max-width: 1065px;}
+.leftWrapperRS {width: 700px;/*background-color: #d272e0;*/}
+.playerbox,#player,#PlayerHolder {width: 700px;height: 420px;}
+
+}
+
+
+
+
+/*yellow*/
+@media (max-width: 1080px) {
+    #mainWrapper {max-width: 1000px;}
+    .leftWrapperRS {width: 660px;/*background-color: #fffa00;*/}
+     .playerbox,#player,#PlayerHolder {width: 660px;height: 400px;}
+    .videoTitleMain {max-width: 520px;}
+     
+}
+
+
+
+
+
+
+
+
+ 

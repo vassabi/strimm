@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<OrderedTest name="OrderedUserBoardTests" storage="c:\projects\strimm\buildprocesstemplates-qa_db_rewrite\strimm.data.tests\ordereduserboardtests.orderedtest" id="433e2724-caf9-4963-89d9-c7736db9fe23" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestLinks>
+    <TestLink id="f5e3a70e-1874-ac7f-45c6-485d514b9675" name="GetUserBoadDataByUserIdTest" storage="bin\debug\strimm.data.tests.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <TestLink id="ebdfc9de-7cd6-72fa-be21-b9926ee26e28" name="DeleteUserByIdTest" storage="bin\debug\strimm.data.tests.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  </TestLinks>
+</OrderedTest>

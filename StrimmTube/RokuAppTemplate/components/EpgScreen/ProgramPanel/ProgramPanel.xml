@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<component name="ProgramPanel" extends="Group">
+  <interface>
+    <field id="program" type="assocarray" alias="programInfo.program" onChange="onProgramChange" />
+    <field id="color" alias="panelBackground.color" />
+    <field id="width" type="float" alias="panelBackground.width" onChange="updateLayout" />
+    <field id="height" type="float" alias="panelBackground.height" onChange="updateLayout" />
+    <field id="buttonWidth" type="float" onChange="OnButtonWidthChanged" />
+    <field id="selectedButtonId" type="string" alwaysnotify="true" />
+    <field id="enableOpenChannel" type="boolean" value="true" />
+  </interface>
+  
+  <script type="text/brightscript" uri="./ProgramPanel.brs" />
+  <script type="text/brightscript" uri="pkg:/components/nodeUtils.brs" />
+  <script type="text/brightscript" uri="pkg:/source/generalUtils.brs" />
+  
+  <children>
+    <Rectangle id="panelBackground" color="0x0d3340f3" >
+      <ProgramInfo id="programInfo" translation="[40,20]" width="760" maxDescLines="15" />
+      <MarkupGrid id="buttonGroup" translation="[40,20]" focusBitmapUri="pkg:/images/list_focus.9.png" focusFootprintBitmapUri=""
+          numRows="1" itemComponentName="ButtonMarkup" itemSpacing="[ 40, 0 ]" />
+      <Poster id="channelLogo" loadDisplayMode="scaleToFit" width="88" height="56" />
+    </Rectangle>
+    <Poster id="frame" uri="pkg:/images/list_focus.9.png" />
+  </children> 
+</component>

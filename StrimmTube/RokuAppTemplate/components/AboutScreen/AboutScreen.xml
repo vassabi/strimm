@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<component name="AboutScreen" extends="Group" >
+  <interface>
+    <field id="backNode" type="node" />
+  </interface>
+
+  <script type="text/brightscript" uri="./AboutScreen.brs" />
+  <script type="text/brightscript" uri="pkg:/components/nodeUtils.brs" />
+  <script type="text/brightscript" uri="pkg:/source/generalUtils.brs" />
+  
+  <children>
+    <Rectangle id="background" width="1280" height="720" color="0x000000d6" />
+    <Poster uri="pkg:/images/mm_icon_focus_hd.png" translation="[100, 180]" width="290" height="218" />
+    <Label id="appTitle" translation="[490, 180]" />
+    <Label id="version" translation="[100, 410]" />
+    <Label id="aboutText" horizAlign="left" wrap="true" translation="[490, 230]" width="690" />
+    <ScrollingLabel id="ppLabel" translation="[100, 680]" maxwidth="1080" font="font:SmallestSystemFont" />
+  </children>
+</component>

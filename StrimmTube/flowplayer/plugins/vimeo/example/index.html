@@ -1,0 +1,827 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--
+	Flowplayer website, forums & jQuery Tools by Tero Piirainen
+	Prefer web standards over Flash. Video is the only exception.
+-->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+		<title>Flowplayer - Flash Video Player for the Web</title>
+		<meta name="Description" content="Embed video streams to your website. Superior alternative to YouTube. Open Sourced under the GPL license. No other software makes this smoother." />
+		<meta name="Keywords" content="video player for the web, flash video player,web media player,free video player,free flv player,mp4 flash player,mp4 player,open source video player,flash 9 video,flash video,web video,flv player,flv video" />
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	<meta name="Distribution" content="Global" />
+	<meta name="Author" content="Tero Piirainen" />
+	<meta name="Robots" content="index,follow" />
+	<link rel="stylesheet" type="text/css" href="http://static.flowplayer.org/css/global-0.25.css" />
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+	<script src="flowplayer-3.2.12.min.js"></script>
+	<script src="http://cdn.jquerytools.org/1.2.5/tiny/jquery.tools.min.js"></script>
+</head>
+<body id="plugins_vimeo">
+	<div id="wrap">
+<script type="text/javascript" src="flowplayer.playlist-3.2.10.min.js"></script>
+<script type="text/javascript" src="jquery.showtime.js"></script>
+<script type="text/javascript" src="jquery.prettynumber.js"></script>
+<script type="text/javascript" src="jquery.overscroll.min.js"></script>
+<style type="text/css">
+#vimeo {
+    float:left;
+    height:278px;
+    width:385px;
+    display:block;
+}
+#playlist1 {
+	display: none;
+    width:260px;
+    height:500px;
+    overflow-y:hidden;
+    overflow-x:hidden;
+    margin:0 0 0 0;
+    padding:0px;
+    float:right;
+    margin-left:0px;
+    margin-top:0px;
+}
+#playlist2 {
+	display: none;
+    width:260px;
+    height:500px;
+    overflow-y:hidden;
+    overflow-x:hidden;
+    margin:0 0 0 0;
+    padding:0px;
+    float:right;
+    margin-left:0px;
+    margin-top:0px;
+}
+.playlist a:hover {
+    background-color:#ffc;
+}
+.playlist a.progress {
+    background-color:#efefef;
+}
+.playlist a.playing {
+    border:1px solid #666;
+    background-color:#ffc;
+}
+.playlist a.paused {
+    border:1px solid #666;
+    background-color:#ffc;
+}
+.active {
+   pointer-events: none;
+   cursor: default;
+   background-color:#d1e1fa;
+}
+#content-container {
+    display: none;
+    float:left;
+    width:490px;
+    height:165px;
+    padding-left: 5px;
+    padding-top: 10px;
+    /*overflow-y:hidden;
+    max-height: 165px;
+    overflow-x:hidden;  */
+}
+.playlist a {float:left;clear:none; margin:0 0 0 0; padding:0px;}
+.playlist a {width:260px;text-decoration:none; margin:0 0 0 0; padding:0px;}
+.playlist a {padding:2px;display:block;overflow:hidden;color:#000;zoom:1;*cursor:pointer; background-color:#fff;}
+.playlist a.selected{background:#d1e1fa}
+.playlist a:hover {background:#d1e1fa;text-decoration:none}
+.playlist a:visited .title{color:#408}
+.playlist a:hover .title{text-decoration:underline}
+.playlist a:visited .video-thumb .img{opacity:0.75;filter:alpha(opacity=75)}
+.playlist a:hover .video-thumb .img{opacity:1;filter:none}
+.playlist a .title{font-size:1.0833em;font-weight:normal;line-height:1.2;color:#03c;width:180px;max-height:32px;margin-bottom:2px;overflow:hidden;cursor:pointer;cursor:hand}
+.playlist a .stat{display:block;font-size:.9166em;color:#666;line-height:1.4em;height:1.4em;overflow:hidden}
+.playlist a .stat strong{color:#000}
+.playlist a .video-time{display:block;font-size:.9166em;color:#666;line-height:1.4em;height:1.4em;overflow:hidden}
+.playlist a img {float:left;clear:none;width:120px; height:90px; padding-right: 5px;}
+#content .mainbox {
+	border:1px solid #ccc;
+	background-color:#FFFFFF;
+	margin:0 0 0 0;
+	padding:0px;
+    padding-left:0px;
+    width:750px;
+    height:500px;
+	/* outline radius */
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+}
+</style>
+<div id="content">
+<h1>
+	<strong>Vimeo</strong>
+	<em>Play Vimeo videos directly within Flowplayer</em>
+</h1>
+<br><br>
+<p>The Vimeo Flowplayer plugin uses the AS3 API to show the Vimeo videos using Flowplayer.
+</p>
+<div class="mainbox white">
+    <div style="float:left;width:490px;height:650px;">
+        <a id="vimeo" href="api:1084537" style="float:left;width:490px;height:350px;"></a>
+        <div id="content-container">
+            <div id="description"></div>
+            <br>
+            <div id="tags">
+                <b>Tags:</b><br>
+                <span id="tags-content"></span>
+            </div>
+      </div>
+    </div>
+    <div id="playlist1" class="playlist">
+			<a href="${url}">
+				<img src="${thumbnail}"/>
+				<span dir="ltr" class="title">${title}</span>
+				<span class="stat">by ${author}</span>
+				<span class="video-time">${videoDuration}</span>
+			</a>
+	</div>
+</div>
+<br clear="all" />
+<script type="text/javascript">
+function formatContent(text){
+    if (text) {
+        text = text.replace(
+            /((https?\:\/\/)|(www\.))(\S+)(\w{2,4})(:[0-9]+)?(\/|\/([\w#!:.?+=&%@!\-\/]))?/gi,
+            function(url){
+                var full_url = url;
+                if (!full_url.match('^https?:\/\/')) {
+                    full_url = 'http://' + full_url;
+                }
+                return '<a href="' + full_url + '" target="_blank">' + url + '</a>';
+            }
+        ).replace(/(\r\n|\r|\n)/g, "<br />");
+    }
+    return text;
+}
+function showInfo(data) {
+    $('#tags-content').html(data.tags.join(","));
+    $('#description').html(formatContent(data.content));
+    $('#content-container').show();
+}
+function showPlaylist(container) {
+    $(container).overscroll();
+    //$(container + " a .video-time").showTime();
+    $(container + " a .view-count").prettynumber({
+        delimiter : ','
+    });
+    $(container).show();
+}
+$f("vimeo", "../flowplayer.swf", {
+	// configure the required plugin
+    playlist: [
+    	    { url: "api:1084537", title: "Big Buck Bunny", author: "Blender Foundation", videoDuration: "9.56",  thumbnail: "http://b.vimeocdn.com/ts/209/636/20963649_200.jpg" },
+    	    { url: "api:1132937", title: "Elephants Dream", author: "Blender Foundation", videoDuration: "10.54", thumbnail: "http://b.vimeocdn.com/ts/209/725/20972598_200.jpg" },
+    	    { url: "api:28103524", title: "Les chiens isolés", author: "CRCR", videoDuration: "6.32", thumbnail : "http://b.vimeocdn.com/ts/205/905/205905221_200.jpg" },
+    	    { url: "api:17922322", title: "Junkspace", author: "CRCR", videoDuration: 0.55, thumbnail: "http://b.vimeocdn.com/ts/130/627/130627553_200.jpg" },
+    	    { url: "api:16051959", title: "TODOR and PETRU", author: "CRCR", videoDuration: "2.45", thumbnail: "http://b.vimeocdn.com/ts/205/911/205911527_200.jpg" },
+    	    { url: "api:15160326", title: "Red River Bay", author: "CRCR", videoDuration: "1.07", thumbnail: "http://b.vimeocdn.com/ts/130/627/130627947_200.jpg" },
+    ],
+	plugins:  {
+		controls: null,
+		vimeo: {
+				url:'../flowplayer.vimeo-3.2.9.swf',
+				enableApiData: true,
+                loadOnStart: false,
+                defaultId: 2,
+                onApiData: function(data) {
+                    // use the function defined above to show tche related clips
+                    showInfo(data);
+                }
+		}
+	},
+	onLoad: function() {
+        showPlaylist("#playlist1");
+    },
+	clip: {
+        autoPlay: false,
+        provider: "vimeo"
+	},
+	log: {
+        level: 'debug',
+        filter: 'org.flowplayer.view.PluginLoader, org.flowplayer.controller.*,org.electroteque.vimeo.*'
+    }
+}).playlist("#playlist1", {loop:true});
+</script>
+<p>
+This demonstrates a setup to play a video from Vimeo with a playlist of other videos. Additionally it fetches
+information about each video from the Vimeo API and shows some of the data provided.
+</p>
+<p>
+	The plugin works with manual playlists aswell in combination with the flowplayer playlist javascript api.
+</p>
+<h2>Features</h2>
+<ul>
+    <li>Chrome player support with integration with other Flowplayer plugins.</li>
+    <li>Provides an event for obtaining data for the video to be used for
+    customised features via the javascript API and Vimeo API.</li>
+    <li>Full playlist support provided by Flowplayer to work with other video provider types like http, rtmp and youtube.</li>
+    <li>Automatic management of the controlbar to hide / show the controls for the chrome player with other video types in a playlist.</li>
+</ul>
+<h2>Known Issues</h2>
+<ul>
+    <li>No official configurable chromeless player support, therefore all controlbar UI needs to be disabled.</li>
+    <li>All video UI customisations are provided by Plus and Pro only users for the owners of those videos if they choose to provide a chromeless interface.</li>
+    <li>No bitrate quality selection or HD selection support due to the lack of video quality level selection support or controlling HD access.</li>
+    <li>Not able to obtain volume value changes from the default UI therefore all volume settings to and from Flowplayer are disabled for the moment.</li>
+    <li>No seeking outside the buffer support due to the lack of proper pseudo streaming / byterange seeking functions over http.</li>
+    <li>No video start time support due to being a progressive download only stream.</li>
+    <li>An initial vimeo video id is required to load the API before actually requesting the correct video due to a logical limitation, this can be provided by a defaultId config or the current clip url is used. This will affect the play count. </li>
+</ul>
+<br>
+<p>
+    NOTE: The Vimeo Moogaloop API is severely limited and crippled because of their organisational, developer and business policies. Whenever the API is evolved and improved
+    in the future those feature improvements may be carried across.
+    <br><br>There is a hidden feature to provide near chromeless support but it is not enabled by default, it is required that owners of the videos hold a Plus or Pro account
+    to be able to change the way the video appears in the API and only the users with such an account has access to disable features they do not need for the videos they own.
+    <br><br>As of now only a chrome player is supported
+    which requires disabling the Flowplayer controlbar which will then allow universal embedding and playing with other video formats in a playlist.
+    <br><br>There will be no ETA as of yet of any other feature compatibility therefore can be bundled with the Youtube plugin at a reduced cost.
+</p>
+<h3>(Current Version 3.2.9)</h3>
+<h2>Compatibility</h2>
+<ul>
+    <li>Flowplayer 3.2.6 and above</li>
+</ul>
+<h2>Changes since 3.2.8</h2>
+<ul>
+    <li>Fixed issue with a change in loading the Vimeo api player.</li>
+     <li>Fixed issue with auto buffering feature.</li>
+</ul>
+<div>
+<h2>Plugin Available For Purchase via Paypal</h2> <br>
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="2ZMVQGSV2JDVQ">
+<table>
+<tr><td><input type="hidden" name="on0" value="License Options">License Options</td></tr><tr><td><select name="os0">
+	<option value="Single Domain - Suits Small Sites">Single Domain - Suits Small Sites $50.00 AUD</option>
+	<option value="Multi Domain - Suits Larger Sites">Multi Domain - Suits Larger Sites $100.00 AUD</option>
+	<option value="Single Domain - Bundled With Youtube Plugin">Single Domain - Bundled With Youtube Plugin $220.00 AUD</option>
+	<option value="Multi Domain - Bundled With Youtube Plugin">Multi Domain - Bundled With Youtube Plugin $480.00 AUD</option>
+	<option value="Single Domain - Bundled With Youtube,Dailymotion Plugins 20%">Single Domain - Bundled With Youtube,Dailymotion Plugins 20% $288.00 AUD</option>
+	<option value="Multi Domain - Bundled With Youtube,Dailymotion Plugins 30%">Multi Domain - Bundled With Youtube,Dailymotion Plugins 30% $504.00 AUD</option>
+	<option value="Single Domain - Not For Profit">Single Domain - Not For Profit $25.00 AUD</option>
+	<option value="Single Domain Bundle With Flowplayer 5 Version 20%">Single Domain Bundle With Flowplayer 5 Version 20% $80.00 AUD</option>
+	<option value="Multi Domain Bundle With Flowplayer 5 Plugin Version 30%">Multi Domain Bundle With Flowplayer 5 Plugin Version 30% $140.00 AUD</option>
+</select> </td></tr>
+<tr><td><input type="hidden" name="on1" value="Domain(s)">Domain(s)</td></tr><tr><td><input type="text" name="os1" maxlength="200"></td></tr>
+</table>
+<input type="hidden" name="currency_code" value="AUD">
+<input type="image" src="https://www.paypalobjects.com/en_AU/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal — The safer, easier way to pay online.">
+<img alt="" border="0" src="https://www.paypalobjects.com/en_AU/i/scr/pixel.gif" width="1" height="1">
+</form>
+    <p class="higher">
+        <button class="custom medium" onclick="location.href = '#download'">Download Demo</button>
+        <small>(Version <strong>3.2.8</strong>)</small>
+    </p>
+</div>
+<h2>License Information</h2>
+<p>The Vimeo Plugin is a once off commercial license with updates and support to the Vimeo plugin only.
+    Flowplayer related questions and support may be provided on their forums at <a href="http://flowplayer.org/forum/index.html">http://flowplayer.org/forum/index.html</a></p>
+<ul>
+    <li>Single Domain License - Suitable for small to medium sites with updates and unlimited support included.</li>
+    <li>Multi Domain License - Suitable for larger sites and video platform sites with updates, feature requests and unlimited priority support included.</li>
+    <li>Unlimited - Suitable for distributing with software, provided will be the plugin as an actionscript library to compile into the flopwlayer unlimited player.</li>
+</ul>
+<h2>Note:</h2>
+<p>With your purchase please provide your domains to be provided with your licensed plugin. New domains need to be requested manually for the moment. </p>
+<h2>List Of Examples</h2>
+<ul>
+	<li><a href="#manualVideoPlaylist">Vimeo Video Playlist Example.</a></li>
+	<li><a href="#poster">Poster Splash Image Example.</a></li>
+</ul>
+<h2>Examples</h2>
+<a name="basic"></a>
+<h2>Example with vimeo playlists.</h2>
+<h3>Flowplayer configuration</h3>
+<p>The controls can be disabled by configuring it as null when working with the vimeo Chrome player.</p>
+<div class="box code">
+<pre><code class="javascript">
+    .....
+	plugins:  {
+		controls: null,
+		.....
+	},
+	....
+</code></pre>
+</div>
+<p>A default vimeo video id is also required to initially load the API due to a logical limitation, if none is set the current clip url is used or else this can be done like so: </p>
+<div class="box code">
+<pre><code class="javascript">
+    .....
+	defaultId: vimevideoid,
+	....
+</code></pre>
+</div>
+<p>The clip object sets the Vimeo plugin to be the video's streaming provider and URL resolver: </p>
+<div class="box code">
+<pre><code class="javascript">
+function formatContent(text){
+    if (text) {
+        text = text.replace(
+            /((https?\:\/\/)|(www\.))(\S+)(\w{2,4})(:[0-9]+)?(\/|\/([\w#!:.?+=&%@!\-\/]))?/gi,
+            function(url){
+                var full_url = url;
+                if (!full_url.match('^https?:\/\/')) {
+                    full_url = 'http://' + full_url;
+                }
+                return '<a href="' + full_url + '" target="_blank">' + url + '</a>';
+            }
+        ).replace(/(\r\n|\r|\n)/g, "<br />");
+    }
+    return text;
+}
+function showInfo(data) {
+    $("#content-container a .view-count").prettynumber({
+        delimiter : ','
+    });
+    $("#playlist").overscroll();
+   $('#content-container a .video-time').showTime();
+    $('#tags-content').html(data.tags.join(","));
+    $('#description').html(formatContent(data.content));
+	$('#playlist').show();
+    $('#content-container').show();
+}
+$f("vimeo", "../flowplayer.swf", {
+	plugins:  {
+		controls: null,
+		vimeo: {
+			url:'../flowplayer.vimeo-3.2.9.swf',
+            enableApiData: true,
+            loadOnStart: false,
+            defaultId: 2,
+            onApiData: function(data) {
+                // use the function defined above to show tche related clips
+                showInfo(data);
+            }
+		}
+	},
+	playlist: [
+	    { url: "api:1084537", title: "Big Buck Bunny", author: "Blender Foundation", videoDuration: "9.56",  thumbnail: "http://b.vimeocdn.com/ts/209/636/20963649_200.jpg" },
+	    { url: "api:1132937", title: "Elephants Dream", author: "Blender Foundation", videoDuration: "10.54", thumbnail: "http://b.vimeocdn.com/ts/209/725/20972598_200.jpg" },
+	    { url: "api:28103524", title: "Les chiens isolés", author: "CRCR", videoDuration: "6.32", thumbnail : "http://b.vimeocdn.com/ts/205/905/205905221_200.jpg" },
+	    { url: "api:17922322", title: "Junkspace", author: "CRCR", videoDuration: 0.55, thumbnail: "http://b.vimeocdn.com/ts/130/627/130627553_200.jpg" },
+	    { url: "api:16051959", title: "TODOR and PETRU", author: "CRCR", videoDuration: "2.45", thumbnail: "http://b.vimeocdn.com/ts/205/911/205911527_200.jpg" },
+	    { url: "api:15160326", title: "Red River Bay", author: "CRCR", videoDuration: "1.07", thumbnail: "http://b.vimeocdn.com/ts/130/627/130627947_200.jpg" },
+	],
+    onLoad: function() {
+        showPlaylist("#playlist1");
+    },
+	clip: {
+		provider: 'vimeo',
+        autoPlay: false
+	},
+    log: {
+        level: 'debug',
+        filter: 'org.electroteque.vimeo.*, org.flowplayer.controller.*'
+    }
+}).playlist("#playlist1", {loop:true});
+</code></pre>
+</div>
+<h2>Configuration</h2>
+<p>
+    Here is a list of the configuration options:
+</p>
+<table class="listing">
+	<thead>
+		<tr>
+			<th nowrap>property / datatype</th>
+			<th>default</th>
+			<th>description</th>
+		</tr>
+	</thead>
+    <tr>
+        <td class="code">apiPlayerURL <div class="type">string</div></td>
+        <td class="code default">http://api.vimeo.com/moogaloop_api.swf?</td>
+        <td class="description">
+            The url to the Vimeo moogaloop API.
+        </td>
+    </tr>
+    <tr>
+        <td class="code">dataApiURL <div class="type">string</div></td>
+        <td class="code default">http://vimeo.com/api/v2/video/</td>
+        <td class="description">
+            The url to the Vimeo video data feed.
+        </td>
+    </tr>
+    <tr>
+        <td class="code">enableApiData <div class="type">boolean</div></td>
+        <td class="code default">false</td>
+        <td class="description">
+			When enabled the video data feed will be collected and video information will be returned via the onApiData event. This will collect information like statistics, thumbnails, portraits, tags, title, description etc.
+        </td>
+    </tr>
+    <tr>
+        <td class="code">displayErrors <div class="type">boolean</div></td>
+        <td class="code default">false</td>
+        <td class="description">
+			Setting to enable vimeo errors to be displayed for debugging purposes, or use the javascript callback functions and //console.logging.
+        </td>
+    </tr>
+     <tr>
+        <td class="code">defaultId <div class="type">string</div></td>
+        <td class="code default"></td>
+        <td class="description">
+			The default Vimeo video id used to load the chrome API.
+        </td>
+    </tr>
+    <tr>
+        <td class="code">oauthKey <div class="type">string</div></td>
+        <td class="code default"></td>
+        <td class="description">
+			The developer oauth key to load the api. The oauth key is required and can be obtained by first logging into Vimeo and registering your application at <a href="http://vimeo.com/api/applications/new">http://vimeo.com/api/applications/new</a>.
+        </td>
+    </tr>
+    <tr>
+        <td class="code">loadOnStart <div class="type">boolean</div></td>
+        <td class="code default">true</td>
+        <td class="description">
+			By default the plugin will load the api on player load. By turning this off the api will load on request when working with other video providers in a playlist.
+        </td>
+    </tr>
+    <tr>
+        <td class="code">secure <div class="type">boolean</div></td>
+        <td class="code default">false</td>
+        <td class="description">
+			When loading the player in a secure server environment, enable this to load the Vimeo api via secure server also.
+        </td>
+    </tr>
+     <tr>
+        <td class="code">color <div class="type">string</div></td>
+        <td class="code default"></td>
+        <td class="description">
+            Specify the color of the video controls. Defaults to 00adef. Make sure that you don’t include the #.
+        </td>
+    </tr>
+    <tr>
+        <td class="code">title <div class="type">number</div></td>
+        <td class="code default">0</td>
+        <td class="description">
+            Show the title on the video. Defaults to 0.
+        </td>
+    </tr>
+    <tr>
+        <td class="code">portrait <div class="type">number</div></td>
+        <td class="code default">0</td>
+        <td class="description">
+            Show the user's portrait on the video. Defaults to 0.
+        </td>
+    </tr>
+    <tr>
+        <td class="code">byline <div class="type">number</div></td>
+        <td class="code default">0</td>
+        <td class="description">
+            Show the user's byline on the video. Defaults to 0.
+        </td>
+    </tr>
+</table>
+<a name="manualVideoPlaylist"></a>
+<h2><em>Vimeo Video Playlist</em> Example</h2>
+<p>
+    This example demonstrates of a video playlist of Vimeo and Youtube videos.
+</p>
+<div style="width:960px;">
+<!-- player container-->
+<a
+	style="display:block;width:660px;height:350px;float:left;"
+	id="manualVideoPlaylist">
+    <img src="/images/bbb.jpg"/>
+</a>
+<div id="playlistContainer" style="float:left;width:260px;margin-left:5px; margin-top:0px;">
+<b>Vimeo Videos Playlist:</b><br/>
+ <div id="playlist2" class="playlist">
+			<a href="${url}">
+				<img src="${thumbnail}"/>
+				<span dir="ltr" class="title">${title}</span>
+				<span class="stat">by ${author}</span>
+				<span class="video-time">${videoDuration}</span>
+			</a>
+ </div>
+</div>
+</div>
+<!-- Flowplayer installation and configuration -->
+<script language="JavaScript">
+$(function() {
+$f("manualVideoPlaylist", "../flowplayer.swf", {
+	// configure the required plugin
+	playlist: [
+	            {  url: "api:1084537", provider: "vimeo", title: "Big Buck Bunny - Vimeo", author: "Blender Foundation", videoDuration: "9.56",  thumbnail: "http://b.vimeocdn.com/ts/209/636/20963649_200.jpg" },
+	            { url: "api:bsGEWHNJ3s8", provider: "youtube", title: "Elephants Dream - Youtube", author: "Blender Foundation", videoDuration: "10.54", thumbnail: "http://i.ytimg.com/vi/XSGBVzeBUbk/default.jpg" },
+                { url: "api:XSGBVzeBUbk", provider: "youtube", title: "Big Buck Bunny - Youtube", author: "Blender Foundation", videoDuration: "9.56",  thumbnail: "http://i.ytimg.com/vi/XSGBVzeBUbk/default.jpg" },
+                { url: "api:1132937", provider: "vimeo", title: "Elephants Dream - Vimeo", author: "Blender Foundation", videoDuration: "10.54", thumbnail: "http://b.vimeocdn.com/ts/209/725/20972598_200.jpg" },
+    ],
+	plugins:  {
+		controls: { autoHide: true, playlist: true },
+		vimeo: {
+				url:'../flowplayer.vimeo-3.2.9.swf'
+		} ,
+		youtube: {
+				url:'../flowplayer.youtube-3.2.10.swf',
+                onVideoRemoved: function() {
+                    //console.log("Video Removed");
+                },
+                onVideoError: function() {
+                    //console.log("Incorrect Video ID");
+                },
+                onEmbedError: function() {
+                    //console.log("Embed Not Allowed");
+                }
+		}
+	},
+	onLoad: function() {
+        showPlaylist("#playlist2");
+    },
+	clip: {
+        autoPlay: true
+	},
+	log: {
+        level: 'debug',
+        filter: 'org.flowplayer.view.Panel, org.flowplayer.controller.*,org.electroteque.vimeo.*'
+    }
+}).playlist("#playlist2", {loop:true});
+});
+</script>
+<br clear="all" />
+<div class="box code">
+<pre><code class="javascript">
+$(function() {
+$f("manualVideoPlaylist", "../flowplayer.swf", {
+	// configure the required plugin
+	playlist: [
+	            {  url: "api:1084537", provider: "vimeo", title: "Big Buck Bunny - Vimeo", author: "Blender Foundation", videoDuration: "9.56",  thumbnail: "http://b.vimeocdn.com/ts/209/636/20963649_200.jpg" },
+	            { url: "api:bsGEWHNJ3s8", provider: "youtube", title: "Elephants Dream - Youtube", author: "Blender Foundation", videoDuration: "10.54", thumbnail: "http://i.ytimg.com/vi/XSGBVzeBUbk/default.jpg" },
+                { url: "api:XSGBVzeBUbk", provider: "youtube", title: "Big Buck Bunny - Youtube", author: "Blender Foundation", videoDuration: "9.56",  thumbnail: "http://i.ytimg.com/vi/XSGBVzeBUbk/default.jpg" },
+                { url: "api:1132937", provider: "vimeo", title: "Elephants Dream - Vimeo", author: "Blender Foundation", videoDuration: "10.54", thumbnail: "http://b.vimeocdn.com/ts/209/725/20972598_200.jpg" },
+    ],
+	plugins:  {
+		controls: { autoHide: true, playlist: true },
+		vimeo: {
+				url:'../flowplayer.vimeo-3.2.9.swf'
+		} ,
+		youtube: {
+				url:'../flowplayer.youtube-3.2.10.swf',
+                onVideoRemoved: function() {
+                    //console.log("Video Removed");
+                },
+                onVideoError: function() {
+                    //console.log("Incorrect Video ID");
+                },
+                onEmbedError: function() {
+                    //console.log("Embed Not Allowed");
+                }
+		}
+	},
+	onLoad: function() {
+        showPlaylist("#playlist2");
+    },
+	clip: {
+        autoPlay: true
+	},
+	log: {
+        level: 'debug',
+        filter: 'org.flowplayer.view.Panel, org.flowplayer.controller.*,org.electroteque.vimeo.*'
+    }
+}).playlist("#playlist2", {loop:true});
+});
+</code></pre>
+</div>
+<a name="poster"></a>
+<h2><em>Vimeo Video with Poster Image</em> Example</h2>
+<p>
+    This example demonstrates having the Vimeo video poster in the playlist as a splash.
+</p>
+<p>
+   The configuration uses the playlist splash example <a href="http://flowplayer.org/demos/configuration/playlist-splash.html">http://flowplayer.org/demos/configuration/playlist-splash.html</a> where a splash image url is configured before the clip in the playlist.
+</p>
+<div style="width:900px;">
+<!-- player container-->
+<a
+	style="display:block;width:660px;height:350px;float:left;"
+	id="poster">
+</a>
+<!-- Flowplayer installation and configuration -->
+<script language="JavaScript">
+$(function() {
+$f("poster", "../flowplayer.swf", {
+	// configure the required plugin
+	playlist: [
+			       {
+						url: 'http://b.vimeocdn.com/ts/209/636/20963649_640.jpg'
+				   },
+			       {
+						url: 'api:1084537',
+						provider: 'vimeo',
+						title: 'Big Buck Bunny',
+						autoPlay: false,
+						autoBuffering: true
+				   }
+    ],
+	plugins:  {
+		controls: null,
+		vimeo: {
+				url:'../flowplayer.vimeo-3.2.9.swf'
+		}
+	},
+	clip: {
+	},
+	log: {
+        level: 'debug',
+        filter: 'org.flowplayer.controller.*,org.electroteque.vimeo.*'
+    }
+});
+});
+</script>
+</div>
+<br clear="all" />
+<div class="box code">
+<pre><code class="javascript">
+$(function() {
+$f("poster", "../flowplayer.swf", {
+	// configure the required plugin
+	playlist: [
+			       {
+						url: 'http://b.vimeocdn.com/ts/209/636/20963649_640.jpg'
+				   },
+			       {
+						url: 'api:1084537',
+						provider: 'vimeo',
+						title: 'Big Buck Bunny',
+						autoPlay: false,
+						autoBuffering: true
+				   }
+    ],
+	plugins:  {
+		controls: null,
+		vimeo: {
+				url:'../flowplayer.vimeo-3.2.9.swf'
+		}
+	},
+	clip: {
+	},
+	log: {
+        level: 'debug',
+        filter: 'org.flowplayer.controller.*,org.electroteque.vimeo.*'
+    }
+});
+});
+</code></pre>
+</div>
+<div class="box code">
+<pre><code class="javascript">
+    .....
+	playlist: [
+			       {
+						url: 'http://b.vimeocdn.com/ts/209/636/20963649_640.jpg'
+				   },
+			       {
+						url: 'api:1084537',
+						provider: 'vimeo',
+						title: 'Big Buck Bunny',
+						autoPlay: false,
+						autoBuffering: true
+				   }
+    ],
+	....
+</code></pre>
+</div>
+<p>The Vimeo poster image url is obtained from http://i.ytimg.com/vi/XSGBVzeBUbk/hqdefault.jpg where XSGBVzeBUbk is the video id. </p>
+<p>The video clip config is then configured with autoPlay set to false and autoBuffering set to true. </p>
+<h3>Events</h3>
+<table class="listing">
+	<thead>
+		<tr>
+			<th nowrap>Event</th>
+			<th style="width:450px">When does it fire?</th>
+		</tr>
+	</thead>
+    <tr>
+        <td class="code"><em>onApiData()</em></td>
+        <td class="description">
+				Fires when the gdata feed information is collected when the enableGdata config is enabled. The callback is fed with the following arguments:
+				<ul>
+					<li><samp>gdata</samp> the gdata object with information of the video. </li>
+				</ul>
+        </td>
+    </tr>
+</table>
+<h3>Data Object</h3>
+<table class="listing">
+	<thead>
+		<tr>
+			<th nowrap>Property</th>
+			<th style="width:450px">Description</th>
+		</tr>
+	</thead>
+	<tr>
+        <td class="code"><em>url</em></td>
+        <td class="description">
+				The video url ie api:videoid.
+        </td>
+    </tr>
+    <tr>
+        <td class="code"><em>id</em></td>
+        <td class="description">
+				The vimeo video id.
+        </td>
+    </tr>
+	<tr>
+        <td class="code"><em>author</em></td>
+        <td class="description">
+				The author object with the following properties:
+				<ul>
+					<li><samp>name</samp> the author username. </li>
+					<li><samp>url</samp> the url to the author profile. </li>
+				</ul>
+        </td>
+    </tr>
+    <tr>
+        <td class="code"><em>title</em></td>
+        <td class="description">
+				The video title.
+        </td>
+    </tr>
+    <tr>
+        <td class="code"><em>content</em></td>
+        <td class="description">
+				The video content / description.
+        </td>
+    </tr>
+    <tr>
+        <td class="code"><em>defaultThumbnail</em></td>
+        <td class="description">
+				The default video thumbnail.
+        </td>
+    </tr>
+    <tr>
+        <td class="code"><em>duration</em></td>
+        <td class="description">
+				The duration of the video in seconds.
+        </td>
+    </tr>
+    <tr>
+        <td class="code"><em>statistics</em></td>
+        <td class="description">
+				The statistics object with the following properties:
+				<ul>
+					<li><samp>favoriteCount</samp> the count of favorites added by users. </li>
+					<li><samp>viewCount</samp> the view count. </li>
+					<li><samp>commentCount</samp> the comments count. </li>
+				</ul>
+        </td>
+    </tr>
+    <tr>
+        <td class="code"><em>tags</em></td>
+        <td class="description">
+				A numbered array of tags.
+        </td>
+    </tr>
+    <tr>
+        <td class="code"><em>thumbnails</em></td>
+        <td class="description">
+				An array of thumbnail objects with the following properties:
+				<ul>
+					<li><samp>url</samp> the thumbnail url. </li>
+				</ul>
+				In order from small, medium, large.
+        </td>
+    </tr>
+	<tr>
+        <td class="code"><em>portraits</em></td>
+        <td class="description">
+				An array of the author portrait images objects with the following properties:
+				<ul>
+					<li><samp>url</samp> the portrait url. </li>
+				</ul>
+				In order from small, medium, large.
+        </td>
+    </tr>
+    <tr>
+        <td class="code"><em>embedAllowed</em></td>
+        <td class="description">
+				If the video is allowed to be embedded into the player.
+        </td>
+    </tr>
+</table>
+<a name="download"></a>
+		<h3>Download a demo</h3>
+		<br><br>
+		<table class="listing">
+			<tr>
+				<td><a href="http://static.electroteque.org/download/flowplayer.vimeo-3.2.9-demo.zip" class="download">flowplayer.vimeo-3.2.9-demo.zip</a></td>
+				<td>same as above + README.txt and LICENCE.txt, and an example page</td>
+			</tr>
+		</table>
+	<br>
+	<p>
+		<div class="box info">
+			This is a non expiring <strong>demo</strong> version of the plugin. Works only on your local machine on localhost or 127.0.0.1.</div>
+	</p>
+</div>
+	</div>
+</body>
+</html>
