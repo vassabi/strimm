@@ -1764,6 +1764,7 @@ function LoadMoreVideos(isSearching) {
         dataType: "json",
         contentType: "application/json",
         success: function (response) {
+            debugger;
             if (response.d != null) {
                 var data = response.d;
                 pageIndex = data.NextPageIndex;
@@ -4142,7 +4143,7 @@ function ValidURL(url) {
 }
 function GetYoutubeVideosByUrl(videoProviderId) {
     //console.log(providerId);
-
+    debugger;
     if (videoProviderId != undefined) {
         providerId = videoProviderId;
     }
@@ -4832,7 +4833,7 @@ function RemoveVideoFromVideoRoom(btn) {
 };
 
 function addExternalVideoToChannel(btn) {
-
+    debugger;
     var btnId = btn.id;
     var idArr = btnId.split("_");
     var providerVideoId = "";
@@ -5311,7 +5312,7 @@ function ShowReactPlayer(element) {
         },
         overlayCSS: {
             background: 'black',
-            opacity: .8
+            opacity: .8,
         },
         onClose: function () {
             window.STRIMM_PLAYER = {
@@ -5351,7 +5352,6 @@ function ShowFlowPlayer(element) {
 }
 function initReactPlayer(element) {
     var newPlaylist = [];
-    debugger;
     var providerName = $("#" + element.id).attr("data-provider");
     var source = $("#" + element.id).attr("data-url");
     var typeValue = "video/" + providerName;
@@ -5360,6 +5360,12 @@ function initReactPlayer(element) {
     if (providerName == "custom") {
         source = $(videobox).attr("data-url");
         var ext = source.substr((source.lastIndexOf('.') + 1));
+        if (source.lastIndexOf('www.twitch.tv') >= 0) {
+            ext = "twitch";
+            source += "?parent=stagingst.strimm.com";
+        }
+        if (source.lastIndexOf('www.facebook.com') >= 0)
+            ext = "facebook";
         typeValue = "video/" + ext;
     }
     if (providerName == "youtube") {
@@ -5371,8 +5377,11 @@ function initReactPlayer(element) {
     if (providerName == "vimeo") {
         source = "https://vimeo.com/" + videoid;
     }
+    if (!source.startsWith("https"))
+        source = "https:" + source;
     var playlistItem = { sources: [{ type: typeValue, src: source }] };
     newPlaylist.push(playlistItem);
+    debugger;
     window.STRIMM_PLAYER = {
         url: source,
         startDate: new Date()

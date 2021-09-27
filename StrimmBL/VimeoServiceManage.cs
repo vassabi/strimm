@@ -227,9 +227,9 @@ namespace StrimmBL
             {
                 try
                 {
+                    ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12;
                     ApiRequestFactory requestFactory = new ApiRequestFactory();
                     IApiRequest apiRequest = requestFactory.GetApiRequest(DevKey);
-
                     apiRequest.Path = String.Format("{0}/{1}", Endpoints.Videos, id);
                     apiRequest.Method = Method.GET;
                     apiRequest.Headers.Add(new KeyValuePair<string, string>("Accept-Encoding", "gzip, deflate"));

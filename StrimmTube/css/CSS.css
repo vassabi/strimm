@@ -7371,5 +7371,10 @@ text-decoration: none;
 
 #STRIMM_PLAYER_ROOT
 {
-    width:800px;
+    width:85%;
+    margin:auto;
+}
+
+#STRIMM_PLAYER_ROOT.fixed-800 {
+    width: 800px;
 }

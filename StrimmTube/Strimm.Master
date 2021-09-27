@@ -2,6 +2,8 @@
 
 <%@ Register TagPrefix="atk" Namespace="AjaxControlToolkit" Assembly="AjaxControlToolkit" %>
 <%@ Register Src="~/UC/OttSettingsForm.ascx" TagPrefix="uc" TagName="OttSettingsForm" %>
+<%@ Register Src="~/UC/AppSettingsForm.ascx" TagPrefix="uc" TagName="AppSettingsForm" %>
+
 
 
 <!DOCTYPE html>
@@ -48,7 +50,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
 
     <link rel="icon" type="image/png" href="/favicon.png" />
-
     <link async="async" href="https://plus.google.com/117807232814593418955" rel="publisher" />
      <link async="async" href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
     <script async="async" type="text/javascript" src="https://apis.google.com/js/plusone.js">
@@ -384,7 +385,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div id="ottSettingsModal" style="display: none;">
         <uc:OttSettingsForm runat="server" id="OttSettingsForm" />
     </div>
-
+    <div id="appSettingsModal" style="display: none;">
+        <uc:AppSettingsForm runat="server" id="AppSettingsForm" />
+    </div>
     <div id="createChannelModal" style="display: none;">
 
         <div id="divBoardContent">

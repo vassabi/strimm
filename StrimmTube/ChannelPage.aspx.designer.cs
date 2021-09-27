@@ -7,11 +7,13 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace StrimmTube {
-    
-    
-    public partial class ChannelPage {
-        
+namespace StrimmTube
+{
+
+
+    public partial class ChannelPage
+    {
+
         /// <summary>
         /// Image1 control.
         /// </summary>
@@ -20,7 +22,7 @@ namespace StrimmTube {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Image Image1;
-        
+
         /// <summary>
         /// imgChannelAvatar control.
         /// </summary>
@@ -29,7 +31,7 @@ namespace StrimmTube {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Image imgChannelAvatar;
-        
+
         /// <summary>
         /// ancName control.
         /// </summary>
@@ -38,7 +40,7 @@ namespace StrimmTube {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label ancName;
-        
+
         /// <summary>
         /// ancUserName control.
         /// </summary>
@@ -47,7 +49,7 @@ namespace StrimmTube {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlAnchor ancUserName;
-        
+
         /// <summary>
         /// lblCategory control.
         /// </summary>
@@ -56,7 +58,7 @@ namespace StrimmTube {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblCategory;
-        
+
         /// <summary>
         /// lblSubscribers control.
         /// </summary>
@@ -65,7 +67,7 @@ namespace StrimmTube {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblSubscribers;
-        
+
         /// <summary>
         /// lblViews control.
         /// </summary>
@@ -74,7 +76,7 @@ namespace StrimmTube {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblViews;
-        
+
         /// <summary>
         /// lblLikes control.
         /// </summary>
@@ -83,7 +85,7 @@ namespace StrimmTube {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblLikes;
-        
+
         /// <summary>
         /// lnkAddToFave control.
         /// </summary>
@@ -92,7 +94,7 @@ namespace StrimmTube {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlAnchor lnkAddToFave;
-        
+
         /// <summary>
         /// ancLike control.
         /// </summary>
@@ -101,7 +103,7 @@ namespace StrimmTube {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlAnchor ancLike;
-        
+
         /// <summary>
         /// ddlCategory control.
         /// </summary>
@@ -110,7 +112,7 @@ namespace StrimmTube {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList ddlCategory;
-        
+
         /// <summary>
         /// txtVideoTitle control.
         /// </summary>
@@ -119,7 +121,7 @@ namespace StrimmTube {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtVideoTitle;
-        
+
         /// <summary>
         /// txtComments control.
         /// </summary>
@@ -128,7 +130,7 @@ namespace StrimmTube {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtComments;
-        
+
         /// <summary>
         /// lblMsg control.
         /// </summary>

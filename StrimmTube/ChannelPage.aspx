@@ -170,8 +170,8 @@
         //}
     </script>
 
-    <div id="mainWrapper" class="block"> 
-
+    <div id="mainWrapper" class="block">
+        
         <%--<div id="loadingDiv">
             <div id="loadingDivHolder">
                 <img src="/images/ajax-loader(3).gif" />
@@ -192,7 +192,7 @@
                 </div>
             </div>         
         </div>
-
+        
         <div class="leftWrapperRS">
             <div id="PlayerHolder">
                 <div class="playerbox" id="player">
@@ -346,7 +346,6 @@
 
         </div>
     </div>
-
 
 <div class="homeBlocksHolder">
     <div id="divFooterNH" class="default regular">

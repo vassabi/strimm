@@ -13,6 +13,7 @@
 <asp:Content ID="Content3" ContentPlaceHolderID="head" runat="server">
     <link href="/css/dragula.css" rel="stylesheet" />
     <link href="/reactplayer/css/main.317ac729.chunk.css" rel="stylesheet">
+    <link href="/css/dropdown.css" rel="stylesheet" />
     <script src="/JS/dragula.js"></script>
     <%= new StrimmTube.CorsUpload { }.ToString()%>
     <script src="https://api.dmcdn.net/all.js"></script>
@@ -22,6 +23,7 @@
     <script src="/Flowplayer7/flowplayer.js"></script>
     <script src="//cdn.flowplayer.com/releases/native/stable/plugins/hls.min.js"></script>
 
+    <script src="/JS/dropdown.js"></script>
     <script src="/Flowplayer7/cc-button-7.2.5.js"></script>
     <script src="/Flowplayer7/settingsmenu-7.2.5.js"></script>
     <script src="/Flowplayer7/embed.min.js"></script>
@@ -470,7 +472,7 @@ videos to your channel list." onclick="ShowSnippetPopup(this)">
         <a id="close_x" class="close close_x closePlayerBox" href="#"></a>
     </div>
     <div class="playerBoxReactplayer" id="reactPlayerBox" style="display: none;">
-        <div id="STRIMM_PLAYER_ROOT">
+        <div id="STRIMM_PLAYER_ROOT" class="fixed-800">
         </div>
         <a id="close_x" class="close close_x closePlayerBox" href="#"></a>
     </div>

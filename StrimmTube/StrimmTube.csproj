@@ -301,6 +301,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="css\dragula.css" />
+    <Content Include="css\dropdown.css" />
+    <Content Include="css\AppSettings.css" />
     <Content Include="css\OttSettings.css" />
     <Content Include="DownloadLiveStream.aspx" />
     <Content Include="HLS.aspx" />
@@ -461,7 +463,6 @@
     <Content Include="admcp\mgmt\Statistics.aspx" />
     <Content Include="admcp\mgmt\StatisticsNew.aspx" />
     <Content Include="admcp\mgmt\UC\ChannelBoxUC.ascx" />
-    <Content Include="admcp\mgmt\WebServiceAdmin\StatisticsWS.asmx" />
     <Content Include="admcp\mgmt\UserManagement.aspx" />
     <Content Include="admcp\mgmt\WebServiceAdmin\UserManagmentService.asmx" />
     <Content Include="Archive.aspx" />
@@ -1117,6 +1118,7 @@
     <Content Include="JS\CreateChannelPopup_old.js" />
     <Content Include="JS\Dmotion.js" />
     <Content Include="JS\dragula.js" />
+    <Content Include="JS\dropdown.js" />
     <Content Include="JS\EmailPreferences.js" />
     <Content Include="JS\EmbeddedChannel.js" />
     <Content Include="JS\EmbeddedChannelFP.js" />
@@ -1846,7 +1848,6 @@
     <Content Include="RokuAppTemplate\components\EpgScreen\ProgramPanel\ButtonMarkup.xml" />
     <Content Include="RokuAppTemplate\components\EpgScreen\ProgramPanel\ProgramPanel.xml" />
     <Content Include="RokuAppTemplate\components\EpgScreen\TimeGridChannelItemComponent\TimeGridChannelItemComponent.xml" />
-    <Content Include="RokuAppTemplate\components\InfoScreen\InfoScreen.xml" />
     <Content Include="RokuAppTemplate\components\LoadingIndicator\LoadingIndicator.xml" />
     <Content Include="RokuAppTemplate\components\MainScene.xml" />
     <Content Include="RokuAppTemplate\components\OnScreenInfo\OnScreenInfo.xml" />
@@ -1855,22 +1856,11 @@
     <Content Include="RokuAppTemplate\components\tasks\baseApiTask.xml" />
     <Content Include="RokuAppTemplate\components\tasks\PlayerTask.xml" />
     <Content Include="RokuAppTemplate\components\VideoPlayer\VideoPlayer.xml" />
-    <Content Include="RokuAppTemplate\images\BG_dark_down.png" />
-    <Content Include="RokuAppTemplate\images\epg_background.jpg" />
     <Content Include="RokuAppTemplate\images\frame.9.png" />
     <Content Include="RokuAppTemplate\images\icon_back.png" />
     <Content Include="RokuAppTemplate\images\icon_ok.png" />
-    <Content Include="RokuAppTemplate\images\icon_options.png" />
-    <Content Include="RokuAppTemplate\images\icon_play_pause.png" />
-    <Content Include="RokuAppTemplate\images\icon_replay.png" />
-    <Content Include="RokuAppTemplate\images\info_epg.png" />
-    <Content Include="RokuAppTemplate\images\keyboard.9.png" />
-    <Content Include="RokuAppTemplate\images\keyboard_focus.9.png" />
-    <Content Include="RokuAppTemplate\images\list_blank.9.png" />
     <Content Include="RokuAppTemplate\images\list_focus.9.png" />
-    <Content Include="RokuAppTemplate\images\list_focus_later.9.png" />
     <Content Include="RokuAppTemplate\images\loader.png" />
-    <Content Include="RokuAppTemplate\images\mm_icon_focus_fhd.png" />
     <Content Include="RokuAppTemplate\images\mm_icon_focus_hd.png" />
     <Content Include="RokuAppTemplate\images\mm_icon_focus_sd.png" />
     <Content Include="RokuAppTemplate\images\playerOverlayGradient.png" />
@@ -1879,46 +1869,6 @@
     <Content Include="RokuAppTemplate\images\Splash_SD.jpg" />
     <Content Include="RokuAppTemplate\images\star.png" />
     <Content Include="RokuAppTemplate\images\starEmpty.png" />
-    <Content Include="RokuGeneratedApps\Temp\qweqweq\components\EpgScreen\ChannelPanel\ChannelPanel.xml" />
-    <Content Include="RokuGeneratedApps\Temp\qweqweq\components\EpgScreen\CustomTimeGrid.xml" />
-    <Content Include="RokuGeneratedApps\Temp\qweqweq\components\EpgScreen\EpgScreen.xml" />
-    <Content Include="RokuGeneratedApps\Temp\qweqweq\components\EpgScreen\ProgramInfo\ProgramInfo.xml" />
-    <Content Include="RokuGeneratedApps\Temp\qweqweq\components\EpgScreen\ProgramPanel\ButtonMarkup.xml" />
-    <Content Include="RokuGeneratedApps\Temp\qweqweq\components\EpgScreen\ProgramPanel\ProgramPanel.xml" />
-    <Content Include="RokuGeneratedApps\Temp\qweqweq\components\EpgScreen\TimeGridChannelItemComponent\TimeGridChannelItemComponent.xml" />
-    <Content Include="RokuGeneratedApps\Temp\qweqweq\components\InfoScreen\InfoScreen.xml" />
-    <Content Include="RokuGeneratedApps\Temp\qweqweq\components\LoadingIndicator\LoadingIndicator.xml" />
-    <Content Include="RokuGeneratedApps\Temp\qweqweq\components\MainScene.xml" />
-    <Content Include="RokuGeneratedApps\Temp\qweqweq\components\OnScreenInfo\OnScreenInfo.xml" />
-    <Content Include="RokuGeneratedApps\Temp\qweqweq\components\SearchScreen\SearchResultsItem.xml" />
-    <Content Include="RokuGeneratedApps\Temp\qweqweq\components\SearchScreen\SearchScreen.xml" />
-    <Content Include="RokuGeneratedApps\Temp\qweqweq\components\tasks\baseApiTask.xml" />
-    <Content Include="RokuGeneratedApps\Temp\qweqweq\components\tasks\PlayerTask.xml" />
-    <Content Include="RokuGeneratedApps\Temp\qweqweq\components\VideoPlayer\VideoPlayer.xml" />
-    <Content Include="RokuGeneratedApps\Temp\qweqweq\images\BG_dark_down.png" />
-    <Content Include="RokuGeneratedApps\Temp\qweqweq\images\epg_background.jpg" />
-    <Content Include="RokuGeneratedApps\Temp\qweqweq\images\frame.9.png" />
-    <Content Include="RokuGeneratedApps\Temp\qweqweq\images\icon_back.png" />
-    <Content Include="RokuGeneratedApps\Temp\qweqweq\images\icon_ok.png" />
-    <Content Include="RokuGeneratedApps\Temp\qweqweq\images\icon_options.png" />
-    <Content Include="RokuGeneratedApps\Temp\qweqweq\images\icon_play_pause.png" />
-    <Content Include="RokuGeneratedApps\Temp\qweqweq\images\icon_replay.png" />
-    <Content Include="RokuGeneratedApps\Temp\qweqweq\images\info_epg.png" />
-    <Content Include="RokuGeneratedApps\Temp\qweqweq\images\keyboard.9.png" />
-    <Content Include="RokuGeneratedApps\Temp\qweqweq\images\keyboard_focus.9.png" />
-    <Content Include="RokuGeneratedApps\Temp\qweqweq\images\list_blank.9.png" />
-    <Content Include="RokuGeneratedApps\Temp\qweqweq\images\list_focus.9.png" />
-    <Content Include="RokuGeneratedApps\Temp\qweqweq\images\list_focus_later.9.png" />
-    <Content Include="RokuGeneratedApps\Temp\qweqweq\images\loader.png" />
-    <Content Include="RokuGeneratedApps\Temp\qweqweq\images\mm_icon_focus_fhd.png" />
-    <Content Include="RokuGeneratedApps\Temp\qweqweq\images\mm_icon_focus_hd.png" />
-    <Content Include="RokuGeneratedApps\Temp\qweqweq\images\mm_icon_focus_sd.png" />
-    <Content Include="RokuGeneratedApps\Temp\qweqweq\images\playerOverlayGradient.png" />
-    <Content Include="RokuGeneratedApps\Temp\qweqweq\images\Splash_FHD.jpg" />
-    <Content Include="RokuGeneratedApps\Temp\qweqweq\images\Splash_HD.jpg" />
-    <Content Include="RokuGeneratedApps\Temp\qweqweq\images\Splash_SD.jpg" />
-    <Content Include="RokuGeneratedApps\Temp\qweqweq\images\star.png" />
-    <Content Include="RokuGeneratedApps\Temp\qweqweq\images\starEmpty.png" />
     <Content Include="Schedule2.aspx" />
     <Content Include="Scripts\moment-timezone-utils.js" />
     <Content Include="Scripts\moment-timezone-with-data-2012-2022.js" />
@@ -1938,6 +1888,7 @@
     <Content Include="StripePaymentSuccess.aspx" />
     <Content Include="TestReactPlayer.aspx" />
     <Content Include="TimeLineTest.html" />
+    <Content Include="UC\AppSettingsForm.ascx" />
     <Content Include="UC\ChannelsHolderCategoryUC.ascx" />
     <Content Include="UC\EmbeddedPageChannelBox.ascx" />
     <Content Include="UC\LandingPageChannelBox.ascx" />
@@ -2107,6 +2058,7 @@
     <Resource Include="content\embedding_strimm_tv_on_facebook.pdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
+    <None Include="Properties\PublishProfiles\IISProfile.pubxml" />
     <None Include="Properties\PublishProfiles\qa7.pubxml" />
     <Content Include="RokuAppTemplate\components\EpgScreen\ChannelPanel\ChannelPanel.brs" />
     <Content Include="RokuAppTemplate\components\EpgScreen\CustomTimeGrid.brs" />
@@ -2114,7 +2066,6 @@
     <Content Include="RokuAppTemplate\components\EpgScreen\ProgramInfo\ProgramInfo.brs" />
     <Content Include="RokuAppTemplate\components\EpgScreen\ProgramPanel\ProgramPanel.brs" />
     <Content Include="RokuAppTemplate\components\EpgScreen\TimeGridChannelItemComponent\TimeGridChannelItemComponent.brs" />
-    <Content Include="RokuAppTemplate\components\InfoScreen\InfoScreen.brs" />
     <Content Include="RokuAppTemplate\components\LoadingIndicator\LoadingIndicator.brs" />
     <Content Include="RokuAppTemplate\components\MainScene.brs" />
     <Content Include="RokuAppTemplate\components\nodeUtils.brs" />
@@ -2130,34 +2081,6 @@
     <Content Include="RokuAppTemplate\source\generalUtils.brs" />
     <Content Include="RokuAppTemplate\source\main.brs" />
     <Content Include="RokuAppTemplate\source\urlUtils.brs" />
-    <Content Include="RokuGeneratedApps\aaadsd.zip" />
-    <Content Include="RokuGeneratedApps\kuku.zip" />
-    <Content Include="RokuGeneratedApps\Super cool app.zip" />
-    <Content Include="RokuGeneratedApps\Temp\qweqweq\components\EpgScreen\ChannelPanel\ChannelPanel.brs" />
-    <Content Include="RokuGeneratedApps\Temp\qweqweq\components\EpgScreen\CustomTimeGrid.brs" />
-    <Content Include="RokuGeneratedApps\Temp\qweqweq\components\EpgScreen\EpgScreen.brs" />
-    <Content Include="RokuGeneratedApps\Temp\qweqweq\components\EpgScreen\ProgramInfo\ProgramInfo.brs" />
-    <Content Include="RokuGeneratedApps\Temp\qweqweq\components\EpgScreen\ProgramPanel\ProgramPanel.brs" />
-    <Content Include="RokuGeneratedApps\Temp\qweqweq\components\EpgScreen\TimeGridChannelItemComponent\TimeGridChannelItemComponent.brs" />
-    <Content Include="RokuGeneratedApps\Temp\qweqweq\components\InfoScreen\InfoScreen.brs" />
-    <Content Include="RokuGeneratedApps\Temp\qweqweq\components\LoadingIndicator\LoadingIndicator.brs" />
-    <Content Include="RokuGeneratedApps\Temp\qweqweq\components\MainScene.brs" />
-    <Content Include="RokuGeneratedApps\Temp\qweqweq\components\nodeUtils.brs" />
-    <Content Include="RokuGeneratedApps\Temp\qweqweq\components\OnScreenInfo\OnScreenInfo.brs" />
-    <Content Include="RokuGeneratedApps\Temp\qweqweq\components\SearchScreen\SearchResultsItem.brs" />
-    <Content Include="RokuGeneratedApps\Temp\qweqweq\components\SearchScreen\SearchScreen.brs" />
-    <Content Include="RokuGeneratedApps\Temp\qweqweq\components\tasks\PlayerTask.brs" />
-    <Content Include="RokuGeneratedApps\Temp\qweqweq\components\VideoPlayer\VideoPlayer.brs" />
-    <Content Include="RokuGeneratedApps\Temp\qweqweq\data\config.json" />
-    <Content Include="RokuGeneratedApps\Temp\qweqweq\data\Main.theme" />
-    <Content Include="RokuGeneratedApps\Temp\qweqweq\manifest" />
-    <Content Include="RokuGeneratedApps\Temp\qweqweq\source\api.brs" />
-    <Content Include="RokuGeneratedApps\Temp\qweqweq\source\generalUtils.brs" />
-    <Content Include="RokuGeneratedApps\Temp\qweqweq\source\main.brs" />
-    <Content Include="RokuGeneratedApps\Temp\qweqweq\source\urlUtils.brs" />
-    <Content Include="RokuGeneratedApps\xcvxcvxcv.zip" />
-    <Content Include="RokuGeneratedApps\zasaaza.zip" />
-    <Content Include="RokuGeneratedApps\zaza.zip" />
     <Content Include="reactplayer\css\main.317ac729.chunk.css.map" />
     <Content Include="reactplayer\js\2.cd6796f3.chunk.js.map" />
     <Content Include="reactplayer\js\3.c5fd260e.chunk.js.map" />
@@ -2166,6 +2089,8 @@
     <Content Include="reactplayer\media\icons.04dc10b4.woff" />
     <Content Include="reactplayer\media\icons.47bdf910.eot" />
     <Content Include="reactplayer\media\icons.7f1e76ab.ttf" />
+    <None Include="Properties\PublishProfiles\Strimm - Web Deploy.pubxml" />
+    <None Include="Properties\PublishProfiles\tubeStrimmPublish.pubxml" />
     <None Include="Scripts\jquery-1.8.2-vsdoc.js" />
     <Content Include="Scripts\jquery-1.8.2.js" />
     <Content Include="Scripts\jquery-1.8.2.min.js" />
@@ -2271,10 +2196,6 @@
     </Compile>
     <Compile Include="admcp\mgmt\WebServiceAdmin\AdminWebService.asmx.cs">
       <DependentUpon>AdminWebService.asmx</DependentUpon>
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="admcp\mgmt\WebServiceAdmin\StatisticsWS.asmx.cs">
-      <DependentUpon>StatisticsWS.asmx</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="admcp\mgmt\UserManagement.aspx.cs">
@@ -2797,6 +2718,13 @@
     </Compile>
     <Compile Include="TestReactPlayer.aspx.designer.cs">
       <DependentUpon>TestReactPlayer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UC\AppSettingsForm.ascx.cs">
+      <DependentUpon>AppSettingsForm.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UC\AppSettingsForm.ascx.designer.cs">
+      <DependentUpon>AppSettingsForm.ascx</DependentUpon>
     </Compile>
     <Compile Include="UC\ChannelManagementUC.ascx.cs">
       <DependentUpon>ChannelManagementUC.ascx</DependentUpon>

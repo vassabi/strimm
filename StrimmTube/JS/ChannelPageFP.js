@@ -398,7 +398,7 @@ function updateProgressBar(duration, time) {
 var timeUpdateInterVal;
 var fplayer;
 function InitFlowPlayer(playList, videoPlaylistIndex, seekTime) {
-
+    
     //$("#complete").html('');
     if (fplayer) {
         fplayer.unload();
@@ -412,7 +412,6 @@ function InitFlowPlayer(playList, videoPlaylistIndex, seekTime) {
     }
 
     var newPlaylist = [];
-
 
     if (playList && playList.length > 0) {
         $.each(playList, function (i, d) {
@@ -461,11 +460,10 @@ function InitFlowPlayer(playList, videoPlaylistIndex, seekTime) {
 };
 
 function PlayVideoWithReactPlayer(newPlaylist, globalVideoPlaylistIndex, seekTime) {
-    
     var currentVideo = newPlaylist[0].sources[0];
     window.STRIMM_PLAYER = {
         url: currentVideo.src,
-        startDate: "Tue Mar 02 2021 14:52:49 GMT+0200 (Eastern European Standard Time)",
+        startDate: new Date(Date.now() - (seekTime * 1000)),
     }
 }
 
@@ -1171,6 +1169,7 @@ function GetScheduleData(channelId, dontRegetChannels) {
             }
         },
         complete: function () {
+
             if (isMatch == false) {
                 SchedulePollingTimer = setTimeout(GetScheduleData, timeoutInMilliseconds);
             }
@@ -1586,7 +1585,7 @@ function ResetUIForProperPlayer(isExternal, isDailyMotion) {
                       "</div>";
 
     playerHolder = isBrowseViewActive ? $("#PlayerHolderPreview") : $("#PlayerHolder");
-    playerHolder.html(isBrowseViewActive ? flowPlayerHolderContentHtmlSmall : flowPlayerHolderContentHtml);
+    //playerHolder.html(isBrowseViewActive ? flowPlayerHolderContentHtmlSmall : flowPlayerHolderContentHtml);
 
     //playerHolder.html("");
 
@@ -1644,7 +1643,7 @@ $(window).bind('beforeunload', function (playlist, playBackOrderNum) {
 
 });
 function ProcessNextVideo(nextVideoPlaylistIndex, startTime) {
-
+    debugger;
     if (nextVideoPlaylistIndex != undefined) {
 
         currentlyPlayingVideo = playlist[nextVideoPlaylistIndex];

@@ -6,7 +6,6 @@
     <link href="css/userManagment.css" rel="stylesheet" />
      <link href="DataTables-1.10.5/media/css/jquery.dataTables.min.css" rel="stylesheet" type="text/css"/>
     <link href="../../css/CreateChannel.css" rel="stylesheet" />
-    <link href="../../css/OttSettings.css" rel="stylesheet" />
       <link href="DataTables-1.10.5/TableTools/css/dataTables.tableTools.min.css" rel="stylesheet" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">

@@ -120,6 +120,10 @@ function CloseOTTSettingsPopup() {
     $('#ottSettingsModal').trigger('close');
 }
 
+function CloseAppSettingsPopup() {
+    $('#appSettingsModal').trigger('close');
+}
+
     function CloseCreateChannelPopup() {
        
             var queryString = getQueryStringParameterByName("create-channel")
@@ -1360,6 +1364,29 @@ function CloseOTTSettingsPopup() {
                 }
             },
 
+            ToggleAddChannelToApp: function () {
+                if ($("#toggleAddChannelToApp").hasClass("inputEmbeddedOFF")) {
+                    if (!hasProfPlusPlan) {
+                        $("#addToAppError").empty().append("Please subscribe to Professional Plus plan to use this feature");
+                        return;
+                    }
+                    if (!hasValidRokuVideos) {
+                        $("#addToAppError").empty().append("Your channel contains videos that are not compatible with mobile app");
+                        return;
+                    }
+                    $("#toggleAddChannelToApp").removeClass("inputEmbeddedOFF").addClass("inputEmbeddedON");
+                    //$(".ottData").show();
+                    //$(".ottDemo").hide();
+                    //CreateChannel.UpsertChannelRokuSettings(true);
+                }
+                else if ($("#toggleAddChannelToApp").is(".inputEmbeddedON")) {
+                    $("#toggleAddChannelToApp").removeClass("inputEmbeddedON").addClass("inputEmbeddedOFF");
+                    //$(".ottData").hide();
+                    //$(".ottDemo").show();
+                    //CreateChannel.UpsertChannelRokuSettings(false);
+                }
+            },
+
             ToggleEmbedEnabled: function () {
                 var isUpgradeChannelModalUp = $("#createChannelModal .createChannelForm ").hasClass("upgradeChannel");
                 $("#spnSubscribtionError").text("");
@@ -2195,6 +2222,20 @@ function CloseOTTSettingsPopup() {
                         //CreateChannel.GetChannelRokuSettings();
                         CreateChannel.GetUserRokuApp();
                         CreateChannel.GetUserSubscribtions();
+                    },
+                    onClose: function (event) {
+                    },
+                    closeSelector: "close"
+                });
+            },
+
+            GetAppSettingsPopup: function () {
+                $("#appSettingsModal").lightbox_me({
+                    centered: true,
+                    closeClick: false,
+                    closeEsc: false,
+                    onLoad: function () {
+                        
                     },
                     onClose: function (event) {
                     },

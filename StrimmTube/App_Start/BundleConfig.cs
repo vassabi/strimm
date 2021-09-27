@@ -45,6 +45,7 @@ namespace StrimmTube.App_Start
           "~/css/mediaCSS.css",
           "~/css/CreateChannel.css",
           "~/css/OttSettings.css",
+          "~/css/AppSettings.css",
            "~/css/search.css"
           ));
 

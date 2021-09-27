@@ -222,8 +222,13 @@
 
                         <div id="innerLeftWrapper">
                             <a onclick="CreateChannel.GetUpdateChannelPopup()" class="ancEditBlack" id="channelSettingsBtn"></a>
-                            <a onclick="CreateChannel.GetOTTSettingsPopup()" class="settingsOtt" id="ottSettingsBtn"></a>
-
+                            <a class="settingsOtt" onclick="ToggleDDL('appSettingsDropdown')" id="ottSettingsBtn"></a>
+                            <div class="dropdown">
+                                <div id="appSettingsDropdown" class="dd-content">
+                                    <a href="#" onclick="CreateChannel.GetOTTSettingsPopup(); ToggleDDL('appSettingsDropdown')">OTT Settings</a>
+                                    <a href="#" onclick="CreateChannel.GetAppSettingsPopup(); ToggleDDL('appSettingsDropdown')">Custom App Settings</a>
+                                </div>
+                            </div>
 
                             <a id="channelLink" href="/<%=channelOwnerName%>/<%=channelTubeUrl%>">
 

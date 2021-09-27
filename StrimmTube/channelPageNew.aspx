@@ -19,7 +19,8 @@
     <link href="/css/timeLine.css" rel="stylesheet" />
     <script src="/Plugins/Spin/spin.js"></script>
     <link href="/Plugins/Vis/dist/vis.css" rel="stylesheet" />
- 
+    <link href="/reactplayer/css/main.317ac729.chunk.css" rel="stylesheet">
+
     <%-- <script src="/JS/Froogaloop.js"></script>--%>
   
     <script src="/JS/swfobject.js" type="text/javascript"></script>
@@ -30,13 +31,7 @@
     <script src="/JS/jquery.prettySocial.min.js"></script>
     <!--<script src="https://f.vimeocdn.com/js/froogaloop2.min.js"></script>-->
    
-    <script src="/Flowplayer7/flowplayer.js"></script>
-    <script src="/Flowplayer7/cc-button-7.2.5.js"></script>
-    <script src="/Flowplayer7/settingsmenu-7.2.5.js"></script>
-    <script src="/Flowplayer7/embed.min.js"></script>
-    <script src="/Flowplayer7/vimeo-7.0.0.js"></script>
-    <script src="/Flowplayer7/youtube-7.0.0.js"></script>
-    <script src="/Flowplayer7/dailymotion-7.0.0.js"></script>
+    
 
     <script type="text/javascript">
         /* share42.com | 28.05.2014 | (c) Dimox */
@@ -77,19 +72,7 @@
         }
         facebookUrl = window.location.href;
         $(".rateit").bind('rated', function (event, value) { alert(value) });
-        flowplayer(function (api, root) {
-            var fsbutton = root.querySelector(".fp-fullscreen");
-
-            // append fullscreen button after HD menu is added on ready
-            api.on("ready", function () {
-                root.querySelector(".fp-controls").appendChild(fsbutton);
-            });
-        });
-        flowplayer.conf = {
-            fullscreen: true,
-            // iOS allows only native fullscreen from within iframes
-            native_fullscreen: true
-        };
+       
         $(document).ready(function () {
             var windowWidth;
             var mobile;
@@ -450,13 +433,7 @@
             </div>
             <%-- <div class="leftWrapperRS">--%>
             <div class="wedHolderChannel">
-                <div>
-                    <div id="PlayerHolder">
-                        <div class="playerbox" id="player">
-                          
-                        </div>
-                    </div>
-                    <img id="playerImage" class="placeholderImage" />
+                <div id="STRIMM_PLAYER_ROOT">
                 </div>
             </div>
         </div>
@@ -572,8 +549,7 @@
         </div>
         <div class="VideoInfoCL">
             <div id="PlayerHolderPreview" class="videoCL">
-                <div class="playerbox" id="playerSmall">
-               
+                <div id="STRIMM_PLAYER_ROOT">
                 </div>
             </div>
         </div>
@@ -908,4 +884,95 @@ ad_height = "90";
     </div>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
       <script async="async" src='https://cdnjs.cloudflare.com/ajax/libs/jstimezonedetect/1.0.4/jstz.min.js'></script>
+    <script>!function (e) {
+            function r(r) {
+                for (var n, i, a = r[0], c = r[1], l = r[2], s = 0, p = []; s < a.length; s++) i = a[s], Object.prototype.hasOwnProperty.call(o, i) && o[i] && p.push(o[i][0]), o[i] = 0;
+                for (n in c) Object.prototype.hasOwnProperty.call(c, n) && (e[n] = c[n]);
+                for (f && f(r); p.length;) p.shift()();
+                return u.push.apply(u, l || []), t()
+            }
+
+            function t() {
+                for (var e, r = 0; r < u.length; r++) {
+                    for (var t = u[r], n = !0, a = 1; a < t.length; a++) {
+                        var c = t[a];
+                        0 !== o[c] && (n = !1)
+                    }
+                    n && (u.splice(r--, 1), e = i(i.s = t[0]))
+                }
+                return e
+            }
+
+            var n = {}, o = { 1: 0 }, u = [];
+
+            function i(r) {
+                if (n[r]) return n[r].exports;
+                var t = n[r] = { i: r, l: !1, exports: {} };
+                return e[r].call(t.exports, t, t.exports, i), t.l = !0, t.exports
+            }
+
+            i.e = function (e) {
+                var r = [], t = o[e];
+                if (0 !== t) if (t) r.push(t[2]); else {
+                    var n = new Promise((function (r, n) {
+                        t = o[e] = [r, n]
+                    }));
+                    r.push(t[2] = n);
+                    var u, a = document.createElement("script");
+                    a.charset = "utf-8", a.timeout = 120, i.nc && a.setAttribute("nonce", i.nc), a.src = function (e) {
+                        return i.p + "static/js/" + ({}[e] || e) + "." + { 3: "c5fd260e" }[e] + ".chunk.js"
+                    }(e);
+                    var c = new Error;
+                    u = function (r) {
+                        a.onerror = a.onload = null, clearTimeout(l);
+                        var t = o[e];
+                        if (0 !== t) {
+                            if (t) {
+                                var n = r && ("load" === r.type ? "missing" : r.type), u = r && r.target && r.target.src;
+                                c.message = "Loading chunk " + e + " failed.\n(" + n + ": " + u + ")", c.name = "ChunkLoadError", c.type = n, c.request = u, t[1](c)
+                            }
+                            o[e] = void 0
+                        }
+                    };
+                    var l = setTimeout((function () {
+                        u({ type: "timeout", target: a })
+                    }), 12e4);
+                    a.onerror = a.onload = u, document.head.appendChild(a)
+                }
+                return Promise.all(r)
+            }, i.m = e, i.c = n, i.d = function (e, r, t) {
+                i.o(e, r) || Object.defineProperty(e, r, { enumerable: !0, get: t })
+            }, i.r = function (e) {
+                "undefined" != typeof Symbol && Symbol.toStringTag && Object.defineProperty(e, Symbol.toStringTag, { value: "Module" }), Object.defineProperty(e, "__esModule", { value: !0 })
+            }, i.t = function (e, r) {
+                if (1 & r && (e = i(e)), 8 & r) return e;
+                if (4 & r && "object" == typeof e && e && e.__esModule) return e;
+                var t = Object.create(null);
+                if (i.r(t), Object.defineProperty(t, "default", {
+                    enumerable: !0,
+                    value: e
+                }), 2 & r && "string" != typeof e) for (var n in e) i.d(t, n, function (r) {
+                    return e[r]
+                }.bind(null, n));
+                return t
+            }, i.n = function (e) {
+                var r = e && e.__esModule ? function () {
+                    return e.default
+                } : function () {
+                    return e
+                };
+                return i.d(r, "a", r), r
+            }, i.o = function (e, r) {
+                return Object.prototype.hasOwnProperty.call(e, r)
+            }, i.p = "/", i.oe = function (e) {
+                throw console.error(e), e
+            };
+            var a = this["webpackJsonpstrimm.player"] = this["webpackJsonpstrimm.player"] || [], c = a.push.bind(a);
+            a.push = r, a = a.slice();
+            for (var l = 0; l < a.length; l++) r(a[l]);
+            var f = c;
+            t()
+        }([])</script>
+    <script src="/reactplayer/js/2.cd6796f3.chunk.js"></script>
+    <script src="/reactplayer/js/main.4514192c.chunk.js"></script>
 </asp:Content>
